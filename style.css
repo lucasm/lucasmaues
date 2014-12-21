@@ -106,7 +106,7 @@ body {
 	font-family: 'Roboto', Arial, sans-serif; 
 }
 
-.facebook { background-image: url(_img/facebook.png); }
+.facebook { background-image: url('_img/facebook.png'); }
 .color_facebook:hover, .color_facebook:focus { background-color: #3b579d; }
 .twitter { background-image: url(_img/twitter.png); }
 .color_twitter:hover, .color_twitter:focus { background-color: #55acee; }
