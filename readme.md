@@ -14,7 +14,7 @@ See: [lucasmauess.github.io](http://lucasmauess.github.io/)
 
 ![Chrome](img/_Chrome.png?raw=true) | ![Internet Explorer](img/_Internet_Explorer.png?raw=true) | ![Firefox](img/_Firefox.png?raw=true) | ![Opera](img/_Opera.png?raw=true) | ![Safari](img/_Safari.png?raw=true) | ![UC Browser](img/_UC_Browser.png?raw=true) | ![Spartan](img/_Spartan.png?raw=true)
  --- | --- | --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- | --- | --- |
- Latest | Latest | Latest | Latest | Latest | Latest | Latest |
+ IE | Chrome | Firefox | Opera | Safari | UC | Spartan |
 
 ## How to create a GitHub Page?
 
