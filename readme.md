@@ -10,13 +10,13 @@ The objective of this repository is to gather information about me in a single w
 
 See: [lucasmauess.github.io](http://lucasmauess.github.io/)
 
-## Browser Support
+## browser support
 
 ![Chrome](img/_Chrome.png?raw=true) | ![Internet Explorer](img/_ie.png?raw=true) | ![Firefox](img/_Firefox.png?raw=true) | ![Safari](img/_Safari.png?raw=true) | ![Opera](img/_Opera.png?raw=true) | ![UC Browser](img/_uc.png?raw=true) | ![Spartan](img/_Spartan.png?raw=true)
  --- | --- | --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- | --- | --- |
  Chrome | IE | Firefox | Safari | Opera | UC | Spartan |
 
-## How to create a GitHub Page?
+## how to create a GitHub Page?
 
 Very simple. All information to you need, can be found in these links: *[GitHub Pages Basics](http://help.github.com/categories/github-pages-basics)* and *[GitHub Pages Features](http://help.github.com/categories/github-pages-features)*. For more information visit: *[GitHub Help](http://help.github.com/)*.
 
