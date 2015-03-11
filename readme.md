@@ -2,7 +2,7 @@
 
 A personal website hosted directly from my GitHub repository
 
-## Purpose of this project
+## Purpose
 
 The objective of this repository is to gather information about me in a single web page, such as links to my profiles on social networks, information to contact, a blog to share ideas about programming and development (coming soon) and mainly promote my projects and my contributions in the open source community.
 
@@ -12,7 +12,7 @@ The objective of this repository is to gather information about me in a single w
  --- | --- | --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- | --- | --- |
  Chrome (26+) | IE (10+) | Firefox (16+) | Safari (6+) | Opera (12+) | UC (Latest)| Spartan (Latest) |
 
-## Important note
+## Important !
 
 This repository is named as *lucasmauess.gihub.io* because it follows a naming scheme, so that all its content can be interpreted by GitHub as a website (or rather, in a "User Page") in accordance with documentation of the GitHub Pages.
 
