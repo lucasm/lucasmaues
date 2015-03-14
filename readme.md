@@ -8,13 +8,13 @@ The objective of this repository is to gather information about me in a single w
 
 ## Browser support
 
-![Chrome](img/_Chrome.png?raw=true) | ![Internet Explorer](img/_ie.png?raw=true) | ![Firefox](img/_Firefox.png?raw=true) | ![Safari](img/_Safari.png?raw=true) | ![Opera](img/_Opera.png?raw=true) | ![UC Browser](img/_uc.png?raw=true) | ![Spartan](img/_Spartan.png?raw=true)
+![Chrome](images/_Chrome.png?raw=true) | ![Internet Explorer](images/_ie.png?raw=true) | ![Firefox](images/_Firefox.png?raw=true) | ![Safari](images/_Safari.png?raw=true) | ![Opera](images/_Opera.png?raw=true) | ![UC Browser](images/_uc.png?raw=true) | ![Spartan](images/_Spartan.png?raw=true)
  --- | --- | --- | --- | --- | --- | --- |		 --- | --- | --- | --- | --- | --- | --- |
  Chrome (26+) | IE (10+) | Firefox (16+) | Safari (6+) | Opera (12+) | UC (Latest)| Spartan (Latest) |
 
 ## Important note
 
-This repository is named as *lucasmauess.gihub.io* because it follows a naming scheme, so that all its content can be interpreted by GitHub as a website (or rather, in a "User Page") in accordance with documentation of the GitHub Pages.
+This repository is named as *lucasmauess.gihub.io* because it follows a naming scheme, so that all its content can be interpreted by GitHub as a website (or rather, in a "User/Organization Page") in accordance with documentation of the GitHub Pages.
 
 ## How to create pages on GitHub?
 

@@ -1,4 +1,14 @@
 /*
+FONTS
+*/
+
+@font-face { font-family: Roboto-Thin; src: url(../fonts/Roboto-Thin.ttf); }
+@font-face { font-family: Roboto-Light; src: url(../fonts/Roboto-Light.ttf); }
+@font-face { font-family: Roboto-Regular; src: url(../fonts/Roboto-Regular.ttf); }
+@font-face { font-family: Roboto-Medium; src: url(../fonts/Roboto-Medium.ttf); }
+@font-face { font-family: Roboto-Black; src: url(../fonts/Roboto-Black.ttf); }
+
+/*
 MEDIA QUERIES
 */
 
@@ -37,7 +47,7 @@ MEDIA QUERIES
     font-family: Roboto-Light;
     font-weight: lighter; 
     padding: 80px 14%; 
-    color: #888;  
+    color: #fff;
   }
   section h2 span {  
     font-family: Roboto-Medium;
@@ -72,8 +82,8 @@ MEDIA QUERIES
     outline: none; 
     color: #aaa;
   }
-  header h1 a:hover, header h1 a:focus { 
-    color: #fff; 
+  header h1 a:hover, header h1 a:focus {
+    color: #fff;
     background-color: #555; 
   }
   header h1 a span { 
@@ -85,8 +95,8 @@ MEDIA QUERIES
     font-size: 40px;
     font-family: Roboto-Light;
     font-weight: lighter;
-    padding: 80px 14%;
-    color: #888;
+    padding: 60px 14%;
+    color: #fff;
   }
   section h2 span {
     font-family: Roboto-Medium;
@@ -228,19 +238,147 @@ MEDIA QUERIES
 }
 
 
+/* ==========================================================================
+    PRINT STYLES
+========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+::selection { 
+  color: #fff; 
+  background: #555;
+  text-shadow: none;
+}
+::-moz-selection {
+  color: #fff; 
+  background: #555; 
+  text-shadow: none;
+}
+
+body {
+	font-family: Roboto-Regular, Arial, sans-serif;
+	color: #666;
+	background-color: #f5f5f5;
+}
+header {
+	background-color: #444;
+	z-index: 2;
+	text-align: center;
+}
+section, footer { 
+	position: relative;
+	float: left; 
+	padding: 4% 2%;
+	height: auto; 
+	width: 96%;
+	background-color: red;
+	text-align: center;
+}
+a {
+  color: #666;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #222;
+  text-decoration: none;
+}
+
 /*
 NAV
 */
 
 .nav-list, .nav-list li { 
-	width: 100%; 
-	float: left; 
-	display: block; 
-	position: relative; 
+  width: 100%; 
+  float: left; 
+  display: block; 
+  position: relative; 
 }
 header nav { 
-	float: right;
-	background-color: #444;
+  float: right;
+  background-color: #444;
 }
 header ul {
   padding: 32px 0;
@@ -255,8 +393,7 @@ header li a {
   color: #aaa;
   font-size: 16px;
   line-height: 48px;
-  font-family: Roboto-Regular;
-  font-weight: lighter;
+  font-family: Roboto-Light;
   text-decoration: none;
 }
 header li a:hover, header li a:focus {
@@ -271,49 +408,11 @@ input#control-nav {
 }
 .active-page {
   color: #fff;
+  font-family: Roboto-Regular;
 }
 
 /*
-  transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -ms-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-*/
-
-
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	background-color: transparent;
-}
-
-
-::selection { color: #fff; background: #555; }
-
-body {
-	font-family: Roboto, Arial, sans-serif;
-	color: #666;
-	background-color: #f5f5f5;
-}
-header {
-	background-color: #444;
-	z-index: 2;
-	text-align: center;
-}
-section, footer { 
-	position: relative;
-	float: top; 
-	padding: 4% 2%;
-	height: auto; 
-	width: 96%;
-	background-color: #fff;
-	text-align: center;
-}
-
-/*
-BACKGROUND
+BACKGROUNDS
 */
 
 .bg-gray {
@@ -323,7 +422,7 @@ BACKGROUND
 	background-color: #ffffff;
 }
 .bg-img-boll {
-  background-image: url('file:///C:/Users/lucas_000/OneDrive/Images/Wallpapers/mc%20(16).jpg');
+  background-image: url('../img/boll.jpg');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -333,6 +432,14 @@ BACKGROUND
 /*
 TEXT
 */
+
+.page-title {
+  font-size: 100px;
+  font-family: Roboto-Thin;
+  padding: 50px 14%;
+  color: #ddd;
+  text-transform: uppercase;
+}
 
 h3 {
 	font-size: 20px;
@@ -345,17 +452,10 @@ h6 {
 	font-size: 14px;
 	font-weight: 400;
 }
-section a {
-	color: #666;
-	text-decoration: none;
-}
-section a:hover, section a:focus {
-	color: #fff;
-	background-color: #888;
-}
+
 
 /*
-BOX ICON
+BOX SOCIAL
 */
 
 a.box {
@@ -403,3 +503,78 @@ a.box:focus {
 	background-repeat: no-repeat; 
 	background-position: 50% 40%;
 }
+
+/*
+BOX PROJECTS
+*/
+
+@media all and (min-width:1000px) {
+  a.box-pro { width:22.2%; }
+}
+
+@media all and (max-width:999px) {
+  a.box-pro { width:30.4%; }
+}
+
+@media all and (max-width: 680px) { 
+  a.box-pro { width:47%; margin:0.5%; } 
+}
+
+@media all and (max-width: 580px) {  
+  a.box-pro { width:94%; margin:0.5%; }
+}
+
+a.box-pro {
+  position: relative;
+  display: inline-block;
+  float: left; 
+  background-color:  #fff; 
+  height: auto;
+  margin: 1.4%; 
+  padding: 0px;
+  text-decoration: none; 
+  text-align: center;
+}
+a.box-pro:hover, a.box-pro:focus { 
+  background-color: transparent; 
+}
+a.box-pro h2 {
+  height: auto;
+  padding: 0;
+  width: 100%; 
+  font: 400 30px 'Roboto-Regular';
+  color: #555;
+}
+a.box-pro h3 {
+  height: auto;
+  text-align: center;
+  padding: 12px 25px 25px 25px; 
+  font: 200 16px Arial, sans-serif;
+  color: #aaa;
+}
+.mini {
+  float: left;
+  height: auto;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.img {
+  float: left;
+  width: 100%;
+  height: 180px;
+  background: no-repeat center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
