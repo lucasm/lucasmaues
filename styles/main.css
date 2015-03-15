@@ -348,7 +348,7 @@ header {
 section, footer { 
 	position: relative;
 	float: left; 
-	padding: 4% 2%;
+	padding: 2% 2%;
 	height: auto; 
 	width: 96%;
 	background-color: red;
@@ -439,6 +439,9 @@ TEXT
   padding: 50px 14%;
   color: #ddd;
   text-transform: uppercase;
+}
+.border-bottom {
+    border-bottom: 1px solid #ddd;
 }
 
 h3 {
@@ -535,9 +538,11 @@ a.box-pro {
   padding: 0px;
   text-decoration: none; 
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 a.box-pro:hover, a.box-pro:focus { 
-  background-color: transparent; 
+  background-color: transparent;
+  border-bottom: 1px solid #eaeaea;
 }
 a.box-pro h2 {
   height: auto;
@@ -554,12 +559,75 @@ a.box-pro h3 {
   color: #aaa;
 }
 .mini {
+  display: inline-block;
+  height: auto;
+  width: 180px;
+  margin: 24px auto 20px auto;
+  border-radius: 336px;
+  border-bottom: 1px solid #ddd;
+}
+.img {
+  float: left;
+  width: 100%;
+  height: 180px;
+  background: no-repeat center;
+}
+
+/*
+BOX POSTS 
+*/
+
+@media all and (min-width:1000px) {
+  a.box-post { width: 22.2%; }
+}
+
+@media all and (max-width:999px) {
+  a.box-post { width: 30.4%; }
+}
+
+@media all and (max-width: 680px) { 
+  a.box-post { width:47%; margin: 0.5%; } 
+}
+
+@media all and (max-width: 580px) {  
+  a.box-post { width:94%; margin: 0.5%; }
+}
+
+a.box-post {
+  position: relative;
+  display: inline-block;
+  float: left; 
+  background-color:  #fff; 
+  height: auto;
+  margin: 1.4%; 
+  padding: 0 0 15px 0;
+  text-decoration: none; 
+  text-align: center;
+}
+a.box-post:hover, a.box-post:focus { 
+  background-color: transparent; 
+}
+a.box-post h2 {
+  height: auto;
+  padding: 0 5%;
+  width: 90%; 
+  font: 400 22px 'Roboto-Regular';
+  color: #555;
+}
+a.box-post h3 {
+  height: auto;
+  text-align: center;
+  padding: 12px 25px 10px 25px; 
+  font: 200 16px Arial, sans-serif;
+  color: #aaa;
+}
+.mini-post {
   float: left;
   height: auto;
   width: 100%;
   margin: 0 0 20px 0;
 }
-.img {
+.img-post {
   float: left;
   width: 100%;
   height: 180px;
