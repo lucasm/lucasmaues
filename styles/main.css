@@ -47,7 +47,7 @@ MEDIA QUERIES
     font-family: Roboto-Light;
     font-weight: lighter; 
     padding: 80px 14%; 
-    color: rgba(160, 160, 160, 1);
+    color: #999;
   }
   section h2 span {  
     font-family: Roboto-Medium;
@@ -96,7 +96,7 @@ MEDIA QUERIES
     font-family: Roboto-Light;
     font-weight: lighter;
     padding: 60px 14%;
-    color: rgba(160, 160, 160, 1);
+    color: #999;
   }
   section h2 span {
     font-family: Roboto-Medium;
