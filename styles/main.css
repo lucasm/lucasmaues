@@ -35,7 +35,7 @@ MEDIA QUERIES
   }
   header h1 a:hover, header h1 a:focus { 
     color: #fff; 
-    background-color: #555; 
+    background-color: #3C3C3C; 
   }
   header h1 a span { 
     font-weight: 300; 
@@ -84,7 +84,7 @@ MEDIA QUERIES
   }
   header h1 a:hover, header h1 a:focus {
     color: #fff;
-    background-color: #555; 
+    background-color: #3C3C3C; 
   }
   header h1 a span { 
     font-weight: 300; 
@@ -398,7 +398,7 @@ header li a {
 }
 header li a:hover, header li a:focus {
   color: #fff;
-  background-color: #555;
+  background-color: #3C3C3C;
 }
 input#control-nav {
   visibility: hidden;
@@ -443,9 +443,6 @@ TEXT
   color: #ddd;
   text-transform: uppercase;
 }
-.border-bottom {
-    border-bottom: 1px solid #ddd;
-}
 
 h3 {
 	font-size: 20px;
@@ -474,11 +471,11 @@ a.box {
 	text-decoration: none;
 	color: #fff;
 	outline: none;
-  background-color: rgba(160, 160, 160, 1);
+  background-color: #999;
   border: 1px solid rgba(68, 68, 68, 0.01);
 }
 a.box:hover {
-    background-color: #444;
+    background-color: #4C4C4C;
   /*
   -webkit-transform:scale(0.9) translate(0, 0);
   -moz-transform:scale(0.9) translate(0, 0);
@@ -538,11 +535,9 @@ a.box-pro {
   padding: 0px;
   text-decoration: none; 
   text-align: center;
-  border-bottom: 1px solid #ddd;
 }
 a.box-pro:hover, a.box-pro:focus { 
   background-color: transparent;
-  border-bottom: 1px solid #eaeaea;
 }
 a.box-pro h2 {
   height: auto;
@@ -564,7 +559,6 @@ a.box-pro h3 {
   width: 180px;
   margin: 24px auto 20px auto;
   border-radius: 336px;
-  border-bottom: 1px solid #ddd;
 }
 .img {
   float: left;
@@ -600,11 +594,9 @@ a.box-post {
   margin: 1.4%; 
   padding: 0 0 15px 0;
   background-color: #fff; 
-  border-bottom: 1px solid #ddd;
 }
 a.box-post:hover, a.box-post:focus { 
   background-color: transparent;
-  border-bottom: 1px solid #eaeaea;
 }
 a.box-post h2 {
   width: 90%; 
@@ -623,7 +615,6 @@ a.box-post .bg {
   float: left;
   width: 100%;
   margin: 0 0 20px 0;
-  border-bottom: 1px solid #ddd;
 }
 a.box-post .img {
   float: left;
