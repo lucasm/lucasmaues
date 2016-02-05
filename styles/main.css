@@ -150,17 +150,15 @@ footer {
   text-align: center;
   color: #888;
 }
-footer a {
-  color: #888;
-}
 footer a:hover, footer a:focus {
-  color: #fff;
+  color: #444;
 }
 footer a, footer p, footer li { 
   display: inline-block; 
   list-style: none;
   margin: 5px;
   font: 300 16px 'Roboto-Light';
+  color: #888;
 }
 footer ul { 
   float: top; 
@@ -298,7 +296,7 @@ article blockquote {
   width: 100%;
   padding: 0;
 }
-.img-home { background-image: url("../images/backgrounds/moutain.jpg"); }
+.img-home { background-image: url("../images/backgrounds/lead.jpg"); }
 .img-projects { background-image: url("../images/backgrounds/sky.jpg"); }
 .img-blog { background-image: url("../images/backgrounds/cup.jpg"); }
 .img-services { background-image: url("../images/backgrounds/computer.jpg"); }
@@ -308,17 +306,18 @@ article blockquote {
 .img-legal { background-image: url("../images/backgrounds/book.jpg"); }
 .img-thanks { background-image: url("../images/backgrounds/city.jpg"); }
 .img-error { background-image: url("../images/backgrounds/graffiti.jpg"); }
+.img-social { background-image: url("../images/backgrounds/sunset.jpg"); }
 
 .page {
   padding: 40px 0;
   width: 100%;
-  background: linear-gradient(to right,rgba(48, 48, 48, 0.6) 0%,rgba(98, 98, 98, 0.4) 100%);
-  background-color: rgba(68, 68, 68, 0.6);
+  /*background: linear-gradient(to right,rgba(25, 25, 25, 0.6) 0%,rgba(121, 121, 121, 0.6) 100%);*/
+  background-color: rgba(37, 175, 204, 0.9);
 }
 .page h2 {
   padding: 0 14%;
-  font: 700 50px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
-  color: #FFF;
+  font: 700 56px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  color: #fff;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
@@ -342,7 +341,7 @@ article blockquote {
   border-color: #fff;
 }
 .page .button:hover, .page .button:focus {
-  color: #444;
+  color: #11A7BB;
   background-color: #fff;
   border-color: #fff;
 }
@@ -397,7 +396,7 @@ article blockquote {
   background-size: 32px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(132, 132, 132, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
 .icon-search { background-image: url("../images/ui/search.svg"); }
@@ -452,7 +451,7 @@ article blockquote {
 
 .container-home {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1024px;
   padding: 40px 20px 30px;
   background-color: rgba(255, 255, 255, 0.0);
 }
@@ -462,9 +461,12 @@ article blockquote {
   padding: 20px 0; 
 }
 
-.bg-gradient {
+.bg-gradient-2 {
     background: linear-gradient(to right,rgba(114, 114, 114, 1) 0%,rgba(58, 58, 58, 1) 100%);
     background-color: #666;
+}
+.bg-gradient {
+  background-color: #25AFCC;
 }
 
 /* Chapter */
@@ -516,36 +518,36 @@ article blockquote {
 .home h2 {
   margin: 0 auto;
   text-align: center;
-  max-width: 500px;
-  font: 500 56px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  font: 700 56px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   color: #fff;
-  padding: 0 0 40px 0;
+  padding: 0 0 16px 0;
   text-transform: none;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
   line-height: normal;
 }
-.home h2 span {
-  font-family: 'Nova-Regular';
+.home span {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  text-align: center;
+  font: 700 30px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
+  color: #fff;
+  padding: 0 0 40px 0;
+  letter-spacing: 2px;
+  line-height: normal;
 }
 .home p {
   margin: 0 auto;
   padding: 10px 0;
-  max-width: 540px;
-  color: #ddd;
-  font: 300 20px/1.2em 'Roboto-Light', Arial, sans-serif;
-  line-height: 1.8;
+  max-width: 580px;
+  color: #fff;
+  font: 300 22px/1.2em 'Roboto-Light', Arial, sans-serif;
+  line-height: 1.6;
   letter-spacing: 0.24px;
   text-transform: none;
   text-align: center;
   background-color: transparent;
 
-}
-.home a {
-  font-family: 'Roboto-Medium', Arial, sans-serif;
-  color: #fff;
-} 
-.home a:hover {
-  border-bottom: 2px solid #fff;
 }
 
 /* Button */
@@ -558,9 +560,9 @@ article blockquote {
   width: auto;
   height: auto;
   background-color: transparent;
-  color: #555;
+  color: #25AFCC;
   font: 500 20px 'Nova-Bold', Arial, sans-serif;
-  border: 3px solid #555;
+  border: 3px solid #25AFCC;
   border-radius: 0px;
   text-decoration: none;
   -webkit-transition: all 0.25s ease-in-out;
@@ -570,8 +572,8 @@ article blockquote {
   transition: all 0.25s ease-in-out;
 }
 .button:hover, .button:focus {
-  background-color: #444;
-  border-color: #444;
+  background-color: #25AFCC;
+  border-color: #25AFCC;
   color: #fff;
 }
 
@@ -590,7 +592,7 @@ article blockquote {
   background-size: 32px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.2);;
   background-image: url("../images/ui/down.svg");
   border-radius: 50%;
   -webkit-transition: all 0.25s ease-in-out;
@@ -898,7 +900,7 @@ article blockquote {
 /* Tiles */
 
 .big-tile { height: 320px; }
-.large-tile { max-width: 48%; height: 320px; }
+.large-tile { max-width: 49%; height: 300px; }
 .quad-tile { max-width: 31.33%; height: 280px; }
 
 .tile {
@@ -906,8 +908,8 @@ article blockquote {
   z-index: 1;
   float: left;
   display: block;
-  width: 98%;
-  margin: 1%;
+  width: 99%;
+  margin: 0.5%;
   background-color: #444;
   overflow: hidden;
 }
@@ -1077,6 +1079,118 @@ article blockquote {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d8b8', endColorstr='#00bbff',GradientType=1 );
 }
 
+/* Box Services */
+
+.box-serv {
+  position: relative;
+  display: inline-block;
+  margin: 40px auto 0;
+  padding: 20px 0;
+  text-align: center;
+  border: 0;
+  height: 380px;
+  width: 320px;
+  background-color: #fff;
+  color: transparent;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.box-serv:hover, .box-serv:focus {
+  background-color: #eee;
+}
+.box-serv h2 {
+  padding: 20px 0;
+  font: 700 28px 'Nova Bold', Arial, sans-serif;
+  color: #444;
+}
+.box-serv span {
+  display: inline-block;
+  padding: 0 48px;
+  font: 300 18px 'Roboto-Light', Arial, sans-serif;
+  line-height: 1.4em;
+  color: #444;
+}
+.box-serv figure {
+  margin: 0 auto;
+  width: 124px;
+  height: 124px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
+  background-color: #25AFCC;
+  border-radius: 50%;
+}
+
+/* Box Home */
+
+.box-home {
+  position: relative;
+  display: inline-block;
+  float: none;
+  margin: 1.4%;
+  padding: 0;
+  text-align: center;
+  border: 0;
+  height: 280px;
+  width: 30%;
+  background-color: #888;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.box-home a {
+  float: left;
+  padding: 120px 0 0 0;
+  margin: 0;
+  width: 100%;
+  height: 160px;
+  color: transparent;
+  background-color: rgba(37, 175, 204, 0.9);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.box-home a:hover, .box-home a:focus {
+  background-color: rgba(64, 64, 64, 0.88);
+  color: #fff;
+  padding: 60px 0 0 0;
+  height: 220px;
+}
+.box-home h4 {
+  text-align: center;
+  padding: 0;
+  font: 700 34px 'Nova-Bold', Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.box-home span {
+  display: inline-block;
+  padding: 12px 48px;
+  font: 300 18px 'Roboto-Light', Arial, sans-serif;
+  line-height: 1.4em;
+}
+.box-home span:before {
+  content: ' ';
+  position: relative;
+  display: inline-block;
+  height: 3px;
+  left: auto;
+  width: 20%;
+  padding: 0;
+  bottom: auto;
+  margin: 0 40%;
+  top: -12px;
+  background-color: #fff;
+  }
+
+
 /* Contact Form */
 
 form {
@@ -1184,10 +1298,10 @@ input[type="submit"]:active {
 
 /* Media Queries */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1800px) {
   
   body {
-    margin: 60px 0 0 0;
+    margin: 30px 0 0 0;
   }
   header {
     width: auto;
@@ -1197,7 +1311,7 @@ input[type="submit"]:active {
   }
   header a {
     float: left;
-    color: #444;
+    color: #25AFCC;
     padding: 23px 20px 18px;
   }
   header h1, header h1 span { 
@@ -1221,7 +1335,7 @@ input[type="submit"]:active {
   header nav {
     position: fixed;
     z-index: 99999;
-    background-color: #fff;
+    background-color: #25AFCC;
     width: 240px;
     height: 100%;
     overflow-x: auto;
@@ -1235,15 +1349,24 @@ input[type="submit"]:active {
     transition-timing-function: cubic-bezier(0.7,0,0.3,1);
   }
   header nav a {
+    display: block;
+    float: left;
     text-align: left;
     width: 64%;
-    padding: 0 18%;
-    line-height: 52px;
-    padding-top: 2px;
-    font-size: 1.2em;
+    height: auto;
+    padding: 20px 18% 18px;
+    line-height: normal;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 4px;
+    text-transform: uppercase;
   }
   header nav a:hover {
-    background-color: #eee;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .active {
+    color: #fff;
   }
 
   /* Menu Button */
@@ -1268,7 +1391,7 @@ input[type="submit"]:active {
     display: block;
     width: 28px;
     padding: 8px 0 7px;
-    border: solid #444;
+    border: solid #25AFCC;
     border-width: 3px 0;
   }
   #menu-button:after {
@@ -1278,7 +1401,7 @@ input[type="submit"]:active {
     top: 29px;
     height: 3px;
     width: 28px;
-    background: #444;
+    background: #25AFCC;
   }
 
   /* Close Button */
@@ -1304,7 +1427,7 @@ input[type="submit"]:active {
     height: 100%;
     top: 0;
     left: 50%;
-    background: #ddd;
+    background: #fff;
   }
   #close-button::before {
     -webkit-transform: rotate(45deg);
@@ -1359,7 +1482,9 @@ input[type="submit"]:active {
   .box-pro {
     width: 46%;
   }
-
+  .box-home {
+    width: 46%;
+  }
 }
 
 @media screen and (max-width: 800px) { 
@@ -1417,6 +1542,10 @@ input[type="submit"]:active {
     width: 100%;
     margin: 0;
   }
+  .box-home {
+    width: 100%;
+    margin: 4px 0;
+  }
   .box-pro span {
     display: none;
   }
@@ -1425,8 +1554,8 @@ input[type="submit"]:active {
     padding: 10px 0;
   }
   .min-padding {
-    padding: 0;
-    width: 100%;
+    padding: 0.5%;
+    width: 99%;
   }
   .chapter h3 {
     font-size: 26px;
@@ -1503,4 +1632,8 @@ input[type="submit"]:active {
   h2, h3 { 
     page-break-after: avoid; 
   }
+}
+
+.my-color {
+  color: #42B4CC / #25AFCC;
 }
