@@ -1348,7 +1348,7 @@ input[type="submit"]:active {
     background-color: rgba(60, 60, 60, 0.8);
   }
   header a, #menu-button {
-    margin: 0 20px;
+    margin: 0;
     background-color: transparent;
     border-radius: 0;
   }
@@ -1429,7 +1429,7 @@ input[type="submit"]:active {
   .down {
     bottom: 0;
     position: relative;
-    margin: 40px;
+    margin: 32px 0 0;
   }
   form {
     width: 90%;
