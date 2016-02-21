@@ -413,7 +413,7 @@ article blockquote {
   width: 100%;
   padding: 0;
 }
-.img-home { background-image: url("../images/backgrounds/lucas.jpg"); }
+.img-home { background-image: url("../images/backgrounds/lucas.jpg"); background-position: left center; }
 .img-home-2 { background-image: url("../images/backgrounds/n.png"); }
 .img-projects { background-image: url("../images/backgrounds/sky.jpg"); }
 .img-blog { background-image: url("../images/backgrounds/cup.jpg"); }
@@ -555,9 +555,6 @@ article blockquote {
   vertical-align: middle;
 }
 
-.hide {
-  display: none;
-}
 .active {
   color: #444;
   background-color: transparent;
@@ -1335,9 +1332,6 @@ input[type="submit"]:active {
 
 @media screen and (max-width: 1800px) {
 
-  .hide {
-    display: block;
-  }
   .down { 
     bottom: 28px;
   }
@@ -1350,12 +1344,16 @@ input[type="submit"]:active {
 @media screen and (max-width: 1000px) { 
 
   header {
-    height: 80px;
-    background-color: rgba(60, 60, 60, 0.6);
+    height: 60px;
+    background-color: rgba(60, 60, 60, 0.8);
   }
   header a, #menu-button {
-    margin: 10px 20px;
+    margin: 0 20px;
     background-color: transparent;
+    border-radius: 0;
+  }
+  header a:hover, #menu-button:hover { 
+    border-color: #444;
   }
 
   .box-pro {
@@ -1365,7 +1363,7 @@ input[type="submit"]:active {
 
 @media screen and (max-width: 500px) {
   
-  header h1, header h1 span { 
+  header h1 { 
     letter-spacing: 1px;
   }
   section {
@@ -1448,8 +1446,4 @@ input[type="submit"]:active {
     height: 200px;
   }
 
-}
-
-.my-color {
-  color: #42B4CC / #25AFCC;
 }
