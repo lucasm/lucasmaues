@@ -887,12 +887,12 @@ article blockquote {
   position: relative;
   display: inline-block;
   float: none;
-  margin: 1.4%;
+  margin: 2%;
   padding: 0;
   text-align: center;
   border: 0;
-  height: 520px;
-  width: 320px;
+  height: 500px;
+  width: 28%;
   background-color: #fff;
   background-position: center center;
   background-size: cover;
@@ -910,10 +910,10 @@ article blockquote {
 }
 .box-pro div a {
   float: left;
-  padding: 40px 0 0 0;
+  padding: 48px 0 0 0;
   margin: 0;
   width: 100%;
-  height: 240px;
+  height: 232px;
   color: transparent;
   background-color: rgba(54, 54, 54, 0.88);
   -webkit-transition: all 0.25s ease-in-out;
@@ -934,7 +934,7 @@ article blockquote {
 .box-pro figure {
   margin: 0;
   width: 100%;
-  height: 132px;
+  height: 128px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 80px;
@@ -951,7 +951,7 @@ article blockquote {
   float: left;
   text-align: left;
   padding: 30px 0 0 0;
-  font: 400 16px 'Roboto-Regular', Arial, sans-serif;
+  font: 500 14px 'Roboto-Medium', Arial, sans-serif;
   line-height: 1.8em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1045,7 +1045,7 @@ article blockquote {
   height: 460px;
   margin: 24px;
   padding: 0 0 20px;
-  background-color: #fff;
+  background-color: transparent;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -1054,17 +1054,17 @@ article blockquote {
 }
 .box-post:hover, .box-post:focus {
   background-color: #fff;
-  opacity: 0.9; 
+  opacity: 0.8; 
   /* box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); */
 }
 .box-post h2 {
   float: left;
   text-align: left;
   width: auto;
-  padding: 20px 0 18px;
+  padding: 20px 0 14px;
   margin: 0 auto;
-  color: #333;
-  letter-spacing: -1px;
+  color: #fff;
+  letter-spacing: -0.5px;
   font: 700 32px 'Nova-Bold', 'Roboto-Medium', Arial, sans-serif;
   line-height: normal;
 }
@@ -1074,7 +1074,7 @@ article blockquote {
   width: auto;
   padding: 0;
   margin: 0 auto;
-  color: #666;
+  color: #fff;
   font: 300 18px 'Roboto-Light', Arial, sans-serif;;
   line-height: 1.6em;
   background-color: transparent;
@@ -1095,12 +1095,13 @@ article blockquote {
   background-color: #eee;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  border: 2px solid #fff;
 }
 .box-post span {
   position: absolute;
   width: auto;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 10px;
   text-transform: uppercase;
   padding: 8px 12px 6px;
   margin: 0;
@@ -1108,10 +1109,6 @@ article blockquote {
   font: 400 12px 'Roboto-light', Arial, sans-serif;
   letter-spacing: 1px;
   color: #fff;
-}
-.box-post span:hover, .box-post span:focus {
-  color: #333;
-  background-color: #fff;
 }
 
 /* Tiles */
@@ -1400,7 +1397,16 @@ input[type="submit"]:active {
   }
 
   .box-pro {
-    width: 46%;
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 650px) { 
+
+  .box-pro {
+    width: 96%;
+    height: auto;
+    padding: 0 0 32px 0;
   }
 }
 
@@ -1418,7 +1424,7 @@ input[type="submit"]:active {
   }
   .page h2 {
     padding: 20px 0 10px 0;
-    font-size: 64px;
+    font-size: 46px;
     line-height: 1em;
   }
   .page p {
@@ -1444,12 +1450,8 @@ input[type="submit"]:active {
   .box-post {
     height: auto;
   }
-  .box-post h2, .box-post p {
-    text-align: center;
-  }
-  .box-pro {
-    width: 100%;
-    margin: 0;
+  .box-post h2 { 
+    font-size: 28px;
   }
   .tile {
     width: 100%;
