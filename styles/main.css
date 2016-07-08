@@ -366,7 +366,7 @@ p {
   line-height: 1.88em;
   letter-spacing: 0;
   text-align: center;
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 12px 20px;
   text-transform: none;
@@ -464,7 +464,7 @@ article blockquote {
 
 .img-home { background-image: url("../images/backgrounds/lucas-0.jpg"); background-position: left center !important; }
 .img-about { background-image: url("../images/backgrounds/lucas-3.jpg"); }
-.img-projects { background-image: url("../images/backgrounds/sky-balloon.jpg"); background-position: right center !important; }
+.img-projects { background-image: url("../images/backgrounds/sky-balloon.jpg"); }
 .img-services { background-image: url("../images/backgrounds/notebook-smartphone.jpg"); }
 .img-work { background-image: url("../images/backgrounds/workdesk.jpg"); }
 .img-blog { background-image: url("../images/backgrounds/workspace.jpg"); }
@@ -688,7 +688,7 @@ article blockquote {
   display: inline-block;
   max-width: 680px;
   height: auto;
-  margin: 24px;
+  margin: 24px 24px 0;
   padding: 0 0 32px;
   background-color: transparent;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -696,7 +696,7 @@ article blockquote {
 .home-articles h4 {
   float: left;
   text-align: left;
-  padding: 20px 0 14px;
+  padding: 20px 0 10px;
   line-height: normal;
 }
 .home-articles p {
@@ -704,6 +704,7 @@ article blockquote {
   text-align: left;
   width: 100%;
   padding: 0;
+  max-width: 100%;
   color: #888;
   line-height: 1.6em;
   background-color: transparent;
@@ -1038,7 +1039,7 @@ article blockquote {
   max-width: 1040px;
   width: 98%;
   height: auto;
-  padding: 24px 1% 0;
+  padding: 18px 1% 0;
 }
 
 .tile-big { max-width: 98%; height: 380px; }
@@ -1061,6 +1062,7 @@ article blockquote {
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
+  background-color: #eee;
   overflow: hidden;
 }
 .tile figure {
@@ -1101,19 +1103,13 @@ article blockquote {
   color: transparent;
   background: rgba(40, 40, 40, 0.0);
   transition: all 0.25s ease-in-out;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
 }
 .tile a:hover, .tile a:focus {
   background: rgba(40, 40, 40, 1);
 }
-
 .tile a:hover h4, .tile a:focus h4 {
   color: #fff;
 }
-
 .tile h4 {
   position: absolute;
   bottom: 0;
@@ -1124,6 +1120,7 @@ article blockquote {
   color: transparent;
   max-width: 480px;
   letter-spacing: normal;
+  transition: all 0.25s ease-in-out;
 }
 .tile span {
   position: absolute;
