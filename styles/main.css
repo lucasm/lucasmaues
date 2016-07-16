@@ -1115,7 +1115,7 @@ article blockquote {
   bottom: 0;
   left: 0;*/
   float: left;
-  text-align: left;
+  text-align: center;
   padding: 18px 10%;
   font: 28px 700 'Nova-Bold', Arial, sans-serif;
   color: transparent;
@@ -1126,7 +1126,7 @@ article blockquote {
 }
 .tile p {
   float: left;
-  text-align: left;
+  text-align: center;
   color: transparent;
   font-size: 14px;
   letter-spacing: 2px;
