@@ -1405,7 +1405,7 @@ input[type="submit"]:active {
   text-shadow: none;
 }
 
-#countdown {
+/*#countdown {
   position: relative;
   display: inline-block;
   float: none;
@@ -1420,7 +1420,7 @@ input[type="submit"]:active {
   font-weight: 500;
   font-size: 1rem;
   color: #fff;
-}
+}*/
 
 
 /* desktop */
