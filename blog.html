@@ -1,223 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Blog – Lucas Mauess</title>
-	<meta name="description" content="Sharing ideas about web and mobile development, design, programming and technologies trends.">
-	<meta name="keywords" content="lucas, mauess, maues, blog, web, design, mobile, development, programming">
+	<meta name="description" content="Sharing ideas about web and mobile development, ux design, digital marketing and tech trends.">
+	<meta name="keywords" content="lucas mauess, lucas mauess blog, front end articles, web design trends, mobile development articles, digital marketing tips">
     <meta name="author" content="Lucas Mauess">
+
+    <link rel="canonical" href="https://lucasmauess.com/articles">
 
   	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
   	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/icons/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#141414">
 
     <script src="scripts/headroom.js"></script>
+
+    <!-- <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-60745752-1', 'auto');
+	  ga('send', 'pageview');
+	</script> -->
 </head>
     
 <body>
 
-
     <header role="banner" id="header">
 
         <a href="index.html" id="logo">Lucas Mauess</a>
+        <button id="menu" onclick="openMenu();"></button>
 
-		<button id="menu-button" onclick="openMenu();"></button>
-
-		<div class="layer-menu" onclick="closeMenu();">
-			<button id="close-button" onclick="closeMenu();"></button>
-		</div>
+		<div class="layer-menu" onclick="closeMenu();"></div>
 
 		<nav role="navigation">
+			<button id="close" onclick="closeMenu();"></button>
 			<ul>
-			    <li><a href="index.html">Home</a></li>
-			    <li><a href="about.html">About</a></li>
-			    <li><a href="services.html">Services</a></li>
-                <li><a href="work.html">Work</a></li>
- 	            <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html" id="active">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html" class="underline-left">About</a></li>
+				<li><a href="projects.html" class="underline-left">Projects</a></li>
+				<li><a href="services.html" class="underline-left">Services</a></li>
+				<li><a href="blog.html" class="underline-left active">Blog</a></li>
+                <li><a href="contact.html" class="underline-left">Contact</a></li>
 			</ul>
 		</nav>
         
     </header>
 
-    <section class="full-screen img-blog">
+    <main role="main">
 
-	    <div class="screen-container layer page">
+    <section class="full-screen page page-blog img-articles">
 
-	    	<h1>Blog</h1>
-	    	<p>Ideas about web, mobile, development, design, marketing and trends.</p>
+	    <div class="screen-container layer">
 
-	    	<div class="bar">
+	    <div class="left">
 
-	    		<a href="#" title="Share this page">
-			    	<figure class="icon-share"></figure>
-			    	<span>Share</span>
-		    	</a>
+	    	<h1>Sharing ideas about the web.</h1>
+	    	<!-- <p>Articles about web development, design, digital marketing, tech trends and other things.</p> -->
 
-		    	<a href="#" title="Search for articles">
+ 	    	<div class="bar">
+
+ 	    		<a href="#" title="Search for articles" class="underline-left">
 		    		<figure class="icon-search"></figure>
-		    		<span>Search</span> 
+		    		<h4>Search</h4> 
 		    	</a>
 
-		    	<a href="#" title="View all categories">
-			    	<figure class="icon-tags"></figure>
-			    	<span>Tags</span>
+ 	    		<a href="#" title="Share this page" class="underline-left">
+			    	<figure class="icon-share"></figure>
+			    	<h4>Share</h4>
 		    	</a>
 
-		    	<a href="feed.xml" title="Subscribe the RSS feed">
+		    	<a href="feed.xml" title="Subscribe the RSS feed" class="underline-left" target="_blank">
 			    	<figure class="icon-feed"></figure>
-			    	<span>Feed</span>
+			    	<h4>Feed</h4>
 		    	</a>
+
+		    	<!-- <a href="#" title="View all categories">
+			    	<figure class="icon-tags"></figure>
+			    	<h4>Tags</h4>
+		    	</a> -->
 
 		    </div>
 
-			<a href="#down" class="down"></a>
+			<a href="#articles" id="down"></a>
+
+			</div>
 
 	    </div>
 
     </section>
 
-    <!-- Box Search -->
-
-    <!-- Box Share -->
-
-    <!-- Box Tags -->
-
-	<!-- <section>
+    <section>
     	
-    	<a aria-label="Compartilhe no Twitter" href="https://twitter.com/intent/tweet?url=seusite/&amp;text=seutexto&amp;via=seutwitter" onclick="window.open(this.href, 'twitter-share', 'width=550,height=260');return false;" title="Compartilhe no Twitter">Twitter</a>
+    <h3>Coming soon...</h3>
 
-    	<a aria-label="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=linkdoseusite" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook"> Facebook</a>
+    </section>
 
-    	<a aria-label="Compartilhe no Google Plus" href="https://plus.google.com/share?url=seusite" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Compartilhe no Google+">Google+</a>
 
-    </section> -->
+	<!-- 
+    	
+    	<a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?url=seusite/&amp;text=seutexto&amp;via=seutwitter" onclick="window.open(this.href, 'twitter-share', 'width=550,height=260');return false;">Twitter</a>
 
-    <section id="down">
+    	<a aria-label="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=linkdoseusite" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"> Facebook</a>
 
-    	<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>Ruby</span>
-			<h3>How to install Jekyll on Windows</h3>
-			<p>A simple guide to install all things necessary to run Jekyll on Windows with no problems.</p>
-		</a>
+    	<a aria-label="Share on Google+" href="https://plus.google.com/share?url=seusite" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">Google+</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>Design</span>
-			<h3>How to LEGO become a powerfull tool for develop creativity</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+     -->
 
-    	<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>CSS</span>
-			<h3>What to expect from 4 version of CSS?</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+    <!-- <section id="articles" class="auto-screen">
 
-		<a href="#" class="post">
-			<figure style="background-image: url("");"></figure>
-			<span>HTML</span>
-			<h3>The best sites to learn HTML5 for free</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+    	<div class="screen-container">
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>Fonts</span>
-			<h3>The best sites to find and download free fonts</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+	    <div class="box">
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>Web Development</span>
-			<h3>Progressive Web Apps is the future of web development?</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+	    	<a href="#">
+				<figure class="red-color" style="background-image: url('');"></figure>
+				<span>Ruby</span>
+				<h3>How to install Jekyll on Windows</h3>
+				<p>A simple guide to install all things necessary to run Jekyll on Windows with no problems.</p>
+			</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>SVG</span>
-			<h3>Animating SVG with CSS</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+			<a href="#">
+				<figure class="blue-color" style="background-image: url('');"></figure>
+				<span>Web Development</span>
+				<h3>Progressive Web Apps is the future of web development?</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>JavaScript</span>
-			<h3>The best ways to learn JavaScript online</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+	    	<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>CSS</span>
+				<h3>What to expect from CSS version 4?</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>Web Development</span>
-			<h3>Web Fundamentals – the best practices for web development</h3>
-			<p>A great guide made by Google Developers.</p>
-		</a>
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>HTML</span>
+				<h3>The best sites to learn HTML5 for free</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>UX</span>
-			<h3>Accessibility x Usability</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>Fonts</span>
+				<h3>The best sites to find and download free fonts</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>SEO</span>
-			<h3>How to improve SEO?</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>SVG</span>
+				<h3>Animating SVG with CSS</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
 
-		<a href="#" class="post">
-			<figure style="background-image: url('');"></figure>
-			<span>APIs</span>
-			<h3>Push API – the new W3C standard for web notifications</h3>
-			<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
-		</a>
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>JavaScript</span>
+				<h3>The best ways to learn JavaScript online</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
 
-		<div>
-			<a href="#" class="button">Load More</a>
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>UX</span>
+				<h3>Accessibility x Usability</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
+
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>SEO</span>
+				<h3>How to improve SEO?</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
+
+			<a href="#">
+				<figure style="background-image: url('');"></figure>
+				<span>Web APIs</span>
+				<h3>Push API – the new W3C standard for web notifications</h3>
+				<p>Lorem ipsum dolor sit amet, eum nostrud offendit in, pri in posse quidam necessitatibus.</p>
+			</a>
+
 		</div>
 
-	</section>
+		<div>
+			<a href="#" class="button bounce">Load More</a>
+		</div>
+
+		</div>
+
+	</section> -->
+
+	</main>
 
     <footer>
-    	<ul>
-            <li><a href="index.html" accesskey="h">Home</a></li>
-            <li><a href="about.html" accesskey="a">About</a></li>
-            <li><a href="services.html" accesskey="s">Services</a></li>
-            <li><a href="work.html" accesskey="w">Work</a></li>
-            <li><a href="projects.html" accesskey="p">Projects</a></li>
-            <li><a href="blog.html" accesskey="b">Blog</a></li>
-            <li><a href="contact.html" accesskey="c">Contact</a></li>
-            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
-	    </ul>
-	    <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+        <p>Copyright &copy; 2017 Lucas Mauess. All rights reserved. <a href="legal.html" accesskey="l">Legal info</a>.</p>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>   
-<script src="scripts/scroll.js"></script>
-<script src="scripts/menu.js"></script>
-<script src="scripts/header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/functions.js"></script>
 <script src="scripts/pace.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-60745752-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 </body>
 

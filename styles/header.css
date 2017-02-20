@@ -2,7 +2,7 @@
   display: block;
 }
 
-/* peace.js progress bar */
+/* pace.js - progress bar */
 
 .pace {
   -webkit-pointer-events: none;
@@ -24,9 +24,9 @@
   height: 3px;
 }
 
-/* headroom.js animated styles */
+/* headroom.js - animated styles */
 
-.slide{
+.slide {
   -webkit-transition:all .25s ease-in-out;
   -moz-transition:all .25s ease-in-out;
   -o-transition:all .25s ease-in-out;

@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Projects – Lucas Mauess</title>
-	<meta name="description" content="Open source projects of web sites, applications, tools and experiments. Discover and contribute.">
-	<meta name="keywords" content="lucas mauess, lucas maues, lucas maués, lucas mauess projects, lucas maues projects">
-	<meta name="author" content="Lucas Mauess">
+	<meta name="description" content="Websites, progressive web apps, UX and UI prototypes, SEO and SMO strategies. The portfolio of Lucas Mauess.">
+	<meta name="keywords" content="lucas mauess work, lucas mauess projects, lucas mauess portfolio">
+    <meta name="author" content="Lucas Mauess">
 
-  	<link href="styles/main.css" rel="stylesheet" type="text/css"/>
-  	<link href="styles/header.css" rel="stylesheet" type="text/css"/>
+    <link rel="canonical" href="https://lucasmauess.com/projects">
 
-    <link rel="shortcut icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link href="styles/header.css" rel="stylesheet" type="text/css"/>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#141414">
 
     <script src="scripts/headroom.js"></script>
+    
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-60745752-1', 'auto');
+      ga('send', 'pageview');
+    </script> -->
 </head>
     
 <body>
@@ -24,204 +35,396 @@
     <header role="banner" id="header">
 
         <a href="index.html" id="logo">Lucas Mauess</a>
+        <button id="menu" onclick="openMenu();"></button>
 
-        <button id="menu-button" onclick="openMenu();"></button>
-        <div class="layer-menu" onclick="closeMenu();">
-            <button id="close-button" onclick="closeMenu();"></button>
-        </div>
+        <div class="layer-menu" onclick="closeMenu();"></div>
 
         <nav role="navigation">
+            <button id="close" onclick="closeMenu();"></button>
             <ul>
-			    <li><a href="index.html">Home</a></li>
-			    <li><a href="about.html">About</a></li>
-			    <li><a href="services.html">Services</a></li>
-                <li><a href="work.html">Work</a></li> 	            
-                <li><a href="projects.html" id="active">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html" class="underline-left">About</a></li>
+                <li><a href="projects.html" class="underline-left active">Projects</a></li>
+                <li><a href="services.html" class="underline-left">Services</a></li>
+                <li><a href="blog.html" class="underline-left">Blog</a></li>
+                <li><a href="contact.html" class="underline-left">Contact</a></li>
             </ul>
         </nav>
         
     </header>
 
-    <section class="full-screen img-projects">
+    <section class="full-screen page-work page img-work">
 
-	    <div class="screen-container layer page">
+        <div class="screen-container layer">
 
-	    	<h1>Projects</h1>
-	    	<p>Open source web sites, applications, tools and experiments.</p>
+            <div class="left">
 
-		    <a href="#down" class="down"></a>
+    	    	<h1>Selected projects I've worked on.</h1>
+                <p>Web design, development and strategy to build engaging digital experiences. View some case studies.</p>
 
-		</div>
+                <!-- Be happy doing what you love -->
 
-   	</section>
+                <a href="#2017" id="down"></a>
 
-    <section id="down">
-
-    	<!-- <h3>Web Sites & Apps</h3> -->
-
-    	<div class="tile-container">
-
-		<a href="http://inblug.com/searchy" class="project blue-color">
-			<div class="search-icon"></div>
-			<h4>Searchy</h4>
-			<p>A modern tool to search on web. Quickly search in multiple engines, use modules to find any content direct at source. With voice recognition, auto suggest and total privacy.</p>
-		</a>
-
-		<a href="http://inblug.com/vydeon" class="project red-color">
-			<div class="video-icon"></div>
-			<h4>Vydeon</h4> <!-- VideoZy -->
-			<p>A immersive and customizable TV based interface on the web with a collection of the best channels and streaming services to watch online.</p>
-		</a>
-
-		<a href="http://inblug.com/flyed" class="project orange-color">
-			<div class="worlfeed"></div>
-			<h4>Flyeed</h4> <!-- WorlFeed -->
-			<p>News made by social. Stay updated with social media feed of the world's leading news websites. In real time update with the breaking news.</p>
-		</a>
-
-		<a href="http://inblug.com/homy" class="project yellow-color">
-			<div class="home-icon"></div>
-			<h4>Homy</h4> <!-- Favys / Favoritess -->
-			<p>A modern visual directory that shows only the best and most popular websites of the world in many different categories.</p>
-		</a>
-
-		<a href="http://inblug.com/localy" class="project green-color">
-			<div class="local-icon"></div>
-			<h4>Localy</h4>
-			<p>See the best places near you, based on your current location. Foursquare API / Google Maps API.</p>
-		</a>
-
-		<a href="http://inblug.com/desygn" class="project purple-color">
-			<div class="design-icon"></div>
-			<h4>Desygn</h4>
-			<p>Redesign of popular websites and applications. Because is time to view everything in a new perspective.</p>
-		</a>
-
-		<a href="http://inblug.com/muxyc" class="project pink-color">
-			<div class="music-icon"></div>
-			<h4>Muxyc</h4>
-			<p>Find metadata about artists, albums, and tracks directly from streaming music services catalogues. Gracenote Web API / SoundCloud API / Spotify API</p>
-		</a>
-
-		<a href="http://inblug.com/appy" class="project blue-2-color">
-			<div class="app-icon"></div>
-			<h4>Appy</h4>
-			<p>The most popular applications in mobile stores (Google Play Store, App Store, Windows Store, Amazon Appstore, Opera Mobile Store, Chrome Web Store and Firefox Marketplace) in one place.</p>
-		</a>
-
-		<a href="http://inblug.com/camery" class="project purple-color">
-			<div class="camera-icon"></div>
-			<h4>Camery</h4>
-			<p>A very simple webcam and camera viewer application.</p>
-		</a>
-
-		<a href="http://inblug.com/educy" class="project aqua-color">
-			<div class="education-icon"></div>
-			<h4>Educy</h4>
-			<p>Link to free online courses.</p>
-		</a>
-
-		<a href="http://inblug.com/gamys" class="project green-2-color">
-			<div class="game-icon"></div>
-			<h4>Gamys</h4>
-			<p>Games that run on Web.</p>
-		</a>
-
-		<a href="http://inblug.com/scyence" class="project green-2-color">
-			<div class="science-icon"></div>
-			<h4>Scyence</h4>
-			<p>Modern science resources.</p>
-		</a>
-
-		</div>-
+            </div>
+            
+        </div>
 
     </section>
 
-	<!-- <section>
 
- 		<h2>Startup</h2>
+    <!-- <div class="box box-project">
 
-    	<div class="box-pro">
-			<div class="img-inblug">
-				<a href="http://inblug.com/">
-					<figure class="inblug"></figure>
-				</a>
-			</div>
-			<h3>INBLUG</h3>
-			<span>Make an idea in web project</span>
-			<p>A startup specializing in collaborative design and development of high-end projects of websites and mobile apps.</p>
-		</div>
+            <a href="http://inblug.com/search">
+                <figure style="background-image: url('images/projects/search.jpg');">
+                    <div class="color-blue">
+                        <h3>Searchy</h3>
+                    </div>
+                </figure>
+                <p>A search tool that make more productive find content on web.</p>
+            </a>
 
-    </section> -->
+            <a href="http://inblug.com/feed">
+                <figure style="background-image: url('images/projects/project_newspapers.jpg');">
+                    <div class="color-flyeed">
+                        <h3>Flyeed</h3>
+                    </div>
+                </figure>
+                <p>A dynamic feed experience with news headlines.</p>
+            </a>
 
-    <section>
+            <a href="http://inblug.com/video">
+                <figure>
+                    <div class="color-red">
+                        <h3>Vydeon</h3>
+                    </div>
+                </figure>
+                <p>A UI concept for browsing in video streaming services.</p>
+            </a>
 
-    <h3>Tools & Experiments</h3>
+            <a href="http://inblug.com/edu">
+                <figure class="color-educy">
+                    <h3>Educy</h3>
+                </figure>
+                <p>A curated directory to find best sources to learn online..</p>
+            </a>
 
-		<a href="#" class="project">
-			<div style="background-image: url('images/projects/template.png');"></div>
-			<h4>Boilerplate</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-		</a>
+            <a href="#">
+                <figure class="color-homy">
+                    <h3>Homy</h3>
+                </figure>
+                <p>A modern visual directory with the best of web in categories.</p>
+            </a>
 
-		<a href="#" class="project">
-			<div style="background-image: url('images/projects/voice.png');"></div>
-			<h4>Web Speech API</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-		</a>
+            <a href="#">
+                <figure class="color-camery">
+                    <h3>Camyra</h3>
+                </figure>
+                <p>A simple and beautiful webcam viewer application.</p>
+            </a>
 
-		<a href="#" class="project">
-			<div style="background-image: url('images/projects/notification.png');"></div>
-			<h4>Web Notifications API</h4>
-			<p>Examples of web notifications, with a standards guide to implement the W3C API for end-user notifications.</p>
-		</a>
+            <a href="#">
+                <figure class="color-localy">
+                    <h3>Localy</h3>
+                </figure>
+                <p>A simple and beautiful webcam viewer application.</p>
+            </a>
 
-		<a href="#" class="project">
-			<div style="background-image: url('images/projects/localization.png');"></div>
-			<h4>Geolocation API</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-		</a>
+            </div> -->
+    
 
-		<a href="#" class="project">
-			<div style="background-image: url('images/projects/media.png');"></div>
-			<h4>Media Capture API</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus justo, pretium vitae faucibus vitae, mollis convallis odio.</p>
-		</a>
+    <section id="2017" class="auto-screen">
 
-		
+    <div class="screen-container">
+
+        <h2>2017</h2>
+
+        <div class="container">
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/search.jpg');"></figure>
+                <a href="#" class="color-blue">
+                    <div>
+                    <h3>Searchy</h3>
+                    <p>[Working on] A search tool that make more productive find content on web.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/project_newspapers.jpg');"></figure>
+                <a href="#" class="color-flyeed">
+                    <div>
+                        <h3>Flyeed</h3>
+                        <p>[Working on] A dynamic feed experience with news headlines.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/vr.jpg');"></figure>
+                <a href="#" class="color-homy">
+                    <div>
+                        <h3>Homyr</h3>
+                        <p>[Working on] A virtual reality visual directory with the best of web in categories.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/video.jpg');"></figure>
+                <a href="#" class="color-red">
+                    <div>
+                        <h3>Vydeon</h3>
+                        <p>[Working on] A modern UI concept for browsing in media streaming services.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/projects_education.jpg');"></figure>
+                <a href="#" class="color-educy">
+                    <div>
+                        <h3>Educy</h3>
+                        <p>[Working on] A collaborative directory to find free online courses and best sources to learn online.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/camera.jpg');"></figure>
+                <a href="#" class="color-camery">
+                    <div>
+                        <h3>Camyra</h3>
+                        <p>[Working on] A modern webcam viewer application.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/projects_music.jpg');"></figure>
+                <a href="#">
+                    <div>
+                        <h3>Muzyc</h3>
+                        <p>[Working on] New music experience on web.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/place.jpg');"></figure>
+                <a href="#" class="color-localy">
+                    <div>
+                        <h3>Localy</h3>
+                        <p>[Working on] Find curious places on web.</p>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <!-- <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/local.jpg');"></figure>
+                <a href="http://inblug.com/zeyt" class="color-muxyc">
+                    <div>
+                        <h3>Zeyt</h3>
+                        <p>A simple and beautiful webcam viewer application.</p>
+                    </div>
+                </a>
+            </div> -->
+
+            <!-- <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/project-planner-site.jpg');"></figure>
+                <a href="http://inblug.com/">
+                    <div>
+                        <h3>INBLUG</h3>
+                        <span></span>
+                        <p>[Currently working] Website for an collaborative digital agency.</p>
+                    </div>
+                </a>
+            </div> -->
+
+        </div> 
+
+    </div>
+
+    </section>
+
+
+    <section id="2016">
+
+        <h2>2016</h2>
+
+        <div class="container">
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/ufpa-belem.jpg');"></figure>
+                <a href="http://radio.ufpa.br/sintonize-ufpa" target="_blank" class="color-sintonize-ufpa">
+                    <div>
+                        <h3>Sintonize UFPA</h3>
+                        <span></span>
+                        <p>Hotsite for a radio program about scientific outreach and news.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/facom-40-anos.jpg');"></figure>
+                <a href="http://radio.ufpa.br/facom-40-anos/" target="_blank" class="color-facom-40-anos">
+                    <div>
+                        <h3>40 Anos Facom UFPA </h3>
+                        <span></span>
+                        <p>Hotsite for radio programs in birthday celebration of a communication college.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/ver-o-peso.jpg');"></figure>
+                <a href="http://radio.ufpa.br/belem-400-anos" target="_blank">
+                    <div>
+                        <h3>Belém 400 Anos</h3>
+                        <span></span>
+                        <p>Hotsite for radio programs in tribute to the 400 years of the city of Belém of Pará.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/eleicao-ufpa.jpg');"></figure>
+                <a href="http://radio.ufpa.br/eleicao-ufpa" target="_blank">
+                    <div>
+                        <h3>Eleições na UFPA</h3>
+                        <span></span>
+                        <p>Hotsite for radio programs on the coverage of elections in a university rectorship.</p>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/player.jpg');"></figure>
+                <a href="http://radio.ufpa.br/player" target="_blank">
+                    <div>
+                        <h3>Player</h3>
+                        <span></span>
+                        <p>A web audio player for a radio stream.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/#.jpg');"></figure>
+                <a href="http://facom.ufpa.br/memoria/">
+                    <div>
+                        <h3>Cuité‏ - Memórias Facom UFPA</h3>
+                        <span></span>
+                        <p>.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/#.jpg');"></figure>
+                <a href="http://facom.ufpa.br/primeiraslinhas/">
+                    <div>
+                        <h3>Jornal-Laboratório Primeiras Linhas</h3>
+                        <span></span>
+                        <p>.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/#.jpg');"></figure>
+                <a href="http://gedai.ufpa.br/">
+                    <div>
+                        <h3>GEDAI UFPA</h3>
+                        <span></span>
+                        <p>.</p>
+                    </div>
+                </a>
+            </div> -->
+
+        </div>
+
+    </section>
+
+
+    <section id="2015">
+
+        <h2>2015</h2>
+
+        <div class="container">
+
+
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/revista-cultural-na-cuia.jpg');"></figure>
+                <a href="http://nacuia.com.br" target="_blank">
+                    <div>
+                        <h3>Revista Cultural Na Cuia</h3>
+                        <span></span>
+                        <p>Website for an cultural journalism independent magazine.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/listao-vestibular-ufpa.jpg');"></figure>
+                <a href="http://radio.ufpa.br/listao" target="_blank">
+                    <div>
+                        <h3>Listão Vestibular UFPA</h3>
+                        <span></span>
+                        <p>Hotsite for audio-list of approved in university entrance examination.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/projects/radio-ufpa.jpg');"></figure>
+                <a href="http://radio.ufpa.br" target="_blank">
+                    <div>
+                        <h3>Rádio Web UFPA</h3>
+                        <span></span>
+                        <p>Website for a university web radio.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="2014">
+
+        <h2>2014</h2>
+
+        <div class="container">
+
+            <div class="tile tile-large">
+                <figure style="background-image: url('images/backgrounds/page-home.jpg');"></figure>
+                <a href="http://lucasmauess.com/" target="_blank">
+                    <div>
+                        <h3>Lucas Mauess</h3>
+                        <span></span>
+                        <p>My personal website.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
 
     </section>
 
     <footer>
-    	<ul>
-            <li><a href="index.html" accesskey="h">Home</a></li>
-            <li><a href="about.html" accesskey="a">About</a></li>
-            <li><a href="services.html" accesskey="s">Services</a></li>
-            <li><a href="work.html" accesskey="w">Work</a></li>            
-            <li><a href="projects.html" accesskey="p">Projects</a></li>
-            <li><a href="blog.html" accesskey="b">Blog</a></li>
-            <li><a href="contact.html" accesskey="c">Contact</a></li>
-            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
-	    </ul>
-	    <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+        <p>Copyright &copy; 2017 Lucas Mauess. All rights reserved. <a href="legal.html" accesskey="l">Legal info</a>.</p>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="scripts/scroll.js"></script>
-<script src="scripts/menu.js"></script>
-<script src="scripts/header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/functions.js"></script>
 <script src="scripts/pace.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-60745752-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 </body>
 

@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Services – Lucas Mauess</title>
-	<meta name="description" content="Sharing ideias about HTML, CSS, JavaScript, PHP and other front-end stuff.">
-	<meta name="keywords" content="lucas mauess, lucas maues, lucas maués, lucas mauess services, web development, web design, front-end development, responsive design, seo, search engine optimization, smo, social media optimization, ui, user interface, ux, user experience, cms, web performance, web accessibility, professional presentations">
+	<meta name="description" content="Services that help elevate your project: Responsive Web Design, Web Development, UX/UI, SEO/SMO and Pro Presentations.">
+	<meta name="keywords" content="lucas mauess, lucas mauess services, web development, front-end development, web design, responsive design, seo, search engine optimization, smo, social media optimization, ui, user interface, ux, user experience, web performance, web accessibility, professional presentations">
     <meta name="author" content="Lucas Mauess">
+
+    <link rel="canonical" href="https://lucasmauess.com/services">
 
     <link href="styles/main.css" rel="stylesheet" type="text/css"/>
     <link href="styles/header.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="shortcut icon" href="images/icons/favicon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#141414">
 
     <script src="scripts/headroom.js"></script>
+
+    <!-- <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-60745752-1', 'auto');
+      ga('send', 'pageview');
+    </script> -->
 </head>
     
 <body>
@@ -24,96 +35,66 @@
     <header role="banner" id="header">
 
         <a href="index.html" id="logo">Lucas Mauess</a>
+        <button id="menu" onclick="openMenu();"></button>
 
-        <button id="menu-button" onclick="openMenu();"></button>
-        <div class="layer-menu" onclick="closeMenu();">
-            <button id="close-button" onclick="closeMenu();"></button>
-        </div>
+        <div class="layer-menu" onclick="closeMenu();"></div>
 
         <nav role="navigation">
+            <button id="close" onclick="closeMenu();"></button>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html" id="active">Services</a></li>
-                <li><a href="work.html">Work</a></li>                
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html" class="underline-left">About</a></li>
+                <li><a href="projects.html" class="underline-left">Projects</a></li>
+                <li><a href="services.html" class="underline-left active">Services</a></li>
+                <li><a href="blog.html" class="underline-left">Blog</a></li>
+                <li><a href="contact.html" class="underline-left">Contact</a></li>
             </ul>
         </nav>
         
     </header>
 
-    <section class="full-screen img-services">
+    <section class="full-screen page page-services img-services">
 
-        <div class="screen-container layer page">
+        <div class="screen-container layer">
 
-    	    <h1>Services</h1>
-    	    <p>How can I help you?</p>
+            <div class="left">
 
-    	    <div class="bar">
+        	    <h1>Digital services for growth.</h1>
 
-                <a href="#responsive-design" title="">
-                    <figure class="icon-layout"></figure>
-                    <span>Responsive<br> Design</span>
-                </a>
+        	    <p>Web sites/apps development, UX/UI design and SEO/SMO strategies. Services that help elevate your project and engage your audience.</p>
 
-                <a href="#web-development" title="">
-                    <figure class="icon-code"></figure>
-                    <span>Web<br> Development</span>
-                </a>
+                <a href="#responsive-design" id="down"></a>
 
-                <a href="#seo-smo" title="">
-                    <figure class="icon-marketing"></figure>
-                    <span>SEO &<br> SMO</span>
-                </a>
-
-                <a href="#ui-ux" title="">
-                    <figure class="icon-colors"></figure>
-                    <span>UI &<br> UX</span>
-                </a>
-
-                <a href="#remote" title="">
-                    <figure class="icon-support"></figure>
-                    <span>Performance &<br> Accessibility</span>
-                </a>
-
-                <a href="#presentation" title="">
-                    <figure class="icon-presentation"></figure>
-                    <span>Presentation</span>
-                </a>
-
-    	    </div>
-
-            <a href="#web-design" class="down"></a>
+            </div>
 
         </div>
 
 	</section>
 
-    <!-- <p>Mobile devices are increasingly utilized to access content and interact with brands. It is critical that you have a solidly executed mobile experience to increase your audience. 
-
-    And I love work together with design and development teams to turn designs into fast and interactive websites and applications.</p> -->
 
     <section id="responsive-design" class="full-screen">
 
         <div class="screen-container">
 
-        <div class="block-container">
+        <div class="container">
 
-            <div class="block-image block-left img-web-design">
-                <figure class="icon-layout"></figure>
-            </div>
+            <div class="block block-left">
 
-            <div class="block-text">
-                <h3>Responsive Web Design</h3>
+                <div class="block-image img-responsive-design">
+                    <figure class="icon-devices"></figure>
+                </div>
 
-                <p>I can develop a efficient responsive interface that look perfect on all device screen (desktop, tablet, mobile and TV). A amazing responsive design to offer for your customers the ideal browsing experience for each device. Focusing on usability and compatibility.</p>
+                <div class="block-text">
+                    <div>
+                        <h3>Responsive Web Design</h3>
 
-                mobile-friendly for the best user experience
-                <p>HTML - CSS (Sass / Less) - JavaScript (jQuery) - SVG - Front-End Frameworks (Bootstrap / Foundation).</p>
+                        <p>I can design and implement responsive interfaces for web sites/apps and email marketing. An adaptable and accessible layout, that look perfect on any screen size, to offer for your customers a cohesive browsing experience on each device.</p>
 
-                <a href="contact.html" class="button">Hire Me</a>
+                        <p>Custom templates, mobile-first designed, using HTML, CSS, JavaScript, PHP, typography and vector figures in SVG or using ready frameworks (Bootstrap, Foundation, Materialize).</p>
+
+                        <!-- <a href="contact?web-design" class="button bounce">Hire this service</a> -->
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -127,100 +108,100 @@
 
         <div class="screen-container">
 
-        <div class="block-container">
+        <div class="container">
 
-            <div class="block-image block-right img-web-development">
+        <div class="block block-right">
+
+            <div class="block-image img-web-development">
                 <figure class="icon-code"></figure>
             </div>
 
             <div class="block-text">
-                <h3>Web Development</h3>
+                <div>
+                    <h3>Web Development</h3>
 
-                <p>I can develop simple websites or complex web applications, with a scalable code (full front-end and basic back-end) focusing on: web standards, performance, accessibility and cross-browser compatibility. And I can also implement content management and version control systems, customized to the project needs.</p>
+                    <p>I can build simple/static websites or complex/progressive web applications, with custom solutions according to the needs of project (blog, ecommerce, landing page). Always focusing on performance, scalability and standards-compliant code.</p>
 
-                <p>JavaScript (AngularJS / NodeJS) - PHP - Ruby (Ruby on Rails) - CMS (WordPress / Joomla!) - VCS (Git)</p>
+                    <p>I have advanced front-end knowledge with JavaScript (Angular, React, jQuery) and basic back-end with PHP and Ruby on Rails. I an also implementat content management systems (WordPress, Joomla), version control systems (Git), databases (MySQL, MongoDB) and APIs integrations.</p>
 
-                <a href="contact.html" class="button">Hire Me</a>
+                    <!-- <a href="contact?web-development" class="button bounce">Hire this service</a> -->
+                </div>
             </div>
+
+        </div>
 
         </div>
 
         </div>
 
     </section>
+
+
+    <section id="ux-ui" class="full-screen alternate">
+
+        <div class="screen-container">
+
+        <div class="container">
+
+            <div class="block block-left">
+
+                <div class="block-image img-ux-ui">
+                    <figure class="icon-ui"></figure>
+                </div>
+
+                <div class="block-text">
+                    <div>
+                        <h3>User Experience & User Interface</h3>
+
+                        <p>Beautiful and imersive digital experiences change the way consumers and brands interact with each other.</p>
+
+                        <p>With data-centric design I can create solid UX/UI prototypes focusing on user needs and expectations. Giving rise to usable, interactive and intuitive interfaces, that help do more with less and enable smart engagement with content to drive growth for businesses and bring relevant impact for people's lives. A design experience that deliver measurable value for both.</p>
+
+                        <!-- Information architecture, storytelling. -->
+
+                        <!-- <a href="contact?ux-ui" class="button bounce">Hire this service</a> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        </div>
+
+    </section>
+
 
     <section id="seo-smo" class="full-screen alternate">
 
         <div class="screen-container">
 
-            <div class="block-container">
+        <div class="container">
 
-                <div class="block-image block-left img-optimization grayscale">
-                    <figure class="icon-seo"></figure>
+            <div class="block block-right">
+
+                <div class="block-image img-seo-smo">
+                    <figure class="icon-marketing"></figure>
                 </div>
 
                 <div class="block-text">
-                    <h3>Search Engine & Social Media Optimization</h3>
+                    <div>
+                        <h3>Search Engine & Social Media Optimization</h3>
 
-                    <p>To reach your target audience (and increase it) your web site or app should be well positioned in search results and your content adaptable for sharing in social media. The algorithms of search engines and sharing patterns of social media are changed constantly. To be relevant, your project needs to be optimized. I can implement an effective SEO / SMO strategy to ensuring better results.</p>
+                        <p>The algorithms of search engines and sharing patterns are changed constantly. To be relevant for your target audience your web site/app should be well positioned in search results (Google, Bing, Yahoo) and your content fully shareable for social media (Facebook, Twitter, messengers).</p>
 
-                    <a href="contact.html" class="button">Ask Budget</a>
+                        <p>I can optimize your content and enhance you visibility implementing effective SEO/SMO strategies that engage your customers and increase your traffic, using analytics insights and metrics to generate more results in organic conversions or in advertising programs (ads of search results/social media).</p>
+
+                        <!-- <a href="contact?seo-smo" class="button bounce">Hire this service</a> -->
+                    </div>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
-
-
-    <section id="ui-ux" class="full-screen alternate">
-
-        <div class="screen-container">
-
-            <div class="block-container">
-
-                <div class="block-image block-right img-ui grayscale">
-                    <figure class="icon-colors"></figure>
-                </div>
-
-                <div class="block-text">
-                    <h3>User Interface & User Experience</h3>
-
-                    <p>Both mobile applications, as web applications need a solid user interface to ensure a powerful user experience. Because it makes all the difference. I can develop UI prototypes understanding the needs and expectations of the user experience and design simple interfaces for complex applications that help users do more with less. Usabilidade, interactivity, arquitetura da informação, storyteller</p>
-
-                    <a href="contact.html" class="button">View Case Studies</a>
-                </div>
-
-            </div>
-
         </div>
 
-    </section>
-
-
-    <section id="remote" class="full-screen alternate">
-        
-        <div class="screen-container">
-
-        <div class="block-container">
-
-            <div class="block-image block-right img-technical grayscale">
-                <figure class="icon-support"></figure>
-            </div>
-
-            <div class="block-text">
-                <h3>Performance & Accessibility</h3>
-
-                <p>I offer remotely maintenance, assistance and full technical support, not only if you hire one of my services, but if some problem is hurting your workflow. Don’t panic. I can fix problems of your your computer, like: install and configure softwares and networks, restore lost files, repair and optimize your system, remove malwares and more. Do you need a help?</p>
-
-                <a href="contact.html" class="button">I Need Help</a>
-            </div>
-
-        </div>
-
-        </div>
-        
     </section>
 
 
@@ -228,56 +209,89 @@
         
         <div class="screen-container">
 
-        <div class="block-container">
+        <div class="container">
 
-            <div class="block-image block-left img-presentation grayscale">
+        <div class="block block-left">
+
+            <div class="block-image  img-presentation">
                 <figure class="icon-presentation"></figure>
             </div>
 
             <div class="block-text">
-                <h3>Professional Presentation</h3>
+                <div>
+                    <h3>Pro Presentations</h3>
 
-                <p>The best way to generate more interest about what your are talking is start with big first visual impact: a modern and dynamic presentation. I use intelligence data and creativity design to enhance the message of your presentation, increasing your potential to generate real results.</p>
+                    <p>The best way to generate more interest about what you are talking is start a  presentation with strong visual impact. I can create a dynamic data-driven design to enhance the message of your presentation, turning in a compelling narrative, increasing your potential to generate results.</p>
 
-                <p>A unique and notable presentation that people feel encouraged to share online and remember ever.</p>
+                    <p>A notable presentation that people remember and feel encouraged to share.</p>
 
-                <a href="contact.html" class="button">Show Me Examples</a>
+                    <!-- <a href="contact?presentation" class="button bounce">Hire this service</a> -->
+                </div>
             </div>
+
+        </div>
 
         </div>
 
         </div>
     </section>
 
+<!--     <section id="remote" class="auto-screen alternate">
+        
+        <div class="screen-container">
+
+        <div class="block block-right">
+
+            <div class="block-image">
+                <figure class="icon-support"></figure>
+            </div>
+
+            <div class="block-text">
+                <div>
+                    <h3>Remote Assistance</h3>
+
+                     <p>I offer remotely assistance and technical support, not only if you hire one of my services, but if some problem is hurting your workflow. Don’t panic, I can fix problems of your computer, like: install and configure  softwares, maintaining networks, restore lost files, repair and optimize your system, remove malwares and more. Do you need a help?</p>
+
+                     <a href="contact?remote" class="button bounce">Get remote help</a>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+        
+    </section> -->
+
+    <section class="auto-screen bg-black layer page">
+
+        <div class="screen-container">
+
+            <h2>Need help with a project?</h2>
+
+            <p>I am currently available to work on new projects.</p>
+
+            <a href="contact" class="button bounce">Get in touch</a>
+
+        </div>
+        
+    </section>
 
     <footer>
-        <ul>
-            <li><a href="index.html" accesskey="h">Home</a></li>
-            <li><a href="about.html" accesskey="a">About</a></li>
-            <li><a href="services.html" accesskey="s">Services</a></li>
-            <li><a href="work.html" accesskey="w">Work</a></li>            
-            <li><a href="projects.html" accesskey="p">Projects</a></li>
-            <li><a href="blog.html" accesskey="b">Blog</a></li>
-            <li><a href="contact.html" accesskey="c">Contact</a></li>
-            <li><a href="licenses.html" accesskey="l">Licenses</a></li>
-        </ul>
-        <p>Copyright &copy; 2016 Lucas Mauess. All rights reserved.</p>
+        <p>Copyright &copy; 2017 Lucas Mauess. All rights reserved. <a href="legal.html" accesskey="l">Legal info</a>.</p>
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="scripts/scroll.js"></script>
-<script src="scripts/menu.js"></script>
-<script src="scripts/header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/functions.js"></script>
 <script src="scripts/pace.js"></script>
 
-<script>
+<!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-60745752-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script> -->
 
 </body>
 
