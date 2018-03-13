@@ -23,9 +23,7 @@ header {
   box-sizing: border-box;
   z-index: 999;
 }
-header.scroll {
-
-}
+header.scroll { }
 
 /* animations for headroom.js */
 .slide {
@@ -51,7 +49,6 @@ header.scroll {
 }
 
 /* navigation menu */
-
 nav {
   position: fixed;
   overflow: hidden;
@@ -61,7 +58,7 @@ nav {
   height: 0;
   width: 100%;
   text-align: center;
-  background: #fff;
+  background: #000;
   -webkit-transition: left 0ms 200ms, height 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: left 0ms 200ms, height 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -76,6 +73,7 @@ nav ul {
   list-style: none;
   position: relative;
   max-width: 1100px;
+  width: 100%;
   top: 50%;
   transform: translateY(-50%);
   display: inline-block;
@@ -85,13 +83,14 @@ nav ul {
 }
 nav ul li {
   float: left;
-  width: 50%;
+  width: 33.333%;
 }
 nav a {
+  color: #fff;
   display: block;
-  padding: .5rem;
+  padding: 1rem .5rem;
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 nav a:hover, nav a:focus {
   opacity: .6;
@@ -100,10 +99,10 @@ nav ul li:last-child a:after {
   content: '';
   position: absolute;
   margin: 1rem;
-  height: 24px;
-  width: 24px;
-  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M18%2013v6a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2V8a2%202%200%200%201%202-2h6%22%3E%3C%2Fpath%3E%3Cpolyline%20points%3D%2215%203%2021%203%2021%209%22%3E%3C%2Fpolyline%3E%3Cline%20x1%3D%2210%22%20y1%3D%2214%22%20x2%3D%2221%22%20y2%3D%223%22%3E%3C%2Fline%3E%3C%2Fsvg%3E');
-  background-size: 24px;
+  height: 26px;
+  width: 26px;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cline%20x1%3D%227%22%20y1%3D%2217%22%20x2%3D%2217%22%20y2%3D%227%22%3E%3C%2Fline%3E%3Cpolyline%20points%3D%227%207%2017%207%2017%2017%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');
+  background-size: 26px;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -123,15 +122,15 @@ header button {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
   border: 0;
   font-size: 0;
   font-weight: 600;
   color: #fff;
   outline: none;
   border-radius: 50%;
-  background-size: 28px;
+  background-size: 26px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000;
@@ -148,11 +147,12 @@ header button:hover, header button:focus {
   background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22rgb(255%2C255%2C255)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cline%20x1%3D%223%22%20y1%3D%2212%22%20x2%3D%2221%22%20y2%3D%2212%22%3E%3C%2Fline%3E%3Cline%20x1%3D%223%22%20y1%3D%226%22%20x2%3D%2221%22%20y2%3D%226%22%3E%3C%2Fline%3E%3Cline%20x1%3D%223%22%20y1%3D%2218%22%20x2%3D%2221%22%20y2%3D%2218%22%3E%3C%2Fline%3E%3C%2Fsvg%3E');
 }
 #close {
+  background-color: #fff;
   position: absolute;
   top: 0;
   right: 0;
   margin: 2rem;
-  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22rgb(255%2C255%2C255)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cline%20x1%3D%2218%22%20y1%3D%226%22%20x2%3D%226%22%20y2%3D%2218%22%3E%3C%2Fline%3E%3Cline%20x1%3D%226%22%20y1%3D%226%22%20x2%3D%2218%22%20y2%3D%2218%22%3E%3C%2Fline%3E%3C%2Fsvg%3E');
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22rgb(0%2C0%2C0)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cline%20x1%3D%2218%22%20y1%3D%226%22%20x2%3D%226%22%20y2%3D%2218%22%3E%3C%2Fline%3E%3Cline%20x1%3D%226%22%20y1%3D%226%22%20x2%3D%2218%22%20y2%3D%2218%22%3E%3C%2Fline%3E%3C%2Fsvg%3E');
 }
 #share {
   left: 0;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 h1 {
-  font-size: 7.4rem;
+  font-size: 6.4rem;
 }
 h2, article h1 {
   font-size: 4.2rem;
@@ -389,13 +389,12 @@ article blockquote {
 .title h1 {
   font-weight: 700;
   line-height: 1;
-  margin: 0 0 2rem;
-  max-width: 650px;
+  margin: 10rem 0 2rem -.45rem;
 }
 .title p {
   font-size: 2.8rem;
-  padding: 0 0 2.8rem;
-  margin: 0;
+  margin: 0 0 2.8rem -.1rem;
+  padding: 0;
   line-height: 1.2;
 }
 .text p {
@@ -574,7 +573,7 @@ article blockquote {
   padding: 0;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 40px;
+  background-size: 42px;
   background-position: 0 center;
   font-size: 0;
 }
@@ -589,7 +588,7 @@ article blockquote {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 1rem 2rem;
+  padding: .875rem 1.8rem;
   width: auto;
   height: auto;
   color: #fff;
@@ -917,9 +916,9 @@ article blockquote {
   height: auto;
   width: auto;
   margin: 0;
-  padding: 1.5rem 3rem;
+  padding: 1.4rem 2.6rem;
   box-sizing: border-box;
-  background-size: 28px;
+  background-size: 26px;
   background-repeat: no-repeat;
   background-position: 0 52%;
   text-align: left;
@@ -960,7 +959,7 @@ form label {
  }
 form input, form textarea {
   float: left;
-  padding: 1.175rem 4%;
+  padding: 1.05rem 4%;
   margin: 0 0 4%;
   background: transparent;
   border: 2px solid #000;
@@ -1082,7 +1081,7 @@ footer p {
 
 /* media queries */
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
 
   p, h1, h2, h3, h4, h5, h6, li, .info-page footer p {
     text-align: center;
@@ -1091,9 +1090,7 @@ footer p {
     display: inline-block;
   }
   nav a {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
+    padding: .5rem;
   }
   nav ul li {
     float: none;
@@ -1136,6 +1133,9 @@ footer p {
   }
   .card p {
     margin: 0 auto;
+  }
+  .title h1 {
+    margin: 0 0 2rem 0;
   }
   .title h1, .title p, .text p, .info-page p, .tile {
     max-width: 100%;
@@ -1185,8 +1185,7 @@ footer p {
   #close, #share {
     margin: 1rem
   }
-  #logo, header button,
-  header.scroll #logo, header.scroll button {
+  #logo, header button, header.scroll #logo, header.scroll button {
     margin: 0;
   }
   #logo {
@@ -1235,6 +1234,6 @@ footer p {
 
 @media screen and (max-width: 500px) {
   .contact a {
-    padding: 1rem 0 1rem 3rem;
+    padding: 1rem 0 1rem 2.6rem;
   }
 }
