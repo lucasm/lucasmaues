@@ -4,10 +4,10 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('service-worker.js').then(function(registration) {
       // registration was successful
-      console.log('ServiceWorker registration successful, with scope: ', registration.scope);
+      console.log('Service Worker registration successful, with scope: ', registration.scope);
     }).catch(function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed, with ', err);
+      // registration failed
+      console.log('Service Worker registration failed, error: ', err);
     });
   });
 }
@@ -80,5 +80,5 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
 // console signature
 
-console.log('\n%cmade by Lucas Mauess', 'background:#000;color:#fff;padding:5px 10px;');
-console.log('%cwww.lucasmauess.com\n', 'margin:0 5px;text-decoration:underline;');
+console.log('\n%cmade by @LucasMauess', 'background:#000;color:#fff;padding:5px 10px;');
+// console.log('%cwww.lucasmauess.com\n', 'margin:0 5px;text-decoration:underline;');

@@ -191,8 +191,6 @@ section {
   vertical-align: middle;
 }
 
-/* links */
-
 a, button {
   color: #000;
   text-decoration: none;
@@ -215,17 +213,16 @@ article a:hover, article a:focus {
   border-color: transparent;
 }
 
-/* texts */
-
 p, h1, h2, h3, h4, h5, h6, li {
   color: #000;
   text-align: left;
 }
 p, li {
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin: 0 auto;
+  color: #555;
 }
 b, strong {
   font-weight: 700;
@@ -256,14 +253,10 @@ hr {
   margin: 3rem 0 1.5rem;
 }
 
-/* image */
-
 img {
   max-width: 80%;
   height: auto;
 }
-
-/* article */
 
 article {
   position: relative;
@@ -347,6 +340,7 @@ article blockquote {
 
 .left {
   display: inline-block;
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem;
@@ -405,13 +399,14 @@ article blockquote {
 }
 .text p:first-child {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.4;
   padding: 0 0 3rem;
   font-style: italic;
+  color: #000;
 }
 
-/* animations */
+/* start animations */
 
 .delay-one {
   -webkit-animation-delay: .5s;
@@ -560,20 +555,21 @@ article blockquote {
 /* icons */
 
 .icons {
-  display: inline-block;
+  float: left;
   margin: 0 auto;
+  max-width: 900px;
 }
 .icons a {
   position: relative;
   float: left;
   display: inline-block;
-  width: 105px;
-  height: 105px;
+  width: 96px;
+  height: 96px;
   margin: 0;
   padding: 0;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-size: 42px;
+  background-size: 40px;
   background-position: 0 center;
   font-size: 0;
 }
@@ -1066,7 +1062,7 @@ footer p {
 }
 .info-page p {
   padding: 2.5rem 0;
-  max-width: 650px;
+  max-width: 600px;
 }
 
 .gif {
@@ -1083,7 +1079,7 @@ footer p {
 
 @media screen and (max-width: 1000px) {
 
-  p, h1, h2, h3, h4, h5, h6, li, .info-page footer p {
+  p, h1, h2, h3, h4, h5, h6, li {
     text-align: center;
   }
   hr {
@@ -1109,6 +1105,10 @@ footer p {
   }
   .box a {
     width: 48%
+  }
+  .icons {
+    float: none;
+    display: inline-block;
   }
   .icons a {
     float: none;
@@ -1167,6 +1167,9 @@ footer p {
 
 @media screen and (max-width: 750px) {
 
+  .screen-container {
+    padding: 4rem 0;
+  }
   #photo, .gif {
     width: 300px;
     height: 300px;
@@ -1201,24 +1204,14 @@ footer p {
   h3, nav a, .title p {
     font-size: 2rem;
   }
-  p, li, .text p, .contact a, form textarea { 
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
-  .tile p {
-    font-size: 1.5rem;
+  .text p, .tile p {
+    font-size: 1.4rem;
   }
   .text p:first-child {
     font-size: 2rem;
   }
-  .text p {
-    padding: 0 0 1.5rem;
-  }
-  .screen-container {
-    padding: 4rem 0;
-  }
   .tile {
-    height: 420px;
+    height: 380px;
   }
   .card a {
     margin-top: 5rem;
