@@ -1,4 +1,4 @@
-var CACHE_NAME = 'lucasmauess-cache-v1';
+var CACHE_NAME = 'lucasmaues-cache-v1';
 var urlsToCache = [
   'index.html',
   'styles/main.css',

@@ -1,4 +1,4 @@
-# [lucasmauess.com](https://lucasmauess.com/)
+# [lucasmaues.com](https://lucasmaues.com/)
 
 My personal website, now as a Progressive Web App (PWA).
 
