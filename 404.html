@@ -30,11 +30,10 @@
                 <nav role="navigation">
                     <button id="close" role="button" aria-label="close navigation menu" accesskey="2">Close</button>
                     <ul>
-                        <li><a href="/about" accesskey="1">About</a></li>
-                        <li><a href="/services" accesskey="2">Services</a></li>
-                        <li><a href="/work" accesskey="3">Work</a></li>
-                        <li><a href="/contact" accesskey="4">Contact</a></li>
-                        <li><a href="https://medium.com/@lucasmaues" target="_blank" rel="noopener" accesskey="5">Blog</a></li>
+                        <li><a href="/#about" accesskey="1">About</a></li>
+                        <li><a href="/#services" accesskey="2">Services</a></li>
+                        <li><a href="/#work" accesskey="3">Work</a></li>
+                        <li><a href="/#contact" accesskey="4">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,13 +42,14 @@
     <section class="full-screen">
 
         <div class="screen-container info-page">
-            <div class="gif" id="background"></div>
 
             <div class="left">
+                <figure class="gif" id="background"></figure>
                 <h1>Page not found</h1>
-                <p>The page you're looking for can't be found. Take this time to smile :)</p>
+                <p>The page you're looking for can't be found.</p>
                 <a href="/" class="button bounce">Back to homepage</a>
             </div>
+
         </div>
 
     </section>
@@ -62,7 +62,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
 <script src="scripts/main.js"></script>
 <script>
- var images = ['//media1.tenor.com/images/ed32319213bb232b3e9fb85cf06739d9/tenor.gif', '//media1.tenor.com/images/c9e53c8837c1aa635a47280b6b3d788b/tenor.gif', '//media1.tenor.com/images/026d82064fe5cfaa6d07b7b4e621b5ff/tenor.gif', '//media1.tenor.com/images/225418a9d75b37de84a4bfbe886b08e8/tenor.gif'];
+ var images = ['//media1.tenor.com/images/ed32319213bb232b3e9fb85cf06739d9/tenor.gif', '//media1.tenor.com/images/692b38ecf6d595c92c961415620c2ba8/tenor.gif', '//media1.tenor.com/images/026d82064fe5cfaa6d07b7b4e621b5ff/tenor.gif'];
  $('#background').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')'});
 </script>
 
