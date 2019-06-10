@@ -1,9 +1,6 @@
 var CACHE_NAME = 'lucasmaues-cache';
 var urlsToCache = [
   'index.html',
-  'work.html',
-  'about.html',
-  'contact.html',
   'privacy.html',
   'styles/main.css',
   'scripts/main.js',
