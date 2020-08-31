@@ -20,9 +20,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  height: 56px;
   z-index: 999;
-  display: none;
 }
 header .container {
   padding: 0 .75rem 0 1.75rem;
@@ -189,9 +187,9 @@ nav li:last-child a:after {
   content: "";
   position: absolute;
   margin: 6px 0 0 6px;
-  width: 12px;
-  height: 12px;
-  background-size: 12px;
+  width: 10px;
+  height: 10px;
+  background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -760,9 +758,6 @@ section .container {
 /* tablets ↗ */
 @media only screen and (min-width: 800px) {
 
-  header {
-    height: 60px;
-  }
   header .container {
     padding: 0 1.75rem;
   }
@@ -794,7 +789,7 @@ section .container {
    display: none;
   }
   #logo, nav a {
-    line-height: 60px;
+    line-height: 56px;
   }
 
   h1 {

@@ -1,9 +1,9 @@
 // define header for headroom.js
-// var header = document.querySelector("header");
-// new Headroom(header, {
-//   tolerance: 0,
-//   offset : 10,
-// }).init();
+var header = document.querySelector("header");
+new Headroom(header, {
+  tolerance: 0,
+  offset : 10,
+}).init();
 
 // navigation menu
 (function() {
@@ -12,8 +12,8 @@
     $('nav').toggleClass('open');
     $('.layer').toggleClass('layer-active');
     $("#logo").toggleClass('white');
-    // $("body").toggleClass('remove-scrollbar');
-    // $("html").toggleClass('keep-bar');
+    $("body").toggleClass('remove-scrollbar');
+    $("html").toggleClass('keep-bar');
     
     return $(this).toggleClass('clicked');
   });
