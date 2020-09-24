@@ -8,8 +8,8 @@
     <title>Thank you — Lucas Menezes</title>
 
     <link rel="dns-prefetch" href="https://media1.tenor.com/">
-
-	<link href="src/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="dist/main.css" type="text/css">
+    
     <link rel="icon" sizes="192x192" type="image/png" href="images/icons/icon-192x192.png">
 	<meta name="theme-color" content="#000">
     <meta name="mobile-web-app-capable" content="yes">
@@ -72,19 +72,18 @@
     </footer>
 
 
-<script src="//cdn.jsdelivr.net/npm/headroom.js@0.11.0/dist/headroom.min.js"></script>
-<script src="src/main.js"></script>
-<script>
-    var gifs = [
-        '//media1.tenor.com/images/de5a81aa8a3ef29a500f569fc540f80f/tenor.gif',
-        '//media1.tenor.com/images/4525620a4e87c14081aa84b70e410034/tenor.gif',
-        '//media1.tenor.com/images/d076ed43f9ce9e26d71dcb74a7bd898f/tenor.gif',
-        '//media1.tenor.com/images/cf4cc7db45b131d3a0b2bd9db4f72dae/tenor.gif',
-        '//media1.tenor.com/images/c4ee471d243b0484a9bfb0d90021de43/tenor.gif',
-        '//media1.tenor.com/images/ba516509538b217590048125652d87f3/tenor.gif'
-    ];
-    document.getElementById("background").style.backgroundImage = 'url(' + gifs[Math.floor(Math.random() * gifs.length)] + ')';
-</script>
+	<script src="dist/main.js"></script>
+    <script>
+        var gifs = [
+            '//media1.tenor.com/images/de5a81aa8a3ef29a500f569fc540f80f/tenor.gif',
+            '//media1.tenor.com/images/4525620a4e87c14081aa84b70e410034/tenor.gif',
+            '//media1.tenor.com/images/d076ed43f9ce9e26d71dcb74a7bd898f/tenor.gif',
+            '//media1.tenor.com/images/cf4cc7db45b131d3a0b2bd9db4f72dae/tenor.gif',
+            '//media1.tenor.com/images/c4ee471d243b0484a9bfb0d90021de43/tenor.gif',
+            '//media1.tenor.com/images/ba516509538b217590048125652d87f3/tenor.gif'
+        ];
+        document.getElementById("background").style.backgroundImage = 'url(' + gifs[Math.floor(Math.random() * gifs.length)] + ')';
+    </script>
 
 </body>
 

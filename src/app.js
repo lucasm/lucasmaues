@@ -1,13 +1,14 @@
+import Headroom from "headroom.js";
+import './app.css';
+
 const header = document.querySelector("header"),
       body = document.querySelector("body"),
       nav = document.querySelector("nav"),
       menuBtn = document.getElementById("menu");
 
 // headroom
-new Headroom(header, {
-  tolerance: 0,
-  offset : 10,
-}).init();
+const headroom = new Headroom(header);
+headroom.init();
 
 // nav menu
 menuBtn.addEventListener("click", function() {

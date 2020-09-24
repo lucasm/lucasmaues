@@ -1,8 +1,8 @@
-var CACHE_NAME = 'lucasmdev-3';
+var CACHE_NAME = 'lucasmdev-4';
 var urlsToCache = [
   'index.html',
-  'styles/main.css',
-  'scripts/main.js',
+  'dist/main.css',
+  'dist/main.js',
   'images/lucas-menezes.jpg',
   'privacy.html',
 ];
