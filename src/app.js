@@ -20,7 +20,6 @@ menuBtn.addEventListener("click", function() {
 
   document.querySelectorAll('nav > ul > li > a').forEach(item => {
     item.addEventListener('click', event => {
-      
       menuBtn.click();
     })
   });
