@@ -57,14 +57,14 @@ export default function PageLayout(props) {
 		<meta name="twitter:description" content={props.description}/>
 		<meta name="twitter:image" content="https://lucasm.dev/images/share.png"></meta>
       
-      <script async src="https://www.googletagmanager.com/gtag/js?id=[UA-60745752-1]" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=[G-XX459ZPXD8]" />
       <script
         dangerouslySetInnerHTML={{
           __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '[UA-60745752-1]');
+                gtag('config', '[G-XX459ZPXD8]');
             `,
         }}
       />
