@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 
 export default function PageLayout(props) {
+
   return ( 
   <div class="PageLayout">
     <Head>
@@ -44,7 +45,7 @@ export default function PageLayout(props) {
 		<meta property="og:image" content="https://lucasm.dev/images/share.png"/>
 		<meta property="og:image:width" content="1200"/>
 		<meta property="og:image:height" content="630"/>
-		<meta property="og:site_name" content="Lucas Menezes"/>
+		<meta property="og:site_name" content="lucasm.dev"/>
 		<meta property="og:url" content="https://lucasm.dev/"/>
 		<meta property="og:type" content="website"/>
 		<meta property="fb:admins" content="100001682681282"/>

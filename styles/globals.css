@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  --header-size: 80px;
+  --header-size: 64px;
   --cor-preto: #111;
   --cor-cinza: #f1f1f1;
   --radius: 6px;
@@ -27,43 +27,40 @@ body {
 header {
   position: fixed;
   width: 100%;
+  padding: 1rem;
   top: 0;
   right: 0;
   left: 0;
   z-index: 999;
 }
 header .container {
-  padding: 0 .75rem 0 1.75rem;
+  padding: 0 .75rem;
   background: transparent;
 }
 
 #logo {
-  position: relative;
   float: left;
-  padding: 1.5rem;
-  width: var(--header-size);
-  height: 80px;
+  padding: 1rem;
+  width: 64px;
+  height: 64px;
   font-size: 0;
   line-height: 0;
-  background: var(--cor-cinza);
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid transparent;
   z-index: 4;
-  border-radius: 0 0 6px 6px;
-}
-#logo svg {
-  fill: transparent;
 }
 #menu {
-  position: absolute;
+  position: relative;
+  float: right;
   z-index: 9;
-  padding-left: 1.75rem;
-  display: inline-block;
+  padding-left: 1.25rem;
   width: var(--header-size);
   height: var(--header-size);
-  border: none;
   outline: none;
   font-size: 0;
-  background: transparent;
-  left: 1.75rem;
+  border-radius: 50%;
+  background: #fff;
 }
 .hamburger {
   position: relative;
@@ -84,11 +81,11 @@ header .container {
   transition: all .25s ease;
 }
 .hamburger:before {
-  top: -8px;
+  top: -7px;
   width: 18px;
 }
 .hamburger:after {
-  top: 8px;
+  top: 7px;
   width: 12px;
 }
 #menu:hover .hamburger:before,
@@ -108,7 +105,7 @@ header .container {
   display: inline-block;
   background: transparent;
   top: 2.5rem;
-  left: 4.16rem;
+  right: 3.15rem;
   width: 3px;
   height: 3px;
   position: absolute;
@@ -163,20 +160,6 @@ nav a {
   margin: .5rem 0;
   color: var(--cor-preto);
 }
-nav a:before {
-  content: "";
-  position: absolute;
-  bottom: .15rem;
-  width: 100%;
-  height: 3px;
-  background: transparent;
-}
-nav a:hover :before, nav a:focus :before {
-  background: #fff;
-}
-.active:before {
-  background: #fff;
-}
 
 section {
   width: 100%;
@@ -186,7 +169,7 @@ section {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 1050px;
+  max-width: 1024px;
 }
 .fullscreen {
   display: table;
@@ -219,6 +202,7 @@ a, button, input, textarea {
 }
 button {
   cursor: pointer;
+  border: none;
 }
 
 p, li, h1, h2, h3, h4, h5, h6 {
@@ -262,9 +246,8 @@ p, li, .button, input, textarea {
 .special {
   max-width: 800px;
 }
-.special h2 {
-  font-size: 3.5rem;
-  padding: 1rem 0 3.5rem;
+.special h1 {
+  padding: 1rem 0 3rem;
 }
 .special p {
   font-size: 1.25rem;
@@ -332,8 +315,8 @@ article blockquote {
   cursor: pointer;
 }
 .button:hover, .button:focus {
-  background: #eee;
-  color: #000;
+  background: var(--cor-cinza);
+  color: var(--cor-preto);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -356,41 +339,40 @@ article blockquote {
 
 /* Home */
 .home {
-  padding: 4rem 0;
+  padding: 6rem 0 4rem;
 }
-
+.home h2, .home p {
+  padding-bottom: 1rem;
+}
+.home h2 {
+  line-height: 1.15;
+}
+.home p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
 #photo {
   float: none;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 96px;
+  height: 96px;
   margin: 0 auto 1.5rem;
   background-color: var(--cor-cinza);
-  /* filter: grayscale(100%); */
   border-radius: 50%;
-  border: 3px solid white;
-}
-.home h1, .home p {
-  padding-bottom: 1.5rem;
 }
 
-.home .button {
-  float: none;
-  display: inline-block;
-  margin: .5rem 0 2rem;
-}
 
 /* Social icons */
 .icons {
   max-width: 680px;
-  margin: 1rem auto 0;
+  margin: 1.5rem auto 0;
 }
 .icons a {
   float: none;
   display: inline-block;
   width: 100%;
-  padding: .85rem 2rem;
-  height: auto;
+  padding: 1rem 2rem;
+  line-height: 1;
   margin: 0 0 1rem;
   font-size: 1rem;
   background: var(--cor-cinza);
@@ -482,22 +464,6 @@ article blockquote {
   border-radius: 1rem;
 }
 
-.title {
-  padding: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
 code {
   background: #f5f5f5;
   border-radius: 5px;
@@ -566,7 +532,7 @@ label {
 }
 input, textarea {
   font-weight: 400;
-  font-family: 'DM Sans', monospace;
+  font-family: var(--familia-fonte);
   color: #000;
   float: left;
   width: 100%;
@@ -632,7 +598,6 @@ input[type="submit"]:active {
 .color-radioufpa { background: linear-gradient(90deg, rgba(78,68,251,1) 0%, rgba(0,212,255,1) 100%); }
 
 /* Animations */
-
 section .container {
   -webkit-animation-name: up;
   animation-name: up;
@@ -710,12 +675,6 @@ section .container {
 /* tablets */
 @media only screen and (min-width: 800px) {
 
-  #logo svg {
-    fill: var(--cor-preto);
-  }
-  header .container {
-    padding: 0 1.75rem;
-  }
   #menu, .layer {
     display: none;
   }
@@ -724,9 +683,6 @@ section .container {
   }
   header:hover nav a {
     color: var(--cor-preto);
-  }
-  header:hover #logo {
-    background: #fff;
   }
   nav {
     position: relative;
@@ -746,12 +702,11 @@ section .container {
   nav a {
     color: transparent;
     margin: 0 0 0 3rem;
-  }
-  nav a:before {
-    bottom: .9rem;
-  }
-  nav a {
     line-height: var(--header-size);
+  }
+
+  .home h2 {
+    font-size: 3rem;
   }
 
   h1 {
@@ -764,7 +719,7 @@ section .container {
     font-size: 1.5rem;
   }
   p, li, nav a, .button, input, textarea {
-    font-size: 1.075rem;
+    font-size: 1rem;
   }
 
   section {

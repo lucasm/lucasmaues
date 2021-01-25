@@ -2,7 +2,7 @@ import PageLayout from '../components/PageLayout';
 
 export default function Home() {
   return (
-    <PageLayout title="Software Engineer" description="Building apps, sites and APIs for refined digital experiences.">
+    <PageLayout title="Home" description="Software Engineer building Web apps, sites and APIs for refined digital experiences.">
     
     <main>
 
@@ -13,8 +13,8 @@ export default function Home() {
 
                     <img src="/images/lucas-menezes.jpg" id="photo" alt="Lucas Menezes"/>
 
-                    <h1 class="title">Lucas Menezes</h1>
-                    <p class="description">Software Engineer</p>
+                    <h2>Lucas Menezes</h2>
+                    <p>Software Engineer</p>
 
                     <div class="icons">
                         <a href="https://twitter.com/lucasmezs" target="_blank" rel="noopener" title="Twitter">
@@ -158,7 +158,7 @@ export default function Home() {
         <section id="contact" class="gray">
             <div class="container left special">
 
-                <h2>Building refined Web apps, sites and APIs.</h2>
+                <h1>Building refined Web apps, sites and APIs.</h1>
 
                 <div class="col">
                     <div class="col-left">

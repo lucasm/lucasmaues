@@ -11,7 +11,7 @@ function getYear() {
     <footer>
 
       <div class="container">
-        <p>&copy; {getYear()} Lucas Menezes</p>
+        <p>Copyright {getYear()} Lucas Menezes</p>
         {/* <p><Link href="/privacy"><a accessKey="6">privacy</a></Link></p> */}
       </div>
 		
