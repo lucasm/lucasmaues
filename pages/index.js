@@ -57,6 +57,14 @@ export default function Home() {
 
                     <div class="grid">
 
+                        <a href="https://headly.app" class="card" target="_blank">
+                            <figure class="color-headlyne">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path class="svg" d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"/></svg>
+                            </figure>
+                            <h3>Headly</h3>
+                            <p>News reader for the critical sense. Headlines from trusted media and fact-checking.</p>
+                        </a>
+
                         <a href="#" class="card">
                             <figure>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>Findto</title><path class="svg" d="M15.21,10a5.17,5.17,0,1,0,3.62,8.84l0,0,0,0A5.16,5.16,0,0,0,15.21,10Z"/><path class="svg" d="M16,0H16A16,16,0,0,0,0,16V16A16,16,0,0,0,16,32H16A16,16,0,0,0,32,16V16A16,16,0,0,0,16,0Zm8,24a1.2,1.2,0,0,1-.84.35,1.18,1.18,0,0,1-.84-.35l-2.68-2.68a7.47,7.47,0,0,1-4.42,1.44,7.55,7.55,0,1,1,7.54-7.54,7.44,7.44,0,0,1-1.44,4.42L24,22.31A1.18,1.18,0,0,1,24,24Z"/></svg>
@@ -79,14 +87,6 @@ export default function Home() {
                             </figure>
                             <h3>TCM-PA</h3>
                             <p>Court of accounts public content and services portal, with accessibility and intranet.</p>
-                        </a>
-
-                        <a href="#" class="card">
-                            <figure class="color-headlyne">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path class="svg" d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"/></svg>
-                            </figure>
-                            <h3>Headlyne</h3>
-                            <p>News reader for the critial sense. Headlines from trusted media and fact-checking.</p>
                         </a>
 
                         <a href="#" class="card">
