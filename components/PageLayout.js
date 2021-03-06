@@ -7,9 +7,9 @@ import Footer from './Footer'
 export default function PageLayout(props) {
 
   return ( 
-  <div class="PageLayout">
+  <div className="PageLayout">
     <Head>
-		<title>{props.title} – Lucas Menezes</title>
+		<title>{props.title}</title>
 		<meta name="description" content={props.description}/>
 		<meta name="author" content="Lucas Menezes"/>
 		<link rel="icon" href="/favicon.ico"/>

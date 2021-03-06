@@ -238,19 +238,19 @@ h3, article h2 {
 h4, article h3 {
   font-size: 1.25rem;
 }
-
+.special p, .card p {
+  font-size: 1.1rem;
+}
 p, li, .button, input, textarea {
   font-size: 1rem;
 }
+
 .special {
   max-width: 760px;
   padding: 2rem 1rem 0;
 }
 .special h1 {
   padding: 1rem 0 3rem;
-}
-.special p {
-  font-size: 1.25rem;
 }
 .special-contact h2 {
   padding: 0;
@@ -277,7 +277,7 @@ article {
   max-width: 650px;
 }
 article h2, article h3 {
-  padding: 3rem 0 1.5rem 0;
+  padding: 2.5rem 0 1.5rem 0;
 }
 article ol {
   list-style-type: decimal;
@@ -345,11 +345,11 @@ article blockquote {
   padding-bottom: 1rem;
 }
 .home h2 {
-  line-height: 1.15;
+  line-height: 1.2;
 }
 .home p {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 #photo {
   float: none;
@@ -360,7 +360,6 @@ article blockquote {
   background-color: var(--cor-cinza);
   border-radius: 50%;
 }
-
 
 /* Social icons */
 .icons {
@@ -452,7 +451,6 @@ article blockquote {
 }
 .card p {
   margin: 0;
-  font-size: 1.25rem;
   line-height: 1.5;
 }
 .card figure {
@@ -706,17 +704,20 @@ section .container {
   }
 
   .home h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 
-  h1 {
-    font-size: 3.5rem;
+  h1, article h1 {
+    font-size: 3.4rem;
   }
-  h2, article h1 {
-    font-size: 2.5rem;
+  h2 {
+    font-size: 2.4rem;
   }
   h3, h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  .special p, .card p {
+    font-size: 1.25rem;
   }
   p, li, nav a, .button, input, textarea {
     font-size: 1rem;

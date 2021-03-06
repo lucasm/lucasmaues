@@ -10,7 +10,7 @@ function getYear() {
 
     <footer>
 
-      <div class="container">
+      <div className="container">
         <p>Copyright {getYear()} Lucas Menezes <br/> <Link href="/privacy"><a accessKey="6">Privacy</a></Link></p>
       </div>
 		

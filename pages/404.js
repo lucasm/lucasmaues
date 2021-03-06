@@ -19,7 +19,7 @@ if (typeof (document) !== "undefined") {
 
 export default function Custom404() {
   return (
-    <PageLayout title="Page Not Found" description="Error page">
+    <PageLayout title="Page Not Found – Lucas Menezes" description="Error page.">
 
         <section class="fullscreen gray">
             <div class="fullscreen-container">
