@@ -45,13 +45,13 @@ export default function Home() {
 
         </section>
 
-        <section id="projects">
+        <section id="work">
 
             <div className="container">
 
                 <div className="flex-container">
 
-                    <h2>Selected projects</h2>
+                    <h2>Selected work</h2>
 
                     {/* <p className="description"> I build digital products with <code>code</code>.</p> */}
 
@@ -165,7 +165,7 @@ export default function Home() {
                         <p>I build refined digital products with focus on front-end (user experience, responsive design, progressive enhancement, accessibility and performance) and adjacent back-end.</p>
                     </div>
                     <div className="col-right">
-                        <p>HTML, CSS, JavaScript, React, Next.js, Node.js, PHP, Git, REST APIs, MySQL, PostgreSQL, Vercel, AWS and Microsoft Azure are my current main work tools.</p>
+                        <p>JavaScript, HTML, CSS, React, Next.js, Node.js, PHP, Git, REST APIs, MySQL, PostgreSQL, Vercel, AWS and Microsoft Azure are my current main work tools.</p>
 
                         <p>Now I’m working at TCM-PA and creating open source PWAs. Feel free to contact me to discuss your project or idea.</p>
                     </div>
@@ -178,7 +178,7 @@ export default function Home() {
         <section className="black">
             <div className="container special-contact">
 
-                <h2>Say hi — <a href="mailto:hey@lucasm.dev">hey@lucasm.dev</a></h2>
+                <h2>Let’s talk — <a href="mailto:hi@lucasm.dev">hi@lucasm.dev</a></h2>
 
             </div>
         </section>
