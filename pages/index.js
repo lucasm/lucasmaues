@@ -2,7 +2,7 @@ import PageLayout from '../components/PageLayout';
 
 export default function Home() {
   return (
-    <PageLayout title="Lucas Menezes" description="Software Engineer building Web apps, sites and APIs for refined digital experiences.">
+    <PageLayout title="Lucas Menezes" description="Lucas Menezes is a Software Engineer from Brazil building Web apps, sites and APIs for refined digital experiences.">
     
     <main>
 
@@ -27,17 +27,17 @@ export default function Home() {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M1.6.06H22.35A1.81,1.81,0,0,1,24,1.83V22.06a1.82,1.82,0,0,1-1.62,1.88H1.62A1.76,1.76,0,0,1,0,22.35V1.66A1.75,1.75,0,0,1,1.6.06M4.84,3.39A2.07,2.07,0,0,0,3.29,5.74a2.07,2.07,0,0,0,4.09-.63A2.09,2.09,0,0,0,4.84,3.39m7.91,7.22c0-.54,0-1.07,0-1.61-1.14,0-2.28,0-3.41,0q0,5.73,0,11.44c1.18,0,2.37,0,3.55,0V14.89a3.93,3.93,0,0,1,.54-2.38,2.06,2.06,0,0,1,1.93-.63,1.46,1.46,0,0,1,1.16.77,4.56,4.56,0,0,1,.34,2.13v5.65c1.19,0,2.38,0,3.56,0V13.81a7.92,7.92,0,0,0-.51-3,3.14,3.14,0,0,0-1.53-1.64,5.23,5.23,0,0,0-2.68-.41,3.77,3.77,0,0,0-3,1.86M3.55,9q0,5.73,0,11.44c1.19,0,2.38,0,3.57,0V9Z"/></svg>LinkedIn
                         </a>
                         <a href="https://github.com/lucasm" target="_blank" rel="noopener" title="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M12,.37A11.93,11.93,0,0,0,8.15,23.62c.59.08.81-.29.81-.58V21c-3.3.74-4-1.61-4-1.61A3,3,0,0,0,3.6,17.68c-1-.73.08-.73.08-.73A2.52,2.52,0,0,1,5.51,18.2a2.54,2.54,0,0,0,3.44,1H9a2.57,2.57,0,0,1,.74-1.61c-2.65-.3-5.43-1.33-5.43-6A4.51,4.51,0,0,1,5.51,8.44a4.17,4.17,0,0,1,.15-3.16S6.68,5,9,6.53a10.53,10.53,0,0,1,3-.37,13.33,13.33,0,0,1,3,.37c2.27-1.54,3.3-1.25,3.3-1.25a4.58,4.58,0,0,1,.14,3.16,4.71,4.71,0,0,1,1.25,3.23c0,4.62-2.79,5.57-5.43,5.86a2.84,2.84,0,0,1,.81,2.21V23c0,.29.22.66.81.58A12,12,0,0,0,24,12.25,12,12,0,0,0,12,.37Z"/></svg>GitHub – Open source projects
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M12,.37A11.93,11.93,0,0,0,8.15,23.62c.59.08.81-.29.81-.58V21c-3.3.74-4-1.61-4-1.61A3,3,0,0,0,3.6,17.68c-1-.73.08-.73.08-.73A2.52,2.52,0,0,1,5.51,18.2a2.54,2.54,0,0,0,3.44,1H9a2.57,2.57,0,0,1,.74-1.61c-2.65-.3-5.43-1.33-5.43-6A4.51,4.51,0,0,1,5.51,8.44a4.17,4.17,0,0,1,.15-3.16S6.68,5,9,6.53a10.53,10.53,0,0,1,3-.37,13.33,13.33,0,0,1,3,.37c2.27-1.54,3.3-1.25,3.3-1.25a4.58,4.58,0,0,1,.14,3.16,4.71,4.71,0,0,1,1.25,3.23c0,4.62-2.79,5.57-5.43,5.86a2.84,2.84,0,0,1,.81,2.21V23c0,.29.22.66.81.58A12,12,0,0,0,24,12.25,12,12,0,0,0,12,.37Z"/></svg>GitHub
                         </a>
                         <a href="https://dev.to/lucasm" target="_blank" rel="noopener" title="DEV Community">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path className="svg" d="M8.78,12.75H7.69v6.53H8.78a1.15,1.15,0,0,0,1.09-1.09V13.83A1.08,1.08,0,0,0,8.78,12.75Z"/><path className="svg" d="M27.2,0H4.8A4.8,4.8,0,0,0,0,4.8V27.2A4.8,4.8,0,0,0,4.8,32H27.2A4.8,4.8,0,0,0,32,27.2V4.8A4.8,4.8,0,0,0,27.2,0ZM8.62,21.15H5.72V10.81h3a2.86,2.86,0,0,1,3,3V18.2A2.85,2.85,0,0,1,8.62,21.15Zm8-6.09v1.85h-2v2.4h3.33v1.85H14a1.27,1.27,0,0,1-1.29-1.23V12.11A1.26,1.26,0,0,1,14,10.81h3.95v1.85H14.6v2.4Zm7.77,4.8c-.83,1.93-2.31,1.54-3,0l-2.41-9h2l1.86,7.11,1.85-7.11h2Z"/></svg>DEV – Blog
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path className="svg" d="M8.78,12.75H7.69v6.53H8.78a1.15,1.15,0,0,0,1.09-1.09V13.83A1.08,1.08,0,0,0,8.78,12.75Z"/><path className="svg" d="M27.2,0H4.8A4.8,4.8,0,0,0,0,4.8V27.2A4.8,4.8,0,0,0,4.8,32H27.2A4.8,4.8,0,0,0,32,27.2V4.8A4.8,4.8,0,0,0,27.2,0ZM8.62,21.15H5.72V10.81h3a2.86,2.86,0,0,1,3,3V18.2A2.85,2.85,0,0,1,8.62,21.15Zm8-6.09v1.85h-2v2.4h3.33v1.85H14a1.27,1.27,0,0,1-1.29-1.23V12.11A1.26,1.26,0,0,1,14,10.81h3.95v1.85H14.6v2.4Zm7.77,4.8c-.83,1.93-2.31,1.54-3,0l-2.41-9h2l1.86,7.11,1.85-7.11h2Z"/></svg>DEV
                         </a>
                         <a href="https://codepen.io/lucasm" target="_blank" rel="noopener" title="CodePen">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path className="svg" d="M24 8.182l-.018-.087-.017-.05c-.01-.024-.018-.05-.03-.075-.003-.018-.015-.034-.02-.05l-.035-.067-.03-.05-.044-.06-.046-.045-.06-.045-.046-.03-.06-.044-.044-.04-.015-.02L12.58.19c-.347-.232-.796-.232-1.142 0L.453 7.502l-.015.015-.044.035-.06.05-.038.04-.05.056-.037.045-.05.06c-.02.017-.03.03-.03.046l-.05.06-.02.06c-.02.01-.02.04-.03.07l-.01.05C0 8.12 0 8.15 0 8.18v7.497c0 .044.003.09.01.135l.01.046c.005.03.01.06.02.086l.015.05c.01.027.016.053.027.075l.022.05c0 .01.015.04.03.06l.03.04c.015.01.03.04.045.06l.03.04.04.04c.01.013.01.03.03.03l.06.042.04.03.01.014 10.97 7.33c.164.12.375.163.57.163s.39-.06.57-.18l10.99-7.28.014-.01.046-.037.06-.043.048-.036.052-.058.033-.045.04-.06.03-.05.03-.07.016-.052.03-.077.015-.045.03-.08v-7.5c0-.05 0-.095-.016-.14l-.014-.045.044.003zm-11.99 6.28l-3.65-2.44 3.65-2.442 3.65 2.44-3.65 2.44zm-1.034-6.674l-4.473 2.99L2.89 8.362l8.086-5.39V7.79zm-6.33 4.233l-2.582 1.73V10.3l2.582 1.726zm1.857 1.25l4.473 2.99v4.82L2.89 15.69l3.618-2.417v-.004zm6.537 2.99l4.474-2.98 3.613 2.42-8.087 5.39v-4.82zm6.33-4.23l2.583-1.72v3.456l-2.583-1.73zm-1.855-1.24L13.042 7.8V2.97l8.085 5.39-3.612 2.415v.003z"/></svg>CodePen – Demos
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path className="svg" d="M24 8.182l-.018-.087-.017-.05c-.01-.024-.018-.05-.03-.075-.003-.018-.015-.034-.02-.05l-.035-.067-.03-.05-.044-.06-.046-.045-.06-.045-.046-.03-.06-.044-.044-.04-.015-.02L12.58.19c-.347-.232-.796-.232-1.142 0L.453 7.502l-.015.015-.044.035-.06.05-.038.04-.05.056-.037.045-.05.06c-.02.017-.03.03-.03.046l-.05.06-.02.06c-.02.01-.02.04-.03.07l-.01.05C0 8.12 0 8.15 0 8.18v7.497c0 .044.003.09.01.135l.01.046c.005.03.01.06.02.086l.015.05c.01.027.016.053.027.075l.022.05c0 .01.015.04.03.06l.03.04c.015.01.03.04.045.06l.03.04.04.04c.01.013.01.03.03.03l.06.042.04.03.01.014 10.97 7.33c.164.12.375.163.57.163s.39-.06.57-.18l10.99-7.28.014-.01.046-.037.06-.043.048-.036.052-.058.033-.045.04-.06.03-.05.03-.07.016-.052.03-.077.015-.045.03-.08v-7.5c0-.05 0-.095-.016-.14l-.014-.045.044.003zm-11.99 6.28l-3.65-2.44 3.65-2.442 3.65 2.44-3.65 2.44zm-1.034-6.674l-4.473 2.99L2.89 8.362l8.086-5.39V7.79zm-6.33 4.233l-2.582 1.73V10.3l2.582 1.726zm1.857 1.25l4.473 2.99v4.82L2.89 15.69l3.618-2.417v-.004zm6.537 2.99l4.474-2.98 3.613 2.42-8.087 5.39v-4.82zm6.33-4.23l2.583-1.72v3.456l-2.583-1.73zm-1.855-1.24L13.042 7.8V2.97l8.085 5.39-3.612 2.415v.003z"/></svg>CodePen
                         </a>
-                        {/* <a href="https://dribbble.com/lucasm" target="_blank" rel="noopener" title="Dribbble">
+                        <a href="https://dribbble.com/lucasm" target="_blank" rel="noopener" title="Dribbble">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path className="svg" d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>Dribbble
-                        </a> */}
+                        </a>
                     </div>
 
                 </div>
@@ -45,15 +45,15 @@ export default function Home() {
 
         </section>
 
-        <section id="work">
+        <section id="projects">
 
             <div className="container">
 
                 <div className="flex-container">
 
-                    <h2>Selected work</h2>
+                    <h2>Projects</h2>
 
-                    {/* <p className="description"> I build digital products with <code>code</code>.</p> */}
+                    <p className="description">Digital products built with <code>code</code></p>
 
                     <div className="grid">
 
@@ -62,7 +62,7 @@ export default function Home() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><path className="svg" d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"/></svg>
                             </figure>
                             <h3>Headly</h3>
-                            <p>News reader app with headlines, fact-checking and opnions, internationalized.</p>
+                            <p>Internationalized news reader app with headlines, fact-checking and opnions.</p>
                         </a>
 
                         <a href="#" className="card">
@@ -78,7 +78,7 @@ export default function Home() {
                             <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M38,0H10.05A10.05,10.05,0,0,0,0,10.05V38A10.05,10.05,0,0,0,10.05,48H38A10.05,10.05,0,0,0,48,38V10.05A10.05,10.05,0,0,0,38,0ZM13.85,29.43H11.08V21.07H7V18.51H17.94v2.56H13.86Zm14.09-1.95a5.79,5.79,0,0,1-4.43,1.9h-.06a5.69,5.69,0,0,1-3.94-1.52,5.2,5.2,0,0,1-1.63-3.78v0a5.27,5.27,0,0,1,1.52-3.83,5.69,5.69,0,0,1,4.08-1.61,6.1,6.1,0,0,1,3.23.77l.2.12-1.57,2.13-.07-.05a3.34,3.34,0,0,0-1.77-.51,2.72,2.72,0,0,0-2,.86,2.92,2.92,0,0,0-.81,2A3,3,0,0,0,21.51,26a2.72,2.72,0,0,0,2,.84,3.69,3.69,0,0,0,2.59-1.14l.16-.15,1.8,1.72ZM25,24a1.42,1.42,0,1,1-1.41-1.42A1.41,1.41,0,0,1,25,24Zm16,5.44H38V23.86l-2.93,3.21H34.8L31.9,23.9v5.53H29V18.51h2.39L35,22.81l3.63-4.3H41Z"/></svg>
                             </figure>
                             <h3>TCM-PA</h3>
-                            <p>Court of accounts public content and services portal, with accessibility and intranet.</p>
+                            <p>Court of accounts public services and content portal, with accessibility and intranet.</p>
                         </a>
 
                         <a href="#" className="card">
@@ -94,7 +94,7 @@ export default function Home() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M38.12,5.42a6,6,0,0,0-5.2-3H15a6.1,6.1,0,0,0-5.2,3L.79,21a6.05,6.05,0,0,0,0,6l9,15.6a6,6,0,0,0,5.2,3H32.93a6.09,6.09,0,0,0,5.2-3L47.21,27a6.05,6.05,0,0,0,0-6ZM36.18,24.94,18.54,35.23c-.72.38-1.76.11-1.76-.72v-21c0-.83,1-1.1,1.76-.72l17.59,10.3a1.05,1.05,0,0,1,0,1.87Z"/></svg>
                             </figure>
                             <h3>Streon</h3>
-                            <p>Public video hub powered by lives, stories, channels and streaming services.</p>
+                            <p>Public videos hub powered by channels, lives, stories and streaming services.</p>
                         </a>
 
                         <a href="#" className="card">
@@ -102,7 +102,7 @@ export default function Home() {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><polygon className="svg" points="60 90 0 90 0 30 120 30 120 90 180 90 180 150 60 150 60 90"/></svg>
                             </figure>
                             <h3>Zeta</h3>
-                            <p>Personal finance app, with datasets, graphs and investment suggestions.</p>
+                            <p>Data visualization for a personal finance and investment app.</p>
                         </a>
 
                         <a href="#" className="card">
@@ -156,13 +156,13 @@ export default function Home() {
         <section id="contact" className="gray">
             <div className="container left special">
 
-                <h1>I build Web applications, sites and APIs.</h1>
+                <h1>Building Web apps, sites and APIs.</h1>
 
                 <div className="col">
                     <div className="col-left">
-                        <p>I’ve been developing Web applications, websites and APIs for startups and organizations of all sizes, helping them to solve problems and establish their online presence.</p>
+                        <p>I’ve been developing Web applications, sites and APIs for startups and organizations of all sizes, helping them to solve problems and establish an online presence with refined digital products.</p>
 
-                        <p>I build refined digital products with focus on front-end (user experience, responsive design, progressive enhancement, accessibility and performance) and adjacent back-end.</p>
+                        <p>I build front-end with strong focus on user experience, responsive design, accessibility, progressive enhancement and performance — and adjacent back-end too.</p>
                     </div>
                     <div className="col-right">
                         <p>JavaScript, HTML, CSS, React, Next.js, Node.js, PHP, Git, REST APIs, MySQL, PostgreSQL, Vercel, AWS and Microsoft Azure are my current main work tools.</p>
@@ -178,7 +178,7 @@ export default function Home() {
         <section className="black">
             <div className="container special-contact">
 
-                <h2>Let’s talk — <a href="mailto:hi@lucasm.dev">hi@lucasm.dev</a></h2>
+                <h2>Say hi — <a href="mailto:hello@lucasm.dev">hello@lucasm.dev</a></h2>
 
             </div>
         </section>
