@@ -2,7 +2,7 @@ import PageLayout from '../components/PageLayout';
 
 export default function Home() {
   return (
-    <PageLayout title="Lucas Menezes — Software Engineer" description="Software Engineer based in Brazil. Building websites and apps for refined digital experiences.">
+    <PageLayout title="Lucas Menezes — Software Engineer" description="Lucas Menezes is a Software Engineer based in Brazil. Building websites and apps for refined digital experiences.">
     
     <main>
 
@@ -75,7 +75,7 @@ export default function Home() {
 
                         <a href="#" className="card">
                             <figure>
-                                <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M38,0H10.05A10.05,10.05,0,0,0,0,10.05V38A10.05,10.05,0,0,0,10.05,48H38A10.05,10.05,0,0,0,48,38V10.05A10.05,10.05,0,0,0,38,0ZM13.85,29.43H11.08V21.07H7V18.51H17.94v2.56H13.86Zm14.09-1.95a5.79,5.79,0,0,1-4.43,1.9h-.06a5.69,5.69,0,0,1-3.94-1.52,5.2,5.2,0,0,1-1.63-3.78v0a5.27,5.27,0,0,1,1.52-3.83,5.69,5.69,0,0,1,4.08-1.61,6.1,6.1,0,0,1,3.23.77l.2.12-1.57,2.13-.07-.05a3.34,3.34,0,0,0-1.77-.51,2.72,2.72,0,0,0-2,.86,2.92,2.92,0,0,0-.81,2A3,3,0,0,0,21.51,26a2.72,2.72,0,0,0,2,.84,3.69,3.69,0,0,0,2.59-1.14l.16-.15,1.8,1.72ZM25,24a1.42,1.42,0,1,1-1.41-1.42A1.41,1.41,0,0,1,25,24Zm16,5.44H38V23.86l-2.93,3.21H34.8L31.9,23.9v5.53H29V18.51h2.39L35,22.81l3.63-4.3H41Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M38,0H10.05A10.05,10.05,0,0,0,0,10.05V38A10.05,10.05,0,0,0,10.05,48H38A10.05,10.05,0,0,0,48,38V10.05A10.05,10.05,0,0,0,38,0ZM13.85,29.43H11.08V21.07H7V18.51H17.94v2.56H13.86Zm14.09-1.95a5.79,5.79,0,0,1-4.43,1.9h-.06a5.69,5.69,0,0,1-3.94-1.52,5.2,5.2,0,0,1-1.63-3.78v0a5.27,5.27,0,0,1,1.52-3.83,5.69,5.69,0,0,1,4.08-1.61,6.1,6.1,0,0,1,3.23.77l.2.12-1.57,2.13-.07-.05a3.34,3.34,0,0,0-1.77-.51,2.72,2.72,0,0,0-2,.86,2.92,2.92,0,0,0-.81,2A3,3,0,0,0,21.51,26a2.72,2.72,0,0,0,2,.84,3.69,3.69,0,0,0,2.59-1.14l.16-.15,1.8,1.72ZM25,24a1.42,1.42,0,1,1-1.41-1.42A1.41,1.41,0,0,1,25,24Zm16,5.44H38V23.86l-2.93,3.21H34.8L31.9,23.9v5.53H29V18.51h2.39L35,22.81l3.63-4.3H41Z"/></svg>
                                 <h2>Tribunal de Contas dos Municípios do Pará</h2>
                             </figure>
                             
@@ -101,14 +101,14 @@ export default function Home() {
                             <p>Ecommerce website and SEO services for a home computing store and technical assistance.</p>
                         </a>
 
-                        <a href="#" className="card">
+                        {/* <a href="#" className="card">
                             <figure className="color-vydeon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M38.12,5.42a6,6,0,0,0-5.2-3H15a6.1,6.1,0,0,0-5.2,3L.79,21a6.05,6.05,0,0,0,0,6l9,15.6a6,6,0,0,0,5.2,3H32.93a6.09,6.09,0,0,0,5.2-3L47.21,27a6.05,6.05,0,0,0,0-6ZM36.18,24.94,18.54,35.23c-.72.38-1.76.11-1.76-.72v-21c0-.83,1-1.1,1.76-.72l17.59,10.3a1.05,1.05,0,0,1,0,1.87Z"/></svg>
                                 <h2>Streon</h2>
                             </figure>
                             
                             <p>Public videos hub powered by channels, lives, stories and streaming services.</p>
-                        </a>
+                        </a> */}
 
                         <a href="#" className="card">
                             <figure className="color-zeyt">

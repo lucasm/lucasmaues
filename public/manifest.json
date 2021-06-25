@@ -1,7 +1,7 @@
 {
   "name": "Lucas Menezes",
   "short_name": "Lucas Menezes",
-  "description": "Software Engineer building refined Web apps, sites and APIs.",
+  "description": "Software Engineer building refined websites and apps.",
   "icons": [
     {
       "src": "images/icons/icon-48x48.png",
@@ -41,6 +41,6 @@
   ],
   "start_url": "/?utm_source=pwa",
   "display": "standalone",
-  "background_color": "#f1f1f1",
+  "background_color": "#ffe1aa",
   "theme_color": "#111"
 }
