@@ -211,8 +211,7 @@ export default function Home() {
                 <h3 className="subtitle">Get in touch</h3>
 
                 <div className="special special-contact">
-                    <h2><a href="mailto:hello@lucasm.dev">hello@lucasm.dev</a></h2>
-                    <h2><a href="tel:+55 091 984968007">+55 091 98496 8007</a></h2>
+                    <h2><a href="mailto:hello@lucasm.dev?subject=Let's%20work%20together">hello@lucasm.dev</a></h2>
                 </div>
 
             </div>

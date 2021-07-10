@@ -1,6 +1,6 @@
-# [lucasm.dev — Lucas Menezes](https://lucasm.dev/)
+# [Lucas Menezes — lucasm.dev](https://lucasm.dev/)
 
-Personal website of Lucas Menezes built with [Next.js](https://nextjs.org/).
+Personal website of Lucas Menezes built with [Next.js](https://nextjs.org/) framework.
 
 ### Legal
 * [Privacy](https://lucasm.dev/privacy)

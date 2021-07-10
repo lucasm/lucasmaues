@@ -364,9 +364,9 @@ article blockquote {
 #profile img {
   float: none;
   display: block;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 3rem;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
   background-color: var(--cor-cinza);
   border-radius: 50%;
   border: 4px solid #fff;
@@ -399,7 +399,7 @@ article blockquote {
 
 /* Social icons */
 .icons {
-  margin: .5rem 0 .75rem;
+  margin: .5rem 0;
 }
 .icons a {
   float: none;
@@ -805,6 +805,10 @@ section .container {
     margin: 0 0 0 3rem;
     width: auto;
     float: right;
+  }
+  #profile img {
+    width: 180px;
+    height: 180px;
   }
   #profile:after {
     top: -18rem;
