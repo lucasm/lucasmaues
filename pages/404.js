@@ -25,9 +25,10 @@ export default function Custom404() {
             <div class="fullscreen-container">
 
                 <div class="container">
-                <figure class="gif" id="background"></figure>
                     <h1>Page Not Found</h1>
                     <p>The page you’re looking for can’t be found.</p>
+                <figure class="gif" id="background"></figure>
+                    
                 </div>
 
             </div>

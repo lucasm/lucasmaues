@@ -3,10 +3,11 @@
   --header-size: 56px;
   --cor-preto: #111;
   --cor-cinza: #f5f5f5;
-  --cor-y: #ffe1aa;
-  --radius: .45rem;
-  --radius-big: .85rem;
+  --cor-y: #ffe7bb;
+  --radius: 1rem;
+  --radius-big: 1.5rem;
   --familia-fonte: 'DM Sans', monospace;
+  --swiper-theme-color: #111 !important;
 }
 *, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -33,9 +34,8 @@ header {
   padding: 2rem 0;
   z-index: 999;
 }
-header .container {
+header .container, footer .container {
   padding: 0 2rem;
-  max-width: 100%;
 }
 
 
@@ -58,6 +58,7 @@ header .container {
   width: var(--header-size);
   height: var(--header-size);
   outline: none;
+  border-radius: 50%;
   font-size: 0;
   background: transparent;
 }
@@ -247,24 +248,22 @@ p, li, .button, input, textarea {
   font-size: 1rem;
 }
 
+/* Special */
 .special {
-  max-width: 780px;
+  max-width: 860px;
   padding: 1rem 1rem 0;
   margin: 0 auto;
 }
 .special h1 {
   padding: 1rem 0 3rem;
 }
-.special span {
-  background: var(--cor-y);
-  border-radius: var(--radius);
-  padding: 0 1rem;
-}
+
 .special-contact a {
-  border-bottom: 4px solid transparent;
+  border-bottom: 5px solid transparent;
+  overflow-wrap: anywhere;
 }
 .special-contact a:hover, .special-contact a:focus {
-  border-color: #fff;
+  border-color: var(--cor-preto);
 }
 
 nav a,
@@ -348,9 +347,7 @@ article blockquote {
 
 /* Home */
 .home {
-  border-radius: 1rem;
   padding: 1rem;
-  /* background: var(--cor-y); */
   text-align: left;
   z-index: 9;
 }
@@ -374,10 +371,10 @@ article blockquote {
 #profile:after {
   content: "";
   position: absolute;
-  top: -8rem;
+  top: -5rem;
   right: 0;
-  width: 65vw;
-  height: 65vw;
+  width: 12rem;
+  height: 12rem;
   background: var(--cor-y);
   border-radius: 50%;
   z-index: -1;
@@ -385,39 +382,41 @@ article blockquote {
 
 .subtitle {
   position: relative;
-  padding-left: 4.5rem;
+  padding-left: 4rem;
 }
 .subtitle:before {
   content: "";
   position: absolute;
   top: 1rem;
   left: 0;
-  width: 3rem;
+  width: 2.5rem;
   height: 3px;
   background: var(--cor-preto);
 }
 
-/* Social icons */
+/* Social Icons */
 .icons {
-  margin: .5rem 0;
+  margin: .5rem 0 .5rem -.5rem;
 }
 .icons a {
   float: none;
   display: inline-block;
   width: auto;
-  padding: 0;
+  padding: .75rem;
   line-height: 1;
-  margin: 0 1.75rem 1.75rem 0;
+  margin: 0 1rem 1rem 0;
+  border-radius: 50%;
   font-size: 0;
   background: transparent;
   transition: transform 0s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  border: 0;
 }
 .icons a:hover, .icons a:focus {
   background: transparent;
   transform: scale(1.075);
 }
 .icons svg {
-  width: 22px;
+  width: 24px;
 }
 
 .block {
@@ -452,17 +451,69 @@ article blockquote {
 }
 .block p {
   font-size: 1.5rem;
-  max-width: 550px;
   line-height: 1.5;
 }
 .block .button {
   width: max-content;
 }
 
+/* Swiper */
+#work {
+  overflow-x: hidden;
+}
+.cards .swiper-container {
+  padding: 2rem 0 4rem 0;
+  cursor: grab;
+  overflow: visible;
+}
+.cards .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 2px;
+  width: auto;
+}
+.cards .swiper-pagination-bullet {
+  opacity: .1;
+  background: var(--cor-preto);
+}
+.cards .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+  position: relative;
+}
+.cards .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.cards .swiper-pagination-bullet-active::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  border: 6px solid var(--cor-preto);
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 /* Cards */
+
+.cards {
+  margin-left: 0;
+}
+
 .card {
   position: relative;
   margin: 0 0 1rem;
+  padding: 2.5rem;
   flex-basis: 100%;
   color: inherit;
   text-decoration: none;
@@ -479,25 +530,38 @@ article blockquote {
 }
 .card h2, .card p {
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem 0 0;
 }
 .card h2 {
-  font-size: 1.6rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 .card p {
   line-height: 1.6;
-  padding: 2rem;
 }
 .card figure {
-  width: 100%;
-  padding: 3rem 1rem 1rem;
-  margin: 0 auto 0;
+  width: 112px;
+  padding: 2rem 1rem;
+  margin: 0;
   background: var(--cor-y);
   text-align: center;
+  border-radius: var(--radius);
 }
 .card svg {
   width: 48px;
   height: 48px;
+}
+.opensource a:after {
+  float: left;
+  content: "Open Source";
+  font-size: .7rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--cor-preto);
+  padding: .25rem .5rem;
+  margin-top: 2.5rem;
+  border-radius: .25rem;
+  z-index: -1;
 }
 
 code {
@@ -541,13 +605,16 @@ code {
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 1.5rem 1rem;
+  padding: 3rem 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 footer p {
   text-align: left;
+}
+footer p:first-child{
+  margin-right: 3rem;
 }
 
 .row.align-center {
@@ -561,14 +628,12 @@ footer p {
   -ms-flex-align: center;
   align-items: center;
 }
-
 .row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
-
 .justify-content-between.horizontal {
   width: 100%;
   -webkit-box-orient: horizontal;
@@ -577,7 +642,6 @@ footer p {
   -ms-flex-direction: row;
   flex-direction: row;
 }
-
 .justify-content-between {
   display: -webkit-box;
   display: -webkit-flex;
@@ -590,9 +654,9 @@ footer p {
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: flex-end;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 /* Forms */
@@ -747,10 +811,10 @@ section .container {
 @media only screen and (min-width: 520px) {
 
   #profile:after {
-    top: -14rem;
-    right: 0;
-    width: 60vw;
-    height: 60vw;
+    top: -10rem;
+    right: 10vw;
+    width: 18rem;
+    height: 18rem;
   }
 
   form {
@@ -766,7 +830,7 @@ section .container {
 }
 
 /* tablets */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
 
   #menu, .layer {
     display: none;
@@ -777,6 +841,7 @@ section .container {
     width: auto;
     opacity: 1;
     visibility: inherit;
+    margin-top: 1rem;
     background: transparent;
   }
   nav ul {
@@ -787,19 +852,15 @@ section .container {
     display: inline-block;
   }
   nav a {
-
     margin: 0 0 0 3rem;
-    line-height: var(--header-size);
+    line-height: inherit;
   }
 
   .home {
-    padding: 0 4rem 4rem;
+    padding: 0 2rem 4rem;
   }
   .home h2 {
-    font-size: 3.4rem;
-  }
-  .home .button {
-    margin-top: 2rem;
+    font-size: 3.5rem;
   }
   #profile {
     margin: 0 0 0 3rem;
@@ -807,33 +868,32 @@ section .container {
     float: right;
   }
   #profile img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
   #profile:after {
-    top: -18rem;
-    right: -2rem;
-    width: 40vw;
-    height: 40vw;
+    top: -14rem;
+    right: 0;
+    width: 24rem;
+    height: 24rem;
   }
-  .icons {
-    margin: 1rem 0;
-  }
-  .icons a {
-    margin: 0 2rem 0 0;
-  }
-
   h1, article h1 {
     font-size: 4rem;
   }
+  .special h1 {
+    font-size: 5rem;
+  }
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.75rem;
+  }
+  .card h2 {
+    font-size: 1.75rem;
   }
   h3, h4, article h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .description, .special p, .card p, article p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   p, li, nav a, .button, input, textarea {
     font-size: 1rem;
@@ -863,19 +923,11 @@ section .container {
     float: none;
     margin: 3rem auto;
   }
-  header .container, footer {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
 
 }
 
 /* laptops & desktops */
 @media only screen and (min-width: 1200px) {
-
-  body {
-    background: #fff;
-  }
 
   .card {
     -webkit-flex-basis: 30.333%;
@@ -883,12 +935,9 @@ section .container {
   }
 
   #profile:after {
-    top: -24rem;
-    right: -2rem;
-    width: 40vw;
-    height: 40vw;
+    top: -16rem;
+    right: 0;
+    width: 32rem;
+    height: 32rem;
   }
-
 }
-
-
