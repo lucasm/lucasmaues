@@ -52,7 +52,7 @@ export default function Home() {
                 
                 <div className="special">
 
-                    <h1>I build refined digital products.</h1>
+                    <h1>I build & refine digital products.</h1>
 
                     <div className="col">
                         <div className="col-left">
