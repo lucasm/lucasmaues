@@ -15,9 +15,9 @@ export default function Privacy() {
 
                     <h1>Privacy Policy</h1>
 
-                    <p>Lucas Menezes is committed to respect your privacy. Here is how he will collect and use your information.</p>
+                    <p>Lucas Menezes is committed to respect your privacy.</p>
                       
-                    <p>When you access https://lucasm.dev and their Open Source projects (collectively "projects"), you agree to be bound by this policy. Please, if you don't agree with any of the practices bellow, don't use the projects.</p>
+                    <p>When you access https://lucasm.dev and their Open Source projects (collectively called "projects"), you agree to be bound by this policy. If you do not agree with any of the practices below for collecting and using your information, please, don't use the projects.</p>
                       
                     <p>This privacy policy is following the Brazilian General Data Protection Law (LGPD) and European General Data Protection Regulation (GDPR).</p>
 
@@ -49,7 +49,7 @@ export default function Privacy() {
                     <p>Note that this policy can be revised at any time. You might also receive an alert informing you of these changes on the projects. Your continued use of the projects after any change in this Privacy Policy will constitute your acceptance of such change.</p>
 
                     <h2>10. Questions</h2>
-                    <p>If you have any questions, please, mail to <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.</p>
+                    <p>If you have questions, please, mail to <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.</p>
 
                 </article>
 

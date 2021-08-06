@@ -21,8 +21,6 @@ export default function Home() {
                     <h2>Lucas Menezes — Frontend Software Engineer</h2>
                     <p className="description">Hi there! I develop websites, applications and open source projects.</p>
 
-                    <Icons/>
-
                     <a href="#work" className="button">View work</a>
                     
                 </div>
@@ -60,12 +58,12 @@ export default function Home() {
                         <div className="col-left">
                             <p>I’ve been working as consultant for startups and businesses, helping them to solve problems and establish their online presence with refined websites and applications.</p>
                                 
-                            <p>I build reactive front-end, with strong focus on user experience, responsive design, accessibility, progressive enhancement and performance. And adjacent back-end, with databases and APIs integrations.</p>
+                            <p>I build reactive front-end, with strong focus on user experience, responsive design, accessibility, progressive enhancement and performance. And adjacent back-end, with  APIs integrations and databases.</p>
                         </div>
                         <div className="col-right">
-                            <p>JavaScript, TypeScript, React, HTML, CSS, Node.js, Next.js, PostgreSQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are my main development stack.</p>
+                            <p>JavaScript, TypeScript, HTML, CSS, React, Node.js, Next.js, SQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
 
-                            <p>I’m also the creator of <a href="https://patreon.com/lucasm" target="_blank" rel="noopener">open source projects</a> backed by the community. Developing digital products to empower people is my passion.</p>
+                            <p>Developing digital products to empower people is my passion. So, I’m also creating <a href="https://patreon.com/lucasm" target="_blank" rel="noopener">open source projects</a> backed by the community.</p>
 
                             <p>Want to work together? Contact me to check my availability to discuss your project.</p>
                             
@@ -85,6 +83,8 @@ export default function Home() {
                 <div className="special special-contact">
                     
                     <h2><a href="mailto:hello@lucasm.dev?subject=Let's%20work%20together">hello@lucasm.dev</a></h2>
+
+                    <Icons/>
 
                 </div>
 
