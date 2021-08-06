@@ -40,7 +40,7 @@ export default function Cards() {
                     </figure>
 
                     <h2>Findto</h2>
-                    <p>Web search app. Find anything with multiple engines, sources and privacy.</p>
+                    <p>Web search app with multiple engines, sources and privacy tools.</p>
                 </a>
             </div>
         </SwiperSlide>
@@ -53,7 +53,7 @@ export default function Cards() {
                     </figure>
 
                     <h2>Headly</h2>
-                    <p>News headlines app. Trusted journalism, fact-checking and international editions.</p>
+                    <p>News headlines app with trusted journalism, fact-checking and internationalization.</p>
                 </a>
             </div>
         </SwiperSlide>
@@ -79,7 +79,7 @@ export default function Cards() {
                     </figure>
 
                     <h2>Lutec Info</h2>
-                    <p>Ecommerce website and SEO services for a home computing tech assistance and online store.</p>
+                    <p>Ecommerce website and SEO services for a home computing technical assistance and online store.</p>
                 </a>
             </div>
         </SwiperSlide>

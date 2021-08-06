@@ -1,12 +1,15 @@
-import styles from '../styles/Page.module.css'
 import PageLayout from '../components/PageLayout';
 
 export default function Privacy() {
+
   return (
-    <PageLayout title="Privacy Policy — Lucas Menezes" description="Privacy policy of Lucas Menezes open source projects.">
+    
+    <PageLayout
+      title="Privacy Policy — Lucas Menezes"
+      description="Privacy policy of Lucas Menezes open source projects.">
 
         <section>
-            <div class="container left">
+            <div className="container left">
        
                 <article>
 
@@ -52,8 +55,6 @@ export default function Privacy() {
 
             </div>
         </section>
-
-
 
     </PageLayout>
   )

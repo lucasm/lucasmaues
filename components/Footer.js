@@ -15,7 +15,7 @@ const Footer = () => (
     <div className="row align-center">
         <div className="justify-content-between horizontal">
 
-          <p><Link href="/"><a>Lucas Menezes</a></Link> Copyright {getYear()} </p>
+          <p>Copyright {getYear()} Lucas Menezes</p>
           <p><Link href="/privacy"><a accessKey="6">Privacy</a></Link></p>
 
         </div>
