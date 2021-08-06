@@ -393,14 +393,14 @@ article blockquote {
 
 /* Social Icons */
 .icons {
-  margin: 0 0 1rem -.75rem;
+  margin: 1rem 0 1rem -.75rem;
 }
 .icons a {
   float: none;
   display: inline-block;
   width: auto;
   padding: .75rem;
-  margin: 0 0 0 0;
+  margin: 0 1rem 1rem 0;
   border-radius: 50%;
   font-size: 0;
   background: transparent;
@@ -411,7 +411,7 @@ article blockquote {
   opacity: .75;
 }
 .icons svg {
-  width: 18px;
+  width: 22px;
 }
 
 /* Cards */
@@ -813,14 +813,11 @@ section .container {
     width: 24rem;
     height: 24rem;
   }
-  .icons {
-    margin: .5rem 0 1rem -.75rem;
-  }
   .icons a {
-    margin: 0 .5rem .5rem 0;
+    font-size: 1rem;
   }
   .icons svg {
-    width: 22px;
+    margin: 0 .6rem -.3rem 0;
   }
   h1, article h1 {
     font-size: 4rem;
