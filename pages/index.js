@@ -82,7 +82,7 @@ export default function Home() {
 
                 <div className="special special-contact">
                     
-                    <h2><a href="mailto:hello@lucasm.dev?subject=Let's%20work%20together">hello@lucasm.dev</a></h2>
+                    <h2><a href="mailto:hi@lucasm.dev?subject=Let's%20work%20together">hi@lucasm.dev</a></h2>
 
                     <Icons/>
 
