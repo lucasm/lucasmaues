@@ -566,57 +566,30 @@ footer {
   width: 100%;
   margin: 0 auto;
   padding: 3rem 0 1rem;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 footer p {
   text-align: left;
 }
 footer p:first-child{
-  margin-right: 3rem;
+  margin-right: 1rem;
 }
-
-.row.align-center {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.row {
+footer .container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-.justify-content-between.horizontal {
+  height: 100%;
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-}
-.justify-content-between {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: justify;
-  -webkit-justify-content: flex-end;
   -ms-flex-pack: justify;
-  justify-content: flex-end;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* Forms */
@@ -762,7 +735,6 @@ section .container {
   form input:nth-child(2) {
     margin-right: 6%;
   }
-
 }
 
 /* tablets */
@@ -854,6 +826,14 @@ section .container {
     margin: 1.5%;
     -webkit-flex-basis: 47%;
     flex-basis: 47%;
+  }
+
+  footer p:first-child{
+    margin-right: 3rem;
+  }
+  footer .container {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .gif {
