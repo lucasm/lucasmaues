@@ -4,7 +4,7 @@ import Cards from '../components/Cards';
 
 export default function Home() {
   return (
-    <PageLayout title="Lucas Menezes — Frontend Software Engineer" description="Lucas Menezes is a Frontend Software Engineer from Brazil creating websites, apps and open source projects.">
+    <PageLayout title="Lucas Menezes — Software Engineer" description="Lucas Menezes is a Software Engineer from Brazil creating websites, apps and open source projects.">
     
     <main>
 
@@ -18,10 +18,10 @@ export default function Home() {
                         <img src="//avatars.githubusercontent.com/lucasm" alt="Lucas Menezes profile photo"/>
                     </figure>
 
-                    <h2>Lucas Menezes — Frontend Software Engineer</h2>
-                    <p className="description">Hi there! I develop websites, applications and open source projects.</p>
+                    <h2>Lucas Menezes — Software Engineer</h2>
+                    <p className="description">Hi there! I develop websites, apps and open source projects.</p>
 
-                    <a href="#work" className="button">View work</a>
+                    <a href="#work" className="button">See my work</a>
                     
                 </div>
 
@@ -56,14 +56,14 @@ export default function Home() {
 
                     <div className="col">
                         <div className="col-left">
-                            <p>I’ve been working as consultant for startups and businesses, helping them to solve problems and establish their online presence with refined websites and applications.</p>
+                            <p>I’ve been working as consultant for startups and businesses, helping them to solve problems and establish their online presence with websites and applications.</p>
                                 
-                            <p>I build reactive front-end, with strong focus on user experience, responsive design, accessibility, progressive enhancement and performance. And adjacent back-end, with  APIs integrations and databases.</p>
+                            <p>I build reactive front-end with focus on user experience (UX), responsive design, accessibility, progressive enhancement and performance. And adjacent back-end, with  APIs integrations and databases.</p>
                         </div>
                         <div className="col-right">
-                            <p>JavaScript, TypeScript, HTML, CSS, React, Node.js, Next.js, SQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
+                            <p>JavaScript, HTML, CSS, React, Node.js, Next.js, PostgreSQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
 
-                            <p>Developing digital products to empower people is my passion. So, I’m also creating <a href="https://patreon.com/lucasm" target="_blank" rel="noopener">open source projects</a> backed by the community.</p>
+                            <p>Developing digital products to empower people is my passion. So, I’m also creating open source projects backed by the community.</p>
 
                             <p>Want to work together? Contact me to check my availability to discuss your project.</p>
                             

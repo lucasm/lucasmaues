@@ -66,7 +66,7 @@ export default function Cards() {
                     </figure>
 
                     <h2>Tribunal de Contas dos Municípios do Estado do Pará</h2>
-                    <p>Data visualization web apps with maps, graphs and tax calcs. Public services portal with accessibility and intranet.</p>
+                    <p>Web apps of data visualization with maps, graphs and tax calcs. Public content and services portal with intranet and accessibility.</p>
                 </a>
             </div>
         </SwiperSlide>
