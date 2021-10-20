@@ -4,7 +4,7 @@ import Cards from '../components/Cards';
 
 export default function Home() {
   return (
-    <PageLayout title="Lucas Menezes — Software Engineer" description="Lucas Menezes is a Software Engineer from Brazil creating websites, apps and open source projects.">
+    <PageLayout title="Lucas Menezes — Software Engineer" description="Lucas Menezes is a Software Engineer working remotely from Brazil. Creating websites, apps and open source projects.">
     
     <main>
 
@@ -63,7 +63,7 @@ export default function Home() {
                         <div className="col-right">
                             <p>JavaScript, HTML, CSS, Node.js, React, Next.js, PostgreSQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
 
-                            <p>Developing digital products to empower people is my passion. So, I’m also creating open source projects backed by the community.</p>
+                            <p>I believe in develop digital products that can empower people. So, I’m also create open source projects backed by the community.</p>
 
                             <p>Want to work together? Contact me to check my current availability to discuss your project.</p>
                             
