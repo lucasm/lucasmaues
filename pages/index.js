@@ -52,20 +52,20 @@ export default function Home() {
                 
                 <div className="special">
 
-                    <h1>I build & refine digital products.</h1>
+                    <h1>Building & refining digital products.</h1>
 
                     <div className="col">
                         <div className="col-left">
-                            <p>I’ve been working as consultant for startups and businesses, helping them to solve problems and establish their online presence with websites and applications.</p>
+                            <p>I’ve been working as consultant for businesses and startups, helping them to solve problems and establish their online presence with websites and applications.</p>
                                 
-                            <p>I build reactive front-end with focus on user experience (UX), responsive design, accessibility, progressive enhancement and performance. And adjacent back-end, with  APIs integrations and databases.</p>
+                            <p>I build reactive front-end with focus on user experience (UX), responsive design, accessibility, progressive enhancement and performance — and adjacent back-end, with  APIs integrations and databases.</p>
                         </div>
                         <div className="col-right">
-                            <p>JavaScript, HTML, CSS, React, Node.js, Next.js, PostgreSQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
+                            <p>JavaScript, HTML, CSS, Node.js, React, Next.js, PostgreSQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
 
                             <p>Developing digital products to empower people is my passion. So, I’m also creating open source projects backed by the community.</p>
 
-                            <p>Want to work together? Contact me to check my availability to discuss your project.</p>
+                            <p>Want to work together? Contact me to check my current availability to discuss your project.</p>
                             
                         </div>
                     </div>
@@ -78,11 +78,11 @@ export default function Home() {
         <section id="contact" className="bg-y">
             <div className="container left">
 
-                <h3 className="subtitle">Get in touch</h3>
+                <h3 className="subtitle">Let’s talk</h3>
 
                 <div className="special special-contact">
                     
-                    <h2><a href="mailto:hi@lucasm.dev?subject=Let's%20work%20together">hi@lucasm.dev</a></h2>
+                    <h2><a href="mailto:hello@lucasm.dev?subject=Let's%20work%20together">hello@lucasm.dev</a></h2>
 
                     <Icons/>
 

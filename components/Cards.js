@@ -40,7 +40,7 @@ export default function Cards() {
                     </figure>
 
                     <h2>Findto</h2>
-                    <p>Web search app with multiple engines, sources and privacy tools.</p>
+                    <p>Open source finder tool, with multiple search engines, sources and privacy.</p>
                 </a>
             </div>
         </SwiperSlide>
@@ -53,7 +53,7 @@ export default function Cards() {
                     </figure>
 
                     <h2>Headly</h2>
-                    <p>News headlines app with trusted journalism, fact-checking and internationalization.</p>
+                    <p>News headlines app, with trusted journalism, fact-checking and internationalization.</p>
                 </a>
             </div>
         </SwiperSlide>
