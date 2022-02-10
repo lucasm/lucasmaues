@@ -1,13 +1,12 @@
 :root {
   font-size: 16px;
-  --header-size: 56px;
+  --header-size: 32px;
   --color-black: #111;
   --color-grey: #f5f5f5;
-  --color-y: #ffe7bb;
+  --color-y: #f09fc8;
   --radius: 1rem;
   --radius-big: 1.5rem;
   --familia-fonte: 'DM Sans', monospace;
-  --swiper-theme-color: #111 !important;
 }
 *, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -38,27 +37,24 @@ header .container, footer .container {
   padding: 0 2rem;
 }
 
-
 #logo {
   float: left;
-  padding: 1rem;
   width: var(--header-size);
   height: var(--header-size);
   font-size: 0;
   line-height: 0;
-  border-radius: 50%;
-  background: var(--color-y);
+  background: transparent;
   z-index: 4;
+  padding: .25rem;
 }
 #menu {
   position: relative;
   float: right;
   z-index: 9;
-  padding-left: 1rem;
+  padding-left: .25rem;
   width: var(--header-size);
   height: var(--header-size);
   outline: none;
-  border-radius: 50%;
   font-size: 0;
   background: transparent;
 }
@@ -104,8 +100,8 @@ header .container, footer .container {
 .layer {
   display: inline-block;
   background: transparent;
-  top: 1.7rem;
-  right: 3.45rem;
+  top: 0.9rem;
+  right: 2.9rem;
   width: 3px;
   height: 3px;
   position: absolute;
@@ -227,11 +223,11 @@ h1, h2, h3, h4, a, b, strong, .button, button, input {
   font-weight: 700;
 }
 
-h1 {
-  font-size: 2.4rem;
+h1, .home h2 {
+  font-size: 2.2rem;
 }
 h2, article h1, nav a {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 h3, article h2 {
   font-size: 1.4rem;
@@ -250,7 +246,7 @@ p, li, .button, input, textarea, .special p, .card p, .home .description {
   margin: 0 auto;
 }
 .special h1 {
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 2.5rem;
 }
 
 .special-contact a {
@@ -308,12 +304,12 @@ article blockquote {
   position: relative;
   display: inline-block;
   float: none;
-  margin: .5rem 0 0;
-  padding: 0 2rem;
-  line-height: 44px;
+  margin: .5rem .5rem 0 0;
+  padding: 0 1.5rem;
+  line-height: 36px;
   color: var(--color-black);
   background: var(--color-y);
-  border: none;
+  border: 3px solid transparent;
   border-radius: 50rem;
   cursor: pointer;
 }
@@ -321,6 +317,14 @@ article blockquote {
   background: var(--color-black);
   color: #fff;
   box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+}
+.button-secondary {
+  color: var(--color-black);
+  background: transparent;
+  border-color: var(--color-black);
+}
+.button-secondary:hover, .button-secondary:focus {
+  background: var(--color-black);
 }
 
 /* Helpers */
@@ -342,19 +346,25 @@ article blockquote {
 
 /* Home */
 .home {
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem 0;
   text-align: left;
   z-index: 9;
 }
 .home .description {
   max-width: 500px;
+  margin: 0 auto;
+}
+.home div {
+  text-align: center;
 }
 
 #profile {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  float: left;
+  float: right;
 }
 #profile img {
   float: none;
@@ -364,17 +374,6 @@ article blockquote {
   margin: 0 auto 1.5rem;
   background-color: var(--color-grey);
   border-radius: 50%;
-}
-#profile:after {
-  content: "";
-  position: absolute;
-  top: -5rem;
-  right: 0;
-  width: 12rem;
-  height: 12rem;
-  background: var(--color-y);
-  border-radius: 50%;
-  z-index: -1;
 }
 
 .subtitle {
@@ -393,15 +392,14 @@ article blockquote {
 
 /* Social Icons */
 .icons {
-  margin: 1rem 0 1rem -.75rem;
+  margin: 0 0 1rem 0;
 }
 .icons a {
   float: none;
   display: inline-block;
   width: auto;
-  padding: .75rem;
-  margin: 0 1rem 1rem 0;
-  border-radius: 50%;
+  padding: 0;
+  margin: .75rem;
   font-size: 0;
   background: transparent;
   border: 0;
@@ -411,61 +409,17 @@ article blockquote {
   opacity: .75;
 }
 .icons svg {
-  width: 22px;
+  width: 20px;
 }
 
 /* Cards */
-
 .cards {
   margin-left: 0;
 }
-
-/* Swiper */
-#work {
-  overflow-x: hidden;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.cards .swiper-container {
-  padding: 2rem 0 4rem 0;
-  cursor: grab;
-  overflow: visible;
-}
-.cards .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 2px;
-  width: auto;
-}
-.cards .swiper-pagination-bullet {
-  opacity: .1;
-  background: var(--color-black);
-}
-.cards .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 6px;
-  position: relative;
-}
-.cards .swiper-pagination-bullet-active {
-  opacity: 1;
-}
-.cards .swiper-pagination-bullet-active::after {
-  content: '';
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 20px;
-  border: 6px solid var(--color-black);
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
 .card {
   position: relative;
   margin: 0 0 1rem;
@@ -500,12 +454,12 @@ article blockquote {
   line-height: 1.6;
 }
 .card figure {
-  width: 112px;
-  padding: 2rem 1rem;
+  width: 80px;
+  padding: 1rem 0;
+  border-radius: 1.5rem;
   margin: 0;
   background: var(--color-y);
   text-align: center;
-  border-radius: var(--radius-big);
 }
 .card svg {
   width: 48px;
@@ -532,6 +486,12 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
+span {
+  background: var(--color-y);
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .grid {
   width: 100%;
@@ -543,7 +503,7 @@ code {
   margin-top: 1rem;
 }
 
-/* gifs for warning pages */
+/* GIFs for warning pages */
 .gif {
   height: 240px;
   width: 100%;
@@ -561,11 +521,23 @@ code {
   filter: gray;
 }
 
+/* Circle */
+#circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: var(--color-y);
+  border-radius: 100%;
+  transition: transform 0.2s;
+  margin: -200px 0 0 -200px;
+  z-index: -1;
+}
+
 /* Footer */
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 0 1rem;
+  padding: 2rem 0 .25rem;
   align-items: center;
 }
 footer p {
@@ -749,7 +721,6 @@ section .container {
     width: auto;
     opacity: 1;
     visibility: inherit;
-    margin-top: 1rem;
     background: transparent;
   }
   nav ul {
@@ -765,13 +736,20 @@ section .container {
   }
 
   .home {
+    grid-template-columns: 1fr 2fr;
     padding: 4rem 2rem 0;
   }
   .home h2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+  }
+  .home div {
+    text-align: left;
+  }
+  .home .description {
+    margin: 0;
   }
   #profile {
-    margin: 0 0 0 3rem;
+    margin: 0 3rem 0 0;
     width: auto;
     float: right;
   }
@@ -779,17 +757,8 @@ section .container {
     width: 200px;
     height: 200px;
   }
-  #profile:after {
-    top: -14rem;
-    right: 0;
-    width: 24rem;
-    height: 24rem;
-  }
-  .icons a {
-    font-size: 1rem;
-  }
-  .icons svg {
-    margin: 0 .6rem -.3rem 0;
+  .icons {
+    margin: 0 0 1rem -.75rem;
   }
   h1, article h1 {
     font-size: 4rem;
@@ -798,13 +767,13 @@ section .container {
     font-size: 2.75rem;
   }
   .card h2 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
-  h3, h4, article h2, .description, .home .description {
+  h3, h4, article h2 {
     font-size: 1.5rem;
   }
-  .special p, .card p, article p {
-    font-size: 1.25rem;
+  .description, .home .description, .special p, .card p, article p {
+    font-size: 1.2rem;
   }
   p, li, nav a, .button, input, textarea {
     font-size: 1rem;
@@ -822,10 +791,16 @@ section .container {
   .col-right {
     width: 45%;
   }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
   .card {
-    margin: 1.5%;
-    -webkit-flex-basis: 47%;
-    flex-basis: 47%;
+    margin: 3%;
+  }
+  .card figure {
+    width: 112px;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
   }
 
   footer p:first-child{
@@ -837,8 +812,8 @@ section .container {
   }
 
   .gif {
-    height: 400px;
-    max-width: 500px;
+    height: 350px;
+    max-width: 400px;
     float: none;
     margin: 3rem auto;
   }
@@ -848,9 +823,8 @@ section .container {
 /* laptops & desktops */
 @media only screen and (min-width: 1200px) {
 
-  .card {
-    -webkit-flex-basis: 30.333%;
-    flex-basis: 30.333%;
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #profile:after {

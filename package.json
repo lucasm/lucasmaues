@@ -1,6 +1,6 @@
 {
-  "name": "lucasm",
-  "version": "0.1.0",
+  "name": "lucasmdev",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,9 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^11.1.2",
+    "next": "^12.0.10",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "swiper": "^6.8.4"
+    "react-dom": "^17.0.2"
   }
 }

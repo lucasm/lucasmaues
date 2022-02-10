@@ -4,31 +4,33 @@ import Cards from '../components/Cards';
 
 export default function Home() {
   return (
-    <PageLayout title="Lucas Menezes — Software Engineer" description="Lucas Menezes is a Software Engineer working remotely from Brazil. Creating websites, apps and open source projects.">
+      <PageLayout
+        title="Lucas Menezes — Software Engineer"
+        description="Hi, I'm a Software Engineer from Brazil creating websites, apps and open source projects.">
     
     <main>
 
-        <section className="fullscreen">
-
-            <div className="fullscreen-container">
-
-                <div className="container home">
-
+        <section>
+            <div className="container home">
+                        
+                <div>
                     <figure id="profile">
-                        <img src="//avatars.githubusercontent.com/lucasm" alt="Lucas Menezes profile photo"/>
+                            <img src="//avatars.githubusercontent.com/lucasm" alt="Lucas Menezes profile photo" />
                     </figure>
+                </div>
+                            
+                <div>
+                    <h2>Hi, I'm Lucas Menezes</h2>
+                    <p className="description">I'm a Software Engineer from Brazil, making websites, apps and open source projects.</p>
+                        
+                    <Icons/>
 
-                    <h2>Lucas Menezes — Software Engineer</h2>
-                    <p className="description">Hi there! I develop websites, apps and open source projects.</p>
-
-                    <a href="#work" className="button">See my work</a>
-                    
+                    <a href="#work" className="button button-main">View my projects</a>
+                    <a href="https://patreon.com/lucasm" target="_blank" rel="noopener" className="button button-secondary">Donate me</a>
                 </div>
 
             </div>
-
         </section>
-
 
         <section id="work" className="gray">
 
@@ -45,27 +47,28 @@ export default function Home() {
         </section>
 
         <section id="about" >
+                  
             <div className="container left">
 
-                
                 <h3 className="subtitle">About me</h3>
                 
                 <div className="special">
 
-                    <h1>Building & refining digital products.</h1>
+                    <h1><span>Building</span> the next Web experiences</h1>
 
                     <div className="col">
                         <div className="col-left">
-                            <p>I’ve been working as consultant for businesses and startups, helping them to solve problems and establish their online presence with websites and applications.</p>
-                                
-                            <p>I build reactive front-end with focus on user experience (UX), responsive design, accessibility, progressive enhancement and performance — and adjacent back-end, with  APIs integrations and databases.</p>
+                            <p>Working as consultant, I've been helping businesses and organizations to solve their problems and establish an online presence with websites and applications.</p>
+                            
+                            <p>I develop reactive front-end with focus on user experience (responsive design, accessibility, progressive enhancement and performance) and adjacent back-end integrations with APIs and databases.</p>
                         </div>
                         <div className="col-right">
-                            <p>JavaScript, HTML, CSS, Node.js, React, Next.js, PostgreSQL, PHP, WordPress, Git, AWS, Microsoft Azure and Vercel are being my main development stack.</p>
-
-                            <p>I believe in develop digital products that can empower people. So, I’m also create open source projects backed by the community.</p>
-
-                            <p>Want to work together? Contact me to check my current availability to discuss your project.</p>
+                                  
+                            <p>My main development stack is JavaScript, TypeScript, Node.js, React, Next.js, Vue.js, PHP, WordPress and currently learning Ethereum blockchain and Swift.</p>
+                            
+                            <p>I believe on digital products that can empower people do their best and that's why I'm creating <a href="https://patreon.com/lucasm">open source projects</a> backed by the community.</p>
+                                  
+                            <p>Want to work together? Contact me to check my availability.</p>
                             
                         </div>
                     </div>
@@ -78,13 +81,13 @@ export default function Home() {
         <section id="contact" className="bg-y">
             <div className="container left">
 
-                <h3 className="subtitle">Let’s talk</h3>
+                <h3 className="subtitle">Get in touch</h3>
 
                 <div className="special special-contact">
                     
                     <h2><a href="mailto:hello@lucasm.dev?subject=Let's%20work%20together">hello@lucasm.dev</a></h2>
 
-                    <Icons/>
+                    
 
                 </div>
 
@@ -93,5 +96,6 @@ export default function Home() {
 
     </main>
 
-    </PageLayout>)
+      </PageLayout>
+  )
 }
