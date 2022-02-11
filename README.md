@@ -1,4 +1,4 @@
-# [Lucas Menezes (lucasm.dev](https://lucasm.dev/))
+# [lucasm.dev](https://lucasm.dev/)
 
 Lucas Menezes personal website built with [Next.js](https://nextjs.org/) framework.
 

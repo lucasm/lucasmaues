@@ -11,8 +11,9 @@ export default function PageLayout(props) {
     <Head>
 		<title>{props.title}</title>
 		<meta name="description" content={props.description}/>
-		<meta name="author" content="Lucas Menezes"/>
-		<link rel="icon" href="/favicon.ico"/>
+		<meta name="author" content="Lucas Menezes" />
+			  
+		<link rel="icon" href="/favicon.ico" sizes="any"/>
 
 		<link rel="preconnect" href="https://fonts.gstatic.com"/>
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"/>

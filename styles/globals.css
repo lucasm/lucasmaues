@@ -372,7 +372,7 @@ article blockquote {
   width: 140px;
   height: 140px;
   margin: 0 auto 1.5rem;
-  background-color: var(--color-grey);
+  background-color: var(--color-y);
   border-radius: 50%;
 }
 
