@@ -5,8 +5,8 @@ import Cards from '../components/Cards';
 export default function Home() {
   return (
       <PageLayout
-        title="Lucas Menezes — Software Engineer"
-        description="Hi, I'm a Software Engineer from Brazil creating websites, apps and open source projects.">
+        title="Lucas Menezes — Software Developer"
+        description="Hi, I'm a Software Developer from Brazil creating websites, apps and open source projects.">
     
     <main>
 
@@ -21,7 +21,7 @@ export default function Home() {
                             
                 <div>
                     <h2>Hi, I'm Lucas Menezes</h2>
-                    <p className="description">I'm a Software Engineer from Brazil, making websites, apps and open source projects.</p>
+                    <p className="description">I'm a Software Developer from Brazil, making websites, apps and open source projects.</p>
                         
                     <Icons/>
 
