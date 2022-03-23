@@ -21,7 +21,7 @@ export default function Home() {
                             
                 <div>
                     <h2>Hi, I'm Lucas Menezes</h2>
-                    <p className="description">I'm a Software Developer from Brazil, making websites, apps and open source projects.</p>
+                    <p className="description">I'm a Software Developer from Brazil. I make websites, apps and open source projects.</p>
                         
                     <Icons/>
 
@@ -58,15 +58,15 @@ export default function Home() {
 
                     <div className="col">
                         <div className="col-left">
-                            <p>Working as consultant, I've been helping businesses and organizations to solve their problems and establish an online presence with websites and applications.</p>
+                            <p>Working as consultant, I've been helping businesses and organizations to solve their problems and establish an online presence with refined websites and applications.</p>
                             
-                            <p>I develop reactive front-end with focus on user experience (responsive design, accessibility, progressive enhancement and performance) and adjacent back-end integrations with APIs and databases.</p>
+                            <p>I develop reactive front-end with strong focus on user experience (responsive design, accessibility, progressive enhancement and performance) and adjacent back-end integrations with APIs and databases.</p>
                         </div>
                         <div className="col-right">
                                   
-                            <p>My main development stack is JavaScript, TypeScript, Node.js, React, Next.js, Vue.js, PHP, WordPress and currently learning Ethereum blockchain and Swift.</p>
+                            <p>My main development stack is JavaScript, TypeScript, Node.js, React, Next.js, Vue.js, PHP, WordPress and currently learning Ethereum blockchain and SwiftUI.</p>
                             
-                            <p>I believe on digital products that can empower people do their best and that's why I'm creating <a href="https://patreon.com/lucasm">open source projects</a> backed by the community.</p>
+                            <p>I believe on digital products that empower people do their best and that's why I'm creating <a href="https://patreon.com/lucasm">open source projects</a> backed by community.</p>
                                   
                             <p>Want to work together? Contact me to check my availability.</p>
                             
@@ -85,7 +85,7 @@ export default function Home() {
 
                 <div className="special special-contact">
                     
-                    <h2><a href="mailto:hello@lucasm.dev?subject=Let's%20work%20together">hello@lucasm.dev</a></h2>
+                    <h2><a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a></h2>
 
                     
 
