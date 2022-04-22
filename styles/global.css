@@ -1,33 +1,38 @@
 :root {
   font-size: 16px;
   --header-size: 32px;
-  --color-black: #111;
-  --color-grey: #f5f5f5;
   --color-y: #ffd99b;
+  --color-b: #111111;
+  --color-g: #f5f5f5;
+  --gradient: linear-gradient(180deg, var(--color-y), #fff);
   --radius: 1rem;
   --radius-big: 1.5rem;
-  --familia-fonte: 'DM Sans', monospace;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
-*, *:after, *:before { margin: 0; padding: 0; box-sizing: border-box; }
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-html, body, main, .PageLayout {
+body, main {
   position: relative;
   height: 100%;
 }
 body {
   display: block;
   text-align: center;
-  font-family: var(--familia-fonte);
+  font-family: var(--font);
   font-size: 0;
   background: #fff;
 }
 header {
-  position: absolute;
+  position: relative;
   float: left;
   width: 100%;
   padding: 2rem 0;
@@ -35,18 +40,32 @@ header {
 }
 header .container, footer .container {
   padding: 0 2rem;
+  max-width: 100%;
 }
 
 #logo {
+  position: relative;
   float: left;
-  width: var(--header-size);
+  padding-left: 2.75rem;
   height: var(--header-size);
-  font-size: 0;
-  line-height: 0;
-  background: transparent;
-  z-index: 4;
-  padding: .25rem;
+  font-size: 1.5rem;
+  line-height: 1.275;
+  letter-spacing: -.1rem;
 }
+#logo figure {
+  position: absolute;
+  top: -.015rem;
+  left: 0;
+  padding: .45rem;
+  border-radius: 5rem;
+  background: var(--color-y);
+  line-height: 0;
+}
+#logo figure svg {
+  width: 18px;
+  opacity: 0;
+}
+
 #menu {
   position: relative;
   float: right;
@@ -62,7 +81,7 @@ header .container, footer .container {
   position: relative;
   width: 24px;
   height: 3px;
-  background: var(--color-black);
+  background: var(--color-b);
   transition: all .25s ease;
 }
 .hamburger:before, .hamburger:after {
@@ -72,7 +91,7 @@ header .container, footer .container {
   right: 0;
   width: 24px;
   height: 3px;
-  background: var(--color-black);
+  background: var(--color-b);
   z-index: 1;
   transition: all .25s ease;
 }
@@ -111,7 +130,7 @@ header .container, footer .container {
   z-index: 2;
  }
 .layer-active {
-  box-shadow: 0 0 0 125vw var(--color-grey), 0 0 0 125vh var(--color-grey);
+  box-shadow: 0 0 0 125vw var(--color-g), 0 0 0 125vh var(--color-g);
 }
 .remove-scrollbar {
   overflow: hidden;
@@ -153,7 +172,7 @@ nav a {
   position: relative;
   display: inline-block;
   margin: 1rem 0;
-  color: var(--color-black);
+  color: var(--color-b);
 }
 
 section {
@@ -185,9 +204,12 @@ section {
 }
 
 a {
-  color: var(--color-black);
-  font-weight: bold;
+  color: var(--color-b);
   text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
 }
 a, button, input, textarea {
   -webkit-transition: all 150ms ease;
@@ -196,38 +218,43 @@ a, button, input, textarea {
   -o-transition: all 150ms ease;
   transition: all 150ms ease;
 }
-button {
-  cursor: pointer;
-  border: none;
-}
+
 
 p, li, h1, h2, h3, h4, h5, h6 {
-  color:var(--color-black);
+  font-family: var(--font);
+  color:var(--color-b);
   padding-bottom: 2rem;
 }
+
 p, ul {
   padding-bottom: 1.5rem;
 }
 ul {
   margin-left: 1.2rem;
 }
-p, li {
-  font-weight: 400;
-  line-height: 1.7;
-}
 li {
   padding: 0 0 .5rem .5rem;
 }
-h1, h2, h3, h4, a, b, strong, .button, button, input {
-  font-family: var(--familia-fonte);
+
+p, li {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, #logo, nav a, .subtitle {
+  font-weight: 500;
+}
+
+a, b, strong, .button, button, input, .card h2 {
   font-weight: 700;
 }
 
-h1, .home h2 {
-  font-size: 2.2rem;
+h1, .home h1 {
+  font-size: 3.25rem;
+  letter-spacing: -.2rem;
 }
 h2, article h1, nav a {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
 }
 h3, article h2 {
   font-size: 1.4rem;
@@ -235,28 +262,32 @@ h3, article h2 {
 h4, article h3, .description {
   font-size: 1.25rem;
 }
-p, li, .button, input, textarea, .special p, .card p, .home .description {
+p, li, .button, input, textarea, .card p {
+  font-size: 1.2rem;
+}
+.button, input, textarea, footer p {
   font-size: 1rem;
 }
 
 /* Special */
-.special {
-  max-width: 760px;
-  padding: 1rem 1rem 0;
+.contactContainer {
+  display: grid;
+  text-align: left;
+}
+.contactContainer div:nth-child(1) {
+  padding: 0 0 4rem 0;
+}
+
+.specialContainer {
+  text-align: left;
+  max-width: 620px;
   margin: 0 auto;
 }
-.special h1 {
-  padding: 1rem 0 2.5rem;
+.specialContainer p {
+  padding: 2rem 0 .5rem;  
 }
 
-.special-contact a {
-  border-bottom: 5px solid transparent;
-  overflow-wrap: anywhere;
-}
-.special-contact a:hover, .special-contact a:focus {
-  border-color: var(--color-black);
-}
-
+/* Link Border */
 nav a,
 p a,
 article a {
@@ -265,7 +296,7 @@ article a {
 nav a:hover, nav a:focus,
 p a:hover, p a:focus,
 article a:hover, article a:focus {
-  border-color: var(--color-black);
+  border-color: var(--color-b);
 }
 
 /* Articles */
@@ -273,6 +304,7 @@ article {
   position: relative;
   margin: 5.75rem auto 2rem;
   max-width: 720px;
+  text-align: left;
 }
 article h2, article h3 {
   padding: 2.5rem 0 1.5rem 0;
@@ -292,7 +324,7 @@ article blockquote {
   width: auto;
   float: none;
   display: block;
-  border-left: 3px solid var(--color-black);
+  border-left: 3px solid var(--color-b);
   padding: 1rem;
   margin: 0 auto 2rem;
   color: #666;
@@ -307,59 +339,43 @@ article blockquote {
   margin: .5rem .5rem 0 0;
   padding: 0 1.5rem;
   line-height: 36px;
-  color: var(--color-black);
+  color: var(--color-b);
   background: var(--color-y);
   border: 3px solid transparent;
   border-radius: 50rem;
   cursor: pointer;
 }
 .button:hover, .button:focus {
-  background: var(--color-black);
+  background: var(--color-b);
   color: #fff;
   box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
 }
 .button-secondary {
-  color: var(--color-black);
+  color: var(--color-b);
   background: transparent;
-  border-color: var(--color-black);
+  border-color: var(--color-b);
 }
 .button-secondary:hover, .button-secondary:focus {
-  background: var(--color-black);
+  background: var(--color-b);
 }
 
-/* Helpers */
-.left {
-  text-align: left;
-}
-.right {
-  text-align: right;
-}
-.page {
-  margin-top: 2rem;
-}
-.page h1 {
-  max-width: 780px;
-}
-.page p {
-  max-width: 680px;
-}
 
 /* Home */
 .home {
   display: grid;
-  grid-template-columns: 1fr;
-  padding: 1rem 0;
+  padding: 4rem 3rem;
   text-align: left;
   z-index: 9;
+  text-align: center;
+  background: var(--gradient);
+  border-radius: 2.5rem 2.5rem 0 0;
 }
 .home .description {
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
 }
-.home div {
-  text-align: center;
-}
 
+/* Profile Picture */
 #profile {
   position: relative;
   margin: 0 auto;
@@ -374,32 +390,38 @@ article blockquote {
   margin: 0 auto 1.5rem;
   background-color: var(--color-y);
   border-radius: 50%;
+  filter: grayscale(1);
 }
 
+/* Subtitles */
 .subtitle {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 5rem;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: -0.05rem;
+  margin-bottom: 1.5rem;
 }
 .subtitle:before {
   content: "";
   position: absolute;
-  top: 1rem;
+  top: 1.25rem;
   left: 0;
-  width: 2.5rem;
+  width: 3.5rem;
   height: 3px;
-  background: var(--color-black);
+  background: var(--color-b);
 }
 
 /* Social Icons */
 .icons {
-  margin: 0 0 1rem 0;
+  float: left;
 }
 .icons a {
-  float: none;
+  float: left;
   display: inline-block;
   width: auto;
-  padding: 0;
-  margin: .75rem;
+  margin: 0 0 2rem 4.5rem;
+  padding: 0.5rem;
   font-size: 0;
   background: transparent;
   border: 0;
@@ -409,20 +431,17 @@ article blockquote {
   opacity: .75;
 }
 .icons svg {
-  width: 20px;
+  width: 22px;
 }
 
 /* Cards */
 .cards {
-  margin-left: 0;
-}
-.cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-gap: 2rem;
 }
 .card {
   position: relative;
-  margin: 0 0 1rem;
+  margin: 0;
   padding: 0;
   flex-basis: 100%;
   color: inherit;
@@ -431,12 +450,12 @@ article blockquote {
   border-radius: var(--radius-big);
   background: #fff;
   top: 0;
-  transition: ease 0.25s;
+  transition: ease-in-out 0.25s;
   overflow: hidden;
 }
 .card:hover, .card:focus {
   top: -6px;
-  box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
+  /* box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%); */
 }
 .card a {
   float: left;
@@ -449,17 +468,19 @@ article blockquote {
 .card h2 {
   margin-top: 1.5rem;
   font-size: 1.5rem;
+  letter-spacing: -.05rem;
 }
 .card p {
-  line-height: 1.6;
+  line-height: 1.5;
+  letter-spacing: -.01rem;
 }
 .card figure {
-  width: 80px;
-  padding: 1rem 0;
-  border-radius: 1.5rem;
-  margin: 0;
-  background: var(--color-y);
+  width: 128px;
+  padding: 2.5rem 0;
+  border-radius: 10rem;
+  margin: 0 auto;
   text-align: center;
+  background: #fff;
 }
 .card svg {
   width: 48px;
@@ -471,37 +492,48 @@ article blockquote {
   font-size: .7rem;
   font-weight: bold;
   color: #fff;
-  background: var(--color-black);
-  padding: .25rem .5rem;
+  background: var(--color-b);
+  padding: .25rem .75rem;
   margin-top: 2.5rem;
-  border-radius: .25rem;
+  border-radius: 5rem;
   z-index: -1;
 }
+.cards div:nth-child(1),
+.cards div:nth-child(6) {
+  background: linear-gradient(130deg, var(--color-y), #fff);
+}
+.cards div:nth-child(1) a figure,
+.cards div:nth-child(6) a figure {
+  background: linear-gradient(45deg, var(--color-y), #fff 60%);
+}
+.cards div:nth-child(2),
+.cards div:nth-child(4),
+.cards div:nth-child(8) {
+  background: linear-gradient(40deg, var(--color-y), #fff);
+}
+.cards div:nth-child(2) a figure,
+.cards div:nth-child(4) a figure,
+.cards div:nth-child(8) a figure {
+  background: linear-gradient(145deg, var(--color-y), #fff 80%);
+}
+.cards div:nth-child(3),
+.cards div:nth-child(5),
+.cards div:nth-child(7) {
+  background: linear-gradient(-130deg, var(--color-y), #fff);
+}
+.cards div:nth-child(3) a figure,
+.cards div:nth-child(5) a figure,
+.cards div:nth-child(7) a figure {
+  background: linear-gradient(200deg, var(--color-y), #fff 40%);
+}
 
-code {
-  background: var(--color-grey);
-  border-radius: var(--radius);
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-span {
-  background: var(--color-y);
-  color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
+/* Grid */
+
+.home, .cards, .contactContainer {
+  grid-template-columns: 1fr;
 }
 
-.grid {
-  width: 100%;
-  flex-direction: row;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
+
 
 /* GIFs for warning pages */
 .gif {
@@ -512,7 +544,7 @@ span {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--color-grey);
+  background-color: var(--color-g);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -523,7 +555,7 @@ span {
 
 /* Circle */
 #circle {
-  position: absolute;
+  position: fixed;
   width: 400px;
   height: 400px;
   background: var(--color-y);
@@ -537,7 +569,7 @@ span {
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0 .25rem;
+  padding: 2.25rem 0 .75rem;
   align-items: center;
 }
 footer p {
@@ -582,8 +614,8 @@ label {
 }
 input, textarea {
   font-weight: 400;
-  font-family: var(--familia-fonte);
-  color: var(--color-black);
+  font-family: var(--font);
+  color: var(--color-b);
   float: left;
   width: 100%;
   padding: .582rem 0;
@@ -592,7 +624,7 @@ input, textarea {
   outline: none;
   border: none;
   border-radius: 0;
-  border-bottom: 3px solid var(--color-black);
+  border-bottom: 3px solid var(--color-b);
   background: transparent;
   -webkit-appearance: none;
 }
@@ -617,17 +649,27 @@ input[type="submit"]:active {
 }
 
 /* Placeholders */
-::-webkit-input-placeholder { color:var(--color-black); }
-:-moz-placeholder { color: var(--color-black); opacity: 1; }
-::-moz-placeholder { color: var(--color-black); opacity: 1; }
-:-ms-input-placeholder { color: var(--color-black); }
+::-webkit-input-placeholder { color:var(--color-b); }
+:-moz-placeholder { color: var(--color-b); opacity: 1; }
+::-moz-placeholder { color: var(--color-b); opacity: 1; }
+:-ms-input-placeholder { color: var(--color-b); }
 
 /* Colors */
-.svg { fill: var(--color-black); }
-.gray { background: var(--color-grey); }
-.bg-y { background: var(--color-y); }
+.svg {
+  fill: var(--color-b);
+}
+.gray {
+  background: var(--color-g);
+}
+.bg-y {
+  background: var(--color-y);
+}
 
-.black { background: var(--color-black);}
+.gradient-x {
+  background: linear-gradient(90deg, var(--color-y), #fff);
+}
+
+.black { background: var(--color-b);}
 .black p, .black a, .black h1, .black h2, .black h3 {
   color: #fff;
 }
@@ -636,23 +678,23 @@ input[type="submit"]:active {
 }
 .black .button {
   background: #fff;
-  color: var(--color-black);
+  color: var(--color-b);
 }
 .black .svg, .black svg {
   fill: #fff;
 }
 
-.color-findto { background: linear-gradient(45deg,#3196ff 0,#9600ff 75%); }
-.color-headlyne { background: linear-gradient(45deg,#ffdb0f 0, #ff6842 75%); }
-.color-vydeon { background: linear-gradient(45deg,#ff51a1 0,#ff3737 75%); }
-.color-educolab { background: linear-gradient(45deg,#10fcb2 0%,#11ce5c 75%); }
-.color-zeyt { background: linear-gradient(45deg,rgba(246, 54, 255, 1) 0,rgba(144, 22, 255, 1) 75%); }
-.color-cacba { background: #49b6f1; }
-.color-nufen { background: #1abc9c; }
-.color-nacuia { background: #650940; }
-.color-radioufpa { background: linear-gradient(90deg, rgba(78,68,251,1) 0%, rgba(0,212,255,1) 100%); }
+.gradient-text {
+  background-color: var(--color-y);
+  background-image: linear-gradient(45deg, var(--color-y), #fff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 
-/* Animation */
+/* Animations */
 
 section .container {
   -webkit-animation-name: down;
@@ -688,7 +730,7 @@ section .container {
   }
 }
 
-/* phones */
+/* Phones */
 @media only screen and (min-width: 520px) {
 
   #profile:after {
@@ -709,11 +751,14 @@ section .container {
   }
 }
 
-/* tablets */
+/* Tablets */
 @media only screen and (min-width: 900px) {
 
   #menu, .layer {
     display: none;
+  }
+  header .container, footer .container {
+    padding: 0 4rem;
   }
   nav {
     position: relative;
@@ -734,75 +779,68 @@ section .container {
     margin: 0 0 0 3rem;
     line-height: inherit;
   }
+  .button {
+    margin: 0.5rem 1rem 0 0;
+    padding: 0.25rem 2rem;
+  }
 
   .home {
-    grid-template-columns: 1fr 2fr;
-    padding: 4rem 2rem 0;
+    padding: 8rem 8rem 0;
+    max-width: 100%;
   }
-  .home h2 {
-    font-size: 3.5rem;
+  .home h1 {
+    font-size: 8rem;
+    letter-spacing: -0.361rem;
+    line-height: 1.25;
+    margin: 0 auto;
+    max-width: 920px;
   }
-  .home div {
-    text-align: left;
-  }
-  .home .description {
-    margin: 0;
-  }
-  #profile {
+  /* #profile {
     margin: 0 3rem 0 0;
     width: auto;
     float: right;
-  }
+  } */
   #profile img {
     width: 200px;
     height: 200px;
   }
-  .icons {
-    margin: 0 0 1rem -.75rem;
-  }
-  h1, article h1 {
+  h1, article h1, h2 {
     font-size: 4rem;
   }
   h2 {
-    font-size: 2.75rem;
+    letter-spacing: -.15rem;
   }
-  .card h2 {
-    font-size: 1.6rem;
+  .description {
+    font-size: 1.75rem;
+    padding: 2rem 0 4rem;
   }
-  h3, h4, article h2 {
+  h3, h4, article h2, .contactContainer span, .specialContainer p {
     font-size: 1.5rem;
   }
-  .description, .home .description, .special p, .card p, article p {
+  p, nav a, .card p {
     font-size: 1.2rem;
   }
-  p, li, nav a, .button, input, textarea {
-    font-size: 1rem;
-  }
   section {
-    padding: 5rem 5rem;
+    padding: 6rem 4rem;
   }
-  .col {
-    display: flex;
-  }
-  .col-left {
-    width: 45%;
-    margin-right: 10%;
-  }
-  .col-right {
-    width: 45%;
-  }
-  .cards {
+  .cards,
+  .contactContainer {
     grid-template-columns: 1fr 1fr;
   }
-  .card {
-    margin: 3%;
+  .cards {
+    grid-gap: 2.25rem;
   }
   .card figure {
-    width: 112px;
-    padding: 2rem 1rem;
-    border-radius: 2rem;
+    width: 148px;
+    padding: 3rem 1rem;
   }
-
+  .card svg {
+    width: 52px;
+    height: 52px;
+  }
+  .contactContainer div:nth-child(1) {
+    padding: 0 10rem 0 0;
+  }
   footer p:first-child{
     margin-right: 3rem;
   }
@@ -820,7 +858,7 @@ section .container {
 
 }
 
-/* laptops & desktops */
+/* Laptops & Desktops */
 @media only screen and (min-width: 1200px) {
 
   .cards {

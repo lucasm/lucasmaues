@@ -1,20 +1,22 @@
-// components/PageLayout.js
-
 import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
+import { ReactNode } from 'react'
 
-export default function PageLayout(props) {
+type Props = {
+	title: string
+	description: string
+	children: ReactNode
+}
 
-  return ( 
-  <div className="PageLayout">
+export default function PageLayout(props: Props) {
+
+  return (
+	<>
     <Head>
 		<title>{props.title}</title>
 		<meta name="description" content={props.description}/>
 		<meta name="author" content="Lucas Menezes" />
-
-		<link rel="preconnect" href="https://fonts.gstatic.com"/>
-		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"/>
 
 		<link rel="icon" href="/favicon.ico" sizes="any"/>
 		<link rel="icon" href="/icon.svg" type="image/svg+xml"/>
@@ -30,9 +32,9 @@ export default function PageLayout(props) {
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#111"/>
 		<meta name="msapplication-tap-highlight" content="no"/>
 
-		<meta itemprop="name" content="Lucas Menezes"/>
-		<meta itemprop="description" content={props.description}/>
-		<meta itemprop="image" content="https://lucasm.dev/images/share.png"/>
+		<meta itemProp="name" content="Lucas Menezes"/>
+		<meta itemProp="description" content={props.description}/>
+		<meta itemProp="image" content="https://lucasm.dev/images/share.png"/>
 
 		<meta property="og:title" content="Lucas Menezes"/>
 		<meta property="og:description" content={props.description}/>
@@ -78,11 +80,11 @@ export default function PageLayout(props) {
 
     <Header/>
 
-      {props.children}
-
+	<main>
+		{props.children}
+	</main>
+      
     <Footer/>
-  </div>
+
+	</>
 )}
-
-
-

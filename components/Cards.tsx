@@ -22,7 +22,7 @@ export default function Cards() {
                 </figure>
 
                 <h2>Headly</h2>
-                <p>Internationalized news headlines app, with fact-checking journalism.</p>
+                <p>News headlines app, with fact-checking journalism and internationalization.</p>
             </a>
           </div>
 
@@ -32,19 +32,19 @@ export default function Cards() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path className="svg" d="M0,0V32H32V0ZM7.89,20.19H5.76V13.76H2.62v-2H11v2H7.9Zm10.85-1.5a4.43,4.43,0,0,1-3.41,1.46h-.05a4.36,4.36,0,0,1-3-1.17A4,4,0,0,1,11,16.07v0a4.06,4.06,0,0,1,1.16-2.95,4.42,4.42,0,0,1,3.14-1.24,4.81,4.81,0,0,1,2.49.6l.16.09-1.21,1.64-.06,0a2.62,2.62,0,0,0-1.36-.39,2.11,2.11,0,0,0-1.53.66A2.22,2.22,0,0,0,13.17,16a2.29,2.29,0,0,0,.62,1.59,2.09,2.09,0,0,0,1.56.65,2.91,2.91,0,0,0,2-.88l.12-.11,1.39,1.32ZM16.5,16a1.09,1.09,0,1,1-1.09-1.09A1.09,1.09,0,0,1,16.5,16Zm12.29,4.19h-2.3V15.9l-2.26,2.48H24l-2.23-2.45v4.26H19.52v-8.4h1.84l2.79,3.31L27,11.79h1.84Z"/></svg>
                 </figure>
 
-                <h2>Tribunal de Contas dos Municípios do Estado do Pará</h2>
-                <p>Web apps of data visualization (maps, graphs and tax calcs). Website with public services, content, intranet and accessibility.</p>
+                <h2>Tribunal de Contas dos Municípios do Pará</h2>
+                <p>Website with public services, contents, intranet and accessibility. Data visualization web apps with maps, graphs and tax calcs</p>
             </a>
           </div>
 
-        <div className="card">
+          <div className="card">
             <a href="https://superia.app/" target="_blank" rel="noopener">
                 <figure>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M17.54,5.65V.82A.82.82,0,0,0,16.73,0H4.52a.82.82,0,0,0-.76.51L.64,8.08a.83.83,0,0,0,0,.62l2.63,6.48a.83.83,0,0,0,.76.51H9.64a.82.82,0,0,0,.82-.82.85.85,0,0,0-.06-.31L8,8.7a.83.83,0,0,1,0-.62L8.48,7a.8.8,0,0,1,.75-.51h7.5a.81.81,0,0,0,.81-.81Z"/><path className="svg" d="M6.46,18.35v4.83a.82.82,0,0,0,.81.82H19.48a.82.82,0,0,0,.76-.51l3.12-7.57a.83.83,0,0,0,0-.62L20.73,8.82A.83.83,0,0,0,20,8.31H14.36a.82.82,0,0,0-.82.82.85.85,0,0,0,.06.31L16,15.3a.83.83,0,0,1,0,.62L15.53,17a.83.83,0,0,1-.76.51H7.27A.82.82,0,0,0,6.46,18.35Z"/></svg>
                 </figure>
 
                 <h2>Superia</h2>
-                <p>Components for a international trading company web app.</p>
+                <p>Components for a web application of an international trading company.</p>
             </a>
         </div>
                         
@@ -104,34 +104,8 @@ export default function Cards() {
         </div> */}
 
     
-
-        {/* <a href="#" className="card">
-            <figure className="color-vydeon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M38.12,5.42a6,6,0,0,0-5.2-3H15a6.1,6.1,0,0,0-5.2,3L.79,21a6.05,6.05,0,0,0,0,6l9,15.6a6,6,0,0,0,5.2,3H32.93a6.09,6.09,0,0,0,5.2-3L47.21,27a6.05,6.05,0,0,0,0-6ZM36.18,24.94,18.54,35.23c-.72.38-1.76.11-1.76-.72v-21c0-.83,1-1.1,1.76-.72l17.59,10.3a1.05,1.05,0,0,1,0,1.87Z"/></svg>
-            </figure>
-            <h2>Streon</h2>
-            <p>Public videos hub powered by channels, lives, stories and streaming services.</p>
-        </a> */}
-
-
-        {/* <a href="#" className="card">
-                <figure className="color-educolab">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path className="svg" d="M23.26,6.47a5.94,5.94,0,0,1,4.93,1.71,6.21,6.21,0,0,1,1.71,5A6.07,6.07,0,0,1,25,18.39a5.85,5.85,0,0,1-4.9-1.45,6.19,6.19,0,0,1-2-3.77A6,6,0,0,1,23.26,6.47Z"/><path className="svg" d="M11.22,13.75a3.65,3.65,0,0,1,2.92.85,3.79,3.79,0,0,1,.35,5.33,3.58,3.58,0,0,1-.68.61,3.63,3.63,0,0,1-4,.05,3.78,3.78,0,0,1-1.62-3.93A3.73,3.73,0,0,1,11.22,13.75Z"/><path className="svg" d="M35.74,13.75a3.71,3.71,0,0,1,4.11,2.86,3.82,3.82,0,0,1-1.62,4,3.66,3.66,0,0,1-3.17.37,3.74,3.74,0,0,1,.68-7.22Z"/><path className="svg" d="M15.43,21A4.7,4.7,0,0,1,18.48,20H29.35a4.8,4.8,0,0,1,3.31,1.13A7.76,7.76,0,0,1,34,22.7l8.35,11.63a3.49,3.49,0,0,1,.49,3.17,3.37,3.37,0,0,1-3.06,2.33c-1.63,0-3.25,0-4.87,0A4.9,4.9,0,0,1,34.79,41a1,1,0,0,1-1,.52H14.27a1,1,0,0,1-1-.42,3.33,3.33,0,0,1-.14-1.29H8.92a4.49,4.49,0,0,1-1.74-.26,3.44,3.44,0,0,1-2.13-2.85,3.53,3.53,0,0,1,.66-2.41L13.86,23a9.26,9.26,0,0,1,1.6-2m-2.32,5.79v13H34.87V27a1.43,1.43,0,0,0-.27-1,1.31,1.31,0,0,0-1-.35H15.23a5.06,5.06,0,0,0-1.45.09A1.08,1.08,0,0,0,13.14,26.81Z"/><path className="svg" d="M5.91,23.32A2.9,2.9,0,0,1,8.25,22.1h4.6l-2.5,3.5H5.67a.66.66,0,0,0-.66.64s0,.08,0,.12v6.17c.07.75-.64,1.24-.9,1.91-1.08-.08-2.27.25-3.24-.39a2.17,2.17,0,0,1-.46-3h0C2.23,28.43,4.09,25.91,5.91,23.32Z"/><path className="svg" d="M35.16,22.1h4.59A2.82,2.82,0,0,1,42,23.23c1.87,2.63,3.78,5.22,5.63,7.86a2.15,2.15,0,0,1-.61,3,1.74,1.74,0,0,1-.33.18,10.3,10.3,0,0,1-2.83.16A11.6,11.6,0,0,0,43,33V26.33a.65.65,0,0,0-.58-.72h-.08c-1.56,0-3.12,0-4.68,0C36.83,24.42,36,23.26,35.16,22.1Z"/><path className="svg" d="M23.43,30.67a2.28,2.28,0,0,1,2.78,1.65,1.86,1.86,0,0,1,.06.34,2.31,2.31,0,0,1-2.06,2.54h-.05a2.32,2.32,0,0,1-.73-4.54Z"/></svg>
-                    <h2>Educolab</h2>
-                </figure>
-                <p>Collaborative directory for share free learning resources and online courses.</p>
-            </a> */}
           
-                  {/* <div className="card">
-            <a href="#">
-                <figure className="color-zeyt">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><polygon className="svg" points="60 90 0 90 0 30 120 30 120 90 180 90 180 150 60 150 60 90"/></svg>
-                </figure>
-
-                <h2>Zeta Invest</h2>
-                <p>User interface for a personal finance and investments app.</p>
-            </a>
-        </div> */}
+                  
 
     </div>
   );

@@ -1,5 +1,3 @@
-// pages/404.js
-
 import PageLayout from '../components/PageLayout'
 
 if (typeof (document) !== "undefined") {
