@@ -249,7 +249,7 @@ h1, h2, h3, h4, a, b, strong, .button, button, input, .card h2 {
 }
 
 h1, .home h1 {
-  font-size: 3.25rem;
+  font-size: 3rem;
   letter-spacing: -.2rem;
 }
 h2 {
@@ -412,24 +412,21 @@ article blockquote {
 
 /* Social Icons */
 .icons {
-  float: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
 }
 .icons a {
-  float: left;
-  display: inline-block;
-  width: auto;
-  margin: 0 0 2rem 4.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   font-size: 0;
   background: transparent;
-  border: 0;
   transition: all .25s ease;
 }
 .icons a:hover, .icons a:focus {
   opacity: .75;
 }
 .icons svg {
-  width: 22px;
+  width: 20px;
 }
 
 /* Cards */
@@ -724,6 +721,13 @@ section .container {
 
 /* Phones */
 @media only screen and (min-width: 520px) {
+
+  .icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .icons svg {
+    width: 24px;
+  }
 
   #profile:after {
     top: -10rem;
