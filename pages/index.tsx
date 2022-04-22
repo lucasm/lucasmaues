@@ -13,7 +13,7 @@ export default function Home() {
             <div className="container home">
 
                 <h1>
-                    I make web apps, sites and open source
+                    I create web apps, sites and open source
                 </h1>
 
                 {/* <figure id="profile">
@@ -61,13 +61,13 @@ export default function Home() {
                 
                 <div className="specialContainer">
 
-                    <h2>I code web experiences</h2>
+                    <h2>Refining web experiences</h2>
 
                     <p>I've been helping businesses and organizations launch digital products, like web applications, sites and e-commerces, that's establish an refined online presence and solve their problems.</p>
 
                     <p>I develop reactive front-end user interfaces with strong focus on user experience (responsive design, accessibility, performance and progressive enhancement) and adjacent back-end with APIs integrations and databases.</p>
                         
-                   <p>I'm also write <a href="https://dev.to/lucasm">articles about programming</a> for the developers community and create <a href="https://patreon.com/lucasm">open source projects</a> to empower people.</p>
+                   <p>I believe my work can empower others, so why I'm also write <a href="https://dev.to/lucasm">programming articles</a> and maintain <a href="https://patreon.com/lucasm">open source projects</a> for/by the community.</p>
 
                 </div>
 

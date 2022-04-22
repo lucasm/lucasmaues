@@ -262,10 +262,10 @@ article h1, nav a {
 h3, article h2 {
   font-size: 1.5rem;
 }
-h4, article h3, .description, .card h2, .contactContainer span {
+h4, article h3, .card h2, .contactContainer span {
   font-size: 1.25rem;
 }
-p, li, .button, input, textarea, .card p, .button, input, textarea, footer p {
+p, .description, li, .button, input, textarea, .card p, .button, input, textarea, footer p {
   font-size: 1rem;
 }
 
