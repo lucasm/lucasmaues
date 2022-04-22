@@ -357,6 +357,17 @@ article blockquote {
 .button-secondary:hover, .button-secondary:focus {
   background: var(--color-b);
 }
+.button-secondary:hover svg, .button-secondary:focus svg {
+  fill: #fff;
+}
+.button-secondary svg {
+  fill: var(--color-b);
+  float: right;
+  margin: .5rem 0 0 .75rem;
+  width: 20px;
+  float: right;
+  transform: rotate(135deg);
+}
 
 
 /* Home */
