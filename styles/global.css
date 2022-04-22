@@ -183,8 +183,7 @@ section {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
-  background: transparent;
+  max-width: 1300px;
 }
 .fullscreen {
   display: table;
@@ -241,11 +240,11 @@ p, li {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, #logo, nav a, .subtitle {
+#logo, nav a, .subtitle {
   font-weight: 500;
 }
 
-a, b, strong, .button, button, input, .card h2 {
+h1, h2, h3, h4, a, b, strong, .button, button, input, .card h2 {
   font-weight: 700;
 }
 
@@ -253,19 +252,20 @@ h1, .home h1 {
   font-size: 3.25rem;
   letter-spacing: -.2rem;
 }
-h2, article h1, nav a {
+h2 {
+  font-size: 2rem;
+  letter-spacing: -.05rem;
+}
+article h1, nav a {
   font-size: 1.75rem;
 }
 h3, article h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
-h4, article h3, .description {
+h4, article h3, .description, .card h2, .contactContainer span {
   font-size: 1.25rem;
 }
-p, li, .button, input, textarea, .card p {
-  font-size: 1.2rem;
-}
-.button, input, textarea, footer p {
+p, li, .button, input, textarea, .card p, .button, input, textarea, footer p {
   font-size: 1rem;
 }
 
@@ -371,7 +371,7 @@ article blockquote {
   border-radius: 2.5rem 2.5rem 0 0;
 }
 .home .description {
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
@@ -397,7 +397,6 @@ article blockquote {
 .subtitle {
   position: relative;
   padding-left: 5rem;
-  font-size: 2rem;
   text-align: left;
   letter-spacing: -0.05rem;
   margin-bottom: 1.5rem;
@@ -405,7 +404,7 @@ article blockquote {
 .subtitle:before {
   content: "";
   position: absolute;
-  top: 1.25rem;
+  top: .95rem;
   left: 0;
   width: 3.5rem;
   height: 3px;
@@ -467,12 +466,6 @@ article blockquote {
 }
 .card h2 {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
-  letter-spacing: -.05rem;
-}
-.card p {
-  line-height: 1.5;
-  letter-spacing: -.01rem;
 }
 .card figure {
   width: 128px;
@@ -490,7 +483,7 @@ article blockquote {
   float: left;
   content: "Open Source";
   font-size: .7rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   background: var(--color-b);
   padding: .25rem .75rem;
@@ -666,7 +659,7 @@ input[type="submit"]:active {
 }
 
 .gradient-x {
-  background: linear-gradient(90deg, var(--color-y), #fff);
+  background: linear-gradient(130deg, var(--color-y), #fff);
 }
 
 .black { background: var(--color-b);}
@@ -790,7 +783,7 @@ section .container {
   }
   .home h1 {
     font-size: 8rem;
-    letter-spacing: -0.361rem;
+    letter-spacing: -0.5rem;
     line-height: 1.25;
     margin: 0 auto;
     max-width: 920px;
@@ -807,17 +800,19 @@ section .container {
   h1, article h1, h2 {
     font-size: 4rem;
   }
-  h2 {
-    letter-spacing: -.15rem;
+  .subtitle {
+    font-size: 2rem;
+  }
+  .subtitle:before {
+    top: 1.25rem;
   }
   .description {
-    font-size: 1.75rem;
     padding: 2rem 0 4rem;
   }
-  h3, h4, article h2, .contactContainer span, .specialContainer p {
+  .card h2, h3, h4, article h2, .description, .contactContainer span, .specialContainer p {
     font-size: 1.5rem;
   }
-  p, nav a, .card p {
+  p, nav a, li, .button, input, textarea, .card p {
     font-size: 1.2rem;
   }
   section {

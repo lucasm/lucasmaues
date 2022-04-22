@@ -13,7 +13,7 @@ export default function Home() {
             <div className="container home">
 
                 <h1>
-                    I make web apps, sites and open source.
+                    I make web apps, sites and open source
                 </h1>
 
                 {/* <figure id="profile">
@@ -61,13 +61,13 @@ export default function Home() {
                 
                 <div className="specialContainer">
 
-                    <h2>I code web experiences.</h2>
+                    <h2>I code web experiences</h2>
 
                     <p>Working as consultant, I've been helping businesses and organizations launch digital products, like web applications, sites and e-commerces, that's establish an refined online presence and solve their problems.</p>
 
                     <p>I develop reactive front-end user interfaces with strong focus on user experience (responsive design, accessibility, performance and progressive enhancement) and adjacent back-end with APIs integrations and databases.</p>
                         
-                   <p>I'm also writing <a href="https://dev.to/lucasm">articles about programming</a> for the developer community and creating <a href="https://patreon.com/lucasm">open source projects</a> to empower people.</p>
+                   <p>I'm also write <a href="https://dev.to/lucasm">articles about programming</a> for the developers community and create <a href="https://patreon.com/lucasm">open source projects</a> to empower people.</p>
 
                 </div>
 
@@ -86,7 +86,7 @@ export default function Home() {
                             Say hi
                         </h3>
 
-                        <p>If want to discuss your project or work together send an email to <span><a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a></span></p>
+                        <p>If you want to discuss your project or work together, email to <span><a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a></span></p>
 
                     </div>
 
