@@ -63,7 +63,7 @@ export default function Home() {
 
                     <h2>I code web experiences</h2>
 
-                    <p>Working as consultant, I've been helping businesses and organizations launch digital products, like web applications, sites and e-commerces, that's establish an refined online presence and solve their problems.</p>
+                    <p>I've been helping businesses and organizations launch digital products, like web applications, sites and e-commerces, that's establish an refined online presence and solve their problems.</p>
 
                     <p>I develop reactive front-end user interfaces with strong focus on user experience (responsive design, accessibility, performance and progressive enhancement) and adjacent back-end with APIs integrations and databases.</p>
                         

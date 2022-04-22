@@ -250,7 +250,7 @@ h1, h2, h3, h4, a, b, strong, .button, button, input, .card h2 {
 
 h1, .home h1 {
   font-size: 3rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -.1rem;
 }
 h2 {
   font-size: 2rem;
@@ -284,7 +284,7 @@ p, li, .button, input, textarea, .card p, .button, input, textarea, footer p {
   margin: 0 auto;
 }
 .specialContainer p {
-  padding: 2rem 0 .5rem;  
+  padding: 0 0 1.5rem;  
 }
 
 /* Link Border */
@@ -372,6 +372,9 @@ article blockquote {
 .home .description {
   max-width: 650px;
   margin: 0 auto;
+}
+.home h1 {
+  letter-spacing: -.2rem;
 }
 
 /* Profile Picture */
@@ -735,6 +738,9 @@ section .container {
     width: 18rem;
     height: 18rem;
   }
+  .home h1 {
+    font-size: 5rem;
+  }
 
   form {
     padding: 3rem 3rem;
@@ -838,6 +844,9 @@ section .container {
   }
   .contactContainer div:nth-child(1) {
     padding: 0 10rem 0 0;
+  }
+  .specialContainer p {
+    padding-top: 1rem;  
   }
   footer p:first-child{
     margin-right: 3rem;
