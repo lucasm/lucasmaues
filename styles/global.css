@@ -7,7 +7,7 @@
   --gradient: linear-gradient(180deg, var(--color-y), #fff);
   --radius: 1rem;
   --radius-big: 1.5rem;
-  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font: 'DM Sans', sans-serif;
 }
 *, *:after, *:before {
   margin: 0;
@@ -177,7 +177,7 @@ nav a {
 
 section {
   width: 100%;
-  padding: 4rem 1.75rem;
+  padding: 4rem 2rem;
 }
 .container {
   position: relative;
@@ -348,7 +348,6 @@ article blockquote {
 .button:hover, .button:focus {
   background: var(--color-b);
   color: #fff;
-  box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
 }
 .button-secondary {
   color: var(--color-b);
@@ -812,7 +811,7 @@ section .container {
   .card h2, h3, h4, article h2, .description, .contactContainer span, .specialContainer p {
     font-size: 1.5rem;
   }
-  p, nav a, li, .button, input, textarea, .card p {
+  p, nav a, li, .card p {
     font-size: 1.2rem;
   }
   section {
