@@ -44,6 +44,9 @@ export default function Custom404() {
                     <figure className="gif" id="background"></figure>
                     <h1>Not Found</h1>
                     <p className="description">The page you're looking for can't be found.</p>
+                    <a href="/" className="button button-main">
+              Back to home
+            </a>
                 </div>
 
             </div>

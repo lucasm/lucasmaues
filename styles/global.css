@@ -5,6 +5,8 @@
   --color-b: #111111;
   --color-g: #f5f5f5;
   --gradient: linear-gradient(180deg, var(--color-y), #fff);
+  --gradient-x: linear-gradient(180deg, var(--color-y), #fff);
+  --gradient-z: linear-gradient(45deg, var(--color-y), #fff 60%);;
   --radius: 1rem;
   --radius-big: 1.5rem;
   --font: "SpaceGrotesk", sans-serif;
@@ -48,32 +50,27 @@ header {
   position: relative;
   float: left;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem;
   z-index: 999;
-}
-header .container,
-footer .container {
-  padding: 0 2rem;
-  max-width: 100%;
 }
 
 #logo {
   position: relative;
   float: left;
-  padding-left: 2.75rem;
+  /* padding-left: 2.75rem; */
   height: var(--header-size);
   font-size: 1.35rem;
-  line-height: 1.45;
+  line-height: 1.5;
   letter-spacing: -0.025rem;
 }
 #logo figure {
   position: absolute;
-  top: -0.015rem;
   left: 0;
   padding: 0.45rem;
   border-radius: 5rem;
-  background: var(--color-y);
+  background: var(--gradient-z);
   line-height: 0;
+  display: none;
 }
 #logo figure svg {
   width: 18px;
@@ -90,6 +87,7 @@ footer .container {
   outline: none;
   font-size: 0;
   background: transparent;
+  border-radius: 100%;
 }
 .hamburger {
   position: relative;
@@ -132,20 +130,19 @@ footer .container {
   transform: rotate(90deg);
 }
 .layer {
-  display: inline-block;
-  background: transparent;
-  top: 0.9rem;
-  right: 2.9rem;
-  width: 3px;
-  height: 3px;
   position: absolute;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 var(--color-y), 0 0 0 0 var(--color-y);
-  transition: box-shadow 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  background: transparent;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+  transition: box-shadow .35s cubic-bezier(.19,1,.22,1);
   z-index: 2;
 }
 .layer-active {
-  box-shadow: 0 0 0 125vw var(--color-g), 0 0 0 125vh var(--color-g);
+  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
 }
 .remove-scrollbar {
   overflow: hidden;
@@ -158,11 +155,11 @@ nav {
   left: 0;
   top: 0;
   text-align: center;
+  z-index: 3;
+  background: var(--gradient-z);
   visibility: hidden;
   opacity: 0;
-  z-index: 3;
-  background: var(--color-y);
-  transition: visibility 0.25s ease, opacity 0.25s ease;
+  transition: visibility 0s, opacity .25s ease;
 }
 nav.open {
   visibility: visible;
@@ -198,7 +195,8 @@ section {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
+  display: inline-block;
 }
 .fullscreen {
   display: table;
@@ -288,7 +286,7 @@ input,
 
 h1,
 .home h1 {
-  font-size: 3.25rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -337,6 +335,9 @@ footer p {
 }
 .specialContainer p {
   padding: 0 0 1.5rem;
+}
+.specialContainer .button {
+  margin: 2rem 0;
 }
 
 /* Link Border */
@@ -430,20 +431,14 @@ article blockquote {
 
 /* Home */
 .home {
-  display: grid;
-  padding: 4rem 3rem;
-  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+  grid-gap: 2rem;
+  padding: 4rem 0 0;
   z-index: 9;
   text-align: center;
-  background: var(--gradient);
   border-radius: 2.5rem 2.5rem 0 0;
-}
-.home .description {
-  max-width: 650px;
-  margin: 0 auto;
-}
-.home h1 {
-  letter-spacing: -0.2rem;
+  text-align: left !important;
 }
 
 /* Profile Picture */
@@ -459,9 +454,9 @@ article blockquote {
   width: 140px;
   height: 140px;
   margin: 0 auto 1.5rem;
-  background-color: var(--color-y);
+  background: var(--gradient-z);
   border-radius: 50%;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 /* Subtitles */
@@ -483,11 +478,12 @@ article blockquote {
 
 /* Social Icons */
 .icons {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 2rem;
+  display: inline-block;
+  margin: 1rem 0 2rem;
 }
 .icons a {
+  float: left;
+  margin: 0 1.25rem 0 0;
   padding: 0.5rem 0;
   font-size: 0;
   background: transparent;
@@ -498,7 +494,7 @@ article blockquote {
   opacity: 0.75;
 }
 .icons svg {
-  width: 20px;
+  width: 22px;
 }
 
 /* Cards */
@@ -632,11 +628,11 @@ article blockquote {
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 2.25rem 0 0.75rem;
-  align-items: center;
+  padding: 2rem;
 }
 footer p {
   text-align: left;
+  padding: 0;
 }
 footer p:first-child {
   margin-right: 1rem;
@@ -744,6 +740,9 @@ input[type="submit"]:active {
 .gradient-x {
   background: linear-gradient(130deg, var(--color-y), #fff);
 }
+.gradient-y {
+  background: var(--gradient);
+}
 
 .black {
   background: var(--color-b);
@@ -815,18 +814,30 @@ section .container {
 
 /* Phones */
 @media only screen and (min-width: 520px) {
-  .icons svg {
-    width: 24px;
+
+  header, footer {
+    padding: 2rem 4rem;
   }
 
-  #profile:after {
-    top: -10rem;
-    right: 10vw;
-    width: 18rem;
-    height: 18rem;
+  section {
+    padding: 6rem 4rem;
   }
+
+  .icons a {
+    margin: 0 1.75rem 0 0;
+  }
+  .icons svg {
+    width: 26px;
+  }
+
   .home h1 {
-    font-size: 6rem;
+    font-size: 4rem;
+    line-height: 1.25;
+  }
+
+  #profile img {
+    width: 220px;
+    height: 220px;
   }
 
   form {
@@ -842,13 +853,10 @@ section .container {
 
 /* Tablets */
 @media only screen and (min-width: 900px) {
+
   #menu,
   .layer {
     display: none;
-  }
-  header .container,
-  footer .container {
-    padding: 0 4rem;
   }
   nav {
     position: relative;
@@ -875,28 +883,14 @@ section .container {
   }
 
   .home {
-    padding: 8rem 8rem 0;
-    max-width: 100%;
-  }
-  .home h1 {
-    font-size: 8rem;
-    line-height: 1.25;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  /* #profile {
-    margin: 0 3rem 0 0;
-    width: auto;
-    float: right;
-  } */
-  #profile img {
-    width: 200px;
-    height: 200px;
+    padding: 8rem 0 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
   h1,
   article h1,
   h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .subtitle {
     font-size: 1.75rem;
@@ -905,7 +899,7 @@ section .container {
     top: 1.1rem;
   }
   .description {
-    padding: 2rem 0 4rem;
+    padding: 2rem 0;
   }
   .card h2,
   h3,
@@ -921,9 +915,6 @@ section .container {
   li,
   .card p {
     font-size: 1.2rem;
-  }
-  section {
-    padding: 6rem 4rem;
   }
   .cards,
   .contactContainer {
@@ -964,14 +955,8 @@ section .container {
 
 /* Laptops & Desktops */
 @media only screen and (min-width: 1200px) {
+
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #profile:after {
-    top: -16rem;
-    right: 0;
-    width: 32rem;
-    height: 32rem;
   }
 }
