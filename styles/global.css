@@ -7,20 +7,33 @@
   --gradient: linear-gradient(180deg, var(--color-y), #fff);
   --radius: 1rem;
   --radius-big: 1.5rem;
-  --font: 'DM Sans', sans-serif;
+  --font: "SpaceGrotesk", sans-serif;
 }
-*, *:after, *:before {
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("/fonts/SpaceGrotesk-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url("/fonts/SpaceGrotesk-Regular.otf");
+  font-weight: normal;
+}
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Scroll */
+/* Scroll, Open Type Features */
 html {
   scroll-behavior: smooth;
+  font-feature-settings: "ss04" 1, "ss03" 1, "ss02" 1;
 }
 
-body, main {
+body,
+main {
   position: relative;
   height: 100%;
 }
@@ -38,7 +51,8 @@ header {
   padding: 2rem 0;
   z-index: 999;
 }
-header .container, footer .container {
+header .container,
+footer .container {
   padding: 0 2rem;
   max-width: 100%;
 }
@@ -50,13 +64,13 @@ header .container, footer .container {
   height: var(--header-size);
   font-size: 1.5rem;
   line-height: 1.275;
-  letter-spacing: -.1rem;
+  letter-spacing: -0.025rem;
 }
 #logo figure {
   position: absolute;
-  top: -.015rem;
+  top: -0.015rem;
   left: 0;
-  padding: .45rem;
+  padding: 0.45rem;
   border-radius: 5rem;
   background: var(--color-y);
   line-height: 0;
@@ -70,7 +84,7 @@ header .container, footer .container {
   position: relative;
   float: right;
   z-index: 9;
-  padding-left: .25rem;
+  padding-left: 0.25rem;
   width: var(--header-size);
   height: var(--header-size);
   outline: none;
@@ -82,10 +96,11 @@ header .container, footer .container {
   width: 24px;
   height: 3px;
   background: var(--color-b);
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
-.hamburger:before, .hamburger:after {
-  content: '';
+.hamburger:before,
+.hamburger:after {
+  content: "";
   position: absolute;
   display: block;
   right: 0;
@@ -93,7 +108,7 @@ header .container, footer .container {
   height: 3px;
   background: var(--color-b);
   z-index: 1;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 .hamburger:before {
   top: -7px;
@@ -126,9 +141,9 @@ header .container, footer .container {
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 0 0 var(--color-y), 0 0 0 0 var(--color-y);
-  transition: box-shadow .25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
   z-index: 2;
- }
+}
 .layer-active {
   box-shadow: 0 0 0 125vw var(--color-g), 0 0 0 125vh var(--color-g);
 }
@@ -147,7 +162,7 @@ nav {
   opacity: 0;
   z-index: 3;
   background: var(--color-y);
-  transition: visibility .25s ease, opacity .25s ease;
+  transition: visibility 0.25s ease, opacity 0.25s ease;
 }
 nav.open {
   visibility: visible;
@@ -210,7 +225,10 @@ button {
   cursor: pointer;
   border: none;
 }
-a, button, input, textarea {
+a,
+button,
+input,
+textarea {
   -webkit-transition: all 150ms ease;
   -moz-transition: all 150ms ease;
   -ms-transition: all 150ms ease;
@@ -218,54 +236,89 @@ a, button, input, textarea {
   transition: all 150ms ease;
 }
 
-
-p, li, h1, h2, h3, h4, h5, h6 {
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font);
-  color:var(--color-b);
+  color: var(--color-b);
   padding-bottom: 2rem;
 }
 
-p, ul {
+p,
+ul {
   padding-bottom: 1.5rem;
 }
 ul {
   margin-left: 1.2rem;
 }
 li {
-  padding: 0 0 .5rem .5rem;
+  padding: 0 0 0.5rem 0.5rem;
 }
 
-p, li {
-  font-weight: 400;
+p,
+li {
+  font-weight: normal;
   line-height: 1.5;
 }
 
-#logo, nav a, .subtitle {
-  font-weight: 500;
+#logo,
+nav a,
+.subtitle {
+  font-weight: bold;
 }
 
-h1, h2, h3, h4, a, b, strong, .button, button, input, .card h2 {
+h1,
+h2,
+h3,
+h4,
+a,
+b,
+strong,
+.button,
+button,
+input,
+.card h2 {
   font-weight: 700;
 }
 
-h1, .home h1 {
-  font-size: 3rem;
-  letter-spacing: -.1rem;
+h1,
+.home h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.2rem;
 }
 h2 {
   font-size: 2rem;
-  letter-spacing: -.05rem;
 }
-article h1, nav a {
+article h1,
+nav a {
   font-size: 1.75rem;
 }
-h3, article h2 {
+h3,
+article h2 {
   font-size: 1.5rem;
 }
-h4, article h3, .card h2, .contactContainer span {
+h4,
+article h3,
+.card h2,
+.contactContainer span {
   font-size: 1.25rem;
 }
-p, .description, li, .button, input, textarea, .card p, .button, input, textarea, footer p {
+p,
+.description,
+li,
+.button,
+input,
+textarea,
+.card p,
+.button,
+input,
+textarea,
+footer p {
   font-size: 1rem;
 }
 
@@ -284,7 +337,7 @@ p, .description, li, .button, input, textarea, .card p, .button, input, textarea
   margin: 0 auto;
 }
 .specialContainer p {
-  padding: 0 0 1.5rem;  
+  padding: 0 0 1.5rem;
 }
 
 /* Link Border */
@@ -293,9 +346,12 @@ p a,
 article a {
   border-bottom: 3px solid transparent;
 }
-nav a:hover, nav a:focus,
-p a:hover, p a:focus,
-article a:hover, article a:focus {
+nav a:hover,
+nav a:focus,
+p a:hover,
+p a:focus,
+article a:hover,
+article a:focus {
   border-color: var(--color-b);
 }
 
@@ -306,7 +362,8 @@ article {
   max-width: 720px;
   text-align: left;
 }
-article h2, article h3 {
+article h2,
+article h3 {
   padding: 2.5rem 0 1.5rem 0;
 }
 article ol {
@@ -318,7 +375,7 @@ article ul {
   padding: 0 0 28px 28px;
 }
 article li {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
 article blockquote {
   width: auto;
@@ -336,7 +393,7 @@ article blockquote {
   position: relative;
   display: inline-block;
   float: none;
-  margin: .5rem .5rem 0 0;
+  margin: 0.5rem 0.5rem 0 0;
   padding: 0 1.5rem;
   line-height: 36px;
   color: var(--color-b);
@@ -345,7 +402,8 @@ article blockquote {
   border-radius: 50rem;
   cursor: pointer;
 }
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background: var(--color-b);
   color: #fff;
 }
@@ -354,21 +412,22 @@ article blockquote {
   background: transparent;
   border-color: var(--color-b);
 }
-.button-secondary:hover, .button-secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   background: var(--color-b);
 }
-.button-secondary:hover svg, .button-secondary:focus svg {
+.button-secondary:hover svg,
+.button-secondary:focus svg {
   fill: #fff;
 }
 .button-secondary svg {
   fill: var(--color-b);
   float: right;
-  margin: .5rem 0 0 .75rem;
+  margin: 0.5rem 0 0 0.75rem;
   width: 20px;
   float: right;
   transform: rotate(135deg);
 }
-
 
 /* Home */
 .home {
@@ -385,7 +444,7 @@ article blockquote {
   margin: 0 auto;
 }
 .home h1 {
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
 }
 
 /* Profile Picture */
@@ -411,13 +470,12 @@ article blockquote {
   position: relative;
   padding-left: 5rem;
   text-align: left;
-  letter-spacing: -0.05rem;
   margin-bottom: 1.5rem;
 }
 .subtitle:before {
   content: "";
   position: absolute;
-  top: .95rem;
+  top: 0.95rem;
   left: 0;
   width: 3.5rem;
   height: 3px;
@@ -434,10 +492,11 @@ article blockquote {
   padding: 0.5rem 0;
   font-size: 0;
   background: transparent;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
-.icons a:hover, .icons a:focus {
-  opacity: .75;
+.icons a:hover,
+.icons a:focus {
+  opacity: 0.75;
 }
 .icons svg {
   width: 20px;
@@ -462,7 +521,8 @@ article blockquote {
   transition: ease-in-out 0.25s;
   overflow: hidden;
 }
-.card:hover, .card:focus {
+.card:hover,
+.card:focus {
   top: -6px;
   /* box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%); */
 }
@@ -470,7 +530,8 @@ article blockquote {
   float: left;
   padding: 2.5rem;
 }
-.card h2, .card p {
+.card h2,
+.card p {
   margin: 0;
   padding: 1.5rem 0 0;
 }
@@ -492,11 +553,11 @@ article blockquote {
 .opensource a:after {
   float: left;
   content: "Open Source";
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #fff;
   background: var(--color-b);
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
   margin-top: 2.5rem;
   border-radius: 5rem;
   z-index: -1;
@@ -532,11 +593,11 @@ article blockquote {
 
 /* Grid */
 
-.home, .cards, .contactContainer {
+.home,
+.cards,
+.contactContainer {
   grid-template-columns: 1fr;
 }
-
-
 
 /* GIFs for warning pages */
 .gif {
@@ -572,13 +633,13 @@ article blockquote {
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 2.25rem 0 .75rem;
+  padding: 2.25rem 0 0.75rem;
   align-items: center;
 }
 footer p {
   text-align: left;
 }
-footer p:first-child{
+footer p:first-child {
   margin-right: 1rem;
 }
 footer .container {
@@ -615,13 +676,14 @@ label {
   font-size: 0;
   opacity: 0;
 }
-input, textarea {
-  font-weight: 400;
+input,
+textarea {
+  font-weight: normal;
   font-family: var(--font);
   color: var(--color-b);
   float: left;
   width: 100%;
-  padding: .582rem 0;
+  padding: 0.582rem 0;
   margin: 0 0 2rem;
   line-height: 1.5;
   outline: none;
@@ -636,8 +698,10 @@ textarea {
   vertical-align: top;
   overflow: hidden;
 }
-input:focus, input:active,
-textarea:focus, textarea:active {
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
   border-color: #fff;
 }
 input[type="submit"] {
@@ -652,10 +716,20 @@ input[type="submit"]:active {
 }
 
 /* Placeholders */
-::-webkit-input-placeholder { color:var(--color-b); }
-:-moz-placeholder { color: var(--color-b); opacity: 1; }
-::-moz-placeholder { color: var(--color-b); opacity: 1; }
-:-ms-input-placeholder { color: var(--color-b); }
+::-webkit-input-placeholder {
+  color: var(--color-b);
+}
+:-moz-placeholder {
+  color: var(--color-b);
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: var(--color-b);
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: var(--color-b);
+}
 
 /* Colors */
 .svg {
@@ -672,8 +746,14 @@ input[type="submit"]:active {
   background: linear-gradient(130deg, var(--color-y), #fff);
 }
 
-.black { background: var(--color-b);}
-.black p, .black a, .black h1, .black h2, .black h3 {
+.black {
+  background: var(--color-b);
+}
+.black p,
+.black a,
+.black h1,
+.black h2,
+.black h3 {
   color: #fff;
 }
 .black .subtitle:before {
@@ -683,7 +763,8 @@ input[type="submit"]:active {
   background: #fff;
   color: var(--color-b);
 }
-.black .svg, .black svg {
+.black .svg,
+.black svg {
   fill: #fff;
 }
 
@@ -693,7 +774,7 @@ input[type="submit"]:active {
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
 
@@ -702,8 +783,8 @@ input[type="submit"]:active {
 section .container {
   -webkit-animation-name: down;
   animation-name: down;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
@@ -735,7 +816,6 @@ section .container {
 
 /* Phones */
 @media only screen and (min-width: 520px) {
-
   .icons {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
@@ -750,7 +830,7 @@ section .container {
     height: 18rem;
   }
   .home h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   form {
@@ -766,11 +846,12 @@ section .container {
 
 /* Tablets */
 @media only screen and (min-width: 900px) {
-
-  #menu, .layer {
+  #menu,
+  .layer {
     display: none;
   }
-  header .container, footer .container {
+  header .container,
+  footer .container {
     padding: 0 4rem;
   }
   nav {
@@ -803,10 +884,9 @@ section .container {
   }
   .home h1 {
     font-size: 8rem;
-    letter-spacing: -0.5rem;
     line-height: 1.25;
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 800px;
   }
   /* #profile {
     margin: 0 3rem 0 0;
@@ -817,7 +897,9 @@ section .container {
     width: 200px;
     height: 200px;
   }
-  h1, article h1, h2 {
+  h1,
+  article h1,
+  h2 {
     font-size: 4rem;
   }
   .subtitle {
@@ -829,10 +911,19 @@ section .container {
   .description {
     padding: 2rem 0 4rem;
   }
-  .card h2, h3, h4, article h2, .description, .contactContainer span, .specialContainer p {
+  .card h2,
+  h3,
+  h4,
+  article h2,
+  .description,
+  .contactContainer span,
+  .specialContainer p {
     font-size: 1.5rem;
   }
-  p, nav a, li, .card p {
+  p,
+  nav a,
+  li,
+  .card p {
     font-size: 1.2rem;
   }
   section {
@@ -857,9 +948,9 @@ section .container {
     padding: 0 10rem 0 0;
   }
   .specialContainer p {
-    padding-top: 1rem;  
+    padding-top: 1rem;
   }
-  footer p:first-child{
+  footer p:first-child {
     margin-right: 3rem;
   }
   footer .container {
@@ -873,12 +964,10 @@ section .container {
     float: none;
     margin: 3rem auto;
   }
-
 }
 
 /* Laptops & Desktops */
 @media only screen and (min-width: 1200px) {
-
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
