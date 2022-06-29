@@ -6,21 +6,27 @@
   --color-g: #f5f5f5;
   --gradient: linear-gradient(180deg, var(--color-y), #fff);
   --gradient-x: linear-gradient(180deg, var(--color-y), #fff);
-  --gradient-z: linear-gradient(45deg, var(--color-y), #fff 60%);;
+  --gradient-z: linear-gradient(45deg, var(--color-y), #fff 60%);
   --radius: 1rem;
   --radius-big: 1.5rem;
   --font: "SpaceGrotesk", sans-serif;
 }
+
 @font-face {
-  font-family: SpaceGrotesk;
+  font-family: "SpaceGrotesk";
   src: url("/fonts/SpaceGrotesk-Bold.otf");
-  font-weight: bold;
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
 }
 @font-face {
-  font-family: SpaceGrotesk;
+  font-family: "SpaceGrotesk";
   src: url("/fonts/SpaceGrotesk-Regular.otf");
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
+
 *,
 *:after,
 *:before {
@@ -138,7 +144,7 @@ header {
   height: 2rem;
   border-radius: 100%;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-  transition: box-shadow .35s cubic-bezier(.19,1,.22,1);
+  transition: box-shadow 0.35s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 2;
 }
 .layer-active {
@@ -159,7 +165,7 @@ nav {
   background: var(--gradient-z);
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity .25s ease;
+  transition: visibility 0s, opacity 0.25s ease;
 }
 nav.open {
   visibility: visible;
@@ -440,24 +446,24 @@ article blockquote {
   grid-gap: 2rem;
   padding: 2rem 0 0;
   z-index: 9;
-  text-align: center;
   border-radius: 2.5rem 2.5rem 0 0;
-  text-align: left !important;
+  text-align: left;
+}
+.home div:nth-child(2) {
+  text-align: center;
 }
 
 /* Profile Picture */
 #profile {
   position: relative;
   margin: 0 auto;
-  width: 100%;
-  float: right;
+  display: inline-block;
+  float: none;
+  width: 124px;
+  height: 124px;
 }
 #profile img {
   float: none;
-  display: block;
-  width: 124px;
-  height: 124px;
-  margin: 0 auto 1.5rem;
   background: var(--gradient-z);
   border-radius: 50%;
   /* filter: grayscale(1); */
@@ -818,8 +824,8 @@ section .container {
 
 /* Phones */
 @media only screen and (min-width: 520px) {
-
-  header, footer {
+  header,
+  footer {
     padding: 2rem 4rem;
   }
 
@@ -829,7 +835,7 @@ section .container {
   .home h1 {
     font-size: 3rem;
   }
-  #profile img {
+  #profile {
     width: 180px;
     height: 180px;
   }
@@ -854,7 +860,6 @@ section .container {
 
 /* Tablets */
 @media only screen and (min-width: 900px) {
-
   #menu,
   .layer {
     display: none;
@@ -891,7 +896,7 @@ section .container {
   .home h1 {
     font-size: 4rem;
   }
-  #profile img {
+  #profile {
     width: 220px;
     height: 220px;
   }
@@ -964,7 +969,6 @@ section .container {
 
 /* Laptops & Desktops */
 @media only screen and (min-width: 1200px) {
-
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
