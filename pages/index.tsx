@@ -15,7 +15,7 @@ export default function Home() {
 
             <h1>Hello, I develop Web apps &#38; sites</h1>
             <p className="description">
-              I'm Lucas Menezes, a Frontend Software Engineer from Brazil creating digital products and open source.
+              I'm Lucas Menezes, a Frontend Software Engineer from Brazil, creating digital products and open source.
             </p>
 
             <Icons />
@@ -65,7 +65,7 @@ export default function Home() {
               and accessibility are my focal points.
             </p>
 
-            <p>I'm also create Open Source projects, write a Blog of programming and advocate for the Open Web.</p>
+            <p>I'm also advocate for the Open Web, maintain Open Source projects and write a Blog of programming.</p>
 
             {/* <a href="#contact" className="button button-main">
               Get in touch
@@ -82,7 +82,7 @@ export default function Home() {
               <h3 className="subtitle">Get in touch</h3>
 
               <p>
-                Want to work together or discuss your project? Email me at {" "}
+                Do you want to discuss your project or work together? Send an email to {" "}
                 <span>
                   <a href="mailto:hello@lucasm.dev?subject=Hello">
                     hello@lucasm.dev
@@ -105,7 +105,7 @@ export default function Home() {
             </a>
 
             <a href="https://dev.to/lucasm" target="_blank" rel="noopener" className="button button-secondary">
-              Dev Blog
+              Read my Blog
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 783.74 695.32" >
                 <path d="M0,347.17,345.6,695.32l70.6-68.16L184.86,395.87H783.74V299.46H183.18l233-231.3L345.6,0,0,346.14l.53.52Z" />
               </svg>
