@@ -5,12 +5,12 @@ import Cards from "../components/Cards";
 export default function Home() {
   return (
     <PageLayout
-      title="Lucas Menezes — Frontend Developer"
-      description="Hi, I'm a Frontend Developer from Brazil developing web apps and sites and open source."
+      title="Lucas Menezes — Frontend Software Engineer"
+      description="Frontend Software Engineer from Brazil. Development of web apps and sites. Open source."
     >
       <section>
         <div className="container home">
-          <h1>Hi, I code web apps & sites</h1>
+          <h1>Hi, I code web apps &#38; sites</h1>
 
           {/* <figure id="profile">
                     <img src="https://pbs.twimg.com/profile_images/1517213451621486592/hOGCMw8m_400x400.jpg" alt="Lucas Menezes profile photo" />
@@ -18,8 +18,8 @@ export default function Home() {
           {/* //avatars.githubusercontent.com/lucasm */}
 
           <p className="description">
-            I'm Lucas Menezes, a Frontend Developer from Brazil creating digital
-            products and open source
+            I'm Lucas Menezes, a Frontend Software Engineer from Brazil creating
+            digital products and open source
           </p>
 
           <div>
