@@ -286,19 +286,23 @@ input,
 
 h1,
 .home h1 {
-  font-size: 3rem;
-}
-h2 {
   font-size: 2rem;
 }
+
+h2 {
+  font-size: 1.75rem;
+}
+
 article h1,
 nav a {
   font-size: 1.75rem;
 }
+
 h3,
 article h2 {
   font-size: 1.5rem;
 }
+
 h4,
 article h3,
 .card h2,
@@ -434,7 +438,7 @@ article blockquote {
   display: flex;
   flex-direction: column-reverse;
   grid-gap: 2rem;
-  padding: 4rem 0 0;
+  padding: 2rem 0 0;
   z-index: 9;
   text-align: center;
   border-radius: 2.5rem 2.5rem 0 0;
@@ -451,8 +455,8 @@ article blockquote {
 #profile img {
   float: none;
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 124px;
+  height: 124px;
   margin: 0 auto 1.5rem;
   background: var(--gradient-z);
   border-radius: 50%;
@@ -822,22 +826,19 @@ section .container {
   section {
     padding: 6rem 4rem;
   }
+  .home h1 {
+    font-size: 3rem;
+  }
+  #profile img {
+    width: 180px;
+    height: 180px;
+  }
 
   .icons a {
     margin: 0 1.75rem 0 0;
   }
   .icons svg {
     width: 26px;
-  }
-
-  .home h1 {
-    font-size: 4rem;
-    line-height: 1.25;
-  }
-
-  #profile img {
-    width: 220px;
-    height: 220px;
   }
 
   form {
@@ -887,6 +888,14 @@ section .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+  .home h1 {
+    font-size: 4rem;
+  }
+  #profile img {
+    width: 220px;
+    height: 220px;
+  }
+
   h1,
   article h1,
   h2 {
