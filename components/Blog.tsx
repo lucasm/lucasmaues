@@ -16,18 +16,18 @@ export default function Blog() {
   }, []);
 
   return (
-    <div className="blog">
+    <ul className="blog">
       {posts &&
         posts.map((item) => (
-          <div className="item-container" key={item.id}>
+          <li key={item.id}>
             <span>
               {item.readable_publish_date} - {item.reading_time_minutes} min
             </span>
             <a href={item.url} target="_blank">
               {item.title}
             </a>
-          </div>
+          </li>
         ))}
-    </div>
+    </ul>
   );
 }

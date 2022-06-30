@@ -1,7 +1,7 @@
 export default function Cards() {
   return (
     <div className="cards">
-      <div className="card opensource">
+      <div className="card">
         <a href="https://findto.app" target="_blank">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -15,16 +15,16 @@ export default function Cards() {
               />
             </svg>
           </figure>
-
           <h3>Findto</h3>
           <p>
             Open source decentralized web search app, with multiple engines,
             sources and privacy.
           </p>
+          <span>JavaScript</span>
         </a>
       </div>
 
-      <div className="card opensource">
+      <div className="card">
         <a href="https://headly.app" target="_blank">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
@@ -37,14 +37,21 @@ export default function Cards() {
 
           <h3>Headly</h3>
           <p>
-            News headlines app, with fact-checking journalism and
-            internationalization.
+            Open source internationalized news headlines app, with fact-checking
+            journalism.
           </p>
+
+          <span>JavaScript</span>
+          <span>React</span>
         </a>
       </div>
 
       <div className="card">
-        <a href="https://www.tcm.pa.gov.br/" target="_blank" rel="noopener">
+        <a
+          href="https://linkedin.com/in/lucasmezs/"
+          target="_blank"
+          rel="noopener"
+        >
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path
@@ -54,16 +61,24 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Tribunal de Contas dos Municípios do Estado do Pará</h3>
+          <h3>Court of Auditors of Municipalities State of Pará</h3>
           <p>
-            Website with CMS, web services, intranet and accessibility. Web apps
-            of data visualization with maps, graphs and tax calcs.
+            Websites, data visualization web apps, web services, intranet and
+            accessibility.
           </p>
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>Java</span>
+          <span>SQL</span>
         </a>
       </div>
 
       <div className="card">
-        <a href="https://younner.com/" target="_blank" rel="noopener">
+        <a
+          href="https://linkedin.com/in/lucasmezs/"
+          target="_blank"
+          rel="noopener"
+        >
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path
@@ -73,8 +88,11 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Younner</h3>
-          <p>E-commerce website thats connects retailers to industries.</p>
+          <h3>Younner Systems</h3>
+          <p>E-commerces and websites in React with responsive design.</p>
+
+          <span>TypeScript</span>
+          <span>React</span>
         </a>
       </div>
 
@@ -93,11 +111,11 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Superia</h3>
-          <p>
-            Components for a web application of an international trading
-            company.
-          </p>
+          <h3>Superia Trading</h3>
+          <p>Components in Vue for a dashboard web application.</p>
+
+          <span>TypeScript</span>
+          <span>Vue</span>
         </a>
       </div>
 
@@ -215,17 +233,25 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Universidade Federal do Pará</h3>
+          <h3>Federal University of Pará</h3>
           <p>
-            Radio website, cultural magazine website, live audio player,
-            multimedia web-documentary and hotsites.
+            Websites, live audio streaming web player and multimedia
+            webdocumentary.
           </p>
+
+          {/* Radio website, cultural magazine website, live audio player,
+            multimedia web-documentary and hotsites. */}
+
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>Python</span>
+          <span>SQL</span>
         </a>
       </div>
 
-      <div className="card">
+      {/* <div className="card">
         <a
-          href="https://linkedin.com/in/lucasmezs/details/experience/"
+          href="https://linkedin.com/in/lucasmezs/"
           target="_blank"
           rel="noopener"
         >
@@ -282,14 +308,17 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Instituto Nufen</h3>
-          <p>Website and SEO for a psychotherapy online service.</p>
-        </a>
-      </div>
+          <h3>Nufen Psychotherapy Institute</h3>
+          <p>Website in WordPress with e-commerce and SEO.</p>
 
-      <div className="card">
+          <span>JavaScript</span>
+          <span>PHP</span>
+        </a>
+      </div> */}
+
+      {/* <div className="card">
         <a
-          href="https://linkedin.com/in/lucasmezs/details/experience/"
+          href="https://linkedin.com/in/lucasmezs/"
           target="_blank"
           rel="noopener"
         >
@@ -306,13 +335,14 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Centro Artístico Cultural Belém Amazônia</h3>
-          <p>
-            Hacked website recovered and redesigned for a non-profit social
-            organization.
-          </p>
+          <h3>Cultural Artistic Center Belém Amazônia</h3>
+          <p>Hacked website in WordPress recovered, UI redesigned and SEO.</p>
+
+          <span>JavaScript</span>
+          <span>PHP</span>
+          <span>SQL</span>
         </a>
-      </div>
+      </div> */}
 
       {/* <div className="card">
             <a href="#" >

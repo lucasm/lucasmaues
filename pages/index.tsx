@@ -26,10 +26,12 @@ export default function Home() {
           <div>
             <figure id="profile">
               <Image
-                alt="Lucas Menezes profile photo"
+                alt="Picture of Lucas Menezes"
                 src="https://avatars.githubusercontent.com/lucasm"
-                layout="fill"
+                // layout="fill"
                 priority
+                width={220}
+                height={220}
               />
             </figure>
           </div>
@@ -60,7 +62,7 @@ export default function Home() {
             <h2>I code reliable Web experiences</h2>
 
             <p>
-              Since 2017 I've been helping businesses and organizations launch
+              Since 2017 I've been helping companies and organizations launch
               digital products, like web applications, websites and e-commerces,
               that's establish a refined online presence.
             </p>
@@ -74,13 +76,10 @@ export default function Home() {
             </p>
 
             <p>
-              I also maintain Open Source projects and I write a Blog where I
-              advocate for Open Web standards and share programming tutorials.
+              I also maintain amazing Open Source projects and I write a Blog
+              where I share programming tutorials and advocate for open web
+              standards.
             </p>
-
-            {/* <a href="#contact" className="button button-main">
-              Get in touch
-            </a> */}
           </div>
         </div>
       </section>
@@ -111,7 +110,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Open Source Sponsors
+                Open Source
                 <IconArrowLink />
               </a>
 
