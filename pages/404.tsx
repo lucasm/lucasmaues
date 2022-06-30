@@ -1,57 +1,45 @@
-import PageLayout from '../components/PageLayout'
-
-if (typeof (document) !== "undefined") {
-
-    // gifs
-    var gifs = [
-        '//c.tenor.com/4By6BoDLlxoAAAAd/the-office-dwight-schrute.gif',
-        '//c.tenor.com/yAtN8iFS2OcAAAAd/oh-wow-the-office.gif',
-        '//c.tenor.com/A-usPJNu8_AAAAAd/yes-right.gif',
-        '//c.tenor.com/EuCsUQhyZtgAAAAd/stanley-hudson-the-office.gif'
-    ];
-    document.getElementById("background").style.backgroundImage = 'url(' + gifs[Math.floor(Math.random() * gifs.length)] + ')';
-
-    // circle
-    const circle = document.getElementById("circle");
-
-    let X = 0;
-    let Y = 0;
-    const onMouseMove = (e) => {
-        X = e.clientX;
-        Y = e.clientY;
-    }
-
-    setInterval(() => {
-        circle.style.transform = `translateX(${X}px) translateY(${Y}px)`;
-    }, 50);
-
-    document.addEventListener('mousemove', onMouseMove);
-}
+import PageLayout from "../components/PageLayout";
+import { useEffect, useRef } from "react";
+import CircleMouse from "../components/CircleMouse";
 
 export default function Custom404() {
+  const background = useRef(null);
+
+  useEffect(() => {
+    let gif = [
+      "//c.tenor.com/4By6BoDLlxoAAAAd/the-office-dwight-schrute.gif",
+      "//c.tenor.com/yAtN8iFS2OcAAAAd/oh-wow-the-office.gif",
+      "//c.tenor.com/A-usPJNu8_AAAAAd/yes-right.gif",
+      "//c.tenor.com/EuCsUQhyZtgAAAAd/stanley-hudson-the-office.gif",
+    ];
+
+    background.current.style.backgroundImage =
+      "url(" + gif[Math.floor(Math.random() * gif.length)] + ")";
+  });
+
   return (
-
     <PageLayout
-        title="Not Found — Lucas Menezes"
-        description="Error page.">
-          
-          <div id="circle"></div>
+      title="Page Not Found — Lucas Menezes"
+      description="Error page."
+    >
+      <section className="fullscreen">
+        <CircleMouse />
+        <div className="fullscreen-container">
+          <div className="container">
+            <figure className="gif" ref={background} id="background"></figure>
 
-          <section className="fullscreen">
-            <div className="fullscreen-container">
+            <h1>Not Found</h1>
 
-                <div className="container">
-                    <figure className="gif" id="background"></figure>
-                    <h1>Not Found</h1>
-                    <p className="description">The page you're looking for can't be found.</p>
-                    <a href="/" className="button button-main">
+            <p className="description">
+              The page you're looking for can't be found.
+            </p>
+
+            <a href="/" className="button button-main">
               Back to home
             </a>
-                </div>
-
-            </div>
-        </section>
-
+          </div>
+        </div>
+      </section>
     </PageLayout>
-  )
+  );
 }

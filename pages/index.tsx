@@ -1,6 +1,7 @@
 import PageLayout from "../components/PageLayout";
 import Icons from "../components/Icons";
 import Cards from "../components/Cards";
+import IconArrowLink from "../components/IconArrowLink";
 import Image from "next/image";
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
 
       <section id="work">
         <div className="container">
-          <h3 className="subtitle">Selected work</h3>
+          <h2 className="subtitle">Selected work</h2>
 
           <Cards />
         </div>
@@ -43,7 +44,7 @@ export default function Home() {
 
       <section id="about">
         <div className="container">
-          <h3 className="subtitle">About me</h3>
+          <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
             <h2>I code reliable Web experiences</h2>
@@ -78,11 +79,11 @@ export default function Home() {
         <div className="container">
           <div className="contactContainer">
             <div>
-              <h3 className="subtitle">Get in touch</h3>
+              <h2 className="subtitle">Get in touch</h2>
 
               <p>
-                Do you want to discuss your project or work together? Send an
-                email to{" "}
+                Do you want to discuss your project or work together? Please,
+                send an email to{" "}
                 <span>
                   <a href="mailto:hello@lucasm.dev?subject=Hello">
                     hello@lucasm.dev
@@ -92,19 +93,16 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="subtitle">Community</h3>
+              <h2 className="subtitle">Community</h2>
 
               <a
                 href="https://github.com/sponsors/lucasm"
+                target="_blank"
+                rel="noopener"
                 className="button button-secondary"
               >
                 Sponsor my Open Source
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 783.74 695.32"
-                >
-                  <path d="M0,347.17,345.6,695.32l70.6-68.16L184.86,395.87H783.74V299.46H183.18l233-231.3L345.6,0,0,346.14l.53.52Z" />
-                </svg>
+                <IconArrowLink />
               </a>
 
               <a
@@ -114,12 +112,7 @@ export default function Home() {
                 className="button button-secondary"
               >
                 Read my Blog
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 783.74 695.32"
-                >
-                  <path d="M0,347.17,345.6,695.32l70.6-68.16L184.86,395.87H783.74V299.46H183.18l233-231.3L345.6,0,0,346.14l.53.52Z" />
-                </svg>
+                <IconArrowLink />
               </a>
             </div>
           </div>

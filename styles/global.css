@@ -244,10 +244,7 @@ p,
 li,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: var(--font);
   color: var(--color-b);
   padding-bottom: 2rem;
@@ -270,61 +267,41 @@ li {
   line-height: 1.5;
 }
 
-#logo,
-nav a,
-.subtitle {
-  font-weight: bold;
-}
-
 h1,
 h2,
 h3,
-h4,
 a,
-b,
 strong,
-.button,
-button,
 input,
-.card h2 {
+button,
+.button,
+#logo {
   font-weight: bold;
 }
 
 h1,
-.home h1 {
+.home h1,
+nav a,
+.specialContainer h2 {
   font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.75rem;
-}
-
-article h1,
-nav a {
-  font-size: 1.75rem;
-}
-
-h3,
-article h2 {
   font-size: 1.5rem;
 }
 
-h4,
-article h3,
-.card h2,
+h3,
 .contactContainer span {
   font-size: 1.25rem;
 }
+
 p,
 .description,
 li,
 .button,
 input,
 textarea,
-.card p,
-.button,
 input,
-textarea,
 footer p {
   font-size: 1rem;
 }
@@ -365,12 +342,15 @@ article a:focus {
   border-color: var(--color-b);
 }
 
-/* Articles */
+/* Article */
 article {
   position: relative;
-  margin: 5.75rem auto 2rem;
+  margin: 2rem auto;
   max-width: 720px;
   text-align: left;
+}
+article h1 {
+  padding: 2.5rem 0;
 }
 article h2,
 article h3 {
@@ -472,16 +452,16 @@ article blockquote {
 /* Subtitles */
 .subtitle {
   position: relative;
-  padding-left: 4.25rem;
+  padding-left: 3.5rem;
   text-align: left;
   margin-bottom: 1.5rem;
 }
 .subtitle:before {
   content: "";
   position: absolute;
-  top: 0.95rem;
+  top: 0.85rem;
   left: 0;
-  width: 2.75rem;
+  width: 2.25rem;
   height: 4px;
   background: var(--color-b);
 }
@@ -528,19 +508,19 @@ article blockquote {
 }
 .card:hover,
 .card:focus {
-  top: -6px;
+  top: -8px;
   /* box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%); */
 }
 .card a {
   float: left;
   padding: 2.5rem;
 }
-.card h2,
+.card h3,
 .card p {
   margin: 0;
   padding: 1.5rem 0 0;
 }
-.card h2 {
+.card h3 {
   margin-top: 1.5rem;
 }
 .card figure {
@@ -630,7 +610,7 @@ article blockquote {
   background: var(--color-y);
   border-radius: 100%;
   transition: transform 0.2s;
-  margin: -200px 0 0 -200px;
+  margin: -280px 0 0 -260px;
   z-index: -1;
 }
 
@@ -754,32 +734,11 @@ input[type="submit"]:active {
   background: var(--gradient);
 }
 
-.black {
-  background: var(--color-b);
-}
-.black p,
-.black a,
-.black h1,
-.black h2,
-.black h3 {
-  color: #fff;
-}
-.black .subtitle:before {
-  background: #fff;
-}
-.black .button {
-  background: #fff;
-  color: var(--color-b);
-}
-.black .svg,
-.black svg {
-  fill: #fff;
-}
-
 .gradient-text {
   background-color: var(--color-y);
   background-image: linear-gradient(45deg, var(--color-y), #fff);
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -822,7 +781,7 @@ section .container {
   }
 }
 
-/* Phones */
+/* Phone */
 @media only screen and (min-width: 520px) {
   header,
   footer {
@@ -858,7 +817,7 @@ section .container {
   }
 }
 
-/* Tablets */
+/* Tablet */
 @media only screen and (min-width: 900px) {
   #menu,
   .layer {
@@ -883,6 +842,7 @@ section .container {
     margin: 0 0 0 3rem;
     line-height: inherit;
   }
+
   .button {
     margin: 0.5rem 1rem 0 0;
     padding: 0.25rem 2rem;
@@ -901,34 +861,39 @@ section .container {
     height: 220px;
   }
 
-  h1,
-  article h1,
-  h2 {
+  h1 {
     font-size: 3.5rem;
   }
-  .subtitle {
+
+  .specialContainer h2 {
+    font-size: 3rem;
+  }
+
+  h2 {
     font-size: 1.75rem;
   }
+
+  .description,
+  .contactContainer span {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  .specialContainer p {
+    font-size: 1.35rem;
+  }
+
+  p,
+  nav a,
+  li {
+    font-size: 1.2rem;
+  }
+
   .subtitle:before {
     top: 1.1rem;
   }
   .description {
     padding: 2rem 0;
-  }
-  .card h2,
-  h3,
-  h4,
-  article h2,
-  .description,
-  .contactContainer span,
-  .specialContainer p {
-    font-size: 1.5rem;
-  }
-  p,
-  nav a,
-  li,
-  .card p {
-    font-size: 1.2rem;
   }
   .cards,
   .contactContainer {
@@ -948,9 +913,11 @@ section .container {
   .contactContainer div:nth-child(1) {
     padding: 0 10rem 0 0;
   }
+
   .specialContainer p {
     padding-top: 1rem;
   }
+
   footer p:first-child {
     margin-right: 3rem;
   }
@@ -967,7 +934,7 @@ section .container {
   }
 }
 
-/* Laptops & Desktops */
+/* Laptop & Desktop */
 @media only screen and (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
