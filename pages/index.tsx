@@ -1,8 +1,9 @@
 import PageLayout from "../components/PageLayout";
+import Image from "next/image";
 import Icons from "../components/Icons";
 import Cards from "../components/Cards";
 import IconArrowLink from "../components/IconArrowLink";
-import Image from "next/image";
+import Blog from "../components/Blog";
 
 export default function Home() {
   return (
@@ -28,9 +29,18 @@ export default function Home() {
                 alt="Lucas Menezes profile photo"
                 src="https://avatars.githubusercontent.com/lucasm"
                 layout="fill"
+                priority
               />
             </figure>
           </div>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div className="container">
+          <h2 className="subtitle">Latest posts</h2>
+
+          <Blog />
         </div>
       </section>
 
@@ -64,8 +74,8 @@ export default function Home() {
             </p>
 
             <p>
-              I'm also advocate for the Open Web, maintain Open Source projects
-              and write a Blog of programming.
+              I also maintain Open Source projects and I write a Blog where I
+              advocate for Open Web standards and share programming tutorials.
             </p>
 
             {/* <a href="#contact" className="button button-main">
@@ -101,7 +111,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Sponsor my Open Source
+                Open Source Sponsors
                 <IconArrowLink />
               </a>
 
@@ -111,7 +121,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Read my Blog
+                Dev Blog
                 <IconArrowLink />
               </a>
             </div>

@@ -63,10 +63,10 @@ header {
 #logo {
   position: relative;
   float: left;
+  margin-top: -0.2rem;
   /* padding-left: 2.75rem; */
   height: var(--header-size);
-  font-size: 1.35rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
   letter-spacing: -0.025rem;
 }
 #logo figure {
@@ -192,6 +192,9 @@ nav a {
   margin: 1rem 0;
   color: var(--color-b);
 }
+nav .button-secondary {
+  margin: 0.5rem 0;
+}
 
 section {
   width: 100%;
@@ -281,17 +284,19 @@ button,
 
 h1,
 .home h1,
-nav a,
 .specialContainer h2 {
   font-size: 2rem;
 }
 
-h2 {
+h2,
+.blog a,
+.contactContainer span {
   font-size: 1.5rem;
 }
 
 h3,
-.contactContainer span {
+nav a,
+nav .button-secondary {
   font-size: 1.25rem;
 }
 
@@ -485,6 +490,31 @@ article blockquote {
 }
 .icons svg {
   width: 22px;
+}
+
+/* Blog */
+.blog {
+  text-align: left;
+}
+.blog span {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #666;
+}
+.blog a {
+  position: relative;
+  float: left;
+  box-shadow: inset 0 0 0 0 var(--color-y);
+  margin: 0 0 1.5rem;
+  padding: 0;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.blog a:hover,
+.blog a:focus {
+  box-shadow: inset 180vh 0 0 0 var(--color-y);
 }
 
 /* Cards */
@@ -830,6 +860,7 @@ section .container {
     opacity: 1;
     visibility: inherit;
     background: transparent;
+    margin-top: -0.5rem;
   }
   nav ul {
     display: inline-block;
@@ -839,11 +870,14 @@ section .container {
     display: inline-block;
   }
   nav a {
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 2.5rem;
     line-height: inherit;
   }
+  nav .button-secondary {
+    margin: 0 0 0 2.5rem;
+  }
 
-  .button {
+  .button:not(nav .button-secondary) {
     margin: 0.5rem 1rem 0 0;
     padding: 0.25rem 2rem;
   }
@@ -869,7 +903,8 @@ section .container {
     font-size: 3rem;
   }
 
-  h2 {
+  h2,
+  .blog a {
     font-size: 1.75rem;
   }
 
@@ -885,6 +920,7 @@ section .container {
 
   p,
   nav a,
+  nav .button-secondary,
   li {
     font-size: 1.2rem;
   }
