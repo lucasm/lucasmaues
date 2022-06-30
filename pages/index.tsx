@@ -110,7 +110,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Open Source
+                Sponsor my Open Source
                 <IconArrowLink />
               </a>
 
@@ -120,7 +120,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Dev Blog
+                Read my Blog
                 <IconArrowLink />
               </a>
             </div>

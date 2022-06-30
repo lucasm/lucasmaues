@@ -61,7 +61,7 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Court of Auditors of Municipalities State of Pará</h3>
+          <h3>Municipalities Auditors Court of State of Pará </h3>
           <p>
             Websites, data visualization web apps, web services, intranet and
             accessibility.

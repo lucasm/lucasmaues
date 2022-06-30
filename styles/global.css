@@ -294,14 +294,14 @@ h1,
 }
 
 h2,
-.blog a,
 .contactContainer span {
   font-size: 1.5rem;
 }
 
 h3,
 nav a,
-nav .button-secondary {
+nav .button-secondary,
+.blog a {
   font-size: 1.25rem;
 }
 
