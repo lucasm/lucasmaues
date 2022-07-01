@@ -1,24 +1,20 @@
-import { useEffect, useState } from "react";
+import useSWR from "swr";
+import axios from "axios";
 
 export default function Blog() {
-  const [posts, setPosts] = useState<any | null>(null);
+  const fetcher = (url) => axios.get(url).then((res) => res.data);
+  const { data, error } = useSWR(
+    "https://dev.to/api/articles?username=lucasm&state=fresh&per_page=3",
+    fetcher
+  );
 
-  const getApiData = async () => {
-    const response = await fetch(
-      "https://dev.to/api/articles?username=lucasm&spage=1&per_page=3"
-    ).then((response) => response.json());
-
-    setPosts(response);
-  };
-
-  useEffect(() => {
-    getApiData();
-  }, []);
+  if (error) return <div>Failed to load</div>;
+  if (!data) return <div>Loading...</div>;
 
   return (
     <ul className="blog">
-      {posts &&
-        posts.map((item) => (
+      {data &&
+        data.map((item) => (
           <li key={item.id}>
             <span>
               {item.readable_publish_date} - {item.reading_time_minutes} min
