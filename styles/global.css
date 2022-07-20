@@ -348,7 +348,9 @@ nav a:focus,
 p a:hover,
 p a:focus,
 article a:hover,
-article a:focus {
+article a:focus,
+.blog a:hover,
+.blog a:focus {
   border-color: var(--color-b);
 }
 
@@ -522,9 +524,8 @@ article blockquote {
   font-weight: normal;
   color: #666;
 }
-.blog a:hover,
-.blog a:focus {
-  background: var(--color-y);
+.blog a {
+  border-bottom: 4px solid transparent;
 }
 
 /* Cards */
@@ -770,6 +771,10 @@ input[type="submit"]:active {
   background: var(--gradient);
 }
 
+.removeScroll {
+  overflow: hidden;
+}
+
 .gradient-text {
   background-color: var(--color-y);
   background-image: linear-gradient(45deg, var(--color-y), #fff);
@@ -782,7 +787,6 @@ input[type="submit"]:active {
 }
 
 /* Animations */
-
 section .container {
   -webkit-animation-name: down;
   animation-name: down;
@@ -928,7 +932,7 @@ section .container {
   nav a,
   nav .button-secondary,
   li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .subtitle:before {
@@ -970,9 +974,9 @@ section .container {
 
   .gif {
     height: 350px;
-    max-width: 400px;
+    max-width: 350px;
     float: none;
-    margin: 3rem auto;
+    margin: 0 auto 3rem;
   }
 }
 

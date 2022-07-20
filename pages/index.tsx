@@ -11,7 +11,7 @@ export default function Home() {
       title="Lucas Menezes — Frontend Software Engineer"
       description="Frontend Software Engineer from Brazil. Development of Web Apps and Sites. Open Source."
     >
-      <section className="gradient-y">
+      <section className="gradient-x">
         <div className="container home reverse">
           <div>
             <h1>Hello, I develop Web apps &#38; sites</h1>

@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import IconArrowLink from "./IconArrowLink";
 
 export default function Header() {
-  const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (isActive) {
+      document.body.classList.add("removeScroll");
+    } else {
+      document.body.classList.remove("removeScroll");
+    }
+  }, [isActive]);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -28,33 +36,33 @@ export default function Header() {
 
         <button
           onClick={handleToggle}
-          className={isActive ? "open" : null}
+          className={isActive ? "open" : undefined}
           id="menu"
           type="button"
         >
           Menu<div className="hamburger"></div>
         </button>
 
-        <nav className={isActive ? "open" : null}>
+        <nav className={isActive ? "open" : undefined}>
           <ul>
             <li>
               <Link href="/#blog">
-                <a onClick={handleToggle}>Blog</a>
+                <a onClick={isActive ? handleToggle : undefined}>Blog</a>
               </Link>
             </li>
             <li>
               <Link href="/#work">
-                <a onClick={handleToggle}>Work</a>
+                <a onClick={isActive ? handleToggle : undefined}>Work</a>
               </Link>
             </li>
             <li>
               <Link href="/#about">
-                <a onClick={handleToggle}>About</a>
+                <a onClick={isActive ? handleToggle : undefined}>About</a>
               </Link>
             </li>
             <li>
               <Link href="/#contact">
-                <a onClick={handleToggle}>Contact</a>
+                <a onClick={isActive ? handleToggle : undefined}>Contact</a>
               </Link>
             </li>
             <li>
