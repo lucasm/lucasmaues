@@ -17,8 +17,8 @@ export default function Cards() {
           </figure>
           <h3>Findto</h3>
           <p>
-            Open source decentralized web search app, with multiple engines,
-            sources and privacy.
+            Decentralized web search app, with multiple engines, sources and
+            privacy. Open source.
           </p>
           <span>JavaScript</span>
         </a>
@@ -37,11 +37,11 @@ export default function Cards() {
 
           <h3>Headly</h3>
           <p>
-            Open source internationalized news headlines app, with fact-checking
-            journalism.
+            Breaking news headlines app internationalized, with trusted
+            journalism and fact-checking. Open source.
           </p>
 
-          <span>JavaScript</span>
+          <span>TypeScript</span>
           <span>React</span>
         </a>
       </div>
