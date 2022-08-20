@@ -16,8 +16,8 @@ export default function Home() {
           <div>
             <h1>Hello, I develop Web apps &#38; sites</h1>
             <p className="description">
-              I'm Lucas Menezes, a Frontend Software Engineer from Brazil,
-              creating digital products and open source.
+              I'm Lucas Menezes, a Frontend Software Engineer from the sunny
+              Brazil, creating business and helping people.
             </p>
 
             <Icons />
