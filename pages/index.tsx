@@ -14,10 +14,10 @@ export default function Home() {
       <section className="gradient-x">
         <div className="container home reverse">
           <div>
-            <h1>Hello, I develop Web apps &#38; sites</h1>
+            <h1>Hello, I develop apps &#38; websites </h1>
             <p className="description">
               I'm Lucas Menezes, a Frontend Software Engineer from the sunny
-              Brazil, creating business and helping people.
+              Brazil, creating digital business and helping developers.
             </p>
 
             <Icons />
@@ -59,26 +59,27 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code reliable Web experiences</h2>
+            <h2>Coding, making business grow and helping devs.</h2>
 
             <p>
-              Since 2017 I've been helping companies and organizations launch
-              digital products, like web applications, websites and e-commerces,
-              that's establish a refined online presence.
+              Since 2017 I work with companies and organizations to launch
+              digital products such as websites, web apps, mobile apps and
+              e-commerces, which establish a refined online presence, scale and
+              grow business.
             </p>
 
             <p>
-              I develop reactive, responsive and progressive front-end user
-              interfaces (UI) with strong focus on user experience (UX).
-              Adjacent back-end with APIs integrations, databases and cloud
-              deploy. Web architecture patterns, performance, security and
-              accessibility are my focal points.
+              I specialized on development of reactive, responsive and
+              progressive front-end user interfaces with strong focus on user
+              experience (UX). Adjacent back-end with APIs integrations,
+              databases and continuous cloud deploy. Web performance,
+              accessibility, design patterns and security are my focal points.
             </p>
 
             <p>
-              I also maintain amazing Open Source projects and I write a Blog
-              where I share programming tutorials and advocate for open web
-              standards.
+              I also maintain Open Source projects and I write a Blog where I
+              share programming tutorials to help beginners devs and advocate
+              for the open web standards.
             </p>
           </div>
         </div>
@@ -91,8 +92,8 @@ export default function Home() {
               <h2 className="subtitle">Get in touch</h2>
 
               <p>
-                Do you want to discuss your project or work together? Please,
-                send an email to{" "}
+                If you want to discuss your project or work together, send an
+                email to{" "}
                 <span>
                   <a href="mailto:hello@lucasm.dev?subject=Hello">
                     hello@lucasm.dev
@@ -110,7 +111,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Sponsor my Open Source
+                Open Source
                 <IconArrowLink />
               </a>
 
@@ -120,7 +121,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Read my Blog
+                Blog
                 <IconArrowLink />
               </a>
             </div>

@@ -17,8 +17,8 @@ export default function Cards() {
           </figure>
           <h3>Findto</h3>
           <p>
-            Decentralized web search app, with multiple engines, sources and
-            privacy. Open source.
+            Open source decentralized web search app, with multiple engines,
+            sources and privacy.
           </p>
           <span>JavaScript</span>
         </a>
@@ -37,8 +37,8 @@ export default function Cards() {
 
           <h3>Headly</h3>
           <p>
-            Breaking news headlines app internationalized, with trusted
-            journalism and fact-checking. Open source.
+            Open source breaking news headlines app, with trusted journalism,
+            fact-checking and internationalization.
           </p>
 
           <span>TypeScript</span>
@@ -63,8 +63,8 @@ export default function Cards() {
 
           <h3>Municipalities Auditors Court of State of Pará </h3>
           <p>
-            Websites, data visualization web apps, web services, intranet and
-            accessibility.
+            Websites, intranet, web services, accessibility, data visualization
+            and accounting calcs web app.
           </p>
           <span>JavaScript</span>
           <span>PHP</span>
@@ -89,10 +89,15 @@ export default function Cards() {
           </figure>
 
           <h3>Younner Systems</h3>
-          <p>E-commerces and websites in React with responsive design.</p>
+          <p>
+            E-commerce, websites with responsive design and mobile app for an IT
+            consultancy.
+          </p>
 
           <span>TypeScript</span>
           <span>React</span>
+          <span>React Native</span>
+          <span>Node.js</span>
         </a>
       </div>
 
@@ -112,10 +117,10 @@ export default function Cards() {
           </figure>
 
           <h3>Superia Trading</h3>
-          <p>Components in Vue for a dashboard web application.</p>
+          <p>Components for a CRM web application.</p>
 
           <span>TypeScript</span>
-          <span>Vue</span>
+          <span>Vue.js</span>
         </a>
       </div>
 
@@ -236,7 +241,7 @@ export default function Cards() {
           <h3>Federal University of Pará</h3>
           <p>
             Websites, live audio streaming web player and multimedia
-            webdocumentary.
+            web-documentary.
           </p>
 
           {/* Radio website, cultural magazine website, live audio player,

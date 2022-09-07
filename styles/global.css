@@ -843,7 +843,7 @@ section .container {
     margin: 0 1.75rem 0 0;
   }
   .icons svg {
-    width: 26px;
+    width: 24px;
   }
 
   form {
@@ -884,7 +884,7 @@ section .container {
     line-height: inherit;
   }
   nav .button-secondary {
-    margin: 0 0 0 2.5rem;
+    margin: 0 0 0 2.25rem;
   }
 
   .button:not(nav .button-secondary) {
@@ -899,6 +899,7 @@ section .container {
   }
   .home h1 {
     font-size: 4rem;
+    max-width: 650px;
   }
   #profile {
     width: 220px;
