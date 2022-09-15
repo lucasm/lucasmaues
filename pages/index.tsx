@@ -59,7 +59,7 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>Coding, making business grow and helping devs.</h2>
+            <h2>I code to help business and people grow.</h2>
 
             <p>
               Since 2017 I work with companies and organizations to launch
@@ -111,7 +111,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Open Source
+                Open Source Projects
                 <IconArrowLink />
               </a>
 
@@ -121,7 +121,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Blog
+                Dev Blog
                 <IconArrowLink />
               </a>
             </div>
