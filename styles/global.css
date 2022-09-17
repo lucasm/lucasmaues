@@ -11,7 +11,7 @@
   --radius: 1rem;
   --radius-big: 1.5rem;
   --font: "SpaceGrotesk", sans-serif;
-  --font-size-min: 0.75rem;
+  --font-size-min: 0.7rem;
 }
 
 @font-face {
@@ -194,7 +194,8 @@ nav a {
   color: var(--color-b);
 }
 nav .button-secondary {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  padding: 0.2rem 1.5rem;
 }
 
 section {
@@ -396,8 +397,8 @@ article blockquote {
   display: inline-block;
   float: none;
   margin: 0.5rem 0.5rem 0 0;
-  padding: 0 1.5rem;
-  line-height: 36px;
+  padding: 0.75rem 2rem;
+  line-height: unset;
   color: var(--color-b);
   background: var(--color-y);
   border: 3px solid transparent;
@@ -422,13 +423,14 @@ article blockquote {
 .button-secondary:focus svg {
   fill: #fff;
 }
-.button-secondary svg {
-  fill: var(--color-b);
+.button-secondary figure {
   float: right;
-  margin: 0.5rem 0 0 0.75rem;
+  margin: -0.1rem 0 0 0.75rem;
   width: 20px;
-  float: right;
   transform: rotate(135deg);
+}
+.button-secondary figure svg {
+  fill: var(--color-b);
 }
 
 /* Home */
@@ -556,6 +558,7 @@ article blockquote {
 .card a {
   float: left;
   padding: 2.5rem;
+  width: 100%;
 }
 .card h3,
 .card p {
@@ -585,7 +588,7 @@ article blockquote {
   font-size: var(--font-size-min);
   background: var(--color-w);
   color: var(--color-b);
-  padding: 0.25rem 0.75rem;
+  padding: 0.2rem 0.7rem;
   margin: 0.25rem 0.25rem 0 0;
   border-radius: 5rem;
   z-index: -1;
@@ -870,7 +873,7 @@ section .container {
     opacity: 1;
     visibility: inherit;
     background: transparent;
-    margin-top: -0.5rem;
+    margin-top: -0.25rem;
   }
   nav ul {
     display: inline-block;
@@ -885,11 +888,6 @@ section .container {
   }
   nav .button-secondary {
     margin: 0 0 0 2.25rem;
-  }
-
-  .button:not(nav .button-secondary) {
-    margin: 0.5rem 1rem 0 0;
-    padding: 0.25rem 2rem;
   }
 
   .home {

@@ -8,16 +8,16 @@ import Blog from "../components/Blog";
 export default function Home() {
   return (
     <PageLayout
-      title="Lucas Menezes — Frontend Software Engineer"
-      description="Frontend Software Engineer from Brazil. Development of Web Apps and Sites. Open Source."
+      title="Lucas Menezes — Software Engineer"
+      description="Software Engineer from Brazil. Coding to help business and developers grow!"
     >
       <section className="gradient-x">
         <div className="container home reverse">
           <div>
             <h1>Hello, I develop apps &#38; websites </h1>
             <p className="description">
-              I'm Lucas Menezes, a Frontend Software Engineer from the sunny
-              Brazil, creating digital business and helping developers.
+              I'm Lucas Menezes, a Software Engineer from the sunny Brazil,
+              coding to help business and developers.
             </p>
 
             <Icons />
@@ -59,27 +59,27 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to help business and people grow.</h2>
+            <h2>I code to help business and devs grow.</h2>
 
             <p>
-              Since 2017 I work with companies and organizations to launch
+              Since 2017 I work with companies and organizations to help launch
               digital products such as websites, web apps, mobile apps and
               e-commerces, which establish a refined online presence, scale and
-              grow business.
+              grow their businesses.
             </p>
 
             <p>
-              I specialized on development of reactive, responsive and
-              progressive front-end user interfaces with strong focus on user
-              experience (UX). Adjacent back-end with APIs integrations,
-              databases and continuous cloud deploy. Web performance,
-              accessibility, design patterns and security are my focal points.
+              I specialized on Front-end development of reactive, responsive and
+              progressive user interfaces with strong focus on user experience
+              (UX), performance, accessibility, security and web standards.
+              Adjacent Back-end with API integrations, databases, CI/CD and
+              cloud deploy.
             </p>
 
             <p>
-              I also maintain Open Source projects and I write a Blog where I
-              share programming tutorials to help beginners devs and advocate
-              for the open web standards.
+              I also create programming Content to help beginners developers and
+              advocate for the open web standards. And I maintain some Open
+              Source projects.
             </p>
           </div>
         </div>
@@ -103,19 +103,22 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="subtitle">Community</h2>
+              <h2 className="subtitle">Dev community</h2>
+
+              <p>Become a sponsor of my Content and Open Source</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
                 target="_blank"
                 rel="noopener"
                 className="button button-secondary"
+                style={{ fontSize: "1.1rem" }}
               >
-                Open Source Projects
+                Sponsors
                 <IconArrowLink />
               </a>
 
-              <a
+              {/* <a
                 href="https://dev.to/lucasm"
                 target="_blank"
                 rel="noopener"
@@ -123,7 +126,7 @@ export default function Home() {
               >
                 Dev Blog
                 <IconArrowLink />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
