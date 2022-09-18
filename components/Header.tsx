@@ -72,7 +72,7 @@ export default function Header() {
                 rel="noopener"
                 className="button button-secondary"
               >
-                Sponsors
+                Sponsor me
                 <IconArrowLink />
               </a>
             </li>

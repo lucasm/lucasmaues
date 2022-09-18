@@ -18,10 +18,7 @@ export default function Custom404() {
   });
 
   return (
-    <PageLayout
-      title="Page Not Found — Lucas Menezes"
-      description="Error page."
-    >
+    <PageLayout title="Not Found — Lucas Menezes" description="Error page.">
       <section className="fullscreen">
         <CircleMouse />
         <div className="fullscreen-container">
@@ -35,7 +32,7 @@ export default function Custom404() {
             </p>
 
             <a href="/" className="button button-main">
-              Back to home
+              Back to homepage
             </a>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Software Engineer from Brazil. Coding to help business and developers grow!"
+      description="Software Engineer from Brazil. Coding to grow businesses and help developers."
     >
       <section className="gradient-x">
         <div className="container home reverse">
@@ -17,7 +17,7 @@ export default function Home() {
             <h1>Hello, I develop apps &#38; websites </h1>
             <p className="description">
               I'm Lucas Menezes, a Software Engineer from the sunny Brazil,
-              coding to help business and developers.
+              coding to grow businesses and help developers.
             </p>
 
             <Icons />
@@ -59,7 +59,7 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to help business and devs grow.</h2>
+            <h2>I code to grow businesses and help developers</h2>
 
             <p>
               Since 2017 I work with companies and organizations to help launch
@@ -77,9 +77,9 @@ export default function Home() {
             </p>
 
             <p>
-              I also create programming Content to help beginners developers and
-              advocate for the open web standards. And I maintain some Open
-              Source projects.
+              I also maintain Open Source projects and create free programming
+              content to help beginners developers and advocate for the open web
+              standards.
             </p>
           </div>
         </div>
@@ -103,9 +103,9 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="subtitle">Dev community</h2>
+              <h2 className="subtitle">Community</h2>
 
-              <p>Become a sponsor of my Content and Open Source</p>
+              <p>Become a sponsor of my Open Source and free content</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
@@ -114,7 +114,7 @@ export default function Home() {
                 className="button button-secondary"
                 style={{ fontSize: "1.1rem" }}
               >
-                Sponsors
+                Sponsor me
                 <IconArrowLink />
               </a>
 

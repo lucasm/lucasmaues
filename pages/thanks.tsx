@@ -18,19 +18,19 @@ export default function Thanks() {
   });
 
   return (
-    <PageLayout title="Thank You — Lucas Menezes" description="Thanks page.">
+    <PageLayout title="Thanks — Lucas Menezes" description="Thanks page.">
       <section className="fullscreen">
         <CircleMouse />
         <div className="fullscreen-container">
           <div className="container">
             <figure className="gif" ref={background} id="background"></figure>
 
-            <h1>Thank you!</h1>
+            <h1>Thanks!</h1>
 
-            <p className="description">I just want to say this for you.</p>
+            <p className="description">I just want to say thank you.</p>
 
             <a href="/" className="button button-main">
-              Back to home
+              Back to homepage
             </a>
           </div>
         </div>
