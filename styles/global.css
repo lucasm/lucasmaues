@@ -5,29 +5,29 @@
   --color-b: #111111;
   --color-g: #f5f5f5;
   --color-w: #fff;
-  --gradient: linear-gradient(180deg, var(--color-y), #fff);
   --gradient-x: linear-gradient(180deg, var(--color-y), #fff);
   --gradient-z: linear-gradient(45deg, var(--color-y) 25%, #fff 100%);
+  --gradient-s: linear-gradient(25deg, var(--color-y) 0%, #fff 70%);
   --radius: 1rem;
   --radius-big: 1.5rem;
-  --font: "SpaceGrotesk", sans-serif;
+  --font: 'DM Sans', sans-serif;
   --font-size-min: 0.7rem;
 }
 
-@font-face {
-  font-family: "SpaceGrotesk";
-  src: url("/fonts/SpaceGrotesk-Bold.otf");
+/* @font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('/fonts/SpaceGrotesk-Bold.otf');
   font-style: bold;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
-  font-family: "SpaceGrotesk";
-  src: url("/fonts/SpaceGrotesk-Regular.otf");
+  font-family: 'SpaceGrotesk';
+  src: url('/fonts/SpaceGrotesk-Regular.otf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-}
+} */
 
 *,
 *:after,
@@ -39,7 +39,7 @@
 /* Scroll, Open Type Features */
 html {
   scroll-behavior: smooth;
-  font-feature-settings: "ss04" 1, "ss03" 1, "ss02" 1;
+  font-feature-settings: 'ss04' 1, 'ss03' 1, 'ss02' 1;
 }
 
 body,
@@ -88,28 +88,29 @@ header {
 #menu {
   position: relative;
   float: right;
+  margin-top: -0.25rem;
   z-index: 9;
-  padding-left: 0.25rem;
-  width: var(--header-size);
-  height: var(--header-size);
+  padding: 1.1566rem 0.5rem;
+  width: auto;
+  height: auto;
   font-size: 0;
-  background: transparent;
+  background: var(--gradient-s);
   border-radius: 100%;
 }
 .hamburger {
   position: relative;
-  width: 24px;
+  width: 22px;
   height: 3px;
   background: var(--color-b);
   transition: all 0.25s ease;
 }
 .hamburger:before,
 .hamburger:after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   right: 0;
-  width: 24px;
+  width: 22px;
   height: 3px;
   background: var(--color-b);
   z-index: 1;
@@ -125,7 +126,7 @@ header {
 }
 #menu:hover .hamburger:before,
 #menu:hover .hamburger:after {
-  width: 24px;
+  width: 22px;
 }
 #menu.open .hamburger {
   transform: rotate(45deg);
@@ -133,16 +134,16 @@ header {
 #menu.open .hamburger:before,
 #menu.open .hamburger:after {
   top: 0;
-  width: 24px;
+  width: 22px;
   transform: rotate(90deg);
 }
 .layer {
   position: absolute;
   background: transparent;
-  top: 0;
+  top: -0.25rem;
   right: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 100%;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
   transition: box-shadow 0.35s cubic-bezier(0.19, 1, 0.22, 1);
@@ -195,7 +196,7 @@ nav a {
 }
 nav .button-secondary {
   margin: 1rem 0;
-  padding: 0.2rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 
 section {
@@ -400,8 +401,8 @@ article blockquote {
   padding: 0.75rem 2rem;
   line-height: unset;
   color: var(--color-b);
-  background: var(--color-y);
-  border: 3px solid transparent;
+  background: var(--gradient-z);
+  border: none;
   border-radius: 50rem;
   cursor: pointer;
 }
@@ -412,8 +413,7 @@ article blockquote {
 }
 .button-secondary {
   color: var(--color-b);
-  background: transparent;
-  border-color: var(--color-b);
+  background: var(--gradient-s);
 }
 .button-secondary:hover,
 .button-secondary:focus {
@@ -458,9 +458,8 @@ article blockquote {
 }
 #profile img {
   float: none;
-  background: var(--color-w);
+  background: var(--gradient-s);
   border-radius: 50%;
-  /* filter: grayscale(1); */
 }
 
 /* Subtitles */
@@ -471,7 +470,7 @@ article blockquote {
   margin-bottom: 1.5rem;
 }
 .subtitle:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0.85rem;
   left: 0;
@@ -623,10 +622,12 @@ article blockquote {
 
 /* GIFs for warning pages */
 .gif {
-  height: 240px;
+  height: 300px;
   width: 100%;
-  float: left;
-  margin: 0 0 2rem;
+  max-width: 300px;
+  float: none;
+  margin: 0 auto 3rem;
+  border-radius: 1rem;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -644,7 +645,7 @@ article blockquote {
   position: fixed;
   width: 400px;
   height: 400px;
-  background: var(--color-y);
+  background: var(--gradient-z);
   border-radius: 100%;
   transition: transform 0.2s;
   margin: -280px 0 0 -260px;
@@ -729,13 +730,13 @@ textarea:focus,
 textarea:active {
   border-color: #fff;
 }
-input[type="submit"] {
+input[type='submit'] {
   width: auto;
   -webkit-appearance: none;
 }
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="submit"]:active {
+input[type='submit']:hover,
+input[type='submit']:focus,
+input[type='submit']:active {
   border: none;
   background-color: #fff;
 }
@@ -771,7 +772,7 @@ input[type="submit"]:active {
   background: linear-gradient(130deg, var(--color-y), #fff);
 }
 .gradient-y {
-  background: var(--gradient);
+  background: var(--gradient-x);
 }
 
 .removeScroll {
@@ -793,8 +794,8 @@ input[type="submit"]:active {
 section .container {
   -webkit-animation-name: down;
   animation-name: down;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
@@ -846,7 +847,7 @@ section .container {
     margin: 0 1.75rem 0 0;
   }
   .icons svg {
-    width: 24px;
+    width: 25px;
   }
 
   form {
@@ -897,7 +898,7 @@ section .container {
   }
   .home h1 {
     font-size: 4rem;
-    max-width: 650px;
+    max-width: 600px;
   }
   #profile {
     width: 220px;
@@ -969,13 +970,6 @@ section .container {
   footer .container {
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
-  }
-
-  .gif {
-    height: 350px;
-    max-width: 350px;
-    float: none;
-    margin: 0 auto 3rem;
   }
 }
 

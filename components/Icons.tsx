@@ -1,12 +1,7 @@
 export default function Icons() {
   return (
     <div className="icons">
-      <a
-        href="https://twitter.com/lucasmezs"
-        target="_blank"
-        rel="noopener"
-        title="Twitter"
-      >
+      <a href="https://twitter.com/lucasmezs" target="_blank" rel="noopener" title="Twitter">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             className="svg"
@@ -16,12 +11,7 @@ export default function Icons() {
         Twitter
       </a>
 
-      <a
-        href="https://github.com/lucasm"
-        target="_blank"
-        rel="noopener"
-        title="GitHub"
-      >
+      <a href="https://github.com/lucasm" target="_blank" rel="noopener" title="GitHub">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             className="svg"
@@ -31,12 +21,7 @@ export default function Icons() {
         GitHub
       </a>
 
-      <a
-        href="https://dev.to/lucasm"
-        target="_blank"
-        rel="noopener"
-        title="DEV"
-      >
+      <a href="https://dev.to/lucasm" target="_blank" rel="noopener" title="DEV">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
           <path
             className="svg"
@@ -50,12 +35,7 @@ export default function Icons() {
         DEV
       </a>
 
-      <a
-        href="https://codepen.io/lucasm"
-        target="_blank"
-        rel="noopener"
-        title="CodePen"
-      >
+      <a href="https://codepen.io/lucasm" target="_blank" rel="noopener" title="CodePen">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             className="svg"
@@ -65,12 +45,7 @@ export default function Icons() {
         CodePen
       </a>
 
-      <a
-        href="https://linkedin.com/in/lucasmezs"
-        target="_blank"
-        rel="noopener"
-        title="LinkedIn"
-      >
+      <a href="https://linkedin.com/in/lucasmezs" target="_blank" rel="noopener" title="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             className="svg"
@@ -80,12 +55,7 @@ export default function Icons() {
         LinkedIn
       </a>
 
-      <a
-        href="https://instagram.com/lucasmezs"
-        target="_blank"
-        rel="noopener"
-        title="Instagram"
-      >
+      <a href="https://instagram.com/lucasmezs" target="_blank" rel="noopener" title="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
             className="svg"
@@ -98,9 +68,19 @@ export default function Icons() {
       {/* <a href="https://t.me/lucasmezs" target="_blank" rel="noopener" title="Telegram">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M11.33,0h1.33A12,12,0,0,1,23.23,7.72,12.65,12.65,0,0,1,24,11.33v1.34a12,12,0,0,1-7.62,10.52,12.38,12.38,0,0,1-3.71.81H11.34A12,12,0,0,1,.88,16.56,12.36,12.36,0,0,1,0,12.67V11.33A12,12,0,0,1,11.33,0M5.65,11.71a1.4,1.4,0,0,0-.7.44c-.17.22.12.44.31.5l3.07,1c.38,1.22.74,2.45,1.12,3.66.08.32.52.25.72.11.59-.51,1.11-1.07,1.67-1.6,1,.72,1.93,1.43,2.9,2.14a.81.81,0,0,0,.82.18.9.9,0,0,0,.37-.65c.67-3.14,1.33-6.28,2-9.43.1-.42-.29-.94-.74-.75C13.34,8.74,9.5,10.23,5.65,11.71Z"/></svg>Telegram
             </a> */}
-      {/* <a href="https://discord.com/users/666438806278504489" target="_blank" rel="noopener" title="Discord">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M20.35,4.43a20.11,20.11,0,0,0-5-1.53,12.8,12.8,0,0,0-.63,1.29,18.77,18.77,0,0,0-5.5,0c-.17-.4-.42-.91-.63-1.29a19.6,19.6,0,0,0-5,1.53A20,20,0,0,0,.1,18.05,20.27,20.27,0,0,0,6.18,21.1,16,16,0,0,0,7.48,19a13.32,13.32,0,0,1-2.05-1c.17-.13.34-.26.49-.39a14.34,14.34,0,0,0,12.15,0l.49.39a13.32,13.32,0,0,1-2,1,16,16,0,0,0,1.3,2.1,20.15,20.15,0,0,0,6.08-3.05A19.91,19.91,0,0,0,20.35,4.43ZM8,15.3a2.29,2.29,0,0,1-2.16-2.4A2.28,2.28,0,0,1,8,10.5a2.27,2.27,0,0,1,2.16,2.4A2.29,2.29,0,0,1,8,15.3Zm8,0a2.29,2.29,0,0,1-2.16-2.4A2.28,2.28,0,0,1,16,10.5a2.27,2.27,0,0,1,2.16,2.4A2.28,2.28,0,0,1,16,15.3Z"/></svg>Discord
-            </a> */}
+      <a
+        href="https://discord.com/users/666438806278504489"
+        target="_blank"
+        rel="noopener"
+        title="Discord">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            className="svg"
+            d="M20.35,4.43a20.11,20.11,0,0,0-5-1.53,12.8,12.8,0,0,0-.63,1.29,18.77,18.77,0,0,0-5.5,0c-.17-.4-.42-.91-.63-1.29a19.6,19.6,0,0,0-5,1.53A20,20,0,0,0,.1,18.05,20.27,20.27,0,0,0,6.18,21.1,16,16,0,0,0,7.48,19a13.32,13.32,0,0,1-2.05-1c.17-.13.34-.26.49-.39a14.34,14.34,0,0,0,12.15,0l.49.39a13.32,13.32,0,0,1-2,1,16,16,0,0,0,1.3,2.1,20.15,20.15,0,0,0,6.08-3.05A19.91,19.91,0,0,0,20.35,4.43ZM8,15.3a2.29,2.29,0,0,1-2.16-2.4A2.28,2.28,0,0,1,8,10.5a2.27,2.27,0,0,1,2.16,2.4A2.29,2.29,0,0,1,8,15.3Zm8,0a2.29,2.29,0,0,1-2.16-2.4A2.28,2.28,0,0,1,16,10.5a2.27,2.27,0,0,1,2.16,2.4A2.28,2.28,0,0,1,16,15.3Z"
+          />
+        </svg>
+        Discord
+      </a>
       {/* <a href="https://dribbble.com/lucasm" target="_blank" rel="noopener" title="Dribbble">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path className="svg" d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>Dribbble
             </a> */}
@@ -115,5 +95,5 @@ export default function Icons() {
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300.04"><path className="svg" d="M22.68,0H276.1a29.32,29.32,0,0,1,21.41,17.56c2,4.58,2.15,9.69,2.49,14.6V263.67c0,8.15-.55,16.94-5.68,23.67-6.06,8.85-17,13.16-27.52,12.66H34.63c-7-.22-14.43-.3-20.59-4.06A29.78,29.78,0,0,1,0,277.71V21.53A29.39,29.39,0,0,1,22.68,0m37.2,60.31c0,19.85.1,39.71-.06,59.56,20.12.16,40.25-.25,60.35.21-.16,1.6-.31,3.2-.33,4.82q0,57.6,0,115.19c18.05.06,36.11,0,54.16.05a49.46,49.46,0,0,0,5.83-.37c-.1-40-.06-80-.19-120,20,.16,40,0,60,0-.07-19.78-.13-39.57,0-59.35C179.73,60.54,119.8,60.15,59.88,60.31Z"/></svg>TV Time
             </a> */}
     </div>
-  );
+  )
 }
