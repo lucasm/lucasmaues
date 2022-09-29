@@ -69,13 +69,13 @@ export default function Home() {
             <p>
               I specialized on Front-end development of reactive, responsive and progressive user
               interfaces with strong focus on user experience (UX), performance, accessibility,
-              security and web standards. Adjacent Back-end with API integrations, databases, CI/CD
-              and cloud deploy.
+              security, web standards and analytics. Adjacent Back-end with API integrations,
+              databases, CI/CD and cloud deploy.
             </p>
 
             <p>
-              I also maintain Open Source projects and create free programming content to help
-              beginners developers and advocate for the open web standards.
+              I also create free Content about programming to help beginners developers and I
+              maintain Open Source projects to advocate for the open web standards.
             </p>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function Home() {
             <div>
               <h2 className="subtitle">Dev community</h2>
 
-              <p>Become a sponsor of my Open Source and free content</p>
+              <p>Sponsor my free Content and Open Source projects</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
@@ -114,8 +114,7 @@ export default function Home() {
                 href="https://dev.to/lucasm"
                 target="_blank"
                 rel="noopener"
-                className="button button-secondary"
-              >
+                className="button button-secondary">
                 Dev Blog
                 <IconArrowLink />
               </a> */}
