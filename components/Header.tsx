@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import IconArrowLink from "./IconArrowLink";
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import IconArrowLink from './IconArrowLink'
 
 export default function Header() {
-  const [isActive, setActive] = useState<boolean>(false);
+  const [isActive, setActive] = useState<boolean>(false)
 
   useEffect(() => {
     if (isActive) {
-      document.body.classList.add("removeScroll");
+      document.body.classList.add('removeScroll')
     } else {
-      document.body.classList.remove("removeScroll");
+      document.body.classList.remove('removeScroll')
     }
-  }, [isActive]);
+  }, [isActive])
 
   const handleToggle = () => {
-    setActive(!isActive);
-  };
+    setActive(!isActive)
+  }
 
   return (
     <header>
@@ -36,14 +36,13 @@ export default function Header() {
 
         <button
           onClick={handleToggle}
-          className={isActive ? "open" : undefined}
+          className={isActive ? 'open' : undefined}
           id="menu"
-          type="button"
-        >
+          type="button">
           Menu<div className="hamburger"></div>
         </button>
 
-        <nav className={isActive ? "open" : undefined}>
+        <nav className={isActive ? 'open' : undefined}>
           <ul>
             <li>
               <Link href="/#blog">
@@ -70,16 +69,15 @@ export default function Header() {
                 href="https://github.com/sponsors/lucasm"
                 target="_blank"
                 rel="noopener"
-                className="button button-secondary"
-              >
+                className="button button-secondary">
                 Donate
                 <IconArrowLink />
               </a>
             </li>
           </ul>
         </nav>
-        <div className={isActive ? "layer layer-active" : "layer"}></div>
+        <div className={isActive ? 'layer layer-active' : 'layer'}></div>
       </div>
     </header>
-  );
+  )
 }

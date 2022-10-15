@@ -16,10 +16,10 @@ export default function Privacy() {
           </p>
 
           <p>
-            When you access contents on the domain https://lucasm.dev and their related Open Source
-            projects (collectively "projects"), you agree to be bound by this policy. If you do not
-            agree with any of the practices below for collecting and using your information, please,
-            don't use the projects.
+            When you access free Contents and their related Open Source projects on the domain
+            https://lucasm.dev (collectively "projects"), you agree to be bound by this policy. If
+            you do not agree with any of the practices below for collecting and using your
+            information, please, don't use the projects.
           </p>
 
           <p>
@@ -84,7 +84,7 @@ export default function Privacy() {
 
           <h2>6. Opting out</h2>
           <p>
-            To know how aggregated services on the Projects are handling your data and how proceed
+            To know how aggregated services on the projects are handling your data and how proceed
             to opt out them individually, please, take a look on third parties privacy policies
             linked above. If you use an "ad blocker" extension or have turned on the{' '}
             <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener">

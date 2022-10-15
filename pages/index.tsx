@@ -13,10 +13,10 @@ export default function Home() {
       <section className="gradient-y">
         <div className="container home">
           <div>
-            <h1>Hello, I code apps &#38; websites</h1>
+            <h1>Hi, I code &#38; create</h1>
             <p className="description">
               I'm Lucas Menezes, a Software Engineer from the sunny Brazil, coding to grow
-              businesses and help developers.
+              businesses and creating to help developers.
             </p>
 
             <Icons />
@@ -39,7 +39,7 @@ export default function Home() {
 
       <section id="blog">
         <div className="container">
-          <h2 className="subtitle">Latest posts</h2>
+          <h2 className="subtitle">Recent posts</h2>
 
           <Blog />
         </div>
@@ -58,7 +58,7 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to grow businesses and help developers</h2>
+            <h2>I code to grow biz and create to help devs</h2>
 
             <p>
               Since 2017 I work with companies and organizations to help launch digital products
@@ -74,8 +74,8 @@ export default function Home() {
             </p>
 
             <p>
-              I also create free Content about programming to help beginners developers and I
-              maintain Open Source projects to advocate for the open web standards.
+              I also create free Content about programming and Open Source projects to help
+              beginners developers and advocate for the open web standards.
             </p>
           </div>
         </div>
@@ -96,9 +96,9 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="subtitle">Dev community</h2>
+              <h2 className="subtitle">Community</h2>
 
-              <p>Sponsor my free Content and Open Source projects</p>
+              <p>Sponsor my free dev content and open source projects and get benefits!</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
@@ -106,7 +106,7 @@ export default function Home() {
                 rel="noopener"
                 className="button button-secondary"
                 style={{ fontSize: '1.1rem' }}>
-                Donate
+                Donate $1
                 <IconArrowLink />
               </a>
 
