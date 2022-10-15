@@ -70,7 +70,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener"
                 className="button button-secondary">
-                Donate
+                Sponsor
                 <IconArrowLink />
               </a>
             </li>

@@ -58,12 +58,12 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to grow biz and create to help devs</h2>
+            <h2>I code to grow businesses &#38; create to help developers</h2>
 
             <p>
-              Since 2017 I work with companies and organizations to help launch digital products
-              such as websites, web apps, mobile apps and e-commerces, which establish a refined
-              online presence, scale and grow their businesses.
+              Since 2017 I work with companies and organizations to help code and launch digital
+              products such as websites, web apps, mobile apps and e-commerces, which establish a
+              refined online presence, scale and grow their businesses.
             </p>
 
             <p>
@@ -98,15 +98,14 @@ export default function Home() {
             <div>
               <h2 className="subtitle">Community</h2>
 
-              <p>Sponsor my free dev content and open source projects and get benefits!</p>
+              <p>Sponsor my free content and open source projects and get benefits!</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
                 target="_blank"
                 rel="noopener"
-                className="button button-secondary"
-                style={{ fontSize: '1.1rem' }}>
-                Donate $1
+                className="button button-secondary">
+                Sponsor
                 <IconArrowLink />
               </a>
 
