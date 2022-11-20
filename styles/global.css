@@ -895,7 +895,7 @@ section .container {
     grid-template-columns: 2fr 1fr;
   }
   .home h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     max-width: 540px;
     line-height: 1.2;
   }

@@ -12,11 +12,12 @@ export default function Cards() {
                 d="M37.76 21c0 2.727-.014 5.417-.276 8.025-.143 1.42-.85 1.746-2.167 1.885-4.554.48-9.597.59-14.317.576-4.72.014-9.763-.097-14.317-.576-1.317-.14-2.024-.464-2.167-1.885-.262-2.608-.277-5.298-.277-8.025s.014-5.417.276-8.025c.142-1.42.85-1.746 2.167-1.885 4.554-.48 9.597-.59 14.317-.576 4.72-.014 9.763.097 14.317.576 1.317.14 2.024.464 2.167 1.885.262 2.608.277 5.298.277 8.025M42 21c0 11.565-9.41 21-21 21S0 32.565 0 21 9.41 0 21 0s21 9.435 21 21zm-29.535 0c0-4.68 3.81-8.5 8.535-8.5s8.535 3.82 8.535 8.5-3.81 8.5-8.535 8.5-8.535-3.82-8.535-8.5z"></path>
             </svg>
           </figure>
-          <h3>globo.com</h3>
+          <h3>Globo</h3>
           <p>Web solutions for the largest content aggregator portal in Brazil.</p>
           <span>JavaScript</span>
           <span>React</span>
           <span>Node.js</span>
+          <span>Python</span>
           <span>SEO</span>
           <span>Performance</span>
           <span>Accessibility</span>
@@ -34,7 +35,7 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Headly.app</h3>
+          <h3>Headly</h3>
           <p>
             PWA of breaking news headlines with trusted journalism, fact-check, internationalization
             and open source.
@@ -61,12 +62,37 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>Findto.app</h3>
+          <h3>Findto</h3>
           <p>
             Web app of decentralized search with multiple engines, sources, privacy and open source.
           </p>
 
           <span>JavaScript</span>
+        </a>
+      </div>
+
+      <div className="card">
+        <a href="https://loja.varejoaqui.online/" target="_blank" rel="noopener">
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path
+                className="svg"
+                d="M18.81,17.21l-.06.17a3.54,3.54,0,0,1,1.71-.06l-.92-2.21C19.3,15.82,19.05,16.52,18.81,17.21Z"
+              />
+              <path
+                className="svg"
+                d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0ZM6.89,13.78a.24.24,0,0,0,0-.14l-.15-.38c-.4-.84-.85-1.11-1.2-1.14v-.64h4.66v.66c-.52.06-.76.33-.33,1.65L11.58,18c.23-.7.49-1.4.72-2.09,1.84-5.3,5-9.38,7.76-9.38a1.78,1.78,0,0,1,1.38,2.9c-4.12-1.14-6.2,2.93-7.64,7.18-.47,1.38-1,2.76-1.45,4.14H9.83L6.89,13.68Zm18.72,7.84H21V21c.51-.07.75-.34.33-1.66L20.77,18c-2,.34-2.59,1.05-3,1.81-1.85,3.95-4.41,6.74-6.66,6.74A1.79,1.79,0,0,1,9.7,23.66c4.13,1.14,6.21-2.92,7.63-7.17.47-1.38,1-2.76,1.45-4.14h2.53l3,7-.05-.09a.29.29,0,0,0,.05.13l.14.39c.4.84.85,1.1,1.21,1.14Z"
+              />
+            </svg>
+          </figure>
+
+          <h3>Varejo Aqui</h3>
+          <p>E-commerce with responsive design and mobile app.</p>
+
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>React Native</span>
+          <span>Node.js</span>
         </a>
       </div>
 
@@ -81,7 +107,7 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>TCMPA.gov.br</h3>
+          <h3>Municipalities Court of Accounts of Pará</h3>
           <p>
             Websites, intranet, web services, accessibility, data visualization and accounting calcs
             web app.
@@ -93,33 +119,6 @@ export default function Cards() {
         </a>
       </div>
 
-      <div className="card">
-        <a
-          href="https://varejo-aqui-dashboard-varejista-varejoaqui.vercel.app/"
-          target="_blank"
-          rel="noopener">
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path
-                className="svg"
-                d="M18.81,17.21l-.06.17a3.54,3.54,0,0,1,1.71-.06l-.92-2.21C19.3,15.82,19.05,16.52,18.81,17.21Z"
-              />
-              <path
-                className="svg"
-                d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0ZM6.89,13.78a.24.24,0,0,0,0-.14l-.15-.38c-.4-.84-.85-1.11-1.2-1.14v-.64h4.66v.66c-.52.06-.76.33-.33,1.65L11.58,18c.23-.7.49-1.4.72-2.09,1.84-5.3,5-9.38,7.76-9.38a1.78,1.78,0,0,1,1.38,2.9c-4.12-1.14-6.2,2.93-7.64,7.18-.47,1.38-1,2.76-1.45,4.14H9.83L6.89,13.68Zm18.72,7.84H21V21c.51-.07.75-.34.33-1.66L20.77,18c-2,.34-2.59,1.05-3,1.81-1.85,3.95-4.41,6.74-6.66,6.74A1.79,1.79,0,0,1,9.7,23.66c4.13,1.14,6.21-2.92,7.63-7.17.47-1.38,1-2.76,1.45-4.14h2.53l3,7-.05-.09a.29.29,0,0,0,.05.13l.14.39c.4.84.85,1.1,1.21,1.14Z"
-              />
-            </svg>
-          </figure>
-
-          <h3>VarejoAqui.online</h3>
-          <p>E-commerce with responsive design and mobile app.</p>
-
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>React Native</span>
-          <span>Node.js</span>
-        </a>
-      </div>
       {/* 
       <div className="card">
         <a href="https://superia.global/" target="_blank" rel="noopener">
@@ -145,7 +144,7 @@ export default function Cards() {
       </div> */}
 
       <div className="card">
-        <a href="http://www.radio.ufpa.br/webdoc60/" target="_blank" rel="noopener">
+        <a href="https://www.radio.ufpa.br/webdoc60/" target="_blank" rel="noopener">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M13.11,7.63h-.06s-.05,0-.05,0h0v0h.09l0,0h0Z" />
@@ -254,7 +253,7 @@ export default function Cards() {
             </svg>
           </figure>
 
-          <h3>UFPA.br</h3>
+          <h3>Federal University of Pará</h3>
           <p>Websites, live audio streaming web player, CMS and multimedia web documentary.</p>
 
           {/* Radio website, cultural magazine website, live audio player,

@@ -15,8 +15,8 @@ export default function Home() {
           <div>
             <h1>Hi, I code &#38; create</h1>
             <p className="description">
-              I'm Lucas Menezes, a Software Engineer from the sunny Brazil, coding to grow
-              businesses and creating to help developers.
+              I'm Lucas Menezes, a Software Engineer from the sunny Brazil, coding and creating to
+              help businesses and developers.
             </p>
 
             <Icons />
@@ -39,7 +39,7 @@ export default function Home() {
 
       <section id="blog">
         <div className="container">
-          <h2 className="subtitle">Recent posts</h2>
+          <h2 className="subtitle">Latest posts</h2>
 
           <Blog />
         </div>
@@ -58,23 +58,23 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to grow businesses &#38; create to help developers</h2>
+            <h2>I code &#38; create to help businesses and developers</h2>
 
             <p>
-              Since 2017 I work with companies and organizations to help code and launch digital
-              products such as websites, web apps, mobile apps and e-commerces, which establish a
-              refined online presence, scale and grow their businesses.
+              Since 2017 I help companies and organizations to code and launch digital products such
+              as websites, web apps, mobile apps and e-commerces, which establish a refined online
+              presence, scale and grow their businesses.
             </p>
 
             <p>
               I specialized on Front-end development of reactive, responsive and progressive user
-              interfaces with strong focus on user experience (UX), performance, accessibility,
-              security, web standards and analytics. Adjacent Back-end with API integrations,
-              databases, CI/CD and cloud deploy.
+              interfaces with focus on user experience (UX), performance, accessibility, security,
+              web standards and analytics. Adjacent Back-end with API integrations, databases, CI/CD
+              and cloud deploy.
             </p>
 
             <p>
-              I also create free Content about programming and Open Source projects to help
+              I also create free content about programming and open source projects to help
               beginners developers and advocate for the open web standards.
             </p>
           </div>
@@ -85,10 +85,10 @@ export default function Home() {
         <div className="container">
           <div className="contactContainer">
             <div>
-              <h2 className="subtitle">Get in touch</h2>
+              <h2 className="subtitle">Say hi</h2>
 
               <p>
-                If you want to discuss your project or work together, send an email to{' '}
+                If you want to work together, email to{' '}
                 <span>
                   <a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a>
                 </span>
@@ -96,9 +96,9 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="subtitle">Community</h2>
+              <h2 className="subtitle">Open source</h2>
 
-              <p>Sponsor my free content and open source projects and get benefits!</p>
+              <p>Sponsor my free projects and get benefits!</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
