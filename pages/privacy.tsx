@@ -117,7 +117,7 @@ export default function Privacy() {
 
           <h2>10. Questions and data requests</h2>
           <p>
-            If you have questions or data requests, please, mail to{' '}
+            If you have questions or data requests, please, send an email to{' '}
             <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.
           </p>
         </article>

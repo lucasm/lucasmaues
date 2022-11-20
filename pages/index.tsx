@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Software Engineer from Brazil. Coding to grow businesses and help developers.">
+      description="Software Engineer from Brazil. I code & create to help business and developers grow.">
       <section className="gradient-y">
         <div className="container home">
           <div>
-            <h1>Hi, I code &#38; create</h1>
+            <h1>Hi, I code & create</h1>
             <p className="description">
-              I'm Lucas Menezes, a Software Engineer from the sunny Brazil, coding and creating to
-              help businesses and developers.
+              I'm Lucas Menezes, a Software Engineer from Brazil, coding and creating to help
+              business and developers grow.
             </p>
 
             <Icons />
@@ -27,7 +27,7 @@ export default function Home() {
               <Image
                 alt="Picture of Lucas Menezes"
                 src="https://avatars.githubusercontent.com/lucasm"
-                // layout="fill"
+                layout="fill"
                 priority
                 width={220}
                 height={220}
@@ -39,7 +39,7 @@ export default function Home() {
 
       <section id="blog">
         <div className="container">
-          <h2 className="subtitle">Latest posts</h2>
+          <h2 className="subtitle">Recent posts</h2>
 
           <Blog />
         </div>
@@ -58,23 +58,23 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code &#38; create to help businesses and developers</h2>
+            <h2>I code to grow business and developers with creativity</h2>
 
             <p>
-              Since 2017 I help companies and organizations to code and launch digital products such
-              as websites, web apps, mobile apps and e-commerces, which establish a refined online
-              presence, scale and grow their businesses.
+              Since 2017 I code to help companies and organizations launch digital products such as
+              websites, web apps, mobile apps and e-commerces, which establish a refined online
+              presence, scale and grow their business.
             </p>
 
             <p>
               I specialized on Front-end development of reactive, responsive and progressive user
-              interfaces with focus on user experience (UX), performance, accessibility, security,
-              web standards and analytics. Adjacent Back-end with API integrations, databases, CI/CD
-              and cloud deploy.
+              interfaces with focus on user experience, performance, accessibility, security, web
+              standards and analytics. Adjacent Back-end with API integrations, databases, CI/CD and
+              cloud deploy.
             </p>
 
             <p>
-              I also create free content about programming and open source projects to help
+              I also create open source projects and free content about programming to help
               beginners developers and advocate for the open web standards.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="container">
           <div className="contactContainer">
             <div>
-              <h2 className="subtitle">Say hi</h2>
+              <h2 className="subtitle">Let's talk</h2>
 
               <p>
                 If you want to work together, email to{' '}
@@ -108,15 +108,6 @@ export default function Home() {
                 Sponsor
                 <IconArrowLink />
               </a>
-
-              {/* <a
-                href="https://dev.to/lucasm"
-                target="_blank"
-                rel="noopener"
-                className="button button-secondary">
-                Dev Blog
-                <IconArrowLink />
-              </a> */}
             </div>
           </div>
         </div>

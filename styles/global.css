@@ -55,19 +55,22 @@ body {
   background: #fff;
 }
 header {
-  position: relative;
-  float: left;
+  position: absolute;
+  display: flex;
   width: 100%;
   padding: 2rem;
-  z-index: 999;
+  z-index: 99999;
+}
+header .container {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #logo {
   position: relative;
-  float: left;
-  margin-top: -0.2rem;
-  /* padding-left: 2.75rem; */
-  height: var(--header-size);
+  text-align: left;
   font-size: 1.5rem;
   letter-spacing: -0.025rem;
 }
@@ -87,10 +90,8 @@ header {
 
 #menu {
   position: relative;
-  float: right;
-  margin-top: -0.5rem;
   z-index: 9;
-  padding: 1.1566rem 0.5rem;
+  padding: 1.1563rem 0.563rem;
   width: auto;
   height: auto;
   font-size: 0;
@@ -140,7 +141,6 @@ header {
 .layer {
   position: absolute;
   background: transparent;
-  top: -0.5rem;
   right: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -219,6 +219,9 @@ section {
 .fullscreen-container {
   display: table-cell;
   vertical-align: middle;
+}
+.fullscreen-container .container {
+  margin-top: 8rem;
 }
 .flex-container {
   display: flex;
@@ -356,11 +359,11 @@ article a:focus,
 article {
   position: relative;
   margin: 2rem auto;
-  max-width: 720px;
+  max-width: 650px;
   text-align: left;
 }
 article h1 {
-  padding: 2.5rem 0;
+  padding: 2rem 0 4rem;
 }
 article h2,
 article h3 {
@@ -831,7 +834,7 @@ section .container {
   }
 
   section {
-    padding: 6rem 4rem;
+    padding: 6.5rem 4rem;
   }
   .home h1 {
     font-size: 3rem;
@@ -896,7 +899,7 @@ section .container {
   }
   .home h1 {
     font-size: 4rem;
-    max-width: 540px;
+    max-width: 520px;
     line-height: 1.2;
   }
   #profile {
@@ -909,7 +912,7 @@ section .container {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .specialContainer h2 {
@@ -950,7 +953,7 @@ section .container {
     grid-template-columns: 1fr 1fr;
   }
   .cards {
-    grid-gap: 2.25rem;
+    grid-gap: 2.5rem;
   }
   .card figure {
     width: 148px;
