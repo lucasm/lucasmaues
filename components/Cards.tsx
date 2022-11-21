@@ -1,8 +1,8 @@
 export default function Cards() {
   return (
     <div className="cards">
-      <div className="card">
-        <a href="https://globo.com" target="_blank">
+      <a href="https://globo.com" target="_blank">
+        <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
               <path
@@ -12,20 +12,21 @@ export default function Cards() {
                 d="M37.76 21c0 2.727-.014 5.417-.276 8.025-.143 1.42-.85 1.746-2.167 1.885-4.554.48-9.597.59-14.317.576-4.72.014-9.763-.097-14.317-.576-1.317-.14-2.024-.464-2.167-1.885-.262-2.608-.277-5.298-.277-8.025s.014-5.417.276-8.025c.142-1.42.85-1.746 2.167-1.885 4.554-.48 9.597-.59 14.317-.576 4.72-.014 9.763.097 14.317.576 1.317.14 2.024.464 2.167 1.885.262 2.608.277 5.298.277 8.025M42 21c0 11.565-9.41 21-21 21S0 32.565 0 21 9.41 0 21 0s21 9.435 21 21zm-29.535 0c0-4.68 3.81-8.5 8.535-8.5s8.535 3.82 8.535 8.5-3.81 8.5-8.535 8.5-8.535-3.82-8.535-8.5z"></path>
             </svg>
           </figure>
+
           <h3>Globo</h3>
           <p>Web solutions for the largest content aggregator portal in Brazil.</p>
+
           <span>JavaScript</span>
           <span>React</span>
           <span>Node.js</span>
           <span>Python</span>
-          <span>SEO</span>
           <span>Performance</span>
-          <span>Accessibility</span>
-        </a>
-      </div>
+          <span>A11y</span>
+        </div>
+      </a>
 
-      <div className="card">
-        <a href="https://headly.app" target="_blank">
+      <a href="https://headly.app" target="_blank">
+        <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
               <path
@@ -44,11 +45,11 @@ export default function Cards() {
           <span>TypeScript</span>
           <span>React</span>
           <span>Next.js</span>
-        </a>
-      </div>
+        </div>
+      </a>
 
-      <div className="card">
-        <a href="https://findto.app" target="_blank">
+      <a href="https://findto.app" target="_blank">
+        <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path
@@ -68,11 +69,11 @@ export default function Cards() {
           </p>
 
           <span>JavaScript</span>
-        </a>
-      </div>
+        </div>
+      </a>
 
-      <div className="card">
-        <a href="https://loja.varejoaqui.online/" target="_blank" rel="noopener">
+      <a href="https://loja.varejoaqui.online/" target="_blank" rel="noopener">
+        <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path
@@ -93,11 +94,11 @@ export default function Cards() {
           <span>React</span>
           <span>React Native</span>
           <span>Node.js</span>
-        </a>
-      </div>
+        </div>
+      </a>
 
-      <div className="card">
-        <a href="https://www.tcm.pa.gov.br/servicos/sessoes/" target="_blank" rel="noopener">
+      <a href="https://www.tcm.pa.gov.br/servicos/sessoes/" target="_blank" rel="noopener">
+        <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path
@@ -116,8 +117,10 @@ export default function Cards() {
           <span>PHP</span>
           <span>Java</span>
           <span>PostgreSQL</span>
-        </a>
-      </div>
+          <span>SEO</span>
+          <span>A11y</span>
+        </div>
+      </a>
 
       {/* 
       <div className="card">
@@ -143,8 +146,8 @@ export default function Cards() {
         </a>
       </div> */}
 
-      <div className="card">
-        <a href="https://www.radio.ufpa.br/webdoc60/" target="_blank" rel="noopener">
+      <a href="https://www.radio.ufpa.br/webdoc60/" target="_blank" rel="noopener">
+        <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M13.11,7.63h-.06s-.05,0-.05,0h0v0h.09l0,0h0Z" />
@@ -265,8 +268,8 @@ export default function Cards() {
           <span>MySQL</span>
           <span>UI</span>
           <span>SEO</span>
-        </a>
-      </div>
+        </div>
+      </a>
 
       {/* <div className="card">
             <a href="#" >

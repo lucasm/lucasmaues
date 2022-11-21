@@ -21,9 +21,7 @@ export default function Blog() {
             <a href={item.url} target="_blank">
               {item.title}
             </a>
-            <span>
-              {item.description} ({item.reading_time_minutes} min)
-            </span>
+            <span>{item.description}</span>
           </li>
         ))}
     </ul>

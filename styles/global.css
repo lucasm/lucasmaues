@@ -2,9 +2,9 @@
   font-size: 16px;
   --header-size: 32px;
   --color-y: #ffd99b;
-  --color-b: #111111;
-  --color-g: #f5f5f5;
+  --color-b: #000;
   --color-w: #fff;
+  --color-g: #f5f5f5;
   --gradient-x: linear-gradient(180deg, var(--color-y), #fff);
   --gradient-z: linear-gradient(45deg, var(--color-y) 25%, #fff 100%);
   --gradient-s: linear-gradient(25deg, var(--color-y) 0%, #fff 70%);
@@ -52,7 +52,7 @@ body {
   text-align: center;
   font-family: var(--font);
   font-size: 0;
-  background: #fff;
+  background: var(--color-w);
 }
 header {
   position: absolute;
@@ -95,7 +95,7 @@ header .container {
   width: auto;
   height: auto;
   font-size: 0;
-  background: var(--gradient-s);
+  background: var(--color-w);
   border-radius: 100%;
 }
 .hamburger {
@@ -164,7 +164,7 @@ nav {
   top: 0;
   text-align: center;
   z-index: 3;
-  background: var(--gradient-z);
+  background: var(--gradient-s);
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.25s ease;
@@ -196,13 +196,16 @@ nav a {
 }
 nav .button-secondary {
   margin: 1rem 0;
-  padding: 0.5rem 1.5rem;
 }
 
 section {
   width: 100%;
   padding: 4rem 2rem;
 }
+main section:first-child {
+  padding-top: 6rem;
+}
+
 .container {
   position: relative;
   margin: 0 auto;
@@ -220,9 +223,6 @@ section {
   display: table-cell;
   vertical-align: middle;
 }
-.fullscreen-container .container {
-  margin-top: 8rem;
-}
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -238,15 +238,12 @@ button {
   cursor: pointer;
   border: none;
 }
+
 a,
 button,
-input,
-textarea {
-  -webkit-transition: all 150ms ease;
-  -moz-transition: all 150ms ease;
-  -ms-transition: all 150ms ease;
-  -o-transition: all 150ms ease;
-  transition: all 150ms ease;
+.button,
+.svg {
+  transition: all 0.25s ease;
 }
 
 p,
@@ -295,25 +292,27 @@ h1,
 }
 
 h2,
+.blog a,
 .contactContainer span {
   font-size: 1.5rem;
 }
 
 h3,
+.button,
+.subtitle,
 nav a,
-nav .button-secondary,
-.blog a {
-  font-size: 1.25rem;
+nav .button-secondary {
+  font-size: 1.2rem;
 }
 
 p,
 .description,
 li,
-.button,
 input,
 textarea,
 input,
-footer p {
+footer p,
+.cards p {
   font-size: 1rem;
 }
 
@@ -391,16 +390,16 @@ article blockquote {
   font-style: italic;
 }
 
-/* Buttons */
+/* Button */
 .button {
   position: relative;
   display: inline-block;
   float: none;
   margin: 0.5rem 0.5rem 0 0;
-  padding: 0.75rem 2rem;
-  line-height: unset;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.2;
   color: var(--color-b);
-  background: var(--gradient-z);
+  background: var(--color-y);
   border: none;
   border-radius: 50rem;
   cursor: pointer;
@@ -408,27 +407,27 @@ article blockquote {
 .button:hover,
 .button:focus {
   background: var(--color-b);
-  color: #fff;
+  color: var(--color-w);
 }
 .button-secondary {
   color: var(--color-b);
-  background: var(--gradient-s);
+  background: var(--color-w);
 }
 .button-secondary:hover,
 .button-secondary:focus {
   background: var(--color-b);
 }
-.button-secondary:hover svg,
-.button-secondary:focus svg {
+.button-secondary:hover .svg,
+.button-secondary:focus .svg {
   fill: #fff;
 }
 .button-secondary figure {
   float: right;
   margin: -0.1rem 0 0 0.75rem;
-  width: 20px;
+  width: 18px;
   transform: rotate(135deg);
 }
-.button-secondary figure svg {
+.button-secondary figure .svg {
   fill: var(--color-b);
 }
 
@@ -437,9 +436,6 @@ article blockquote {
   display: flex;
   flex-direction: column-reverse;
   grid-gap: 2rem;
-  padding: 2rem 0 0;
-  z-index: 9;
-  border-radius: 2.5rem 2.5rem 0 0;
   text-align: left;
 }
 .home div:nth-child(2) {
@@ -457,24 +453,24 @@ article blockquote {
 }
 #profile img {
   float: none;
-  background: var(--gradient-s);
+  background: var(--color-w);
   border-radius: 50%;
 }
 
-/* Subtitles */
+/* Subtitle */
 .subtitle {
   position: relative;
-  padding-left: 3.5rem;
+  padding-left: 3rem;
   text-align: left;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .subtitle:before {
   content: '';
   position: absolute;
-  top: 0.85rem;
+  top: 0.7rem;
   left: 0;
-  width: 2.25rem;
-  height: 4px;
+  width: 2rem;
+  height: 3px;
   background: var(--color-b);
 }
 
@@ -496,7 +492,7 @@ article blockquote {
   opacity: 0.75;
 }
 .icons svg {
-  width: 22px;
+  width: 20px;
 }
 
 /* Blog */
@@ -520,14 +516,13 @@ article blockquote {
 .blog span {
   position: relative;
   float: left;
-  width: 100%;
   font-size: var(--font-size-mid);
   font-weight: normal;
-  color: #666;
+  color: #888;
   margin-top: 1rem;
 }
 .blog a {
-  border-bottom: 4px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
 /* Cards */
@@ -535,56 +530,58 @@ article blockquote {
   display: grid;
   grid-gap: 2rem;
 }
-.card {
+.cards a {
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 2.5rem;
   flex-basis: 100%;
   color: inherit;
   text-decoration: none;
-  text-align: left;
   border-radius: var(--radius-big);
-  background: #fff;
+  background: var(--color-y);
   top: 0;
-  transition: ease-in-out 0.25s;
+  transition: ease 0.25s;
   overflow: hidden;
 }
-.card:hover,
-.card:focus {
+.cards a:hover,
+.cards a:focus {
   top: -8px;
   /* box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%); */
 }
-
-.card a {
-  float: left;
-  padding: 2.5rem;
-  width: 100%;
+.cards a {
+  background: linear-gradient(130deg, var(--color-y), #fff);
 }
-.card h3,
-.card p {
+.cards a:nth-child(2n) {
+  background: linear-gradient(40deg, var(--color-y), #fff);
+}
+
+.cards h3,
+.cards p {
   margin: 0;
   padding: 1.5rem 0 0;
 }
-.card p {
+.cards p {
   margin-bottom: 2.5rem;
 }
-.card h3 {
+.cards h3 {
   margin-top: 1.5rem;
 }
-.card figure {
-  width: 128px;
-  padding: 2.5rem 0;
-  border-radius: 10rem;
+.cards figure {
+  display: flex;
+  width: 124px;
+  height: 124px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
   margin: 0 auto;
-  text-align: center;
-  background: #fff;
+  background: var(--color-w);
 }
-.card svg {
+.cards svg {
   width: 48px;
   height: 48px;
 }
-.card span {
-  float: left;
+.cards span {
+  display: inline-block;
   font-size: var(--font-size-min);
   background: var(--color-w);
   color: var(--color-b);
@@ -592,19 +589,6 @@ article blockquote {
   margin: 0.25rem 0.25rem 0 0;
   border-radius: 5rem;
   z-index: -1;
-}
-
-.cards div {
-  background: linear-gradient(130deg, var(--color-y), #fff);
-}
-.cards div a figure {
-  background: linear-gradient(45deg, var(--color-y), #fff 60%);
-}
-.cards div:nth-child(2n) {
-  background: linear-gradient(40deg, var(--color-y), #fff);
-}
-.cards div:nth-child(2n) a figure {
-  background: linear-gradient(145deg, var(--color-y), #fff 80%);
 }
 
 @keyframes rotate-gradient {
@@ -762,12 +746,6 @@ input[type='submit']:active {
 .svg {
   fill: var(--color-b);
 }
-.gray {
-  background: var(--color-g);
-}
-.bg-y {
-  background: var(--color-y);
-}
 
 .gradient-x {
   background: linear-gradient(130deg, var(--color-y), #fff);
@@ -778,52 +756,6 @@ input[type='submit']:active {
 
 .removeScroll {
   overflow: hidden;
-}
-
-.gradient-text {
-  background-color: var(--color-y);
-  background-image: linear-gradient(45deg, var(--color-y), #fff);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-/* Animations */
-section .container {
-  -webkit-animation-name: down;
-  animation-name: down;
-  -webkit-animation-duration: 0.25s;
-  animation-duration: 0.25s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
-
-@-webkit-keyframes down {
-  0% {
-    -webkit-transform: translateY(1rem);
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes down {
-  0% {
-    -webkit-transform: translateY(1rem);
-    transform: translateY(-1rem);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 /* Phone */
@@ -848,7 +780,7 @@ section .container {
     margin: 0 1.75rem 0 0;
   }
   .icons svg {
-    width: 25px;
+    width: 22px;
   }
 
   form {
@@ -863,7 +795,7 @@ section .container {
 }
 
 /* Tablet */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 880px) {
   #menu,
   .layer {
     display: none;
@@ -893,13 +825,12 @@ section .container {
   }
 
   .home {
-    padding: 8rem 0 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
   .home h1 {
-    font-size: 4rem;
-    max-width: 520px;
+    font-size: 4.5rem;
+    max-width: 600px;
     line-height: 1.2;
   }
   #profile {
@@ -911,10 +842,7 @@ section .container {
     grid-template-columns: 1fr 1fr;
   }
 
-  h1 {
-    font-size: 3rem;
-  }
-
+  h1,
   .specialContainer h2 {
     font-size: 3rem;
   }
@@ -924,30 +852,31 @@ section .container {
     font-size: 2rem;
   }
 
+  h3,
   .subtitle,
   .description,
   .contactContainer span {
     font-size: 1.5rem;
   }
 
-  h3,
-  .specialContainer p {
-    font-size: 1.35rem;
-  }
-
   p,
+  .button,
   nav a,
   nav .button-secondary,
   li {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
+  .subtitle {
+    margin-bottom: 1.5rem;
+  }
   .subtitle:before {
-    top: 0.85rem;
+    top: 0.9rem;
   }
   .description {
     padding: 2rem 0;
   }
+
   .cards,
   .contactContainer {
     grid-template-columns: 1fr 1fr;
@@ -955,14 +884,15 @@ section .container {
   .cards {
     grid-gap: 2.5rem;
   }
-  .card figure {
-    width: 148px;
-    padding: 3rem 1rem;
-  }
-  .card svg {
+  .cards svg {
     width: 52px;
     height: 52px;
   }
+  .cards figure {
+    height: 140px;
+    width: 140px;
+  }
+
   .contactContainer div:nth-child(1) {
     padding: 0 10rem 0 0;
   }
@@ -980,9 +910,12 @@ section .container {
   }
 }
 
-/* Laptop & Desktop */
+/* Desktop */
 @media only screen and (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cards a {
+    padding: 3rem;
   }
 }

@@ -1,13 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 function getYear() {
-  return new Date().getFullYear();
+  return new Date().getFullYear()
 }
 
 const Footer = () => (
   <footer>
     <div className="container">
-      <p>&copy; {getYear()} Lucas Menezes</p>
+      <p>&copy; {getYear()} LUCASM.DEV</p>
       <p>
         <Link href="/privacy">
           <a accessKey="6">Privacy</a>
@@ -15,6 +15,6 @@ const Footer = () => (
       </p>
     </div>
   </footer>
-);
+)
 
-export default Footer;
+export default Footer

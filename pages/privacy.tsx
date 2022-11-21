@@ -16,10 +16,10 @@ export default function Privacy() {
           </p>
 
           <p>
-            When you access free Contents and their related Open Source projects on the domain
-            https://lucasm.dev (collectively "projects"), you agree to be bound by this policy. If
-            you do not agree with any of the practices below for collecting and using your
-            information, please, don't use the projects.
+            When you access https://lucasm.dev and related Open Source projects under this domain
+            (collectively "projects"), you agree to be bound by this policy. If you do not agree
+            with any of the practices below for collecting and using your information, please, don't
+            use the projects.
           </p>
 
           <p>

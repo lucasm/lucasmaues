@@ -9,30 +9,32 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Software Engineer from Brazil. I code & create to help business and developers grow.">
-      <section className="gradient-y">
-        <div className="container home">
-          <div>
-            <h1>Hi, I code & create</h1>
-            <p className="description">
-              I'm Lucas Menezes, a Software Engineer from Brazil, coding and creating to help
-              business and developers grow.
-            </p>
+      description="Software Engineer from Brazil. Creative coding to grow businesses and help developers.">
+      <section className="fullscreen gradient-y">
+        <div className="fullscreen-container">
+          <div className="container home">
+            <div>
+              <h1>Hi, I code & create</h1>
+              <p className="description">
+                I'm Lucas Menezes, a Software Engineer from Brazil, coding and creating to grow
+                businesses and help developers.
+              </p>
 
-            <Icons />
-          </div>
+              <Icons />
+            </div>
 
-          <div>
-            <figure id="profile">
-              <Image
-                alt="Picture of Lucas Menezes"
-                src="https://avatars.githubusercontent.com/lucasm"
-                layout="fill"
-                priority
-                width={220}
-                height={220}
-              />
-            </figure>
+            <div>
+              <figure id="profile">
+                <Image
+                  alt="Profile picture of Lucas Menezes"
+                  src="https://avatars.githubusercontent.com/lucasm"
+                  layout="fill"
+                  priority
+                  width={220}
+                  height={220}
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -58,25 +60,26 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to grow business and developers with creativity</h2>
+            <h2>I code & create to grow businesses and help developers</h2>
 
             <p>
-              Since 2017 I code to help companies and organizations launch digital products such as
-              websites, web apps, mobile apps and e-commerces, which establish a refined online
-              presence, scale and grow their business.
+              Since 2017 I code to launch digital products as websites, web apps, mobile apps and
+              e-commerces, which establish a refined online presence, scale and grow businesses.
             </p>
 
             <p>
               I specialized on Front-end development of reactive, responsive and progressive user
-              interfaces with focus on user experience, performance, accessibility, security, web
-              standards and analytics. Adjacent Back-end with API integrations, databases, CI/CD and
-              cloud deploy.
+              interfaces (UI) with focus on user experience (UX), performance, accessibility,
+              security, web standards and analytics. Adjacent Back-end with API integrations,
+              databases, containers, CI/CD and cloud deploy.
             </p>
 
             <p>
               I also create open source projects and free content about programming to help
               beginners developers and advocate for the open web standards.
             </p>
+
+            <p>Nice to see you =)</p>
           </div>
         </div>
       </section>
@@ -85,10 +88,10 @@ export default function Home() {
         <div className="container">
           <div className="contactContainer">
             <div>
-              <h2 className="subtitle">Let's talk</h2>
+              <h2 className="subtitle">Say hello</h2>
 
               <p>
-                If you want to work together, email to{' '}
+                For work inquiries and questions, email to{' '}
                 <span>
                   <a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a>
                 </span>
@@ -98,7 +101,7 @@ export default function Home() {
             <div>
               <h2 className="subtitle">Open source</h2>
 
-              <p>Sponsor my free projects and get benefits!</p>
+              <p>Become a sponsor of my projects and get benefits!</p>
 
               <a
                 href="https://github.com/sponsors/lucasm"
