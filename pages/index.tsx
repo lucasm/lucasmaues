@@ -60,7 +60,7 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code & create to grow businesses and help developers</h2>
+            <h2>I code and create to grow businesses and help developers</h2>
 
             <p>
               Since 2017 I code to launch digital products as websites, web apps, mobile apps and
