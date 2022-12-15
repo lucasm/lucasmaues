@@ -35,6 +35,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline-offset: .25rem;
+  outline-color: var(--color-b);
 }
 /* Scroll, Open Type Features */
 html {
