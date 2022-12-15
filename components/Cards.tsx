@@ -14,7 +14,7 @@ export default function Cards() {
           </figure>
 
           <h3>Globo</h3>
-          <p>Web solutions for the largest content aggregator portal in Brazil.</p>
+          <p>Accessibility for the largest content aggregator portal in Brazil.</p>
 
           <span>JavaScript</span>
           <span>React</span>

@@ -60,23 +60,23 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code and create to grow businesses and help developers</h2>
+            <h2>Growing businesses & helping developers</h2>
 
             <p>
-              Since 2017 I code to launch digital products as websites, web apps, mobile apps and
-              e-commerces, which establish a refined online presence, scale and grow businesses.
+              Since 2017 I've been coding digital products such as websites, web apps, mobile apps
+              and e-commerces, which establish a refined online presence, scale and grow businesses.
             </p>
 
             <p>
-              I specialized on Front-end development of reactive, responsive and progressive user
-              interfaces (UI) with focus on user experience (UX), performance, accessibility,
-              security, web standards and analytics. Adjacent Back-end with API integrations,
-              databases, containers, CI/CD and cloud deploy.
+              I specialize in front-end development of reactive, responsive and progressive user
+              interfaces (UI) with a focus on user experience (UX), performance, accessibility,
+              security, tracking analytics and web standards. Adjacent backend with API
+              integrations, databases, containers, CI/CD and cloud deployment.
             </p>
 
             <p>
               I also create open source projects and free content about programming to help
-              beginners developers and advocate for the open web standards.
+              developers community and advocate for the open web standards.
             </p>
 
             <p>Nice to see you =)</p>
@@ -101,8 +101,7 @@ export default function Home() {
             <div>
               <h2 className="subtitle">Open source</h2>
 
-              <p>Become a sponsor of my projects and get benefits!</p>
-
+              <p>Get benefits becoming my open source sponsor!</p>
               <a
                 href="https://github.com/sponsors/lucasm"
                 target="_blank"
