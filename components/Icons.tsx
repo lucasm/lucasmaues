@@ -21,16 +21,6 @@ export default function Icons() {
         GitHub
       </a>
 
-      <a href="https://youtube.com/@lucasmdev" target="_blank" rel="noopener" title="YouTube">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <path
-            className="svg"
-            d="M31.33,8.3A4,4,0,0,0,28.5,5.47C26,4.8,16,4.8,16,4.8s-10,0-12.5.67A4,4,0,0,0,.67,8.3,41.51,41.51,0,0,0,0,16a41.51,41.51,0,0,0,.67,7.7A4,4,0,0,0,3.5,26.53C6,27.2,16,27.2,16,27.2s10,0,12.5-.67a4,4,0,0,0,2.83-2.83A41.51,41.51,0,0,0,32,16,41.51,41.51,0,0,0,31.33,8.3ZM12.8,20.8V11.2L21.11,16Z"
-          />
-        </svg>
-        YouTube
-      </a>
-
       <a href="https://linkedin.com/in/lucasmezs" target="_blank" rel="noopener" title="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path
@@ -63,6 +53,16 @@ export default function Icons() {
           />
         </svg>
         DEV
+      </a>
+
+      <a href="https://youtube.com/@lucasmdev" target="_blank" rel="noopener" title="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path
+            className="svg"
+            d="M31.33,8.3A4,4,0,0,0,28.5,5.47C26,4.8,16,4.8,16,4.8s-10,0-12.5.67A4,4,0,0,0,.67,8.3,41.51,41.51,0,0,0,0,16a41.51,41.51,0,0,0,.67,7.7A4,4,0,0,0,3.5,26.53C6,27.2,16,27.2,16,27.2s10,0,12.5-.67a4,4,0,0,0,2.83-2.83A41.51,41.51,0,0,0,32,16,41.51,41.51,0,0,0,31.33,8.3ZM12.8,20.8V11.2L21.11,16Z"
+          />
+        </svg>
+        YouTube
       </a>
 
       <a href="https://instagram.com/lucasmezs" target="_blank" rel="noopener" title="Instagram">

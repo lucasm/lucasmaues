@@ -14,7 +14,7 @@ export default function Home() {
         <div className="fullscreen-container">
           <div className="container home">
             <div>
-              <h1>Hi, I code & create</h1>
+              <h1>Hello, I code & create</h1>
               <p className="description">
                 I'm Lucas Menezes, a Software Engineer from Brazil, coding and creating to grow
                 businesses and help developers.
@@ -28,7 +28,6 @@ export default function Home() {
                 <Image
                   alt="Profile picture of Lucas Menezes"
                   src="https://avatars.githubusercontent.com/lucasm"
-                  layout="fill"
                   priority
                   width={220}
                   height={220}
@@ -88,10 +87,10 @@ export default function Home() {
         <div className="container">
           <div className="contactContainer">
             <div>
-              <h2 className="subtitle">Say hello</h2>
+              <h2 className="subtitle">Let's talk</h2>
 
               <p>
-                For work inquiries and questions, email to{' '}
+                Want to work together? Send an email to{' '}
                 <span>
                   <a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a>
                 </span>
@@ -101,13 +100,13 @@ export default function Home() {
             <div>
               <h2 className="subtitle">Open source</h2>
 
-              <p>Get benefits becoming my open source sponsor!</p>
+              <p>Become a sponsor of my projects and get benefits !</p>
               <a
                 href="https://github.com/sponsors/lucasm"
                 target="_blank"
                 rel="noopener"
                 className="button button-secondary">
-                Sponsor
+                Sponsor me
                 <IconArrowLink />
               </a>
             </div>

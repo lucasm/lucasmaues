@@ -9,8 +9,8 @@ const Footer = () => (
     <div className="container">
       <p>&copy; {getYear()} LUCASM.DEV</p>
       <p>
-        <Link href="/privacy">
-          <a accessKey="6">Privacy</a>
+        <Link href="/privacy" accessKey="6">
+          Privacy
         </Link>
       </p>
     </div>

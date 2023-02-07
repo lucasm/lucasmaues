@@ -1,6 +1,30 @@
 export default function Cards() {
   return (
     <div className="cards">
+      <a href="https://www.bancobmg.com.br/" target="_blank">
+        <div className="card">
+          <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path
+                className="svg"
+                d="M15.36,12a1.63,1.63,0,0,1,1.87-1.61,10.91,10.91,0,0,1,9.25,10.78c0,8.55-6.83,10.43-9.8,10.82a1.19,1.19,0,0,1-1.32-1.17Z"
+              />
+              <path
+                className="svg"
+                d="M6.73,21.84h4.88a3.76,3.76,0,0,0,3.75-3.76V1.22A1.22,1.22,0,0,0,14.15,0H11.88A6.38,6.38,0,0,0,5.52,6.39V20.62A1.22,1.22,0,0,0,6.73,21.84Z"
+              />
+            </svg>
+          </figure>
+
+          <h3>Banco Bmg</h3>
+          <p>Web application of financial products for a consolidated Brazil bank.</p>
+
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+        </div>
+      </a>
+
       <a href="https://globo.com" target="_blank">
         <div className="card">
           <figure>
@@ -14,7 +38,7 @@ export default function Cards() {
           </figure>
 
           <h3>Globo</h3>
-          <p>Accessibility for the largest content aggregator portal in Brazil.</p>
+          <p>Accessibility for the largest content aggregator web portal in Brazil.</p>
 
           <span>JavaScript</span>
           <span>React</span>
@@ -25,50 +49,28 @@ export default function Cards() {
         </div>
       </a>
 
-      <a href="https://headly.app" target="_blank">
-        <div className="card">
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-              <path
-                className="svg"
-                d="M157.9,47.37l4.67-42.1H17.74L.2,163.15c-1.94,17.44,10.63,31.58,28.07,31.58h134.3c11.63,0,22.1-9.42,23.39-21L200,47.37ZM116.28,141.8H95.17V111.22H65V141.8H43.74V59.21H65V91.09H95.17V59.21h21.11Zm49.8,21.35a12.06,12.06,0,0,1-11.69,10.53A9.24,9.24,0,0,1,145,163.15l10.53-94.73h21.05Z"
-              />
-            </svg>
-          </figure>
-
-          <h3>Headly</h3>
-          <p>
-            PWA of breaking news headlines with trusted journalism, fact-check, internationalization
-            and open source.
-          </p>
-
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>Next.js</span>
-        </div>
-      </a>
-
       <a href="https://findto.app" target="_blank">
         <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
               <path
                 className="svg"
-                d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm7.76,23.72,0,0h0a1.3,1.3,0,0,1-1.84,0L19.44,21.3a7.36,7.36,0,0,1-4.18,1.31h0a7.37,7.37,0,0,1,0-14.74h0a7.37,7.37,0,0,1,7.37,7.36v0a7.34,7.34,0,0,1-1.31,4.18l2.43,2.45A1.3,1.3,0,0,1,23.76,23.72Z"
+                d="M15.17,10.36h0a4.79,4.79,0,1,0,0,9.58h0a4.84,4.84,0,0,0,3.37-1.39h0a4.78,4.78,0,0,0,0-6.77A4.8,4.8,0,0,0,15.17,10.36Z"
               />
               <path
                 className="svg"
-                d="M15.24,10.47h0a4.74,4.74,0,0,0,0,9.48h0a4.76,4.76,0,0,0,3.34-1.38h0a4.73,4.73,0,0,0-3.32-8.1Z"
+                d="M21.38,0H10.62A10.63,10.63,0,0,0,0,10.62V21.38A10.63,10.63,0,0,0,10.62,32H21.38A10.63,10.63,0,0,0,32,21.38V10.62A10.63,10.63,0,0,0,21.38,0Zm3.19,24.53,0,0a1.75,1.75,0,0,1-1.21.51,1.67,1.67,0,0,1-1.22-.52L19.67,22.1a8.22,8.22,0,0,1-4.47,1.32h0a8.25,8.25,0,0,1,0-16.49h0a8.25,8.25,0,0,1,8.24,8.23v0a8.17,8.17,0,0,1-1.32,4.47l2.44,2.44a1.67,1.67,0,0,1,.51,1.21A1.69,1.69,0,0,1,24.57,24.53Z"
               />
             </svg>
           </figure>
 
           <h3>Findto</h3>
-          <p>
-            Web app of decentralized search with multiple engines, sources, privacy and open source.
-          </p>
+          <p>Open source PWA of decentralized search with multiple sources, AI and privacy.</p>
 
-          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>Node.js</span>
         </div>
       </a>
 
@@ -88,7 +90,7 @@ export default function Cards() {
           </figure>
 
           <h3>Varejo Aqui</h3>
-          <p>E-commerce with responsive design and mobile app.</p>
+          <p>E-commerce for retailers with responsive design and mobile app.</p>
 
           <span>TypeScript</span>
           <span>React</span>
