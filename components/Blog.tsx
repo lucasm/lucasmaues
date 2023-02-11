@@ -2,7 +2,7 @@ import useSWR from 'swr'
 import axios from 'axios'
 
 export default function Blog() {
-  const fetcher = (url) => axios.get(url).then((res) => res.data)
+  const fetcher = (url: string) => axios.get(url).then((res) => res.data)
   const { data, error } = useSWR(
     'https://dev.to/api/articles?username=lucasm&state=fresh&per_page=3',
     fetcher
@@ -18,10 +18,13 @@ export default function Blog() {
       {data &&
         data.map((item) => (
           <li key={item.id}>
-            <a href={item.url} target="_blank">
-              {item.title}
-            </a>
-            <span>{item.description}</span>
+            {/* <p>{item.readable_publish_date}</p> */}
+            <h3>
+              <a href={item.url} target="_blank">
+                {item.title}
+              </a>
+            </h3>
+            <p>{item.description}</p>
           </li>
         ))}
     </ul>

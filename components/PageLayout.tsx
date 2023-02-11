@@ -34,11 +34,11 @@ export default function PageLayout(props: Props) {
 
         <meta itemProp="name" content="Lucas Menezes" />
         <meta itemProp="description" content={props.description} />
-        <meta itemProp="image" content="https://lucasm.dev/images/share.png" />
+        <meta itemProp="image" content="https://lucasm.dev/share.png" />
 
         <meta property="og:title" content="Lucas Menezes" />
         <meta property="og:description" content={props.description} />
-        <meta property="og:image" content="https://lucasm.dev/images/share.png" />
+        <meta property="og:image" content="https://lucasm.dev/share.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="lucasm.dev" />
@@ -51,7 +51,7 @@ export default function PageLayout(props: Props) {
         <meta name="twitter:site" content="@lucasmezs" />
         <meta name="twitter:title" content="Lucas Menezes" />
         <meta name="twitter:description" content={props.description} />
-        <meta name="twitter:image" content="https://lucasm.dev/images/share.png"></meta>
+        <meta name="twitter:image" content="https://lucasm.dev/share.png"></meta>
 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZFVF9EE79"></Script>
         <Script

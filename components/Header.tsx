@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import IconArrowLink from './IconArrowLink'
 
 export default function Header() {
   const [isActive, setActive] = useState<boolean>(false)
@@ -21,14 +20,6 @@ export default function Header() {
     <header>
       <div className="container">
         <Link href="/" id="logo" aria-label="homepage" accessKey="1">
-          <figure>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <polygon
-                className="svg"
-                points="415.08 127.31 336.35 286.19 256.55 127.31 159.71 127.31 159.71 300.75 94.84 300.75 94.84 51.19 0.01 51.19 0.01 383.94 159.71 383.94 159.71 383.96 254.54 383.96 254.54 325.05 302.1 418.46 369.61 418.46 417.17 325.05 417.17 460.06 512 460.06 512 127.31 415.08 127.31"
-              />
-            </svg>
-          </figure>
           Lucas Menezes
         </Link>
 
@@ -43,22 +34,22 @@ export default function Header() {
         <nav className={isActive ? 'open' : undefined}>
           <ul>
             <li>
-              <Link href="/#blog" onClick={isActive ? handleToggle : undefined}>
+              <Link href="/#blog" onClick={handleToggle}>
                 Blog
               </Link>
             </li>
             <li>
-              <Link href="/#work" onClick={isActive ? handleToggle : undefined}>
+              <Link href="/#work" onClick={handleToggle}>
                 Work
               </Link>
             </li>
             <li>
-              <Link href="/#about" onClick={isActive ? handleToggle : undefined}>
+              <Link href="/#about" onClick={handleToggle}>
                 About
               </Link>
             </li>
             <li>
-              <Link href="/#contact" onClick={isActive ? handleToggle : undefined}>
+              <Link href="/#contact" onClick={handleToggle}>
                 Contact
               </Link>
             </li>
@@ -67,14 +58,13 @@ export default function Header() {
                 href="https://github.com/sponsors/lucasm"
                 target="_blank"
                 rel="noopener"
-                className="button button-secondary">
-                Sponsor me
-                <IconArrowLink />
+                className="button">
+                Open Source
               </a>
             </li>
           </ul>
         </nav>
-        <div className={isActive ? 'layer layer-active' : 'layer'}></div>
+        <div className={isActive ? 'layer layer-active' : 'layer'} onClick={handleToggle}></div>
       </div>
     </header>
   )

@@ -23,6 +23,6 @@
   "id": "/?homescreen=1",
   "start_url": "/?utm_source=pwa",
   "display": "standalone",
-  "background_color": "#ffd99b",
+  "background_color": "#ffefd5",
   "theme_color": "#111"
 }

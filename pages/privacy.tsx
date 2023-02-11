@@ -11,8 +11,8 @@ export default function Privacy() {
 
           <p>
             Lucas Menezes is committed to respect your privacy as a legal entity in Brazil under the
-            trade name "LUCAS MAUES DE MENEZES CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA" or just
-            "LUCASM.DEV" with registration number 44318949000100.
+            company name "LUCAS MAUES DE MENEZES CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA" or
+            just "LUCASM.DEV" with registration number 44318949000100.
           </p>
 
           <p>

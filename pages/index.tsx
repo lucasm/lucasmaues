@@ -2,22 +2,20 @@ import PageLayout from '../components/PageLayout'
 import Image from 'next/image'
 import Icons from '../components/Icons'
 import Cards from '../components/Cards'
-import IconArrowLink from '../components/IconArrowLink'
 import Blog from '../components/Blog'
 
 export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Software Engineer from Brazil. Creative coding to grow businesses and help developers.">
-      <section className="fullscreen gradient-y">
+      description="I'm a Software Engineer from Brazil. Coding to grow companies and developers.">
+      <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
             <div>
-              <h1>Hello, I code & create</h1>
+              <h1>Hello, I'm a Software Engineer from Brazil</h1>
               <p className="description">
-                I'm Lucas Menezes, a Software Engineer from Brazil, coding and creating to grow
-                businesses and help developers.
+                I create digital products to grow companies and developers.
               </p>
 
               <Icons />
@@ -29,8 +27,7 @@ export default function Home() {
                   alt="Profile picture of Lucas Menezes"
                   src="https://avatars.githubusercontent.com/lucasm"
                   priority
-                  width={220}
-                  height={220}
+                  fill={true}
                 />
               </figure>
             </div>
@@ -40,7 +37,7 @@ export default function Home() {
 
       <section id="blog">
         <div className="container">
-          <h2 className="subtitle">Recent posts</h2>
+          <h2 className="subtitle">Latest posts</h2>
 
           <Blog />
         </div>
@@ -59,23 +56,28 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>Growing businesses & helping developers</h2>
+            <h2>I code to help business and people grow</h2>
 
             <p>
-              Since 2017 I've been coding digital products such as websites, web apps, mobile apps
-              and e-commerces, which establish a refined online presence, scale and grow businesses.
+              I've been coding digital products for companies of all sizes since 2017. Web Apps,
+              Websites, Mobile Apps, and E-Commerces that establish a refined online presence, scale
+              and grow their business.
             </p>
 
             <p>
-              I specialize in front-end development of reactive, responsive and progressive user
-              interfaces (UI) with a focus on user experience (UX), performance, accessibility,
-              security, tracking analytics and web standards. Adjacent backend with API
-              integrations, databases, containers, CI/CD and cloud deployment.
+              I specialize in front-end development of reactive and responsive user interfaces (UI)
+              with strong focus on user experience (UX), performance, accessibility (WCAG),
+              progressive enhancement, security, behavior analytics and web standards. Adjacent
+              backend with APIs integrations, databases, containers, CI/CD and cloud deployment.
             </p>
 
             <p>
-              I also create open source projects and free content about programming to help
-              developers community and advocate for the open web standards.
+              I also create{' '}
+              <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener">
+                open source projects
+              </a>{' '}
+              and free content about programming to help developers community and advocate for the
+              open web.
             </p>
 
             <p>Nice to see you =)</p>
@@ -83,33 +85,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="gradient-x">
-        <div className="container">
-          <div className="contactContainer">
-            <div>
-              <h2 className="subtitle">Let's talk</h2>
+      <section id="contact">
+        <div className="container contactContainer">
+          <div>
+            <h2>Let's talk</h2>
+            <p>Want to work together? Send an email to:</p>
+          </div>
 
-              <p>
-                Want to work together? Send an email to{' '}
-                <span>
-                  <a href="mailto:hello@lucasm.dev?subject=Hello">hello@lucasm.dev</a>
-                </span>
-              </p>
-            </div>
-
-            <div>
-              <h2 className="subtitle">Open source</h2>
-
-              <p>Become a sponsor of my projects and get benefits !</p>
-              <a
-                href="https://github.com/sponsors/lucasm"
-                target="_blank"
-                rel="noopener"
-                className="button button-secondary">
-                Sponsor me
-                <IconArrowLink />
-              </a>
-            </div>
+          <div>
+            <p>
+              <a href="mailto:hello@lucasm.dev">hello@lucasm.dev</a>
+            </p>
           </div>
         </div>
       </section>

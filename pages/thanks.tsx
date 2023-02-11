@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout'
 import { useEffect, useRef } from 'react'
 import CircleMouse from '../components/CircleMouse'
+import Link from 'next/link'
 
 export default function Thanks() {
   const background = useRef(null)
@@ -25,13 +26,13 @@ export default function Thanks() {
           <div className="container">
             <figure className="gif" ref={background} id="background"></figure>
 
-            <h1>Thanks</h1>
+            <h1>Thanks!</h1>
 
             <p className="description">I just want to say thanks to you.</p>
 
-            <a href="/" className="button button-main">
+            <Link href="/" className="button">
               Back to homepage
-            </a>
+            </Link>
           </div>
         </div>
       </section>
