@@ -49,7 +49,7 @@ export default function Cards() {
         </div>
       </a>
 
-      <a href="https://findto.app" target="_blank">
+      <a href="https://findto.app/" target="_blank">
         <div className="card">
           <figure>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
