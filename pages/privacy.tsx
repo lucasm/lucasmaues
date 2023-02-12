@@ -16,15 +16,14 @@ export default function Privacy() {
           </p>
 
           <p>
-            When you access https://lucasm.dev and related Open Source projects under this domain
-            (collectively "projects"), you agree to be bound by this policy. If you do not agree
-            with any of the practices below for collecting and using your information, please, don't
-            use the projects.
+            When you access https://lucasm.dev and projects under this domain ("projects"), you
+            agree to be bound by this policy. If you do not agree with any of the practices for
+            collecting and using your information, please, don't use the projects.
           </p>
 
           <p>
             This privacy policy is following the Brazilian General Data Protection Law (LGPD) and
-            you agree to be regulated under this data jurisdiction.
+            you agree to be regulated under this jurisdiction.
           </p>
 
           <h2>1. Automatically collected data</h2>
@@ -115,7 +114,7 @@ export default function Privacy() {
             change in this Privacy Policy will constitute your acceptance of such change.
           </p>
 
-          <h2>10. Questions and data requests</h2>
+          <h2>10. Questions or data requests</h2>
           <p>
             If you have questions or data requests, please, send an email to{' '}
             <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.

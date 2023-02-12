@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="I'm a Software Engineer from Brazil. Coding to grow companies and developers.">
+      description="I'm a Software Engineer from Brazil. Coding to help business and people grow.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
             <div>
               <h1>Hello, I'm a Software Engineer from Brazil</h1>
               <p className="description">
-                I create digital products to grow companies and developers.
+                I create digital products to help business and people grow.
               </p>
 
               <Icons />
@@ -72,12 +72,12 @@ export default function Home() {
             </p>
 
             <p>
-              I also create{' '}
-              <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener">
-                open source projects
+              I'm the creator of{' '}
+              <a href="https://github.com/lucasm/findto" target="_blank" rel="noopener">
+                Findto - open source decentralized search app
               </a>{' '}
-              and free content about programming to help developers community and advocate for the
-              open web.
+              and also create free content about programming to help developers community and
+              advocate for the open web.
             </p>
 
             <p>Nice to see you =)</p>
