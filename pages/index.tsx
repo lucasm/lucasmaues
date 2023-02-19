@@ -74,9 +74,9 @@ export default function Home() {
             <p>
               I'm the creator of{' '}
               <a href="https://github.com/lucasm/findto" target="_blank" rel="noopener">
-                Findto - open source decentralized search app
+                Findto - decentralized search app
               </a>{' '}
-              and also create free content about programming to help developers community and
+              , an open source project. I also create free content about programming to help developers community and
               advocate for the open web.
             </p>
 
