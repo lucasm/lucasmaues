@@ -75,9 +75,9 @@ export default function Home() {
               I'm the creator of{' '}
               <a href="https://github.com/lucasm/findto" target="_blank" rel="noopener">
                 Findto - decentralized search app
-              </a>{' '}
-              , an open source project. I also create free content about programming to help developers community and
-              advocate for the open web.
+              </a>
+              , an open source project. I also create free content about programming to help
+              developers community and advocate for the open web.
             </p>
 
             <p>Nice to see you =)</p>
