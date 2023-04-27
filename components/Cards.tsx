@@ -65,7 +65,7 @@ export default function Cards() {
           </figure>
 
           <h3>Findto</h3>
-          <p>Open source PWA of decentralized search with multiple sources, AI and privacy.</p>
+          <p>PWA for a decentralized web search app with AI, multiple sources and privacy.</p>
 
           <span>TypeScript</span>
           <span>React</span>
@@ -90,7 +90,7 @@ export default function Cards() {
           </figure>
 
           <h3>Varejo Aqui</h3>
-          <p>E-commerce for retailers with responsive design and mobile app.</p>
+          <p>E-commerce for retailers and industries with responsive design and mobile app.</p>
 
           <span>TypeScript</span>
           <span>React</span>

@@ -37,7 +37,7 @@ export default function Home() {
 
       <section id="blog">
         <div className="container">
-          <h2 className="subtitle">Latest posts</h2>
+          <h2 className="subtitle">Latest content</h2>
 
           <Blog />
         </div>
@@ -59,25 +59,25 @@ export default function Home() {
             <h2>I code to help business and people grow</h2>
 
             <p>
-              I've been coding digital products for companies of all sizes since 2017. Web Apps,
-              Websites, Mobile Apps, and E-Commerces that establish a refined online presence, scale
-              and grow their business.
+              I've been coding digital products for organizations of all sizes since 2017. Web Apps,
+              Websites, E-Commerces and Mobile Apps that helped them establish a refined online
+              presence and grow their business.
             </p>
 
             <p>
               I specialize in front-end development of reactive and responsive user interfaces (UI)
-              with strong focus on user experience (UX), performance, accessibility (WCAG),
-              progressive enhancement, security, behavior analytics and web standards. Adjacent
-              backend with APIs integrations, databases, containers, CI/CD and cloud deployment.
+              with strong focus on user experience (UX), performance, accessibility, progressive
+              enhancement, security, web standards and analytics. Adjacent backend with APIs
+              integrations, databases, containers, CI/CD and cloud deployment.
             </p>
 
             <p>
               I'm the creator of{' '}
               <a href="https://github.com/lucasm/findto" target="_blank" rel="noopener">
-                Findto - decentralized search app
+                Findto - AI decentralized search
               </a>
-              , an open source project. I also create free content about programming to help
-              developers community and advocate for the open web.
+              . I also contribute with open source projects and create free content about
+              programming to help developers community and advocate for the open web.
             </p>
 
             <p>Nice to see you =)</p>
