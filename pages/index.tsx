@@ -59,25 +59,25 @@ export default function Home() {
             <h2>I code to help business and people grow</h2>
 
             <p>
-              I've been coding digital products for organizations of all sizes since 2017. Web Apps,
-              Websites, E-Commerces and Mobile Apps that helped them establish a refined online
-              presence and grow their business.
+              I've been coding digital products since 2017, for organizations of all sizes. Web
+              apps, websites, e-commerces and mobile apps that helped them establish a refined
+              online presence and grow their business.
             </p>
 
             <p>
-              I specialize in front-end development of reactive and responsive user interfaces (UI)
-              with strong focus on user experience (UX), performance, accessibility, progressive
-              enhancement, security, web standards and analytics. Adjacent backend with APIs
-              integrations, databases, containers, CI/CD and cloud deployment.
+              I specialize in front-end development of reactive, responsive and componentized UIs
+              with focus on UX, performance, accessibility, progressive enhancement, security, web
+              standards and analytics. Adjacent backend with cloud services, APIs and databases
+              integrations, CI/CD and containers.
             </p>
 
             <p>
-              I'm the creator of{' '}
+              I am also building{' '}
               <a href="https://findto.app" target="_blank" rel="noopener">
-                Findto - AI decentralized search
+                Findto - AI decentralized search app
               </a>
-              . I also contribute with open source projects and create free content about
-              programming to help developers community and advocate for the open web.
+              , contributing with open source docs of programming and creating free content to
+              support the developers community and advocate for the open web.
             </p>
 
             <p>Nice to see you =)</p>
@@ -89,9 +89,8 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let's talk</h2>
-            <p>Want to work together? Send an email to:</p>
+            <p>If you're interested in work together, drop me a line:</p>
           </div>
-
           <div>
             <p>
               <a href="mailto:hello@lucasm.dev">hello@lucasm.dev</a>
