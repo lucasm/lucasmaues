@@ -8,15 +8,13 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="I'm a Software Engineer from Brazil. Coding to help business and people grow.">
+      description="I'm a Software Engineer from Brazil. Coding to help businesses and people grow.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
             <div>
               <h1>Hello, I'm a Software Engineer from Brazil</h1>
-              <p className="description">
-                I create digital products to help business and people grow.
-              </p>
+              <p className="description">I code to help businesses and people grow.</p>
 
               <Icons />
             </div>
@@ -56,10 +54,10 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to help business and people grow</h2>
+            <h2>I code to help people and businesses grow</h2>
 
             <p>
-              I've been coding digital products since 2017, for organizations of all sizes. Web
+              I've been creating digital products since 2017, for organizations of all sizes. Web
               apps, websites, e-commerces and mobile apps that helped them establish a refined
               online presence and grow their business.
             </p>
@@ -74,7 +72,7 @@ export default function Home() {
             <p>
               I am also building{' '}
               <a href="https://findto.app" target="_blank" rel="noopener">
-                Findto - AI decentralized search app
+                Findto - AI decentralized search
               </a>
               , contributing with open source docs of programming and creating free content to
               support the developers community and advocate for the open web.
@@ -89,7 +87,7 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let's talk</h2>
-            <p>If you're interested in work together, drop me a line:</p>
+            <p>For contact or to talk about your project, drop me a line:</p>
           </div>
           <div>
             <p>
