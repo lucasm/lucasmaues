@@ -177,10 +177,13 @@ nav a {
 }
 nav .button {
   margin-top: 1rem;
+  background: var(--color-y);
+  color: var(--color-b);
 }
 nav .button:hover,
 nav .button:focus {
-  background: var(--color-y);
+  background: var(--color-b);
+  color: var(--color-y);
 }
 
 section {
@@ -406,7 +409,7 @@ article blockquote {
 }
 #profile img {
   float: none;
-  background: var(--color-w);
+  background: var(--color-b);
   border-radius: 50%;
 }
 
