@@ -35,7 +35,7 @@ export default function Home() {
 
       <section id="blog">
         <div className="container">
-          <h2 className="subtitle">Latest content</h2>
+          <h2 className="subtitle">Latest posts</h2>
 
           <Blog />
         </div>
@@ -54,31 +54,31 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to help people and businesses grow</h2>
+            <h2>I code to grow people and businesses </h2>
 
             <p>
-              I've been creating digital products since 2017, for organizations of all sizes. Web
-              apps, websites, e-commerces and mobile apps that helped them establish a refined
-              online presence and grow their business.
+              Since 2015 I've been coding digital products. Web apps, websites, e-commerces, PWAs
+              and mobile apps that helped organizations of all sizes establish a refined online
+              presence and grow their business.
             </p>
 
             <p>
-              I specialize in front-end development of reactive, responsive and componentized UIs
+              I specialize in front-end development of reactive, responsive and component-based UIs
               with focus on UX, performance, accessibility, progressive enhancement, security, web
-              standards and analytics. Adjacent backend with cloud services, APIs and databases
-              integrations, CI/CD and containers.
+              standards and data analytics. Adjacent backend with APIs and databases integrations,
+              containers, cloud services and CI/CD.
             </p>
 
             <p>
-              I am also building{' '}
+              I'm building{' '}
               <a href="https://findto.app" target="_blank" rel="noopener">
                 Findto - AI decentralized search
               </a>
-              , contributing with open source docs of programming and creating free content to
-              support the developers community and advocate for the open web.
+              , creating content and contributing with open source programming docs to support devs
+              community and advocate for the open web.
             </p>
 
-            <p>Nice to see you =)</p>
+            <p>Make things happen!</p>
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let's talk</h2>
-            <p>For contact or to talk about your project, drop me a line:</p>
+            <p>Drop me a line for contact, or if you want to talk about your project.</p>
           </div>
           <div>
             <p>
