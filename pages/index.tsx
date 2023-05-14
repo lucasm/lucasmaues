@@ -54,19 +54,19 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I'm a growth coder</h2>
+            <h2>I love to build, together</h2>
 
             <p>
               Since 2015 I've been coding digital products. Web apps, websites, e-commerce, PWAs and
-              mobile apps that have helped organizations of all sizes, establish a polished online
-              presence, achieve results and grow their businesses.
+              mobile apps that have helped organizations of all sizes stand out online presence and
+              grow their businesses.
             </p>
 
             <p>
-              I specialize in front-end development of reactive and component-based UIs with a
+              I specialize in front-end development. I build reactive and component-based UIs with a
               strong focus on UX, performance, accessibility, progressive enhancement, security, web
-              standards and data analytics. Adjacent back-end with API and database integrations,
-              containers, cloud services and CI/CD.
+              standards and user analytics. Adjacent back-end with cloud services, APIs, databases,
+              containers, CI/CD and integrations.
             </p>
 
             <p>
@@ -74,13 +74,14 @@ export default function Home() {
               <a href="https://findto.app" target="_blank" rel="noopener">
                 Findto - AI decentralized search
               </a>{' '}
-              because I believe on the power of open web. I also create tech content and contribute
-              with open source programming docs to support devs community.
+              because I believe on the power of open Web community. I also create tech content and
+              translate programming docs for devs.
             </p>
 
             <p>
-              I am a lifelong learner, born in the Amazon region of Brazil, who loves to travel and
-              live new experiences. I highly value communication, innovation and respect.
+              More than Computer Science, I'm a lifelong learner, born in the Amazon region of
+              Brazil, and maybe is why I like to travel and face new experiences. I highly value
+              communication, innovation and respect.
             </p>
           </div>
         </div>
