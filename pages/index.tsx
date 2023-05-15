@@ -54,19 +54,19 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I love to build, together</h2>
+            <h2>I code for growth</h2>
 
             <p>
-              Since 2015 I've been coding digital products. Web apps, websites, e-commerce, PWAs and
-              mobile apps that have helped organizations of all sizes stand out online presence and
-              grow their businesses.
+              Since 2015 I've been coding digital products: web apps, websites, e-commerces, PWAs
+              and mobile apps that have helped organizations of all sizes stand out online presence
+              and grow their businesses.
             </p>
 
             <p>
-              I specialize in front-end development. I build reactive and component-based UIs with a
-              strong focus on UX, performance, accessibility, progressive enhancement, security, web
-              standards and user analytics. Adjacent back-end with cloud services, APIs, databases,
-              containers, CI/CD and integrations.
+              I specialize in front-end development with focus on UX, performance, reactivity,
+              componentization, progressive enhancement, accessibility, security, web standards and
+              analytics. Adjacent back-end with cloud services, APIs, databases, containers and
+              CI/CD integrations.
             </p>
 
             <p>
@@ -79,9 +79,8 @@ export default function Home() {
             </p>
 
             <p>
-              More than Computer Science, I'm a lifelong learner, born in the Amazon region of
-              Brazil, and maybe is why I like to travel and face new experiences. I highly value
-              communication, innovation and respect.
+              I was born in Amazon region of Brazil, I love to travel, face new experiences and I
+              highly value innovation and respect for all peoples. Nice to see you =)
             </p>
           </div>
         </div>
