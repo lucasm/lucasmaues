@@ -11,19 +11,19 @@ export default function Privacy() {
 
           <p>
             Lucas Menezes is committed to respect your privacy as a legal entity in Brazil under the
-            company name "LUCAS MAUES DE MENEZES CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA" or
-            just "LUCASM.DEV" with registration number 44318949000100.
-          </p>
-
-          <p>
-            When you access https://lucasm.dev and projects under this domain ("projects"), you
-            agree to be bound by this policy. If you do not agree with any of the practices for
-            collecting and using your information, please, don't use the projects.
+            company "LUCAS MAUES DE MENEZES CONSULTORIA EM TECNOLOGIA DA INFORMACAO LTDA" or just
+            "LUCASM.DEV" with CNPJ 44318949000100.
           </p>
 
           <p>
             This privacy policy is following the Brazilian General Data Protection Law (LGPD) and
             you agree to be regulated under this jurisdiction.
+          </p>
+
+          <p>
+            When you access https://lucasm.dev and related projects under this domain ("projects"),
+            you agree to be bound by this policy. If you do not agree with any of the practices for
+            collecting and using your information, please, don't use the projects.
           </p>
 
           <h2>1. Automatically collected data</h2>

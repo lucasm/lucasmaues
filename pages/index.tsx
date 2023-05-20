@@ -13,8 +13,8 @@ export default function Home() {
         <div className="fullscreen-container">
           <div className="container home">
             <div>
-              <h1>Hi, I'm a Software Engineer from Brazil</h1>
-              <p className="description">I code for businesses and people to grow.</p>
+              <h1>Hello, I’m a Software Engineer from Brazil</h1>
+              <p className="description">I code to help businesses and people grow.</p>
 
               <Icons />
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
 
       <section id="work">
         <div className="container">
-          <h2 className="subtitle">Selected work</h2>
+          <h2 className="subtitle">Selected works</h2>
 
           <Cards />
         </div>
@@ -58,8 +58,8 @@ export default function Home() {
 
             <p>
               Since 2015 I have been coding digital products. Web apps, websites, e-commerces, PWAs,
-              and mobile apps that have helped organizations of all sizes to refine their online
-              presence and grow businesses.
+              and mobile apps. I help organizations to refine their online presence and grow
+              businesses.
             </p>
 
             <p>
@@ -89,10 +89,9 @@ export default function Home() {
       <section id="contact">
         <div className="container contactContainer">
           <div>
-            <h2>Let's talk</h2>
+            <h2>Let’s talk</h2>x
             <p>
-              Do you want to talk about your project? Drop me a line including all details (but be
-              concise). I will get back in 1-2 business days!
+              To talk about your project, drop me a line. Include all the details, but be concise =)
             </p>
           </div>
           <div>

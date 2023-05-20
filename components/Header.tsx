@@ -27,7 +27,9 @@ export default function Header() {
           onClick={handleToggle}
           className={isActive ? 'open' : undefined}
           id="menu"
-          type="button">
+          type="button"
+          aria-label="Menu"
+          aria-expanded={isActive ? true : false}>
           Menu<div className="hamburger"></div>
         </button>
 
@@ -54,17 +56,14 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a
-                href="https://github.com/sponsors/lucasm"
-                target="_blank"
-                rel="noopener"
-                className="button">
+              <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener">
                 Open Source
               </a>
             </li>
           </ul>
         </nav>
-        <div className={isActive ? 'layer layer-active' : 'layer'} onClick={handleToggle}></div>
+
+        <div className={isActive ? 'layer layerActive' : 'layer'} onClick={handleToggle}></div>
       </div>
     </header>
   )

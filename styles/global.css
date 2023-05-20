@@ -11,21 +11,6 @@
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* @font-face {
-  font-family: 'SpaceGrotesk';
-  src: url('/fonts/SpaceGrotesk-Bold.otf');
-  font-style: bold;
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'SpaceGrotesk';
-  src: url('/fonts/SpaceGrotesk-Regular.otf');
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-} */
-
 *,
 *:after,
 *:before {
@@ -33,10 +18,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Scroll, Open Type Features */
+/* Scroll */
 html {
   scroll-behavior: smooth;
-  /* font-feature-settings: 'ss04' 1, 'ss03' 1, 'ss02' 1; */
 }
 
 body,
@@ -53,7 +37,6 @@ body {
 }
 header {
   position: absolute;
-  display: flex;
   width: 100%;
   padding: 1.25rem 2rem;
   z-index: 99999;
@@ -65,21 +48,15 @@ header .container {
   align-items: center;
 }
 
-#logo {
-  font-size: 1.4rem;
-}
-
 #menu {
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  z-index: 9;
-  padding: 0;
-  width: 26px;
-  height: 26px;
+  justify-content: flex-end;
+  width: 2.5rem;
+  height: 2.5rem;
   font-size: 0;
   background: transparent;
+  z-index: 9;
 }
 .hamburger {
   position: relative;
@@ -121,22 +98,38 @@ header .container {
   width: 26px;
   transform: rotate(90deg);
 }
+
 .layer {
   position: fixed;
-  background: rgb(0 0 0 / 25%);
-  right: 0;
-  bottom: 0;
+  background: rgb(0 0 0 / 50%);
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: none;
-  transition: var(--easingDecelerate);
   z-index: 2;
+  backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s cubic-bezier(0, 0, 0.3, 1);
 }
-.layer-active {
-  display: inline-block;
+.layerActive {
+  visibility: visible;
+  opacity: 1;
+  animation: fade 0.25s ease;
 }
-.remove-scrollbar {
+.removeScroll {
   overflow: hidden;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 nav {
@@ -160,30 +153,26 @@ nav.open {
 }
 nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100%;
+  background: var(--color-w);
 }
 nav li {
   padding: 0;
 }
 nav a {
-  display: inline-block;
-  margin: 1rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 4vw;
   color: var(--color-b);
 }
-nav .button {
-  margin-top: 1rem;
+nav a:hover {
   background: var(--color-y);
-  color: var(--color-b);
-}
-nav .button:hover,
-nav .button:focus {
-  background: var(--color-b);
-  color: var(--color-y);
 }
 
 section {
@@ -277,14 +266,15 @@ h1,
   font-size: 2rem;
 }
 
+#logo,
 h2,
-nav a,
 .blog h3,
 .contactContainer a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 h3,
+nav a,
 .button,
 .subtitle {
   font-size: 1.2rem;
@@ -321,7 +311,6 @@ footer p,
 }
 
 /* Link Border */
-nav a,
 p a,
 article a,
 .blog h3 a {
@@ -381,7 +370,7 @@ article blockquote {
   display: inline-block;
   float: none;
   margin: 0.5rem 0;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   line-height: 1;
   color: var(--color-w);
   background: var(--color-b);
@@ -607,29 +596,30 @@ footer svg {
   width: 26px;
   height: 26px;
 }
+footer div {
+  display: grid;
+  justify-items: end;
+}
 
 /* Colors */
 .svg {
   fill: var(--color-b);
 }
 
-.removeScroll {
-  overflow: hidden;
-}
-
 /* Phone */
 @media only screen and (min-width: 520px) {
   header,
   footer {
-    padding: 2rem 4rem;
+    padding: 1.75rem 4rem;
   }
-
   section {
     padding: 6rem 4rem;
   }
+
   .home h1 {
     font-size: 3rem;
   }
+
   #profile {
     width: 180px;
     height: 180px;
@@ -639,7 +629,7 @@ footer svg {
     margin: 0 1.75rem 0 0;
   }
   .icons svg {
-    width: 28px;
+    width: 26px;
   }
 }
 
@@ -653,11 +643,9 @@ footer svg {
     grid-template-columns: 3fr 1fr;
     grid-gap: 4rem;
   }
-  .home h1 {
-    font-size: 4rem;
-  }
 
-  h1 {
+  h1,
+  .home h1 {
     font-size: 4rem;
   }
 
@@ -666,12 +654,11 @@ footer svg {
     font-size: 3rem;
   }
 
+  nav a,
   article h2,
   .blog h3,
-  nav a,
-  nav .button,
   .contactContainer a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h3,
@@ -703,8 +690,8 @@ footer svg {
     grid-gap: 2.5rem;
   }
   .cards svg {
-    width: 56px;
-    height: 56px;
+    width: 52px;
+    height: 52px;
   }
   .cards figure {
     height: 140px;
