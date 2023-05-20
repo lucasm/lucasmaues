@@ -91,8 +91,8 @@ export default function Home() {
           <div>
             <h2>Let's talk</h2>
             <p>
-              Want to talk about your project? Drop me a line! Include all necessary details, but be
-              concise. I will get back in 1-2 business days =)
+              Do you want to talk about your project? Drop me a line including all details (but be
+              concise). I will get back in 1-2 business days!
             </p>
           </div>
           <div>
