@@ -307,6 +307,11 @@ footer p,
   padding: 4rem 2rem 2rem;
   border-radius: var(--radius-big);
 }
+.contactContainer p {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 .specialContainer {
   text-align: left;
   margin: 0 auto;

@@ -13,8 +13,8 @@ export default function Home() {
         <div className="fullscreen-container">
           <div className="container home">
             <div>
-              <h1>Hello, I'm a Software Engineer from Brazil</h1>
-              <p className="description">I code for companies and people to grow.</p>
+              <h1>Hi, I'm a Software Engineer from Brazil</h1>
+              <p className="description">I code for businesses and people to grow.</p>
 
               <Icons />
             </div>
@@ -57,16 +57,16 @@ export default function Home() {
             <h2>I code for growth</h2>
 
             <p>
-              Since 2015 I've been coding digital products: web apps, websites, e-commerces, PWAs
-              and mobile apps that have helped organizations of all sizes stand out online presence
-              and grow their businesses.
+              Since 2015 I have been coding digital products. Web apps, websites, e-commerces, PWAs,
+              and mobile apps that have helped organizations of all sizes to refine their online
+              presence and grow businesses.
             </p>
 
             <p>
-              I specialize in front-end development with focus on UX, performance, reactivity,
-              componentization, progressive enhancement, accessibility, security, web standards and
-              analytics. Adjacent back-end with cloud services, APIs, databases, containers and
-              CI/CD integrations.
+              I specialize in front-end development. My main focus is on UX, web standards,
+              performance, progressive enhancement, accessibility, security, tests and analytics.
+              Adjacent back-end with cloud services, CI/CD, containers, databases and APIs
+              integrations.
             </p>
 
             <p>
@@ -79,8 +79,8 @@ export default function Home() {
             </p>
 
             <p>
-              I was born in Amazon region of Brazil, I love to travel, face new experiences and I
-              highly value innovation and respect for all peoples. Nice to see you =)
+              I was born in Amazon region of Brazil, maybe is why I love to travel and face new
+              experiences. I am a person who greatly values communication, innovation and respect.
             </p>
           </div>
         </div>
@@ -90,7 +90,10 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let's talk</h2>
-            <p>Do you want to talk with me? Drop me a line:</p>
+            <p>
+              Want to talk about your project? Drop me a line! Include all necessary details, but be
+              concise. I will get back in 1-2 business days =)
+            </p>
           </div>
           <div>
             <p>
