@@ -21,7 +21,7 @@ export default function Cards() {
   const projects: IProjects[] = [
     {
       name: 'Banco Bmg',
-      url: 'https://bancobmg.com.br/',
+      url: 'https://www.bancobmg.com.br/',
       description: 'Web application of financial products for a Brazil bank.',
       tags: ['TypeScript', 'React', 'Next.js', 'Node.js'],
       icon: svgProjectBmg,
@@ -29,7 +29,7 @@ export default function Cards() {
     },
     {
       name: 'Globo',
-      url: 'https://globo.com/',
+      url: 'https://www.globo.com/',
       description: 'Accessibility for the largest content web portal in Brazil.',
       tags: ['JavaScript', 'Preact', 'Node.js', 'Performance', 'A11y', 'Python'],
       icon: svgProjectGlobo,

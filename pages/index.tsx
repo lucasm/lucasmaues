@@ -43,7 +43,7 @@ export default function Home() {
 
       <section id="work">
         <div className="container">
-          <h2 className="subtitle">Selected works</h2>
+          <h2 className="subtitle">Selected work</h2>
 
           <Cards />
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
           <div>
             <h2>Let’s talk</h2>x
             <p>
-              To talk about your project, drop me a line. Include all the details, but be concise =)
+              Drop me a line to talk about your project. Include all the details, but be concise =)
             </p>
           </div>
           <div>
