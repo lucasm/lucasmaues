@@ -65,7 +65,7 @@ export default function Icons() {
         Instagram
       </a> */}
 
-      <a href="https://youtube.com/@lucasmdev" target="_blank" rel="noopener" title="YouTube">
+      {/* <a href="https://youtube.com/@lucasmdev" target="_blank" rel="noopener" title="YouTube">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
           <path
             className="svg"
@@ -73,7 +73,7 @@ export default function Icons() {
           />
         </svg>
         YouTube
-      </a>
+      </a> */}
 
       {/* <a
         href="https://discord.com/users/666438806278504489"
