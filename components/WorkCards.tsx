@@ -17,7 +17,7 @@ interface IProjects {
   active: boolean
 }
 
-export default function Cards() {
+export default function WorkCards() {
   const projects: IProjects[] = [
     {
       name: 'Banco Bmg',
@@ -38,8 +38,8 @@ export default function Cards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'PWA for an AI decentralized search app, with multiple sources and privacy.',
-      tags: ['TypeScript', 'React', 'Next.js', 'Node.js'],
+      description: 'AI decentralized search app, with multiple sources and privacy.',
+      tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,
     },

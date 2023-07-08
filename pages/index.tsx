@@ -1,8 +1,8 @@
 import PageLayout from '../components/PageLayout'
 import Image from 'next/image'
 import Icons from '../components/Icons'
-import Cards from '../components/Cards'
-import Blog from '../components/Blog'
+import WorkCards from '../components/WorkCards'
+import BlogPosts from '../components/BlogPosts'
 
 export default function Home() {
   return (
@@ -33,11 +33,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="blog">
+      <section id="posts">
         <div className="container">
           <h2 className="subtitle">Latest posts</h2>
 
-          <Blog />
+          <BlogPosts />
         </div>
       </section>
 
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="container">
           <h2 className="subtitle">Selected work</h2>
 
-          <Cards />
+          <WorkCards />
         </div>
       </section>
 
@@ -57,30 +57,24 @@ export default function Home() {
             <h2>I code for growth</h2>
 
             <p>
-              Since 2015 I have been coding digital products. Web apps, websites, e-commerces, PWAs,
-              and mobile apps. I help organizations to refine their online presence and grow
-              businesses.
+              I have been coding digital products since 2015. Web applications, websites,
+              e-commerces, PWAs, and mobile apps. I help organizations to refine their online
+              presence and grow businesses.
             </p>
 
             <p>
-              I specialize in front-end development. My main focus is on UX, web standards,
-              performance, progressive enhancement, accessibility, security, tests and analytics.
-              Adjacent back-end with cloud services, CI/CD, containers, databases and APIs
-              integrations.
+              I specialize in Front-end development with main focus on web standards, UX,
+              performance, accessibility, security, tests and analytics. Adjacent Back-end with
+              cloud services, CI/CD, databases and APIs integrations. I also create technical
+              content for developers and translate MDN Web Docs.
             </p>
 
             <p>
-              I'm the founder of{' '}
+              I'm recently founded{' '}
               <a href="https://findto.app" target="_blank" rel="noopener">
                 Findto - AI decentralized search
               </a>{' '}
-              because I believe on the power of open Web community. I also create tech content and
-              translate programming docs for devs.
-            </p>
-
-            <p>
-              I was born in Amazon region of Brazil, maybe is why I love to travel and face new
-              experiences. I am a person who greatly values communication, innovation and respect.
+              a free and open source project.
             </p>
           </div>
         </div>
@@ -90,9 +84,7 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let’s talk</h2>x
-            <p>
-              Drop me a line to talk about your project. Include all the details, but be concise =)
-            </p>
+            <p>To talk about your project, drop me a line, put all details but be concise =)</p>
           </div>
           <div>
             <p>
