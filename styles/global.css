@@ -6,7 +6,11 @@
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'obviously', sans-serif;
-  --font-size-min: 0.75rem;
+  --font-size-1: 0.6rem;
+  --font-size-2: 0.6rem;
+  --font-size-3: 0.6rem;
+  --font-size-4: 0.6rem;
+  --font-size-min: 0.6rem;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -264,21 +268,21 @@ button,
 
 h1,
 .home h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 #logo,
 h2,
 .posts h3,
 .contactContainer a {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 h3,
 nav a,
 .button,
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 p,
@@ -546,26 +550,6 @@ article blockquote {
   grid-template-columns: 1fr;
 }
 
-/* GIFs for warning pages */
-.gif {
-  height: 300px;
-  width: 100%;
-  max-width: 300px;
-  float: none;
-  margin: 0 auto 3rem;
-  border-radius: 1rem;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--color-g);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-}
-
 /* Circle */
 #circle {
   position: fixed;
@@ -611,7 +595,7 @@ footer div {
   fill: var(--color-b);
 }
 
-/* Phone */
+/* Mobile + */
 @media only screen and (min-width: 520px) {
   header,
   footer {
@@ -622,7 +606,7 @@ footer div {
   }
 
   .home h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   #profile {
@@ -638,7 +622,7 @@ footer div {
   }
 }
 
-/* Tablet */
+/* Tablet + */
 @media only screen and (min-width: 880px) {
   nav {
     width: 50vw;
@@ -651,25 +635,25 @@ footer div {
 
   h1,
   .home h1 {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
 
   article h1,
   h2 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   nav a,
   article h2,
   .posts h3,
   .contactContainer a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   h3,
   .subtitle,
   .description {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   p,
@@ -712,7 +696,7 @@ footer div {
   }
 }
 
-/* Desktop */
+/* Desktop + */
 @media only screen and (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;

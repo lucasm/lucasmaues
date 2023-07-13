@@ -54,26 +54,26 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>Code & grow</h2>
+            <h2>I code to help everyone</h2>
 
             <p>
               Since 2017, I have been coding digital products like Web applications, websites,
-              e-commerces, PWAs, and mobile apps thats helped organizations to refine their online
+              e-commerces, PWAs, and mobile apps thats helps organizations to refine their online
               presence and grow businesses.
             </p>
 
             <p>
-              I specialize in Front-end development with main focus on web standards, UX,
-              performance, accessibility, security, tests and analytics. Adjacent Back-end with
-              cloud services, CI/CD, databases and APIs integrations.
+              I specialize in Front-end development with focus on web standards, UX, performance,
+              accessibility, security, tests and analytics. Back-end with cloud services, CI/CD,
+              databases and APIs integrations.
             </p>
 
             <p>
-              I also founder of{' '}
+              I'm founder of{' '}
               <a href="https://findto.app" target="_blank" rel="noopener">
                 Findto - AI decentralized search
               </a>{' '}
-              and I write technical content for developers.
+              and I also create content for developers.
             </p>
           </div>
         </div>
