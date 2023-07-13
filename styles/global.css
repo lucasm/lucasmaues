@@ -5,7 +5,7 @@
   --color-w: #fff;
   --radius: 1.5rem;
   --radius-big: 2rem;
-  --font: 'Sora', sans-serif;
+  --font: 'obviously', sans-serif;
   --font-size-min: 0.75rem;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
@@ -231,6 +231,7 @@ h3 {
   font-family: var(--font);
   color: var(--color-b);
   padding-bottom: 2rem;
+  line-height: 1.4;
 }
 
 p,
@@ -263,7 +264,7 @@ button,
 
 h1,
 .home h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 #logo,
@@ -288,6 +289,10 @@ input,
 footer p,
 .cards p {
   font-size: 1rem;
+}
+
+#logo {
+  margin-top: -0.5rem;
 }
 
 /* Special */
@@ -463,7 +468,6 @@ article blockquote {
   margin-bottom: 0;
 }
 .posts h3 {
-  line-height: 1.3;
   padding-bottom: 1.5rem;
 }
 
@@ -522,7 +526,7 @@ article blockquote {
   font-size: var(--font-size-min);
   background: var(--color-y);
   color: var(--color-b);
-  padding: 0.2rem 0.7rem;
+  padding: 0rem 0.6rem 0.2rem;
   margin: 0.25rem 0.25rem 0 0;
   border-radius: 5rem;
   z-index: -1;
@@ -589,16 +593,17 @@ footer a {
 }
 footer .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row-reverse;
 }
 footer svg {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
 }
 footer div {
-  display: grid;
-  justify-items: end;
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* Colors */
@@ -629,7 +634,7 @@ footer div {
     margin: 0 1.75rem 0 0;
   }
   .icons svg {
-    width: 26px;
+    width: 24px;
   }
 }
 
@@ -646,7 +651,7 @@ footer div {
 
   h1,
   .home h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   article h1,
@@ -670,7 +675,7 @@ footer div {
   p,
   .button,
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .subtitle {

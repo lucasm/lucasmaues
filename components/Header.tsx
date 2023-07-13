@@ -37,7 +37,7 @@ export default function Header() {
           <ul>
             <li>
               <Link href="/#posts" onClick={handleToggle}>
-                Posts
+                Blog
               </Link>
             </li>
             <li>
