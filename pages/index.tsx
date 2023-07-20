@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Hello, I'm a Software Engineer from Brazil. I code to companies and people to grow.">
+      description="Hello, I'm a Software Engineer from Brazil. I code to help businesses and people grow.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
