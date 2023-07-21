@@ -1,9 +1,17 @@
-# [lucasm.dev](https://lucasm.dev/)
+# [Lucas Menezes (lucasm.dev)](https://lucasm.dev/)
 
-My personal website made with [Next.js](https://nextjs.org/) framework.
+My personal website.
 
-### Legal
+## Stack
 
-- Source code is [MIT Licensed](https://github.com/lucasmezs/lucasmezs.github.io/blob/master/LICENCE.txt)
+Made with React, TypeScript, CSS and Next.js framework.
+
+## Report
+
+![PageSpeed report](https://lucasm.dev/report.png)
+
+## Legal
+
+- Source code is under [MIT license](https://github.com/lucasmezs/lucasmezs.github.io/blob/master/LICENCE.txt)
 - Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- [Privacy Policy](https://lucasm.dev/privacy)
+- [Privacy policy](https://lucasm.dev/privacy)
