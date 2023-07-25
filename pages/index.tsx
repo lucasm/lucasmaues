@@ -33,7 +33,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="posts">
+      <section id="blog">
         <div className="container">
           <h2 className="subtitle">Latest posts</h2>
 
@@ -54,27 +54,31 @@ export default function Home() {
           <h2 className="subtitle">About me</h2>
 
           <div className="specialContainer">
-            <h2>I code to help everyone</h2>
+            <div>
+              <h2>“I code to help businesses and people grow”</h2>
+            </div>
 
-            <p>
-              Since 2017, I have been coding digital products like Web applications, websites,
-              e-commerces, PWAs, and mobile apps thats helps organizations to refine their online
-              presence and grow businesses.
-            </p>
+            <div>
+              <p>
+                Since 2017, I have been coding digital products like Web applications, websites,
+                e-commerces, PWAs, and mobile apps thats helps organizations to refine their online
+                presence and grow businesses.
+              </p>
 
-            <p>
-              I specialize in Front-end development with focus on web standards, UX, performance,
-              accessibility, security, tests and analytics. Back-end with cloud services, CI/CD,
-              databases and APIs integrations.
-            </p>
+              <p>
+                I specialize in Frontend development with focus on web standards, UX, performance,
+                accessibility, security, tests and analytics. Backend with cloud services, CI/CD,
+                databases and APIs integrations.
+              </p>
 
-            <p>
-              I'm founder of{' '}
-              <a href="https://findto.app" target="_blank" rel="noopener">
-                Findto - AI decentralized search
-              </a>{' '}
-              and I also create content for developers.
-            </p>
+              <p>
+                I'm also a content creator for developer community and founder of{' '}
+                <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
+                  Findto
+                </a>
+                , an open source project.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -83,7 +87,7 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let’s talk</h2>
-            <p>Drop me a line to talk about your project.</p>
+            <p>Send me an email to talk about your project.</p>
           </div>
           <div>
             <p>

@@ -36,7 +36,7 @@ export default function Header() {
         <nav className={isActive ? 'open' : undefined}>
           <ul>
             <li>
-              <Link href="/#posts" onClick={handleToggle}>
+              <Link href="/#blog" onClick={handleToggle}>
                 Blog
               </Link>
             </li>
