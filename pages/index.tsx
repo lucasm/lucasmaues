@@ -72,11 +72,11 @@ export default function Home() {
               </p>
 
               <p>
-                I'm also a content creator for developer community and founder of{' '}
+                I'm also a founder of open source project{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
-                </a>
-                , an open source project.
+                </a>{' '}
+                and a content creator for developer community.
               </p>
             </div>
           </div>
