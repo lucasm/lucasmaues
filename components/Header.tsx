@@ -55,11 +55,11 @@ export default function Header() {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a href="https://github.com/sponsors/lucasm" target="_blank" rel="noopener">
                 Open Source
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 

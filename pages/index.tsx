@@ -14,7 +14,7 @@ export default function Home() {
           <div className="container home">
             <div>
               <h1>Hello, I’m a Software Engineer from Brazil</h1>
-              <p className="description">I code to help businesses and people grow.</p>
+              <p className="description">I code to help businesses and people grow =)</p>
 
               <Icons />
             </div>
@@ -55,28 +55,28 @@ export default function Home() {
 
           <div className="specialContainer">
             <div>
-              <h2>“I code to help businesses and people grow”</h2>
+              <h2>“I code solutions to enable the best of businesses and people"</h2>
             </div>
 
             <div>
               <p>
                 Since 2017, I have been coding digital products like Web applications, websites,
                 e-commerces, PWAs, and mobile apps thats helps organizations to refine their online
-                presence and grow businesses.
+                presence and grow.
               </p>
 
               <p>
-                I specialize in Frontend development with focus on web standards, UX, performance,
+                I specialize in Frontend development with focus on Web standards, UX, performance,
                 accessibility, security, tests and analytics. Backend with cloud services, CI/CD,
                 databases and APIs integrations.
               </p>
 
               <p>
-                I'm also a founder of open source project{' '}
+                I'm also founder of open source project{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
                 </a>{' '}
-                and a content creator for developer community.
+                and content creator for developer community.
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>Let’s talk</h2>
-            <p>Send me an email to talk about your project.</p>
+            <p>Send me an email if you want to work together.</p>
           </div>
           <div>
             <p>
