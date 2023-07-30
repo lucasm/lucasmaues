@@ -14,7 +14,7 @@ export default function Home() {
           <div className="container home">
             <div>
               <h1>Hello, I’m a Software Engineer from Brazil</h1>
-              <p className="description">I code to help businesses and people grow =)</p>
+              <p className="description">I code to help businesses and people grow.</p>
 
               <Icons />
             </div>
