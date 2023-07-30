@@ -38,7 +38,7 @@ export default function WorkCards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Decentralized web search app with AI, diverse sources and privacy.',
+      description: 'Decentralized web search app with AI, privacy and diverse sources.',
       tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,
