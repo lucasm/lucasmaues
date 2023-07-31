@@ -8,7 +8,7 @@ export default function Posts() {
     fetcher
   )
 
-  data && console.log(data)
+  // data && console.log(data)
 
   if (error) return <div>Failed to load posts</div>
   if (!data) return <div>Loading...</div>
