@@ -13,12 +13,10 @@ const Footer = () => (
           <path d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm6,25H16V13H10V7H22Z" />
         </svg>
       </Link>
-      <div>
-        <p>&copy; {getYear()} LUCASM.DEV</p>
-        <p>
-          <Link href="/privacy">Privacy</Link>
-        </p>
-      </div>
+      <p>Made with ♥ by Lucas Menezes &copy; {getYear()} LUCASM.DEV</p>
+      <p>
+        <Link href="/privacy">Privacy</Link>
+      </p>
     </div>
   </footer>
 )

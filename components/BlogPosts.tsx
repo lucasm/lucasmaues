@@ -10,23 +10,23 @@ export default function Posts() {
 
   data && console.log(data)
 
-  if (error) return <div>Failed to load</div>
+  if (error) return <div>Failed to load posts</div>
   if (!data) return <div>Loading...</div>
 
   return (
-    <ul className="posts">
+    <div className="posts">
       {data &&
-        data.map((item) => (
-          <li key={item.id}>
-            {/* <p>{item.readable_publish_date}</p> */}
-            <h3>
-              <a href={item.url} target="_blank">
-                {item.title}
-              </a>
-            </h3>
+        data.map((item: any, index: number) => (
+          <a href={item.url} target="_blank" key={index}>
+            <span>{index + 1}</span>
+            {/* <figure>
+                <img src={item.cover_image} width="200px"></img>
+              </figure> */}
+            <p className="posts-data">{item.readable_publish_date}</p>
+            <h3>{item.title}</h3>
             <p>{item.description}</p>
-          </li>
+          </a>
         ))}
-    </ul>
+    </div>
   )
 }

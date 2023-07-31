@@ -37,22 +37,22 @@ export default function Header() {
           <ul>
             <li>
               <Link href="/#blog" onClick={handleToggle}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/#work" onClick={handleToggle}>
-                Work
+                🗒️ Blog
               </Link>
             </li>
             <li>
               <Link href="/#about" onClick={handleToggle}>
-                About
+                👨🏼‍💻 About
+              </Link>
+            </li>
+            <li>
+              <Link href="/#work" onClick={handleToggle}>
+                📂 Work
               </Link>
             </li>
             <li>
               <Link href="/#contact" onClick={handleToggle}>
-                Contact
+                📞 Contact
               </Link>
             </li>
             {/* <li>

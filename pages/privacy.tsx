@@ -3,11 +3,11 @@ import PageLayout from '../components/PageLayout'
 export default function Privacy() {
   return (
     <PageLayout
-      title="Privacy Policy — Lucas Menezes"
+      title="Privacy | Lucas Menezes"
       description="Privacy policy of Lucas Menezes open source projects.">
       <section>
         <article>
-          <h1>Privacy policy</h1>
+          <h1>Privacy</h1>
 
           <p>
             Lucas Menezes is committed to respect your privacy as a legal entity registered in
@@ -15,11 +15,10 @@ export default function Privacy() {
           </p>
 
           <p>
-            This privacy policy is following the Brazilian General Data Protection Law (LGPD) and
-            you agree to be regulated under this jurisdiction and this policy when you access
-            https://lucasm.dev and related projects under this domain (collectively "projects"). If
-            you do not agree with any of the practices of this policy, please, don't use the
-            projects.
+            This privacy policy is following the General Data Protection Law (LGPD) from Brazil.
+            When you access https://lucasm.dev and related projects on this domain (collectively
+            "projects") you agree to be regulated under this jurisdiction and this policy. If you do
+            not agree with any of the practices of this policy, please, don't use the projects.
           </p>
 
           <h2>1. Automatically collected data</h2>

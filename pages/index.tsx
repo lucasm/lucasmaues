@@ -12,23 +12,20 @@ export default function Home() {
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
-            <div>
-              <h1>Hello, I’m a Software Engineer from Brazil</h1>
-              <p className="description">I code to help businesses and people grow.</p>
+            <figure id="profile">
+              <Image
+                alt="Profile picture of Lucas Menezes"
+                src="https://avatars.githubusercontent.com/lucasm"
+                priority
+                fill={true}
+              />
+            </figure>
+            <h1>
+              Hello 👋🏻 I'm a Software Engineer from Brazil, I code to help businesses and people
+              grow.
+            </h1>
 
-              <Icons />
-            </div>
-
-            <div>
-              <figure id="profile">
-                <Image
-                  alt="Profile picture of Lucas Menezes"
-                  src="https://avatars.githubusercontent.com/lucasm"
-                  priority
-                  fill={true}
-                />
-              </figure>
-            </div>
+            <Icons />
           </div>
         </div>
       </section>
@@ -41,21 +38,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work">
-        <div className="container">
-          <h2 className="subtitle">Selected work</h2>
-
-          <WorkCards />
-        </div>
-      </section>
-
       <section id="about">
         <div className="container">
           <h2 className="subtitle">About me</h2>
 
-          <div className="specialContainer">
+          <div className="aboutContainer">
             <div>
-              <h2>“I code solutions to enable the best of businesses and people"</h2>
+              <h2>I love to code solutions that enable the best of businesses and people ✍🏻</h2>
             </div>
 
             <div>
@@ -83,11 +72,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="work">
+        <div className="container">
+          <h2 className="subtitle">Selected work</h2>
+
+          <WorkCards />
+        </div>
+      </section>
+
       <section id="contact">
         <div className="container contactContainer">
           <div>
-            <h2>Let’s talk</h2>
-            <p>Send me an email if you want to work together.</p>
+            <h2>
+              🤝🏻<br></br> Let's work together
+            </h2>
+            <p>
+              Drop me a message on the email below and I will get back to you as soon as possible.{' '}
+            </p>
           </div>
           <div>
             <p>

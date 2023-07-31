@@ -9,7 +9,7 @@
   --font-size-1: 0.6rem;
   --font-size-2: 0.6rem;
   --font-size-3: 0.6rem;
-  --font-size-4: 0.6rem;
+  --font-size-4: 0.85rem;
   --font-size-min: 0.6rem;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
@@ -55,12 +55,17 @@ header .container {
 #menu {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 2.5rem;
-  height: 2.5rem;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
   font-size: 0;
   background: transparent;
   z-index: 9;
+  border-radius: var(--radius);
+  margin-right: -1rem;
+}
+#menu:hover {
+  background-color: var(--color-w);
 }
 .hamburger {
   position: relative;
@@ -68,6 +73,7 @@ header .container {
   height: 4px;
   background: var(--color-b);
   transition: all 0.25s ease;
+  border-radius: var(--radius);
 }
 .hamburger:before,
 .hamburger:after {
@@ -80,6 +86,7 @@ header .container {
   background: var(--color-b);
   z-index: 1;
   transition: all 0.25s ease;
+  border-radius: var(--radius);
 }
 .hamburger:before {
   top: -8px;
@@ -175,16 +182,14 @@ nav a {
   padding: 1rem 4vw;
   color: var(--color-b);
 }
-nav a:hover {
+nav a:hover,
+nav a:focus {
   background: var(--color-y);
 }
 
 section {
   width: 100%;
   padding: 4rem 2rem;
-}
-main section:first-child {
-  padding-top: 6rem;
 }
 
 .container {
@@ -197,8 +202,7 @@ main section:first-child {
 .fullscreen {
   display: table;
   min-height: 100vh;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 6rem;
 }
 .fullscreen-container {
   display: table-cell;
@@ -267,15 +271,16 @@ button,
 }
 
 h1,
-.home h1 {
-  font-size: 1.6rem;
+.home h1,
+.contactContainer h2 {
+  font-size: 1.5rem;
 }
 
 #logo,
 h2,
 .posts h3,
 .contactContainer a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 h3,
@@ -292,30 +297,40 @@ textarea,
 input,
 footer p,
 .cards p {
-  font-size: 1rem;
+  font-size: var(--font-size-4);
 }
 
 #logo {
-  margin-top: -0.5rem;
+  height: 3rem;
+  line-height: 2.2;
+  padding: 0 1.25rem;
+  margin-left: -1.25rem;
+  border-radius: var(--radius);
+}
+#logo:hover,
+#logo:focus {
+  background: var(--color-w);
 }
 
-/* Special */
+/* Contact */
 .contactContainer {
   background: var(--color-w);
   display: grid;
-  padding: 4rem 2rem 2rem;
+  padding: 4rem 2rem;
   border-radius: var(--radius-big);
+  max-width: 800px;
 }
 .contactContainer p {
   margin: 0 auto;
   max-width: 800px;
 }
 
-.specialContainer {
+/* About */
+.aboutContainer {
   text-align: left;
   margin: 0 auto;
 }
-.specialContainer p {
+.aboutContainer p {
   padding: 0 0 1rem;
 }
 
@@ -396,18 +411,18 @@ article blockquote {
 /* Home */
 .home {
   display: flex;
-  flex-direction: column-reverse;
-  grid-gap: 2rem;
-  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
 }
 
 /* Profile */
 #profile {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   display: flex;
-  width: 124px;
-  height: 124px;
+  width: 100px;
+  height: 100px;
 }
 #profile img {
   float: none;
@@ -435,19 +450,20 @@ article blockquote {
 /* Social Icons */
 .icons {
   display: inline-block;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0;
 }
 .icons a {
   float: left;
-  margin: 0 1.25rem 0 0;
-  padding: 0.5rem 0;
+  margin: 0 0 0;
+  padding: 0.75rem;
   font-size: 0;
   background: transparent;
   transition: all 0.25s ease;
+  border-radius: var(--radius);
 }
 .icons a:hover,
 .icons a:focus {
-  opacity: 0.75;
+  background: var(--color-w);
 }
 .icons svg {
   width: 20px;
@@ -457,22 +473,39 @@ article blockquote {
 .posts {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 4rem 10rem;
+  grid-gap: 2rem 4rem;
   text-align: left;
   list-style: none;
   margin: 2rem 0 0;
   padding: 0;
 }
-.posts li {
-  position: relative;
-  float: left;
-  padding: 0;
-}
-.posts li:nth-child(3) {
-  margin-bottom: 0;
-}
 .posts h3 {
   padding-bottom: 1.5rem;
+}
+.posts p {
+  font-size: var(--font-size-4);
+}
+.posts-data {
+  text-transform: uppercase;
+  font-size: var(--font-size-4);
+}
+.posts figure {
+  background: var(--color-w);
+  display: none;
+}
+.posts span {
+  font-size: 4rem;
+}
+.posts a {
+  float: left;
+  width: 100%;
+  background: var(--color-w);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+.posts a:hover,
+.posts a:focus {
+  transform: translateY(-1rem);
 }
 
 /* Cards */
@@ -498,13 +531,13 @@ article blockquote {
   top: -8px;
   /* box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%); */
 }
-
 .cards h3,
 .cards p {
   margin: 0;
   padding: 1.5rem 0 0;
 }
 .cards p {
+  font-size: var(--font-size-4);
   margin-bottom: 2.5rem;
 }
 .cards h3 {
@@ -543,10 +576,8 @@ article blockquote {
 }
 
 /* Grid */
-
 .home,
-.cards,
-.contactContainer {
+.cards {
   grid-template-columns: 1fr;
 }
 
@@ -568,26 +599,25 @@ footer {
   margin: 0 auto;
   padding: 2rem;
 }
-footer p {
-  text-align: left;
-  padding: 0;
-}
-footer a {
-  opacity: 1;
-}
 footer .container {
-  display: flex;
-  flex-direction: row-reverse;
-}
-footer svg {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-footer div {
   display: flex;
   gap: 2rem;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+footer p {
+  text-align: left;
+  padding: 0;
+  font-size: var(--font-size-4);
+}
+footer a {
+  opacity: 1;
+}
+footer svg {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 /* Colors */
@@ -605,20 +635,24 @@ footer div {
     padding: 6rem 4rem;
   }
 
-  .home h1 {
+  .home h1,
+  .contactContainer h2 {
     font-size: 2.4rem;
   }
 
-  #profile {
-    width: 180px;
-    height: 180px;
-  }
-
   .icons a {
-    margin: 0 1.6rem 0 0;
+    margin: 0 0.25rem;
   }
   .icons svg {
     width: 24px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .posts a {
+    padding: 3rem;
   }
 }
 
@@ -627,27 +661,27 @@ footer div {
   nav {
     width: 50vw;
   }
-  .home {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 4rem;
-  }
 
-  h1,
-  .home h1 {
+  h1 {
     font-size: 3.5rem;
   }
 
+  .home h1,
   article h1,
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
+  }
+
+  #profile {
+    width: 120px;
+    height: 120px;
   }
 
   nav a,
   article h2,
   .posts h3,
   .contactContainer a {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   h3,
@@ -673,7 +707,7 @@ footer div {
   }
 
   .cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .cards {
     grid-gap: 2.5rem;
@@ -688,17 +722,22 @@ footer div {
   }
 
   .posts {
+    grid-gap: 4rem;
     grid-template-columns: 1fr 1fr;
   }
 
-  .specialContainer {
+  .aboutContainer {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
   }
 
-  .specialContainer p {
+  .aboutContainer p {
     padding-top: 1rem;
+  }
+
+  .contactContainer {
+    padding: 4rem;
   }
 }
 
