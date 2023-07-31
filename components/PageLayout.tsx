@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 import Header from './Header'
 import Footer from './Footer'
 import { ReactNode } from 'react'
@@ -52,29 +51,6 @@ export default function PageLayout(props: Props) {
         <meta name="twitter:title" content="Lucas Menezes" />
         <meta name="twitter:description" content={props.description} />
         <meta name="twitter:image" content="https://lucasm.dev/share.png"></meta>
-
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZFVF9EE79"></Script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-		
-				gtag('config', 'G-8ZFVF9EE79'); 
-				`,
-          }}></Script>
-
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
-			(function(c,l,a,r,i,t,y){
-				c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-				t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-				y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-			})(window, document, "clarity", "script", "3j9kmg1bwm");
-			`,
-          }}></Script>
       </Head>
 
       <Header />
