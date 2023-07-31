@@ -3,7 +3,7 @@ import '../styles/global.css'
 
 export default function App({ Component, pageProps }) {
   const isProduction: boolean =
-    typeof window !== 'undefined' && process.env.VERCEL_ENV === 'production'
+    typeof window !== 'undefined' && process.env.NEXT_PUBLIC_ENV_LUCASMDEV === 'production'
 
   return (
     <>
