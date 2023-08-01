@@ -44,7 +44,9 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>I love to code solutions that enable the best of businesses and people ✍🏻</h2>
+              <h2>
+                I love to programming solutions that enable the best of businesses and people ✍🏻
+              </h2>
             </div>
 
             <div>
