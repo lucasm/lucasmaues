@@ -28,7 +28,7 @@ export default function Header() {
           className={isActive ? 'open' : undefined}
           id="menu"
           type="button"
-          aria-label="Menu"
+          aria-label={isActive ? 'Close menu' : 'Open menu'}
           aria-expanded={isActive ? true : false}>
           Menu<div className="hamburger"></div>
         </button>

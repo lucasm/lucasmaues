@@ -64,7 +64,8 @@ header .container {
   border-radius: var(--radius);
   margin-right: -1rem;
 }
-#menu:hover {
+#menu:hover,
+#menu:focus {
   background-color: var(--color-w);
 }
 .hamburger {
