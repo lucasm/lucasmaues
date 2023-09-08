@@ -10,8 +10,8 @@ export default function Privacy() {
           <h1>Privacy</h1>
 
           <p>
-            Lucas Menezes is committed to respect your privacy as a legal entity registered in
-            Brazil under the company name "LUCASM.DEV".
+            Lucas Menezes is committed to respect your privacy as a legal entity in Brazil under the
+            "LUCASM.DEV" registered company.
           </p>
 
           <p>

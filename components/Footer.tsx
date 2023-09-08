@@ -15,7 +15,7 @@ const Footer = () => (
         </svg>
       </Link>
       <p>
-        Made with <IconHeart /> by Lucas Menezes &copy; {getYear()} LUCASM.DEV
+        Made with <IconHeart /> by LUCASM.DEV &copy; {getYear()}
       </p>
       <p>
         <Link href="/privacy">Privacy</Link>

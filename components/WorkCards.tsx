@@ -22,7 +22,7 @@ export default function WorkCards() {
     {
       name: 'Banco Bmg',
       url: 'https://www.bancobmg.com.br/',
-      description: 'Web application of financial products for a Brazil bank.',
+      description: 'Web application of financial products for a bank in Brazil.',
       tags: ['TypeScript', 'React', 'Next.js', 'Node.js', 'GraphQL'],
       icon: svgProjectBmg,
       active: true,

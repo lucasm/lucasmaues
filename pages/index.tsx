@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Hello, I'm a Software Engineer from Brazil. I code to help businesses and people grow.">
+      description="Hello, I'm a Software Engineer from Brazil, coding to help companies and people grow.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
@@ -21,8 +21,7 @@ export default function Home() {
               />
             </figure>
             <h1>
-              Hello 👋🏻 I'm a Software Engineer from Brazil, I code to help businesses and people
-              grow.
+              Hello 👋🏻 I'm a Software Engineer from Brazil, coding to help companies and people grow
             </h1>
 
             <Icons />
@@ -44,30 +43,28 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>
-                I love to programming solutions that enable the best of businesses and people ✍🏻
-              </h2>
+              <h2>I love to code solutions that enable the best of companies and people ✍🏻</h2>
             </div>
 
             <div>
               <p>
-                Since 2017, I have been coding digital products like Web applications, websites,
-                e-commerces, PWAs, and mobile apps thats helps organizations to refine their online
-                presence and grow.
+                As a developer since 2017, I have been coding digital products like web
+                applications, websites, e-commerces, mobile apps and PWAs thats helps organizations
+                of all sizes to refine their online presence and grow.
               </p>
 
               <p>
                 I specialize in Frontend development with focus on Web standards, UX, performance,
                 accessibility, security, tests and analytics. Backend with cloud services, CI/CD,
-                databases and APIs integrations.
+                APIs and databases integrations.
               </p>
 
               <p>
-                I'm also founder of open source project{' '}
+                I'm currently building the AI-powered search tool{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
                 </a>{' '}
-                and content creator for developer community.
+                and writing technical articles to contribute with developer community.
               </p>
             </div>
           </div>
@@ -86,10 +83,12 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>
-              🤝🏻<br></br> Let's work together
+              🤝🏻<br></br>
+              Let's work together
             </h2>
             <p>
-              Drop me a message on the email below and I will get back to you as soon as possible.{' '}
+              I love working with creative people and projects. Leave me an email and I will get
+              back to you as soon as possible.
             </p>
           </div>
           <div>
