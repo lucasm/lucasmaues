@@ -48,9 +48,9 @@ export default function Home() {
 
             <div>
               <p>
-                As a developer since 2017, I have been coding digital products like web
-                applications, websites, e-commerces, mobile apps and PWAs thats helps organizations
-                of all sizes to refine their online presence and grow.
+                Since 2017 I have been coding digital products like web applications, websites,
+                e-commerces, mobile apps and PWAs thats helps organizations to refine their online
+                presence and grow.
               </p>
 
               <p>
@@ -60,11 +60,11 @@ export default function Home() {
               </p>
 
               <p>
-                I'm currently building the AI-powered search tool{' '}
+                I'm also creator of{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
                 </a>{' '}
-                and writing technical articles to contribute with developer community.
+                and I like to write articles and share my journey with community.
               </p>
             </div>
           </div>
