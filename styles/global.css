@@ -414,7 +414,7 @@ article blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 50rem;
+  max-width: 42rem;
 }
 
 /* Profile */

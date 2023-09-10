@@ -21,7 +21,8 @@ export default function Home() {
               />
             </figure>
             <h1>
-              Hello 👋🏻 I'm a Software Engineer from Brazil, coding to help companies and people grow
+              Hello 👋🏻 I'm a Software Engineer from Brazil, coding to help companies and people
+              grow.
             </h1>
 
             <Icons />
@@ -43,7 +44,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>I love to code solutions that enable the best of companies and people ✍🏻</h2>
+              <h2>I love to code solutions that enable the best of companies and people</h2>
             </div>
 
             <div>
@@ -60,11 +61,11 @@ export default function Home() {
               </p>
 
               <p>
-                I'm also creator of{' '}
+                I'm a very active person. I'm currently building the open source project{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
-                </a>{' '}
-                and I like to write articles and share my journey with community.
+                </a>
+                . Writing about technology, speaking and traveling are some of my passions!
               </p>
             </div>
           </div>
@@ -83,12 +84,12 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>
-              🤝🏻<br></br>
+              {/* 🤝🏻<br></br> */}
               Let's work together
             </h2>
             <p>
-              I love working with creative people and projects. Leave me an email and I will get
-              back to you as soon as possible.
+              I love working with creative people. Drop me a message about your project and I will
+              get back to you as soon as possible.
             </p>
           </div>
           <div>
