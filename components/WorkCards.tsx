@@ -38,7 +38,8 @@ export default function WorkCards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Decentralized web search app with AI, privacy and diverse sources.',
+      description:
+        'Assistant for decentralized web search with control of sources, AI, and privacy.',
       tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,
@@ -63,7 +64,7 @@ export default function WorkCards() {
       name: 'Federal University of Pará',
       url: 'https://www.radio.ufpa.br/webdoc60/',
       description: 'Websites, live audio streaming web player, CMS and multimedia web documentary.',
-      tags: ['JavaScript', 'PHP', 'Python', 'MySQL', 'SEO', 'UI'],
+      tags: ['PHP', 'Python', 'MySQL', 'SEO', 'UI', 'JavaScript'],
       icon: svgProjectUFPA,
       active: true,
     },
