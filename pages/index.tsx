@@ -44,28 +44,29 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>I love to code solutions that enable the best of companies and people</h2>
+              <h2>I love to code solutions to enable the best of companies and people</h2>
             </div>
 
             <div>
               <p>
-                Since 2017 I have been coding digital products like web applications, websites,
-                e-commerces, mobile apps and PWAs thats helps organizations to refine their online
+                I have been coding digital products since 2017, such as web applications, PWAs,
+                websites, e-commerce, and mobile apps that help organizations refine their online
                 presence and grow.
               </p>
 
               <p>
-                I specialize in Frontend development with focus on Web standards, UX, performance,
-                accessibility, security, tests and analytics. Backend with cloud services, CI/CD,
-                APIs and databases integrations.
+                I specialize in frontend development with a focus on web standards, UX, performance,
+                accessibility, security, tests, and analytics. In the backend, I work with cloud
+                services, CI/CD, database, and APIs integrations.
               </p>
 
               <p>
-                I'm a very active person. I'm currently building the open source project{' '}
+                I'm currently creating content for developers and traveling a lot! I am also founder
+                of{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
                 </a>
-                . Writing about technology, speaking and traveling are some of my passions!
+                .
               </p>
             </div>
           </div>
@@ -84,12 +85,12 @@ export default function Home() {
         <div className="container contactContainer">
           <div>
             <h2>
-              {/* 🤝🏻<br></br> */}
+              🤝🏻<br></br>
               Let's work together
             </h2>
             <p>
-              I love working with creative people. Drop me a message about your project and I will
-              get back to you as soon as possible.
+              I love to partner. Send a concise message and describe your project. I will get back
+              to you within 2 business days.
             </p>
           </div>
           <div>
