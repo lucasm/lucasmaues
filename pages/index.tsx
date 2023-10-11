@@ -21,8 +21,7 @@ export default function Home() {
               />
             </figure>
             <h1>
-              Hello 👋🏻 I'm a Software Engineer from Brazil, coding to help companies and people
-              grow.
+              Hello 👋🏻 I'm a Software Engineer from Brazil, I code to help companies and people grow
             </h1>
 
             <Icons />
