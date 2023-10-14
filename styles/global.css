@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  --color-y: papayawhip;
+  --color-y: #ffefd5;
   --color-b: #000;
   --color-w: #fff;
   --radius: 1.5rem;
@@ -422,25 +422,13 @@ article blockquote {
   position: relative;
   margin: 0 auto 2rem;
   display: flex;
-  width: 100px;
-  height: 100px;
 }
 #profile img {
-  float: none;
+  width: 96px;
+  height: 96px;
   background: var(--color-b);
   border-radius: 50%;
 }
-
-/* #profile :before {
-  content: '';
-  position: absolute;
-  inset: -5px;
-  transform: translate(10px, 8px);
-  z-index: -1;
-  background: conic-gradient(from 90deg at 40% -25%, #fffffd, #ff0000);
-  filter: blur(10px);
-  border-radius: 200px;
-} */
 
 /* Subtitle */
 .subtitle {
@@ -450,24 +438,37 @@ article blockquote {
 
 /* Social Icons */
 .icons {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.75rem;
   margin: 1rem 0;
+  width: 100%;
 }
 .icons a {
-  float: left;
-  margin: 0 0 0;
-  padding: 0.75rem;
-  font-size: 0;
-  background: transparent;
-  transition: all 0.25s ease;
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+
+  background: var(--color-w);
   border-radius: var(--radius);
+  transition: transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
 .icons a:hover,
 .icons a:focus {
   background: var(--color-w);
+  transform: scale(1.025);
 }
 .icons svg {
   width: 20px;
+  height: 20px;
+}
+.icons span {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: -0.2rem;
 }
 
 /* Posts */
@@ -646,11 +647,9 @@ footer p svg {
     font-size: 2.4rem;
   }
 
-  .icons a {
-    margin: 0 0.25rem;
-  }
   .icons svg {
-    width: 24px;
+    width: 26px;
+    height: 26px;
   }
 
   .cards {
@@ -678,7 +677,7 @@ footer p svg {
     font-size: 2.5rem;
   }
 
-  #profile {
+  #profile img {
     width: 120px;
     height: 120px;
   }

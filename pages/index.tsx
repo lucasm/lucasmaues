@@ -1,5 +1,4 @@
 import PageLayout from '../components/PageLayout'
-import Image from 'next/image'
 import Icons from '../components/Icons'
 import WorkCards from '../components/WorkCards'
 import BlogPosts from '../components/BlogPosts'
@@ -13,17 +12,14 @@ export default function Home() {
         <div className="fullscreen-container">
           <div className="container home">
             <figure id="profile">
-              <Image
+              <img
                 alt="Profile picture of Lucas Menezes"
                 src="https://avatars.githubusercontent.com/lucasm"
-                priority
-                fill={true}
               />
             </figure>
-            <h1>
-              Hello 👋🏻 I'm a Software Engineer from Brazil, I code to help companies and people grow
-            </h1>
+            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil</h1>
 
+            {/* <p>Tech content, open source, and devs mentorship </p> */}
             <Icons />
           </div>
         </div>
@@ -54,14 +50,14 @@ export default function Home() {
               </p>
 
               <p>
-                I specialize in frontend development with a focus on web standards, UX, performance,
-                accessibility, security, tests, and analytics. In the backend, I work with cloud
-                services, CI/CD, database, and APIs integrations.
+                I specialize in Frontend development with a focus on web standards, UX, performance,
+                accessibility, security, tests, and analytics. In the Backend, I work with cloud
+                services, CI/CD, databases, and APIs integrations.
               </p>
 
               <p>
-                I'm currently creating content for developers and traveling a lot! I am also founder
-                of{' '}
+                I'm currently traveling a lot, creating tech content and mentoring developers. I am
+                also support open source projects, like{' '}
                 <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
                   Findto
                 </a>
@@ -88,8 +84,8 @@ export default function Home() {
               Let's work together
             </h2>
             <p>
-              I love to partner. Send a concise message and describe your project. I will get back
-              to you within 2 business days.
+              I love partnering. Send a concise message and describe your project. Within 2 business
+              days I will get back to you.
             </p>
           </div>
           <div>
