@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Custom404() {
   return (
-    <PageLayout title="Error | Lucas Menezes" description="Error page.">
+    <PageLayout title="Error — Lucas Menezes" description="Error page.">
       <CircleMouse />
       <section className="fullscreen">
         <div className="fullscreen-container">

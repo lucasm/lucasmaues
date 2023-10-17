@@ -3,7 +3,7 @@ import PageLayout from '../components/PageLayout'
 export default function Privacy() {
   return (
     <PageLayout
-      title="Privacy | Lucas Menezes"
+      title="Privacy — Lucas Menezes"
       description="Privacy policy of Lucas Menezes open source projects.">
       <section>
         <article>

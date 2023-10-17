@@ -632,6 +632,16 @@ footer p svg {
   fill: var(--color-b);
 }
 
+/* Store */
+.iconStore {
+  margin-bottom: 1rem;
+}
+
+.iconStore svg {
+  width: 3rem;
+  height: 3rem;
+}
+
 /* Mobile + */
 @media only screen and (min-width: 520px) {
   header,

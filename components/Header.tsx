@@ -5,11 +5,9 @@ export default function Header() {
   const [isActive, setActive] = useState<boolean>(false)
 
   useEffect(() => {
-    if (isActive) {
-      document.body.classList.add('removeScroll')
-    } else {
-      document.body.classList.remove('removeScroll')
-    }
+    isActive
+      ? document.body.classList.add('removeScroll')
+      : document.body.classList.remove('removeScroll')
   }, [isActive])
 
   const handleToggle = () => {
@@ -19,7 +17,7 @@ export default function Header() {
   return (
     <header>
       <div className="container">
-        <Link href="/" id="logo" aria-label="homepage" accessKey="1">
+        <Link href="/" id="logo" accessKey="1">
           Lucas Menezes
         </Link>
 
