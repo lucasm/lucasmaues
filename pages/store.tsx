@@ -7,14 +7,14 @@ import { IconHeart, IconStar } from '../components/Svgs'
 const productsBrazil = [
   {
     title: 'JBL Tune 110 Fone de Ouvido',
-    description: 'Áudio de qualidade para reuniões',
+    description: 'Barato com áudio de qualidade para reuniões',
     url: 'https://amzn.to/46Dtp9h',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple AirPods Pro 2',
-    description: 'Excepcional cancelamento de ruído e áudio espacial',
+    title: 'Apple AirPods Pro 2 Gen',
+    description: 'Cancelamento de ruído e áudio espacial nível Apple',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -42,7 +42,7 @@ const productsBrazil = [
   },
   {
     title: 'Fire TV Stick Full HD',
-    description: 'Controle remoto pra TV, streamings e tem Alexa',
+    description: 'Controle remoto para TV, streaming e Alexa',
     url: 'https://amzn.to/44YKNnK',
     image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -90,7 +90,7 @@ const productsBrazil = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple MacBook Air M2 8GB 256GB',
+    title: 'Apple MacBook Air M2 15,3" 8GB 256GB',
     description: 'Mac leve com chip de altíssimo desempenho',
     url: 'https://amzn.to/3rMaLg5',
     image: 'https://m.media-amazon.com/images/I/81Fm0tRFdHL.__AC_SY445_SX342_QL70_ML2_.jpg',
@@ -133,7 +133,7 @@ const productsBrazil = [
   },
   {
     title: 'Monitores Dell Full HD, UHD e 4K',
-    description: 'Marca consagrada de monitores com suporte digno',
+    description: 'Marca consagrada, monitores duráveis com suporte digno',
     url: 'https://amzn.to/3tGwLda',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
@@ -143,6 +143,34 @@ const productsBrazil = [
     description: 'Melhor tablet do mundo',
     url: 'https://amzn.to/45F8t0g',
     image: 'https://m.media-amazon.com/images/I/41pCFSDVeBL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Teclado Logitech MX Keys S',
+    description: 'Teclado sem fio para alta produtividade',
+    url: 'https://amzn.to/3tLZkpo',
+    image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Webcam Logitech Full HD C920s com Microfone e Privacidade',
+    description: 'Custo benefício para reuniões',
+    url: 'https://amzn.to/4028v1e',
+    image: 'https://m.media-amazon.com/images/I/61SCZyiMSNL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Xiaomi Mi Band 8 Global',
+    description: 'Smart pulseira com preço imbatível',
+    url: 'https://amzn.to/404gMl8',
+    image: 'https://m.media-amazon.com/images/I/51W7hGYxPOL._AC_SY879_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Apple MacBook Air M1 13" 8GB 256GB',
+    description: 'Mac de entrada com desempenho e duração de bateria absurdos',
+    url: 'https://amzn.to/45JUIxs',
+    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
 
@@ -228,14 +256,15 @@ const productsBrazil = [
   },
   {
     title: 'O ego é seu inimigo: Como dominar seu pior adversário',
-    description: 'Pro Dev deixar de ser cuzão e vencer ajudando as pessoas',
+    description:
+      'Explora como o ego pode ser prejudicial ao sucesso e ao desenvolvimento pessoal, fazer ou ser é o questionamento',
     url: 'https://amzn.to/3tFtLxH',
     image: 'https://m.media-amazon.com/images/I/61wr4eRbOUL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'Super Thinking: The Big Book of Mental Models',
-    description: 'Modelos mentais para tomar decisões melhores',
+    description: 'Modelos mentais poderosos para tomar decisões melhores',
     url: 'https://amzn.to/403ZPau',
     image: 'https://m.media-amazon.com/images/I/815yQmQZFXL._SY522_.jpg',
     category: 'Livros',
@@ -250,7 +279,7 @@ const productsBrazil = [
   {
     title: 'Sapiens - Uma Breve História da Humanidade',
     description:
-      'Starter pack da vida na Terra - mesmo Yuval Harari ignorando a cosmovisão dos povos tradicionais',
+      'Starter pack da vida na Terra - mesmo Yuval Harari ignorando a cosmovisão dos povos originários',
     url: 'https://amzn.to/405U0JB',
     image: 'https://m.media-amazon.com/images/I/81BTkpMrLYL._SY522_.jpg',
     category: 'Livros',
@@ -258,7 +287,7 @@ const productsBrazil = [
   {
     title: 'O mundo assombrado pelos demônios',
     description:
-      'Falsas crenças existem há séculos - Carl Sagan mostra como a ciência é a melhor arma para combate-las e nos tornar mais críticos',
+      'Falsas crenças existem há séculos - Carl Sagan fala como a ciência é a melhor arma para combate-las e sermos mais críticos',
     url: 'https://amzn.to/45FOdeY',
     image: 'https://m.media-amazon.com/images/I/9165ewWUEPL._SY522_.jpg',
     category: 'Livros',
@@ -266,14 +295,15 @@ const productsBrazil = [
   {
     title: 'Ideias para adiar o fim do mundo',
     description:
-      'Autor indígena Ailton Krenak nos fala que não somos diferentes da Natureza, nós somos a Natureza',
+      'Ailton Krenak nos fala, com uma beleza e sinceridade, que não somos um sistema diferente da Natureza, nós somos a Natureza',
     url: 'https://amzn.to/3QovUqh',
     image: 'https://m.media-amazon.com/images/I/71BnFkpryFL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'Se quiser mudar o mundo: Um guia político para quem se importa',
-    description: 'Um grande amigo me presenteou, e eu indico para vocês - a mudança  começa em nós',
+    description:
+      'Um grande amigo me presenteou, e eu indico - materialismo histórico dialético nos ajuda a compreender o sistema que vivemos e as mudanças que queremos ver no mundo, começam por nós',
     url: 'https://amzn.to/3rR2qbn',
     image: 'https://m.media-amazon.com/images/I/717zRJ20C2L._SY522_.jpg',
     category: 'Livros',
@@ -281,7 +311,7 @@ const productsBrazil = [
   {
     title: 'Amor líquido: Sobre a fragilidade dos laços humanos',
     description:
-      'Bauman nos mostra como o amor e as relações humanas estão cada vez mais frágeis e superficiais na pós modernidade - mas você pode fortalecer as suas',
+      'Aqui na pós-modernidade, o amor e as relações humanas estão cada vez mais frágeis e superficiais - mas podemos nos fortalecer, Bauman não dava like, ele vivia',
     url: 'https://amzn.to/3Ft6e5L',
     image: 'https://m.media-amazon.com/images/I/61H-WiwbS5L._SY522_.jpg',
     category: 'Livros',
@@ -289,7 +319,7 @@ const productsBrazil = [
   {
     title: 'Ensaio sobre a cegueira',
     description:
-      'José Saramago nos mostra por uma ficção, como a humanidade é cega para o sofrimento do outro - e como podemos ser melhores',
+      'José Saramago nos mostra por uma ficção avassaladora, como a humanidade é cega para o sofrimento do outro - e como podemos ser melhores',
     url: 'https://amzn.to/48YQQLZ',
     image: 'https://m.media-amazon.com/images/I/71Hr1-by3UL._SY522_.jpg',
     category: 'Livros',
@@ -297,7 +327,7 @@ const productsBrazil = [
   {
     title: 'O Capital no Século XXI',
     description:
-      'Pensou que ia colocar Marx aqui? Errooou! O livro do Thomas Piketty é imprescindível para compreender a relação entre capital e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política - que gera desigualdade social',
+      'Marx é você? Thomas Piketty desseca a abissal  desigualdade social atual. Imprescindível para entender a relação entre capital e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política',
     url: 'https://amzn.to/45FQ9Eg',
     image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
     category: 'Livros',
@@ -305,7 +335,7 @@ const productsBrazil = [
   {
     title: 'A Arte da Guerra',
     description:
-      'Clássico mundial da estratégia militar - os ensinamentos de Sun Tzu podem ser aplicados em qualquer área da vida',
+      'Clássico mundial de estratégia militar - Sun Tzu tem ensinamentos que de podem ser aplicados em qualquer área da vida',
     url: 'https://amzn.to/3Fmkptn',
     image: 'https://m.media-amazon.com/images/I/71ykI7h--qL._SY522_.jpg',
     category: 'Livros',
@@ -313,7 +343,7 @@ const productsBrazil = [
   {
     title: 'Uma breve história do tempo',
     description:
-      'Stephen Hawking eu te amo - o tempo é a variável que nos governa, conceitos complexos de  física e astronomia de forma simples',
+      'Ele nos governa. Nem variável, nem constante, o tempo é uma dimensão cujo fluxo pode ser influenciado pela velocidade e pela gravidade. Conceitos complexos de física e astronomia de forma simples - te amo Stephen Hawking',
     url: 'https://amzn.to/3Q2FCxb',
     image: 'https://m.media-amazon.com/images/I/61AaXcdHXKS._SY522_.jpg',
     category: 'Livros',
@@ -321,7 +351,7 @@ const productsBrazil = [
   {
     title: 'Box Grandes Mestres do Estoicismo',
     description:
-      'Estoicismo é uma filosofia de vida (mais antiga que Jesus) que nos ensina a sermos mais resilientes e viver bem -  ei Epicteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa"',
+      'Estoicismo é uma filosofia de vida (antes de Cristo) que ensina a ser mais resiliente - hey Epicteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa"',
     url: 'https://amzn.to/45JIIMq',
     image: 'https://m.media-amazon.com/images/I/51C7ww6AYCL._SY522_.jpg',
     category: 'Livros',
@@ -396,7 +426,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$: 5,00 de Cashback"
-          subtitle="Minha indicação na Méliuz garante R$: 5,00 de Cashback na sua próxima compra online"
+          subtitle="Cadastre-se na Méliuz e garanta R$: 5,00 de Cashback na próxima compra online"
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />
