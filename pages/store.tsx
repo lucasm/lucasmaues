@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import PageLayout from '../components/PageLayout'
 import Style from '../styles/Store.module.css'
 import DiscountBanner from '../components/DiscountBanner'
-import { IconHeart } from '../components/Svgs'
+import { IconHeart, IconStar } from '../components/Svgs'
 
 const productsBrazil = [
   {
@@ -21,7 +21,7 @@ const productsBrazil = [
   },
   {
     title: 'Xiaomi Note 12S 256GB 8GB',
-    description: 'Smartphone bom, bonito e barato - a China vai dominar o mundo',
+    description: 'Smartphone bom, bonito e barato - China você já pode dominar o mundo',
     url: 'https://amzn.to/401AaPG',
     image: 'https://m.media-amazon.com/images/I/61LvXyda+6L._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -104,15 +104,15 @@ const productsBrazil = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Suporte de Notebook Ajustável 6 Ângulos',
+    title: 'Suporte de Notebook 6 Ângulos',
     description: 'Segura essa marimba',
     url: 'https://amzn.to/401PVGi',
     image: 'https://m.media-amazon.com/images/I/61ZqTo-kwpL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Adaptador USB C multiportas  Hub Baseus',
-    description: 'Essencial para USB C fans',
+    title: 'Adaptador Baseus USB C Hub multiportas',
+    description: 'Essencial para amantes do USB C',
     url: 'https://amzn.to/3tOi33C',
     image: 'https://m.media-amazon.com/images/I/61f6gHVPN6L._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -133,7 +133,7 @@ const productsBrazil = [
   },
   {
     title: 'Monitores Dell Full HD, UHD e 4K',
-    description: 'Marca confiável pra monitores com suporte digno',
+    description: 'Marca consagrada de monitores com suporte digno',
     url: 'https://amzn.to/3tGwLda',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
@@ -147,8 +147,9 @@ const productsBrazil = [
   },
 
   {
-    title: 'Entendendo Algoritmos: Guia Ilustrado Para Programadores',
-    description: 'Aprenda Algoritmos e Estruturas de dados de forma objetiva ',
+    title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
+    description:
+      'Aprenda Algoritmos e Estruturas de dados de forma objetiva com exemplos em Python',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -169,7 +170,8 @@ const productsBrazil = [
   },
   {
     title: 'Programador Pragmático: De Aprendiz a Mestre',
-    description: 'Melhores e principais armadilhas do desenvolvimento de software',
+    description:
+      'Clássico para todo programador, com dicas e principais armadilhas do desenvolvimento de software',
     url: 'https://amzn.to/3MbyOw9',
     image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
     category: 'Livros',
@@ -189,10 +191,11 @@ const productsBrazil = [
     category: 'Livros',
   },
   {
-    title: 'The Pragmatic Programmer: Your Journey to Mastery',
-    description: 'Essencial para qualquer programador',
-    url: 'https://amzn.to/45DF9Y4',
-    image: 'https://m.media-amazon.com/images/I/71f743sOPoL._SY522_.jpg',
+    title: 'Código limpo: habilidades práticas do Agile software',
+    description:
+      'Clássico e polêmico: "Mesmo um código ruim pode funcionar, mas se ele não for bem pensado, pode acabar com uma empresa"',
+    url: 'https://amzn.to/3QoWnEh',
+    image: 'https://m.media-amazon.com/images/I/71dH97FwGbL._SY522_.jpg',
     category: 'Livros',
   },
   {
@@ -223,6 +226,75 @@ const productsBrazil = [
     image: 'https://m.media-amazon.com/images/I/61wr4eRbOUL._SY522_.jpg',
     category: 'Livros',
   },
+  {
+    title: 'Super Thinking: The Big Book of Mental Models',
+    description: 'Modelos mentais para tomar decisões melhores',
+    url: 'https://amzn.to/403ZPau',
+    image: 'https://m.media-amazon.com/images/I/815yQmQZFXL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Antifrágil: Coisas que se beneficiam com o caos',
+    description: 'Por que você está assustado? O caos é a regra no mundo',
+    url: 'https://amzn.to/3Q7NsG5',
+    image: 'https://m.media-amazon.com/images/I/71VU8IrbChL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Sapiens - Uma Breve História da Humanidade',
+    description:
+      'Starter pack da vida na Terra - mesmo Yuval Harari ignorando a cosmovisão dos povos tradicionais',
+    url: 'https://amzn.to/405U0JB',
+    image: 'https://m.media-amazon.com/images/I/81BTkpMrLYL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'O mundo assombrado pelos demônios',
+    description:
+      'Falsas crenças existem há séculos - Carl Sagan mostra como a ciência é a melhor arma para combate-las e nos tornar mais críticos',
+    url: 'https://amzn.to/45FOdeY',
+    image: 'https://m.media-amazon.com/images/I/9165ewWUEPL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Ideias para adiar o fim do mundo',
+    description: 'Ailton Krenak fala que não somos diferentes da Natureza, nós somos a Natureza',
+    url: 'https://amzn.to/3QovUqh',
+    image: 'https://m.media-amazon.com/images/I/71BnFkpryFL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Se quiser mudar o mundo: Um guia político para quem se importa',
+    description:
+      'Um grande amigo me presenteou esse livro, e eu indico para vocês - a mudança  começa em nós',
+    url: 'https://amzn.to/3rR2qbn',
+    image: 'https://m.media-amazon.com/images/I/717zRJ20C2L._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Amor líquido: Sobre a fragilidade dos laços humanos',
+    description:
+      'Bauman nos mostra como o amor e as relações humanas estão cada vez mais frágeis e superficiais na pós modernidade - mas você pode fortalecer as suas',
+    url: 'https://amzn.to/3Ft6e5L',
+    image: 'https://m.media-amazon.com/images/I/61H-WiwbS5L._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Ensaio sobre a cegueira',
+    description:
+      'José Saramago nos mostra por uma ficção, como a humanidade é cega para o sofrimento do outro - e como podemos ser melhores',
+    url: 'https://amzn.to/48YQQLZ',
+    image: 'https://m.media-amazon.com/images/I/71Hr1-by3UL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'O Capital no Século XXI',
+    description:
+      'Pensou que ia colocar Marx aqui? Errooou! O livro do Thomas Piketty é imprescindível para compreender a relação entre capital e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política - que gera desigualdade social',
+    url: 'https://amzn.to/45FQ9Eg',
+    image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
+    category: 'Livros',
+  },
 ]
 
 export default function PageStore() {
@@ -232,6 +304,14 @@ export default function PageStore() {
       ? productsBrazil
       : productsBrazil.filter((product) => product.category === category)
 
+  const productsRef = useRef<HTMLDivElement>(null)
+  const handleClick = (category: string) => {
+    setCategory(category)
+    if (productsRef?.current) {
+      productsRef?.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <PageLayout
       title="Produtos Recomendados — Lucas Menezes"
@@ -239,9 +319,7 @@ export default function PageStore() {
       <section>
         <div className="container home">
           <figure className={Style.icon}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-              <path d="m17.54,1.66l3.61,7.31c.25.51.74.86,1.3.94l8.07,1.17c1.41.21,1.98,1.94.96,2.94l-5.84,5.69c-.41.4-.59.97-.5,1.53l1.38,8.04c.24,1.41-1.24,2.48-2.5,1.82l-7.22-3.79c-.5-.26-1.1-.26-1.6,0l-7.22,3.79c-1.26.66-2.74-.41-2.5-1.82l1.38-8.04c.1-.56-.09-1.13-.5-1.53L.52,14.03c-1.02-1-.46-2.73.96-2.94l8.07-1.17c.56-.08,1.05-.43,1.3-.94l3.61-7.31c.63-1.28,2.46-1.28,3.09,0Z" />
-            </svg>
+            <IconStar />
           </figure>
           <h1>Produtos Recomendados na Amazon™</h1>
 
@@ -252,24 +330,24 @@ export default function PageStore() {
 
           <div className={Style.buttons}>
             <button
-              onClick={() => setCategory('Todos')}
+              onClick={() => handleClick('Todos')}
               className={category === 'Todos' && Style.buttonActive}>
               Todos
             </button>
             <button
-              onClick={() => setCategory('Livros')}
+              onClick={() => handleClick('Livros')}
               className={category === 'Livros' && Style.buttonActive}>
               Livros
             </button>
             <button
-              onClick={() => setCategory('Eletrônicos')}
+              onClick={() => handleClick('Eletrônicos')}
               className={category === 'Eletrônicos' && Style.buttonActive}>
               Eletrônicos
             </button>
           </div>
         </div>
 
-        <div className={Style.container}>
+        <div className={Style.container} ref={productsRef}>
           <ul>
             {filteredProducts.map((product, index) => (
               <li key={index}>
