@@ -265,15 +265,15 @@ const productsBrazil = [
   },
   {
     title: 'Ideias para adiar o fim do mundo',
-    description: 'Ailton Krenak fala que não somos diferentes da Natureza, nós somos a Natureza',
+    description:
+      'Autor indígena Ailton Krenak nos fala que não somos diferentes da Natureza, nós somos a Natureza',
     url: 'https://amzn.to/3QovUqh',
     image: 'https://m.media-amazon.com/images/I/71BnFkpryFL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'Se quiser mudar o mundo: Um guia político para quem se importa',
-    description:
-      'Um grande amigo me presenteou esse livro, e eu indico para vocês - a mudança  começa em nós',
+    description: 'Um grande amigo me presenteou, e eu indico para vocês - a mudança  começa em nós',
     url: 'https://amzn.to/3rR2qbn',
     image: 'https://m.media-amazon.com/images/I/717zRJ20C2L._SY522_.jpg',
     category: 'Livros',
