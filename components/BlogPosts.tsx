@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export default function Posts() {
   const fetcher = (url: string) => axios.get(url).then((res) => res.data)
-  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm&per_page=3', fetcher)
+  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm', fetcher)
 
   // data && console.log(data)
 
@@ -13,7 +13,7 @@ export default function Posts() {
   return (
     <div className="posts">
       {data &&
-        data.map((item: any, index: number) => (
+        data.slice(0, 3).map((item: any, index: number) => (
           <a href={item.url} target="_blank" key={index}>
             <span>{index + 1}</span>
             {/* <figure>

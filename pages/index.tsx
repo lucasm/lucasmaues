@@ -1,5 +1,5 @@
 import PageLayout from '../components/PageLayout'
-import Icons from '../components/Icons'
+import Links from '../components/Links'
 import WorkCards from '../components/WorkCards'
 import BlogPosts from '../components/BlogPosts'
 
@@ -18,9 +18,7 @@ export default function Home() {
               />
             </figure>
             <h1>Hello 👋🏻 I'm a Software Engineer from Brazil</h1>
-
-            {/* <p>Tech content, open source, and devs mentorship </p> */}
-            <Icons />
+            <Links />
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import PageLayout from '../components/PageLayout'
 
-export default function Privacy() {
+export default function PagePrivacy() {
   return (
     <PageLayout
       title="Privacy — Lucas Menezes"

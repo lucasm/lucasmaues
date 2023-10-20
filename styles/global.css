@@ -6,11 +6,12 @@
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'obviously', sans-serif;
-  --font-size-1: 0.6rem;
-  --font-size-2: 0.6rem;
-  --font-size-3: 0.6rem;
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 2rem;
   --font-size-4: 0.85rem;
   --font-size-min: 0.6rem;
+  --transition: ease 0.25s;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -525,7 +526,7 @@ article blockquote {
   border-radius: var(--radius-big);
   background: var(--color-w);
   top: 0;
-  transition: ease 0.25s;
+  transition: var(--transition);
   overflow: hidden;
 }
 .cards a:hover,
@@ -630,16 +631,6 @@ footer p svg {
 /* Colors */
 .svg {
   fill: var(--color-b);
-}
-
-/* Store */
-.iconStore {
-  margin-bottom: 1rem;
-}
-
-.iconStore svg {
-  width: 3rem;
-  height: 3rem;
 }
 
 /* Mobile + */

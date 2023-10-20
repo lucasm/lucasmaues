@@ -17,8 +17,12 @@ interface IProjects {
   active: boolean
 }
 
+{
+  /* cultural magazine website, hotsites, hacked website recovered */
+}
+
 export default function WorkCards() {
-  const projects: IProjects[] = [
+  const Projects: IProjects[] = [
     {
       name: 'Banco Bmg',
       url: 'https://www.bancobmg.com.br/',
@@ -63,7 +67,8 @@ export default function WorkCards() {
     {
       name: 'Federal University of Pará',
       url: 'https://www.radio.ufpa.br/webdoc60/',
-      description: 'Websites, live audio streaming web player, CMS and multimedia web documentary.',
+      description:
+        'Websites, live audio streaming radio player, CMS and multimedia web documentary.',
       tags: ['PHP', 'Python', 'MySQL', 'SEO', 'UI', 'JavaScript'],
       icon: svgProjectUFPA,
       active: true,
@@ -80,24 +85,20 @@ export default function WorkCards() {
 
   return (
     <div className="cards">
-      {projects
-        ?.filter((project) => project.active)
-        .map((item, index) => (
-          <a key={index} href={item.url + '?utm_source=lucasm.dev'} target="_blank">
-            <div className="card">
-              <figure>{item.icon}</figure>
+      {Projects?.filter((project) => project.active).map((item, index) => (
+        <a key={index} href={item.url + '?utm_source=lucasm.dev'} target="_blank">
+          <div className="card">
+            <figure>{item.icon}</figure>
 
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
 
-              {item?.tags.map((subItem, subIndex) => (
-                <span key={subIndex}>{subItem}</span>
-              ))}
-            </div>
-          </a>
-        ))}
-
-      {/* Radio website, cultural magazine website, hotsites, hacked website recovered */}
+            {item?.tags.map((subItem, subIndex) => (
+              <span key={subIndex}>{subItem}</span>
+            ))}
+          </div>
+        </a>
+      ))}
     </div>
   )
 }
