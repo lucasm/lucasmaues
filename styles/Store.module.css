@@ -14,11 +14,12 @@
 
 .buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
 }
 .buttons button {
-  width: 100%;
+  width: auto;
   padding: 0.75rem 1.25rem;
   border-radius: var(--radius);
   border: 0;
@@ -61,10 +62,11 @@
   padding: 2.5rem;
   flex-direction: column;
   max-width: 280px;
+  top: 0;
 }
 .container ul li a:hover,
 .container ul li a:focus {
-  top: -8px;
+  top: 8px;
   opacity: 0.75;
 }
 .container ul li a h2 {
@@ -82,6 +84,45 @@
   background: var(--color-white);
 }
 
+.containerDiscount {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 85%;
+  padding: 1rem 2rem;
+  margin: 5rem auto 1rem;
+  border-radius: var(--radius-big);
+  align-items: center;
+  vertical-align: middle;
+  background: transparent;
+  border: 5px dashed var(--color-b);
+}
+.containerDiscount:hover {
+  border-color: transparent;
+  background: var(--color-w);
+}
+.containerDiscount div {
+  float: left;
+  text-align: left;
+}
+.containerDiscount h3 {
+  font-size: var(--font-size-2);
+  padding: 1rem 0;
+}
+.containerDiscount figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  background: var(--color-w);
+  border-radius: 50%;
+  margin-right: 3rem;
+}
+.containerDiscount svg {
+  width: 2rem;
+  height: 2rem;
+}
+
 @media screen and (max-width: 520px) {
   .icon {
     margin-top: 3rem;
@@ -93,5 +134,11 @@
 
   .buttons {
     flex-wrap: wrap;
+  }
+  .containerDiscount {
+    grid-template-columns: 1fr;
+  }
+  .containerDiscount figure {
+    margin: 0.5rem auto 0;
   }
 }

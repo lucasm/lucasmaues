@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import PageLayout from '../components/PageLayout'
 import Style from '../styles/Store.module.css'
+import DiscountBanner from '../components/DiscountBanner'
+import { IconHeart } from '../components/Svgs'
 
 const productsBrazil = [
   {
@@ -12,7 +14,7 @@ const productsBrazil = [
   },
   {
     title: 'Apple AirPods Pro 2',
-    description: 'Cancelamento de ruído e audio espacial surreal',
+    description: 'Excepcional cancelamento de ruído e áudio espacial',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -61,7 +63,7 @@ const productsBrazil = [
   },
   {
     title: 'Logitech MX Vertical Mouse Ergonômico Bluetooth',
-    description: 'O melhor mouse já criado pelo ser humano',
+    description: 'O melhor mouse já criado pelo homem',
     url: 'https://amzn.to/3Q2pxHV',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -153,7 +155,7 @@ const productsBrazil = [
   },
   {
     title: 'Estruturas de Dados e Algoritmos com JavaScript',
-    description: 'Livro da @Loaine com exemplos em JavaScript com sintaxe atual do ECMAScript',
+    description: 'Escrito pela @Loaine com exemplos em JavaScript com sintaxe atual ECMAScript',
     url: 'https://amzn.to/3Fni1T2',
     image: 'https://m.media-amazon.com/images/I/71KGa1y8eaL._SY522_.jpg',
     category: 'Livros',
@@ -166,6 +168,13 @@ const productsBrazil = [
     category: 'Livros',
   },
   {
+    title: 'Programador Pragmático: De Aprendiz a Mestre',
+    description: 'Melhores e principais armadilhas do desenvolvimento de software',
+    url: 'https://amzn.to/3MbyOw9',
+    image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
     title: 'Arquitetura limpa: o guia do artesão para estrutura e design de software',
     description: 'Clássico da arquitetura de software com exemplos em Java',
     url: 'https://amzn.to/493NuXW',
@@ -174,23 +183,44 @@ const productsBrazil = [
   },
   {
     title: 'Thinking in Systems: A Primer',
-    description: 'Livro Bestseller sobre como sistemas funcionam',
+    description: 'Bestseller sobre como os sistemas funcionam',
     url: 'https://amzn.to/3M4mSwk',
     image: 'https://m.media-amazon.com/images/I/51ybHl0bT6L._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'The Pragmatic Programmer: Your Journey to Mastery',
-    description: 'Livro essencial para qualquer profissional de software',
+    description: 'Essencial para qualquer programador',
     url: 'https://amzn.to/45DF9Y4',
     image: 'https://m.media-amazon.com/images/I/71f743sOPoL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'Design thinking: uma metodologia poderosa para decretar o fim das velhas ideias',
-    description: 'Livro sobre design thinking com exemplos práticos',
+    description: 'Design thinking com exemplos práticos',
     url: 'https://amzn.to/3FpeN1l',
     image: 'https://m.media-amazon.com/images/I/61frFqn8n2L._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Domain-driven design: atacando as complexidades no coração do software',
+    description: 'Clássico sobre DDD',
+    url: 'https://amzn.to/3Qs3jk9',
+    image: 'https://m.media-amazon.com/images/I/61aIS4n2jZL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Refatoração: Aperfeiçoando o Design de Códigos Existentes',
+    description: 'Clássico sobre refatoração',
+    url: 'https://amzn.to/3Q2xs81',
+    image: 'https://m.media-amazon.com/images/I/81sTm5M7wjL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'O ego é seu inimigo: Como dominar seu pior adversário',
+    description: 'Pro Dev deixar de ser cuzão e vencer ajudando as pessoas',
+    url: 'https://amzn.to/3tFtLxH',
+    image: 'https://m.media-amazon.com/images/I/61wr4eRbOUL._SY522_.jpg',
     category: 'Livros',
   },
 ]
@@ -216,8 +246,8 @@ export default function PageStore() {
           <h1>Produtos Recomendados na Amazon™</h1>
 
           <p>
-            Muitas pessoas me perguntam sobre o meu setup, acessórios e leituras. Criei essa
-            curadoria com meus produtos recomendados e favoritos.
+            Muitas pessoas me perguntam sobre o meu setup, acessórios e leituras. Nessa curadoria
+            estão os meus produtos recomendados e favoritos.
           </p>
 
           <div className={Style.buttons}>
@@ -254,6 +284,13 @@ export default function PageStore() {
             ))}
           </ul>
         </div>
+
+        <DiscountBanner
+          title="Ganhe R$: 5,00 de Cashback"
+          subtitle="Minha indicação na Méliuz garante R$: 5,00 de Cashback na sua próxima compra online"
+          image={<IconHeart />}
+          link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
+        />
       </section>
     </PageLayout>
   )
