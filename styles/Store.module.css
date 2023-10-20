@@ -1,4 +1,3 @@
-/* Store */
 .icon {
   margin-bottom: 1rem;
 }
@@ -16,7 +15,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  padding: 2rem 0 0.5rem;
 }
 .buttons button {
   width: auto;
@@ -31,7 +30,7 @@
 }
 
 .container {
-  padding-top: 4rem;
+  padding-top: 3.5rem;
 }
 .container ul {
   width: 100%;
@@ -62,12 +61,10 @@
   padding: 2.5rem;
   flex-direction: column;
   max-width: 280px;
-  top: 0;
 }
 .container ul li a:hover,
 .container ul li a:focus {
-  top: 8px;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 .container ul li a h2 {
   font-size: var(--font-size-2);

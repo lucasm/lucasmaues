@@ -273,7 +273,7 @@ const productsBrazil = [
     title: 'Antifrágil: Coisas que se beneficiam com o caos',
     description:
       'Por que você está assustado? O caos é a regra no mundo, as dificuldades são uma escada',
-    url: 'https://amzn.to/3Q7NsG5',
+    url: 'https://amzn.to/3MaTioZ',
     image: 'https://m.media-amazon.com/images/I/71VU8IrbChL._SY522_.jpg',
     category: 'Livros',
   },
@@ -427,7 +427,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$: 5,00 de Cashback"
-          subtitle="Cadastre-se na Méliuz e garanta R$: 5,00 de Cashback na próxima compra online"
+          subtitle="Cadastre-se na Méliuz e ganhe R$: 5,00 de Cashback na sua próxima compra online"
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />
