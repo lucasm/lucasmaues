@@ -93,7 +93,8 @@
   background: transparent;
   border: 5px dashed var(--color-b);
 }
-.containerDiscount:hover {
+.containerDiscount:hover,
+.containerDiscount:focus {
   border-color: transparent;
   background: var(--color-w);
 }
@@ -113,7 +114,7 @@
   height: 6rem;
   background: var(--color-w);
   border-radius: 50%;
-  margin-right: 3rem;
+  margin-right: 2.5rem;
 }
 .containerDiscount svg {
   width: 2rem;

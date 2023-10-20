@@ -255,18 +255,18 @@ const productsBrazil = [
     category: 'Livros',
   },
   {
-    title: 'O ego é seu inimigo: Como dominar seu pior adversário',
-    description:
-      'Explora como o ego pode ser prejudicial ao sucesso e ao desenvolvimento pessoal, fazer ou ser é o questionamento',
-    url: 'https://amzn.to/3tFtLxH',
-    image: 'https://m.media-amazon.com/images/I/61wr4eRbOUL._SY522_.jpg',
-    category: 'Livros',
-  },
-  {
     title: 'Super Thinking: The Big Book of Mental Models',
     description: 'Modelos mentais poderosos para tomar decisões melhores',
     url: 'https://amzn.to/403ZPau',
     image: 'https://m.media-amazon.com/images/I/815yQmQZFXL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'O ego é seu inimigo: Como dominar seu pior adversário',
+    description:
+      'O ego pode ser prejudicial ao sucesso e ao desenvolvimento pessoal, fazer ou ser é o questionamento explorado aqui',
+    url: 'https://amzn.to/3tFtLxH',
+    image: 'https://m.media-amazon.com/images/I/61wr4eRbOUL._SY522_.jpg',
     category: 'Livros',
   },
   {
@@ -427,7 +427,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$: 5,00 de Cashback"
-          subtitle="Cadastre-se na Méliuz e ganhe R$: 5,00 de Cashback na sua próxima compra online"
+          subtitle="Use o Méliuz para ganhar R$: 5,00 de Cashback na sua próxima compra online"
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />
