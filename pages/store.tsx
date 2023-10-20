@@ -169,6 +169,13 @@ const productsBrazil = [
     category: 'Livros',
   },
   {
+    title: 'Cracking the Coding Interview: 189 Programming Questions and Solutions',
+    description: 'Vai trabalhar na gringa meu fi, arrebenta na entrevista, crackeia tuuuudo',
+    url: 'https://amzn.to/46EDYZL',
+    image: 'https://m.media-amazon.com/images/I/61mIq2iJUXL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
     title: 'Programador Pragmático: De Aprendiz a Mestre',
     description:
       'Clássico para todo programador, com dicas e principais armadilhas do desenvolvimento de software',
@@ -293,6 +300,30 @@ const productsBrazil = [
       'Pensou que ia colocar Marx aqui? Errooou! O livro do Thomas Piketty é imprescindível para compreender a relação entre capital e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política - que gera desigualdade social',
     url: 'https://amzn.to/45FQ9Eg',
     image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'A Arte da Guerra',
+    description:
+      'Clássico mundial da estratégia militar - os ensinamentos de Sun Tzu podem ser aplicados em qualquer área da vida',
+    url: 'https://amzn.to/3Fmkptn',
+    image: 'https://m.media-amazon.com/images/I/71ykI7h--qL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Uma breve história do tempo',
+    description:
+      'Stephen Hawking eu te amo - o tempo é a variável que nos governa, conceitos complexos de  física e astronomia de forma simples',
+    url: 'https://amzn.to/3Q2FCxb',
+    image: 'https://m.media-amazon.com/images/I/61AaXcdHXKS._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Box Grandes Mestres do Estoicismo',
+    description:
+      'Estoicismo é uma filosofia de vida (mais antiga que Jesus) que nos ensina a sermos mais resilientes e viver bem -  ei Epicteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa"',
+    url: 'https://amzn.to/45JIIMq',
+    image: 'https://m.media-amazon.com/images/I/51C7ww6AYCL._SY522_.jpg',
     category: 'Livros',
   },
 ]
