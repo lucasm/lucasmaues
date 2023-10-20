@@ -271,7 +271,8 @@ const productsBrazil = [
   },
   {
     title: 'Antifrágil: Coisas que se beneficiam com o caos',
-    description: 'Por que você está assustado? O caos é a regra no mundo',
+    description:
+      'Por que você está assustado? O caos é a regra no mundo, as dificuldades são uma escada',
     url: 'https://amzn.to/3Q7NsG5',
     image: 'https://m.media-amazon.com/images/I/71VU8IrbChL._SY522_.jpg',
     category: 'Livros',
@@ -279,7 +280,7 @@ const productsBrazil = [
   {
     title: 'Sapiens - Uma Breve História da Humanidade',
     description:
-      'Starter pack da vida na Terra - mesmo Yuval Harari ignorando a cosmovisão dos povos originários',
+      'Starter pack da vida na Terra - uma viagem linda na humanidade, o trunfo de Yuval Harari é também seu equívoco, afirmar que saímos da barbárie para civilização acaba por binariamente ignorar a sabedoria presente na cosmovisão dos povos originários - que vivem em harmonia com o Planeta desde sempre',
     url: 'https://amzn.to/405U0JB',
     image: 'https://m.media-amazon.com/images/I/81BTkpMrLYL._SY522_.jpg',
     category: 'Livros',
@@ -287,7 +288,7 @@ const productsBrazil = [
   {
     title: 'O mundo assombrado pelos demônios',
     description:
-      'Falsas crenças existem há séculos - Carl Sagan fala como a ciência é a melhor arma para combate-las e sermos mais críticos',
+      'Falsas crenças existem há séculos - Carl Sagan elegantemente divulga a ciência como a melhor arma para combater negacionistas e charlatões - em todas as esferas, políticas e religiosas - e sermos mais críticos',
     url: 'https://amzn.to/45FOdeY',
     image: 'https://m.media-amazon.com/images/I/9165ewWUEPL._SY522_.jpg',
     category: 'Livros',
@@ -303,7 +304,7 @@ const productsBrazil = [
   {
     title: 'Se quiser mudar o mundo: Um guia político para quem se importa',
     description:
-      'Um grande amigo me presenteou, e eu indico - materialismo histórico dialético nos ajuda a compreender o sistema que vivemos e as mudanças que queremos ver no mundo, começam por nós',
+      'Um grande amigo me presenteou, e eu indico - materialismo histórico dialético nos ajuda a compreender o sistema que vivemos e que as mudanças que queremos ver no mundo, começam por nós',
     url: 'https://amzn.to/3rR2qbn',
     image: 'https://m.media-amazon.com/images/I/717zRJ20C2L._SY522_.jpg',
     category: 'Livros',
@@ -311,7 +312,7 @@ const productsBrazil = [
   {
     title: 'Amor líquido: Sobre a fragilidade dos laços humanos',
     description:
-      'Aqui na pós-modernidade, o amor e as relações humanas estão cada vez mais frágeis e superficiais - mas podemos nos fortalecer, Bauman não dava like, ele vivia',
+      'Aqui na internet, na pós-modernidade, o amor e as relações humanas estão cada vez mais frágeis e superficiais - mas podemos nos fortalecer, Bauman não dava like, ele vivia',
     url: 'https://amzn.to/3Ft6e5L',
     image: 'https://m.media-amazon.com/images/I/61H-WiwbS5L._SY522_.jpg',
     category: 'Livros',
@@ -319,7 +320,7 @@ const productsBrazil = [
   {
     title: 'Ensaio sobre a cegueira',
     description:
-      'José Saramago nos mostra por uma ficção avassaladora, como a humanidade é cega para o sofrimento do outro - e como podemos ser melhores',
+      'José Saramago nos mostra por uma ficção avassaladora e premiada, como a humanidade é cega para o sofrimento do outro - e como podemos ser melhores',
     url: 'https://amzn.to/48YQQLZ',
     image: 'https://m.media-amazon.com/images/I/71Hr1-by3UL._SY522_.jpg',
     category: 'Livros',
@@ -335,7 +336,7 @@ const productsBrazil = [
   {
     title: 'A Arte da Guerra',
     description:
-      'Clássico mundial de estratégia militar - Sun Tzu tem ensinamentos que de podem ser aplicados em qualquer área da vida',
+      'Clássico da estratégia militar - Sun Tzu tem ensinamentos que podem ser aplicados em qualquer área da vida',
     url: 'https://amzn.to/3Fmkptn',
     image: 'https://m.media-amazon.com/images/I/71ykI7h--qL._SY522_.jpg',
     category: 'Livros',
@@ -351,7 +352,7 @@ const productsBrazil = [
   {
     title: 'Box Grandes Mestres do Estoicismo',
     description:
-      'Estoicismo é uma filosofia de vida (antes de Cristo) que ensina a ser mais resiliente - hey Epicteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa"',
+      'Estoicismo é uma filosofia de vida (antes de Cristo) que ensina a ser mais resiliente e feliz - hey Epicteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa"',
     url: 'https://amzn.to/45JIIMq',
     image: 'https://m.media-amazon.com/images/I/51C7ww6AYCL._SY522_.jpg',
     category: 'Livros',
