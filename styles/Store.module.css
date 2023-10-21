@@ -139,8 +139,9 @@
   }
   .containerDiscount {
     grid-template-columns: 1fr;
+    padding: 2rem;
   }
   .containerDiscount figure {
-    margin: 0.5rem auto 1rem;
+    margin: 0 auto 1rem;
   }
 }

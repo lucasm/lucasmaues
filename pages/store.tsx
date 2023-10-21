@@ -427,8 +427,8 @@ export default function PageStore() {
         </div>
 
         <DiscountBanner
-          title="Ganhe R$: 5,00 de Cashback"
-          subtitle="Ative o Méliuz para ganhar R$: 5,00 na próxima compra online"
+          title="Ganhe R$ 5,00 de Cashback"
+          subtitle="Use o Méliuz para ganhar R$ 5,00 na próxima compra online"
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />
