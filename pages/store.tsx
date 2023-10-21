@@ -7,35 +7,36 @@ import { IconHeart, IconStar } from '../components/Svgs'
 const productsBrazil = [
   {
     title: 'JBL Tune 110 Fone de Ouvido',
-    description: 'Barato com áudio de qualidade para reuniões',
+    description: 'Fone de qualidade e barato, com microfone e áudio bons para chamadas',
     url: 'https://amzn.to/46Dtp9h',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple AirPods Pro 2 Gen',
-    description: 'Cancelamento de ruído e áudio espacial nível Apple',
+    title: 'Apple AirPods Pro 2',
+    description: 'Áudio espacial e cancelamento de ruído sem fio nível Apple',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Xiaomi Note 12S 256GB 8GB',
-    description: 'Smartphone bom, bonito e barato - China você já pode dominar o mundo',
+    description: 'Smartphone bom, bonito e barato',
     url: 'https://amzn.to/401AaPG',
     image: 'https://m.media-amazon.com/images/I/61LvXyda+6L._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Echo Dot 5 Alexa',
-    description: 'Ei Alexa, tome conta da minha vida',
+    description:
+      'Caixinha de som inteligente, toca música e conversa com IA - "ei Alexa toca uma música dos Beatles"',
     url: 'https://amzn.to/45jAJFL',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'JBL Go 3 Bluetooth',
-    description: 'Um presente pra quem você gosta',
+    description: 'Dei esse mimo pra quem você gosta',
     url: 'https://amzn.to/43CrM9C',
     image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
@@ -91,7 +92,7 @@ const productsBrazil = [
   },
   {
     title: 'Apple MacBook Air M2 15,3" 8GB 256GB',
-    description: 'Mac leve com chip de altíssimo desempenho',
+    description: 'Mac leve e robusto, chip de alto desempenho',
     url: 'https://amzn.to/3rMaLg5',
     image: 'https://m.media-amazon.com/images/I/81Fm0tRFdHL.__AC_SY445_SX342_QL70_ML2_.jpg',
     category: 'Eletrônicos',
@@ -118,22 +119,22 @@ const productsBrazil = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Clamper Filtro de Linha 5 Tomadas',
-    description: 'Não deixa os equipamentos queimarem',
+    title: 'Filtro de Linha Clamper 5 Tomadas',
+    description: 'Proteção certificada para seus equipamentos não queimarem com surtos elétricos',
     url: 'https://amzn.to/3Mb5Mg9',
     image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Apple Watch Series 7 GPS + Cellular',
-    description: 'Melhor smart pulseira esportiva e monitoramento de saúde',
+    description: 'Melhor smart pulseira esportiva - monitora sono e saúde',
     url: 'https://amzn.to/45yB73i',
     image: 'https://m.media-amazon.com/images/I/51IxCp-f3tL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Monitores Dell Full HD, UHD e 4K',
-    description: 'Marca consagrada, monitores duráveis com suporte ao cliente efetivo',
+    description: 'Referência em monitores duráveis, com suporte elogiado',
     url: 'https://amzn.to/3tGwLda',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
@@ -147,14 +148,14 @@ const productsBrazil = [
   },
   {
     title: 'Teclado Logitech MX Keys S',
-    description: 'Teclado sem fio para alta produtividade',
+    description: 'Teclado sem fio projetado para alta produtividade',
     url: 'https://amzn.to/3tLZkpo',
     image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Webcam Logitech Full HD C920s com Microfone e Privacidade',
-    description: 'Camzinha custo benefício para reuniões',
+    title: 'Webcam Full HD Logitech C920s Microfone e Privacidade',
+    description: 'Custo benefício, ideal para reuniões em home office',
     url: 'https://amzn.to/4028v1e',
     image: 'https://m.media-amazon.com/images/I/61SCZyiMSNL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -184,14 +185,14 @@ const productsBrazil = [
   },
   {
     title: 'Estruturas de Dados e Algoritmos com JavaScript',
-    description: 'Escrito pela @Loaine com exemplos em JavaScript com sintaxe atual ECMAScript',
+    description: 'Escrito pela @Loaine com exemplos em JavaScript na sintaxe atual do ECMAScript',
     url: 'https://amzn.to/3Fni1T2',
     image: 'https://m.media-amazon.com/images/I/71KGa1y8eaL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'JavaScript: O Guia Definitivo',
-    description: 'Referência da O Reilly para JavaScript',
+    description: "Referência JavaScript da consagrada editora O'Reilly",
     url: 'https://amzn.to/3PWgEj6',
     image: 'https://m.media-amazon.com/images/I/91z1xY4ppaL._SY522_.jpg',
     category: 'Livros',
@@ -377,7 +378,7 @@ export default function PageStore() {
   return (
     <PageLayout
       title="Produtos Recomendados — Lucas Menezes"
-      description="Curadoria com meus produtos recomendados e favoritos na Amazon.">
+      description="Curadoria com produtos recomendados e favoritos na Amazon.">
       <section>
         <div className="container home">
           <figure className={Style.icon}>
@@ -427,7 +428,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$: 5,00 de Cashback"
-          subtitle="Use o Méliuz para ganhar R$: 5,00 de Cashback na sua próxima compra online"
+          subtitle="Ative o Méliuz para ganhar R$: 5,00 na próxima compra online"
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />

@@ -85,13 +85,13 @@
   display: grid;
   grid-template-columns: auto 1fr;
   width: 85%;
-  padding: 1rem 2rem;
-  margin: 5rem auto 1rem;
+  padding: 1.5rem 2rem;
+  margin: 6rem auto 1rem;
   border-radius: var(--radius-big);
   align-items: center;
   vertical-align: middle;
   background: transparent;
-  border: 5px dashed var(--color-b);
+  border: 5.5px dashed var(--color-b);
 }
 .containerDiscount:hover,
 .containerDiscount:focus {
@@ -104,17 +104,21 @@
 }
 .containerDiscount h3 {
   font-size: var(--font-size-2);
-  padding: 1rem 0;
+  padding: 0 0 0.5rem;
+}
+.containerDiscount p {
+  font-size: var(--font-size-4);
+  padding: 0;
 }
 .containerDiscount figure {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   background: var(--color-w);
   border-radius: 50%;
-  margin-right: 2.5rem;
+  margin-right: 2rem;
 }
 .containerDiscount svg {
   width: 2rem;
@@ -137,6 +141,6 @@
     grid-template-columns: 1fr;
   }
   .containerDiscount figure {
-    margin: 0.5rem auto 0;
+    margin: 0.5rem auto 1rem;
   }
 }
