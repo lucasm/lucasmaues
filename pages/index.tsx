@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>I love to code solutions to enable the best of companies and people</h2>
+              <h2>I code solutions to enable the best of companies and people</h2>
             </div>
 
             <div>
