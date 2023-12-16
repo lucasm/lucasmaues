@@ -28,7 +28,7 @@ const Links: ILinks[] = [
   {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
-    text: 'GitHub - Open Source Projects',
+    text: 'GitHub - Open Source',
     active: true,
   },
   {
