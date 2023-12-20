@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Hello, I'm a Software Engineer from Brazil, coding to help companies and people grow.">
+      description="Hello, I'm a Software Engineer from Brazil. Code to help companies and people grow.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
@@ -37,29 +37,23 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>I code solutions to enable the best of companies and people</h2>
+              <h2>
+                I've been using technology and my creative human vision to deliver positive impact
+                digital solutions
+              </h2>
             </div>
 
             <div>
               <p>
-                I have been coding digital products since 2017, such as web applications, PWAs,
-                websites, e-commerce, and mobile apps that help organizations refine their online
-                presence and grow.
-              </p>
-
-              <p>
-                I specialize in Frontend development with a focus on web standards, UX, performance,
-                accessibility, security, tests, and analytics. In the Backend, I work with cloud
-                services, CI/CD, databases, and APIs integrations.
-              </p>
-
-              <p>
-                I'm currently traveling a lot, creating tech content and mentoring developers. I am
-                also support open source projects, like{' '}
-                <a href="https://findto.app/?utm_source=lucasm.dev" target="_blank" rel="noopener">
-                  Findto
-                </a>
-                .
+                Hello and welcome! I've been coding since 2017, crafting an array of digital
+                solutions including Web Applications, PWAs, Websites, E-commerce platforms, and
+                Mobile Apps. I have significantly contributed to the evolution, resource
+                optimization, and scalability of various companies. My primary focus lies in
+                Frontend development, with performance, accessibility, UX, security, testing,
+                analytics, and strict adherence to Web standards. In Backend development, I engage
+                with cloud services, CI/CD, databases and API integrations. Presently, I'm traveling
+                a lot, creating technical content, and mentoring developers. I also support some
+                open source projects.
               </p>
             </div>
           </div>
@@ -82,8 +76,8 @@ export default function Home() {
               Let's work together
             </h2>
             <p>
-              I love partnering. Send a concise message and describe your project. Within 2 business
-              days I will get back to you.
+              Send a concise message describing your project. I will get back to you within two
+              business days.
             </p>
           </div>
           <div>
