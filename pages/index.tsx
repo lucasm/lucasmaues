@@ -37,10 +37,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>
-                I use my creative human vision and technology to deliver positive impact digital
-                solutions
-              </h2>
+              <h2>I use creativity and technology to deliver positive impact digital solutions</h2>
             </div>
 
             <div>
