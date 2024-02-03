@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Software Engineer"
-      description="Hello, I'm a Software Engineer from Brazil. Coding positive impact digital solutions.">
+      description="Hello, I'm a Senior Software Engineer from Brazil. Coding positive impact digital solutions.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
@@ -73,8 +73,8 @@ export default function Home() {
               Let's work together
             </h2>
             <p>
-              Send a concise message describing your project. I will get back to you within two
-              business days.
+              Please, send a concise message describing your project or idea. I will get back to you
+              within two business days.
             </p>
           </div>
           <div>

@@ -5,7 +5,7 @@
   --color-w: #fff;
   --radius: 1.5rem;
   --radius-big: 2rem;
-  --font: 'obviously', sans-serif;
+  --font: 'Montserrat', sans-serif;
   --font-size-1: 1rem;
   --font-size-2: 1.2rem;
   --font-size-3: 2rem;
@@ -241,7 +241,6 @@ h3 {
   font-family: var(--font);
   color: var(--color-b);
   padding-bottom: 2rem;
-  line-height: 1.4;
 }
 
 p,
@@ -258,7 +257,7 @@ li {
 p,
 li {
   font-weight: normal;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 h1,
@@ -282,7 +281,7 @@ h1,
 h2,
 .posts h3,
 .contactContainer a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 h3,
@@ -304,7 +303,8 @@ footer p,
 
 #logo {
   height: 3rem;
-  line-height: 2.2;
+  display: flex;
+  align-items: center;
   padding: 0 1.25rem;
   margin-left: -1.25rem;
   border-radius: var(--radius);
@@ -452,7 +452,6 @@ article blockquote {
   align-items: center;
   width: 100%;
   padding: 1rem 1.5rem;
-
   background: var(--color-w);
   border-radius: var(--radius);
   transition: transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
@@ -467,9 +466,8 @@ article blockquote {
   height: 20px;
 }
 .icons span {
-  font-size: 1rem;
+  font-size: var(--font-size-2);
   text-align: left;
-  margin-top: -0.2rem;
 }
 
 /* Posts */
@@ -519,7 +517,7 @@ article blockquote {
 .cards a {
   position: relative;
   margin: 0;
-  padding: 2.5rem;
+  padding: 2rem;
   flex-basis: 100%;
   color: inherit;
   text-decoration: none;
@@ -566,7 +564,7 @@ article blockquote {
   font-size: var(--font-size-min);
   background: var(--color-y);
   color: var(--color-b);
-  padding: 0rem 0.6rem 0.2rem;
+  padding: 0.1rem 0.6rem;
   margin: 0.25rem 0.25rem 0 0;
   border-radius: 5rem;
   z-index: -1;
@@ -675,7 +673,7 @@ footer p svg {
   .home h1,
   article h1,
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 
   #profile img {
