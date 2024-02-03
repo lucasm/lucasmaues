@@ -45,10 +45,10 @@ export default function Home() {
                 Hello and welcome! I've been coding since 2017, crafting an array of digital
                 solutions including Web Applications, PWAs, Websites, E-commerce platforms, and
                 Mobile Apps. I have significantly contributed to the evolution, resource
-                optimization, and scalability of various companies. My primary focus lies in
-                Frontend development, with performance, accessibility, UX, security, testing,
-                analytics, and strict adherence to Web standards. In Backend development, I engage
-                with cloud services, CI/CD, databases and API integrations. Presently, I'm traveling
+                optimization, and scalability of companies. My primary focus lies in Frontend
+                development, with performance, accessibility, UX, security, testing, analytics, and
+                strict adherence to Web standards. In Backend development, I engage with cloud
+                services, CI/CD, databases and API integrations. I'm a very active person, traveling
                 a lot, creating technical content, and mentoring developers. I also support some
                 open source projects.
               </p>

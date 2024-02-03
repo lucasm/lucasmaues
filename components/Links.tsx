@@ -26,27 +26,9 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://github.com/lucasm',
-    icon: <IconGithub />,
-    text: 'GitHub - Open Source',
-    active: true,
-  },
-  {
-    url: 'https://dev.to/lucasm',
-    icon: <IconDev />,
-    text: 'DEV - Blog',
-    active: true,
-  },
-  {
-    url: 'https://codepen.io/lucasm',
-    icon: <IconCodepen />,
-    text: 'CodePen - Demos',
-    active: true,
-  },
-  {
     url: 'https://patreon.com/lucasm',
     icon: <IconPatreon />,
-    text: 'Patreon - Apoio e Mentorias Dev',
+    text: 'Patreon - Apoio e Mentoria Dev',
     active: true,
   },
   {
@@ -55,6 +37,24 @@ const Links: ILinks[] = [
     text: 'Produtos Recomendados',
     active: true,
     internalPage: true,
+  },
+  {
+    url: 'https://dev.to/lucasm',
+    icon: <IconDev />,
+    text: 'DEV - Blog',
+    active: true,
+  },
+  {
+    url: 'https://github.com/lucasm',
+    icon: <IconGithub />,
+    text: 'GitHub - Open Source',
+    active: true,
+  },
+  {
+    url: 'https://codepen.io/lucasm',
+    icon: <IconCodepen />,
+    text: 'CodePen - Demos',
+    active: true,
   },
   {
     url: 'https://linkedin.com/in/lucasmezs',
