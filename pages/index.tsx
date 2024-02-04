@@ -6,8 +6,8 @@ import BlogPosts from '../components/BlogPosts'
 export default function Home() {
   return (
     <PageLayout
-      title="Lucas Menezes — Software Engineer"
-      description="Hello, I'm a Senior Software Engineer from Brazil. Coding positive impact digital solutions.">
+      title="Lucas Menezes — Senior Frontend Developer"
+      description="Hello, I'm a Senior Frontend Developer from Brazil. Coding positive impact digital solutions.">
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">
@@ -17,7 +17,7 @@ export default function Home() {
                 src="https://avatars.githubusercontent.com/lucasm"
               />
             </figure>
-            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil</h1>
+            <h1>Hello 👋🏻 I'm a Senior Frontend Developer from Brazil</h1>
             <Links />
           </div>
         </div>
