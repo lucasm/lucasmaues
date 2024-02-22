@@ -121,17 +121,17 @@ export default function PagePrivacy() {
             build an open web for common good.
           </p>
 
-          <h2>9. Changes</h2>
+          <h2>9. Changes on This Policy</h2>
           <p>
             Note that this Privacy Policy can be revised at any time and you might receive an alert
             under the projects informing you of these changes. The continued use of the projects
             after changes in this Privacy Policy will constitute your acceptance.
           </p>
 
-          <h2>10. Questions or Data Requests</h2>
+          <h2>10. Contact</h2>
           <p>
-            If you have questions or data requests, please, send an email to{' '}
-            <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.
+            If you have any questions or suggestions regarding this Privacy Policy, please, send an
+            email to <a href="mailto:privacy@lucasm.dev">privacy@lucasm.dev</a>.
           </p>
         </article>
       </section>

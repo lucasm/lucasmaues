@@ -42,7 +42,7 @@ export default function WorkCards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Web search tool for decentralized Web & AI search.',
+      description: 'Search tool for decentralized Web & AI search.',
       tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,
@@ -85,7 +85,11 @@ export default function WorkCards() {
   return (
     <div className="cards">
       {Projects?.filter((project) => project.active).map((item, index) => (
-        <a key={index} href={item.url + '?utm_source=lucasm.dev'} target="_blank">
+        <a
+          key={index}
+          href={item.url + '?utm_source=lucasm.dev'}
+          target="_blank"
+          rel="noopener noreferrer">
           <div className="card">
             <figure>{item.icon}</figure>
 

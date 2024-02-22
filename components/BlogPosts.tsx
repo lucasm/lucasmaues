@@ -14,7 +14,7 @@ export default function Posts() {
     <div className="posts">
       {data &&
         data.slice(0, 3).map((item: any, index: number) => (
-          <a href={item.url} target="_blank" key={index}>
+          <a key={index} href={item.url} target="_blank" rel="noopener noreferrer">
             <span>{index + 1}</span>
             {/* <figure>
                 <img src={item.cover_image} width="200px"></img>
