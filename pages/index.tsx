@@ -37,21 +37,27 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>I use creativity and technology to deliver positive impact digital solutions</h2>
+              <h2>Crafting Impactful Digital Solutions with Creativity & Technology</h2>
             </div>
 
             <div>
               <p>
-                Hello and welcome! I've been coding since 2017, crafting an array of digital
-                solutions including Web Applications, PWAs, Websites, E-commerce platforms, and
-                Mobile Apps. I have significantly contributed to the evolution, resource
-                optimization, and scalability of companies. My primary focus lies in Frontend
-                development, with performance, accessibility, UX, security, testing, analytics, and
-                strict adherence to Web standards. In Backend development, I engage with cloud
-                services, CI/CD, databases and API integrations. I'm a very active person, traveling
-                a lot, creating technical content, and mentoring developers. I also support some
-                open source projects.
+                Welcome to my digital home! Since 2017, I've been immersed in the world of coding,
+                channeling creativity and technology into a diverse range of digital solutions. From
+                Web Applications to PWAs, Websites, E-commerce platforms, and Mobile Apps, I've
+                played a pivotal role in enhancing the evolution, efficiency, and scalability of
+                various enterprises.
               </p>
+
+              <p>
+                Specializing in Frontend development, I prioritize performance, accessibility, UX,
+                security, analytics, and adherence to Web standards. On the Backend, I thrive on
+                engaging with API integrations, cloud services, and CI/CD pipelines. Beyond coding,
+                I enjoys travels, creating technical content, and mentoring developers.
+                Additionally, I support some open-source initiatives.
+              </p>
+
+              <p>Let's build!</p>
             </div>
           </div>
         </div>
@@ -70,11 +76,11 @@ export default function Home() {
           <div>
             <h2>
               🤝🏻<br></br>
-              Let's work together
+              Let's Work Together
             </h2>
             <p>
-              Please, send a concise message describing your project or idea. I will get back to you
-              within two business days.
+              Send via email a concise message describing your project or idea. I will get back to
+              you within two business days.
             </p>
           </div>
           <div>

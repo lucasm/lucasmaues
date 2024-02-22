@@ -26,7 +26,7 @@ export default function WorkCards() {
     {
       name: 'Banco Bmg',
       url: 'https://www.bancobmg.com.br/',
-      description: 'Web application of financial products for a bank in Brazil.',
+      description: 'Financial products Web application for a bank in Brazil.',
       tags: ['TypeScript', 'React', 'Next.js', 'Node.js', 'GraphQL'],
       icon: svgProjectBmg,
       active: true,
@@ -34,7 +34,7 @@ export default function WorkCards() {
     {
       name: 'Globo',
       url: 'https://www.globo.com/',
-      description: 'Accessibility for the largest content web portal in Brazil.',
+      description: 'Accessibility for the largest Web content portal in Brazil.',
       tags: ['JavaScript', 'React', 'Node.js', 'Performance', 'A11y', 'Python'],
       icon: svgProjectGlobo,
       active: true,
@@ -42,7 +42,7 @@ export default function WorkCards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Web search tool for decentralized control of sources, AI, and privacy.',
+      description: 'Web search tool for decentralized Web & AI search.',
       tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,
