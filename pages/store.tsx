@@ -13,15 +13,8 @@ const productsBrazil = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Stanley Aerolight Fast Flow',
-    description: 'Garrafa térmica 710ML, boa para academia e viagens',
-    url: 'https://amzn.to/3uDXl7H',
-    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
-  {
     title: 'Apple iPhone 15 128GB',
-    description: 'iPhone que não vale o preço mas com USB-C',
+    description: 'iPhone com USB-C',
     url: 'https://amzn.to/49uT9pP',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -36,10 +29,17 @@ const productsBrazil = [
   {
     title: 'Logitech MX Keys Mini',
     description:
-      'Teclado compacto, iluminado, Bluetooth, USB, bateria recarregável e até 3 dispositivos',
+      'Teclado compacto, iluminado, Bluetooth, USB-C, bateria recarregável e até 3 dispositivos',
     url: 'https://amzn.to/3OwLrDM',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Eletrônicos',
+  },
+  {
+    title: 'Stanley Aerolight Fast Flow',
+    description: 'Garrafa térmica 710ML, boa para academia e viagens',
+    url: 'https://amzn.to/3uDXl7H',
+    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
+    category: 'Acessórios',
   },
   {
     title: 'JBL Flip 6',
@@ -400,16 +400,19 @@ export default function PageStore() {
 
   return (
     <PageLayout
-      title="Produtos Recomendados — Lucas Menezes"
+      title="Produtos Amazon — Lucas Menezes"
       description="Curadoria com produtos recomendados e favoritos na Amazon.">
       <section>
         <div className="container home">
           <figure className={Style.icon}>
             <IconStar />
           </figure>
-          <h1>Produtos Recomendados</h1>
+          <h1>Produtos Amazon™</h1>
 
-          <p>Curadoria com os meus produtos recomendados e favoritos na Amazon™!</p>
+          <p>
+            Muitas pessoas me perguntam e fiz essa curadoria com os meus produtos recomendados e
+            favoritos! Todos os produtos estão na Amazon.
+          </p>
 
           <div className={Style.buttons}>
             <button
