@@ -6,24 +6,60 @@ import { IconHeart, IconStar } from '../components/Svgs'
 
 const productsBrazil = [
   {
-    title: 'JBL Tune 110',
-    description: 'Fone de ouvido com fio, acessível e com microfone',
-    url: 'https://amzn.to/46Dtp9h',
-    image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Apple AirPods Pro 2',
-    description: 'Fone de ouvido sem fio com áudio espacial e cancelamento de ruído padrão Apple',
+    description: 'Fone de ouvido Bluetooth com áudio espacial e cancelamento de ruído padrão Apple',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple iPhone 13 128GB',
-    description: 'iPhone que vale a pena',
-    url: 'https://amzn.to/3rKdF4O',
-    image: 'https://m.media-amazon.com/images/I/41rfDU6FGqL._AC_SX679_.jpg',
+    title: 'Stanley Aerolight Fast Flow',
+    description: 'Garrafa térmica 710ML, boa para academia e viagens',
+    url: 'https://amzn.to/3uDXl7H',
+    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
+  {
+    title: 'Apple iPhone 15 128GB',
+    description: 'iPhone que não vale o preço mas com USB-C',
+    url: 'https://amzn.to/49uT9pP',
+    image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Logitech MX Vertical',
+    description: 'Melhor mouse Bluetooth ergonômico já criado pelo homem',
+    url: 'https://amzn.to/3Q2pxHV',
+    image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Logitech MX Keys Mini',
+    description:
+      'Teclado compacto, iluminado, Bluetooth, USB, bateria recarregável e até 3 dispositivos',
+    url: 'https://amzn.to/3OwLrDM',
+    image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'JBL Flip 6',
+    description: 'Caixa de som Bluetooth para todas as horas, mesmo na piscina!',
+    url: 'https://amzn.to/45IVz1o',
+    image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Dell Monitores 4K, UHD e Full HD',
+    description: 'Referência em monitores duráveis, com suporte elogiado',
+    url: 'https://amzn.to/3uqCLHx',
+    image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Apple MacBook Air M2 15,3" 8GB 256GB',
+    description: 'Mac leve, portátil e com chip de alto desempenho',
+    url: 'https://amzn.to/3rMaLg5',
+    image: 'https://m.media-amazon.com/images/I/81Fm0tRFdHL.__AC_SY445_SX342_QL70_ML2_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -42,25 +78,24 @@ const productsBrazil = [
     category: 'Eletrônicos',
   },
   {
+    title: 'JBL Tune 110',
+    description: 'Fone de ouvido com fio, acessível e com microfone',
+    url: 'https://amzn.to/46Dtp9h',
+    image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Mochila Dell Pro EcoLoop',
+    description: 'Mochila boa e impermeável para Notebook',
+    url: 'https://amzn.to/3TgB6yc',
+    image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
+    category: 'Acessórios',
+  },
+  {
     title: 'Fire TV Stick Full HD',
     description: 'Controle remoto para TV com streamings e Alexa',
     url: 'https://amzn.to/44YKNnK',
     image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
-    title: 'Logitech MX Keys Mini',
-    description:
-      'Teclado compacto, iluminado, Bluetooth, USB, bateria recarregável e até 3 dispositivos',
-    url: 'https://amzn.to/3OwLrDM',
-    image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
-    title: 'Logitech MX Vertical',
-    description: 'Melhor mouse Bluetooth ergonômico já criado pelo homem',
-    url: 'https://amzn.to/3Q2pxHV',
-    image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -71,24 +106,10 @@ const productsBrazil = [
     category: 'Eletrônicos',
   },
   {
-    title: 'JBL Flip 6',
-    description: 'Caixa de som Bluetooth para todas as horas, mesmo na piscina!',
-    url: 'https://amzn.to/45IVz1o',
-    image: 'https://m.media-amazon.com/images/I/51RX5vKoClL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Kindle 11',
     description: 'Leitor de livros digitais definitivo',
     url: 'https://amzn.to/3QdXiaV',
     image: 'https://m.media-amazon.com/images/I/71B1wzw1LkL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
-    title: 'Apple MacBook Air M2 15,3" 8GB 256GB',
-    description: 'Mac leve, portátil e com chip de alto desempenho',
-    url: 'https://amzn.to/3rMaLg5',
-    image: 'https://m.media-amazon.com/images/I/81Fm0tRFdHL.__AC_SY445_SX342_QL70_ML2_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -103,29 +124,23 @@ const productsBrazil = [
     description: 'Segura essa marimba',
     url: 'https://amzn.to/401PVGi',
     image: 'https://m.media-amazon.com/images/I/61ZqTo-kwpL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Acessórios',
   },
   {
     title: 'Baseus USB C Hub Adaptador',
-    description: 'Hub USB C com multientradas',
+    description: 'Hub USB-C com multientradas',
     url: 'https://amzn.to/3tOi33C',
     image: 'https://m.media-amazon.com/images/I/61f6gHVPN6L._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Acessórios',
   },
   {
     title: 'Clamper Filtro de Linha',
     description: 'Proteção certificada para 5 equipamentos não queimarem com surtos elétricos',
     url: 'https://amzn.to/3Mb5Mg9',
     image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Acessórios',
   },
-  {
-    title: 'Dell Monitores Full HD, UHD e 4K',
-    description: 'A Dell é referência em monitores duráveis, com suporte elogiado',
-    url: 'https://amzn.to/3uqCLHx',
-    image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Eletrônicos',
-  },
+
   {
     title: 'Apple Watch Series 7 GPS + Cellular',
     description: 'Melhor smartwatch para monitorar sono, saúde e esportes',
@@ -159,6 +174,13 @@ const productsBrazil = [
     description: 'Smartwatch com preço imbatível',
     url: 'https://amzn.to/404gMl8',
     image: 'https://m.media-amazon.com/images/I/51W7hGYxPOL._AC_SY879_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Apple iPhone 13 128GB',
+    description: 'iPhone que vale o preço mas com cabo Lightning',
+    url: 'https://amzn.to/3rKdF4O',
+    image: 'https://m.media-amazon.com/images/I/41rfDU6FGqL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -385,9 +407,9 @@ export default function PageStore() {
           <figure className={Style.icon}>
             <IconStar />
           </figure>
-          <h1>Produtos Recomendados na Amazon™</h1>
+          <h1>Produtos Recomendados</h1>
 
-          <p>Nessa curadoria estão os meus produtos recomendados e favoritos!</p>
+          <p>Curadoria com os meus produtos recomendados e favoritos na Amazon™!</p>
 
           <div className={Style.buttons}>
             <button
@@ -399,6 +421,11 @@ export default function PageStore() {
               onClick={() => handleClick('Eletrônicos')}
               className={category === 'Eletrônicos' && Style.buttonActive}>
               Eletrônicos
+            </button>
+            <button
+              onClick={() => handleClick('Acessórios')}
+              className={category === 'Acessórios' && Style.buttonActive}>
+              Acessórios
             </button>
             <button
               onClick={() => handleClick('Livros')}
