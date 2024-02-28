@@ -42,7 +42,7 @@ export default function WorkCards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Search tool for decentralized Web & AI search.',
+      description: 'A tool for decentralized Web & AI search.',
       tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,

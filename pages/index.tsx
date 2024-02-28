@@ -37,27 +37,25 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>Crafting Impactful Digital Solutions with Creativity & Technology</h2>
+              <h2>Building Impactful Digital Solutions with Technology & Creativity</h2>
             </div>
 
             <div>
               <p>
-                Welcome to my digital home! Since 2017, I've been immersed in the world of coding,
-                channeling creativity and technology into a diverse range of digital solutions. From
-                Web Applications to PWAs, Websites, E-commerce platforms, and Mobile Apps, I've
-                played a pivotal role in enhancing the evolution, efficiency, and scalability of
-                various enterprises.
+                Welcome to my digital home! Since 2017, I've been immersed on coding, channeling
+                creativity and technology into a range of digital solutions. From Web Applications
+                to PWAs, Websites, E-commerce platforms, and Mobile Apps, I've played a pivotal role
+                in enhancing the efficiency, evolution, and scalability of many companies.
               </p>
 
               <p>
-                Specializing in Frontend development, I prioritize performance, accessibility, UX,
-                security, analytics, and adherence to Web standards. On the Backend, I thrive on
-                engaging with API integrations, cloud services, and CI/CD pipelines. Beyond coding,
-                I enjoys travels, creating technical content, and mentoring developers.
-                Additionally, I support some open-source initiatives.
+                Specializing in Frontend development, I have expertise on performance,
+                accessibility, UX, security, analytics - with adherence to Web standards. On the
+                Backend, with API integrations, cloud services, and CI/CD pipelines. I love travels,
+                open-source initiatives, create technical content, and mentor new developers.
               </p>
 
-              <p>Let's build!</p>
+              <p>Let's build the future!</p>
             </div>
           </div>
         </div>
@@ -78,10 +76,7 @@ export default function Home() {
               🤝🏻<br></br>
               Let's Work Together
             </h2>
-            <p>
-              Send via email a concise message describing your project or idea. I will get back to
-              you within two business days.
-            </p>
+            <p>Send a message via email. Please, describe your project or idea concisely.</p>
           </div>
           <div>
             <p>

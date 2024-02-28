@@ -10,21 +10,21 @@ const productsBrazil = [
     description: 'Fone de ouvido Bluetooth com áudio espacial e cancelamento de ruído padrão Apple',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Apple iPhone 15 128GB',
-    description: 'iPhone com USB-C',
+    description: 'iPhone com ótimo desempenho, câmera de qualidade, boa duração de bateria e USB-C',
     url: 'https://amzn.to/49uT9pP',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Logitech MX Vertical',
     description: 'Melhor mouse Bluetooth ergonômico já criado pelo homem',
     url: 'https://amzn.to/3Q2pxHV',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Logitech MX Keys Mini',
@@ -32,7 +32,7 @@ const productsBrazil = [
       'Teclado compacto, iluminado, Bluetooth, USB-C, bateria recarregável e até 3 dispositivos',
     url: 'https://amzn.to/3OwLrDM',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Stanley Aerolight Fast Flow',
@@ -46,21 +46,21 @@ const productsBrazil = [
     description: 'Caixa de som Bluetooth para todas as horas, mesmo na piscina!',
     url: 'https://amzn.to/45IVz1o',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Dell Monitores 4K, UHD e Full HD',
     description: 'Referência em monitores duráveis, com suporte elogiado',
     url: 'https://amzn.to/3uqCLHx',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Apple MacBook Air M2 15,3" 8GB 256GB',
     description: 'Mac leve, portátil e com chip de alto desempenho',
     url: 'https://amzn.to/3rMaLg5',
     image: 'https://m.media-amazon.com/images/I/81Fm0tRFdHL.__AC_SY445_SX342_QL70_ML2_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Echo Dot 5 Alexa',
@@ -68,56 +68,56 @@ const productsBrazil = [
       'Caixinha de som inteligente, toca música e conversa com IA - "ei Alexa toca uma música"',
     url: 'https://amzn.to/45jAJFL',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'JBL Go 3',
     description: 'Caixinha de som Bluetooth pra quem você gosta',
     url: 'https://amzn.to/43CrM9C',
     image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'JBL Tune 110',
-    description: 'Fone de ouvido com fio, acessível e com microfone',
+    description: 'Fone de ouvido com fio durável e com microfone',
     url: 'https://amzn.to/46Dtp9h',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Mochila Dell Pro EcoLoop',
-    description: 'Mochila boa e impermeável para Notebook',
+    description: 'Mochila para Notebook impermeável',
     url: 'https://amzn.to/3TgB6yc',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
     category: 'Acessórios',
   },
   {
     title: 'Fire TV Stick Full HD',
-    description: 'Controle remoto para TV com streamings e Alexa',
+    description: 'Controle remoto com Alexa que transforma sua TV em uma central de streamings',
     url: 'https://amzn.to/44YKNnK',
     image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Logitech Lift Vertical',
     description: 'Mouse ergonômico Bluetooth menor e mais barato que o MX Vertical',
     url: 'https://amzn.to/3HKL5VS',
     image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Kindle 11',
     description: 'Leitor de livros digitais definitivo',
     url: 'https://amzn.to/3QdXiaV',
     image: 'https://m.media-amazon.com/images/I/71B1wzw1LkL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Mini Projetor 5G WiFi Bluetooth 4K Full HD',
     description: 'Projetor portátil com preço imbatível',
     url: 'https://amzn.to/3F4zAHn',
     image: 'https://m.media-amazon.com/images/I/5133wKaOqSL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Suporte de Notebook',
@@ -146,62 +146,62 @@ const productsBrazil = [
     description: 'Melhor smartwatch para monitorar sono, saúde e esportes',
     url: 'https://amzn.to/45yB73i',
     image: 'https://m.media-amazon.com/images/I/51IxCp-f3tL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Apple iPad 10,9" 64GB',
     description: 'Melhor tablet do mundo, acessível',
     url: 'https://amzn.to/45F8t0g',
     image: 'https://m.media-amazon.com/images/I/41pCFSDVeBL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Logitech MX Keys S',
     description: 'Teclado sem fio projetado para alta produtividade',
     url: 'https://amzn.to/3tLZkpo',
     image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
-    title: 'Webcam Full HD Logitech C920s Microfone e Privacidade',
-    description: 'Custo benefício, ideal para reuniões em home office',
+    title: 'Webcam Full HD Logitech C920s',
+    description: 'Webcam com microfone e modo privacidade, ideal para home office',
     url: 'https://amzn.to/4028v1e',
     image: 'https://m.media-amazon.com/images/I/61SCZyiMSNL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Xiaomi Mi Band 8 Global',
     description: 'Smartwatch com preço imbatível',
     url: 'https://amzn.to/404gMl8',
     image: 'https://m.media-amazon.com/images/I/51W7hGYxPOL._AC_SY879_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Apple iPhone 13 128GB',
     description: 'iPhone que vale o preço mas com cabo Lightning',
     url: 'https://amzn.to/3rKdF4O',
     image: 'https://m.media-amazon.com/images/I/41rfDU6FGqL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Apple MacBook Air M1 13" 8GB 256GB',
     description: 'Mac leve, desempenho e duração de bateria absurdos',
     url: 'https://amzn.to/45JUIxs',
     image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
   {
     title: 'Smartphone Xiaomi Redmi Note 12 128GB',
     description: 'Smarthphone com preço imbatível e dois chips',
     url: 'https://amzn.to/4bp2Tn6',
     image: 'https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY879_.jpg',
-    category: 'Eletrônicos',
+    category: 'Dispositivos',
   },
 
   {
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     description:
-      'Aprender Algoritmos e Estruturas de Dados fica fácil e objetivo com esse livro. Contém exemplos em Python.',
+      'Aprender Algoritmos e Estruturas de Dados fica super fácil e objetivo com esse livro. Contém exemplos em Python.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -410,8 +410,8 @@ export default function PageStore() {
           <h1>Produtos Amazon™</h1>
 
           <p>
-            Muitas pessoas me perguntam e fiz essa curadoria com os meus produtos recomendados e
-            favoritos! Todos os produtos estão na Amazon.
+            Muitas pessoas me perguntam, então criei essa curadoria com os meus produtos favoritos e
+            (super) recomendados! Todos os produtos estão na Amazon.
           </p>
 
           <div className={Style.buttons}>
@@ -421,9 +421,9 @@ export default function PageStore() {
               Tudo
             </button>
             <button
-              onClick={() => handleClick('Eletrônicos')}
-              className={category === 'Eletrônicos' && Style.buttonActive}>
-              Eletrônicos
+              onClick={() => handleClick('Dispositivos')}
+              className={category === 'Dispositivos' && Style.buttonActive}>
+              Dispositivos
             </button>
             <button
               onClick={() => handleClick('Acessórios')}
