@@ -37,15 +37,15 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>Building Impactful Digital Solutions with Technology & Creativity</h2>
+              <h2>Building Digital Solutions with Technology & Creativity</h2>
             </div>
 
             <div>
               <p>
-                Welcome to my digital home! Since 2017, I've been immersed on coding, channeling
-                creativity and technology into a range of digital solutions. From Web Applications
-                to PWAs, Websites, E-commerce platforms, and Mobile Apps, I've played a pivotal role
-                in enhancing the efficiency, evolution, and scalability of many companies.
+                Welcome! Since 2017, I've been immersed on coding, channeling creativity and
+                technology into a range of digital solutions. From Web Applications to PWAs,
+                Websites, E-commerce platforms, and Mobile Apps, I've played a pivotal role in
+                enhancing the efficiency, evolution, and scalability of many companies.
               </p>
 
               <p>
@@ -55,7 +55,7 @@ export default function Home() {
                 open-source initiatives, create technical content, and mentor new developers.
               </p>
 
-              <p>Let's build the future!</p>
+              <p>Let's make!</p>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function Home() {
               🤝🏻<br></br>
               Let's Work Together
             </h2>
-            <p>Send a message via email. Please, describe your project or idea concisely.</p>
+            <p>Send a message via email, describing your project or idea concisely.</p>
           </div>
           <div>
             <p>
