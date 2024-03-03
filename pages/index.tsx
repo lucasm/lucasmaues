@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>Building Digital Solutions with Technology & Creativity</h2>
+              <h2>Building Solutions with Technology, Creativity & Passion</h2>
             </div>
 
             <div>
@@ -49,13 +49,13 @@ export default function Home() {
               </p>
 
               <p>
-                Specializing in Frontend development, I have expertise on performance,
-                accessibility, UX, security, analytics - with adherence to Web standards. On the
-                Backend, with API integrations, cloud services, and CI/CD pipelines. I love travels,
-                open-source initiatives, create technical content, and mentor new developers.
+                Specializing in Frontend development, I have expertise on adherence to Web
+                standards, performance, accessibility, UX, security, and analytics. Also setting up
+                Backend, APIs integrations, cloud services, and CI/CD pipelines. I love travels,
+                mentor new developers, create technical content, and open source initiatives!
               </p>
 
-              <p>Let's make!</p>
+              <p>Let's make! 🤘🏻</p>
             </div>
           </div>
         </div>
