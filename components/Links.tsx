@@ -28,7 +28,7 @@ const Links: ILinks[] = [
   {
     url: 'https://patreon.com/lucasm',
     icon: <IconPatreon />,
-    text: 'Patreon - Apoio e Mentorias Dev',
+    text: 'Patreon - Apoio e Mentoria Dev',
     active: true,
   },
   {
