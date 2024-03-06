@@ -6,14 +6,18 @@
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'Montserrat', sans-serif;
-  --font-size-1: 1rem;
-  --font-size-2: 1.2rem;
-  --font-size-3: 2rem;
-  --font-size-4: 0.85rem;
+  --font-size-1: 4.4rem;
+  --font-size-2: 1.4rem;
+  --font-size-3: 1.2rem;
+  --font-size-4: 1rem;
+  --font-size-5: 0.85rem;
+  --font-size-6: 1.8rem;
   --font-size-min: 0.6rem;
   --transition: ease 0.25s;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
+  --max-width: 1024px;
+  --shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
 }
 
 *,
@@ -43,7 +47,7 @@ body {
 header {
   position: absolute;
   width: 100%;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 1.5rem;
   z-index: 99999;
 }
 header .container {
@@ -63,7 +67,6 @@ header .container {
   background: transparent;
   z-index: 9;
   border-radius: var(--radius);
-  margin-right: -1rem;
 }
 #menu:hover,
 #menu:focus {
@@ -74,8 +77,7 @@ header .container {
   width: 26px;
   height: 4px;
   background: var(--color-b);
-  transition: all 0.25s ease;
-  border-radius: var(--radius);
+  transition: all var(--transition);
 }
 .hamburger:before,
 .hamburger:after {
@@ -87,8 +89,7 @@ header .container {
   height: 4px;
   background: var(--color-b);
   z-index: 1;
-  transition: all 0.25s ease;
-  border-radius: var(--radius);
+  transition: all var(--transition);
 }
 .hamburger:before {
   top: -8px;
@@ -191,7 +192,7 @@ nav a:focus {
 
 section {
   width: 100%;
-  padding: 4rem 2rem;
+  padding: 4rem 1.5rem;
 }
 
 .container {
@@ -257,7 +258,7 @@ li {
 p,
 li {
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 h1,
@@ -277,18 +278,18 @@ h1,
   font-size: 1.5rem;
 }
 
-#logo,
 h2,
 .posts h3,
 .contactContainer a {
   font-size: 1.4rem;
 }
 
+#logo,
 h3,
 nav a,
 .button,
 .subtitle {
-  font-size: 1.1rem;
+  font-size: var(--font-size-3);
 }
 
 p,
@@ -298,7 +299,7 @@ textarea,
 input,
 footer p,
 .cards p {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
 }
 
 #logo {
@@ -306,7 +307,7 @@ footer p,
   display: flex;
   align-items: center;
   padding: 0 1.25rem;
-  margin-left: -1.25rem;
+  margin-left: -0.75rem;
   border-radius: var(--radius);
 }
 #logo:hover,
@@ -443,8 +444,9 @@ article blockquote {
   justify-content: center;
   flex-direction: column;
   gap: 0.75rem;
-  margin: 1rem 0;
+  margin: 1rem auto 0;
   width: 100%;
+  max-width: 42rem;
 }
 .icons a {
   display: grid;
@@ -452,13 +454,13 @@ article blockquote {
   align-items: center;
   width: 100%;
   padding: 1rem 1.5rem;
-  background: var(--color-w);
+  background: transparent;
   border-radius: var(--radius);
   transition: transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  border: 1px solid var(--color-b);
 }
 .icons a:hover,
 .icons a:focus {
-  background: var(--color-w);
   transform: scale(1.025);
 }
 .icons svg {
@@ -466,7 +468,7 @@ article blockquote {
   height: 20px;
 }
 .icons span {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-4);
   text-align: left;
 }
 
@@ -474,7 +476,7 @@ article blockquote {
 .posts {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem 4rem;
+  grid-gap: 1.5rem;
   text-align: left;
   list-style: none;
   margin: 2rem 0 0;
@@ -487,32 +489,35 @@ article blockquote {
   font-size: var(--font-size-4);
 }
 .posts-data {
-  text-transform: uppercase;
-  font-size: var(--font-size-4);
+  text-transform: lowercase;
+  font-size: var(--font-size-5);
 }
 .posts figure {
   background: var(--color-w);
   display: none;
 }
 .posts span {
-  font-size: 4rem;
+  font-size: var(--font-size-1);
 }
 .posts a {
   float: left;
   width: 100%;
-  background: var(--color-w);
+  background: transparent;
   border-radius: var(--radius);
   padding: 2rem;
+  transition: var(--transition);
+  border: 1px solid var(--color-b);
 }
 .posts a:hover,
 .posts a:focus {
   transform: translateY(-1rem);
+  box-shadow: var(--shadow);
 }
 
 /* Cards */
 .cards {
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
 }
 .cards a {
   position: relative;
@@ -522,50 +527,45 @@ article blockquote {
   color: inherit;
   text-decoration: none;
   border-radius: var(--radius-big);
-  background: var(--color-w);
+  background: transparent;
   top: 0;
   transition: var(--transition);
   overflow: hidden;
+  border: 1px solid var(--color-b);
 }
 .cards a:hover,
 .cards a:focus {
   top: -8px;
-  /* box-shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%); */
 }
 .cards h3,
 .cards p {
   margin: 0;
   padding: 1.5rem 0 0;
+  text-align: left;
 }
 .cards p {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
   margin-bottom: 2.5rem;
-}
-.cards h3 {
-  margin-top: 1.5rem;
 }
 .cards figure {
   display: flex;
-  width: 124px;
-  height: 124px;
+  width: 4rem;
+  height: 4rem;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius);
-  margin: 0 auto;
-  background: var(--color-y);
+  margin: 0 0 2rem;
 }
 .cards svg {
-  width: 48px;
-  height: 48px;
+  width: 4rem;
+  height: 4rem;
 }
 .cards span {
   display: inline-block;
+  float: left;
   font-weight: normal;
   font-size: var(--font-size-min);
-  background: var(--color-y);
   color: var(--color-b);
-  padding: 0.1rem 0.6rem;
-  margin: 0.25rem 0.25rem 0 0;
+  margin: 0.75rem 0.75rem 0 0;
   border-radius: 5rem;
   z-index: -1;
 }
@@ -590,7 +590,7 @@ article blockquote {
   background: var(--color-w);
   border-radius: 100%;
   transition: transform 0.2s;
-  margin: -280px 0 0 -260px;
+  margin: -200px 0 0 -200px;
   z-index: -1;
 }
 
@@ -611,7 +611,7 @@ footer .container {
 footer p {
   text-align: left;
   padding: 0;
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-5);
 }
 footer a {
   opacity: 1;
@@ -621,8 +621,8 @@ footer a svg {
   height: 1.2rem;
 }
 footer p svg {
-  width: var(--font-size-4);
-  height: var(--font-size-4);
+  width: var(--font-size-5);
+  height: var(--font-size-5);
   padding-top: 0.25rem;
 }
 
@@ -632,18 +632,22 @@ footer p svg {
 }
 
 /* Mobile + */
-@media only screen and (min-width: 520px) {
-  header,
-  footer {
-    padding: 1.75rem 4rem;
-  }
-  section {
-    padding: 6rem 4rem;
+@media only screen and (min-width: 600px) {
+  h1,
+  article h1,
+  .home h1,
+  .aboutContainer h2,
+  .contactContainer h2 {
+    font-size: var(--font-size-2);
   }
 
-  .home h1,
-  .contactContainer h2 {
-    font-size: 2.4rem;
+  h2,
+  .contactContainer a {
+    font-size: var(--font-size-3);
+  }
+
+  .icons span {
+    font-size: var(--font-size-3);
   }
 
   .icons svg {
@@ -658,22 +662,31 @@ footer p svg {
   .posts a {
     padding: 3rem;
   }
+
+  .contactContainer {
+    padding: 4rem;
+  }
 }
 
-/* Tablet + */
-@media only screen and (min-width: 880px) {
+/* Tablet, Desktop + */
+@media only screen and (min-width: 900px) {
+  header,
+  footer {
+    padding: 1.75rem 3rem;
+  }
   nav {
     width: 45vw;
   }
-
-  h1 {
-    font-size: 3.5rem;
+  section {
+    padding: 6rem 4rem;
   }
 
-  .home h1,
+  h1,
   article h1,
-  h2 {
-    font-size: 2.6rem;
+  .home h1,
+  .aboutContainer h2,
+  .contactContainer h2 {
+    font-size: var(--font-size-1);
   }
 
   #profile img {
@@ -681,11 +694,15 @@ footer p svg {
     height: 120px;
   }
 
+  .posts h3 {
+    font-size: var(--font-size-6);
+  }
+
+  #logo,
   nav a,
   article h2,
-  .posts h3,
   .contactContainer a {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2);
   }
 
   h3,
@@ -710,19 +727,35 @@ footer p svg {
     padding: 0 0 2rem;
   }
 
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 2rem;
+    max-width: var(--max-width);
+  }
+
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .cards {
-    grid-gap: 2.5rem;
+    grid-gap: 4rem;
+  }
+  .cards a {
+    padding: 4rem;
   }
   .cards svg {
-    width: 52px;
-    height: 52px;
+    width: 5rem;
+    height: 5rem;
   }
   .cards figure {
-    height: 140px;
-    width: 140px;
+    height: 5rem;
+    width: 5rem;
+    margin: 0 0 5rem;
+  }
+  .cards p {
+    font-size: var(--font-size-2);
+    margin-bottom: 1.5rem;
   }
 
   .posts {
@@ -735,19 +768,7 @@ footer p svg {
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
   }
-
   .aboutContainer p {
-    padding-top: 1rem;
-  }
-
-  .contactContainer {
-    padding: 4rem;
-  }
-}
-
-/* Desktop + */
-@media only screen and (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0.5rem;
   }
 }

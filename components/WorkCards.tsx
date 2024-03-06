@@ -26,7 +26,8 @@ export default function WorkCards() {
     {
       name: 'Banco Bmg',
       url: 'https://www.bancobmg.com.br/',
-      description: 'Financial products Web application for a bank in Brazil.',
+      description:
+        'Web Application of financial products with 500M BRL sales month for a bank in Brazil.',
       tags: ['TypeScript', 'React', 'Next.js', 'Node.js', 'GraphQL'],
       icon: svgProjectBmg,
       active: true,
@@ -34,7 +35,8 @@ export default function WorkCards() {
     {
       name: 'Globo',
       url: 'https://www.globo.com/',
-      description: 'Accessibility for the largest Web content portal in Brazil.',
+      description:
+        'Web Accessibility for the largest content portal in Brazil with 800M of access per month.',
       tags: ['JavaScript', 'React', 'Node.js', 'Performance', 'A11y', 'Python'],
       icon: svgProjectGlobo,
       active: true,
@@ -42,7 +44,8 @@ export default function WorkCards() {
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Assistant for decentralized Web & AI search.',
+      description:
+        'Progressive Web App for an open source decentralized Web & AI search assistant.',
       tags: ['TypeScript', 'React', 'Next.js', 'PWA'],
       icon: svgProjectFindto,
       active: true,
@@ -50,7 +53,8 @@ export default function WorkCards() {
     {
       name: 'Varejo Aqui',
       url: 'https://loja.varejoaqui.online/',
-      description: 'E-commerce for retailers and industries, with web responsive and mobile app.',
+      description:
+        'E-commerce Web Responsive and Mobile App, with real-time Payments APIs (Pix), for Brazil retailers and industries.',
       tags: ['React', 'React Native', 'Next.js', 'TypeScript', 'Node.js'],
       icon: svgProjectVarejoAqui,
       active: true,
@@ -58,8 +62,9 @@ export default function WorkCards() {
     {
       name: 'Municipalities Court of Accounts of Pará',
       url: 'https://www.tcm.pa.gov.br/servicos/sessoes/',
-      description: 'Websites, intranet, web app, services, data visualization and accessibility.',
-      tags: ['JavaScript', 'PHP', 'Java', 'PostgreSQL', 'SEO', 'A11y'],
+      description:
+        'Websites with Intranet, Web Apps, APIs, Data Visualization and Accessibility for a court.',
+      tags: ['JavaScript', 'PHP', 'Node.js', 'Java', 'PostgreSQL', 'SEO', 'A11y'],
       icon: svgProjectTCMPA,
       active: true,
     },
@@ -67,18 +72,18 @@ export default function WorkCards() {
       name: 'Federal University of Pará',
       url: 'https://www.radio.ufpa.br/webdoc60/',
       description:
-        'Websites, live audio streaming radio player, CMS and multimedia web documentary.',
-      tags: ['PHP', 'Python', 'MySQL', 'SEO', 'UI', 'JavaScript'],
+        'Live Audio and Video Streaming with Web Player, Websites, CMS and Multimedia Web Documentary for an university.',
+      tags: ['JavaScript', 'PHP', 'Node.js', , 'Python', 'MySQL', 'SEO', 'UI'],
       icon: svgProjectUFPA,
       active: true,
     },
     {
       name: 'Superia',
       url: 'https://superia.global/',
-      description: 'Components for a CRM web application.',
-      tags: ['TypeScript', 'Vue.js', 'CSS'],
+      description: 'Web Components for a CRM application of a trading company.',
+      tags: ['TypeScript', 'Vue.js', 'CSS', 'Atomic Design'],
       icon: svgProjectSuperia,
-      active: false,
+      active: true,
     },
   ]
 

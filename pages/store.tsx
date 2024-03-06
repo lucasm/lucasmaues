@@ -400,17 +400,17 @@ export default function PageStore() {
 
   return (
     <PageLayout
-      title="Produtos Amazon — Lucas Menezes"
+      title="Produtos Recomendados na Amazon — Lucas Menezes"
       description="Curadoria com produtos recomendados e favoritos na Amazon.">
       <section>
         <div className="container home">
           <figure className={Style.icon}>
             <IconStar />
           </figure>
-          <h1>Produtos Amazon™</h1>
+          <h1>Produtos Recomendados na Amazon™</h1>
 
           <p>
-            Muitas pessoas me perguntam, então criei essa curadoria com os meus produtos favoritos e
+            Muitas pessoas me perguntam, então criei essa lista com os meus produtos favoritos e
             (super) recomendados! Todos os produtos estão na Amazon.
           </p>
 
@@ -456,7 +456,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$ 5,00 de Cashback"
-          subtitle="Ganhe R$ 5,00 na próxima compra online usando minha indicação no Méliuz"
+          subtitle="Ganhe R$ 5,00 (cinco reais) na próxima compra online usando a minha indicação do Méliuz."
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />

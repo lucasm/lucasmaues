@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function CircleMouse() {
   const circle = useRef(null)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     if (typeof document !== 'undefined') {
@@ -23,5 +24,19 @@ export default function CircleMouse() {
     }
   }, [])
 
-  return <div ref={circle} id="circle"></div>
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600)
+    }
+
+    handleResize()
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+  return isMobile ? null : <div id="circle" ref={circle}></div>
 }
