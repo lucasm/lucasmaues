@@ -59,7 +59,7 @@ export default function Home() {
                 developers, create technical content, and open source initiatives.
               </p>
 
-              <p>Checkout my work bellow.</p>
+              <p>Check out my work below.</p>
 
               <p>Let's make! 🤘🏻</p>
             </div>
