@@ -26,18 +26,6 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://dev.to/lucasm',
-    icon: <IconDev />,
-    text: 'DEV',
-    active: true,
-  },
-  {
-    url: 'https://github.com/lucasm',
-    icon: <IconGithub />,
-    text: 'GitHub',
-    active: true,
-  },
-  {
     url: '/store',
     icon: <IconStar />,
     text: 'Produtos Recomendados na Amazon™',
@@ -48,6 +36,18 @@ const Links: ILinks[] = [
     url: 'https://patreon.com/lucasm',
     icon: <IconPatreon />,
     text: 'Patreon - Apoio e Mentoria Dev',
+    active: true,
+  },
+  {
+    url: 'https://dev.to/lucasm',
+    icon: <IconDev />,
+    text: 'DEV - Blog',
+    active: true,
+  },
+  {
+    url: 'https://github.com/lucasm',
+    icon: <IconGithub />,
+    text: 'GitHub - Open Source',
     active: true,
   },
   {

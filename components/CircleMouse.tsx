@@ -3,33 +3,29 @@ import { useEffect, useRef, useState } from 'react'
 export default function CircleMouse() {
   const circle = useRef(null)
   const [isMobile, setIsMobile] = useState(false)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const animationRef = useRef(null)
 
   useEffect(() => {
-    if (typeof document !== 'undefined') {
-      // circle
-      const circle = document.getElementById('circle')
-
-      let X = 0
-      let Y = 0
-      const onMouseMove = (e) => {
-        X = e.clientX
-        Y = e.clientY
-      }
-
-      setInterval(() => {
-        circle.style.transform = `translateX(${X}px) translateY(${Y}px)`
-      }, 50)
-
-      document.addEventListener('mousemove', onMouseMove)
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY })
     }
-  }, [])
+
+    if (!isMobile) {
+      document.addEventListener('mousemove', handleMouseMove)
+    }
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [isMobile])
 
   useEffect(() => {
+    setIsMobile(window.innerWidth <= 600)
+
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 600)
     }
-
-    handleResize()
 
     window.addEventListener('resize', handleResize)
 
@@ -38,5 +34,22 @@ export default function CircleMouse() {
     }
   }, [])
 
-  return isMobile ? null : <div id="circle" ref={circle}></div>
+  useEffect(() => {
+    const circleRef = circle.current
+
+    const updateCirclePosition = () => {
+      circleRef.style.transform = `translateX(${mousePosition.x}px) translateY(${mousePosition.y}px)`
+      animationRef.current = requestAnimationFrame(updateCirclePosition)
+    }
+
+    if (!isMobile) {
+      animationRef.current = requestAnimationFrame(updateCirclePosition)
+    }
+
+    return () => {
+      cancelAnimationFrame(animationRef.current)
+    }
+  }, [isMobile, mousePosition])
+
+  return !isMobile ? <div id="circle" ref={circle}></div> : null
 }

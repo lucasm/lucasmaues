@@ -3,7 +3,6 @@ import Links from '../components/Links'
 import WorkCards from '../components/WorkCards'
 import BlogPosts from '../components/BlogPosts'
 import CircleMouse from '../components/CircleMouse'
-import { useEffect, useState } from 'react'
 
 export default function Home() {
   return (
@@ -41,7 +40,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>Building Solutions with Technology, Creativity & Passion</h2>
+              <h2>Crafting positive impact with digital solutions</h2>
             </div>
 
             <div>
@@ -76,20 +75,18 @@ export default function Home() {
       </section>
 
       <section id="contact">
-        <div className="container contactContainer">
+        <a href="mailto:hello@lucasm.dev" className="container contactContainer">
           <div>
             <h2>
               🤝🏻<br></br>
-              Let's Work Together
+              Let's work together
             </h2>
-            <p>Send a message via email describing your project or idea concisely.</p>
+            <p>Send a message describing your project or idea.</p>
           </div>
           <div>
-            <p>
-              <a href="mailto:hello@lucasm.dev">hello@lucasm.dev</a>
-            </p>
+            <h3>hello@lucasm.dev</h3>
           </div>
-        </div>
+        </a>
       </section>
     </PageLayout>
   )

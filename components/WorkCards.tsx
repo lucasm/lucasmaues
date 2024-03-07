@@ -61,7 +61,7 @@ export default function WorkCards() {
       name: 'Varejo Aqui',
       url: 'https://loja.varejoaqui.online/',
       description:
-        'E-commerce Web Responsive and Mobile App, with real-time payments APIs (Pix), for Brazil retailers and industries.',
+        'E-commerce Web Responsive and Mobile App with real-time payments APIs (Pix) for Brazil retailers and industries.',
       tags: ['React', 'React Native', 'Next.js', 'TypeScript', 'Node.js', 'Android Studio'],
       icon: svgProjectVarejoAqui,
       active: true,
@@ -87,7 +87,7 @@ export default function WorkCards() {
     {
       name: 'Superia',
       url: 'https://superia.global/',
-      description: 'Web Components for a CRM application of a trading company.',
+      description: 'Web Application and Components for an international trading company.',
       tags: ['TypeScript', 'Vue.js', 'CSS', 'Atomic Design'],
       icon: svgProjectSuperia,
       active: true,
