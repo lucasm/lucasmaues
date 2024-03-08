@@ -332,6 +332,9 @@ footer p,
 .contactContainer:focus {
   top: -8px;
 }
+.contactContainer:focus {
+  background: var(--color-w);
+}
 
 .contactContainer p {
   margin: 0 auto;
@@ -473,6 +476,9 @@ article blockquote {
 .icons a:focus {
   transform: scale(1.025);
 }
+.icons a:focus {
+  background: var(--color-w);
+}
 .icons svg {
   width: 20px;
   height: 20px;
@@ -523,6 +529,9 @@ article blockquote {
   transform: translateY(-1rem);
   box-shadow: var(--shadow);
 }
+.posts a:focus {
+  background: var(--color-w);
+}
 
 /* Cards */
 .cards {
@@ -546,6 +555,9 @@ article blockquote {
 .cards a:hover,
 .cards a:focus {
   top: -8px;
+}
+.cards a:focus {
+  background: var(--color-w);
 }
 .cards h3,
 .cards p {

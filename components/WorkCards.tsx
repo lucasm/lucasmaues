@@ -17,17 +17,13 @@ interface IProjects {
   active: boolean
 }
 
-{
-  /* cultural magazine website, hotsites, hacked website recovered */
-}
-
 export default function WorkCards() {
   const Projects: IProjects[] = [
     {
       name: 'Banco Bmg',
       url: 'https://www.bancobmg.com.br/',
       description:
-        'Web Application of financial products with 500M BRL sales month for a bank in Brazil.',
+        'Web Application of financial products with 500M BRL transactions per month for a bank in Brazil.',
       tags: [
         'TypeScript',
         'React',
@@ -36,6 +32,7 @@ export default function WorkCards() {
         'GraphQL',
         'Storybook',
         'Microsoft Azure',
+        'AWS',
       ],
       icon: svgProjectBmg,
       active: true,
@@ -70,7 +67,7 @@ export default function WorkCards() {
       name: 'Municipalities Court of Accounts of Pará',
       url: 'https://www.tcm.pa.gov.br/servicos/sessoes/',
       description:
-        'Websites with Intranet, Web Apps, APIs, Data Visualization and Accessibility for a court.',
+        'Websites, Intranet, Web Apps, Web API Endpoints, AWS S3 integration, Accessibility and Data Visualization for a court.',
       tags: ['JavaScript', 'PHP', 'Node.js', 'Java', 'PostgreSQL', 'SEO', 'A11y', 'AWS'],
       icon: svgProjectTCMPA,
       active: true,
@@ -79,7 +76,7 @@ export default function WorkCards() {
       name: 'Federal University of Pará',
       url: 'https://www.radio.ufpa.br/webdoc60/',
       description:
-        'Live Audio and Video Streaming with Web Player, Websites, CMS and Multimedia Web Documentary for an university.',
+        'Live Audio and Video Streaming with Web Player, Websites, CMS, Multimedia Web Documentary and hacked Website recovered for an university.',
       tags: ['JavaScript', 'PHP', 'Node.js', , 'Python', 'MySQL', 'SEO', 'UI'],
       icon: svgProjectUFPA,
       active: true,
