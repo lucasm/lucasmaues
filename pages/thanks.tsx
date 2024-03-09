@@ -5,8 +5,8 @@ import Link from 'next/link'
 export default function PageThanks() {
   return (
     <PageLayout title="Thanks — Lucas Menezes" description="Thanks page.">
+      <CircleMouse />
       <section className="fullscreen">
-        <CircleMouse />
         <div className="fullscreen-container">
           <div className="container">
             <h1>Thanks! ✌🏻</h1>

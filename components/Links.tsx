@@ -103,7 +103,7 @@ const Links: ILinks[] = [
 
 export default function ComponentLinks() {
   return (
-    <div className="icons">
+    <div className="icons" id="links">
       {Links?.filter((link) => link.active).map((link, index) => (
         <Link
           key={index}

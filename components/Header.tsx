@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useUser } from '../contexts/UserContext'
+import { IconMoon, IconSun } from './Svgs'
 
 export default function Header() {
   const [isActive, setActive] = useState<boolean>(false)
+  const { theme, setTheme } = useUser()
 
   useEffect(() => {
     isActive
@@ -14,6 +17,16 @@ export default function Header() {
     setActive(!isActive)
   }
 
+  const toggleTheme = () => {
+    if (theme == 'light') {
+      setTheme('dark')
+      window.localStorage.setItem('theme', 'dark')
+    } else {
+      setTheme('light')
+      window.localStorage.setItem('theme', 'light')
+    }
+  }
+
   return (
     <header>
       <div className="container">
@@ -21,21 +34,29 @@ export default function Header() {
           Lucas Menezes
         </Link>
 
-        <button
-          onClick={handleToggle}
-          className={isActive ? 'open' : undefined}
-          id="menu"
-          type="button"
-          aria-label={isActive ? 'Close menu' : 'Open menu'}
-          aria-expanded={isActive ? true : false}>
-          Menu<div className="hamburger"></div>
-        </button>
+        <div className="headerButtons">
+          <button
+            onClick={handleToggle}
+            className={isActive ? 'open' : undefined}
+            id="menu"
+            type="button"
+            aria-label={isActive ? 'Close menu' : 'Open menu'}
+            aria-expanded={isActive ? true : false}>
+            <div className="hamburger"></div>
+            Menu
+          </button>
+
+          <button onClick={toggleTheme} id="theme" translate="no">
+            {theme == 'dark' ? <IconMoon /> : <IconSun />}
+            {theme === 'dark' ? 'Dark' : 'Light'}
+          </button>
+        </div>
 
         <nav className={isActive ? 'open' : undefined}>
           <ul>
             <li>
               <Link href="/#blog" onClick={handleToggle}>
-                Blog
+                Posts
               </Link>
             </li>
             <li>

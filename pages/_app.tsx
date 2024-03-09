@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import '../styles/global.css'
+import { UserContextProvider } from '../contexts/UserContext'
 
 export default function App({ Component, pageProps }) {
   const isProduction: boolean =
@@ -45,8 +46,9 @@ export default function App({ Component, pageProps }) {
           }}
         />
       )}
-
-      <Component {...pageProps} />
+      <UserContextProvider>
+        <Component {...pageProps} />
+      </UserContextProvider>
     </>
   )
 }

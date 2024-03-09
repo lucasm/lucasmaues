@@ -2,15 +2,12 @@ import PageLayout from '../components/PageLayout'
 import Links from '../components/Links'
 import WorkCards from '../components/WorkCards'
 import BlogPosts from '../components/BlogPosts'
-import CircleMouse from '../components/CircleMouse'
 
 export default function Home() {
   return (
     <PageLayout
       title="Lucas Menezes — Frontend Software Engineer"
       description="Hello, I'm a Frontend Software Engineer from Brazil. Coding positive impact digital solutions.">
-      <CircleMouse />
-
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container home">

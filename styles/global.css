@@ -3,6 +3,9 @@
   --color-y: #ffefd5;
   --color-b: #000;
   --color-w: #fff;
+  --color-b-dark: #2d2a23;
+  --color-background: var(--color-y);
+  --color-translucent: rgb(0 0 0 / 5%);
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'Montserrat', sans-serif;
@@ -12,7 +15,7 @@
   --font-size-4: 1rem;
   --font-size-5: 0.85rem;
   --font-size-6: 1.8rem;
-  --font-size-min: 0.6rem;
+  --font-size-min: 0.65rem;
   --transition: ease 0.25s;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
@@ -30,6 +33,7 @@
 /* Scroll */
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body,
@@ -42,7 +46,8 @@ body {
   text-align: center;
   font-family: var(--font);
   font-size: 0;
-  background: var(--color-y);
+  background: var(--color-background);
+  transition: all 0.5s var(--easingDecelerate);
 }
 header {
   position: absolute;
@@ -51,33 +56,64 @@ header {
   z-index: 99999;
 }
 header .container {
-  justify-content: space-between;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 }
-
-#menu {
+header .headerButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+header .headerButtons button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
+  width: auto;
+  min-width: 7rem;
   height: 3rem;
-  font-size: 0;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  font-size: var(--font-size-5);
+  color: var(--color-b);
   background: transparent;
-  z-index: 9;
   border-radius: var(--radius);
+  border: none;
 }
-#menu:hover,
-#menu:focus {
-  background-color: var(--color-w);
+header .headerButtons button:hover,
+header .headerButtons button:focus {
+  background: var(--color-translucent);
+}
+#theme svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  transition: rotate 0.5s;
+}
+#theme:hover svg {
+  animation: rotateClockwise 0.5s;
+}
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg); /* Começa sem rotação */
+  }
+  50% {
+    transform: rotate(-20deg); /* Gira mais 180 graus */
+  }
+  100% {
+    transform: rotate(0deg); /* Gira mais 180 graus */
+  }
+}
+
+#menu {
+  z-index: 9;
 }
 .hamburger {
   position: relative;
-  width: 26px;
+  width: 24px;
   height: 4px;
   background: var(--color-b);
   transition: all var(--transition);
+  border-radius: var(--radius);
+  margin-right: 0.1rem;
 }
 .hamburger:before,
 .hamburger:after {
@@ -85,23 +121,24 @@ header .container {
   position: absolute;
   display: block;
   right: 0;
-  width: 26px;
+  width: 24px;
   height: 4px;
   background: var(--color-b);
   z-index: 1;
   transition: all var(--transition);
+  border-radius: var(--radius);
 }
 .hamburger:before {
   top: -8px;
-  width: 18px;
+  width: 16px;
 }
 .hamburger:after {
   top: 8px;
-  width: 14px;
+  width: 12px;
 }
 #menu:hover .hamburger:before,
 #menu:hover .hamburger:after {
-  width: 26px;
+  width: 24px;
 }
 #menu.open .hamburger {
   transform: rotate(45deg);
@@ -109,8 +146,8 @@ header .container {
 #menu.open .hamburger:before,
 #menu.open .hamburger:after {
   top: 0;
-  width: 26px;
-  transform: rotate(90deg);
+  width: 24px;
+  transform: rotate(-90deg);
 }
 
 .layer {
@@ -149,7 +186,7 @@ header .container {
 nav {
   height: 100%;
   width: 75vw;
-  background: var(--color-w);
+  background: var(--color-background);
   position: fixed;
   right: 0;
   top: 0;
@@ -173,7 +210,7 @@ nav ul {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: var(--color-w);
+  background: var(--color-background);
 }
 nav li {
   padding: 0;
@@ -184,10 +221,11 @@ nav a {
   justify-content: center;
   padding: 1rem 4vw;
   color: var(--color-b);
+  font-size: 3vh;
 }
 nav a:hover,
 nav a:focus {
-  background: var(--color-y);
+  background: var(--color-translucent);
 }
 
 section {
@@ -216,6 +254,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a,
+button {
+  font-family: var(--font);
 }
 
 a {
@@ -312,7 +355,7 @@ footer p,
 }
 #logo:hover,
 #logo:focus {
-  background: var(--color-w);
+  background: var(--color-translucent);
 }
 
 /* Contact */
@@ -333,7 +376,7 @@ footer p,
   top: -8px;
 }
 .contactContainer:focus {
-  background: var(--color-w);
+  background: var(--color-translucent);
 }
 
 .contactContainer p {
@@ -412,16 +455,15 @@ article blockquote {
   margin: 0.5rem 0;
   padding: 1rem 3rem;
   line-height: 1;
-  color: var(--color-w);
-  background: var(--color-b);
-  border: none;
+  color: var(--color-b);
+  background: transparent;
+  border: 1px solid var(--color-b);
   border-radius: var(--radius-big);
   cursor: pointer;
 }
 .button:hover,
 .button:focus {
-  background: var(--color-w);
-  color: var(--color-b);
+  background: var(--color-translucent);
 }
 
 /* Home */
@@ -429,7 +471,10 @@ article blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 42rem;
+  max-width: 46rem;
+}
+.home h1 {
+  text-wrap: balance;
 }
 
 /* Profile */
@@ -441,7 +486,7 @@ article blockquote {
 #profile img {
   width: 96px;
   height: 96px;
-  background: var(--color-b);
+  background: #c29d82;
   border-radius: 50%;
 }
 
@@ -457,7 +502,8 @@ article blockquote {
   justify-content: center;
   flex-direction: column;
   gap: 0.75rem;
-  margin: 1rem auto 0;
+  margin: 0 auto;
+  padding: 2rem 0 0;
   width: 100%;
   max-width: 42rem;
 }
@@ -477,7 +523,7 @@ article blockquote {
   transform: scale(1.025);
 }
 .icons a:focus {
-  background: var(--color-w);
+  background: var(--color-translucent);
 }
 .icons svg {
   width: 20px;
@@ -530,7 +576,7 @@ article blockquote {
   box-shadow: var(--shadow);
 }
 .posts a:focus {
-  background: var(--color-w);
+  background: var(--color-translucent);
 }
 
 /* Cards */
@@ -557,7 +603,7 @@ article blockquote {
   top: -8px;
 }
 .cards a:focus {
-  background: var(--color-w);
+  background: var(--color-translucent);
 }
 .cards h3,
 .cards p {
@@ -582,7 +628,6 @@ article blockquote {
   height: 4rem;
 }
 .cards span {
-  display: inline-block;
   float: left;
   font-weight: normal;
   font-size: var(--font-size-min);
@@ -609,7 +654,7 @@ article blockquote {
   position: fixed;
   width: 400px;
   height: 400px;
-  background: var(--color-w);
+  background: var(--color-translucent);
   border-radius: 100%;
   transition: transform 0.2s;
   margin: -200px 0 0 -200px;
@@ -655,14 +700,6 @@ footer p svg {
 
 /* Mobile + */
 @media only screen and (min-width: 600px) {
-  h1,
-  article h1,
-  .home h1,
-  .aboutContainer h2,
-  .contactContainer h2 {
-    font-size: var(--font-size-2);
-  }
-
   h2,
   .contactContainer a {
     font-size: var(--font-size-3);
@@ -694,7 +731,7 @@ footer p svg {
 @media only screen and (min-width: 900px) {
   header,
   footer {
-    padding: 1.75rem 3rem;
+    padding: 1.5rem 3rem;
   }
   nav {
     width: 45vw;
