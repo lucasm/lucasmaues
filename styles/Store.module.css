@@ -8,23 +8,25 @@
 
 .buttonActive {
   background: var(--color-b) !important;
-  color: var(--color-w) !important;
+  color: var(--color-background) !important;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  padding: 2rem 0 0.5rem;
+  padding: 1rem 0 0.5rem;
 }
 .buttons button {
   width: auto;
-  padding: 0.75rem 1.25rem;
+  padding: 0 1.25rem;
+  height: 2.25rem;
   border-radius: var(--radius);
   border: 0;
-  background: var(--color-w);
+  background: transparent;
   color: var(--color-b);
   /* box-shadow: var(--shadow); */
+  border: 1px solid var(--color-b);
   transition: var(--transition-hover);
   font-size: var(--font-size-5);
   font-family: var(--font-family);
@@ -52,8 +54,7 @@
   margin: 0;
   border-radius: var(--radius-big);
   transition: var(--transition-hover);
-  color: var(--color-b);
-
+  color: var(--color-b-fixed);
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -64,7 +65,7 @@
   max-width: 280px;
 }
 .container ul li a img {
-  transition: var(--transition);
+  transition: all 0.25s ease-in-out;
   padding: 1rem;
   width: 100%;
   filter: grayscale(100%);
@@ -72,8 +73,7 @@
 }
 .container ul li a:hover img,
 .container ul li a:focus img {
-  opacity: 0.9;
-  animation: shake 0.25s ease-in-out;
+  opacity: 0.85;
 }
 /* .container ul li a:hover,
 .container ul li a:focus {
@@ -83,6 +83,7 @@
 .container ul li a h2 {
   font-size: var(--font-size-3);
   padding-bottom: 1rem;
+  color: var(--color-b-fixed);
 }
 .container ul li a span {
   font-weight: normal;
@@ -104,7 +105,7 @@
 .containerDiscount:hover,
 .containerDiscount:focus {
   border-color: transparent;
-  background: var(--color-w);
+  background: var(--color-translucent);
   /* box-shadow: var(--shadow); */
 }
 .containerDiscount div {
@@ -129,21 +130,12 @@
   border-radius: 50%;
   margin-right: 2rem;
 }
-.containerDiscount svg {
+.containerDiscount figure svg {
   width: 2rem;
   height: 2rem;
 }
-
-@keyframes shake {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(0, -5px);
-  }
-  100% {
-    transform: translate(5px, 0);
-  }
+.containerDiscount figure svg path {
+  fill: var(--color-b-fixed);
 }
 
 @media screen and (max-width: 600px) {
@@ -157,6 +149,7 @@
 
   .buttons {
     flex-wrap: wrap;
+    padding: 0.5rem 0;
   }
   .containerDiscount {
     grid-template-columns: 1fr;

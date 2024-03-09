@@ -15,7 +15,9 @@ const Footer = () => (
         </svg>
       </Link>
       <p>
-        Made with <IconHeart /> by LUCASM.DEV &copy; {getYear()}
+        Made with
+        <IconHeart aria-label="love" />
+        by LUCASM.DEV &copy; {getYear()}
       </p>
       <p>
         <Link href="/privacy">Privacy</Link>

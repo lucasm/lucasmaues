@@ -23,7 +23,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="blog">
+      <section id="posts">
         <div className="container">
           <h2 className="subtitle">Latest posts</h2>
 

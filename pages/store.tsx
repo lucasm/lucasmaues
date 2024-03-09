@@ -7,7 +7,8 @@ import { IconHeart, IconStar } from '../components/Svgs'
 const productsBrazil = [
   {
     title: 'Apple AirPods Pro 2',
-    description: 'Fone de ouvido Bluetooth com áudio espacial e cancelamento de ruído padrão Apple',
+    description:
+      'Fone de ouvido Bluetooth definitivo, com áudio espacial e cancelamento de ruído padrão Apple',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -21,7 +22,7 @@ const productsBrazil = [
   },
   {
     title: 'Logitech MX Vertical',
-    description: 'Melhor mouse Bluetooth ergonômico já criado pelo homem',
+    description: 'Melhor mouse ergonômico Bluetooth já criado',
     url: 'https://amzn.to/3Q2pxHV',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -29,7 +30,7 @@ const productsBrazil = [
   {
     title: 'Logitech MX Keys Mini',
     description:
-      'Teclado compacto, iluminado, Bluetooth, USB-C, bateria recarregável e até 3 dispositivos',
+      'Teclado Bluetooth compacto, iluminado, USB-C, bateria recarregável e até 3 dispositivos',
     url: 'https://amzn.to/3OwLrDM',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -400,39 +401,39 @@ export default function PageStore() {
 
   return (
     <PageLayout
-      title="Produtos Recomendados na Amazon — Lucas Menezes"
+      title="Produtos Recomendados na Amazon™ — Lucas Menezes"
       description="Curadoria com produtos recomendados e favoritos na Amazon.">
       <section>
-        <div className="container home">
+        <div className="container page">
           <figure className={Style.icon}>
             <IconStar />
           </figure>
           <h1>Produtos Recomendados na Amazon™</h1>
 
           <p>
-            Muitas pessoas me perguntam, então criei essa lista com os meus produtos favoritos e
-            (super) recomendados! Todos os produtos estão na Amazon.
+            Sempre me perguntam: "qual esse modelo?" ou "onde comprou?"... Então criei essa lista
+            com meus produtos recomendados e favoritos na Amazon.
           </p>
 
           <div className={Style.buttons}>
             <button
               onClick={() => handleClick('Todos')}
-              className={category === 'Todos' && Style.buttonActive}>
+              className={category === 'Todos' ? Style.buttonActive : undefined}>
               Tudo
             </button>
             <button
               onClick={() => handleClick('Dispositivos')}
-              className={category === 'Dispositivos' && Style.buttonActive}>
+              className={category === 'Dispositivos' ? Style.buttonActive : undefined}>
               Dispositivos
             </button>
             <button
               onClick={() => handleClick('Acessórios')}
-              className={category === 'Acessórios' && Style.buttonActive}>
+              className={category === 'Acessórios' ? Style.buttonActive : undefined}>
               Acessórios
             </button>
             <button
               onClick={() => handleClick('Livros')}
-              className={category === 'Livros' && Style.buttonActive}>
+              className={category === 'Livros' ? Style.buttonActive : undefined}>
               Livros
             </button>
           </div>
@@ -456,7 +457,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$ 5,00 de Cashback"
-          subtitle="Ganhe R$ 5,00 (cinco reais) na próxima compra online usando a minha indicação do Méliuz."
+          subtitle="Ganhe R$ 5,00 na próxima compra online usando a minha indicação do Méliuz."
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />

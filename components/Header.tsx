@@ -35,6 +35,11 @@ export default function Header() {
         </Link>
 
         <div className="headerButtons">
+          <button onClick={toggleTheme} id="theme" translate="no">
+            {theme == 'dark' ? <IconMoon /> : <IconSun />}
+            {theme === 'dark' ? 'Dark' : 'Light'}
+          </button>
+
           <button
             onClick={handleToggle}
             className={isActive ? 'open' : undefined}
@@ -45,17 +50,12 @@ export default function Header() {
             <div className="hamburger"></div>
             Menu
           </button>
-
-          <button onClick={toggleTheme} id="theme" translate="no">
-            {theme == 'dark' ? <IconMoon /> : <IconSun />}
-            {theme === 'dark' ? 'Dark' : 'Light'}
-          </button>
         </div>
 
         <nav className={isActive ? 'open' : undefined}>
           <ul>
             <li>
-              <Link href="/#blog" onClick={handleToggle}>
+              <Link href="/#posts" onClick={handleToggle}>
                 Posts
               </Link>
             </li>
