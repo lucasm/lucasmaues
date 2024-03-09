@@ -123,10 +123,9 @@ header a:focus {
 .hamburger {
   position: relative;
   width: 24px;
-  height: 4px;
+  height: 3px;
   background: var(--color-b);
   transition: all var(--transition);
-  border-radius: var(--radius);
 }
 .hamburger:before,
 .hamburger:after {
@@ -135,11 +134,10 @@ header a:focus {
   display: block;
   right: 0;
   width: 24px;
-  height: 4px;
+  height: 3px;
   background: var(--color-b);
   z-index: 1;
   transition: all var(--transition);
-  border-radius: var(--radius);
 }
 .hamburger:before {
   top: -8px;
