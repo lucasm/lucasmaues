@@ -35,7 +35,7 @@ const Links: ILinks[] = [
   {
     url: 'https://patreon.com/lucasm',
     icon: <IconPatreon />,
-    text: 'Patreon - Apoio e Mentoria Dev',
+    text: 'Patreon - Mentoria Dev',
     active: true,
   },
   {
@@ -50,6 +50,12 @@ const Links: ILinks[] = [
     text: 'GitHub - Open Source',
     active: true,
   },
+  // {
+  //   url: 'https://buymeacoffee.com/lucasm',
+  //   icon: <IconGithub />,
+  //   text: 'Buy Me a Coffee',
+  //   active: false,
+  // },
   {
     url: 'https://codepen.io/lucasm',
     icon: <IconCodepen />,
@@ -68,36 +74,36 @@ const Links: ILinks[] = [
     text: 'Instagram',
     active: true,
   },
-  {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconStar />,
-    text: 'YouTube',
-    active: false,
-  },
-  {
-    url: 'https://discord.com/users/lucasmezs',
-    icon: <IconStar />,
-    text: 'Discord',
-    active: false,
-  },
-  {
-    url: 'https://t.me/lucasmezs',
-    icon: <IconStar />,
-    text: 'Telegram',
-    active: false,
-  },
-  {
-    url: 'https://dribbble.com/lucasm',
-    icon: <IconStar />,
-    text: 'Dribbble',
-    active: false,
-  },
-  {
-    url: 'https://open.spotify.com/user/lucasmauess',
-    icon: <IconStar />,
-    text: 'Spotify',
-    active: false,
-  },
+  // {
+  //   url: 'https://youtube.com/@lucasmdev',
+  //   icon: <IconStar />,
+  //   text: 'YouTube',
+  //   active: false,
+  // },
+  // {
+  //   url: 'https://discord.com/users/lucasmezs',
+  //   icon: <IconStar />,
+  //   text: 'Discord',
+  //   active: false,
+  // },
+  // {
+  //   url: 'https://t.me/lucasmezs',
+  //   icon: <IconStar />,
+  //   text: 'Telegram',
+  //   active: false,
+  // },
+  // {
+  //   url: 'https://dribbble.com/lucasm',
+  //   icon: <IconStar />,
+  //   text: 'Dribbble',
+  //   active: false,
+  // },
+  // {
+  //   url: 'https://open.spotify.com/user/lucasmauess',
+  //   icon: <IconStar />,
+  //   text: 'Spotify',
+  //   active: false,
+  // },
   // https://www.tvtime.com/pt_BR/user/4994111/profile
 ]
 
