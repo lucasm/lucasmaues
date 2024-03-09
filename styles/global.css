@@ -97,8 +97,8 @@ header a:focus {
   background: var(--color-translucent);
 }
 #theme svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.75rem;
+  height: 1.75rem;
   transition: rotate 0.5s;
 }
 #theme:hover svg {
@@ -127,7 +127,6 @@ header a:focus {
   background: var(--color-b);
   transition: all var(--transition);
   border-radius: var(--radius);
-  margin-right: 0.1rem;
 }
 .hamburger:before,
 .hamburger:after {
@@ -733,6 +732,9 @@ footer p svg {
     gap: 0.5rem;
     padding: 0 1rem;
     font-size: var(--font-size-5);
+  }
+  .hamburger {
+    margin-right: 0.1rem;
   }
 
   nav {

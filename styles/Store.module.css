@@ -60,7 +60,7 @@
   align-items: center;
   transition: var(--transition);
   text-align: left;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 3rem;
   flex-direction: column;
   max-width: 280px;
 }

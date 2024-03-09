@@ -401,14 +401,14 @@ export default function PageStore() {
 
   return (
     <PageLayout
-      title="Produtos Recomendados na Amazon™ — Lucas Menezes"
+      title="Produtos Recomendados — Lucas Menezes"
       description="Curadoria com produtos recomendados e favoritos na Amazon.">
       <section>
         <div className="container page">
           <figure className={Style.icon}>
             <IconStar />
           </figure>
-          <h1>Produtos Recomendados na Amazon™</h1>
+          <h1>Produtos Recomendados</h1>
 
           <p>
             Sempre me perguntam: "qual esse modelo?" ou "onde comprou?"... Então criei essa lista

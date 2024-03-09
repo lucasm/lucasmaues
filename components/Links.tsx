@@ -28,7 +28,7 @@ const Links: ILinks[] = [
   {
     url: '/store',
     icon: <IconStar />,
-    text: 'Produtos Recomendados na Amazon™',
+    text: 'Produtos Recomendados',
     active: true,
     internalPage: true,
   },
