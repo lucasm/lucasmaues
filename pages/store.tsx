@@ -8,57 +8,58 @@ const productsBrazil = [
   {
     title: 'Apple AirPods Pro 2',
     description:
-      'Fone de ouvido Bluetooth definitivo, com áudio espacial e cancelamento de ruído padrão Apple',
+      'O melhor fone Bluetooth, com áudio espacial e cancelamento de ruído padrão Apple.',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Apple iPhone 15 128GB',
-    description: 'iPhone com ótimo desempenho, câmera de qualidade, boa duração de bateria e USB-C',
+    description:
+      'iPhone com desempenho reconhecido, câmera de qualidade, USB-C e boa duração de bateria.',
     url: 'https://amzn.to/49uT9pP',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Logitech MX Vertical',
-    description: 'Melhor mouse ergonômico Bluetooth já criado',
+    title: 'Mouse Logitech MX Vertical',
+    description: 'Melhor mouse ergonômico Bluetooth já criado na história.',
     url: 'https://amzn.to/3Q2pxHV',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Logitech MX Keys Mini',
+    title: 'Teclado Logitech MX Keys Mini',
     description:
-      'Teclado Bluetooth compacto, iluminado, USB-C, bateria recarregável e até 3 dispositivos',
+      'Teclado Bluetooth compacto, iluminado, USB-C, bateria recarregável e até 3 dispositivos.',
     url: 'https://amzn.to/3OwLrDM',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Stanley Aerolight Fast Flow',
-    description: 'Garrafa térmica 710ML, boa para academia e viagens',
+    description: 'Garrafa térmica 710ML, perfeita para academia e viagens.',
     url: 'https://amzn.to/3uDXl7H',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
     category: 'Acessórios',
   },
   {
     title: 'JBL Flip 6',
-    description: 'Caixa de som Bluetooth para todas as horas, mesmo na piscina!',
+    description: 'Caixa de som Bluetooth para todas as horas, mesmo na piscina.',
     url: 'https://amzn.to/45IVz1o',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Dell Monitores 4K, UHD e Full HD',
-    description: 'Referência em monitores duráveis, com suporte elogiado',
+    title: 'Monitores Dell 4K, UHD e Full HD',
+    description: 'Referência em monitores duráveis, a Dell tem suporte elogiado.',
     url: 'https://amzn.to/3uqCLHx',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Apple MacBook Air M2 15,3" 8GB 256GB',
-    description: 'Mac leve, portátil e com chip de alto desempenho',
+    description: 'MacBook leve, portátil e com chip M2 de alto desempenho.',
     url: 'https://amzn.to/3rMaLg5',
     image: 'https://m.media-amazon.com/images/I/81Fm0tRFdHL.__AC_SY445_SX342_QL70_ML2_.jpg',
     category: 'Dispositivos',
@@ -66,139 +67,140 @@ const productsBrazil = [
   {
     title: 'Echo Dot 5 Alexa',
     description:
-      'Caixinha de som inteligente, toca música e conversa com IA - "ei Alexa toca uma música"',
+      'Caixinha de som inteligente, toca música e conversa com IA - "ei Alexa toca uma música".',
     url: 'https://amzn.to/45jAJFL',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'JBL Go 3',
-    description: 'Caixinha de som Bluetooth pra quem você gosta',
+    description: 'Caixinha de som Bluetooth, bom presente para quem você gosta.',
     url: 'https://amzn.to/43CrM9C',
     image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'JBL Tune 110',
-    description: 'Fone de ouvido com fio durável e com microfone',
+    description: 'Fone de ouvido com fio durável e com microfone.',
     url: 'https://amzn.to/46Dtp9h',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Mochila Dell Pro EcoLoop',
-    description: 'Mochila para Notebook impermeável',
+    description: 'Mochila para Notebook impermeável.',
     url: 'https://amzn.to/3TgB6yc',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
     category: 'Acessórios',
   },
   {
     title: 'Fire TV Stick Full HD',
-    description: 'Controle remoto com Alexa que transforma sua TV em uma central de streamings',
+    description: 'Controle remoto com Alexa que transforma sua TV em uma central de streamings.',
     url: 'https://amzn.to/44YKNnK',
     image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Logitech Lift Vertical',
-    description: 'Mouse ergonômico Bluetooth menor e mais barato que o MX Vertical',
+    description: 'Mouse ergonômico Bluetooth menor e mais barato que o MX Vertical.',
     url: 'https://amzn.to/3HKL5VS',
     image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Kindle 11',
-    description: 'Leitor de livros digitais definitivo',
+    description: 'O leitor de livros digitais definitivo.',
     url: 'https://amzn.to/3QdXiaV',
     image: 'https://m.media-amazon.com/images/I/71B1wzw1LkL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Mini Projetor 5G WiFi Bluetooth 4K Full HD',
-    description: 'Projetor portátil com preço imbatível',
+    title: 'Mini Projetor Full HD HDMI WiFi 5G Bluetooth',
+    description: 'Projetor portátil com preço imbatível.',
     url: 'https://amzn.to/3F4zAHn',
     image: 'https://m.media-amazon.com/images/I/5133wKaOqSL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Suporte de Notebook',
-    description: 'Segura essa marimba',
-    url: 'https://amzn.to/401PVGi',
-    image: 'https://m.media-amazon.com/images/I/61ZqTo-kwpL._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
-  {
-    title: 'Baseus USB C Hub Adaptador',
-    description: 'Hub USB-C com multientradas',
-    url: 'https://amzn.to/3tOi33C',
-    image: 'https://m.media-amazon.com/images/I/61f6gHVPN6L._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
-  {
-    title: 'Clamper Filtro de Linha',
-    description: 'Proteção certificada para 5 equipamentos não queimarem com surtos elétricos',
+    title: 'Filtro de Linha Clamper',
+    description:
+      'Proteção certificada, proteja até 5 equipamentos para não queimarem com surtos elétricos.',
     url: 'https://amzn.to/3Mb5Mg9',
     image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
     category: 'Acessórios',
   },
-
   {
-    title: 'Apple Watch Series 7 GPS + Cellular',
-    description: 'Melhor smartwatch para monitorar sono, saúde e esportes',
-    url: 'https://amzn.to/45yB73i',
-    image: 'https://m.media-amazon.com/images/I/51IxCp-f3tL._AC_SX679_.jpg',
+    title: 'Apple Watch SE',
+    description: 'Melhor smartwatch, monitora sono, dados de saúde e esportes.',
+    url: 'https://amzn.to/3TNsluz',
+    image: 'https://m.media-amazon.com/images/I/515EBszYPBL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Apple iPad 10,9" 64GB',
-    description: 'Melhor tablet do mundo, acessível',
+    description: 'Melhor tablet do mundo.',
     url: 'https://amzn.to/45F8t0g',
     image: 'https://m.media-amazon.com/images/I/41pCFSDVeBL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Logitech MX Keys S',
-    description: 'Teclado sem fio projetado para alta produtividade',
+    description: 'Teclado Bluetooth ideal para produtividade.',
     url: 'https://amzn.to/3tLZkpo',
     image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Webcam Full HD Logitech C920s',
-    description: 'Webcam com microfone e modo privacidade, ideal para home office',
-    url: 'https://amzn.to/4028v1e',
-    image: 'https://m.media-amazon.com/images/I/61SCZyiMSNL._AC_SX679_.jpg',
+    title: 'Webcam Logitech Brio 500 ',
+    description:
+      'Webcam Full HD ideal para home office, com foco automático, microfone que reduz barulhos e modo privacidade.',
+    url: 'https://amzn.to/4cnZe9t',
+    image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Xiaomi Mi Band 8 Global',
-    description: 'Smartwatch com preço imbatível',
+    title: 'Xiaomi Mi Band 8',
+    description: 'Smartwatch leve, com preço imbatível.',
     url: 'https://amzn.to/404gMl8',
     image: 'https://m.media-amazon.com/images/I/51W7hGYxPOL._AC_SY879_.jpg',
     category: 'Dispositivos',
   },
   {
+    title: 'Xiaomi Redmi Note 12 128GB',
+    description: 'Smarthphone com preço imbatível, com suporte a dois chips SIM.',
+    url: 'https://amzn.to/4bp2Tn6',
+    image: 'https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY879_.jpg',
+    category: 'Dispositivos',
+  },
+  {
     title: 'Apple iPhone 13 128GB',
-    description: 'iPhone que vale o preço mas com cabo Lightning',
+    description: 'Um iPhone que vale o preço, mas note que o cabo é Lightning.',
     url: 'https://amzn.to/3rKdF4O',
     image: 'https://m.media-amazon.com/images/I/41rfDU6FGqL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Apple MacBook Air M1 13" 8GB 256GB',
-    description: 'Mac leve, desempenho e duração de bateria absurdos',
+    description:
+      'MacBook acessível, super portátil, atinge desempenho e duração de bateria incríveis com chip M1. Obra prima!',
     url: 'https://amzn.to/45JUIxs',
     image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
-    title: 'Smartphone Xiaomi Redmi Note 12 128GB',
-    description: 'Smarthphone com preço imbatível e dois chips',
-    url: 'https://amzn.to/4bp2Tn6',
-    image: 'https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY879_.jpg',
-    category: 'Dispositivos',
+    title: 'Suporte para Notebooks',
+    description: 'Segura essa marimba!!!',
+    url: 'https://amzn.to/401PVGi',
+    image: 'https://m.media-amazon.com/images/I/61ZqTo-kwpL._AC_SX679_.jpg',
+    category: 'Acessórios',
   },
-
+  {
+    title: 'USB-C Adaptador Hub Baseus',
+    description: 'Hub USB-C com multientradas, como HDMI, USB, SD e microSD.',
+    url: 'https://amzn.to/3tOi33C',
+    image: 'https://m.media-amazon.com/images/I/61f6gHVPN6L._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
   {
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     description:
@@ -401,18 +403,20 @@ export default function PageStore() {
 
   return (
     <PageLayout
-      title="Produtos Recomendados — Lucas Menezes"
+      title="Produtos Recomendados Amazon™ — Lucas Menezes"
       description="Curadoria com produtos recomendados e favoritos na Amazon.">
       <section>
         <div className="container page">
           <figure className={Style.icon}>
             <IconStar />
           </figure>
-          <h1>Produtos Recomendados</h1>
+          <h1>Produtos Recomendados Amazon™</h1>
 
           <p>
-            Sempre me perguntam: "qual esse modelo?" ou "onde comprou?"... Então criei essa lista
-            com meus produtos recomendados e favoritos na Amazon.
+            Vocês sempre me perguntam: "qual é esse modelo?" ou "onde diabos você comprou?"... Então
+            reuni meus produtos recomendados e favoritos. Atualizo essa lista sempre que me dá na
+            telha (compro algo novo e aprovo). Os produtos estão na Amazon. No final da página tem
+            desconto, aproveite!
           </p>
 
           <div className={Style.buttons}>
@@ -457,7 +461,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$ 5,00 de Cashback"
-          subtitle="Ganhe R$ 5,00 na próxima compra online usando a minha indicação do Méliuz."
+          subtitle="Ganhe R$ 5,00 de volta na sua próxima compra! Basta ativar o Méliuz."
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />

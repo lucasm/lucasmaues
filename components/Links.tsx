@@ -5,9 +5,10 @@ import {
   IconDev,
   IconGithub,
   IconPatreon,
-  IconTwitter,
+  IconX,
   IconLinkedin,
   IconInstagram,
+  IconYoutube,
 } from './Svgs'
 
 interface ILinks {
@@ -20,42 +21,36 @@ interface ILinks {
 
 const Links: ILinks[] = [
   {
-    url: 'https://twitter.com/lucasmezs',
-    icon: <IconTwitter />,
-    text: 'Twitter',
+    url: 'https://x.com/lucasmezs',
+    icon: <IconX />,
+    text: 'X (Twitter)',
     active: true,
   },
   {
     url: '/store',
     icon: <IconStar />,
-    text: 'Produtos Recomendados',
+    text: 'Produtos Recomendados Amazon™',
     active: true,
     internalPage: true,
   },
   {
-    url: 'https://patreon.com/lucasm',
-    icon: <IconPatreon />,
-    text: 'Patreon - Mentoria Dev',
+    url: 'https://dev.to/lucasm',
+    icon: <IconDev />,
+    text: 'DEV',
     active: true,
   },
   {
-    url: 'https://dev.to/lucasm',
-    icon: <IconDev />,
-    text: 'DEV - Blog',
+    url: 'https://patreon.com/lucasm',
+    icon: <IconPatreon />,
+    text: 'Patreon - Mentorias Dev',
     active: true,
   },
   {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
-    text: 'GitHub - Open Source',
+    text: 'GitHub',
     active: true,
   },
-  // {
-  //   url: 'https://buymeacoffee.com/lucasm',
-  //   icon: <IconGithub />,
-  //   text: 'Buy Me a Coffee',
-  //   active: false,
-  // },
   {
     url: 'https://codepen.io/lucasm',
     icon: <IconCodepen />,
@@ -72,12 +67,18 @@ const Links: ILinks[] = [
     url: 'https://instagram.com/lucasmezs',
     icon: <IconInstagram />,
     text: 'Instagram',
+    active: false,
+  },
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
     active: true,
   },
   // {
-  //   url: 'https://youtube.com/@lucasmdev',
-  //   icon: <IconStar />,
-  //   text: 'YouTube',
+  //   url: 'https://buymeacoffee.com/lucasm',
+  //   icon: <IconGithub />,
+  //   text: 'Buy Me a Coffee',
   //   active: false,
   // },
   // {

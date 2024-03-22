@@ -8,7 +8,7 @@
 
 .buttonActive {
   background: var(--color-b) !important;
-  color: var(--color-background) !important;
+  color: var(--color-w-text) !important;
 }
 
 .buttons {
@@ -19,8 +19,8 @@
 }
 .buttons button {
   width: auto;
-  padding: 0 1.25rem;
-  height: 2.25rem;
+  padding: 0 1.5rem;
+  height: 2.5rem;
   border-radius: var(--radius);
   border: 0;
   background: transparent;

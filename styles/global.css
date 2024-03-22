@@ -6,12 +6,12 @@
   --color-b-dark: #2d2a23;
   --color-background: var(--color-y);
   --color-b-fixed: #2d2a23;
-  --color-w-fixed: #fff;
+  --color-w-text: #fff;
   --color-translucent: rgb(0 0 0 / 5%);
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'Montserrat', sans-serif;
-  --font-size-1: 4.4rem;
+  --font-size-1: 3.6rem;
   --font-size-2: 1.4rem;
   --font-size-3: 1.2rem;
   --font-size-4: 1rem;
@@ -22,7 +22,7 @@
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
   --max-width: 1024px;
-  --max-width-content: 46rem;
+  --max-width-content: 42rem;
   --shadow: 0 1.6px 3.6px 0 rgb(0 0 0 / 7%), 0 0.3px 0.9px 0 rgb(0 0 0 / 5%);
 }
 
@@ -459,7 +459,7 @@ article blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: var(--max-width-content);
+  /* max-width: var(--max-width-content); */
 }
 .home h1 {
   text-wrap: balance;
@@ -496,7 +496,7 @@ article blockquote {
   margin: 0 auto;
   padding: 2rem 0 0;
   width: 100%;
-  max-width: 42rem;
+  max-width: var(--max-width-content);
 }
 .icons a {
   display: grid;

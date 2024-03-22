@@ -19,6 +19,10 @@ export function UserContextProvider({ children }) {
         theme === 'dark' ? 'var(--color-w)' : 'var(--color-b-dark)'
       )
       root.style.setProperty(
+        '--color-w-text',
+        theme === 'dark' ? 'var(--color-b-fixed)' : 'var(--color-w)'
+      )
+      root.style.setProperty(
         '--color-background',
         theme === 'dark' ? 'var(--color-b-dark)' : 'var(--color-y)'
       )
