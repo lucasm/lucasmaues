@@ -422,9 +422,9 @@ export default function PageStore() {
           <h1>Produtos Recomendados</h1>
 
           <p>
-            Sempre me perguntam: "onde você comprou isso?"... Então criei essa listagem com os meus
-            produtos recomendados e favoritos. Todos os produtos estão na Amazon. No final da página
-            tem desconto, aproveite!
+            Sempre me perguntam: 'onde você comprou isso?'... Então, decidi compartilhar meus
+            produtos recomendados e favoritos aqui! Todos estão disponíveis na Amazon. No final da
+            página tem desconto, aproveite!
           </p>
 
           <div className={Style.buttons}>

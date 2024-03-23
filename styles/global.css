@@ -513,6 +513,8 @@ article blockquote {
 .icons li a:hover,
 .icons li a:focus {
   transform: scale(1.025);
+}
+.icons li a:focus {
   background: var(--color-translucent);
 }
 
@@ -525,6 +527,8 @@ article blockquote {
   font-size: var(--font-size-4);
   color: var(--color-b);
   border-radius: var(--radius);
+  text-align: left;
+  line-height: 1;
 }
 .icons > li:nth-child(7) {
   margin-top: 1.75rem;
@@ -704,10 +708,6 @@ footer p svg {
 @media only screen and (min-width: 600px) {
   h2,
   .contactContainer a {
-    font-size: var(--font-size-3);
-  }
-
-  .icons span {
     font-size: var(--font-size-3);
   }
 
