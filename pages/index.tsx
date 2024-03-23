@@ -8,7 +8,7 @@ export default function Home() {
     <PageLayout
       title="Lucas Menezes — Frontend Software Engineer"
       description="Hello, I'm a Frontend Software Engineer from Brazil. Coding positive impact digital solutions.">
-      <section className="fullscreen">
+      <section className="fullscreen" id="home">
         <div className="fullscreen-container">
           <div className="container home">
             <figure id="profile">

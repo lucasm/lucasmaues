@@ -287,7 +287,6 @@ button,
 }
 
 p,
-li,
 h1,
 h2,
 h3 {
@@ -345,7 +344,6 @@ nav a,
 }
 
 p,
-li,
 input,
 textarea,
 input,
@@ -490,39 +488,52 @@ article blockquote {
 /* Social Icons */
 .icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
   margin: 0 auto;
   padding: 2rem 0 0;
   width: 100%;
-  max-width: var(--max-width-content);
+  max-width: 500px;
+  list-style: none;
 }
-.icons a {
-  display: grid;
-  grid-template-columns: 3.5rem 1fr;
+.icons li {
+  padding: 0;
+}
+.icons li a {
+  display: flex;
   align-items: center;
-  width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   background: transparent;
-  border-radius: var(--radius);
-  transition: transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  font-size: 0;
   border: 1px solid var(--color-b);
+  border-radius: var(--radius-big);
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
-.icons a:hover,
-.icons a:focus {
+.icons li a:hover,
+.icons li a:focus {
   transform: scale(1.025);
-}
-.icons a:focus {
   background: var(--color-translucent);
 }
+
+.icons .full-text {
+  width: 100%;
+}
+.icons .full-text a {
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  font-size: var(--font-size-4);
+  color: var(--color-b);
+  border-radius: var(--radius);
+}
+.icons > li:nth-child(7) {
+  margin-top: 1.75rem;
+  /* background: blue; */
+}
+
 .icons svg {
   width: 20px;
   height: 20px;
-}
-.icons span {
-  font-size: var(--font-size-4);
-  text-align: left;
 }
 
 /* Posts */

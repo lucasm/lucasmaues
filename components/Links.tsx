@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import {
-  IconStar,
   IconCodepen,
   IconDev,
   IconGithub,
@@ -9,6 +8,7 @@ import {
   IconLinkedin,
   IconInstagram,
   IconYoutube,
+  IconHeart,
 } from './Svgs'
 
 interface ILinks {
@@ -17,6 +17,7 @@ interface ILinks {
   text: string
   internalPage?: boolean
   active: boolean
+  fullText?: boolean
 }
 
 const Links: ILinks[] = [
@@ -27,22 +28,9 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: '/store',
-    icon: <IconStar />,
-    text: 'Produtos Recomendados Amazon™',
-    active: true,
-    internalPage: true,
-  },
-  {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
     text: 'DEV',
-    active: true,
-  },
-  {
-    url: 'https://patreon.com/lucasm',
-    icon: <IconPatreon />,
-    text: 'Patreon - Mentorias Dev',
     active: true,
   },
   {
@@ -64,17 +52,32 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://instagram.com/lucasmezs',
-    icon: <IconInstagram />,
-    text: 'Instagram',
-    active: false,
-  },
-  {
     url: 'https://youtube.com/@lucasmdev',
     icon: <IconYoutube />,
     text: 'YouTube',
     active: true,
   },
+  {
+    url: '/store',
+    icon: <IconHeart />,
+    text: 'Produtos Recomendados',
+    active: true,
+    internalPage: true,
+    fullText: true,
+  },
+  {
+    url: 'https://patreon.com/lucasm',
+    icon: <IconPatreon />,
+    text: 'Mentoria para Devs',
+    active: true,
+    fullText: true,
+  },
+  // {
+  //   url: 'https://instagram.com/lucasmezs',
+  //   icon: <IconInstagram />,
+  //   text: 'Instagram',
+  //   active: false,
+  // },
   // {
   //   url: 'https://buymeacoffee.com/lucasm',
   //   icon: <IconGithub />,
@@ -110,17 +113,18 @@ const Links: ILinks[] = [
 
 export default function ComponentLinks() {
   return (
-    <div className="icons" id="links">
+    <ul className="icons">
       {Links?.filter((link) => link.active).map((link, index) => (
-        <Link
-          key={index}
-          href={link.url}
-          target={link.internalPage ? '_self' : '_blank'}
-          rel={link.internalPage ? 'prefetch' : 'noopener'}>
-          {link.icon}
-          <span>{link.text}</span>
-        </Link>
+        <li key={index} className={link.fullText ? 'full-text' : undefined}>
+          <Link
+            href={link.url}
+            target={link.internalPage ? '_self' : '_blank'}
+            rel={link.internalPage ? 'prefetch' : 'noopener'}>
+            {link.icon}
+            {link.text}
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 }
