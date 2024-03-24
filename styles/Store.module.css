@@ -68,7 +68,7 @@
 }
 .container ul li a img {
   transition: all 0.25s ease-in-out;
-  padding: 1rem;
+  padding: 1rem 1.5rem 1rem;
   width: 100%;
   filter: grayscale(100%);
   background: var(--color-white);
@@ -153,6 +153,19 @@
     flex-wrap: wrap;
     padding: 0.5rem 0;
   }
+  .buttons button {
+    padding: 0 1rem;
+    height: 2rem;
+    font-size: var(--font-size-5);
+  }
+
+  .container ul li a h2 {
+    font-size: var(--font-size-4);
+  }
+  .container ul li a img {
+    width: 148px;
+  }
+
   .containerDiscount {
     grid-template-columns: 1fr;
     padding: 2rem;

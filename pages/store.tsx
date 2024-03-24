@@ -6,6 +6,21 @@ import { IconHeart } from '../components/Svgs'
 
 const productsBrazil = [
   {
+    title: 'Mouse Logitech MX Vertical',
+    description: 'Melhor mouse ergonômico Bluetooth já criado na história.',
+    url: 'https://amzn.to/3Q2pxHV',
+    image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
+    category: 'Dispositivos',
+  },
+  {
+    title: 'Teclado Logitech MX Keys Mini',
+    description:
+      'Teclado Bluetooth compacto, iluminado, USB-C, bateria recarregável e até 3 dispositivos.',
+    url: 'https://amzn.to/3OwLrDM',
+    image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
+    category: 'Dispositivos',
+  },
+  {
     title: 'Apple AirPods Pro 2',
     description:
       'O melhor fone Bluetooth, com áudio espacial e cancelamento de ruído padrão Apple.',
@@ -19,21 +34,6 @@ const productsBrazil = [
       'iPhone com desempenho reconhecido, câmera de qualidade, USB-C e boa duração de bateria.',
     url: 'https://amzn.to/49uT9pP',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
-    category: 'Dispositivos',
-  },
-  {
-    title: 'Mouse Logitech MX Vertical',
-    description: 'Melhor mouse ergonômico Bluetooth já criado na história.',
-    url: 'https://amzn.to/3Q2pxHV',
-    image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
-    category: 'Dispositivos',
-  },
-  {
-    title: 'Teclado Logitech MX Keys Mini',
-    description:
-      'Teclado Bluetooth compacto, iluminado, USB-C, bateria recarregável e até 3 dispositivos.',
-    url: 'https://amzn.to/3OwLrDM',
-    image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
