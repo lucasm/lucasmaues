@@ -18,6 +18,8 @@
   padding: 1rem 0 0.5rem;
 }
 .buttons button {
+  display: flex;
+  align-items: center;
   width: auto;
   padding: 0 1.5rem;
   height: 2.5rem;
@@ -28,7 +30,7 @@
   /* box-shadow: var(--shadow); */
   border: 1px solid var(--color-b);
   transition: var(--transition-hover);
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-4);
   font-family: var(--font-family);
 }
 
@@ -38,7 +40,7 @@
 .container ul {
   width: 100%;
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

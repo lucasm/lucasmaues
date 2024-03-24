@@ -38,7 +38,7 @@ const productsBrazil = [
   },
   {
     title: 'Stanley Aerolight Fast Flow',
-    description: 'Garrafa térmica 710ML, perfeita para academia e viagens.',
+    description: 'Garrafa térmica 710ML, perfeita para academia e viagens. Sou apaixonado.',
     url: 'https://amzn.to/3uDXl7H',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -89,7 +89,8 @@ const productsBrazil = [
   },
   {
     title: 'Mochila Dell Pro EcoLoop',
-    description: 'Mochila para Notebook impermeável.',
+    description:
+      'Mochila para Notebook com bastantes divisões, ecológica e com resistência a água.',
     url: 'https://amzn.to/3TgB6yc',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
     category: 'Acessórios',
@@ -118,24 +119,48 @@ const productsBrazil = [
   {
     title: 'Filtro de Linha Clamper',
     description:
-      'Proteção certificada, proteja até 5 equipamentos para não queimarem com surtos elétricos.',
+      'Proteção certificada contra surtos elétricos. Até 5 equipamentos protegidos para não queimarem.',
     url: 'https://amzn.to/3Mb5Mg9',
     image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
     category: 'Acessórios',
   },
   {
     title: 'Logitech MX Keys S',
-    description: 'Teclado Bluetooth famoso pela alta produtividade.',
+    description:
+      'Teclado Bluetooth completo. Com teclas numéricas dedicadas. Famoso pela alta produtividade.',
     url: 'https://amzn.to/3tLZkpo',
     image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Logitech Lift Vertical',
-    description: 'Mouse ergonômico Bluetooth pequeno - e mais barato que o MX Vertical.',
+    description: 'Mouse Bluetooth ergonômico e compacto.',
     url: 'https://amzn.to/3HKL5VS',
     image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
+  },
+  {
+    title: 'Abajur Luminária Pixar',
+    description: 'Abajur (tipo Pixar) com braço articulado, base para mesa e agarrador.',
+    url: 'https://amzn.to/4crKlD3',
+    image: 'https://m.media-amazon.com/images/I/510SeRtQxzL._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
+  {
+    title: 'Banquinho Apoio para os Pés ',
+    description:
+      'Apoio para os pés embaixo da mesa, com altura ajustável em 6 posições. Ergonômico. Sua saúde agradece.',
+    url: 'https://amzn.to/3vmkkV7',
+    image: 'https://m.media-amazon.com/images/I/615lH-lmwNL._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
+  {
+    title: 'Smart Lâmpada Positivo 9W RGB Wi-Fi ',
+    description:
+      'A linha casa inteligente da Positivo é um acerto! Lâmpada com cor branca (quente e fria) e RGB (16 milhões de cores). Compatível com Alexa e Google.',
+    url: 'https://amzn.to/43xUR7N',
+    image: 'https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX679_.jpg',
+    category: 'Acessórios',
   },
   {
     title: 'Xiaomi Mi Band 8',
@@ -146,14 +171,14 @@ const productsBrazil = [
   },
   {
     title: 'Apple Watch SE',
-    description: 'Smartwatch da Apple, com GPS, monitoramento de sono, saúde e esportes.',
+    description: 'Smartwatch da Apple, com GPS, monitoramento de sono, esportes e saúde.',
     url: 'https://amzn.to/3TNsluz',
     image: 'https://m.media-amazon.com/images/I/515EBszYPBL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'Samsung Galaxy Tab A9+ 64GB 5G Wi-Fi',
-    description: 'Tablet Android com preço imbatível.',
+    description: 'Tablet Android com custo-benefício imbatível.',
     url: 'https://amzn.to/49dhGyK',
     image: 'https://m.media-amazon.com/images/I/41zrg4ISTBL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
@@ -424,7 +449,7 @@ export default function PageStore() {
           <p>
             Sempre me perguntam: 'onde você comprou isso?'... Então, decidi compartilhar meus
             produtos recomendados e favoritos aqui! Todos estão disponíveis na Amazon. No final da
-            página tem desconto, aproveite!
+            página tem cashback, aproveite!
           </p>
 
           <div className={Style.buttons}>
