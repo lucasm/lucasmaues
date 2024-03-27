@@ -490,9 +490,8 @@ article blockquote {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 0;
   margin: 0 auto;
-  padding: 2rem 0 0;
   width: 100%;
   max-width: 500px;
   list-style: none;
@@ -503,17 +502,18 @@ article blockquote {
 .icons li a {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.875rem;
   background: transparent;
   font-size: 0;
-  border: 1px solid var(--color-b);
   border-radius: var(--radius-big);
-  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  transition: all 0.75s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  border: 1px solid transparent;
 }
 .icons li a:hover,
 .icons li a:focus {
-  transform: scale(1.025);
+  transform: scale(1.1);
 }
+
 .icons li a:focus {
   background: var(--color-translucent);
 }
@@ -523,15 +523,23 @@ article blockquote {
 }
 .icons .full-text a {
   gap: 1.5rem;
-  padding: 1rem 1.5rem;
+  padding: 0.875rem 1.5rem;
+  margin-top: 0.5rem;
   font-size: var(--font-size-4);
   color: var(--color-b);
   border-radius: var(--radius);
   text-align: left;
   line-height: 1;
+  border-color: var(--color-b);
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
-.icons > li:nth-child(7) {
-  margin-top: 1.75rem;
+.icons .full-text a:hover,
+.icons .full-text a:focus {
+  transform: scale(1.025);
+}
+
+.icons > li:nth-child(6) {
+  margin-top: 1.5rem;
   /* background: blue; */
 }
 
@@ -711,9 +719,13 @@ footer p svg {
     font-size: var(--font-size-3);
   }
 
+  .icons {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
   .icons svg {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
   }
 
   .cards {

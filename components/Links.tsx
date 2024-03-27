@@ -6,9 +6,9 @@ import {
   IconPatreon,
   IconX,
   IconLinkedin,
-  IconInstagram,
   IconYoutube,
   IconHeart,
+  IconWhatsapp,
 } from './Svgs'
 
 interface ILinks {
@@ -46,15 +46,15 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    text: 'LinkedIn',
-    active: true,
-  },
-  {
     url: 'https://youtube.com/@lucasmdev',
     icon: <IconYoutube />,
     text: 'YouTube',
+    active: false,
+  },
+  {
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    text: 'LinkedIn',
     active: true,
   },
   {
@@ -69,6 +69,13 @@ const Links: ILinks[] = [
     url: 'https://patreon.com/lucasm',
     icon: <IconPatreon />,
     text: 'Mentoria para Devs',
+    active: true,
+    fullText: true,
+  },
+  {
+    url: 'https://wa.me/5531997038007',
+    icon: <IconWhatsapp />,
+    text: 'Falar no WhatsApp',
     active: true,
     fullText: true,
   },
