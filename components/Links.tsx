@@ -6,9 +6,15 @@ import {
   IconPatreon,
   IconX,
   IconLinkedin,
-  IconInstagram,
   IconYoutube,
   IconHeart,
+  IconWhatsapp,
+  IconSpotify,
+  IconBluesky,
+  IconMastodon,
+  IconLetterboxd,
+  IconDiscord,
+  IconInstagram,
 } from './Svgs'
 
 interface ILinks {
@@ -28,15 +34,15 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://dev.to/lucasm',
-    icon: <IconDev />,
-    text: 'DEV',
-    active: true,
-  },
-  {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
     text: 'GitHub',
+    active: true,
+  },
+  {
+    url: 'https://dev.to/lucasm',
+    icon: <IconDev />,
+    text: 'DEV',
     active: true,
   },
   {
@@ -58,6 +64,42 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://instagram.com/lucasmezs',
+    icon: <IconInstagram />,
+    text: 'Instagram',
+    active: true,
+  },
+  {
+    url: 'https://open.spotify.com/user/lucasmauess',
+    icon: <IconSpotify />,
+    text: 'Spotify',
+    active: true,
+  },
+  {
+    url: 'https://letterboxd.com/lucasmezs',
+    icon: <IconLetterboxd />,
+    text: 'Letterboxd',
+    active: true,
+  },
+  {
+    url: 'https://discord.com/users/lucasmezs',
+    icon: <IconDiscord />,
+    text: 'Discord',
+    active: true,
+  },
+  {
+    url: 'https://lucasme.bsky.social',
+    icon: <IconBluesky />,
+    text: 'Bluesky',
+    active: true,
+  },
+  {
+    url: 'https://mastodon.social/@lucasmezs',
+    icon: <IconMastodon />,
+    text: 'Mastodon',
+    active: true,
+  },
+  {
     url: '/store',
     icon: <IconHeart />,
     text: 'Produtos Recomendados',
@@ -72,50 +114,31 @@ const Links: ILinks[] = [
     active: true,
     fullText: true,
   },
-  // {
-  //   url: 'https://instagram.com/lucasmezs',
-  //   icon: <IconInstagram />,
-  //   text: 'Instagram',
-  //   active: false,
-  // },
-  // {
-  //   url: 'https://buymeacoffee.com/lucasm',
-  //   icon: <IconGithub />,
-  //   text: 'Buy Me a Coffee',
-  //   active: false,
-  // },
-  // {
-  //   url: 'https://discord.com/users/lucasmezs',
-  //   icon: <IconStar />,
-  //   text: 'Discord',
-  //   active: false,
-  // },
-  // {
-  //   url: 'https://t.me/lucasmezs',
-  //   icon: <IconStar />,
-  //   text: 'Telegram',
-  //   active: false,
-  // },
-  // {
-  //   url: 'https://dribbble.com/lucasm',
-  //   icon: <IconStar />,
-  //   text: 'Dribbble',
-  //   active: false,
-  // },
-  // {
-  //   url: 'https://open.spotify.com/user/lucasmauess',
-  //   icon: <IconStar />,
-  //   text: 'Spotify',
-  //   active: false,
-  // },
-  // https://www.tvtime.com/pt_BR/user/4994111/profile
+  {
+    url: 'https://wa.me/5531997038007',
+    icon: <IconWhatsapp />,
+    text: 'Falar no WhatsApp',
+    active: true,
+    fullText: true,
+  },
+  // url: 'https://buymeacoffee.com/lucasm',
+  // url: 'https://t.me/lucasmezs',
+  // url: 'https://dribbble.com/lucasm',
+  // url: 'https://www.tvtime.com/pt_BR/user/4994111/profile'
 ]
 
 export default function ComponentLinks() {
+  const firstFullTextIndex = Links?.findIndex(
+    (link) => link.active && link.fullText !== undefined && link.fullText
+  )
+
   return (
     <ul className="icons">
       {Links?.filter((link) => link.active).map((link, index) => (
-        <li key={index} className={link.fullText ? 'full-text' : undefined}>
+        <li
+          key={index}
+          className={link.fullText ? 'full-text' : undefined}
+          style={{ marginTop: index === firstFullTextIndex ? '1rem' : undefined }}>
           <Link
             href={link.url}
             target={link.internalPage ? '_self' : '_blank'}

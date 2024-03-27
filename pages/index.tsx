@@ -78,7 +78,7 @@ export default function Home() {
               🤝🏻<br></br>
               Let's work together
             </h2>
-            <p>Send a concise message describing your project or idea.</p>
+            <p>Send a concise email describing your project or idea.</p>
           </div>
           <div>
             <h3>hello@lucasm.dev</h3>
