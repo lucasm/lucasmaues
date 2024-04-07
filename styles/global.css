@@ -491,6 +491,7 @@ article blockquote {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0;
+  gap: 0;
   margin: 0 auto;
   width: 100%;
   max-width: 500px;
@@ -503,14 +504,18 @@ article blockquote {
   display: flex;
   align-items: center;
   padding: 0.875rem;
+  padding: 0.875rem;
   background: transparent;
   font-size: 0;
   border-radius: var(--radius-big);
   transition: all 0.75s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
   border: 1px solid transparent;
+  transition: all 0.75s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  border: 1px solid transparent;
 }
 .icons li a:hover,
 .icons li a:focus {
+  transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -718,7 +723,13 @@ footer p svg {
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
+  .icons {
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
   .icons svg {
+    width: 26px;
+    height: 26px;
     width: 26px;
     height: 26px;
   }

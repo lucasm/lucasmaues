@@ -52,6 +52,12 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
+    active: false,
+  },
+  {
     url: 'https://linkedin.com/in/lucasmezs',
     icon: <IconLinkedin />,
     text: 'LinkedIn',
