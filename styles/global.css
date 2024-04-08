@@ -97,8 +97,8 @@ header a:focus {
   background: var(--color-translucent);
 }
 #theme svg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.7rem;
+  height: 1.7rem;
   transition: rotate 0.5s;
 }
 #theme:hover svg {
@@ -728,8 +728,6 @@ footer p svg {
     margin-top: 0.5rem;
   }
   .icons svg {
-    width: 26px;
-    height: 26px;
     width: 26px;
     height: 26px;
   }

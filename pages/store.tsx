@@ -448,8 +448,8 @@ export default function PageStore() {
 
           <p>
             Sempre me perguntam: 'onde você comprou isso?'... Então, decidi compartilhar meus
-            produtos recomendados e favoritos aqui! Todos estão disponíveis na Amazon. No final da
-            página tem cashback, aproveite!
+            produtos recomendados e favoritos aqui! Todos estão na Amazon. No final da página tem
+            cashback, aproveite!
           </p>
 
           <div className={Style.buttons}>
@@ -494,7 +494,7 @@ export default function PageStore() {
 
         <DiscountBanner
           title="Ganhe R$ 5,00 de Cashback"
-          subtitle="Use minha indicação Méliuz para ganhar R$ 5,00 na próxima compra."
+          subtitle="Use minha indicação e ganhe R$ 5,00 na próxima compra usando o Méliuz."
           image={<IconHeart />}
           link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
         />

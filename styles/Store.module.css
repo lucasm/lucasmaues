@@ -102,7 +102,7 @@
   align-items: center;
   vertical-align: middle;
   background: transparent;
-  border: 5.5px dashed var(--color-b);
+  border: 3px dashed var(--color-b);
 }
 .containerDiscount:hover,
 .containerDiscount:focus {
