@@ -443,9 +443,9 @@ export default function PageStore() {
     <PageLayout title={title} description={description}>
       <section>
         <div className="container page">
-          <figure className={Style.icon}>
+          {/* <figure className={Style.icon}>
             <IconHeart />
-          </figure>
+          </figure> */}
           <h1>{title}</h1>
           <p>{description}</p>
 
