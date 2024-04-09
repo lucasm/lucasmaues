@@ -330,6 +330,7 @@ h1,
 }
 
 h3,
+article h2,
 .subtitle {
   font-size: var(--font-size-4);
 }
@@ -734,12 +735,12 @@ footer div {
   }
 
   h2,
-  article h2,
   .description {
     font-size: var(--font-size-2);
   }
 
   h3,
+  article h2,
   nav a,
   .button {
     font-size: var(--font-size-3);
