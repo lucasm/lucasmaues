@@ -424,7 +424,7 @@ const productsBrazil = [
 export default function PageStore() {
   const title = 'Loja Dev'
   const description =
-    'Curadoria de eletrônicos e livros recomendados para programadores e amantes de tecnologia.'
+    'Curadoria com eletrônicos e livros recomendados para programadores e amantes de tecnologia.'
   const [category, setCategory] = useState('Todos')
   const filteredProducts =
     category === 'Todos'

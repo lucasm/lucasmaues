@@ -58,7 +58,7 @@ body {
 header {
   position: absolute;
   width: 100%;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem;
   z-index: 99999;
 }
 header .container {
@@ -463,6 +463,7 @@ article blockquote {
   padding-bottom: 3rem;
 }
 .page {
+  margin-top: 2rem;
   max-width: var(--max-width-content);
 }
 .description {
