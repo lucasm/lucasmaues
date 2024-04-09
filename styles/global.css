@@ -326,7 +326,7 @@ button,
 
 h1,
 #contact h3 {
-  font-size: 2.5rem;
+  font-size: var(--font-size-3);
 }
 
 h3,
@@ -587,6 +587,9 @@ article blockquote {
 }
 .posts a:focus {
   background: var(--color-translucent);
+}
+.posts li {
+  padding: 0;
 }
 
 /* Cards */
