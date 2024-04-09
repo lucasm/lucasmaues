@@ -7,7 +7,7 @@ import { IconHeart } from '../components/Svgs'
 const productsBrazil = [
   {
     title: 'Mouse Logitech MX Vertical',
-    description: 'Melhor mouse ergonômico Bluetooth já criado na história.',
+    description: 'Melhor mouse ergonômico Bluetooth já criado.',
     url: 'https://amzn.to/3Q2pxHV',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -23,7 +23,7 @@ const productsBrazil = [
   {
     title: 'Apple AirPods Pro 2',
     description:
-      'O melhor fone Bluetooth, com áudio espacial e cancelamento de ruído padrão Apple.',
+      'Fone de ouvido Bluetooth, com áudio espacial e cancelamento de ruído padrão Apple.',
     url: 'https://amzn.to/3Dw6uA0',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -38,7 +38,7 @@ const productsBrazil = [
   },
   {
     title: 'Stanley Aerolight Fast Flow',
-    description: 'Garrafa térmica 710ML, perfeita para academia e viagens. Sou apaixonado.',
+    description: 'Garrafa térmica 710ML, ideal para o dia-a-dia, academia e viagens. Uma paixão!',
     url: 'https://amzn.to/3uDXl7H',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -52,7 +52,7 @@ const productsBrazil = [
   },
   {
     title: 'Monitores Dell 4K, UHD e Full HD',
-    description: 'Referência em monitores duráveis, a Dell tem suporte elogiado.',
+    description: 'Com suporte elogiado, a Dell é referência em monitores duráveis.',
     url: 'https://amzn.to/3uqCLHx',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
@@ -60,7 +60,7 @@ const productsBrazil = [
   {
     title: 'Webcam Logitech Brio 500 ',
     description:
-      'Webcam Full HD ideal para home office, com foco automático, microfone que reduz barulhos e modo privacidade.',
+      'Webcam Full HD ideal para home office, com foco automático, microfone que reduz ruídos e privacidade.',
     url: 'https://amzn.to/4cnZe9t',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -68,21 +68,21 @@ const productsBrazil = [
   {
     title: 'Echo Dot 5 Alexa',
     description:
-      'Caixinha de som inteligente, toca música e conversa com IA - "ei Alexa toca uma música".',
+      'Caixinha de som inteligente com Alexa, toca música e conversa com IA - "Alexa toca minha playlist".',
     url: 'https://amzn.to/45jAJFL',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'JBL Go 3',
-    description: 'Caixinha de som Bluetooth, bom presente para quem você gosta.',
+    description: 'Caixinha de som Bluetooth, um ótimo presente para quem você gosta.',
     url: 'https://amzn.to/43CrM9C',
     image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
   },
   {
     title: 'JBL Tune 110',
-    description: 'Fone de ouvido com fio durável e com microfone.',
+    description: 'Fone de ouvido durável, com fio e microfone.',
     url: 'https://amzn.to/46Dtp9h',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -90,7 +90,7 @@ const productsBrazil = [
   {
     title: 'Mochila Dell Pro EcoLoop',
     description:
-      'Mochila para Notebook com bastantes divisões, ecológica e com resistência a água.',
+      'Mochila confortável para notebook, com ótimas divisões, ecológica e com resistência a água.',
     url: 'https://amzn.to/3TgB6yc',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
     category: 'Acessórios',
@@ -110,10 +110,11 @@ const productsBrazil = [
     category: 'Dispositivos',
   },
   {
-    title: 'Mini Projetor HDMI Bluetooth 5G Wi-Fi Full HD',
-    description: 'Projetor portátil com preço imbatível.',
-    url: 'https://amzn.to/3F4zAHn',
-    image: 'https://m.media-amazon.com/images/I/5133wKaOqSL._AC_SX679_.jpg',
+    title: 'Projetor portátil HY320 ',
+    description:
+      'O melhor projetor portátil do mercado. Com suporte HDMI, Bluetooth 5.0, Wi-Fi 6 e resolução 1080p Full HD.',
+    url: 'https://amzn.to/4aLdasx',
+    image: 'https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
@@ -141,7 +142,7 @@ const productsBrazil = [
   },
   {
     title: 'Abajur Luminária Pixar',
-    description: 'Abajur (tipo Pixar) com braço articulado, base para mesa e agarrador.',
+    description: 'Abajur (estilo Pixar) com braço articulado, base para mesa e agarrador.',
     url: 'https://amzn.to/4crKlD3',
     image: 'https://m.media-amazon.com/images/I/510SeRtQxzL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -149,7 +150,7 @@ const productsBrazil = [
   {
     title: 'Banquinho Apoio para os Pés ',
     description:
-      'Apoio para os pés embaixo da mesa, com altura ajustável em 6 posições. Ergonômico. Sua saúde agradece.',
+      'Apoio para os pés com altura ajustável em 6 posições. Ergonômico. Sua saúde agradece.',
     url: 'https://amzn.to/3vmkkV7',
     image: 'https://m.media-amazon.com/images/I/615lH-lmwNL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -157,7 +158,7 @@ const productsBrazil = [
   {
     title: 'Smart Lâmpada Positivo 9W RGB Wi-Fi ',
     description:
-      'A linha casa inteligente da Positivo é um acerto! Lâmpada com cor branca (quente e fria) e RGB (16 milhões de cores). Compatível com Alexa e Google.',
+      'Lâmpada branca quente ou fria. RGB 16 milhões de cores. Compatível com Alexa e Google. Linha casa inteligente da Positivo é um baita acerto!',
     url: 'https://amzn.to/43xUR7N',
     image: 'https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -221,7 +222,7 @@ const productsBrazil = [
   },
   {
     title: 'Suporte para Notebooks',
-    description: 'Segura essa marimba!!!',
+    description: 'Segura essa marimba!',
     url: 'https://amzn.to/401PVGi',
     image: 'https://m.media-amazon.com/images/I/61ZqTo-kwpL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -236,7 +237,7 @@ const productsBrazil = [
   {
     title: 'Entendendo algoritmos: Guia ilustrado para programadores',
     description:
-      'Aprender algoritmos e estruturas de dados é essencial - e fica fácil com esse livro. Contém exemplos práticos em Python.',
+      'Aprender algoritmos e estruturas de dados é essencial, e bem fácil com esse livro. Com exemplos em Python.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -244,14 +245,14 @@ const productsBrazil = [
   {
     title: 'Estruturas de dados e algoritmos com JavaScript',
     description:
-      'Escrito pela incrível @Loaine com exemplos em JavaScript na sintaxe atual do ECMAScript.',
+      'Escrito pela incrível programadora brasileira @Loaine, com exemplos em JavaScript na sintaxe do ECMAScript.',
     url: 'https://amzn.to/3Fni1T2',
     image: 'https://m.media-amazon.com/images/I/71KGa1y8eaL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'JavaScript: O guia definitivo',
-    description: "Referência JavaScript, feito pela consagrada editora O'Reilly.",
+    description: "Referência JavaScript, organizado pela consagrada editora O'Reilly.",
     url: 'https://amzn.to/3PWgEj6',
     image: 'https://m.media-amazon.com/images/I/91z1xY4ppaL._SY522_.jpg',
     category: 'Livros',
@@ -421,6 +422,9 @@ const productsBrazil = [
 ]
 
 export default function PageStore() {
+  const title = 'Loja Dev'
+  const description =
+    'Curadoria de eletrônicos e livros recomendados para programadores e amantes de tecnologia.'
   const [category, setCategory] = useState('Todos')
   const filteredProducts =
     category === 'Todos'
@@ -436,21 +440,14 @@ export default function PageStore() {
   }
 
   return (
-    <PageLayout
-      title="Produtos Recomendados — Lucas Menezes"
-      description="Curadoria com produtos recomendados e favoritos na Amazon.">
+    <PageLayout title={title} description={description}>
       <section>
         <div className="container page">
           <figure className={Style.icon}>
             <IconHeart />
           </figure>
-          <h1>Produtos Recomendados</h1>
-
-          <p>
-            Sempre me perguntam: 'onde você comprou isso?'... Então, decidi compartilhar meus
-            produtos recomendados e favoritos aqui! Todos estão na Amazon. No final da página tem
-            cashback, aproveite!
-          </p>
+          <h1>{title}</h1>
+          <p>{description}</p>
 
           <div className={Style.buttons}>
             <button
@@ -492,12 +489,18 @@ export default function PageStore() {
           </ul>
         </div>
 
-        <DiscountBanner
-          title="Ganhe R$ 5,00 de Cashback"
-          subtitle="Use minha indicação e ganhe R$ 5,00 na próxima compra usando o Méliuz."
-          image={<IconHeart />}
-          link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
-        />
+        <div>
+          <p>* Os links redirecionam para lojas confiáveis Amazon, Mercado Livre e AliExpress. </p>
+        </div>
+
+        <div id="banner">
+          <DiscountBanner
+            title="Ganhe R$ 5,00 de volta"
+            subtitle="Ative o Méliuz para ganhar R$ 5,00 na próxima compra."
+            image={<IconHeart />}
+            link="https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2"
+          />
+        </div>
       </section>
     </PageLayout>
   )

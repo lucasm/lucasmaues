@@ -6,8 +6,8 @@ import BlogPosts from '../components/BlogPosts'
 export default function Home() {
   return (
     <PageLayout
-      title="Lucas Menezes — Frontend Software Engineer"
-      description="Hello, I'm a Frontend Software Engineer from Brazil. Coding positive impact digital solutions.">
+      title="Lucas Menezes | Software Engineer"
+      description="Hello, I'm a Software Engineer from Brazil, building Frontend, Web & AI for stand out companies.">
       <section className="fullscreen" id="home">
         <div className="fullscreen-container">
           <div className="container home">
@@ -17,7 +17,7 @@ export default function Home() {
                 src="https://avatars.githubusercontent.com/lucasm"
               />
             </figure>
-            <h1>Hello 👋🏻 I'm a Frontend Software Engineer from Brazil</h1>
+            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil, developing Frontend, Web & AI.</h1>
           </div>
           <Links />
         </div>
@@ -37,25 +37,27 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h2>Crafting positive impact with digital solutions</h2>
+              <h2>Crafting positive impact with technology, creativity and beyond.</h2>
             </div>
 
             <div>
               <p>
-                Hey, welcome! Since 2017, I've been immersed on coding, channeling creativity and
-                technology into a range of digital solutions. From Web Applications to PWAs,
-                Websites, E-commerce platforms, and Mobile Apps, I've played a pivotal role in
-                enhancing the efficiency, evolution, and scalability of many companies.
+                Welcome! Since 2017, I've been coding a range of digital solutions, like Web
+                Applications, Websites, E-commerce platforms, PWAs, and Mobile Apps. I've played a
+                pivotal role in increasing the revenue and enhancing the efficiency of many
+                companies.
               </p>
 
               <p>
-                Specializing on Frontend development, I have expertise on Web standards,
-                performance, accessibility, UX, security, and analytics. Also setting up Backend,
-                APIs integrations, cloud services, and CI/CD pipelines. I love travels, mentor new
-                developers, create technical content, and open source initiatives.
+                I specialize in Frontend development, with a focus on web standards, UX,
+                performance, accessibility, security, and web analytics. I work on the Backend with
+                APIs, cloud services, and CI/CD pipelines. And currently experimenting with AI.
               </p>
 
-              <p>Check out my work below.</p>
+              <p>
+                I love traveling, bodybuilding, mentoring new developers, and creating content /
+                open source.
+              </p>
 
               <p>Let's make! 🤘🏻</p>
             </div>
@@ -72,18 +74,23 @@ export default function Home() {
       </section>
 
       <section id="contact">
-        <a href="mailto:hello@lucasm.dev" className="container contactContainer">
-          <div>
-            <h2>
-              🤝🏻<br></br>
-              Let's work together
-            </h2>
-            <p>Send a concise email describing your project or idea.</p>
+        <div className="container">
+          <h2 className="subtitle">Contact</h2>
+
+          <div className="aboutContainer">
+            <div>
+              <h3>Let's talk about your project</h3>
+            </div>
+
+            <div>
+              <p>Send a concise message. I will get back to you in two business days.</p>
+
+              <a className="button" href="mailto:hello@lucasm.dev">
+                hello@lucasm.dev
+              </a>
+            </div>
           </div>
-          <div>
-            <h3>hello@lucasm.dev</h3>
-          </div>
-        </a>
+        </div>
       </section>
     </PageLayout>
   )

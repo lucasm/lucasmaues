@@ -6,11 +6,6 @@
   height: 2rem;
 }
 
-.buttonActive {
-  background: var(--color-b) !important;
-  color: var(--color-w-text) !important;
-}
-
 .buttons {
   display: flex;
   justify-content: center;
@@ -22,7 +17,7 @@
   align-items: center;
   width: auto;
   padding: 0 1.5rem;
-  height: 2.5rem;
+  height: 2.25rem;
   border-radius: var(--radius);
   border: 0;
   background: transparent;
@@ -30,12 +25,16 @@
   /* box-shadow: var(--shadow); */
   border: 1px solid var(--color-b);
   transition: var(--transition-hover);
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-6);
   font-family: var(--font-family);
+}
+.buttonActive {
+  background: var(--color-b) !important;
+  color: var(--color-w-text) !important;
 }
 
 .container {
-  padding-top: 3.5rem;
+  padding: 3.5rem 0 2rem;
 }
 .container ul {
   width: 100%;
@@ -64,7 +63,7 @@
   text-align: left;
   padding: 2.5rem 2.5rem 3rem;
   flex-direction: column;
-  max-width: 280px;
+  max-width: 300px;
 }
 .container ul li a img {
   transition: all 0.25s ease-in-out;
@@ -73,53 +72,49 @@
   filter: grayscale(100%);
   background: var(--color-white);
 }
-.container ul li a:hover img,
-.container ul li a:focus img {
+.container ul li a:hover img {
   opacity: 0.85;
 }
-/* .container ul li a:hover,
-.container ul li a:focus {
+.container ul li a:hover {
   box-shadow: var(--shadow);
-} */
+}
 
-.container ul li a h2 {
-  font-size: var(--font-size-3);
+.container h2 {
+  font-size: var(--font-size-4);
   padding-bottom: 1rem;
   color: var(--color-b-fixed);
 }
 .container ul li a span {
   font-weight: normal;
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-6);
 }
 
 .containerDiscount {
   display: grid;
   grid-template-columns: auto 1fr;
-  width: 85%;
+  max-width: var(--max-width);
   padding: 1.5rem 2rem;
-  margin: 6rem auto 1rem;
+  margin: 6rem auto 0;
   border-radius: var(--radius-big);
   align-items: center;
   vertical-align: middle;
   background: transparent;
   border: 3px dashed var(--color-b);
+  text-align: left;
+  grid-gap: 2rem;
 }
-.containerDiscount:hover,
-.containerDiscount:focus {
+.containerDiscount:hover {
   border-color: transparent;
   background: var(--color-translucent);
   /* box-shadow: var(--shadow); */
 }
-.containerDiscount div {
-  float: left;
-  text-align: left;
-}
+
 .containerDiscount h3 {
-  font-size: var(--font-size-2);
-  padding: 0 0 0.5rem;
+  font-size: var(--font-size-3);
+  padding: 0 0 1rem;
 }
 .containerDiscount p {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-6);
   padding: 0;
 }
 .containerDiscount figure {
@@ -130,7 +125,6 @@
   height: 5rem;
   background: var(--color-w);
   border-radius: 50%;
-  margin-right: 2rem;
 }
 .containerDiscount figure svg {
   width: 2rem;
@@ -156,12 +150,13 @@
   .buttons button {
     padding: 0 1rem;
     height: 2rem;
+  }
+
+  .container h2,
+  .containerDiscount h3 {
     font-size: var(--font-size-5);
   }
 
-  .container ul li a h2 {
-    font-size: var(--font-size-4);
-  }
   .container ul li a img {
     width: 148px;
   }
@@ -171,6 +166,6 @@
     padding: 2rem;
   }
   .containerDiscount figure {
-    margin: 0 auto 1rem;
+    margin: 0 auto;
   }
 }

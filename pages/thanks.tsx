@@ -4,14 +4,16 @@ import Link from 'next/link'
 
 export default function PageThanks() {
   return (
-    <PageLayout title="Thanks — Lucas Menezes" description="Thanks page.">
+    <PageLayout title="Thanks | Lucas Menezes" description="Thanks page.">
       <CircleMouse />
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container">
-            <h1>Thanks! ✌🏻</h1>
+            <h1>Thank you! ✌🏻</h1>
 
-            <p className="description">I just want to say thank you</p>
+            <p className="description">
+              "Simplicity can only be achieved through hard work" — Clarice Lispector
+            </p>
 
             <Link href="/" className="button">
               Back to homepage

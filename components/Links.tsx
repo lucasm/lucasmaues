@@ -102,7 +102,7 @@ const Links: ILinks[] = [
   {
     url: '/store',
     icon: <IconHeart />,
-    text: 'Produtos Recomendados',
+    text: 'Loja Dev',
     active: true,
     internalPage: true,
     fullText: true,
@@ -110,7 +110,7 @@ const Links: ILinks[] = [
   {
     url: 'https://patreon.com/lucasm',
     icon: <IconPatreon />,
-    text: 'Mentoria para Devs',
+    text: 'Mentoria Dev',
     active: true,
     fullText: true,
   },
@@ -128,17 +128,17 @@ const Links: ILinks[] = [
 ]
 
 export default function ComponentLinks() {
-  const firstFullTextIndex = Links?.findIndex(
-    (link) => link.active && link.fullText !== undefined && link.fullText
-  )
+  const firstOfIndex = Links?.findIndex((link) => link.active && link.fullText)
+
+  console.log(firstOfIndex)
 
   return (
-    <ul className="icons">
+    <ul className="links">
       {Links?.filter((link) => link.active).map((link, index) => (
         <li
           key={index}
           className={link.fullText ? 'full-text' : undefined}
-          style={{ marginTop: index === firstFullTextIndex ? '1rem' : undefined }}>
+          style={{ marginTop: index === firstOfIndex ? '1rem' : undefined }}>
           <Link
             href={link.url}
             target={link.internalPage ? '_self' : '_blank'}

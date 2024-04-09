@@ -23,7 +23,7 @@ export default function WorkCards() {
       name: 'Banco Bmg',
       url: 'https://www.bancobmg.com.br/',
       description:
-        'Web Application of financial products with 500M BRL transactions per month for a bank in Brazil.',
+        'Web Application of financial products for a bank in Brazil, with 600M BRL transactions per month.',
       tags: [
         'TypeScript',
         'React',
@@ -41,15 +41,16 @@ export default function WorkCards() {
       name: 'Globo',
       url: 'https://www.globo.com/',
       description:
-        'Web Accessibility for the largest content portal in Brazil with 900M of access per month.',
-      tags: ['JavaScript', 'Preact', 'Node.js', 'Performance', 'A11y', 'Python', 'Docker'],
+        'Web Accessibility for the homepage of largest content portal in Brazil with 900M of access per month.',
+      tags: ['JavaScript', 'Preact', 'Node.js', 'Performance', 'Accessibility', 'Python', 'Docker'],
       icon: svgProjectGlobo,
       active: true,
     },
     {
       name: 'Findto',
       url: 'https://findto.app/',
-      description: 'Progressive Web App for a decentralized Web & AI search assistant.',
+      description:
+        'Progressive Web App for an open source decentralized Web & AI search assistant.',
       tags: ['Open Source', 'TypeScript', 'React', 'Next.js', 'PWA', 'CSS', 'APIs'],
       icon: svgProjectFindto,
       active: true,
@@ -58,7 +59,7 @@ export default function WorkCards() {
       name: 'Varejo Aqui',
       url: 'https://loja.varejoaqui.online/',
       description:
-        'E-commerce Web Responsive and Mobile App with real-time payments APIs (Pix) for Brazil retailers and industries.',
+        'E-commerce Web Responsive and Mobile App with real-time payments APIs, like Pix and credit card, for Brazil retailers and industries.',
       tags: ['React', 'React Native', 'Next.js', 'TypeScript', 'Node.js', 'Android Studio'],
       icon: svgProjectVarejoAqui,
       active: true,
@@ -67,8 +68,8 @@ export default function WorkCards() {
       name: 'Municipalities Court of Accounts of Pará',
       url: 'https://www.tcm.pa.gov.br/servicos/sessoes/',
       description:
-        'Websites, Intranet, Web Apps, Web API Endpoints, AWS S3 integration, Accessibility and Data Visualization for a court.',
-      tags: ['JavaScript', 'PHP', 'Node.js', 'Java', 'PostgreSQL', 'SEO', 'A11y', 'AWS'],
+        'Website, Intranet, Web Apps, APIs, AWS S3 integration, Data Visualization, and Accessibility for a court.',
+      tags: ['JavaScript', 'PHP', 'Node.js', 'Java', 'PostgreSQL', 'SEO', 'Accessibility', 'AWS'],
       icon: svgProjectTCMPA,
       active: true,
     },
@@ -76,7 +77,7 @@ export default function WorkCards() {
       name: 'Federal University of Pará',
       url: 'https://www.radio.ufpa.br/webdoc60/',
       description:
-        'Live Audio and Video Streaming with Web Player, Websites, CMS, Multimedia Web Documentary and hacked Website recovered for an university.',
+        'Live Audio and Video Streaming with Web Player for a university, Websites, CMS, hacked Website recovered, and Web Documentary.',
       tags: ['JavaScript', 'PHP', 'Node.js', , 'Python', 'MySQL', 'SEO', 'UI'],
       icon: svgProjectUFPA,
       active: true,
