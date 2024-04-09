@@ -41,7 +41,7 @@ export default function WorkCards() {
       name: 'Globo',
       url: 'https://www.globo.com/',
       description:
-        'Web Accessibility for the homepage of largest content portal in Brazil with 900M of access per month.',
+        'Web Accessibility for the largest content portal in Brazil with 900M of access per month.',
       tags: ['JavaScript', 'Preact', 'Node.js', 'Performance', 'Accessibility', 'Python', 'Docker'],
       icon: svgProjectGlobo,
       active: true,
@@ -77,7 +77,7 @@ export default function WorkCards() {
       name: 'Federal University of Pará',
       url: 'https://www.radio.ufpa.br/webdoc60/',
       description:
-        'Live Audio and Video Streaming with Web Player for a university, Websites, CMS, hacked Website recovered, and Web Documentary.',
+        'Live Audio and Video Streaming with Web Player, Websites, CMS, hacked Website recovered, and Web Documentary for an university.',
       tags: ['JavaScript', 'PHP', 'Node.js', , 'Python', 'MySQL', 'SEO', 'UI'],
       icon: svgProjectUFPA,
       active: true,
