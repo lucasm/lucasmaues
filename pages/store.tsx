@@ -82,7 +82,7 @@ const productsBrazil = [
   },
   {
     title: 'JBL Tune 110',
-    description: 'Fone de ouvido durável, com fio e microfone.',
+    description: 'Fone de ouvido com fio e microfone, super durável.',
     url: 'https://amzn.to/46Dtp9h',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -90,7 +90,7 @@ const productsBrazil = [
   {
     title: 'Mochila Dell Pro EcoLoop',
     description:
-      'Mochila confortável para notebook, com ótimas divisões, ecológica e com resistência a água.',
+      'Mochila para notebook confortável, com ótimas divisões, resistência a água e ecológica.',
     url: 'https://amzn.to/3TgB6yc',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
     category: 'Acessórios',
@@ -425,7 +425,7 @@ export default function PageStore() {
   const title = 'Loja Dev'
   const image = 'https://lucasm.dev/share-store.png'
   const description =
-    'Curadoria com eletrônicos e livros recomendados para programadores e amantes de tecnologia.'
+    'Os melhores eletrônicos e livros recomendados para programadores e amantes de tecnologia.'
   const [category, setCategory] = useState('Todos')
   const filteredProducts =
     category === 'Todos'
