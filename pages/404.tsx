@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Page404() {
   return (
-    <PageLayout title="Page Not Found | Lucas Menezes" description="Error page.">
+    <PageLayout title="Page Not Found" description="Error page.">
       <CircleMouse />
       <section className="fullscreen">
         <div className="fullscreen-container">

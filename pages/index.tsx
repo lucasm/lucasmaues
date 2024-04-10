@@ -6,7 +6,7 @@ import BlogPosts from '../components/BlogPosts'
 export default function Home() {
   return (
     <PageLayout
-      title="Lucas Menezes | Software Engineer"
+      title="Lucas Menezes"
       description="Hello, I'm a Software Engineer from Brazil, building Frontend, Web & AI for stand out companies.">
       <section className="fullscreen" id="home">
         <div className="fullscreen-container">
