@@ -295,6 +295,7 @@ h3 {
   color: var(--color-b);
   padding-bottom: 2rem;
   line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
 }
 
 p,
@@ -460,8 +461,9 @@ article blockquote {
   /* max-width: var(--max-width-content); */
 }
 .home h1 {
-  text-wrap: balance;
+  /* text-wrap: balance; */
   padding-bottom: 3rem;
+  max-width: 900px;
 }
 .page {
   margin-top: 2rem;
