@@ -423,6 +423,7 @@ const productsBrazil = [
 
 export default function PageStore() {
   const title = 'Loja Dev'
+  const image = 'https://lucasm.dev/share-store.png'
   const description =
     'Curadoria com eletrônicos e livros recomendados para programadores e amantes de tecnologia.'
   const [category, setCategory] = useState('Todos')
@@ -440,7 +441,7 @@ export default function PageStore() {
   }
 
   return (
-    <PageLayout title={title} description={description}>
+    <PageLayout title={title} description={description} image={image}>
       <section>
         <div className="container page">
           {/* <figure className={Style.icon}>

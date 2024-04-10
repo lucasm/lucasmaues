@@ -3,18 +3,18 @@ import {
   IconCodepen,
   IconDev,
   IconGithub,
-  IconPatreon,
   IconX,
   IconLinkedin,
   IconYoutube,
-  IconHeart,
-  IconWhatsapp,
   IconSpotify,
   IconBluesky,
   IconMastodon,
   IconLetterboxd,
   IconDiscord,
   IconInstagram,
+  IconStore,
+  IconMentorship,
+  IconChat,
 } from './Svgs'
 
 interface ILinks {
@@ -101,7 +101,7 @@ const Links: ILinks[] = [
   },
   {
     url: '/store',
-    icon: <IconHeart />,
+    icon: <IconStore />,
     text: 'Loja Dev',
     active: true,
     internalPage: true,
@@ -109,14 +109,14 @@ const Links: ILinks[] = [
   },
   {
     url: 'https://patreon.com/lucasm',
-    icon: <IconPatreon />,
+    icon: <IconMentorship />,
     text: 'Mentoria Dev',
     active: true,
     fullText: true,
   },
   {
     url: 'https://wa.me/5531997038007',
-    icon: <IconWhatsapp />,
+    icon: <IconChat />,
     text: 'Falar no WhatsApp',
     active: true,
     fullText: true,

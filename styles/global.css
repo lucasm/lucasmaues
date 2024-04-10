@@ -4,11 +4,11 @@
   --color-y-2: #fff2c2;
   --color-y-3: #f1de9a;
   --color-y-4: #fcf7ed;
-  --color-b: #3b3727;
+  --color-b: #302d20;
   --color-w: #fff;
-  --color-b-dark: #3b3727;
+  --color-b-dark: #302d20;
   --color-background: var(--color-y);
-  --color-b-fixed: #3b3727;
+  --color-b-fixed: #302d20;
   --color-w-text: #fff;
   --color-translucent: rgb(0 0 0 / 5%);
   --radius: 1.5rem;
@@ -702,6 +702,10 @@ footer div {
 /* Colors */
 .svg {
   fill: var(--color-b);
+}
+.svg-fluent {
+  stroke: var(--color-b);
+  stroke-width: 0.25;
 }
 
 /* Desktop / Tablet */

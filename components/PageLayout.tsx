@@ -5,11 +5,14 @@ import { ReactNode } from 'react'
 
 type Props = {
   title: string
+  image?: string
   description: string
   children: ReactNode
 }
 
 export default function PageLayout(props: Props) {
+  const image = props.image || 'https://lucasm.dev/share.png'
+
   return (
     <>
       <Head>
@@ -33,11 +36,11 @@ export default function PageLayout(props: Props) {
 
         <meta itemProp="name" content="Lucas Menezes" />
         <meta itemProp="description" content={props.description} />
-        <meta itemProp="image" content="https://lucasm.dev/share.png" />
+        <meta itemProp="image" content={props.image} />
 
         <meta property="og:title" content="Lucas Menezes" />
         <meta property="og:description" content={props.description} />
-        <meta property="og:image" content="https://lucasm.dev/share.png" />
+        <meta property="og:image" content={props.image} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="lucasm.dev" />
@@ -50,7 +53,7 @@ export default function PageLayout(props: Props) {
         <meta name="twitter:site" content="@lucasmezs" />
         <meta name="twitter:title" content="Lucas Menezes" />
         <meta name="twitter:description" content={props.description} />
-        <meta name="twitter:image" content="https://lucasm.dev/share.png"></meta>
+        <meta name="twitter:image" content={props.image}></meta>
       </Head>
 
       <Header />
