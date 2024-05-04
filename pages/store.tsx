@@ -46,6 +46,15 @@ export default function PageStore() {
           <h1>{title}</h1>
           <p>{description}</p>
 
+          <p>
+            <a
+              href="https://www.paraquemdoar.com.br/hub/chuvasRS2024?ref=lucasm.dev"
+              target="_blank"
+              rel="noopener noreferrer">
+              Doe para o Rio Grande do Sul
+            </a>
+          </p>
+
           <div className={Style.buttons}>
             <button
               onClick={() => handleClickCategory('Todos')}
