@@ -16,6 +16,10 @@ interface ProductPopupProps {
 
 const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
   const [isVisible, setIsVisible] = useState(false)
+  const multiLinks =
+    (!!product.url && !!product.url_2) ||
+    (!!product.url && !!product.url_3) ||
+    (!!product.url_2 && !!product.url_3)
 
   useEffect(() => {
     isVisible
@@ -64,7 +68,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
             <p>{product.description}</p>
 
             <h3>
-              Compre agora <IconArrowDown />
+              {multiLinks ? 'Ecolha a loja' : 'Compre agora'} <IconArrowDown />
             </h3>
 
             <div>
