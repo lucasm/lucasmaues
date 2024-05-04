@@ -3,7 +3,7 @@ import PageLayout from '../components/PageLayout'
 import Style from '../styles/Store.module.css'
 import StyleCard from '../components/store/ProductCard/ProductCard.module.css'
 import Banners from '../components/store/Banners'
-import { IconHeart } from '../components/Svgs'
+import { IconHeart, IconWarning } from '../components/Svgs'
 import ProductPopup from '../components/store/ProductPopup'
 import { productsBR } from '../data/productsBR'
 import ProductCard from '../components/store/ProductCard'
@@ -48,9 +48,17 @@ export default function PageStore() {
 
           <p>
             <a
-              href="https://www.paraquemdoar.com.br/hub/chuvasRS2024?ref=lucasm.dev"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                width: 'fit-content',
+                margin: '1rem auto',
+              }}
+              href="https://www.paraquemdoar.com.br/?ref=lucasm.dev"
               target="_blank"
               rel="noopener noreferrer">
+              <IconWarning />
               Doe para o Rio Grande do Sul
             </a>
           </p>
