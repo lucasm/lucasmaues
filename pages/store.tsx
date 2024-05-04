@@ -1,11 +1,12 @@
 import { useRef, useState } from 'react'
 import PageLayout from '../components/PageLayout'
 import Style from '../styles/Store.module.css'
+import StyleCard from '../components/store/ProductCard/ProductCard.module.css'
 import Banners from '../components/store/Banners'
 import { IconHeart } from '../components/Svgs'
 import ProductPopup from '../components/store/ProductPopup'
-import { truncateText } from '../utils/strings'
 import { productsBR } from '../data/productsBR'
+import ProductCard from '../components/store/ProductCard'
 
 export default function PageStore() {
   const title = 'Loja Dev'
@@ -69,17 +70,11 @@ export default function PageStore() {
           </div>
         </div>
 
-        <div className={Style.container} ref={containerProductsRef}>
+        <div className={StyleCard.container} ref={containerProductsRef}>
           <ul>
             {filteredProducts.map((product, index) => (
               <li key={index}>
-                <button onClick={() => handleOpenProductPopup(product)}>
-                  <img src={product.image} alt={product.title} />
-                  <div>
-                    <h2>{product.title}</h2>
-                    <span>{truncateText(product.description, 40)}</span>
-                  </div>
-                </button>
+                <ProductCard product={product} handleOnClick={handleOpenProductPopup} />
               </li>
             ))}
           </ul>

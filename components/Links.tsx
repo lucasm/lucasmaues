@@ -136,7 +136,7 @@ export default function ComponentLinks() {
   const fullTextLinks = Links.filter((link) => link.fullText)
   const otherLinks = Links.filter((link) => !link.fullText)
 
-  const visibleOtherLinks = showMore ? otherLinks : otherLinks.slice(0, 5)
+  const visibleOtherLinks = showMore ? otherLinks : otherLinks.slice(0, 6)
 
   return (
     <div>
@@ -156,7 +156,7 @@ export default function ComponentLinks() {
             </Link>
           </li>
         ))}
-        {otherLinks.length > 5 && (
+        {otherLinks.length > 6 && (
           <li>
             <button onClick={handleToggle} aria-expanded={showMore ? 'true' : 'false'}>
               {showMore ? <IconLess /> : <IconMore />}
