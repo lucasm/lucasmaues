@@ -171,7 +171,7 @@ export const productsBR = [
   {
     title: 'Logitech Lift Vertical',
     description:
-      'Mouse ergonômico e Bluetooth, porém mais compacto que o MX Master. Recomendado para quem tem mãos pequenas.',
+      'Mouse ergonômico e Bluetooth, porém mais compacto que o MX Master. Recomendado para quem tem mãos menores.',
     url: 'https://amzn.to/3HKL5VS',
     url_2: 'https://mercadolivre.com/sec/25EAYdg',
     image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
