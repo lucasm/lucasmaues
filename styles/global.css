@@ -507,7 +507,8 @@ article blockquote {
 .links li {
   padding: 0;
 }
-.links li a {
+.links li a,
+.links li button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -519,7 +520,8 @@ article blockquote {
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
   border: 1px solid transparent;
 }
-.links li a:hover {
+.links li a:hover,
+.links li button:hover {
   transform: scale(1.05);
   background: var(--color-translucent);
 }

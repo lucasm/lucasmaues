@@ -22,13 +22,12 @@ export default function PageStore() {
 
   const containerProductsRef = useRef<HTMLDivElement>(null)
 
-  const handleClick = (category: string) => {
+  const handleClickCategory = (category: string) => {
     setCategory(category)
     if (containerProductsRef?.current) {
       containerProductsRef?.current?.scrollIntoView({ behavior: 'smooth' })
     }
   }
-
   const handleOpenProductPopup = (product) => {
     setSelectedProduct(product)
   }
@@ -48,22 +47,22 @@ export default function PageStore() {
 
           <div className={Style.buttons}>
             <button
-              onClick={() => handleClick('Todos')}
+              onClick={() => handleClickCategory('Todos')}
               className={category === 'Todos' ? Style.buttonActive : undefined}>
               Tudo
             </button>
             <button
-              onClick={() => handleClick('Dispositivos')}
+              onClick={() => handleClickCategory('Dispositivos')}
               className={category === 'Dispositivos' ? Style.buttonActive : undefined}>
               Dispositivos
             </button>
             <button
-              onClick={() => handleClick('Acessórios')}
+              onClick={() => handleClickCategory('Acessórios')}
               className={category === 'Acessórios' ? Style.buttonActive : undefined}>
               Acessórios
             </button>
             <button
-              onClick={() => handleClick('Livros')}
+              onClick={() => handleClickCategory('Livros')}
               className={category === 'Livros' ? Style.buttonActive : undefined}>
               Livros
             </button>
@@ -86,9 +85,7 @@ export default function PageStore() {
           </ul>
         </div>
 
-        <div id="banner">
-          <Banners />
-        </div>
+        <Banners />
       </section>
 
       {selectedProduct && (

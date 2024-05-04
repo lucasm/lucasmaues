@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Link from 'next/link'
 import {
   IconCodepen,
@@ -13,8 +14,10 @@ import {
   IconDiscord,
   IconInstagram,
   IconStore,
-  IconMentorship,
-  IconChat,
+  IconHeart,
+  IconWhatsapp,
+  IconMore,
+  IconLess,
 } from './Svgs'
 
 interface ILinks {
@@ -64,15 +67,15 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://instagram.com/lucasmezs',
-    icon: <IconInstagram />,
-    text: 'Instagram',
-    active: true,
-  },
-  {
     url: 'https://discord.com/users/lucasmezs',
     icon: <IconDiscord />,
     text: 'Discord',
+    active: true,
+  },
+  {
+    url: 'https://instagram.com/lucasmezs',
+    icon: <IconInstagram />,
+    text: 'Instagram',
     active: true,
   },
   {
@@ -109,45 +112,58 @@ const Links: ILinks[] = [
   },
   {
     url: 'https://patreon.com/lucasm',
-    icon: <IconMentorship />,
-    text: 'Mentoria Dev',
-    active: true,
+    icon: <IconHeart />,
+    text: 'Mentorias Dev',
+    active: false,
     fullText: true,
   },
   {
     url: 'https://wa.me/5531997038007',
-    icon: <IconChat />,
+    icon: <IconWhatsapp />,
     text: 'Falar no WhatsApp',
     active: true,
     fullText: true,
   },
-  // url: 'https://buymeacoffee.com/lucasm',
-  // url: 'https://t.me/lucasmezs',
-  // url: 'https://dribbble.com/lucasm',
-  // url: 'https://www.tvtime.com/pt_BR/user/4994111/profile'
 ]
 
 export default function ComponentLinks() {
-  const firstOfIndex = Links?.findIndex((link) => link.active && link.fullText)
+  const [showMore, setShowMore] = useState(false)
 
-  console.log(firstOfIndex)
+  const handleToggle = () => {
+    setShowMore((prev) => !prev)
+  }
+
+  const fullTextLinks = Links.filter((link) => link.fullText)
+  const otherLinks = Links.filter((link) => !link.fullText)
+
+  const visibleOtherLinks = showMore ? otherLinks : otherLinks.slice(0, 5)
 
   return (
-    <ul className="links">
-      {Links?.filter((link) => link.active).map((link, index) => (
-        <li
-          key={index}
-          className={link.fullText ? 'full-text' : undefined}
-          style={{ marginTop: index === firstOfIndex ? '2rem' : undefined }}>
-          <Link
-            href={link.url}
-            target={link.internalPage ? '_self' : '_blank'}
-            rel={link.internalPage ? 'prefetch' : 'noopener'}>
-            {link.icon}
-            {link.text}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <ul className="links">
+        {fullTextLinks.concat(visibleOtherLinks).map((link, index) => (
+          <li
+            key={index}
+            className={link.fullText ? 'full-text' : undefined}
+            style={{ marginBottom: index === fullTextLinks.length - 1 ? '2rem' : undefined }}>
+            <Link
+              href={link.url}
+              target={link.internalPage ? '_self' : '_blank'}
+              rel={link.internalPage ? 'prefetch' : 'noopener'}
+              title={link.text}>
+              {link.icon}
+              {link.text}
+            </Link>
+          </li>
+        ))}
+        {otherLinks.length > 5 && (
+          <li>
+            <button onClick={handleToggle} aria-expanded={showMore ? 'true' : 'false'}>
+              {showMore ? <IconLess /> : <IconMore />}
+            </button>
+          </li>
+        )}
+      </ul>
+    </div>
   )
 }
