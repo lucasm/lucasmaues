@@ -58,9 +58,10 @@
 @media screen and (max-width: 600px) {
   .containerDiscount {
     grid-template-columns: 1fr;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
   }
   .containerDiscount figure {
     margin: 0 auto;
+    height: 6rem;
   }
 }

@@ -134,6 +134,13 @@ export const productsBR = [
     category: 'Dispositivos',
   },
   {
+    title: 'Philips Fone de ouvido Bluetooth TWS',
+    description: 'Fone de ouvido Bluetooth TWS com ótimo custo-benefício.',
+    url: 'https://amzn.to/3UjBFWY',
+    image: 'https://m.media-amazon.com/images/I/61uMQCVH0CL._AC_SX679_.jpg',
+    category: 'Dispositivos',
+  },
+  {
     title: 'JBL Tune 110',
     description: 'Fone de ouvido com fio e microfone, super durável.',
     url: 'https://amzn.to/46Dtp9h',
@@ -271,7 +278,6 @@ export const productsBR = [
     image: 'https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY879_.jpg',
     category: 'Dispositivos',
   },
-
   {
     title: 'Suporte para Notebooks',
     description: 'Segura essa marimba!',
@@ -289,9 +295,17 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
+    title: 'Acrimet Organizador de Escritório Livros',
+    description: 'Essencial para sua estante de livros.',
+    url: 'https://amzn.to/3UHEHWC',
+    url_2: 'https://mercadolivre.com/sec/33SQY4e',
+    image: 'https://m.media-amazon.com/images/I/51ygahMebML._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
+  {
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     description:
-      'Aprender algoritmos e estruturas de dados é ESSENCIAL para todo programador, e fica bem fácil com esse livro. Contêm exemplos em Python.',
+      'Aprender algoritmos e estruturas de dados é ESSENCIAL para qualquer programador, e fica bem fácil com esse livro. Contêm exemplos em Python.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -309,6 +323,14 @@ export const productsBR = [
     description: "Livro referência JavaScript organizado pela consagrada editora O'Reilly.",
     url: 'https://amzn.to/3PWgEj6',
     image: 'https://m.media-amazon.com/images/I/91z1xY4ppaL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
+    title: 'Como ser um Programador Melhor',
+    description:
+      'Se você quer se aperfeiçoar na programação, ouça Pete Goodliffe, autor de Code Craft, com mais de 15 anos de experiência. Ele apresenta um conjunto de técnicas e abordagens úteis para melhorar na programação e ajudar a impulsionar a carreira.',
+    url: 'https://amzn.to/3QxUBAu',
+    image: 'https://m.media-amazon.com/images/I/71RWTuYLQiL._SY522_.jpg',
     category: 'Livros',
   },
   {
@@ -443,7 +465,7 @@ export const productsBR = [
   {
     title: 'O Capital no Século XXI',
     description:
-      'Vivemos no capitalismo e Marx não é suficiente. Thomas Piketty desseca a abissal  desigualdade social no mundo hoje. Imprescindível para entender a relação entre capital, riqueza e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política.',
+      'Vivemos no capitalismo e Marx não é suficiente. Thomas Piketty desseca a desigualdade social no mundo hoje. Imprescindível para entender a relação entre capital, riqueza e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política.',
     url: 'https://amzn.to/45FQ9Eg',
     image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
     category: 'Livros',
@@ -451,7 +473,7 @@ export const productsBR = [
   {
     title: 'Amor Líquido: Sobre a Fragilidade dos Laços Humanos',
     description:
-      'Bauman não dava like, ele vivia. Na internet, na pós-modernidade, o amor e as relações humanas estão cada vez mais frágeis e superficiais - mas podemos nos fortalecer.',
+      'Bauman não dava like, ele vivia. Na internet, na "Modernidade Líquida", o amor e as relações humanas estão cada vez mais frágeis e superficiais. Bauman nos ajuda a entender a liquidez dos tempos atuais. O amor é líquido, mas a leitura é sólida. Por meio da qual podemos nos fortalecer',
     url: 'https://amzn.to/3Ft6e5L',
     image: 'https://m.media-amazon.com/images/I/61H-WiwbS5L._SY522_.jpg',
     category: 'Livros',
@@ -465,9 +487,17 @@ export const productsBR = [
     category: 'Livros',
   },
   {
+    title: 'O homem mais rico da Babilônia ',
+    description:
+      'Clássico da literatura financeira. Ensina a administrar o dinheiro e a investir com sabedoria, para multiplicar riqueza e solucionar problemas financeiros. "O dinheiro é um bom servo, mas um mau mestre". Com mais de dois milhões de exemplares vendidos no mundo todo.',
+    url: 'https://amzn.to/44raWMR',
+    image: 'https://m.media-amazon.com/images/I/81ehX6Quw2L._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
     title: 'A Arte da Guerra',
     description:
-      'Clássico da estratégia militar. Sun Tzu tem ensinamentos que podem ser aplicados em qualquer área da nossa vida.',
+      'Clássico da estratégia militar. Sun Tzu tem ensinamentos que podem ser aplicados em qualquer área da nossa vida. "Se você conhece o inimigo e a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas". Um livro para a vida.',
     url: 'https://amzn.to/3Fmkptn',
     image: 'https://m.media-amazon.com/images/I/71ykI7h--qL._SY522_.jpg',
     category: 'Livros',

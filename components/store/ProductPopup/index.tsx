@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Style from './ProductPopup.module.css'
+import { IconArrowDown } from '../../Svgs'
 
 interface ProductPopupProps {
   product: {
@@ -62,7 +63,9 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
             <h2>{product.title}</h2>
             <p>{product.description}</p>
 
-            <h3>Compre em ⭣</h3>
+            <h3>
+              Compre agora <IconArrowDown />
+            </h3>
 
             <div>
               {product.url && (
