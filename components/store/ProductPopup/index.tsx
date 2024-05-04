@@ -73,7 +73,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                 <p>{product.description}</p>
 
                 <h3>
-                  {isMultiLinks ? 'Escolha a loja' : 'Compre agora'} <IconArrowDown />
+                  Compre agora <IconArrowDown />
                 </h3>
 
                 <div>

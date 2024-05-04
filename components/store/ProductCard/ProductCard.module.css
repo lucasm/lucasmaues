@@ -53,6 +53,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container ul li button {
+    max-width: 100%;
+  }
   .container ul li button img {
     width: 148px;
   }

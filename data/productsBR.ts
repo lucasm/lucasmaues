@@ -2,7 +2,7 @@ export const productsBR = [
   {
     title: 'Mouse Logitech MX Vertical',
     description:
-      'O melhor mouse Bluetooth ergonômico já criado na indústria. Adeus dores no pulso.',
+      'O melhor mouse ergonômico e Bluetooth já criado. Diga adeus para as dores no pulso.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
@@ -20,7 +20,7 @@ export const productsBR = [
   {
     title: 'Apple AirPods Pro 2',
     description:
-      'Fone de ouvido Bluetooth com cancelamento de ruído ativo e áudio espacial padrão Apple. Ganhe 6 meses de Apple Music.',
+      'Fone de ouvido Bluetooth com a qualidade da Apple. Cancelamento de ruído ativo e áudio espacial. Ganhe 6 meses de Apple Music.',
     url: 'https://amzn.to/3Dw6uA0',
     url_2: 'https://mercadolivre.com/sec/27WpiBa',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
@@ -29,7 +29,7 @@ export const productsBR = [
   {
     title: 'Apple iPhone 15 128GB',
     description:
-      'iPhone bom, com desempenho reconhecido, câmera de qualidade, boa duração de bateria e USB-C.',
+      'iPhone com desempenho reconhecido, câmera de qualidade, boa duração de bateria e USB-C.',
     url: 'https://amzn.to/49uT9pP',
     url_2: 'https://mercadolivre.com/sec/2GCYRzv',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
@@ -38,7 +38,7 @@ export const productsBR = [
   {
     title: 'Stanley Aerolight Fast Flow',
     description:
-      'Garrafa térmica 710ML de qualidade. Ideal para o dia a dia, academia e viagens. Uma paixão!',
+      'Garrafa térmica de 710ML. Qualidade padrão Stanley. Ideal para viagens, o dia a dia e academia. Uma paixão!',
     url: 'https://amzn.to/3uDXl7H',
     url_2: 'https://mercadolivre.com/sec/32YnaEu',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
@@ -47,7 +47,7 @@ export const productsBR = [
   {
     title: 'JBL Flip 6',
     description:
-      'Caixa de som Bluetooth portátil de qualidade. Para todas as horas, mesmo na piscina!',
+      'Caixa de som Bluetooth portátil da JBL. Graves, médios e agudos competentes. Para todas as horas, mesmo na piscina!',
     url: 'https://amzn.to/45IVz1o',
     url_2: 'https://mercadolivre.com/sec/2w5Y1cu',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
@@ -56,7 +56,7 @@ export const productsBR = [
   {
     title: 'Videogame portátil ANBERNIC RG35XX',
     description:
-      'Videogame portátil com Linux, tela IPS de 3,5 polegadas, cartão 64G TF, 5.400 jogos clássicos e HDMI.',
+      'Videogame portátil com 5.400 jogos clássicos, Linux, tela IPS de 3,5 polegadas, cartão 64G TF e HDMI.',
     url: 'https://amzn.to/44tcVjV',
     url_3: 'https://s.click.aliexpress.com/e/_DC0Ao8P',
     image: 'https://m.media-amazon.com/images/I/71Ujf2IvIOL._AC_SX679_.jpg',
@@ -65,7 +65,7 @@ export const productsBR = [
   {
     title: 'Webcam Logitech Brio 500 ',
     description:
-      'Webcam ideal para home office. Qualidade Full HD, foco automático, microfone que reduz ruídos, privacidade e vários ajustes.',
+      'Webcam ideal para o home office. Qualidade Full HD, foco automático, microfone que reduz ruídos, privacidade e vários ajustes.',
     url: 'https://amzn.to/4cnZe9t',
     url_2: 'https://mercadolivre.com/sec/1MTXh2w',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
@@ -74,7 +74,7 @@ export const productsBR = [
   {
     title: 'Echo Dot 5 Alexa',
     description:
-      'Caixinha de som inteligente com Alexa. Toca música e conversa com IA - "Alexa toca minha playlist pop".',
+      'Caixinha de som inteligente com Alexa. Toca música e conversa com IA - "Alexa toca minha playlist pop!".',
     url: 'https://amzn.to/45jAJFL',
     url_2: 'https://mercadolivre.com/sec/2SZkXYs',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
@@ -83,7 +83,7 @@ export const productsBR = [
   {
     title: 'Projetor Magcubic HY320 Full HD',
     description:
-      'O melhor custo-benefício em projetor portátil Android do mercado. Com HDMI, USB, Bluetooth, Wi-Fi e resolução Full HD (1080p).',
+      'O melhor custo-benefício em projetor portátil do mercado. Com sistema Android, HDMI, USB, Bluetooth, Wi-Fi e resolução Full HD (1080p).',
     url: 'https://amzn.to/4aLdasx',
     url_3: 'https://s.click.aliexpress.com/e/_DmqI0oB',
     image: 'https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg',
@@ -101,7 +101,7 @@ export const productsBR = [
   {
     title: 'Mochila Dell Pro EcoLoop',
     description:
-      'Mochila para notebooks confortável, com ótimas divisões, ecológica e com resistência à água.',
+      'Mochila para notebooks confortável, com divisões bem pensadas, ecológica e com resistência à água.',
     url: 'https://amzn.to/3TgB6yc',
     url_2: 'https://mercadolivre.com/sec/2CjyvZm',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
@@ -110,7 +110,8 @@ export const productsBR = [
 
   {
     title: 'Clamper Filtro de Linha',
-    description: 'Proteção certificada contra surtos elétricos. 5 equipamentos protegidos.',
+    description:
+      'Proteção contra surtos elétricos. Proteja até 5 equipamentos com filtro de linha certificado.',
     url: 'https://amzn.to/3Mb5Mg9',
     url_2: 'https://mercadolivre.com/sec/1kzXLvN',
     image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
@@ -118,7 +119,8 @@ export const productsBR = [
   },
   {
     title: 'Microfone HyperX Solocast',
-    description: 'Microfone USB-C com qualidade de estúdio, ideal para streamers e podcasters.',
+    description:
+      'Microfone USB-C com qualidade de estúdio. Ótimo custo-benefício. Ideal para streamers e podcasters.',
     url: 'https://amzn.to/4dkvaMl',
     url_2: 'https://mercadolivre.com/sec/32y1APi',
     image: 'https://m.media-amazon.com/images/I/61O6NEqMeCL._AC_SX679_.jpg',
@@ -135,7 +137,8 @@ export const productsBR = [
   },
   {
     title: 'Xiaomi Redmi Note 12 128GB',
-    description: 'Smarthphone Android com preço imbatível e dois chips SIM.',
+    description:
+      'Smarthphone Android com preço imbatível e dois chips SIM. Precisa de um celular secundário ou dar presente? Esse é ótimo.',
     url: 'https://amzn.to/4bp2Tn6',
     url_2: 'https://mercadolivre.com/sec/2Vj2EQr',
     image: 'https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY879_.jpg',
@@ -159,7 +162,7 @@ export const productsBR = [
   {
     title: 'Logitech MX Keys S',
     description:
-      'Teclado Bluetooth de qualidade superior e completo. Com teclas numéricas dedicadas. Famoso pela alta produtividade.',
+      'Teclado Bluetooth completo. Com teclas numéricas dedicadas. Famoso pela alta produtividade.',
     url: 'https://amzn.to/3tLZkpo',
     url_2: 'https://mercadolivre.com/sec/198G2oX',
     image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
@@ -167,7 +170,8 @@ export const productsBR = [
   },
   {
     title: 'Logitech Lift Vertical',
-    description: 'Mouse Bluetooth ergonômico e compacto.',
+    description:
+      'Mouse ergonômico e Bluetooth, porém mais compacto que o MX Master. Recomendado para quem tem mãos pequenas.',
     url: 'https://amzn.to/3HKL5VS',
     url_2: 'https://mercadolivre.com/sec/25EAYdg',
     image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
@@ -182,7 +186,7 @@ export const productsBR = [
   },
   {
     title: 'Abajur Luminária Pixar',
-    description: 'Abajur (estilo Pixar) com braço articulado, base para mesa e agarrador.',
+    description: 'Abajur com braço articulado, base para mesa e agarrador. Estilo Pixar.',
     url: 'https://amzn.to/4crKlD3',
     url_2: 'https://mercadolivre.com/sec/1DoNpyN',
     image: 'https://m.media-amazon.com/images/I/510SeRtQxzL._AC_SX679_.jpg',
@@ -191,7 +195,7 @@ export const productsBR = [
   {
     title: 'Smart Lâmpada Positivo 9W RGB ',
     description:
-      'Lâmpada RGB, branca fria ou quente. Conexão Wi-Fi e Bluetooth. Compatível com Alexa e Google. Linha casa inteligente da Positivo é um baita acerto!',
+      'Lâmpada que fica colorida (RGB) ou na cor branca (fria e quente). Com Wi-Fi e Bluetooth. Compatível com Alexa e Google. Linha "casa inteligente" da Positivo é baita acerto!',
     url: 'https://amzn.to/43xUR7N',
     image: 'https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -199,7 +203,7 @@ export const productsBR = [
   {
     title: 'Banquinho Apoio de Pés',
     description:
-      'Apoio para os pés com altura ajustável em 6 posições. Ergonômico. Sua saúde agradece.',
+      'Apoio para os pés ergonômico, com altura ajustável em 6 posições. Sua saúde agradece.',
     url: 'https://amzn.to/3vmkkV7',
     image: 'https://m.media-amazon.com/images/I/615lH-lmwNL._AC_SX679_.jpg',
     category: 'Acessórios',
@@ -207,7 +211,7 @@ export const productsBR = [
   {
     title: 'Ar Condicionado Split Inverter Samsung WindFree Connect 9.000 BTUs Frio',
     description:
-      'Ar-condicionado com tecnologia WindFree, sem vento, e com controle via Wi-Fi. Calcula gasto energético. Um dos mais econômicos segundo Inmetro. Ideal para TUDO.',
+      'Ar-condicionado com tecnologia WindFree, sem vento, e com controle via Wi-Fi. Calcula gasto energético. Um dos mais eficientes em energia segundo Inmetro. Ideal para qualquer ambiente.',
     url: 'https://amzn.to/3K4XTaR',
     url_2: 'https://mercadolivre.com/sec/2T7wpW9',
     image: 'https://m.media-amazon.com/images/I/51PdZgbII7L._AC_SX679_.jpg',
@@ -216,7 +220,7 @@ export const productsBR = [
   {
     title: 'Monitores Dell 4K, UHD e Full HD',
     description:
-      'Com suporte elogiado, a Dell é referência em monitores duráveis, para trabalho e jogos.',
+      'A Dell é referência em monitores duráveis, para trabalho e jogos. Com suporte elogiado.',
     url: 'https://amzn.to/4a7Osln',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Dispositivos',
