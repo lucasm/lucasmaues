@@ -23,8 +23,8 @@ export default function Banners() {
     {
       link: 'https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2',
       external: true,
-      title: 'Ganhe  R$ 5,00',
-      subtitle: 'Ative o Méliuz e ganhe R$ 5,00 de volta na próxima compra online.',
+      title: 'Ganhe  R$ 5,00 *',
+      subtitle: 'Ative o Méliuz e ganhe R$ 5,00 de volta na sua próxima compra online.',
       image: <IconMoney />,
     },
   ]

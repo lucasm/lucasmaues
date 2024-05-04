@@ -286,7 +286,7 @@ export const productsBR = [
   {
     title: 'Apple iPad Air 5 M1 10.9"',
     description:
-      'É o melhor tablet do mundo e o mais vendido. Com chip M1, tela Liquid Retina e Touch ID.',
+      'O melhor e mais vendido tablet do mundo. Com chip M1, tela Liquid Retina e Touch ID.',
     url: 'https://amzn.to/4b1K5JX',
     image: 'https://m.media-amazon.com/images/I/41hgARuEKcL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -461,7 +461,7 @@ export const productsBR = [
   {
     title: 'Se quiser mudar o mundo: Um guia político para quem se importa',
     description:
-      'Um amigo me presenteou, e eu indico. Uma introdução a teoria do materialismo histórico dialético, que nos ajuda a compreender o sistema sócio-político-econômico em que vivemos. Muitas das mudanças que queremos ver no mundo, começam antes por nós.',
+      'Sabrina Fernandes nos ensina a sermos agentes de mudança. A política não é só para políticos. Aprenda a ser um cidadão ativo e a lutar por um mundo melhor. Um amigo me presenteou, e eu indico. Muitas das mudanças que queremos ver no mundo, começam antes por nós.',
     url: 'https://amzn.to/3rR2qbn',
     image: 'https://m.media-amazon.com/images/I/717zRJ20C2L._SY522_.jpg',
     category: 'Livros',
@@ -469,7 +469,7 @@ export const productsBR = [
   {
     title: 'O Capital no Século XXI',
     description:
-      'Vivemos no capitalismo e Marx não é suficiente. Thomas Piketty desseca a desigualdade social no mundo hoje. Imprescindível para entender a relação entre capital, riqueza e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política.',
+      'Thomas Piketty nos mostra como a desigualdade é inerente ao capitalismo. E como a concentração de riqueza é um problema para a democracia. O que podemos fazer para mudar isso? Esse livro não é sobre Marxismo, mas sobre a realidade. Entender a relação entre capital, riqueza e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política.',
     url: 'https://amzn.to/45FQ9Eg',
     image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
     category: 'Livros',
@@ -501,7 +501,7 @@ export const productsBR = [
   {
     title: 'A Arte da Guerra',
     description:
-      'Clássico da estratégia militar. Sun Tzu tem ensinamentos que podem ser aplicados em qualquer área da nossa vida. "Se você conhece o inimigo e a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas". Um livro para a vida.',
+      'Clássico da estratégia militar. "Se você conhece o inimigo e a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não o inimigo, para cada vitória sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si, perderá todas as batalhas". Sun Tzu tem ensinamentos para aplicar em qualquer área da vida.',
     url: 'https://amzn.to/3Fmkptn',
     image: 'https://m.media-amazon.com/images/I/71ykI7h--qL._SY522_.jpg',
     category: 'Livros',
