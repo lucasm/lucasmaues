@@ -309,7 +309,7 @@ export const productsBR = [
   {
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     description:
-      'Aprender algoritmos e estruturas de dados é ESSENCIAL para qualquer programador, e fica bem fácil com esse livro. Contêm exemplos em Python.',
+      'Aprender como funcionam os algoritmos e as estruturas de dados da computação é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -317,14 +317,14 @@ export const productsBR = [
   {
     title: 'Estruturas de Dados e Algoritmos com JavaScript',
     description:
-      'Escrito pela incrível programadora brasileira @Loaine, com exemplos em JavaScript na sintaxe do ECMAScript.',
+      'Escrito pela programadora brasileira @Loaine. Aprenda estrutura de dados e algoritmos com exemplos em JavaScript.',
     url: 'https://amzn.to/3Fni1T2',
     image: 'https://m.media-amazon.com/images/I/71KGa1y8eaL._SY522_.jpg',
     category: 'Livros',
   },
   {
     title: 'JavaScript: O Guia Definitivo',
-    description: "Livro referência JavaScript organizado pela consagrada editora O'Reilly.",
+    description: "Livro de referência JavaScript. Organizado pela consagrada editora O'Reilly.",
     url: 'https://amzn.to/3PWgEj6',
     image: 'https://m.media-amazon.com/images/I/91z1xY4ppaL._SY522_.jpg',
     category: 'Livros',
@@ -332,13 +332,13 @@ export const productsBR = [
   {
     title: 'Como ser um Programador Melhor',
     description:
-      'Se você quer se aperfeiçoar na programação, ouça Pete Goodliffe, autor de Code Craft, com mais de 15 anos de experiência. Ele apresenta um conjunto de técnicas e abordagens úteis para melhorar na programação e ajudar a impulsionar a carreira.',
+      'Como se aperfeiçoar na programação? Independente do seu nível, ouça a experiência de Pete: técnicas e abordagens úteis para melhorar na programação e impulsionar a carreira.',
     url: 'https://amzn.to/3QxUBAu',
     image: 'https://m.media-amazon.com/images/I/71RWTuYLQiL._SY522_.jpg',
     category: 'Livros',
   },
   {
-    title: 'Cracking the Coding Interview: 189 programming questions and solutions',
+    title: 'Cracking the Coding Interview: 189 programming questions & solutions',
     description: 'Vai trabalhar na gringa meu fi, arrebenta na entrevista, crackeia tuuuudo!!!',
     url: 'https://amzn.to/46EDYZL',
     image: 'https://m.media-amazon.com/images/I/61mIq2iJUXL._SY522_.jpg',
@@ -347,7 +347,7 @@ export const productsBR = [
   {
     title: 'O Programador Pragmático: de Aprendiz a Mestre',
     description:
-      'Clássico para todo programador, com dicas e principais armadilhas do desenvolvimento de software.',
+      'Clássico para todo programador. Dicas e principais armadilhas do desenvolvimento de software.',
     url: 'https://amzn.to/3MbyOw9',
     image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
     category: 'Livros',
@@ -405,7 +405,7 @@ export const productsBR = [
   },
   {
     title: 'Super Thinking: The big book of mental models',
-    description: 'Clássico sobre modelos mentais, para tomar decisões melhores.',
+    description: 'Clássico sobre modelos mentais. Aprenda a pensar de forma eficaz.',
     url: 'https://amzn.to/403ZPau',
     image: 'https://m.media-amazon.com/images/I/815yQmQZFXL._SY522_.jpg',
     category: 'Livros',
@@ -413,7 +413,7 @@ export const productsBR = [
   {
     title: 'O ego é seu inimigo: Como dominar seu pior adversário',
     description:
-      'O ego pode ser prejudicial ao sucesso e ao desenvolvimento pessoal. Fazer ou ser, é o questionamento explorado por Ryan Holiday aqui.',
+      'O ego pode se torar prejudicial ao sucesso e ao desenvolvimento pessoal. Fazer ou ser, é o questionamento explorado por Ryan Holiday aqui. Aprenda a lidar com o ego e a viver uma vida mais plena.',
     url: 'https://amzn.to/3tFtLxH',
     image: 'https://m.media-amazon.com/images/I/61wr4eRbOUL._SY522_.jpg',
     category: 'Livros',
@@ -421,7 +421,7 @@ export const productsBR = [
   {
     title: 'Antifrágil: Coisas que se beneficiam com o caos',
     description:
-      'O caos é a regra no mundo, as dificuldades são uma escada. Por que você está assustado com o que é natural?',
+      'O caos é a regra no mundo, as dificuldades são uma escada. Por que você está assustado com o que é natural? Nassim Taleb nos ensina a ser antifrágil, a prosperar no caos.',
     url: 'https://amzn.to/3MaTioZ',
     image: 'https://m.media-amazon.com/images/I/71VU8IrbChL._SY522_.jpg',
     category: 'Livros',
@@ -429,7 +429,7 @@ export const productsBR = [
   {
     title: 'Sapiens: Uma Breve História da Humanidade',
     description:
-      '"Starter pack" da vida na Terra. Uma viagem na história humana e nos processos de evolução da humanidade. Mas o trunfo da didatica e narrativa de Yuval Harari é também seu quase equívoco. Ao afirmar que saímos da "barbárie para civilização" pode acabar por binariamente ignorar a sabedoria presente na cosmovisão dos povos originários - que como lembra Krenak: vivem em harmonia com o Planeta desde sempre.',
+      '"Starter pack" da vida na Terra. Uma viagem na história humana e nos processos de evolução. Mas o trunfo da didatica e narrativa de Yuval Harari é também seu quase equívoco. Ao afirmar que saímos da "barbárie" para civilização pode acabar por binariamente ignorar a sabedoria presente na cosmovisão dos povos originários - que como lembra Krenak: vivem em harmonia com o Planeta desde sempre. Ainda assim, é um livro que nos faz deslumbrar a nossa própria história.',
     url: 'https://amzn.to/405U0JB',
     image: 'https://m.media-amazon.com/images/I/81BTkpMrLYL._SY522_.jpg',
     category: 'Livros',
@@ -445,7 +445,7 @@ export const productsBR = [
   {
     title: 'O Mundo Assombrado pelos Demônios',
     description:
-      'Falsas crenças existem há séculos. Carl Sagan elegantemente divulga a ciência como a melhor arma para combater negacionistas e charlatões - em todas as esferas, políticas e religiosas - e sermos seres críticos.',
+      'A ciência é uma vela no escuro? Falsas crenças existem há séculos. Carl Sagan elegantemente divulga a ciência como a melhor arma para combater negacionistas e charlatões - em todas as esferas, políticas e religiosas - e sermos seres críticos.',
     url: 'https://amzn.to/45FOdeY',
     image: 'https://m.media-amazon.com/images/I/9165ewWUEPL._SY522_.jpg',
     category: 'Livros',
@@ -477,7 +477,7 @@ export const productsBR = [
   {
     title: 'Amor Líquido: Sobre a Fragilidade dos Laços Humanos',
     description:
-      'Bauman não dava like, ele vivia. Na internet, na "Modernidade Líquida", o amor e as relações humanas estão cada vez mais frágeis e superficiais. Bauman nos ajuda a entender a liquidez dos tempos atuais. O amor é líquido, mas a leitura é sólida. Por meio da qual podemos nos fortalecer',
+      'Vivemos em tempos líquidos, principalmente na internet. A modernidade líquida de Zygmunt Bauman nos mostra como as relações humanas são cada vez mais efêmeras e descartáveis. Como podemos construir relações mais sólidas e duradouras? Bauman nos ajuda a entender.',
     url: 'https://amzn.to/3Ft6e5L',
     image: 'https://m.media-amazon.com/images/I/61H-WiwbS5L._SY522_.jpg',
     category: 'Livros',
@@ -493,7 +493,7 @@ export const productsBR = [
   {
     title: 'O homem mais rico da Babilônia ',
     description:
-      'Clássico da literatura financeira. Ensina a administrar o dinheiro e a investir com sabedoria, para multiplicar riqueza e solucionar problemas financeiros. "O dinheiro é um bom servo, mas um mau mestre". Com mais de dois milhões de exemplares vendidos no mundo todo.',
+      'Clássico da literatura financeira. Ensina a administrar o dinheiro e a investir com sabedoria, para multiplicar riqueza e solucionar problemas financeiros. "O dinheiro é um bom servo, mas um mau mestre". Com mais de 2 milhões de exemplares vendidos.',
     url: 'https://amzn.to/44raWMR',
     image: 'https://m.media-amazon.com/images/I/81ehX6Quw2L._SY522_.jpg',
     category: 'Livros',
@@ -509,7 +509,7 @@ export const productsBR = [
   {
     title: 'Box Grandes Mestres do Estoicismo',
     description:
-      'Estoicismo é uma filosofia (antes de Cristo), que ensina a ser mais resiliente e feliz. Hey Hey Epiteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa". Ensinamentos valiosos da antiguidade para os dias de hoje.',
+      'Estoicismo é uma filosofia (antes de Cristo), que ensina a ser mais resiliente e feliz. Hey Hey Epiteto não te bate com a realidade, domina ela! "Não é o que acontece com você, mas como você reage a isso que importa". Ensinamentos valiosos atemporais.',
     url: 'https://amzn.to/45JIIMq',
     image: 'https://m.media-amazon.com/images/I/51C7ww6AYCL._SY522_.jpg',
     category: 'Livros',

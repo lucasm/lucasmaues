@@ -32,7 +32,7 @@
 }
 .container ul li button img {
   transition: all 0.25s ease-in-out;
-  padding: 1rem 1.5rem 1rem;
+  padding: 0 1.5rem 0;
   width: 100%;
   filter: grayscale(100%);
   background: var(--color-white);

@@ -44,8 +44,8 @@
   /* background: var(--color-w); */
 }
 .containerDiscount figure svg {
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -58,10 +58,10 @@
 @media screen and (max-width: 600px) {
   .containerDiscount {
     grid-template-columns: 1fr;
-    padding: 2rem 2rem 4rem;
+    padding: 2rem 2rem 3rem;
   }
   .containerDiscount figure {
     margin: 0 auto;
-    height: 6rem;
+    height: 5rem;
   }
 }

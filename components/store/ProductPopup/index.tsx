@@ -73,7 +73,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                 <p>{product.description}</p>
 
                 <h3>
-                  Compre agora <IconArrowDown />
+                  Compre <IconArrowDown />
                 </h3>
 
                 <div>
