@@ -4,8 +4,8 @@ import { useUser } from '../contexts/UserContext'
 import { IconMoon, IconSun } from './Svgs'
 
 export default function Header() {
-  const [isActive, setActive] = useState<boolean>(false)
   const { theme, setTheme } = useUser()
+  const [isActive, setActive] = useState<boolean>(false)
 
   useEffect(() => {
     isActive

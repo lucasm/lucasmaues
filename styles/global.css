@@ -511,8 +511,8 @@ article blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3.25rem;
+  width: 3.25rem;
   background: transparent;
   font-size: 0;
   border-radius: var(--radius-big);
@@ -772,11 +772,18 @@ footer div {
     margin-top: 0.5rem;
   }
   .links svg {
-    width: 26px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
   }
   .links .full-text a {
     margin-top: 0;
+    height: 3.5rem;
+    font-size: var(--font-size-5);
+  }
+
+  .links .full-text svg {
+    width: 26px;
+    height: 26px;
   }
 
   .cards {

@@ -17,7 +17,7 @@ export default function Home() {
                 src="https://avatars.githubusercontent.com/lucasm"
               />
             </figure>
-            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil, developing Frontend, Web & AI.</h1>
+            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil, coding Frontend, Web & AI.</h1>
           </div>
           <Links />
         </div>

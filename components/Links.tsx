@@ -70,6 +70,12 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://discord.com/users/lucasmezs',
+    icon: <IconDiscord />,
+    text: 'Discord',
+    active: true,
+  },
+  {
     url: 'https://open.spotify.com/user/lucasmauess',
     icon: <IconSpotify />,
     text: 'Spotify',
@@ -79,12 +85,6 @@ const Links: ILinks[] = [
     url: 'https://letterboxd.com/lucasmezs',
     icon: <IconLetterboxd />,
     text: 'Letterboxd',
-    active: true,
-  },
-  {
-    url: 'https://discord.com/users/lucasmezs',
-    icon: <IconDiscord />,
-    text: 'Discord',
     active: true,
   },
   {
@@ -138,7 +138,7 @@ export default function ComponentLinks() {
         <li
           key={index}
           className={link.fullText ? 'full-text' : undefined}
-          style={{ marginTop: index === firstOfIndex ? '1rem' : undefined }}>
+          style={{ marginTop: index === firstOfIndex ? '2rem' : undefined }}>
           <Link
             href={link.url}
             target={link.internalPage ? '_self' : '_blank'}

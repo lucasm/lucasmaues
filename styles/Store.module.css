@@ -49,7 +49,7 @@
 .container ul li {
   padding: 0;
 }
-.container ul li a {
+.container ul li button {
   background: var(--color-w);
   border: 0;
   margin: 0;
@@ -65,17 +65,17 @@
   flex-direction: column;
   max-width: 300px;
 }
-.container ul li a img {
+.container ul li button img {
   transition: all 0.25s ease-in-out;
   padding: 1rem 1.5rem 1rem;
   width: 100%;
   filter: grayscale(100%);
   background: var(--color-white);
 }
-.container ul li a:hover img {
+.container ul li button:hover img {
   opacity: 0.85;
 }
-.container ul li a:hover {
+.container ul li button:hover {
   box-shadow: var(--shadow);
 }
 
@@ -83,54 +83,9 @@
   font-size: var(--font-size-5);
   color: var(--color-b-fixed);
 }
-.container ul li a span {
+.container ul li button span {
   font-weight: normal;
   font-size: var(--font-size-6);
-}
-
-.containerDiscount {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  max-width: var(--max-width);
-  padding: 1.5rem 2rem;
-  margin: 6rem auto 0;
-  border-radius: var(--radius-big);
-  align-items: center;
-  vertical-align: middle;
-  background: transparent;
-  border: 3px dashed var(--color-b);
-  text-align: left;
-  grid-gap: 2rem;
-}
-.containerDiscount:hover {
-  border-color: transparent;
-  background: var(--color-translucent);
-  /* box-shadow: var(--shadow); */
-}
-
-.containerDiscount h3 {
-  font-size: var(--font-size-3);
-  padding: 0 0 1rem;
-}
-.containerDiscount p {
-  font-size: var(--font-size-6);
-  padding: 0;
-}
-.containerDiscount figure {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--color-w);
-  border-radius: 50%;
-}
-.containerDiscount figure svg {
-  width: 2rem;
-  height: 2rem;
-}
-.containerDiscount figure svg path {
-  fill: var(--color-b-fixed);
 }
 
 @media screen and (max-width: 600px) {
@@ -151,7 +106,7 @@
     height: 2rem;
   }
 
-  .container ul li a img {
+  .container ul li button img {
     width: 148px;
   }
 
