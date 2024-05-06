@@ -3,6 +3,7 @@
   --color-y: #fff5d0;
   --color-y-2: #fff2c2;
   --color-y-3: #f1de9a;
+  /* #ffda79 */
   --color-y-4: #fcf7ed;
   --color-b: #302d20;
   --color-w: #fff;
@@ -14,7 +15,7 @@
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'Rethink Sans', sans-serif;
-  --font-size-1: 3.75rem;
+  --font-size-1: 4rem;
   --font-size-2: 2.75rem;
   --font-size-3: 1.75rem;
   --font-size-4: 1.5rem;
@@ -268,7 +269,8 @@ section {
 }
 
 a,
-button {
+button,
+input {
   font-family: var(--font);
 }
 
@@ -294,7 +296,7 @@ h3 {
   font-family: var(--font);
   color: var(--color-b);
   padding-bottom: 2rem;
-  line-height: 1.35;
+  line-height: 1.25;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -466,8 +468,7 @@ article blockquote {
   max-width: 900px;
 }
 .page {
-  margin-top: 2rem;
-  max-width: var(--max-width-content);
+  margin: 2rem auto 0;
 }
 .description {
   padding: 0 0 2.5rem;
@@ -503,6 +504,7 @@ article blockquote {
   width: 100%;
   max-width: 500px;
   list-style: none;
+  padding: 0;
 }
 .links li {
   padding: 0;
@@ -704,6 +706,15 @@ footer div {
 }
 
 /* Colors */
+::placeholder {
+  color: var(--color-b);
+  opacity: 1; /* Firefox */
+}
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: var(--color-b);
+}
+
 .svg {
   fill: var(--color-b);
 }

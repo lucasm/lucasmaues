@@ -17,7 +17,7 @@ export default function Home() {
                 src="https://avatars.githubusercontent.com/lucasm"
               />
             </figure>
-            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil, coding Frontend, Web & AI.</h1>
+            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil, coding Frontend & AI.</h1>
           </div>
           <Links />
         </div>
@@ -83,7 +83,10 @@ export default function Home() {
             </div>
 
             <div>
-              <p>Send a concise message. I will get back to you in two business days.</p>
+              <p>
+                Please, send a concise message describing your project. I'll get back to you in two
+                business days.
+              </p>
 
               <a className="button" href="mailto:hello@lucasm.dev">
                 hello@lucasm.dev

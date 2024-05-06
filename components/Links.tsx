@@ -14,7 +14,7 @@ import {
   IconDiscord,
   IconInstagram,
   IconStore,
-  IconHeart,
+  IconMentorship,
   IconWhatsapp,
   IconMore,
   IconLess,
@@ -112,8 +112,8 @@ const Links: ILinks[] = [
   },
   {
     url: 'https://patreon.com/lucasm',
-    icon: <IconHeart />,
-    text: 'Mentorias Dev',
+    icon: <IconMentorship />,
+    text: 'Mentoria Dev',
     active: false,
     fullText: true,
   },
@@ -135,8 +135,8 @@ export default function ComponentLinks() {
 
   const fullTextLinks = Links.filter((link) => link.fullText)
   const otherLinks = Links.filter((link) => !link.fullText)
-
-  const visibleOtherLinks = showMore ? otherLinks : otherLinks.slice(0, 6)
+  const limitOfLinks = 5
+  const visibleOtherLinks = showMore ? otherLinks : otherLinks.slice(0, limitOfLinks)
 
   return (
     <div>
@@ -156,7 +156,7 @@ export default function ComponentLinks() {
             </Link>
           </li>
         ))}
-        {otherLinks.length > 6 && (
+        {otherLinks.length > limitOfLinks && (
           <li>
             <button onClick={handleToggle} aria-expanded={showMore ? 'true' : 'false'}>
               {showMore ? <IconLess /> : <IconMore />}

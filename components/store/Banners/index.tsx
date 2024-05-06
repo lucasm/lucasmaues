@@ -23,9 +23,9 @@ export default function Banners() {
     {
       link: 'https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2',
       external: true,
-      title: 'Ganhe R$ 5,00 *',
+      title: 'Ganhe R$ 5,00',
       subtitle:
-        'Cadastre-se no Méliuz para ganhar cashback em todas suas compras online. R$ 5,00 na primeira.',
+        'Cadastre-se no Méliuz para ganhar cashback em todas as compras online. Ganhe R$ 5,00 na primeira.',
       image: <IconMoney />,
     },
   ]

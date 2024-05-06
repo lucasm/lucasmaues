@@ -1,12 +1,12 @@
 import { useRef, useState } from 'react'
 import PageLayout from '../components/PageLayout'
-import Style from '../styles/Store.module.css'
 import StyleCard from '../components/store/ProductCard/ProductCard.module.css'
 import Banners from '../components/store/Banners'
-import { IconHeart, IconWarning } from '../components/Svgs'
 import ProductPopup from '../components/store/ProductPopup'
 import { productsBR } from '../data/productsBR'
 import ProductCard from '../components/store/ProductCard'
+import SearchFilter from '../components/store/SearchFilter'
+import Donate from '../components/store/Donate'
 
 export default function PageStore() {
   const title = 'Loja Dev'
@@ -15,23 +15,33 @@ export default function PageStore() {
 
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState('Todos')
+  const [searchTerm, setSearchTerm] = useState('')
 
-  const filteredProducts =
-    category === 'Todos'
-      ? productsBR
-      : productsBR.filter((product) => product.category === category)
+  const filteredProducts = productsBR.filter((product) => {
+    const matchesCategory = category === 'Todos' || product.category === category
+    const matchesSearchTerm =
+      product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchTerm.toLowerCase())
+    return matchesCategory && matchesSearchTerm
+  })
 
   const containerProductsRef = useRef<HTMLDivElement>(null)
 
-  const handleClickCategory = (category: string) => {
-    setCategory(category)
+  const handleCategoryChange = (newCategory) => {
+    setCategory(newCategory)
     if (containerProductsRef?.current) {
       containerProductsRef?.current?.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
+  const handleSearchChange = (newSearchTerm) => {
+    setSearchTerm(newSearchTerm)
+  }
+
   const handleOpenProductPopup = (product) => {
     setSelectedProduct(product)
   }
+
   const handleCloseProductPopup = () => {
     setSelectedProduct(null)
   }
@@ -39,65 +49,32 @@ export default function PageStore() {
   return (
     <PageLayout title={title} description={description} image={image}>
       <section>
-        <div className="container page">
-          {/* <figure className={Style.icon}>
-            <IconHeart />
-          </figure> */}
+        <div className="page">
           <h1>{title}</h1>
           <p>{description}</p>
 
-          <p>
-            <a
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                width: 'fit-content',
-                margin: '1rem auto',
-              }}
-              href="https://www.paraquemdoar.com.br/?ref=lucasm.dev"
-              target="_blank"
-              rel="noopener noreferrer">
-              <IconWarning />
-              Doe para o Rio Grande do Sul
-            </a>
-          </p>
+          <Donate />
 
-          <div className={Style.buttons}>
-            <button
-              onClick={() => handleClickCategory('Todos')}
-              className={category === 'Todos' ? Style.buttonActive : undefined}>
-              Tudo
-            </button>
-            <button
-              onClick={() => handleClickCategory('Dispositivos')}
-              className={category === 'Dispositivos' ? Style.buttonActive : undefined}>
-              Dispositivos
-            </button>
-            <button
-              onClick={() => handleClickCategory('Acessórios')}
-              className={category === 'Acessórios' ? Style.buttonActive : undefined}>
-              Acessórios
-            </button>
-            <button
-              onClick={() => handleClickCategory('Livros')}
-              className={category === 'Livros' ? Style.buttonActive : undefined}>
-              Livros
-            </button>
+          <SearchFilter
+            currentCategory={category}
+            onCategoryChange={handleCategoryChange}
+            onSearchChange={handleSearchChange}
+          />
+
+          <div className={StyleCard.container} ref={containerProductsRef}>
+            <ul>
+              {filteredProducts.map((product, index) => (
+                <li key={index}>
+                  <ProductCard product={product} handleOnClick={handleOpenProductPopup} />
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
 
-        <div className={StyleCard.container} ref={containerProductsRef}>
-          <ul>
-            {filteredProducts.map((product, index) => (
-              <li key={index}>
-                <ProductCard product={product} handleOnClick={handleOpenProductPopup} />
-              </li>
-            ))}
-          </ul>
-        </div>
+          {filteredProducts.length === 0 && <p className="noResults">Nenhum produto encontrado.</p>}
 
-        <Banners />
+          <Banners />
+        </div>
       </section>
 
       {selectedProduct && (

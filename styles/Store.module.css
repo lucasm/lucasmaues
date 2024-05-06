@@ -6,33 +6,6 @@
   height: 2rem;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem 0 0.5rem;
-}
-.buttons button {
-  display: flex;
-  align-items: center;
-  width: auto;
-  padding: 0 1.5rem;
-  height: 2.25rem;
-  border-radius: var(--radius);
-  border: 0;
-  background: transparent;
-  color: var(--color-b);
-  /* box-shadow: var(--shadow); */
-  border: 1px solid var(--color-b);
-  transition: var(--transition-hover);
-  font-size: var(--font-size-6);
-  font-family: var(--font-family);
-}
-.buttonActive {
-  background: var(--color-b) !important;
-  color: var(--color-w-text) !important;
-}
-
 @media screen and (max-width: 600px) {
   .icon {
     margin-top: 3rem;

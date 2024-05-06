@@ -227,7 +227,8 @@ export const productsBR = [
   },
   {
     title: 'Apple MacBook Air M3 13" 8GB 256GB',
-    description: 'MacBook leve, portátil e com chip M3 de altíssimo desempenho.',
+    description:
+      'Notebook leve da Apple, portátil e com chip M3 de última geração e altíssimo desempenho.',
     url: 'https://amzn.to/3QvbX0R',
     image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
     category: 'Dispositivos',
@@ -235,7 +236,7 @@ export const productsBR = [
   {
     title: 'Apple MacBook Air M1 13" 8GB 256GB',
     description:
-      'MacBook acessível e portátil. Atinge desempenho e duração de bateria incríveis com chip M1. Obra prima!',
+      'Notebook acessível da Apple e portátil. Atinge desempenho e duração de bateria incríveis com chip M1. Obra prima!',
     url: 'https://amzn.to/45JUIxs',
     url_2: 'https://mercadolivre.com/sec/2S6wLNi',
     image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
