@@ -1,13 +1,18 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import Style from './SearchFilter.module.css'
 import { IconClose, IconSearch } from '../../Svgs'
 
 export default function SearchFilter({ currentCategory, onCategoryChange, onSearchChange }) {
   const [searchTerm, setSearchTerm] = useState('')
+  const refInput = useRef(null)
 
   const clearInput = () => {
     setSearchTerm('')
     onSearchChange('')
+  }
+
+  const focusInput = () => {
+    refInput?.current && refInput.current.focus()
   }
 
   const handleCategoryClick = (category) => {
@@ -25,15 +30,16 @@ export default function SearchFilter({ currentCategory, onCategoryChange, onSear
       {/* Barra de busca */}
       <div className={Style.searchBar}>
         <input
+          ref={refInput}
           type="text"
           placeholder="Buscar"
           value={searchTerm}
           onChange={handleSearchChange}
           className={Style.searchInput}
         />
-        <div className={Style.iconSearch}>
+        <button className={Style.buttonSearch} onClick={focusInput}>
           <IconSearch />
-        </div>
+        </button>
 
         {searchTerm && (
           <button className={Style.buttonClear} onClick={clearInput}>

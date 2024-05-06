@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.iconSearch,
+.buttonSearch,
 .buttonClear {
   position: absolute;
   top: 0;
@@ -12,16 +12,15 @@
   height: 3rem;
   border-radius: var(--radius);
   padding: 0.75rem;
-  /* background: yellow; */
+  background: transparent;
   fill: var(--color-b);
 }
-.iconSearch {
+.buttonSearch {
   left: 0;
   cursor: text;
 }
 
 .buttonClear {
-  background: transparent;
   right: 0;
 }
 
