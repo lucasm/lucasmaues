@@ -84,7 +84,7 @@ export default function Home() {
 
             <div>
               <p>
-                Please, send a concise message describing your project. I'll get back to you in two
+                Send a concise message describing your project, and I'll get back to you in two
                 business days.
               </p>
 

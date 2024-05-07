@@ -2,7 +2,12 @@ import { useRef, useState } from 'react'
 import Style from './SearchFilter.module.css'
 import { IconClose, IconSearch } from '../../Svgs'
 
-export default function SearchFilter({ currentCategory, onCategoryChange, onSearchChange }) {
+export default function SearchFilter({
+  currentCategory,
+  onCategoryChange,
+  onSearchChange,
+  isEmptySearch,
+}) {
   const [searchTerm, setSearchTerm] = useState('')
   const refInput = useRef(null)
 
@@ -10,19 +15,22 @@ export default function SearchFilter({ currentCategory, onCategoryChange, onSear
     setSearchTerm('')
     onSearchChange('')
   }
-
   const focusInput = () => {
     refInput?.current && refInput.current.focus()
   }
-
   const handleCategoryClick = (category) => {
     onCategoryChange(category)
   }
-
   const handleSearchChange = (event) => {
     const newSearchTerm = event.target.value
     setSearchTerm(newSearchTerm)
     onSearchChange(newSearchTerm)
+  }
+
+  const resetAll = () => {
+    setSearchTerm('')
+    onSearchChange('')
+    onCategoryChange('Todos')
   }
 
   return (
@@ -48,11 +56,12 @@ export default function SearchFilter({ currentCategory, onCategoryChange, onSear
         )}
       </div>
 
+      {/* Botões de categoria */}
       <div className={Style.buttons}>
         <button
           onClick={() => handleCategoryClick('Todos')}
           className={currentCategory === 'Todos' ? Style.buttonActive : undefined}>
-          Tudo
+          Todos
         </button>
         <button
           onClick={() => handleCategoryClick('Dispositivos')}
@@ -70,6 +79,16 @@ export default function SearchFilter({ currentCategory, onCategoryChange, onSear
           Livros
         </button>
       </div>
+
+      {/* Mensagem de nenhum resultado */}
+      {isEmptySearch && (
+        <div className={Style.noResults}>
+          <h2>Nenhum produto encontrado</h2>
+          <button className="button" onClick={resetAll}>
+            Ver todos
+          </button>
+        </div>
+      )}
     </div>
   )
 }

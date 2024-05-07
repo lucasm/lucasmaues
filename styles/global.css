@@ -541,11 +541,13 @@ article blockquote {
   color: var(--color-b);
   text-align: left;
   line-height: 1;
-  border-color: var(--color-b);
+  background: var(--color-translucent);
+  border-color: transparent;
 }
 .links .full-text a:hover {
   transform: scale(1.025);
   background: transparent;
+  border-color: var(--color-b);
 }
 
 .links svg {

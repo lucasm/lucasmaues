@@ -34,14 +34,13 @@ export default function PageStore() {
     }
   }
 
-  const handleSearchChange = (newSearchTerm) => {
+  const handleSearchChange = (newSearchTerm: string) => {
     setSearchTerm(newSearchTerm)
   }
 
   const handleOpenProductPopup = (product) => {
     setSelectedProduct(product)
   }
-
   const handleCloseProductPopup = () => {
     setSelectedProduct(null)
   }
@@ -59,6 +58,7 @@ export default function PageStore() {
             currentCategory={category}
             onCategoryChange={handleCategoryChange}
             onSearchChange={handleSearchChange}
+            isEmptySearch={filteredProducts.length === 0}
           />
 
           <div className={StyleCard.container} ref={containerProductsRef}>
@@ -70,8 +70,6 @@ export default function PageStore() {
               ))}
             </ul>
           </div>
-
-          {filteredProducts.length === 0 && <p className="noResults">Nenhum produto encontrado.</p>}
 
           <Banners />
         </div>
