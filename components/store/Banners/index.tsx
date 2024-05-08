@@ -25,7 +25,7 @@ export default function Banners() {
       external: true,
       title: 'Ganhe R$ 5,00',
       subtitle:
-        'Cadastre-se no Méliuz para ganhar cashback em todas as compras online. Ganhe R$ 5,00 na primeira.',
+        'Ative o Méliuz e receba cashback em todas as suas compras online. Ganhe R$ 5,00 na primeira.',
       image: <IconMoney />,
     },
   ]
