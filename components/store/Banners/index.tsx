@@ -13,7 +13,7 @@ interface BannerProps {
 export default function Banners() {
   const banners = [
     {
-      link: '#',
+      link: '#products',
       external: false,
       title: 'Compre com segurança',
       subtitle:

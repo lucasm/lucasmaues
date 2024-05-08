@@ -61,7 +61,7 @@ export default function PageStore() {
             isEmptySearch={filteredProducts.length === 0}
           />
 
-          <div className={StyleCard.container} ref={containerProductsRef}>
+          <div className={StyleCard.container} ref={containerProductsRef} id="products">
             <ul>
               {filteredProducts.map((product, index) => (
                 <li key={index}>
