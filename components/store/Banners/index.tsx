@@ -21,11 +21,10 @@ export default function Banners() {
       image: <IconShield />,
     },
     {
-      link: 'https://www.meliuz.com.br/i/ref_lucasmauess?ref_source=2',
+      link: 'https://www.meliuz.com.br/i/ref_lucasmauess',
       external: true,
-      title: 'Ganhe R$ 5,00',
-      subtitle:
-        'Ative o Méliuz e receba cashback em todas as suas compras online. Ganhe R$ 5,00 na primeira.',
+      title: 'Receba R$ 5,00',
+      subtitle: 'Com o Méliuz você recebe cashback em todas as suas compras online.',
       image: <IconMoney />,
     },
   ]
