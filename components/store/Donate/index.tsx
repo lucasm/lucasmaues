@@ -15,7 +15,7 @@ const Donate = () => {
         target="_blank"
         rel="noopener noreferrer">
         <IconHeart />
-        Doe para o Rio Grande do Sul
+        Ajude o Rio Grande do Sul
       </a>
     </p>
   )
