@@ -308,6 +308,14 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
+    title: 'Moldura Quadro A3 30x42',
+    description:
+      'Moldura perfeita para quadros, poster, diploma ou fotos. Vem com proteção de acetato.',
+    url_2: 'https://mercadolivre.com/sec/1cb1vuB',
+    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_750194-MLB49921050870_052022-F.webp',
+    category: 'Acessórios',
+  },
+  {
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     description:
       'Aprender como funcionam os algoritmos e as estruturas de dados da computação é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python.',
