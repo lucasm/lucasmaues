@@ -81,6 +81,7 @@ header .container {
 
 header .headerButtons {
   display: flex;
+  gap: 0.5rem;
 }
 header .headerButtons button {
   display: flex;
@@ -737,7 +738,6 @@ footer div {
   }
 
   header .headerButtons {
-    gap: 0.5rem;
     margin-right: 0.75rem;
   }
   header .headerButtons button {
