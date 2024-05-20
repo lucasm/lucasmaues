@@ -26,9 +26,6 @@ export default function Header() {
       setTheme('light')
       window.localStorage.setItem('theme', 'light')
     }
-
-    const audio = new Audio('/minimal-pop-click-ui-1-198301.mp3')
-    audio.play()
   }
 
   const HeaderLinks = [
