@@ -11,8 +11,8 @@ import Banners from '../components/store/Banners'
 
 export default function PageStore() {
   const title = ROUTES.STORE.title
-  const image = 'https://lucasm.dev/share-store.png'
-  const description = 'Os melhores produtos para quem ama tecnologia e lifestyle saudável!'
+  const image = ROUTES.STORE.image
+  const description = ROUTES.STORE.description
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState('Todos')
   const [searchTerm, setSearchTerm] = useState('')

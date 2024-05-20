@@ -13,7 +13,7 @@ export const productsBR = [
     title: 'Teclado Logitech MX Keys Mini',
     stars: 4.8,
     description:
-      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas reguláveis, botões personalizáveis e bateria recarregável. Ponto alto para o design, a portabilidade e a qualidade na construção.',
+      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design e a qualidade na construção.',
     url: 'https://amzn.to/3OwLrDM',
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',

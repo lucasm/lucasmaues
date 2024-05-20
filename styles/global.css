@@ -239,10 +239,13 @@ nav a {
   text-align: left;
   padding: 1rem 0 1rem 10vw;
   color: var(--color-b);
+  transition: font-weight 0.3s ease;
+  font-weight: 400;
 }
 nav a:hover,
 nav a:focus {
   background: var(--color-translucent);
+  font-weight: 700;
 }
 
 section {

@@ -14,4 +14,4 @@ Made with React, TypeScript, CSS and Next.js framework.
 
 - Source code is under [MIT license](https://github.com/lucasmezs/lucasmezs.github.io/blob/master/LICENCE.txt)
 - Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- [Privacy policy](https://lucasm.dev/privacy)
+- [Privacy Policy](https://lucasm.dev/privacy)

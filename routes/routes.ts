@@ -2,6 +2,8 @@ export const ROUTES = {
   HOME: {
     path: '/',
     title: 'Home',
+    description:
+      "Hello, I'm a Software Engineer from Brazil. I build Frontend and AI for stand out companies.",
   },
   ABOUT: {
     path: '/#about',
@@ -14,6 +16,8 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Loja Dev',
+    description: 'Os melhores produtos de tecnologia e lifestyle saudável.',
+    image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentorship',

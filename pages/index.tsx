@@ -8,9 +8,7 @@ import { ROUTES } from '../routes/routes'
 
 export default function Home() {
   return (
-    <PageLayout
-      title="Lucas Menezes"
-      description="Hello, I'm a Software Engineer from Brazil, building Frontend, Web & AI for stand out companies.">
+    <PageLayout title="Lucas Menezes" description={ROUTES.HOME.description}>
       <section className="fullscreen" id="home">
         <div className="fullscreen-container">
           <div className="container home">
