@@ -14,7 +14,7 @@
   align-items: center;
   vertical-align: middle;
   background: transparent;
-  border: 3px dashed var(--color-b);
+  border: 1px solid var(--color-b);
   text-align: left;
   grid-gap: 1rem;
   width: 100%;
@@ -32,7 +32,7 @@
   line-height: 1.2;
 }
 .containerDiscount p {
-  font-size: var(--font-size-6);
+  /* font-size: var(--font-size-6); */
   padding: 0;
 }
 .containerDiscount figure {

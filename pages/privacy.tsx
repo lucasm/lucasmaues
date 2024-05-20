@@ -7,7 +7,7 @@ export default function PagePrivacy() {
       description="Privacy Policy of Lucas Menezes website and open source projects.">
       <section>
         <article>
-          <h1>Privacy</h1>
+          <h1>Privacy Policy</h1>
 
           <p>
             Lucas Menezes under the legal entity in Brazil LUCASM.DEV LTDA is committed to respect

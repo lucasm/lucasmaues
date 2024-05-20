@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+}
+#profile {
+  position: relative;
+  margin: 0 auto 4rem;
+  display: flex;
+}
+#profile img {
+  width: 6rem;
+  height: 6rem;
+  background: var(--color-translucent);
+  border-radius: 50%;
+  z-index: 2;
+}
+#profile svg {
+  position: absolute;
+  top: -4rem;
+  left: -6rem;
+  width: 14rem;
+  height: 14rem;
+  z-index: -1;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #profile img {
+    width: 8rem;
+    height: 8rem;
+  }
+  #profile svg {
+    top: -6rem;
+    left: -8rem;
+    width: 18rem;
+    height: 18rem;
+  }
+}

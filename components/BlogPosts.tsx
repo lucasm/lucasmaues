@@ -14,13 +14,19 @@ export default function Posts() {
         data.slice(0, 3).map((item: any, index: number) => (
           <li key={index}>
             <a href={item.url} target="_blank" rel="noopener noreferrer">
-              <span>{index + 1}</span>
               {/* <figure>
                 <img src={item.cover_image} width="200px"></img>
               </figure> */}
-              <p className="posts-data">{item.readable_publish_date}</p>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              {/* <p className="posts-data">{item.readable_publish_date}</p> */}
+
+              <div>
+                <span>{index + 1}</span>
+              </div>
+
+              <div>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </a>
           </li>
         ))}

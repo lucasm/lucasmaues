@@ -1,23 +1,33 @@
-import { IconHeart } from '../../Svgs'
+import styles from './Donate.module.css'
+import Button from '../../Button'
+import { IconGift, IconHeart, IconShield } from '../../Svgs'
 
 const Donate = () => {
   return (
-    <p>
-      <a
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.5rem',
-          width: 'fit-content',
-          margin: '1rem auto',
-        }}
-        href="https://www.paraquemdoar.com.br/?ref=lucasm.dev"
-        target="_blank"
-        rel="noopener noreferrer">
-        <IconHeart />
-        Ajude o Rio Grande do Sul
-      </a>
-    </p>
+    <div className={styles.container}>
+      <Button url="#banner">
+        <>
+          <IconShield />
+          Compra segura
+        </>
+      </Button>
+
+      <Button
+        url="https://emergencia.paraquemdoar.com.br/?ref=lucasmdev?utm_source=lucasmdev&utm_medium=lucasmdev&utm_campaign=lucasmdev"
+        isExternal>
+        <>
+          <IconHeart />
+          Ajude o RS
+        </>
+      </Button>
+
+      <Button url="https://www.meliuz.com.br/i/ref_lucasmauess" isExternal>
+        <>
+          <IconGift />
+          Ganhe R$ 5,00
+        </>
+      </Button>
+    </div>
   )
 }
 

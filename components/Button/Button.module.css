@@ -1,0 +1,29 @@
+.button {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  margin: 0;
+  padding: 0 2rem;
+  height: var(--height-min);
+  line-height: 1;
+  color: var(--color-b-fixed);
+  background: var(--color-y-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-big);
+  cursor: pointer;
+  font-size: var(--font-size-6);
+}
+.button:hover {
+  transform: scale(1.025);
+}
+
+@media screen and (min-width: 700px) {
+  .button {
+    padding: 0 3rem;
+    height: var(--height-max);
+    font-size: var(--font-size-5);
+  }
+}

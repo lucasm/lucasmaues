@@ -24,7 +24,7 @@ export function UserContextProvider({ children }) {
       )
       root.style.setProperty(
         '--color-background',
-        theme === 'dark' ? 'var(--color-b-dark)' : 'var(--color-y)'
+        theme === 'dark' ? 'var(--color-b-dark)' : 'var(--color-y-4)'
       )
       root.style.setProperty(
         '--color-translucent',

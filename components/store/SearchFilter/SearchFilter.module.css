@@ -1,7 +1,20 @@
+.container {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  width: 500px;
+  left: calc(50% - 250px); /* Centraliza horizontalmente com base na largura */
+  background: var(--color-y-3);
+  padding: 0;
+  border-radius: 10rem;
+  z-index: 9;
+}
+
 .searchBar {
   position: relative;
-  max-width: 480px;
-  margin: 0 auto;
 }
 
 .buttonSearch,
@@ -9,14 +22,16 @@
   position: absolute;
   top: 0;
   width: 4rem;
-  height: 3rem;
-  border-radius: var(--radius);
-  padding: 0.75rem;
+  height: 4rem;
+  border-radius: 10rem;
   background: transparent;
-  fill: var(--color-b);
+  fill: var(--color-b-fixed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buttonSearch {
-  left: 0;
+  right: 0;
   cursor: text;
 }
 .buttonClear {
@@ -24,20 +39,24 @@
 }
 
 .searchInput {
-  width: 100%;
-  padding: 0 3.5rem;
-  border: 1px solid var(--color-b);
+  width: 500px;
+  padding: 0 3.5rem 0 2rem;
+  border: 1px solid transparent;
   border-radius: var(--radius-big);
-  height: 3rem;
-  font-size: var(--font-size-6);
-  margin-bottom: 1rem;
+  height: 4rem;
+  font-size: var(--font-size-5);
   background: transparent;
-  color: var(--color-b);
+  color: var(--color-b-fixed);
   transition: all var(--easingDecelerate);
 }
 .searchInput:focus {
-  border: 2px solid var(--color-b);
+  border-color: var(--color-b-fixed);
+  background: transparent;
   outline: none;
+}
+.searchInput::placeholder {
+  font-weight: bold;
+  color: var(--color-b-fixed);
 }
 
 .buttons {
@@ -55,13 +74,13 @@
   height: 2rem;
   border-radius: var(--radius);
   border: 0;
-  background: var(--color-translucent);
+  background: transparent;
   color: var(--color-b);
-  /* box-shadow: var(--shadow); */
-  border: 1px solid transparent;
+  border: 1px solid var(--color-b);
   transition: var(--transition-hover);
   font-size: var(--font-size-6);
   font-family: var(--font-family);
+  /* box-shadow: var(--shadow); */
 }
 .buttonActive {
   background: var(--color-b) !important;
@@ -79,7 +98,70 @@
   font-size: var(--font-size-3);
 }
 
-@media screen and (max-width: 700px) {
+.dropdown {
+  position: absolute;
+  right: 4rem;
+  /* background: yellow; */
+}
+.dropdown svg {
+  top: 0.3rem;
+  right: 0.5rem;
+  position: absolute;
+}
+.dropdown svg path,
+.buttonSearch svg path,
+.buttonClear svg path {
+  fill: var(--color-b-fixed) !important;
+}
+
+.dropdownSelect {
+  width: auto;
+  height: 2rem;
+  padding: 0 2.5rem 0 1rem;
+  font-size: 1rem;
+  color: var(--color-b-fixed);
+  border: 1px solid transparent;
+  border-radius: var(--radius-big);
+  background: rgb(0 0 0 / 5%);
+  cursor: pointer;
+  transition: border-color 0.3s;
+  appearance: none; /* Remove a aparência padrão */
+  -webkit-appearance: none; /* Remove a aparência padrão em Webkit */
+  -moz-appearance: none; /* Remove a aparência padrão em Firefox */
+}
+.dropdownSelect:focus {
+  border-color: transparent;
+  outline: none;
+  color: var(--color-w-text);
+  background: var(--color-b-fixed);
+}
+
+@media screen and (max-width: 699px) {
+  .container {
+    bottom: 1rem;
+    gap: 1rem;
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+  .searchInput {
+    width: 300px;
+  }
+  .dropdown {
+    display: none;
+  }
+
+  .searchInput {
+    padding: 0 3.25rem 0 1.5rem;
+    font-size: var(--font-size-6);
+  }
+
+  .buttonSearch,
+  .buttonClear,
+  .searchInput,
+  .dropdownSelect {
+    height: var(--height-min);
+  }
+
   .buttons button {
     padding: 0 1rem;
     height: 1.5rem;

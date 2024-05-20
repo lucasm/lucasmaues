@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import Style from './ProductPopup.module.css'
-import { IconArrowDown } from '../../Svgs'
+import { ArrowUpRight, IconClose, IconStar } from '../../Svgs'
+import Button from '../../Button'
 
 interface ProductPopupProps {
   product: {
     title: string
+    stars: number
     description: string
     image: string
     url: string
@@ -16,10 +18,6 @@ interface ProductPopupProps {
 
 const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
   const [isVisible, setIsVisible] = useState(false)
-  const isMultiLinks =
-    (!!product.url && !!product.url_2) ||
-    (!!product.url && !!product.url_3) ||
-    (!!product.url_2 && !!product.url_3)
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -60,37 +58,52 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
             className={Style.popupContent}
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside content
           >
-            <button className={Style.closeButton} onClick={handleClose} aria-label="Close">
-              ✕
+            <button className={Style.closeButton} onClick={handleClose} aria-label="Fechar">
+              <IconClose />
             </button>
 
             <div className={Style.productDetail}>
               <figure>
-                <img src={product.image} alt={product.title} />
+                <img src={product.image} alt={product.title} className={Style.brilho} />
               </figure>
               <div>
                 <h2>{product.title}</h2>
+
+                {product?.stars && (
+                  <div className={Style.stars}>
+                    <IconStar />
+                    <span>{product.stars}</span>
+                  </div>
+                )}
+
                 <p>{product.description}</p>
 
-                <h3>
-                  Compre <IconArrowDown />
-                </h3>
+                <h3>Compre agora</h3>
 
-                <div>
+                <div className={Style.containerButtons}>
                   {product.url && (
-                    <a href={product.url} target="_blank" rel="noreferrer" className="button">
-                      Amazon
-                    </a>
+                    <Button url={product.url} isExternal>
+                      <>
+                        Amazon
+                        <ArrowUpRight />
+                      </>
+                    </Button>
                   )}
                   {product.url_2 && (
-                    <a href={product.url_2} target="_blank" rel="noreferrer" className="button">
-                      Mercado Livre
-                    </a>
+                    <Button url={product.url_2} isExternal>
+                      <>
+                        Mercado Livre
+                        <ArrowUpRight />
+                      </>
+                    </Button>
                   )}
                   {product.url_3 && (
-                    <a href={product.url_3} target="_blank" rel="noreferrer" className="button">
-                      AliExpress
-                    </a>
+                    <Button url={product.url_3} isExternal>
+                      <>
+                        AliExpress
+                        <ArrowUpRight />
+                      </>
+                    </Button>
                   )}
                 </div>
               </div>

@@ -1,0 +1,39 @@
+/* SvgAnimateMentorship.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para o primeiro SVG */
+.figure1 svg {
+  fill: var(--color-b-fixed); /* Cor de preenchimento */
+  width: 300px; /* Largura do SVG */
+  height: auto; /* Altura ajustada automaticamente */
+  position: relative; /* Garante que o z-index funcione corretamente */
+  z-index: 2; /* Define a ordem de empilhamento */
+  animation: pulse 3s infinite alternate; /* Animação de pulsação para o primeiro SVG */
+  transition: fill 0.3s; /* Transição de cor ao passar o mouse */
+}
+.figure1 svg:hover {
+  fill: var(--color-translucent); /* Cor de preenchimento ao passar o mouse */
+  cursor: none;
+}
+
+.figure1 svg text {
+  fill: transparent;
+  font-size: 5rem;
+}
+.figure1 svg:hover text {
+  fill: var(--color-b-fixed);
+}
+
+/* Definição da animação de pulsação */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}

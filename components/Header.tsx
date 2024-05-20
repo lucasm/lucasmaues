@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useUser } from '../contexts/UserContext'
 import { IconMoon, IconSun } from './Svgs'
+import { ROUTES } from '../routes/routes'
 
 export default function Header() {
   const { theme, setTheme } = useUser()
@@ -25,7 +26,37 @@ export default function Header() {
       setTheme('light')
       window.localStorage.setItem('theme', 'light')
     }
+
+    const audio = new Audio('/minimal-pop-click-ui-1-198301.mp3')
+    audio.play()
   }
+
+  const HeaderLinks = [
+    {
+      url: ROUTES.BLOG.path,
+      text: ROUTES.BLOG.title,
+    },
+    {
+      url: ROUTES.STORE.path,
+      text: ROUTES.STORE.title,
+    },
+    {
+      url: ROUTES.MENTORSHIP.path,
+      text: ROUTES.MENTORSHIP.title,
+    },
+    {
+      url: ROUTES.WORK.path,
+      text: ROUTES.WORK.title,
+    },
+    {
+      url: ROUTES.ABOUT.path,
+      text: ROUTES.ABOUT.title,
+    },
+    {
+      url: ROUTES.CONTACT.path,
+      text: ROUTES.CONTACT.title,
+    },
+  ]
 
   return (
     <header>
@@ -54,26 +85,13 @@ export default function Header() {
 
         <nav className={isActive ? 'open' : undefined}>
           <ul>
-            <li>
-              <Link href="/#posts" onClick={handleToggle}>
-                Posts
-              </Link>
-            </li>
-            <li>
-              <Link href="/#about" onClick={handleToggle}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/#work" onClick={handleToggle}>
-                Work
-              </Link>
-            </li>
-            <li>
-              <Link href="/#contact" onClick={handleToggle}>
-                Contact
-              </Link>
-            </li>
+            {HeaderLinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.url} onClick={handleToggle}>
+                  {link.text}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 

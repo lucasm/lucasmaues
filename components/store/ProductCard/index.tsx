@@ -8,11 +8,8 @@ interface ProductCardProps {
 export default function ProductCard({ product, handleOnClick }: ProductCardProps) {
   return (
     <button onClick={() => handleOnClick(product)}>
-      <img src={product.image} alt={product.title} />
-      <div>
-        <h2>{product.title}</h2>
-        <span>{truncateText(product.description, 40)}</span>
-      </div>
+      <img src={product.image} alt={'Fotografia do produto ' + product.title} />
+      <h2>{product.title}</h2>
     </button>
   )
 }

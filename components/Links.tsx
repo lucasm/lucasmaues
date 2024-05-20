@@ -13,16 +13,15 @@ import {
   IconLetterboxd,
   IconDiscord,
   IconInstagram,
-  IconStore,
-  IconMentorship,
   IconWhatsapp,
   IconMore,
   IconLess,
 } from './Svgs'
+import { ROUTES } from '../routes/routes'
 
 interface ILinks {
   url: string
-  icon: JSX.Element
+  icon?: JSX.Element
   text: string
   internalPage?: boolean
   active: boolean
@@ -61,15 +60,21 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
+    url: 'https://wa.me/5531997038007',
+    icon: <IconWhatsapp />,
+    text: 'WhatsApp',
     active: true,
   },
   {
     url: 'https://discord.com/users/lucasmezs',
     icon: <IconDiscord />,
     text: 'Discord',
+    active: true,
+  },
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
     active: true,
   },
   {
@@ -103,26 +108,25 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: '/store',
-    icon: <IconStore />,
-    text: 'Loja Dev',
+    url: ROUTES.BLOG.path,
+    text: ROUTES.BLOG.title,
     active: true,
     internalPage: true,
     fullText: true,
   },
   {
-    url: 'https://patreon.com/lucasm',
-    icon: <IconMentorship />,
-    text: 'Mentoria Dev',
-    active: false,
+    url: ROUTES.STORE.path,
+    text: ROUTES.STORE.title,
+    active: true,
+    internalPage: true,
     fullText: true,
   },
   {
-    url: 'https://wa.me/5531997038007',
-    icon: <IconWhatsapp />,
-    text: 'Falar no WhatsApp',
-    active: true,
+    url: ROUTES.MENTORSHIP.path,
+    text: ROUTES.MENTORSHIP.title,
+    active: false,
     fullText: true,
+    internalPage: true,
   },
 ]
 
@@ -141,11 +145,23 @@ export default function ComponentLinks() {
   return (
     <div>
       <ul className="links">
-        {fullTextLinks.concat(visibleOtherLinks).map((link, index) => (
-          <li
-            key={index}
-            className={link.fullText ? 'full-text' : undefined}
-            style={{ marginBottom: index === fullTextLinks.length - 1 ? '2rem' : undefined }}>
+        {fullTextLinks.map((link, index) => (
+          <li key={index} className="full-text">
+            <Link
+              href={link.url}
+              target={link.internalPage ? '_self' : '_blank'}
+              rel={link.internalPage ? 'prefetch' : 'noopener'}
+              title={link.text}>
+              {link.icon}
+              {link.text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <ul className="links" style={{ marginTop: '2rem' }}>
+        {visibleOtherLinks.map((link, index) => (
+          <li key={index}>
             <Link
               href={link.url}
               target={link.internalPage ? '_self' : '_blank'}
@@ -158,7 +174,10 @@ export default function ComponentLinks() {
         ))}
         {otherLinks.length > limitOfLinks && (
           <li>
-            <button onClick={handleToggle} aria-expanded={showMore ? 'true' : 'false'}>
+            <button
+              onClick={handleToggle}
+              aria-expanded={showMore ? 'true' : 'false'}
+              aria-label={showMore ? 'Show less' : 'Show more'}>
               {showMore ? <IconLess /> : <IconMore />}
             </button>
           </li>

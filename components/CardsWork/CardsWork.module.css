@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 5rem;
+}
+.iconContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  width: 100%;
+  /* max-width: 600px;  */
+}
+
+.icon {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: alternateColors 6s infinite steps(1);
+}
+.icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@keyframes alternateColors {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--color-y-3);
+  }
+}
+
+.icon:nth-child(odd) {
+  animation-delay: 0s;
+}
+
+.icon:nth-child(even) {
+  animation-delay: 3s;
+}
+
+@media screen and (min-width: 500px) {
+  .icon {
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .icon svg {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .icon {
+    height: 18rem;
+  }
+  .icon svg {
+    width: 4rem;
+    height: 4rem;
+  }
+}

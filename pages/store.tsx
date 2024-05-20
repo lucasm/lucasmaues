@@ -1,18 +1,18 @@
 import { useRef, useState } from 'react'
 import PageLayout from '../components/PageLayout'
 import StyleCard from '../components/store/ProductCard/ProductCard.module.css'
-import Banners from '../components/store/Banners'
 import ProductPopup from '../components/store/ProductPopup'
 import { productsBR } from '../data/productsBR'
 import ProductCard from '../components/store/ProductCard'
 import SearchFilter from '../components/store/SearchFilter'
 import Donate from '../components/store/Donate'
+import { ROUTES } from '../routes/routes'
+import Banners from '../components/store/Banners'
 
 export default function PageStore() {
-  const title = 'Loja Dev'
+  const title = ROUTES.STORE.title
   const image = 'https://lucasm.dev/share-store.png'
-  const description = 'Os melhores produtos para programadores e amantes de tecnologia.'
-
+  const description = 'Os melhores produtos para amantes de tecnologia e da vida.'
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState('Todos')
   const [searchTerm, setSearchTerm] = useState('')
@@ -71,7 +71,9 @@ export default function PageStore() {
             </ul>
           </div>
 
-          <Banners />
+          <div className="container" id="banner">
+            <Banners />
+          </div>
         </div>
       </section>
 

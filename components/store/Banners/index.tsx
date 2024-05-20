@@ -17,15 +17,8 @@ export default function Banners() {
       external: false,
       title: 'Compre com segurança',
       subtitle:
-        'Todos os produtos tem garantia nas lojas Amazon, Mercado Livre ou AliExpress. Além disso, são os mais bem avaliados.',
+        'Todos os produtos são vendidos e entregues por lojas confiáveis, como  Amazon, Mercado Livre ou AliExpress. Além disso, possuem garantia e são os mais bem avaliados. Seleção escolhida a dedo! Aproveite!',
       image: <IconShield />,
-    },
-    {
-      link: 'https://www.meliuz.com.br/i/ref_lucasmauess',
-      external: true,
-      title: 'Receba R$ 5,00',
-      subtitle: 'Ative o Méliuz para receber cashback em todas as suas compras online.',
-      image: <IconMoney />,
     },
   ]
 
