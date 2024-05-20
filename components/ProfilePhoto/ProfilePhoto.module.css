@@ -15,12 +15,12 @@
 }
 #profile svg {
   position: absolute;
-  top: -4rem;
-  left: -6rem;
-  width: 14rem;
-  height: 14rem;
+  top: -2rem;
+  left: -4rem;
+  width: 10rem;
+  height: 10rem;
   z-index: -1;
-  animation: rotate 20s linear infinite;
+  animation: unset;
 }
 
 @keyframes rotate {
@@ -42,5 +42,6 @@
     left: -8rem;
     width: 18rem;
     height: 18rem;
+    animation: rotate 20s linear infinite;
   }
 }

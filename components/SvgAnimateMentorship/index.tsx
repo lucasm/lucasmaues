@@ -11,8 +11,8 @@ const SvgAnimateMentorship = () => {
           <text
             x="50%"
             y="50%"
-            dominant-baseline="middle"
-            text-anchor="middle"
+            dominantBaseline="middle"
+            textAnchor="middle"
             data-leia-me="✦ Você decifrou a metáfora do código! Resolva sempre o problema primeiro! ✦">
             Código
           </text>
