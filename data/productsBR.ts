@@ -13,7 +13,7 @@ export const productsBR = [
     title: 'Teclado Logitech MX Keys Mini',
     stars: 4.8,
     description:
-      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos ou USB-C. Teclas iluminadas reguláveis, botões personalizáveis e bateria recarregável. Ponto alto para o design, a portabilidade e a qualidade na construção.',
+      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas reguláveis, botões personalizáveis e bateria recarregável. Ponto alto para o design, a portabilidade e a qualidade na construção.',
     url: 'https://amzn.to/3OwLrDM',
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
@@ -53,7 +53,7 @@ export const productsBR = [
     title: 'Caixa de Som Bluetooth JBL Flip 6',
     stars: 4.8,
     description:
-      'Caixa de som Bluetooth portátil com qualidade JBL. À prova d`água e com bateria de longa duração. Ideal para viagens, praia, piscina e festas. Graves, médios e agudos competentes. A Flip é incrível!',
+      'Caixa de som Bluetooth portátil de qualidade da JBL. Com resistência à água e bateria de longa duração. Ideal para viagens, praia, piscina e qualquer lugar. Graves, médios e agudos competentes. A Flip é incrível!',
     url: 'https://amzn.to/45IVz1o',
     url_2: 'https://mercadolivre.com/sec/2w5Y1cu',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
