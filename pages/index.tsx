@@ -16,7 +16,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Software Engineer from Brazil, coding Frontend & AI.</h1>
+                <h1>Hello, I'm a Software Engineer from Brazil, coding Frontend & AI</h1>
 
                 <Links />
               </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h3>I build positive impact.</h3>
+              <h3>I build positive impact</h3>
 
               <Button url={ROUTES.WORK.path}>{ROUTES.WORK.title}</Button>
             </div>
