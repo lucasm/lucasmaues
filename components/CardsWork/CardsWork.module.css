@@ -59,10 +59,10 @@
 
 @media screen and (min-width: 900px) {
   .icon {
-    height: 18rem;
+    height: 20rem;
   }
   .icon svg {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }

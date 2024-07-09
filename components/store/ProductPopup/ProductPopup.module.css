@@ -83,6 +83,9 @@
   font-size: var(--font-size-6);
   margin: 0 0 -0.15rem 0.75rem;
 }
+.stars svg path {
+  fill: var(--color-y-3);
+}
 
 .closeButton {
   position: absolute;
