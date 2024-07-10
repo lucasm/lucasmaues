@@ -12,10 +12,10 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Na TI desde 2017, já resolvi muitos problemas do mundo real. Essa experiência faz com
-              que as pessoas me procurem pedindo ajuda. A mentoria é esse espaço onde ofereço
-              orientação profissional para carreira em TI. Como mentor, vou te ajudar a atingir teus
-              objetivos.
+              Desde 2017 na TI, tenho resolvido muitos problemas do mundo real. Essa experiência faz
+              com que as pessoas me procurem pedindo ajuda. A mentoria é um espaço onde ofereço
+              orientação profissional. Como mentor, te ajudo a enxergar e atingir teus objetivos na
+              TI.
             </p>
           </div>
         </div>

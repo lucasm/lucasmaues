@@ -8,7 +8,7 @@ const Donate = () => {
       <Button url="#banner">
         <>
           <IconShield />
-          Compra segura
+          100% seguro
         </>
       </Button>
 

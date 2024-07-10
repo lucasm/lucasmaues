@@ -10,6 +10,26 @@ export const productsBR = [
     category: 'Dispositivos',
   },
   {
+    title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
+    stars: 5.0,
+    description:
+      'Garrafa térmica sólida com ótima construção. Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA. Qualidade Stanley. Uma paixão!',
+    url: 'https://amzn.to/3uDXl7H',
+    url_2: 'https://mercadolivre.com/sec/32YnaEu',
+    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
+  {
+    title: 'Caixa de Som Bluetooth JBL Flip 6',
+    stars: 4.8,
+    description:
+      'Caixa de som Bluetooth portátil indispensável da JBL. Com resistência à água e bateria de longa duração. Ideal para viagens, praia, piscina e qualquer lugar. Graves, médios e agudos competentes. A Flip é incrível!',
+    url: 'https://amzn.to/45IVz1o',
+    url_2: 'https://mercadolivre.com/sec/2w5Y1cu',
+    image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
+    category: 'Dispositivos',
+  },
+  {
     title: 'Teclado Logitech MX Keys Mini',
     stars: 4.8,
     description:
@@ -37,26 +57,6 @@ export const productsBR = [
     url: 'https://amzn.to/49uT9pP',
     url_2: 'https://mercadolivre.com/sec/2GCYRzv',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
-    category: 'Dispositivos',
-  },
-  {
-    title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
-    stars: 5.0,
-    description:
-      'Garrafa térmica sólida e muito bem construída. Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA. Qualidade Stanley. Uma paixão!',
-    url: 'https://amzn.to/3uDXl7H',
-    url_2: 'https://mercadolivre.com/sec/32YnaEu',
-    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
-  {
-    title: 'Caixa de Som Bluetooth JBL Flip 6',
-    stars: 4.8,
-    description:
-      'Caixa de som Bluetooth portátil de qualidade da JBL. Com resistência à água e bateria de longa duração. Ideal para viagens, praia, piscina e qualquer lugar. Graves, médios e agudos competentes. A Flip é incrível!',
-    url: 'https://amzn.to/45IVz1o',
-    url_2: 'https://mercadolivre.com/sec/2w5Y1cu',
-    image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
   {
