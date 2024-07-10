@@ -16,7 +16,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Software Engineer from Brazil, coding Frontend & AI</h1>
+                <h1>Hello, I'm a Frontend & AI Software Engineer from Brazil</h1>
 
                 <Links />
               </div>
@@ -52,8 +52,8 @@ export default function Home() {
               </p>
 
               <p>
-                I specialize in Front-end development, focusing on web standards, UX, performance,
-                accessibility, security, and analytics. I also work on the Back-end with APIs, cloud
+                I specialize in Frontend development, focusing on web standards, UX, performance,
+                accessibility, security, and analytics. I also work on the Backend with APIs, cloud
                 services, and CI/CD pipelines.
               </p>
 

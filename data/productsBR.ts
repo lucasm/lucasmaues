@@ -15,7 +15,7 @@ export const productsBR = [
     description:
       'Garrafa térmica sólida com ótima construção. Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA. Qualidade Stanley. Uma paixão!',
     url: 'https://amzn.to/3uDXl7H',
-    url_2: 'https://mercadolivre.com/sec/32YnaEu',
+    url_2: 'https://mercadolivre.com/sec/21x7Pq8',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
     category: 'Acessórios',
   },
@@ -25,7 +25,7 @@ export const productsBR = [
     description:
       'Caixa de som Bluetooth portátil indispensável da JBL. Com resistência à água e bateria de longa duração. Ideal para viagens, praia, piscina e qualquer lugar. Graves, médios e agudos competentes. A Flip é incrível!',
     url: 'https://amzn.to/45IVz1o',
-    url_2: 'https://mercadolivre.com/sec/2w5Y1cu',
+    url_2: 'https://mercadolivre.com/sec/2cFhbqS',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
     category: 'Dispositivos',
   },
