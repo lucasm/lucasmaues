@@ -10,7 +10,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   width: 100%;
-  /* max-width: 600px;  */
 }
 
 .icon {
@@ -19,6 +18,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius);
+  background: var(--color-y-3);
   animation: alternateColors 6s infinite steps(1);
 }
 .icon svg {
@@ -29,17 +30,16 @@
 @keyframes alternateColors {
   0%,
   100% {
-    background-color: transparent;
+    background: transparent;
   }
   50% {
-    background-color: var(--color-y-3);
+    background: var(--color-y-3);
   }
 }
 
 .icon:nth-child(odd) {
   animation-delay: 0s;
 }
-
 .icon:nth-child(even) {
   animation-delay: 3s;
 }
