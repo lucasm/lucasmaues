@@ -13,9 +13,9 @@ export default function PageMentorship() {
 
             <p className="description">
               Desde 2017 na TI, tenho resolvido muitos problemas do mundo real. Essa experiência faz
-              com que as pessoas me procurem pedindo ajuda. A mentoria é um espaço onde ofereço
-              orientação profissional. Como mentor, te ajudo a enxergar e atingir teus objetivos na
-              TI.
+              com que as pessoas me procurem em busca de ajuda. A mentoria é esse espaço onde
+              forneço orientação profissional. Como mentor, te ajudo a enxergar soluções e atingir
+              objetivos.
             </p>
           </div>
         </div>
@@ -32,8 +32,8 @@ export default function PageMentorship() {
             <p>
               A mentoria é realizada por videochamada. Durante a primeira sessão vamos conversar e
               entender o seu momento atual na TI. Quais as suas necessidades e desafios? Com base
-              nisso, vamos definir metas e traçar um plano de ação de curto/médio prazo para você
-              alcançar os seus objetivos, até não precisar mais de mentoria.
+              nisso, vamos definir metas e traçar um plano de ação de curto ou médio prazo para você
+              alcançar os seus objetivos — até não precisar mais da mentoria.
             </p>
 
             <h3>Quem pode participar?</h3>
@@ -51,7 +51,7 @@ export default function PageMentorship() {
               <br />- Ter comprometimento para executar o plano de ação
             </p> */}
 
-            <h3>Quais os benefícios?</h3>
+            <h3>Quais são os benefícios?</h3>
 
             <p>
               - Orientação personalizada para os seus objetivos
@@ -63,8 +63,8 @@ export default function PageMentorship() {
               - Plano de ação para alcançar as metas
               <br />
               - Coleta de resultados
-              <br />- Feedback, onde não falo o que você quer ouvir para agradar seu ego, mas o que
-              você precisa ouvir para evoluir
+              <br />- Feedback (onde não falo o que você quer ouvir para agradar seu ego, mas o que
+              você precisa ouvir para evoluir)
             </p>
           </article>
         </div>
@@ -85,7 +85,7 @@ export default function PageMentorship() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Conversa por videochamada
+                Formato: Videochamada + Anotações
                 <br />
                 Pagamento: Patreon
                 <br />
