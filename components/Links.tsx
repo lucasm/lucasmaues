@@ -18,6 +18,7 @@ import {
   IconLess,
 } from './Svgs'
 import { ROUTES } from '../routes/routes'
+import PrefetchImages from './store/PrefetchImages'
 
 interface ILinks {
   url: string
@@ -132,9 +133,13 @@ const Links: ILinks[] = [
 
 export default function ComponentLinks() {
   const [showMore, setShowMore] = useState(false)
+  const [prefetchEnabled, setPrefetchEnabled] = useState(false)
 
   const handleToggle = () => {
     setShowMore((prev) => !prev)
+  }
+  const handleMouseEnterStore = () => {
+    setPrefetchEnabled(true)
   }
 
   const fullTextLinks = Links.filter((link) => link.fullText)
@@ -144,6 +149,7 @@ export default function ComponentLinks() {
 
   return (
     <div>
+      <PrefetchImages enabled={prefetchEnabled} />
       <ul className="links">
         {fullTextLinks.map((link, index) => (
           <li key={index} className="full-text">
@@ -151,7 +157,8 @@ export default function ComponentLinks() {
               href={link.url}
               target={link.internalPage ? '_self' : '_blank'}
               rel={link.internalPage ? 'prefetch' : 'noopener'}
-              title={link.text}>
+              title={link.text}
+              onMouseEnter={link.text === ROUTES.STORE.title ? handleMouseEnterStore : undefined}>
               {link.icon}
               {link.text}
             </Link>
