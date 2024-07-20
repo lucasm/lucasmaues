@@ -62,13 +62,9 @@ export default function PageStore() {
           />
 
           <div className={StyleCard.container} ref={containerProductsRef} id="products">
-            <ul>
-              {filteredProducts.map((product, index) => (
-                <li key={index}>
-                  <ProductCard product={product} handleOnClick={handleOpenProductPopup} />
-                </li>
-              ))}
-            </ul>
+            {filteredProducts.map((product, index) => (
+              <ProductCard product={product} handleOnClick={handleOpenProductPopup} key={index} />
+            ))}
           </div>
 
           <div className="container" id="banner">

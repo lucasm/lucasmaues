@@ -8,6 +8,8 @@
 .container a {
   background: var(--color-translucent);
   color: var(--color-b);
+  height: var(--height-min);
+  padding: 0 2rem;
 }
 
 @media screen and (max-width: 699px) {

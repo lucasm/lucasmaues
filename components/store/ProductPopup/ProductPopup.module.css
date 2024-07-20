@@ -18,11 +18,11 @@
   padding: 5rem;
   border-radius: var(--radius-big) var(--radius-big) 0 0;
   width: 100vw;
-  /* height: 100vh; */
+  height: 100%;
   text-align: center;
   animation: slideUp 0.2s ease-out;
   overflow-y: auto;
-  max-height: 95vh;
+  max-height: 90vh;
   max-width: 80vw;
 }
 .popupContent h3 {

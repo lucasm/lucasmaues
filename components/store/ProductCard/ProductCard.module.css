@@ -1,25 +1,18 @@
 .container {
-  padding: 3.5rem 0 2rem;
-}
-.container ul {
   width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  list-style: none;
-  margin: 0;
+  align-items: stretch;
 }
-.container ul li {
-  padding: 0;
-}
-.container ul li button {
+.container button {
   background: var(--color-w);
   border: 0;
   margin: 0;
   border-radius: var(--radius-big);
-  transition: var(--transition-hover);
   color: var(--color-b-fixed);
   display: flex;
   gap: 1.5rem;
@@ -30,7 +23,7 @@
   padding: 2.5rem 2.5rem 3rem;
   max-width: 340px;
 }
-.container ul li button img {
+.container button img {
   transition: all 0.25s ease-in-out;
   padding: 1rem 1.5rem;
   max-width: 100%;
@@ -38,10 +31,10 @@
   filter: grayscale(100%);
   background: var(--color-white);
 }
-.container ul li button:hover img {
+.container button:hover img {
   opacity: 0.9;
 }
-/* .container ul li button:hover {
+/* .container button:hover {
   box-shadow: var(--shadow);
 } */
 .container h2 {
@@ -50,16 +43,16 @@
   padding: 0.5rem 0 0;
   width: 100%;
 }
-.container ul li button span {
+.container button span {
   font-weight: normal;
   font-size: var(--font-size-6);
 }
 
 @media screen and (max-width: 600px) {
-  .container ul li button {
+  .container button {
     max-width: 100%;
   }
-  .container ul li button img {
+  .container button img {
     width: 148px;
     padding: 0 1.5rem;
   }

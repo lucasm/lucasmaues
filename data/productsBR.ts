@@ -3,7 +3,7 @@ export const productsBR = [
     title: 'Mouse Logitech MX Vertical',
     stars: 4.8,
     description:
-      'O melhor mouse ergonômico já criado. Recomendado para quem passa muito tempo no computador. Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. Diga adeus as dores no pulso. A Logitech desenvolveu um mouse incrível. Super confortável e prático.',
+      'O melhor mouse ergonômico. Adeus dores no pulso! Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech desenvolveu um mouse prático e super confortável.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
@@ -13,7 +13,7 @@ export const productsBR = [
     title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
     stars: 5.0,
     description:
-      'Garrafa térmica sólida com ótima construção. Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA. Qualidade Stanley. Uma paixão!',
+      'Garrafa térmica Stanley. Construção sólida! Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA.',
     url: 'https://amzn.to/3uDXl7H',
     url_2: 'https://mercadolivre.com/sec/21x7Pq8',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
@@ -23,7 +23,7 @@ export const productsBR = [
     title: 'Caixa de Som Bluetooth JBL Flip 6',
     stars: 4.8,
     description:
-      'Caixa de som Bluetooth portátil indispensável da JBL. Com resistência à água e bateria de longa duração. Ideal para viagens, praia, piscina e qualquer lugar. Graves, médios e agudos competentes. A Flip é incrível!',
+      'Caixa de som portátil Bluetooth. Qualidade JBL! Com resistência à água e bateria de longa duração. Ideal para viagens, piscina, praia e qualquer lugar. Graves, médios e agudos bem equilibrados.',
     url: 'https://amzn.to/45IVz1o',
     url_2: 'https://mercadolivre.com/sec/2cFhbqS',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
@@ -43,7 +43,7 @@ export const productsBR = [
     title: 'Apple AirPods Pro 2',
     stars: 4.9,
     description:
-      'Fone de ouvido Bluetooth com qualidade Apple. Reconhecidamente competente em cancelamento de ruído ativo (ANC) e áudio espacial. Conexão rápida e prática com dispositivos Apple. Recarga sem fio e bateria de boa duração.',
+      'Fone de ouvido Bluetooth TWS. Qualidade Apple! Reconhecido pelo incrível cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarga sem fio e bateria de boa duração.',
     url: 'https://amzn.to/3Dw6uA0',
     url_2: 'https://mercadolivre.com/sec/27WpiBa',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
@@ -53,7 +53,7 @@ export const productsBR = [
     title: 'Apple iPhone 15 128GB',
     stars: 4.8,
     description:
-      'iPhone ideal para quem busca qualidade e durabilidade. Com chip A16, câmera dupla, tela OLED e 5G. Um dos melhores smartphones do mercado. Com desempenho reconhecido, boa duração de bateria e USB-C.',
+      'iPhone padrão para quem busca qualidade. Com chip A16, câmera dupla, tela OLED e rede 5G. Um dos melhores smartphones da Apple. Com desempenho reconhecido, boa duração de bateria e conexão USB-C.',
     url: 'https://amzn.to/49uT9pP',
     url_2: 'https://mercadolivre.com/sec/2GCYRzv',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
@@ -73,7 +73,7 @@ export const productsBR = [
     title: 'Webcam Logitech Brio 500 ',
     stars: 4.8,
     description:
-      'Webcam ideal para o home office. Qualidade Full HD, foco automático, microfone que reduz ruídos, privacidade e vários ajustes.',
+      'Webcam perfeita para o home office! Qualidade de vídeo Full HD, foco automático, microfone que reduz ruídos ambientes, modo privacidade e vários ajustes.',
     url: 'https://amzn.to/4cnZe9t',
     url_2: 'https://mercadolivre.com/sec/1MTXh2w',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',

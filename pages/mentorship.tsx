@@ -12,10 +12,9 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Desde 2017 na TI, tenho resolvido muitos problemas do mundo real. Essa experiência faz
-              com que as pessoas me procurem em busca de ajuda. A mentoria é esse espaço onde
-              forneço orientação profissional. Como mentor, te ajudo a enxergar soluções e atingir
-              objetivos.
+              Desde 2017 envolvido com Frontend e Engenharia de Software na Web, as pessoas me
+              procuram em busca de ajuda. Como mentor forneço orientação para quem deseja evoluir na
+              carreira, estudos ou projetos.
             </p>
           </div>
         </div>
@@ -33,7 +32,7 @@ export default function PageMentorship() {
               A mentoria é realizada por videochamada. Durante a primeira sessão vamos conversar e
               entender o seu momento atual na TI. Quais as suas necessidades e desafios? Com base
               nisso, vamos definir metas e traçar um plano de ação de curto ou médio prazo para você
-              alcançar os seus objetivos — até não precisar mais da mentoria.
+              alcançar os seus objetivos.
             </p>
 
             <h3>Quem pode participar?</h3>
@@ -51,20 +50,20 @@ export default function PageMentorship() {
               <br />- Ter comprometimento para executar o plano de ação
             </p> */}
 
-            <h3>Quais são os benefícios?</h3>
+            <h3>Benefícios:</h3>
 
             <p>
-              - Orientação personalizada para os seus objetivos
+              - Orientação personalizada
+              <br />
+              - Plano de ação para alcançar os seus objetivos
               <br />
               - Aprendizado prático (hard skills)
               <br />
               - Desenvolvimento profissional (soft skills)
               <br />
-              - Plano de ação para alcançar as metas
-              <br />
-              - Coleta de resultados
-              <br />- Feedback (onde não falo o que você quer ouvir para agradar seu ego, mas o que
-              você precisa ouvir para evoluir)
+              - Avaliação de resultados
+              <br />- Feedback (falo o que você precisa ouvir para evoluir, não o que quer ouvir
+              para agradar seu ego)
             </p>
           </article>
         </div>

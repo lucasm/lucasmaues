@@ -17,7 +17,7 @@ export default function Banners() {
       external: false,
       title: 'Compra 100% segura',
       subtitle:
-        'Os produtos indicados são vendidos e entregues pela Amazon, Mercado Livre ou AliExpress. Além disso, são os mais bem avaliados e possuem garantia. Aproveite!',
+        'Todos os produtos indicados são vendidos e entregues por lojas confiáveis como Amazon, Mercado Livre ou AliExpress. Além disso possuem garantia legal de 7 dias de devolução no Brasil e são os mais bem avaliados. Aproveite!',
       image: <IconShield />,
     },
   ]

@@ -20,7 +20,7 @@ const Footer = () => (
         </Link>
 
         <p>
-          <span className="company">LUCASM.DEV LTDA</span> &copy; {getYear()}
+          <span className="company">LUCASM.DEV</span> &copy; {getYear()}
         </p>
       </div>
 
