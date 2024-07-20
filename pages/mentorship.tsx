@@ -12,8 +12,8 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Desde 2017 envolvido com Frontend e Engenharia de Software na Web, as pessoas me
-              procuram em busca de ajuda. Como mentor forneço orientação para quem deseja evoluir na
+              Desde 2017, trabalho com Frontend e Engenharia de Software na Web, e as pessoas tem me
+              procurado para obter ajuda. Como mentor forneço orientação para quem deseja evoluir na
               carreira, estudos ou projetos.
             </p>
           </div>

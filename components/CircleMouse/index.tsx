@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import Styles from './CircleMouse.module.css'
 
 export default function CircleMouse() {
   const circle = useRef(null)
@@ -51,5 +52,5 @@ export default function CircleMouse() {
     }
   }, [isMobile, mousePosition])
 
-  return !isMobile ? <div id="circle" ref={circle}></div> : null
+  return !isMobile ? <div className={Styles.circle} ref={circle}></div> : null
 }

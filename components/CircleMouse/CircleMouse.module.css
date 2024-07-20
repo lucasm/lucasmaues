@@ -1,0 +1,10 @@
+.circle {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: var(--color-y-3);
+  border-radius: 100%;
+  transition: transform 0.2s;
+  margin: -100px 0 0 -100px;
+  z-index: -1;
+}
