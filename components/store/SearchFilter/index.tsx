@@ -112,8 +112,9 @@ export default function SearchFilter({
             onChange={handleCategoryChange}
             className={Style.dropdownSelect}>
             <option value="Todos">Todos</option>
-            <option value="Dispositivos">Dispositivos</option>
+            <option value="Eletrônicos">Eletrônicos</option>
             <option value="Acessórios">Acessórios</option>
+            <option value="Saúde">Saúde</option>
             <option value="Livros">Livros</option>
           </select>
 

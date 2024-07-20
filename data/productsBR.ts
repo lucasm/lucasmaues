@@ -7,7 +7,7 @@ export const productsBR = [
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
@@ -27,7 +27,7 @@ export const productsBR = [
     url: 'https://amzn.to/45IVz1o',
     url_2: 'https://mercadolivre.com/sec/2cFhbqS',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Teclado Logitech MX Keys Mini',
@@ -37,7 +37,17 @@ export const productsBR = [
     url: 'https://amzn.to/3OwLrDM',
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Mochila para Notebook Dell Pro EcoLoop',
+    stars: 4.8,
+    description:
+      'A melhor mochila para notebooks! Super confortável, com divisões bem elaboradas, ecológica e com resistência à água. Ideal para o trabalho, faculdade e viagens.',
+    url: 'https://amzn.to/3TgB6yc',
+    url_2: 'https://mercadolivre.com/sec/2CjyvZm',
+    image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
+    category: 'Acessórios',
   },
   {
     title: 'Apple AirPods Pro 2',
@@ -47,7 +57,7 @@ export const productsBR = [
     url: 'https://amzn.to/3Dw6uA0',
     url_2: 'https://mercadolivre.com/sec/27WpiBa',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Apple iPhone 15 128GB',
@@ -57,17 +67,7 @@ export const productsBR = [
     url: 'https://amzn.to/49uT9pP',
     url_2: 'https://mercadolivre.com/sec/2GCYRzv',
     image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
-    category: 'Dispositivos',
-  },
-  {
-    title: 'Videogame portátil Anbernic RG35XX',
-    stars: 5.0,
-    description:
-      'Videogame portátil com 5.400 jogos clássicos, Linux, tela IPS de 3,5 polegadas, cartão 64G TF e HDMI.',
-    url: 'https://amzn.to/44tcVjV',
-    url_3: 'https://s.click.aliexpress.com/e/_DC0Ao8P',
-    image: 'https://m.media-amazon.com/images/I/71Ujf2IvIOL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Webcam Logitech Brio 500 ',
@@ -77,7 +77,7 @@ export const productsBR = [
     url: 'https://amzn.to/4cnZe9t',
     url_2: 'https://mercadolivre.com/sec/1MTXh2w',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Echo Dot 5 Alexa',
@@ -87,7 +87,7 @@ export const productsBR = [
     url: 'https://amzn.to/45jAJFL',
     url_2: 'https://mercadolivre.com/sec/2SZkXYs',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Filtro de Linha 5 Tomadas Clamper',
@@ -107,7 +107,7 @@ export const productsBR = [
     url: 'https://amzn.to/4aLdasx',
     url_3: 'https://s.click.aliexpress.com/e/_DmqI0oB',
     image: 'https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'JBL Go 3',
@@ -117,17 +117,7 @@ export const productsBR = [
     url: 'https://amzn.to/43CrM9C',
     url_2: 'https://mercadolivre.com/sec/2sFpodY',
     image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Dispositivos',
-  },
-  {
-    title: 'Mochila Dell Pro EcoLoop',
-    stars: 4.8,
-    description:
-      'Mochila para notebooks confortável, com divisões bem elaboradas, ecológica e com resistência à água. Ideal para o trabalho, faculdade e viagens.',
-    url: 'https://amzn.to/3TgB6yc',
-    url_2: 'https://mercadolivre.com/sec/2CjyvZm',
-    image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
-    category: 'Acessórios',
+    category: 'Eletrônicos',
   },
   {
     title: 'Microfone HyperX Solocast',
@@ -137,7 +127,17 @@ export const productsBR = [
     url: 'https://amzn.to/4dkvaMl',
     url_2: 'https://mercadolivre.com/sec/32y1APi',
     image: 'https://m.media-amazon.com/images/I/61Aw6bzkFQL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Videogame portátil Anbernic RG35XX',
+    stars: 5.0,
+    description:
+      'Videogame portátil com 5.400 jogos clássicos, Linux, tela IPS de 3,5 polegadas, cartão 64G TF e HDMI.',
+    url: 'https://amzn.to/44tcVjV',
+    url_3: 'https://s.click.aliexpress.com/e/_DC0Ao8P',
+    image: 'https://m.media-amazon.com/images/I/71Ujf2IvIOL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
   },
   {
     title: 'Fone de ouvido Anker Soundcore Life Q35',
@@ -147,7 +147,7 @@ export const productsBR = [
     url: 'https://amzn.to/4dARuSe',
     url_3: 'https://s.click.aliexpress.com/e/_DEGlTSJ',
     image: 'https://m.media-amazon.com/images/I/61tZb1KHNYL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Xiaomi Redmi Note 12 128GB',
@@ -157,7 +157,7 @@ export const productsBR = [
     url: 'https://amzn.to/4bp2Tn6',
     url_2: 'https://mercadolivre.com/sec/2Vj2EQr',
     image: 'https://m.media-amazon.com/images/I/61FQ61igtVL._AC_SY879_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Philips Fone de ouvido Bluetooth TWS',
@@ -165,7 +165,7 @@ export const productsBR = [
     description: 'Fone de ouvido Bluetooth TWS com ótimo custo-benefício.',
     url: 'https://amzn.to/3UjBFWY',
     image: 'https://m.media-amazon.com/images/I/61uMQCVH0CL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'JBL Tune 110',
@@ -174,7 +174,7 @@ export const productsBR = [
     url: 'https://amzn.to/46Dtp9h',
     url_2: 'https://mercadolivre.com/sec/2nS6ikH',
     image: 'https://m.media-amazon.com/images/I/51bYMYoBKDL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Logitech MX Keys S',
@@ -184,7 +184,7 @@ export const productsBR = [
     url: 'https://amzn.to/3tLZkpo',
     url_2: 'https://mercadolivre.com/sec/198G2oX',
     image: 'https://m.media-amazon.com/images/I/71Tjmco5WRL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Logitech Lift Vertical',
@@ -194,7 +194,7 @@ export const productsBR = [
     url: 'https://amzn.to/3HKL5VS',
     url_2: 'https://mercadolivre.com/sec/25EAYdg',
     image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Fire TV Stick Full HD',
@@ -202,7 +202,7 @@ export const productsBR = [
     description: 'Controle remoto com Alexa que transforma sua TV em uma central de streamings.',
     url: 'https://amzn.to/44YKNnK',
     image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Abajur Luminária Pixar',
@@ -239,7 +239,7 @@ export const productsBR = [
     url: 'https://amzn.to/3K4XTaR',
     url_2: 'https://mercadolivre.com/sec/2T7wpW9',
     image: 'https://m.media-amazon.com/images/I/51PdZgbII7L._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Monitores Dell 4K, UHD e Full HD',
@@ -248,7 +248,7 @@ export const productsBR = [
       'A Dell é referência em monitores de qualidade. Com resolução 4K, UHD e Full HD. Ideais para trabalho e games. Com suporte pós-venda e garantia.',
     url: 'https://amzn.to/4a7Osln',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Apple MacBook Air M3 13" 8GB 256GB',
@@ -256,7 +256,7 @@ export const productsBR = [
       'Notebook portátil da Apple de última geração e bom desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente.',
     url: 'https://amzn.to/3QvbX0R',
     image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Apple MacBook Air M1 13" 8GB 256GB',
@@ -266,7 +266,7 @@ export const productsBR = [
     url: 'https://amzn.to/45JUIxs',
     url_2: 'https://mercadolivre.com/sec/2S6wLNi',
     image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Suporte para Notebooks',
@@ -295,7 +295,7 @@ export const productsBR = [
     url_2: 'https://mercadolivre.com/sec/1mJ2osg',
     url_3: 'https://s.click.aliexpress.com/e/_DmOvjUx',
     image: 'https://m.media-amazon.com/images/I/71XmFzlEc6L._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Apple Watch SE 2',
@@ -305,7 +305,7 @@ export const productsBR = [
     url: 'https://amzn.to/3TNsluz',
     url_2: 'https://mercadolivre.com/sec/26AuwAE',
     image: 'https://m.media-amazon.com/images/I/612s7mtyd7L._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Tablet Samsung Galaxy Tab S9 FE 128GB 10.9"',
@@ -314,7 +314,7 @@ export const productsBR = [
       'Uma ótima experiência de tablet Android com custo-benefício imbatível e qualidade Samsung.',
     url: 'https://amzn.to/3UrjKOf',
     image: 'https://m.media-amazon.com/images/I/61nn6gLwAoL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
     title: 'Apple iPad Air 5 M1 10.9"',
@@ -323,15 +323,16 @@ export const productsBR = [
       'O melhor e mais vendido tablet do mundo. Com chip M1, tela Liquid Retina e Touch ID.',
     url: 'https://amzn.to/4b1K5JX',
     image: 'https://m.media-amazon.com/images/I/41hgARuEKcL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    category: 'Eletrônicos',
   },
   {
-    title: 'Kindle 11',
-    stars: 4.8,
-    description: 'O leitor de livros digitais definitivo.',
-    url: 'https://amzn.to/3QdXiaV',
-    image: 'https://m.media-amazon.com/images/I/71B1wzw1LkL._AC_SX679_.jpg',
-    category: 'Dispositivos',
+    title: 'Moldura Quadro A3 30x42',
+    stars: 4.7,
+    description:
+      'Moldura perfeita para quadros, poster, diploma ou fotos. Vem com proteção de acetato.',
+    url_2: 'https://mercadolivre.com/sec/1cb1vuB',
+    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_750194-MLB49921050870_052022-F.webp',
+    category: 'Acessórios',
   },
   {
     title: 'Organizador de Livros Escritório Acrimet',
@@ -343,13 +344,12 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'Moldura Quadro A3 30x42',
-    stars: 4.7,
-    description:
-      'Moldura perfeita para quadros, poster, diploma ou fotos. Vem com proteção de acetato.',
-    url_2: 'https://mercadolivre.com/sec/1cb1vuB',
-    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_750194-MLB49921050870_052022-F.webp',
-    category: 'Acessórios',
+    title: 'Kindle 11',
+    stars: 4.8,
+    description: 'O leitor de livros digitais definitivo.',
+    url: 'https://amzn.to/3QdXiaV',
+    image: 'https://m.media-amazon.com/images/I/71B1wzw1LkL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
   },
   {
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
@@ -622,5 +622,105 @@ export const productsBR = [
     url: 'https://amzn.to/45JIIMq',
     image: 'https://m.media-amazon.com/images/I/51C7ww6AYCL._SY522_.jpg',
     category: 'Livros',
+  },
+  {
+    title: 'Protetor Solar Corporal Neutrogena Sun Fresh FPS 70 200ml',
+    stars: 4.8,
+    description:
+      'Melhor protetor solar! Com alta proteção FPS 70. Textura ultraleve e resistente à água. Ideal para peles sensíveis.',
+    url: 'https://amzn.to/3Ydg8Dg',
+    image: 'https://m.media-amazon.com/images/I/4190c-CYubL._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Hidratante Facial Neutrogena Hydro Boost Water Gel 50g',
+    stars: 4.8,
+    description:
+      'Melhor hidratante facial! Com ácido hialurônico. Ideal para peles secas e oleosas. Hidratação intensa por 24 horas.',
+    url: 'https://amzn.to/3LxQdyk',
+    image: 'https://m.media-amazon.com/images/I/51cj7VbcDSL._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+
+  {
+    title: 'Protetor Solar Facial Neutrogena Sun Fresh FPS 70 40g',
+    stars: 4.7,
+    description:
+      'Protetor solar facial com alta proteção FPS 70. Sem cor. Textura ultraleve e controle de oleosidade. Ideal para peles oleosas.',
+    url: 'https://amzn.to/46fImz4',
+    image: 'https://m.media-amazon.com/images/I/71poCb9IOYL._AC_SY879_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Sabonetes Phebo Kit 720g',
+    stars: 4.8,
+    description:
+      'Melhor sabonete! Kit com 6 sabonetes de 90g cada. Com base vegetal e glicerina, que limpa e hidrata a pele. Com fragrância de lavanda.',
+    url: 'https://amzn.to/3WwCtdI',
+    image: 'https://m.media-amazon.com/images/I/51rOgkMtK5L._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Creme Dental Sensodyne Branqueador Extra Fresh',
+    stars: 4.8,
+    description:
+      'Melhor creme dental! Com flúor e nitrato de potássio. Para dentes sensíveis. Branqueador. Proteção diária contra cáries e tártaro. 90g cada.',
+    url: 'https://amzn.to/3LAazHn',
+    image: 'https://m.media-amazon.com/images/I/61wTm0Rs+gL._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Escovas de Dente Curaprox 3 Unidades',
+    stars: 4.9,
+    description:
+      'Melhor escova de dente! Kit com 3 escovas de dente. Com cerdas macias e ultrafinas. Para limpeza profunda e delicada. Com cabo ergonômico.',
+    url: 'https://amzn.to/4cOIsQu',
+    image: 'https://m.media-amazon.com/images/I/817at2VVYHL._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Enxaguante Bucal Sem Álcool Listerine Cool Mint 1L',
+    stars: 4.9,
+    description:
+      'Melhor enxaguante bucal! Sem álcool. Com flúor e óleos essenciais. Para hálito fresco e proteção contra bactérias. Simplesmente essencial!',
+    url: 'https://amzn.to/3y5V4Uk',
+    image: 'https://m.media-amazon.com/images/I/714ZD0yQBcL._AC_SY879_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Shampoo Anticaspa Clear Men Ice Cool Menthol 400Ml',
+    stars: 4.8,
+    description:
+      'Melhor shampoo anticaspa! Com mentol. Para homens. Limpeza profunda e refrescante. 400ml. O mais vendido.',
+    url: 'https://amzn.to/4dcx6Wf',
+    image: 'https://m.media-amazon.com/images/I/61JSetSXeXL._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Shampoo Clareador Tio Nacho Antiqueda 415ml',
+    stars: 4.7,
+    description:
+      'Melhor shampoo clareador para cabelos finos! Com geleia real e camomila. Clareia naturalmente. Brilho e força. 415ml. Recomendo para quem tem cabelos loiros finos.',
+    url: 'https://amzn.to/3WvqUDl',
+    image: 'https://m.media-amazon.com/images/I/51jmb6WwcVL._AC_SY879_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Multivitamínico Dux Nutrition 90 Cápsulas',
+    stars: 4.8,
+    description:
+      'Melhor multivitamínico! Com 17 vitaminas e minerais. Para imunidade e energia. 90 cápsulas. Recomentado por nutricionistas para quem treina hipertrofia, mas consulte um profissional.',
+    url: 'https://amzn.to/4bQcDFN',
+    image: 'https://m.media-amazon.com/images/I/51xYS0PdqjL._AC_SX679_.jpg',
+    category: 'Saúde',
+  },
+  {
+    title: 'Aparador e Raspador Philips OneBlade',
+    stars: 4.7,
+    description:
+      'Melhor aparador de pelos! Apara, raspa e contorna. Com 3 pentes. À prova d’água. Bivolt. Recarregável. Ideal para barba, corpo e rosto.',
+    url: 'https://amzn.to/46csY6C',
+    image: 'https://m.media-amazon.com/images/I/61lniekqdCL._AC_SX679_.jpg',
+    category: 'Saúde',
   },
 ]
