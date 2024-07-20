@@ -46,20 +46,21 @@ export default function Home() {
 
             <div>
               <p>
-                Since 2017, I've been coding digital solutions. I've impacted millions of users with
-                Web Applications, Websites, E-commerce Platforms, PWAs, and Mobile Apps. Playing a
-                pivotal role in the efficiency of many companies, I helped increase their revenue.
+                Since 2017, I have been creating Web Applications, Websites, E-Commerce Platforms,
+                PWAs and Mobile Applications, that impact millions of users. I play a fundamental
+                role in the companies I work in, driving significant increases in revenue,
+                efficiency and growth.
               </p>
 
               <p>
-                I specialize in Frontend development, focusing on web standards, UX, performance,
-                accessibility, security, and analytics. I also work on the Backend with APIs, cloud
-                services, and CI/CD pipelines.
+                I'm a specialist in Frontend development, focused on web standards, UX, performance,
+                accessibility, security, web analytics and observability. I also rock on Backend
+                APIs, cloud services, CI/CD pipelines and AI experiments.
               </p>
 
               <p>
-                I currently exploring AI, creating content and open source, and mentoring
-                developers.
+                I love creating content, mentoring new developers, and making open source
+                contributions!
               </p>
             </div>
           </div>
