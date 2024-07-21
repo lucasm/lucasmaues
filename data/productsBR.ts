@@ -11,7 +11,7 @@ export const productsBR = [
   },
   {
     title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
-    stars: 5.0,
+    stars: 4.9,
     description:
       'Garrafa térmica Stanley. Construção sólida! Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA.',
     url: 'https://amzn.to/3uDXl7H',

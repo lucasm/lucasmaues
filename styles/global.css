@@ -238,7 +238,7 @@ nav a {
   display: flex;
   justify-content: flex-start;
   text-align: left;
-  padding: 1rem 0 1rem 10vw;
+  padding: 1rem 10vw;
   color: var(--color-b);
 }
 nav a:hover,
