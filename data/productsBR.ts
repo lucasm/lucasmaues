@@ -3,7 +3,7 @@ export const productsBR = [
     title: 'Mouse Logitech MX Vertical',
     stars: 4.8,
     description:
-      'O melhor mouse ergonômico. Adeus dores no pulso! Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech desenvolveu um mouse prático e super confortável.',
+      'O melhor mouse ergonômico. Adeus dores no pulso! Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech desenvolveu um mouse super prático e confortável.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
@@ -30,6 +30,15 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
+    title: ' Echo Spot com Alexa (2024)',
+    stars: 4.8,
+    description:
+      '"Alexa, toca MPB!". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
+    url: 'https://amzn.to/3LyhiRX',
+    image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
     title: 'Teclado Logitech MX Keys Mini',
     stars: 4.8,
     description:
@@ -43,7 +52,7 @@ export const productsBR = [
     title: 'Mochila para Notebook Dell Pro EcoLoop',
     stars: 4.8,
     description:
-      'A melhor mochila para notebooks! Super confortável, com divisões bem elaboradas, ecológica e com resistência à água. Ideal para o trabalho, faculdade e viagens.',
+      'A melhor mochila para notebooks! Super confortável, com divisões bem elaboradas, ecológica e com resistência à água. Ideal para o trabalho e faculdade.',
     url: 'https://amzn.to/3TgB6yc',
     url_2: 'https://mercadolivre.com/sec/2CjyvZm',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
@@ -60,16 +69,6 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple iPhone 15 128GB',
-    stars: 4.8,
-    description:
-      'iPhone padrão para quem busca qualidade. Com chip A16, câmera dupla, tela OLED e rede 5G. Um dos melhores smartphones da Apple. Com desempenho reconhecido, boa duração de bateria e conexão USB-C.',
-    url: 'https://amzn.to/49uT9pP',
-    url_2: 'https://mercadolivre.com/sec/2GCYRzv',
-    image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Webcam Logitech Brio 500 ',
     stars: 4.8,
     description:
@@ -83,17 +82,17 @@ export const productsBR = [
     title: 'Echo Dot 5 Alexa',
     stars: 4.8,
     description:
-      'Caixinha de som inteligente com Alexa. Toca música e conversa com IA - "Alexa toca minha playlist pop!".',
+      '"Alexa, toca minha playlist pop punk!". Caixinha de som com IA. Realmente uma joia. Toca música, da informações gerais e conversa. É possível conectar outros dispositivos para controlar por voz.',
     url: 'https://amzn.to/45jAJFL',
     url_2: 'https://mercadolivre.com/sec/2SZkXYs',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Filtro de Linha 5 Tomadas Clamper',
+    title: 'Filtro de Linha Clamper 5 Tomadas',
     stars: 4.9,
     description:
-      'Proteja seus equipamentos eletrônicos contra surtos de tensão e raios. Filtro de linha da Clamper, com 5 tomadas e cabo de 1,5m.',
+      'Proteja seus equipamentos! Raios e surtos de tensão podem sobrecarregar a rede elétrica. Filtro de linha da Clamper, com 5 tomadas e cabo de 1,5m.',
     url: 'https://amzn.to/3Mb5Mg9',
     url_2: 'https://mercadolivre.com/sec/1kzXLvN',
     image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
@@ -103,7 +102,7 @@ export const productsBR = [
     title: 'Projetor Magcubic HY320 Full HD',
     stars: 4.5,
     description:
-      'O melhor custo-benefício em projetor portátil do mercado. Com sistema Android, HDMI, USB, Bluetooth, Wi-Fi e resolução Full HD (1080p).',
+      'O melhor custo-benefício em projetor portátil do mercado. Com sistema Android, resolução Full HD (1080p), HDMI, USB, Bluetooth e Wi-Fi.',
     url: 'https://amzn.to/4aLdasx',
     url_3: 'https://s.click.aliexpress.com/e/_DmqI0oB',
     image: 'https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg',
@@ -113,7 +112,7 @@ export const productsBR = [
     title: 'JBL Go 3',
     stars: 4.8,
     description:
-      'Caixinha de som Bluetooth de qualidade e super portátil. Um ótimo presente para quem você gosta.',
+      'Caixinha de som Bluetooth super portátil! Qualidade JBL. Um ótimo presente para quem você gosta.',
     url: 'https://amzn.to/43CrM9C',
     url_2: 'https://mercadolivre.com/sec/2sFpodY',
     image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
@@ -123,7 +122,7 @@ export const productsBR = [
     title: 'Microfone HyperX Solocast',
     stars: 4.8,
     description:
-      'Microfone USB-C com qualidade de estúdio. Ótimo custo-benefício. Ideal para streamers e podcasters.',
+      'Melhor microfone para home office! Com qualidade de estúdio e USB-C. Ótimo custo-benefício. Ideal para streamers e podcasters. Tem uma luz indicativa e botão de liga/desliga microfone.',
     url: 'https://amzn.to/4dkvaMl',
     url_2: 'https://mercadolivre.com/sec/32y1APi',
     image: 'https://m.media-amazon.com/images/I/61Aw6bzkFQL._AC_SX679_.jpg',
@@ -133,7 +132,7 @@ export const productsBR = [
     title: 'Videogame portátil Anbernic RG35XX',
     stars: 5.0,
     description:
-      'Videogame portátil com 5.400 jogos clássicos, Linux, tela IPS de 3,5 polegadas, cartão 64G TF e HDMI.',
+      'Videogame portátil com 5.400 jogos clássicos! Com sistema Linux, tela IPS de 3,5 polegadas, saída para fone de ouvido, cartão 64G TF e HDMI.',
     url: 'https://amzn.to/44tcVjV',
     url_3: 'https://s.click.aliexpress.com/e/_DC0Ao8P',
     image: 'https://m.media-amazon.com/images/I/71Ujf2IvIOL._AC_SX679_.jpg',
@@ -150,6 +149,16 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
+    title: 'Apple iPhone 15 128GB',
+    stars: 4.8,
+    description:
+      'iPhone padrão para quem busca qualidade. Com chip A16, câmera dupla, tela OLED e rede 5G. Um dos melhores smartphones da Apple. Com desempenho reconhecido, boa duração de bateria e conexão USB-C.',
+    url: 'https://amzn.to/49uT9pP',
+    url_2: 'https://mercadolivre.com/sec/2GCYRzv',
+    image: 'https://m.media-amazon.com/images/I/416MG51rNgL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
     title: 'Xiaomi Redmi Note 12 128GB',
     stars: 4.7,
     description:
@@ -160,9 +169,10 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Philips Fone de ouvido Bluetooth TWS',
+    title: 'Fone de Ouvido Bluetooth TWS Philips',
     stars: 4.3,
-    description: 'Fone de ouvido Bluetooth TWS com ótimo custo-benefício.',
+    description:
+      'Fone de ouvido Bluetooth TWS super barato! Ótimo custo-benefício. 18 horas. Ideal para quem busca qualidade e preço baixo.',
     url: 'https://amzn.to/3UjBFWY',
     image: 'https://m.media-amazon.com/images/I/61uMQCVH0CL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -245,7 +255,7 @@ export const productsBR = [
     title: 'Monitores Dell 4K, UHD e Full HD',
     stars: 4.8,
     description:
-      'A Dell é referência em monitores de qualidade. Com resolução 4K, UHD e Full HD. Ideais para trabalho e games. Com suporte pós-venda e garantia.',
+      'A Dell é referência em monitores de qualidade. Com resolução 4K, UHD e Full HD. Ideais para trabalhar e jogar. Com garantia e suporte pós-venda elogiado.',
     url: 'https://amzn.to/4a7Osln',
     image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
@@ -700,7 +710,7 @@ export const productsBR = [
     title: 'Shampoo Clareador Tio Nacho Antiqueda 415ml',
     stars: 4.7,
     description:
-      'Melhor shampoo clareador para cabelos finos! Com geleia real e camomila. Clareia naturalmente. Brilho e força. 415ml. Recomendo para quem tem cabelos loiros finos.',
+      'Shampoo clareador! Com geleia real e camomila. Clareia naturalmente, com brilho e força. 415ml. Recomendo para quem tem cabelos loiros finos.',
     url: 'https://amzn.to/3WvqUDl',
     image: 'https://m.media-amazon.com/images/I/51jmb6WwcVL._AC_SY879_.jpg',
     category: 'Saúde',

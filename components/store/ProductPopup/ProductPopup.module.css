@@ -22,7 +22,7 @@
   text-align: center;
   animation: slideUp 0.2s ease-out;
   overflow-y: auto;
-  max-height: 90vh;
+  max-height: 85vh;
   max-width: 80vw;
 }
 .popupContent h3 {
