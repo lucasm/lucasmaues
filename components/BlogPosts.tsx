@@ -1,15 +1,9 @@
-'use client'
-
 import useSWR from 'swr'
 
 export default function Posts() {
   const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
-  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm', fetcher, {
-    revalidateOnFocus: true,
-    revalidateOnReconnect: true,
-    dedupingInterval: 0,
-  })
+  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm', fetcher)
 
   if (error)
     return (
@@ -48,3 +42,5 @@ export default function Posts() {
     </ul>
   )
 }
+
+export const fetchCache = 'force-no-store'
