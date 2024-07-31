@@ -1,9 +1,30 @@
-import useSWR from 'swr'
+import { useState, useEffect } from 'react'
 
 export default function Posts() {
-  const fetcher = (url: string) => fetch(url).then((res) => res.json())
+  const [data, setData] = useState(null)
+  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(true)
 
-  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm', fetcher)
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(`https://dev.to/api/articles?username=lucasm`, {
+          cache: 'no-store',
+        })
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+        const result = await response.json()
+        setData(result)
+      } catch (err) {
+        setError(err)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData()
+  }, [])
 
   if (error)
     return (
@@ -15,7 +36,7 @@ export default function Posts() {
         directly
       </div>
     )
-  if (!data) return <p>Loading...</p>
+  if (loading) return <p>Loading...</p>
 
   return (
     <ul className="posts">
@@ -42,5 +63,3 @@ export default function Posts() {
     </ul>
   )
 }
-
-export const fetchCache = 'force-no-store'
