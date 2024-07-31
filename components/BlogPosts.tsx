@@ -7,13 +7,12 @@ export default function Posts() {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(true)
 
+  const timestamp = Date.parse(new Date().toString())
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://dev.to/api/articles?username=lucasm`, {
-          // diable vercel cache
-          next: { revalidate: 0 },
-        })
+        const response = await fetch(`https://dev.to/api/articles?username=lucasm&?t=${timestamp}`)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
