@@ -1,14 +1,39 @@
 'use client'
 
-import useSWR from 'swr'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export default function Posts() {
-  const fetcher = (url: string) => axios.get(url).then((res) => res.data)
-  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm', fetcher)
+  const [data, setData] = useState(null)
+  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(true)
 
-  if (error) return <div>Failed to load posts</div>
-  if (!data) return <div>Loading...</div>
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('https://dev.to/api/articles?username=lucasm')
+        setData(response.data)
+      } catch (err) {
+        setError(err)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData()
+  }, [])
+
+  if (error)
+    return (
+      <div>
+        Failed to load posts, check
+        <a href="https://dev.to/lucasm" target="_blank" rel="noopener noreferrer">
+          my blog
+        </a>{' '}
+        directly
+      </div>
+    )
+  if (loading) return <p>Loading...</p>
 
   return (
     <ul className="posts">
