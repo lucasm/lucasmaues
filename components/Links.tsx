@@ -67,46 +67,46 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://discord.com/users/lucasmezs',
-    icon: <IconDiscord />,
-    text: 'Discord',
-    active: true,
-  },
-  {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
-    active: true,
-  },
-  {
     url: 'https://instagram.com/lucasmezs',
     icon: <IconInstagram />,
     text: 'Instagram',
     active: true,
   },
   {
+    url: 'https://discord.com/users/lucasmezs',
+    icon: <IconDiscord />,
+    text: 'Discord',
+    active: false,
+  },
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
+    active: false,
+  },
+  {
     url: 'https://open.spotify.com/user/lucasmauess',
     icon: <IconSpotify />,
     text: 'Spotify',
-    active: true,
+    active: false,
   },
   {
     url: 'https://letterboxd.com/lucasmezs',
     icon: <IconLetterboxd />,
     text: 'Letterboxd',
-    active: true,
+    active: false,
   },
   {
     url: 'https://lucasme.bsky.social',
     icon: <IconBluesky />,
     text: 'Bluesky',
-    active: true,
+    active: false,
   },
   {
     url: 'https://mastodon.social/@lucasmezs',
     icon: <IconMastodon />,
     text: 'Mastodon',
-    active: true,
+    active: false,
   },
   {
     url: ROUTES.BLOG.path,
@@ -167,18 +167,22 @@ export default function ComponentLinks() {
       </ul>
 
       <ul className="links" style={{ marginTop: '2rem' }}>
-        {visibleOtherLinks.map((link, index) => (
-          <li key={index}>
-            <Link
-              href={link.url}
-              target={link.internalPage ? '_self' : '_blank'}
-              rel={link.internalPage ? 'prefetch' : 'noopener'}
-              title={link.text}>
-              {link.icon}
-              {link.text}
-            </Link>
-          </li>
-        ))}
+        {visibleOtherLinks.map(
+          (link, index) =>
+            //is active?
+            link.active && (
+              <li key={index}>
+                <Link
+                  href={link.url}
+                  target={link.internalPage ? '_self' : '_blank'}
+                  rel={link.internalPage ? 'prefetch' : 'noopener'}
+                  title={link.text}>
+                  {link.icon}
+                  {link.text}
+                </Link>
+              </li>
+            )
+        )}
         {otherLinks.length > limitOfLinks && (
           <li>
             <button
