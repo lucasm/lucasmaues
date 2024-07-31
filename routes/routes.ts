@@ -3,7 +3,7 @@ export const ROUTES = {
     path: '/',
     title: 'Home',
     description:
-      'Software Engineer from Brazil. Building Frontend and AI solutions for stand out companies.',
+      'Senior Frontend Engineer from Brazil. Building solutions for stand out companies. Helping devs.',
   },
   ABOUT: {
     path: '/#about',
@@ -16,12 +16,12 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Produtos recomendados',
-    description: 'Os melhores produtos para amantes de tecnologia e lifestyle saudável.',
+    description: 'Os melhores produtos para amantes de tecnologia e lifestyle saudável!',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentorship',
-    title: 'Mentoria dev',
+    title: 'Mentoria para devs',
   },
   BLOG: {
     path: '/#blog',
