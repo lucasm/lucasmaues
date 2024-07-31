@@ -1,7 +1,4 @@
-'use client'
-
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 
 export default function Posts() {
   const [data, setData] = useState(null)
@@ -11,8 +8,12 @@ export default function Posts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://dev.to/api/articles?username=lucasm')
-        setData(response.data)
+        const response = await fetch(`https://dev.to/api/articles?username=lucasm&t=${Date.now()}`)
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+        const result = await response.json()
+        setData(result)
       } catch (err) {
         setError(err)
       } finally {
@@ -22,6 +23,8 @@ export default function Posts() {
 
     fetchData()
   }, [])
+
+  console.log(data)
 
   if (error)
     return (
