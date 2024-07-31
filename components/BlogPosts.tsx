@@ -8,7 +8,7 @@ export default function Posts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://dev.to/api/articles?username=lucasm&t=${Date.now()}`)
+        const response = await fetch(`https://dev.to/api/articles?username=lucasm`)
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
@@ -23,8 +23,6 @@ export default function Posts() {
 
     fetchData()
   }, [])
-
-  console.log(data)
 
   if (error)
     return (
