@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 
 export default function Posts() {
@@ -8,7 +10,10 @@ export default function Posts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://dev.to/api/articles?username=lucasm`)
+        const response = await fetch(`https://dev.to/api/articles?username=lucasm`, {
+          // diable vercel cache
+          next: { revalidate: 0 },
+        })
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
