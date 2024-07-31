@@ -1,32 +1,15 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import useSWR from 'swr'
 
 export default function Posts() {
-  const [data, setData] = useState(null)
-  const [error, setError] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
-  const timestamp = Date.parse(new Date().toString())
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`https://dev.to/api/articles?username=lucasm&?t=${timestamp}`)
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`)
-        }
-        const result = await response.json()
-        setData(result)
-      } catch (err) {
-        setError(err)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchData()
-  }, [])
+  const { data, error } = useSWR('https://dev.to/api/articles?username=lucasm', fetcher, {
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    dedupingInterval: 0,
+  })
 
   if (error)
     return (
@@ -38,7 +21,7 @@ export default function Posts() {
         directly
       </div>
     )
-  if (loading) return <p>Loading...</p>
+  if (!data) return <p>Loading...</p>
 
   return (
     <ul className="posts">
