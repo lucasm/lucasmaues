@@ -12,9 +12,9 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Desde 2017 trabalho com Frontend, Web e Engenharia de Software. Pessoas me procuram em
-              busca de ajuda. Como mentor, ofereço orientação personalizada para quem deseja evoluir
-              na carreira de TI, estudos ou projetos.
+              Desde 2017 trabalho com Frontend, Web e Engenharia de Software. E as pessoas me
+              procuram em busca de ajuda. Como mentor, ofereço orientação personalizada para quem
+              deseja evoluir na carreira, estudos ou projetos.
             </p>
           </div>
         </div>
@@ -25,7 +25,7 @@ export default function PageMentorship() {
           <article>
             <SvgAnimateMentorship />
 
-            <h1>"Primeiro, resolva o problema, então, escreva o código." — John Johnson</h1>
+            <h1>"Primeiro, resolva o problema. Então, escreva o código." — John Johnson</h1>
 
             <h3>Como funciona?</h3>
             <p>
