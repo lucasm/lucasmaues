@@ -15,13 +15,13 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Produtos Recomendados',
+    title: 'Produtos recomendados',
     description: 'Os melhores produtos para amantes de tecnologia e lifestyle saudável!',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentorship',
-    title: 'Mentoria para Devs',
+    title: 'Mentoria para devs',
   },
   BLOG: {
     path: '/#blog',

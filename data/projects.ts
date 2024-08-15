@@ -50,8 +50,8 @@ export const projects: IProjects[] = [
   {
     name: 'Findto',
     url: 'https://findto.app/',
-    description: 'Progressive Web App for an open source decentralized Web & AI search assistant.',
-    tags: ['Open Source', 'TypeScript', 'React', 'Next.js', 'PWA', 'CSS', 'APIs'],
+    description: 'Progressive Web App for an assistant of decentralized search on Web and AI.',
+    tags: ['Open Source', 'PWA', 'TypeScript', 'React', 'Next.js', 'CSS', 'APIs'],
     icon: svgProjectFindto,
     active: true,
   },
@@ -60,7 +60,16 @@ export const projects: IProjects[] = [
     url: 'https://developer.mozilla.org/',
     description:
       'I contribute to the MDN Web Docs, with JavaScript translations, Web Standards, and Web APIs for the open web.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Web Standards', 'Accessibility', 'ECMAScript', 'Web APIs'],
+    tags: [
+      'Open Source',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Web Standards',
+      'Accessibility',
+      'ECMAScript',
+      'Web APIs',
+    ],
     icon: SvgMozilla,
     active: true,
   },
