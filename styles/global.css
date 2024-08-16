@@ -472,7 +472,6 @@ article blockquote {
   gap: 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 650px;
   list-style: none;
   padding: 0;
 }
