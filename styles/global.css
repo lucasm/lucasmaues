@@ -334,6 +334,7 @@ button,
 .button,
 #logo {
   font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
 h1,

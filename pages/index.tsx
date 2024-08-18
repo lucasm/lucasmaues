@@ -39,28 +39,32 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h3>I build positive impact</h3>
+              <h3>I build positive impact with creativity & code</h3>
 
               <Button url={ROUTES.WORK.path}>{ROUTES.WORK.title}</Button>
             </div>
 
             <div>
               <p>
-                Since 2017, I have been creating Web Applications, Websites, E-Commerce Platforms,
-                PWAs and Mobile Applications, that impact millions of users. I play a fundamental
-                role in the companies I work in, driving significant increases in revenue,
-                efficiency and growth.
+                Since 2017, I've been developing Web Applications, Websites, E-Commerce Platforms,
+                PWAs, and Mobile Applications that impact millions of users.
               </p>
 
               <p>
-                I'm a specialist in Frontend development, focused on web standards, UX, performance,
-                accessibility, security, web analytics and observability. I also rock on Backend
-                APIs, cloud services, CI/CD pipelines and AI experiments.
+                I play a pivotal role in the companies I work with, driving significant growth in
+                revenue, efficiency, and expansion. I'm proud of my work and constantly seeking new
+                challenges.
               </p>
 
               <p>
-                I love creating content, mentoring new developers, and making open source
-                contributions!
+                As a Frontend specialist, I focus on web standards, UX, performance, accessibility,
+                security, web analytics, and observability. Additionally, Backend APIs, cloud
+                services, CI/CD pipelines, and AI experiments.
+              </p>
+
+              <p>
+                I love açaí, traveling, deep conversations, bodybuilding and contributing to an open
+                source community!
               </p>
             </div>
           </div>

@@ -12,9 +12,9 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Desde 2017, atuo nas áreas de Frontend, Web e Engenharia de Software. Sou procurado
-              por pessoas que buscam orientação e ajuda para alcançar seus objetivos. Como mentor,
-              te ajudo a evoluir na carreira e estudos.
+              Desde 2017, atuo com Frontend, Web e Engenharia de Software. Sou procurado por pessoas
+              que buscam orientação ou ajuda para evoluir na carreira de TI e estudos, visando
+              alcançar seus objetivos.
             </p>
           </div>
         </div>
@@ -32,10 +32,8 @@ export default function PageMentorship() {
               A mentoria é realizada por videochamada. Durante a primeira sessão vamos conversar e
               entender o seu momento atual na TI. Quais as suas necessidades e desafios? Com base
               nisso, vamos definir metas e traçar um plano de ação de curto ou médio prazo para você
-              alcançar os seus objetivos.
+              alcançar os seus objetivos. Vou usar minha experiência para te ajudar.
             </p>
-
-            <p>Vou usar toda minha experiência para te ajudar.</p>
 
             <h3>Quem pode participar?</h3>
 
