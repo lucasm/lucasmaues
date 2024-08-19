@@ -16,6 +16,7 @@ import {
   IconWhatsapp,
   IconMore,
   IconLess,
+  IconThreads,
 } from './Svgs'
 import { ROUTES } from '../routes/routes'
 import PrefetchImages from './store/PrefetchImages'
@@ -73,6 +74,18 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://threads.net/@lucasmezs',
+    icon: <IconThreads />,
+    text: 'Threads',
+    active: true,
+  },
+  {
+    url: 'https://lucasme.bsky.social',
+    icon: <IconBluesky />,
+    text: 'Bluesky',
+    active: true,
+  },
+  {
     url: 'https://discord.com/users/lucasmezs',
     icon: <IconDiscord />,
     text: 'Discord',
@@ -94,12 +107,6 @@ const Links: ILinks[] = [
     url: 'https://letterboxd.com/lucasmezs',
     icon: <IconLetterboxd />,
     text: 'Letterboxd',
-    active: false,
-  },
-  {
-    url: 'https://lucasme.bsky.social',
-    icon: <IconBluesky />,
-    text: 'Bluesky',
     active: false,
   },
   {
