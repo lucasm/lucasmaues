@@ -24,7 +24,7 @@ export const projects: IProjects[] = [
     name: 'Banco Bmg',
     url: 'https://www.bancobmg.com.br/',
     description:
-      'Web Application of financial products for a bank in Brazil, with 600M BRL transactions per month.',
+      'Web Application of financial products for a bank in Brazil, with 800 milions BRL transactions per month.',
     tags: [
       'TypeScript',
       'React',
@@ -42,7 +42,7 @@ export const projects: IProjects[] = [
     name: 'Globo',
     url: 'https://www.globo.com/',
     description:
-      'Web Accessibility for the largest content portal in Brazil with 900M of access per month.',
+      'Web Accessibility for the largest content portal in Brazil, with 1 billion accesses per month.',
     tags: ['JavaScript', 'Preact', 'Node.js', 'Performance', 'Accessibility', 'Python', 'Docker'],
     icon: svgProjectGlobo,
     active: true,
