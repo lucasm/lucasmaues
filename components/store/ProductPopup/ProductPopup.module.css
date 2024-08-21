@@ -145,9 +145,15 @@
     border-radius: 0;
   }
   .closeButton {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-y-3);
     font-size: 1rem;
-    height: 4rem;
-    width: 4rem;
+    margin: 1rem;
+    width: var(--height-min);
+    height: var(--height-min);
   }
 
   .productDetail {
