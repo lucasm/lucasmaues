@@ -145,7 +145,6 @@
     border-radius: 0;
   }
   .closeButton {
-    position: fixed;
     font-size: 1rem;
     height: 4rem;
     width: 4rem;

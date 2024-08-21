@@ -51,6 +51,7 @@
 @media screen and (max-width: 600px) {
   .container button {
     max-width: 100%;
+    width: 100%;
   }
   .container button img {
     width: 148px;
