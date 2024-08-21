@@ -151,9 +151,13 @@
     align-items: center;
     background-color: var(--color-y-3);
     font-size: 1rem;
-    margin: 1rem;
+    margin: 0.75rem;
     width: var(--height-min);
     height: var(--height-min);
+  }
+  .closeButton svg {
+    width: 1rem;
+    height: 1rem;
   }
 
   .productDetail {
