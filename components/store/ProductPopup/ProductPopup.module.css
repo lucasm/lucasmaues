@@ -159,6 +159,9 @@
     width: 1rem;
     height: 1rem;
   }
+  .closeButton path {
+    fill: var(--color-b-fixed) !important;
+  }
 
   .productDetail {
     display: grid;
