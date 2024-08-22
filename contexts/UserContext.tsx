@@ -30,6 +30,8 @@ export function UserContextProvider({ children }) {
         '--color-translucent',
         theme === 'dark' ? 'rgb(255 255 255 / 5%)' : 'rgb(0 0 0 / 5%)'
       )
+
+      root.style.setProperty('color-scheme', theme)
     }
   }, [theme])
 

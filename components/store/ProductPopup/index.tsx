@@ -78,7 +78,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                   </div>
                 )}
 
-                <h3>Meu review:</h3>
+                {/* <h3>Meu review:</h3> */}
 
                 <p>{product.description}</p>
 

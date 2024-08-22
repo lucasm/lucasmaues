@@ -1,6 +1,6 @@
 import styles from './Donate.module.css'
 import Button from '../../Button'
-import { IconGift, IconShield } from '../../Svgs'
+import { IconCupom, IconGift, IconShield } from '../../Svgs'
 
 const Donate = () => {
   return (
@@ -8,14 +8,21 @@ const Donate = () => {
       <Button url="#banner">
         <>
           <IconShield />
-          Compra segura
+          Compra 100% segura
+        </>
+      </Button>
+
+      <Button url="#products">
+        <>
+          <IconCupom />
+          Cupons de desconto
         </>
       </Button>
 
       <Button url="https://www.meliuz.com.br/i/ref_lucasmauess" isExternal>
         <>
           <IconGift />
-          Ganhe R$ 5,00
+          Ganhe R$ 5 no Méliuz
         </>
       </Button>
     </div>
