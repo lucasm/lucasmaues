@@ -8,7 +8,7 @@
 .container a {
   background: var(--color-translucent);
   color: var(--color-b);
-  height: var(--height-min);
+  height: var(--height-max);
   padding: 0 2rem;
 }
 
