@@ -1,0 +1,28 @@
+.container {
+  padding: 20px 0;
+
+  font-size: var(--font-size-6);
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.couponsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.coupon {
+  padding: 1rem 1.5rem;
+  border: 3px dashed var(--color-b);
+  border-radius: var(--radius);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+.coupon:hover {
+  background: var(--color-translucent);
+}

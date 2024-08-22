@@ -1,19 +1,30 @@
 export const productsBR = [
   {
     title: 'Mouse Logitech MX Vertical',
-    stars: 4.8,
+    stars: 4.9,
     description:
-      'O melhor mouse ergonômico. Adeus dores no pulso! Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech desenvolveu um mouse super prático e confortável.',
+      'O melhor mouse ergonômico. Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
+    title: 'Apple MacBook Air M1 13" 8GB 256GB',
+    stars: 4.8,
+    description:
+      'Notebook portátil da Apple com preço mais acessível. Atinge duração de bateria incrível com chip M1. Obra prima, que ainda vale a pena para tarefas do dia a dia.',
+    url: 'https://amzn.to/45JUIxs',
+    url_2: 'https://mercadolivre.com/sec/1ha7uXX',
+    cupom: ['#LOJADEV500MACM1'],
+    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
     title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
     stars: 4.9,
     description:
-      'Garrafa térmica Stanley. Construção sólida! Capacidade de 710ML. Ideal para o trabalho, academia, viagens e o dia a dia. Aço inoxidável e livre de BPA.',
+      'Garrafa térmica com construção sólida. Qualidade e design Stanley! Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia. ',
     url: 'https://amzn.to/3uDXl7H',
     url_2: 'https://mercadolivre.com/sec/21x7Pq8',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
@@ -23,7 +34,7 @@ export const productsBR = [
     title: 'Caixa de Som Bluetooth JBL Flip 6',
     stars: 4.8,
     description:
-      'Caixa de som portátil Bluetooth. Qualidade JBL! Com resistência à água e bateria de longa duração. Ideal para viagens, piscina, praia e qualquer lugar. Graves, médios e agudos bem equilibrados.',
+      'Caixa de som Bluetooth portátil. Qualidade JBL. Com resistência à água e bateria de longa duração. Graves, médios e agudos bem equilibrados. Ideal para viagens, piscina, praia e qualquer lugar.',
     url: 'https://amzn.to/45IVz1o',
     url_2: 'https://mercadolivre.com/sec/2cFhbqS',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
@@ -266,16 +277,6 @@ export const productsBR = [
       'Notebook portátil da Apple de última geração e bom desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente.',
     url: 'https://amzn.to/3QvbX0R',
     image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
-    title: 'Apple MacBook Air M1 13" 8GB 256GB',
-    stars: 4.8,
-    description:
-      'Notebook portátil da Apple mais acessível. Atinge duração de bateria incrível com chip M1. Obra prima que ainda vale a pena.',
-    url: 'https://amzn.to/45JUIxs',
-    url_2: 'https://mercadolivre.com/sec/2S6wLNi',
-    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -719,7 +720,7 @@ export const productsBR = [
     title: 'Multivitamínico Dux Nutrition 90 Cápsulas',
     stars: 4.8,
     description:
-      'Melhor multivitamínico! Com 17 vitaminas e minerais. Para imunidade e energia. 90 cápsulas. Recomentado por nutricionistas para quem treina hipertrofia, mas consulte um profissional.',
+      'Melhor multivitamínico! Com 17 vitaminas e minerais. Para imunidade e energia. 90 cápsulas. Recomentado por nutricionistas para quem treina hipertrofia, mas consulte um profissional para não tomar atoa.',
     url: 'https://amzn.to/4bQcDFN',
     image: 'https://m.media-amazon.com/images/I/51xYS0PdqjL._AC_SX679_.jpg',
     category: 'Saúde',
@@ -728,7 +729,7 @@ export const productsBR = [
     title: 'Aparador e Raspador Philips OneBlade',
     stars: 4.7,
     description:
-      'Melhor aparador de pelos! Apara, raspa e contorna. Com 3 pentes. À prova d’água. Bivolt. Recarregável. Ideal para barba, corpo e rosto.',
+      'Melhor aparador de pelos. Apara, raspa e contorna. Com 3 pentes. À prova d’água. Bivolt. Recarregável. Ideal para barba, corpo e rosto.',
     url: 'https://amzn.to/46csY6C',
     image: 'https://m.media-amazon.com/images/I/61lniekqdCL._AC_SX679_.jpg',
     category: 'Saúde',

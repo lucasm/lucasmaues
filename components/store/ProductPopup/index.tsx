@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Style from './ProductPopup.module.css'
 import { ArrowUpRight, IconClose, IconStar } from '../../Svgs'
 import Button from '../../Button'
+import DiscountCoupons from '../DiscountCoupons'
 
 interface ProductPopupProps {
   product: {
@@ -12,6 +13,7 @@ interface ProductPopupProps {
     url: string
     url_2: string
     url_3: string
+    cupom: string[]
   }
   onClose: () => void
 }
@@ -76,7 +78,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                   </div>
                 )}
 
-                {/* <h3>Meu review:</h3> */}
+                <h3>Meu review:</h3>
 
                 <p>{product.description}</p>
 
@@ -108,6 +110,8 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                     </Button>
                   )}
                 </div>
+
+                <DiscountCoupons coupons={product?.cupom} />
               </div>
             </div>
           </div>
