@@ -13,7 +13,7 @@ export const productsBR = [
     title: 'Apple MacBook Air M1 13" 8GB 256GB',
     stars: 4.8,
     description:
-      'Notebook portátil da Apple com preço mais acessível. Atinge duração de bateria incrível com chip M1. Obra prima, que ainda vale a pena para tarefas do dia a dia.',
+      'Notebook da Apple com o preço mais acessível. Atinge duração de bateria incrível com chip M1 da nova arquitetura Apple Silicon. Obra prima que, mesmo com 8GB de RAM, ainda compensa para tarefas do dia a dia, devido a  super otimização do macOS como sistema operacional.',
     url: 'https://amzn.to/45JUIxs',
     url_2: 'https://mercadolivre.com/sec/1ha7uXX',
     cupom: ['#LOJADEV500MACM1'],
@@ -42,9 +42,9 @@ export const productsBR = [
   },
   {
     title: ' Echo Spot com Alexa (2024)',
-    stars: 4.8,
+    stars: 4.7,
     description:
-      '"Alexa, toca MPB!". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
+      '"Alexa, toca minha playlist MPB!". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
     url: 'https://amzn.to/3LyhiRX',
     image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -63,7 +63,7 @@ export const productsBR = [
     title: 'Mochila para Notebook Dell Pro EcoLoop',
     stars: 4.8,
     description:
-      'A melhor mochila para notebooks! Super confortável, com divisões bem elaboradas, ecológica e com resistência à água. Ideal para o trabalho e faculdade.',
+      'Apenas a melhor mochila para notebooks. Super confortável, com divisões bem elaboradas, ecológica e com resistência à água. Ideal para o trabalho e faculdade.',
     url: 'https://amzn.to/3TgB6yc',
     url_2: 'https://mercadolivre.com/sec/2CjyvZm',
     image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',

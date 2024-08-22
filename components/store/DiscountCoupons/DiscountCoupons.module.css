@@ -12,11 +12,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
 
 .coupon {
-  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  height: var(--height-max);
   border: 3px dashed var(--color-b);
   border-radius: var(--radius);
   cursor: pointer;
@@ -25,4 +29,10 @@
 }
 .coupon:hover {
   background: var(--color-translucent);
+}
+
+@media screen and (max-width: 900px) {
+  .coupon {
+    height: var(--height-min);
+  }
 }

@@ -15,7 +15,7 @@ const DiscountCoupons: React.FC<DiscountCouponsProps> = ({ coupons }) => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>Cupom de desconto:</h3>
+      <h3 className={styles.title}>Cupom:</h3>
 
       <div className={styles.couponsList}>
         {coupons.map((coupon, index) => (
