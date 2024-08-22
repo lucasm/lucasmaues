@@ -15,7 +15,7 @@ const Donate = () => {
       <Button url="#products">
         <>
           <IconCupom />
-          Cupons de desconto
+          Cupom de desconto
         </>
       </Button>
 
