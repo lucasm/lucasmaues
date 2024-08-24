@@ -1,12 +1,13 @@
-import { useRef, useState } from 'react'
+import { ROUTES } from '../routes/routes'
+import { useRef, useState, useMemo } from 'react'
 import PageLayout from '../components/PageLayout'
 import StyleCard from '../components/store/ProductCard/ProductCard.module.css'
 import ProductPopup from '../components/store/ProductPopup'
 import { productsBR } from '../data/productsBR'
 import ProductCard from '../components/store/ProductCard'
 import SearchFilter from '../components/store/SearchFilter'
-import Donate from '../components/store/Donate'
-import { ROUTES } from '../routes/routes'
+
+import ActionButtons from '../components/store/ActionButtons'
 import Banners from '../components/store/Banners'
 
 export default function PageStore() {
@@ -16,7 +17,7 @@ export default function PageStore() {
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState('Todos')
   const [searchTerm, setSearchTerm] = useState('')
-
+  const containerProductsRef = useRef<HTMLDivElement>(null)
   const filteredProducts = productsBR.filter((product) => {
     const matchesCategory = category === 'Todos' || product.category === category
     const matchesSearchTerm =
@@ -25,7 +26,9 @@ export default function PageStore() {
     return matchesCategory && matchesSearchTerm
   })
 
-  const containerProductsRef = useRef<HTMLDivElement>(null)
+  const isEmptySearch = useMemo(() => {
+    return filteredProducts.length === 0
+  }, [filteredProducts])
 
   const handleCategoryChange = (newCategory) => {
     setCategory(newCategory)
@@ -33,11 +36,9 @@ export default function PageStore() {
       containerProductsRef?.current?.scrollIntoView({ behavior: 'smooth' })
     }
   }
-
   const handleSearchChange = (newSearchTerm: string) => {
     setSearchTerm(newSearchTerm)
   }
-
   const handleOpenProductPopup = (product) => {
     setSelectedProduct(product)
   }
@@ -52,22 +53,30 @@ export default function PageStore() {
           <h1>{title}</h1>
           <p>{description}</p>
 
-          <Donate />
+          <ActionButtons />
 
           <SearchFilter
             currentCategory={category}
             onCategoryChange={handleCategoryChange}
             onSearchChange={handleSearchChange}
-            isEmptySearch={filteredProducts.length === 0}
+            isEmptySearch={isEmptySearch}
           />
 
-          <div className={StyleCard.container} ref={containerProductsRef} id="products">
-            {filteredProducts.map((product, index) => (
-              <ProductCard product={product} handleOnClick={handleOpenProductPopup} key={index} />
-            ))}
-          </div>
+          {!isEmptySearch && (
+            <div ref={containerProductsRef} id="products">
+              <ul className={StyleCard.container}>
+                {filteredProducts.map((product, index) => (
+                  <ProductCard
+                    product={product}
+                    handleOnClick={handleOpenProductPopup}
+                    key={index}
+                  />
+                ))}
+              </ul>
+            </div>
+          )}
 
-          <div className="container" id="banner">
+          <div id="banner" className="container">
             <Banners />
           </div>
         </div>

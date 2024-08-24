@@ -1,14 +1,19 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 0 2rem;
+  padding: 0 0 2rem;
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
 }
-.container button {
+.product {
+  display: flex;
+  padding: 0;
+}
+.product button,
+.product a {
   background: var(--color-w);
   border: 0;
   margin: 0;
@@ -23,7 +28,8 @@
   padding: 2.5rem 2.5rem 3rem;
   max-width: 340px;
 }
-.container button img {
+.product button img,
+.product a img {
   transition: all 0.25s ease-in-out;
   padding: 1rem 1.5rem;
   max-width: 100%;
@@ -31,29 +37,38 @@
   filter: grayscale(100%);
   background: var(--color-white);
 }
-.container button:hover img {
+.product button:hover img,
+.product a:hover img,
+.product a:hover svg {
   opacity: 0.9;
 }
 /* .container button:hover {
   box-shadow: var(--shadow);
 } */
-.container h2 {
+.product h3 {
   font-size: var(--font-size-5);
   color: var(--color-b-fixed);
   padding: 0.5rem 0 0;
   width: 100%;
 }
-.container button span {
-  font-weight: normal;
-  font-size: var(--font-size-6);
-}
 
 @media screen and (max-width: 600px) {
-  .container button {
+  .product {
+    width: 100%;
+  }
+
+  .product svg {
+    max-width: 6rem;
+    max-height: 6rem;
+  }
+
+  .product button,
+  .product a {
     max-width: 100%;
     width: 100%;
   }
-  .container button img {
+  .product button img,
+  .product a img {
     width: 148px;
     padding: 0 1.5rem;
   }

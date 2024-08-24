@@ -2,6 +2,7 @@ import { useRef, useState, useEffect, useCallback } from 'react'
 import Style from './SearchFilter.module.css'
 import { IconChevronDown, IconClose, IconSearch } from '../../Svgs'
 import debounce from 'lodash/debounce'
+import AmazonSearch from '../AmazonSearch'
 
 export default function SearchFilter({
   currentCategory,
@@ -78,9 +79,9 @@ export default function SearchFilter({
   }, [searchTerm, currentCategory])
 
   return (
-    <div className={Style.filterContainer}>
-      <div className={Style.container}>
-        {/* Barra de busca */}
+    <div className={Style.container}>
+      <div className={Style.containerInput}>
+        {/* Input busca */}
         <div className={Style.searchBar}>
           <input
             ref={refInput}
@@ -92,44 +93,46 @@ export default function SearchFilter({
           />
 
           {isButtonVisible && (
-            <button className={Style.buttonSearch} onClick={focusInput} aria-label="Buscar">
+            <button
+              className={Style.buttonSearch}
+              onClick={focusInput}
+              aria-label="Buscar">
               <IconSearch />
             </button>
           )}
 
-          {/* Botão de reset */}
+          {/* Botão reset */}
           {isResetVisible && (
-            <button className={Style.buttonClear} onClick={resetAll} aria-label="Limpar">
+            <button
+              className={Style.buttonClear}
+              onClick={resetAll}
+              aria-label="Limpar">
               <IconClose />
             </button>
           )}
         </div>
 
-        {/* Dropdown de categoria */}
-        <div className={Style.dropdown}>
-          <select
-            value={currentCategory}
-            onChange={handleCategoryChange}
-            className={Style.dropdownSelect}>
-            <option value="Todos">Todos</option>
-            <option value="Eletrônicos">Eletrônicos</option>
-            <option value="Acessórios">Acessórios</option>
-            <option value="Saúde">Saúde</option>
-            <option value="Livros">Livros</option>
-          </select>
+        {/* Select categorias */}
+        {!isEmptySearch && (
+          <div className={Style.dropdown}>
+            <select
+              value={currentCategory}
+              onChange={handleCategoryChange}
+              className={Style.select}>
+              <option value="Todos">Todos</option>
+              <option value="Eletrônicos">Eletrônicos</option>
+              <option value="Acessórios">Acessórios</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Livros">Livros</option>
+            </select>
 
-          <IconChevronDown />
-        </div>
+            <IconChevronDown />
+          </div>
+        )}
       </div>
 
-      {/* Mensagem de nenhum resultado */}
       {isEmptySearch && (
-        <div className={Style.noResults}>
-          <h2>Nenhum produto encontrado</h2>
-          <button className="button" onClick={resetAll}>
-            Ver todos
-          </button>
-        </div>
+        <AmazonSearch keyword={searchTerm} onReset={resetAll} />
       )}
     </div>
   )

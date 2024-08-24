@@ -32,7 +32,7 @@ export default function PageMentorship() {
               A mentoria é realizada por videochamada. Durante a primeira sessão vamos conversar e
               entender o seu momento atual na TI. Quais as suas necessidades e desafios? Com base
               nisso, vamos definir metas e traçar um plano de ação de curto ou médio prazo para você
-              alcançar os seus objetivos. Vou usar minha experiência para te ajudar.
+              alcançar os seus objetivos.
             </p>
 
             <h3>Quem pode participar?</h3>
@@ -55,15 +55,15 @@ export default function PageMentorship() {
             <p>
               - Orientação personalizada
               <br />
-              - Plano de ação para alcançar os seus objetivos
+              - Plano de ação
               <br />
               - Aprendizado prático (hard skills)
               <br />
               - Desenvolvimento profissional (soft skills)
               <br />
               - Avaliação de resultados
-              <br />- Feedback (falo o que você PRECISA ouvir para evoluir, não o que quer ouvir
-              para agradar o ego)
+              <br />- Feedback, onde falo o que você PRECISA ouvir para evoluir, não o que quer
+              ouvir para agradar o ego
             </p>
           </article>
         </div>
@@ -82,7 +82,7 @@ export default function PageMentorship() {
               <p>
                 <strong></strong>
                 <br />
-                Duração: ~ 45 minutos
+                Duração: 45 minutos
                 <br />
                 Formato: Google Meet + Notion
                 <br />

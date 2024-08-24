@@ -23,7 +23,7 @@
   animation: slideUp 0.2s ease-out;
   overflow-y: auto;
   max-height: 85vh;
-  max-width: 80vw;
+  max-width: 85vw;
 }
 .popupContent h3 {
   text-align: left;
@@ -69,8 +69,8 @@
   margin-top: 2rem;
 }
 .containerButtons svg {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .containerButtons svg path {
   fill: var(--color-b-fixed);
