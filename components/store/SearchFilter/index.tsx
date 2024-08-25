@@ -4,12 +4,19 @@ import { IconChevronDown, IconClose, IconSearch } from '../../Svgs'
 import debounce from 'lodash/debounce'
 import AmazonSearch from '../AmazonSearch'
 
+interface SearchFilterProps {
+  currentCategory: string
+  onCategoryChange: (category: string) => void
+  onSearchChange: (searchTerm: string) => void
+  isEmptySearch: boolean
+}
+
 export default function SearchFilter({
   currentCategory,
   onCategoryChange,
   onSearchChange,
   isEmptySearch,
-}) {
+}: SearchFilterProps) {
   const [searchTerm, setSearchTerm] = useState('')
   const [isResetVisible, setIsResetVisible] = useState(false)
   const [isButtonVisible, setIsButtonVisible] = useState(false)
@@ -79,7 +86,7 @@ export default function SearchFilter({
   }, [searchTerm, currentCategory])
 
   return (
-    <div className={Style.container}>
+    <div className={Style.container} id="products">
       <div className={Style.containerInput}>
         {/* Input busca */}
         <div className={Style.searchBar}>

@@ -2,7 +2,10 @@ import aws4 from 'aws4'
 import axios from 'axios'
 import { NextApiRequest, NextApiResponse } from 'next'
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const { Keywords } = req.query // Receber os parâmetros pela query da URL
 
   const serviceName = 'ProductAdvertisingAPI'
@@ -12,10 +15,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const payload = {
     Keywords: Keywords,
-    Resources: ['Images.Primary.Large', 'ItemInfo.Title'],
+    Resources: ['ItemInfo.Title', 'Images.Primary.Large'],
     PartnerTag: process.env.AMAZON_PARTNER_TAG,
     PartnerType: 'Associates',
     Marketplace: 'www.amazon.com.br',
+    Operation: 'SearchItems',
   }
 
   const host = 'webservices.amazon.com.br'
@@ -30,7 +34,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     headers: {
       'content-encoding': 'amz-1.0',
       'content-type': 'application/json; charset=utf-8',
-      'x-amz-target': 'com.amazon.paapi5.v1.ProductAdvertisingAPIv1.SearchItems',
+      'x-amz-target':
+        'com.amazon.paapi5.v1.ProductAdvertisingAPIv1.SearchItems',
     },
     body: JSON.stringify(payload),
   }

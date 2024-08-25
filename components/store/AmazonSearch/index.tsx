@@ -10,9 +10,9 @@ interface AmazonSearchProps {
 }
 
 const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
-  const [items, setItems] = useState<any>([])
+  const [items, setItems] = useState<any>(null)
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+  const [error, setError] = useState<string>(undefined)
 
   // Debounce a função de busca para evitar chamadas excessivas
   const debouncedFetchItems = useMemo(
@@ -20,8 +20,9 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
       debounce(async (searchTerm) => {
         if (!searchTerm) return
 
-        setLoading(true) // Define loading como true para indicar que a busca está em andamento
-        setItems([]) // Limpa os itens antes de iniciar uma nova busca
+        setLoading(true)
+        setItems(null)
+        setError(undefined)
 
         try {
           const response = await fetch(
@@ -34,7 +35,7 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
           setItems(data)
           setLoading(false)
         } catch (error) {
-          setError(error.message)
+          setError(error?.message || 'Erro ao buscar os itens')
           setLoading(false)
         }
       }, 500), // 500ms de delay antes de disparar a busca
@@ -54,19 +55,19 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
   if (error) return <SearchNotFound onReset={onReset} />
 
   return (
-    <div id="products">
+    <div>
       <h2>Resultados para "{keyword}"</h2>
 
-      {items?.SearchResult?.Items.length > 0 && (
+      {items?.SearchResult?.Items?.length > 0 && (
         <ul className={StyleProductCard.container}>
-          {items?.SearchResult?.Items.map((item, index) => (
+          {items?.SearchResult?.Items?.map((item, index: number) => (
             <li key={index} className={StyleProductCard.product}>
-              <a href={item.DetailPageURL} target="_blank" rel="noreferrer">
+              <a href={item?.DetailPageURL} target="_blank" rel="noreferrer">
                 <img
-                  src={item.Images?.Primary?.Large?.URL}
-                  alt={item.ItemInfo?.Title?.DisplayValue}
+                  src={item?.Images?.Primary?.Large?.URL}
+                  alt={item?.ItemInfo?.Title?.DisplayValue}
                 />
-                <h3>{item.ItemInfo?.Title?.DisplayValue}</h3>
+                <h3>{item?.ItemInfo?.Title?.DisplayValue}</h3>
               </a>
             </li>
           ))}
@@ -82,9 +83,7 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
         </ul>
       )}
 
-      {items?.Errors[0]?.Code === 'NoResults' && (
-        <SearchNotFound onReset={onReset} />
-      )}
+      {items?.Errors && <SearchNotFound onReset={onReset} />}
     </div>
   )
 }

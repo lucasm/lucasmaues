@@ -19,7 +19,8 @@ export default function PageStore() {
   const [searchTerm, setSearchTerm] = useState('')
   const containerProductsRef = useRef<HTMLDivElement>(null)
   const filteredProducts = productsBR.filter((product) => {
-    const matchesCategory = category === 'Todos' || product.category === category
+    const matchesCategory =
+      category === 'Todos' || product.category === category
     const matchesSearchTerm =
       product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       product.description.toLowerCase().includes(searchTerm.toLowerCase())
@@ -63,7 +64,7 @@ export default function PageStore() {
           />
 
           {!isEmptySearch && (
-            <div ref={containerProductsRef} id="products">
+            <div ref={containerProductsRef}>
               <ul className={StyleCard.container}>
                 {filteredProducts.map((product, index) => (
                   <ProductCard
@@ -83,7 +84,10 @@ export default function PageStore() {
       </section>
 
       {selectedProduct && (
-        <ProductPopup product={selectedProduct} onClose={handleCloseProductPopup} />
+        <ProductPopup
+          product={selectedProduct}
+          onClose={handleCloseProductPopup}
+        />
       )}
     </PageLayout>
   )
