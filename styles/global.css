@@ -373,6 +373,9 @@ input,
   text-align: left;
   margin: 0 auto;
 }
+.aboutContainer div:first-of-type {
+  margin-bottom: 3rem;
+}
 
 /* Link Border */
 p a,
