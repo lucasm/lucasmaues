@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { IconHeart } from './Svgs'
 
 function getYear() {
   return new Date().getFullYear()

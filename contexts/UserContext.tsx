@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, useRef } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 // create Context for global state
@@ -37,10 +37,14 @@ export function UserContextProvider({ children }) {
 
   // set theme on local storage, checking user OS preference
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const prefersDarkMode = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches
     const storedTheme = window.localStorage.getItem('theme')
 
-    storedTheme ? setTheme(storedTheme) : setTheme(prefersDarkMode ? 'dark' : 'light')
+    storedTheme
+      ? setTheme(storedTheme)
+      : setTheme(prefersDarkMode ? 'dark' : 'light')
   }, [])
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './Banners.module.css'
-import { IconMoney, IconShield } from '../../Svgs'
+import { IconShield } from '../../Svgs'
 
 interface BannerProps {
   link: string

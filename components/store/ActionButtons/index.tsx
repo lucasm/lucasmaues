@@ -1,6 +1,6 @@
 import styles from './ActionButtons.module.css'
 import Button from '../../Button'
-import { IconCupom, IconFilter, IconGift, IconShield } from '../../Svgs'
+import { IconCupom, IconGift, IconShield } from '../../Svgs'
 
 const ActionButtons = () => {
   return (
