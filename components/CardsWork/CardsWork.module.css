@@ -34,6 +34,7 @@
   }
   50% {
     background: var(--color-y-3);
+    color: var(--color-b-fixed);
   }
 }
 
@@ -50,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .icon svg {
     width: 3rem;
     height: 3rem;

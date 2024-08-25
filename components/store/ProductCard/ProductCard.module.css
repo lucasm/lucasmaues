@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 2rem;
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
@@ -23,13 +22,15 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   text-align: left;
   transition: var(--transition);
   padding: 2.5rem 2.5rem 3rem;
-  max-width: 340px;
+  max-width: 320px;
 }
 .product button img,
-.product a img {
+.product a img,
+.product a svg {
   transition: all 0.25s ease-in-out;
   padding: 1rem 1.5rem;
   max-width: 100%;
@@ -42,9 +43,6 @@
 .product a:hover svg {
   opacity: 0.9;
 }
-/* .container button:hover {
-  box-shadow: var(--shadow);
-} */
 .product h3 {
   font-size: var(--font-size-5);
   color: var(--color-b-fixed);
@@ -56,12 +54,6 @@
   .product {
     width: 100%;
   }
-
-  .product svg {
-    max-width: 6rem;
-    max-height: 6rem;
-  }
-
   .product button,
   .product a {
     max-width: 100%;
@@ -70,6 +62,6 @@
   .product button img,
   .product a img {
     max-height: 200px;
-    padding: 0 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
 }

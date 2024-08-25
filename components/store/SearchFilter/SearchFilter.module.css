@@ -1,6 +1,7 @@
 .container {
   width: 100%;
-  margin-top: 5rem;
+  margin: 3.5rem auto 0;
+  padding: 1.5rem 0 0;
 }
 
 .containerInput {
@@ -133,6 +134,9 @@
 }
 
 @media screen and (max-width: 699px) {
+  .container {
+    margin-top: 1rem;
+  }
   .containerInput {
     bottom: 1rem;
     gap: 1rem;

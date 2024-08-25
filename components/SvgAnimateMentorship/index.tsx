@@ -1,4 +1,3 @@
-// SvgAnimateMentorship.js
 import React from 'react'
 import styles from './SvgAnimateMentorship.module.css'
 

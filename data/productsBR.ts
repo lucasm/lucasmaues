@@ -24,7 +24,7 @@ export const productsBR = [
     title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
     stars: 4.9,
     description:
-      'Garrafa térmica com construção sólida. Qualidade e design Stanley! Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia. ',
+      'Garrafa térmica com construção sólida. Qualidade Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
     url: 'https://amzn.to/3uDXl7H',
     url_2: 'https://mercadolivre.com/sec/21x7Pq8',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
@@ -34,7 +34,7 @@ export const productsBR = [
     title: 'Caixa de Som Bluetooth JBL Flip 6',
     stars: 4.8,
     description:
-      'Caixa de som Bluetooth portátil. Qualidade JBL. Com resistência à água e bateria de longa duração. Graves, médios e agudos bem equilibrados. Ideal para viagens, piscina, praia e qualquer lugar.',
+      'Caixa de som Bluetooth portátil da JBL. Ótima construção, resistência à água e bateria de longa duração. Graves, médios e agudos  equilibrados. Ideal para viagens, piscina, praia e qualquer lugar. A Flip é uma das melhores caixas de som portáteis do mercado.',
     url: 'https://amzn.to/45IVz1o',
     url_2: 'https://mercadolivre.com/sec/2cFhbqS',
     image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
@@ -44,7 +44,7 @@ export const productsBR = [
     title: ' Echo Spot com Alexa (2024)',
     stars: 4.7,
     description:
-      '"Alexa, toca minha playlist MPB!". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
+      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
     url: 'https://amzn.to/3LyhiRX',
     image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -73,7 +73,7 @@ export const productsBR = [
     title: 'Apple AirPods Pro 2',
     stars: 4.9,
     description:
-      'Fone de ouvido Bluetooth TWS. Qualidade Apple! Reconhecido pelo incrível cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarga sem fio e bateria de boa duração.',
+      'O fone de ouvido Bluetooth TWS da Apple. Reconhecido pelo incrível cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarrega no estojo via USB-C ou sem fio com MagSafe. Bateria de boa duração.',
     url: 'https://amzn.to/3Dw6uA0',
     url_2: 'https://mercadolivre.com/sec/27WpiBa',
     image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
@@ -83,7 +83,7 @@ export const productsBR = [
     title: 'Webcam Logitech Brio 500 ',
     stars: 4.8,
     description:
-      'Webcam perfeita para o home office! Qualidade de vídeo Full HD, foco automático, microfone que reduz ruídos ambientes, modo privacidade e vários ajustes.',
+      'Webcam perfeita para o home office. Qualidade de vídeo Full HD, foco automático, microfone que reduz ruídos ambientes, modo privacidade e vários ajustes.',
     url: 'https://amzn.to/4cnZe9t',
     url_2: 'https://mercadolivre.com/sec/1MTXh2w',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
@@ -93,7 +93,7 @@ export const productsBR = [
     title: 'Echo Dot 5 Alexa',
     stars: 4.8,
     description:
-      '"Alexa, toca minha playlist pop punk!". Caixinha de som com IA. Realmente uma joia. Toca música, da informações gerais e conversa. É possível conectar outros dispositivos para controlar por voz.',
+      '"Alexa, toca minha playlist pop punk". Caixinha de som com IA. Realmente uma joia. Toca música, da informações gerais e conversa. É possível conectar outros dispositivos para controlar por voz.',
     url: 'https://amzn.to/45jAJFL',
     url_2: 'https://mercadolivre.com/sec/2SZkXYs',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
@@ -123,17 +123,18 @@ export const productsBR = [
     title: 'JBL Go 3',
     stars: 4.8,
     description:
-      'Caixinha de som Bluetooth super portátil! Qualidade JBL. Um ótimo presente para quem você gosta.',
+      'Caixinha de som Bluetooth super portátil. Qualidade JBL. Um ótimo presente para quem você gosta.',
     url: 'https://amzn.to/43CrM9C',
     url_2: 'https://mercadolivre.com/sec/2sFpodY',
-    image: 'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
+    image:
+      'https://m.media-amazon.com/images/I/61iD9jlBlqL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Microfone HyperX Solocast',
     stars: 4.8,
     description:
-      'Melhor microfone para home office! Com qualidade de estúdio e USB-C. Ótimo custo-benefício. Ideal para streamers e podcasters. Tem uma luz indicativa e botão de liga/desliga microfone.',
+      'O melhor microfone para home office. Com qualidade de estúdio e USB-C. Ótimo custo-benefício. Ideal para streamers e podcasters. Tem uma luz indicativa e botão de liga/desliga microfone.',
     url: 'https://amzn.to/4dkvaMl',
     url_2: 'https://mercadolivre.com/sec/32y1APi',
     image: 'https://m.media-amazon.com/images/I/61Aw6bzkFQL._AC_SX679_.jpg',
@@ -183,7 +184,7 @@ export const productsBR = [
     title: 'Fone de Ouvido Bluetooth TWS Philips',
     stars: 4.3,
     description:
-      'Fone de ouvido Bluetooth TWS super barato! Ótimo custo-benefício. 18 horas. Ideal para quem busca qualidade e preço baixo.',
+      'Fone de ouvido Bluetooth TWS super barato. Ótimo custo-benefício. 18 horas. Ideal para quem busca qualidade e preço baixo.',
     url: 'https://amzn.to/3UjBFWY',
     image: 'https://m.media-amazon.com/images/I/61uMQCVH0CL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -214,13 +215,15 @@ export const productsBR = [
       'Mouse ergonômico e Bluetooth, porém mais compacto que o MX Master. Recomendado para quem tem mãos menores.',
     url: 'https://amzn.to/3HKL5VS',
     url_2: 'https://mercadolivre.com/sec/25EAYdg',
-    image: 'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
+    image:
+      'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Fire TV Stick Full HD',
     stars: 4.8,
-    description: 'Controle remoto com Alexa que transforma sua TV em uma central de streamings.',
+    description:
+      'Controle remoto com Alexa que transforma sua TV em uma central de streamings.',
     url: 'https://amzn.to/44YKNnK',
     image: 'https://m.media-amazon.com/images/I/41IVtjpgH7L._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -228,7 +231,8 @@ export const productsBR = [
   {
     title: 'Abajur Luminária Pixar',
     stars: 4.8,
-    description: 'Abajur com braço articulado, base para mesa e agarrador. Estilo Pixar.',
+    description:
+      'Abajur com braço articulado, base para mesa e agarrador. Estilo Pixar.',
     url: 'https://amzn.to/4crKlD3',
     url_2: 'https://mercadolivre.com/sec/1DoNpyN',
     image: 'https://m.media-amazon.com/images/I/510SeRtQxzL._AC_SX679_.jpg',
@@ -253,7 +257,8 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'Ar Condicionado Split Inverter Samsung WindFree Connect 9.000 BTUs Frio',
+    title:
+      'Ar Condicionado Split Inverter Samsung WindFree Connect 9.000 BTUs Frio',
     stars: 4.6,
     description:
       'Ar-condicionado com tecnologia WindFree, sem vento, e com controle via Wi-Fi. Calcula gasto energético. Um dos mais eficientes em energia segundo Inmetro. Ideal para qualquer ambiente.',
@@ -268,13 +273,14 @@ export const productsBR = [
     description:
       'A Dell é referência em monitores de qualidade. Com resolução 4K, UHD e Full HD. Ideais para trabalhar e jogar. Com garantia e suporte pós-venda elogiado.',
     url: 'https://amzn.to/4a7Osln',
-    image: 'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
+    image:
+      'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
   },
   {
     title: 'Apple MacBook Air M3 13" 8GB 256GB',
     description:
-      'Notebook portátil da Apple de última geração e bom desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente.',
+      'O notebook portátil da Apple da última geração. Ótimo desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente. Ponto alto para a portabilidade, design e a qualidade da construção.',
     url: 'https://amzn.to/3QvbX0R',
     image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
     category: 'Eletrônicos',
@@ -342,7 +348,8 @@ export const productsBR = [
     description:
       'Moldura perfeita para quadros, poster, diploma ou fotos. Vem com proteção de acetato.',
     url_2: 'https://mercadolivre.com/sec/1cb1vuB',
-    image: 'https://http2.mlstatic.com/D_NQ_NP_2X_750194-MLB49921050870_052022-F.webp',
+    image:
+      'https://http2.mlstatic.com/D_NQ_NP_2X_750194-MLB49921050870_052022-F.webp',
     category: 'Acessórios',
   },
   {
@@ -366,7 +373,7 @@ export const productsBR = [
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     stars: 4.8,
     description:
-      'Aprender como funcionam os algoritmos e as estruturas de dados da computação é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python.',
+      'Aprender como funcionam os algoritmos e as estruturas de dados é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python. Recomendado para quem está começando na programação.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -383,7 +390,8 @@ export const productsBR = [
   {
     title: 'JavaScript: O Guia Definitivo',
     stars: 4.8,
-    description: "Livro de referência JavaScript. Organizado pela consagrada editora O'Reilly.",
+    description:
+      "Livro de referência JavaScript. Organizado pela consagrada O'Reilly. Recomendado para quem quer se aprofundar na linguagem.",
     url: 'https://amzn.to/3PWgEj6',
     image: 'https://m.media-amazon.com/images/I/91z1xY4ppaL._SY522_.jpg',
     category: 'Livros',
@@ -398,9 +406,11 @@ export const productsBR = [
     category: 'Livros',
   },
   {
-    title: 'Cracking the Coding Interview: 189 programming questions & solutions',
+    title:
+      'Cracking the Coding Interview: 189 programming questions & solutions',
     stars: 4.7,
-    description: 'Vai trabalhar na gringa meu fi, arrebenta na entrevista, crackeia tuuuudo!!!',
+    description:
+      'Vai trabalhar na gringa meu fi, arrebenta na entrevista, crackeia tuuuudo!!!',
     url: 'https://amzn.to/46EDYZL',
     image: 'https://m.media-amazon.com/images/I/61mIq2iJUXL._SY522_.jpg',
     category: 'Livros',
@@ -423,19 +433,20 @@ export const productsBR = [
     category: 'Livros',
   },
   {
-    title: 'Clean Code: Habilidades práticas do Agile software',
+    title: 'Código Limpo: Habilidades Práticas do Agile Software',
     stars: 4.9,
     description:
-      'Clássico sobre clean code de Uncle Bob. E polêmico: "Mesmo um código ruim pode funcionar, mas se ele não for bem pensado, pode acabar com uma empresa". Ajuda desenvolvedores a escreverem código de maior qualidade e eficiência, usando metodologia Agile.',
+      'Clássico sobre Clean Code de Uncle Bob. E polêmico: "Mesmo um código ruim pode funcionar, mas se ele não for bem pensado, pode acabar com uma empresa". Reconhecido por ajudar a escrever código de maior qualidade e eficiência. Recomendado para todo programador.',
     url: 'https://amzn.to/3QoWnEh',
     image: 'https://m.media-amazon.com/images/I/71dH97FwGbL._SY522_.jpg',
     category: 'Livros',
   },
   {
-    title: 'Clean Architecture: O guia do artesão para estrutura e design de software',
+    title:
+      'Arquitetura Limpa: o Guia do Artesão Para Estrutura e Design de Software',
     stars: 4.9,
     description:
-      'Clássico da arquitetura de software. Com exemplos em Java. Ensina a criar arquiteturas de software que sejam robustas e sustentáveis, adequadas para cada tipo de problema.',
+      'Clássico de Clean Architecture. Com exemplos em Java. Ensina a criar arquiteturas de software que sejam robustas e sustentáveis, adequadas para cada tipo de problema.',
     url: 'https://amzn.to/493NuXW',
     image: 'https://m.media-amazon.com/images/I/815d9tE7jSL._SY522_.jpg',
     category: 'Livros',
@@ -449,9 +460,11 @@ export const productsBR = [
     category: 'Livros',
   },
   {
-    title: 'Domain-Driven Design: atacando as complexidades no coração do software',
+    title:
+      'Domain-Driven Design: Atacando as Complexidades no Coração do Software',
     stars: 4.8,
-    description: 'Clássico sobre DDD.',
+    description:
+      'Clássico sobre DDD. Segundo as reviews, "um livro que muda a forma de pensar sobre software".',
     url: 'https://amzn.to/3Qs3jk9',
     image: 'https://m.media-amazon.com/images/I/61aIS4n2jZL._SY522_.jpg',
     category: 'Livros',
@@ -465,7 +478,8 @@ export const productsBR = [
     category: 'Livros',
   },
   {
-    title: 'Design Thinking: Uma metodologia poderosa para decretar o fim das velhas ideias',
+    title:
+      'Design Thinking: Uma metodologia poderosa para decretar o fim das velhas ideias',
     stars: 4.7,
     description: 'Clássico sobre design thinking.',
     url: 'https://amzn.to/3FpeN1l',
@@ -475,7 +489,8 @@ export const productsBR = [
   {
     title: 'Super Thinking: The big book of mental models',
     stars: 4.5,
-    description: 'Clássico sobre modelos mentais. Aprenda a pensar de forma eficaz.',
+    description:
+      'Clássico sobre modelos mentais. Aprenda a pensar de forma eficaz.',
     url: 'https://amzn.to/403ZPau',
     image: 'https://m.media-amazon.com/images/I/815yQmQZFXL._SY522_.jpg',
     category: 'Livros',
@@ -638,7 +653,7 @@ export const productsBR = [
     title: 'Protetor Solar Corporal Neutrogena Sun Fresh FPS 70 200ml',
     stars: 4.8,
     description:
-      'Melhor protetor solar! Com alta proteção FPS 70. Textura ultraleve e resistente à água. Ideal para peles sensíveis.',
+      'O melhor protetor solar. Com alta proteção FPS 70. Textura ultraleve e resistente à água. Ideal para peles sensíveis.',
     url: 'https://amzn.to/3Ydg8Dg',
     image: 'https://m.media-amazon.com/images/I/4190c-CYubL._AC_SX679_.jpg',
     category: 'Saúde',
@@ -647,7 +662,7 @@ export const productsBR = [
     title: 'Hidratante Facial Neutrogena Hydro Boost Water Gel 50g',
     stars: 4.8,
     description:
-      'Melhor hidratante facial! Com ácido hialurônico. Ideal para peles secas e oleosas. Hidratação intensa por 24 horas.',
+      'O melhor hidratante facial. Com ácido hialurônico. Ideal para peles secas e oleosas. Hidratação intensa por 24 horas.',
     url: 'https://amzn.to/3LxQdyk',
     image: 'https://m.media-amazon.com/images/I/51cj7VbcDSL._AC_SX679_.jpg',
     category: 'Saúde',
@@ -663,10 +678,10 @@ export const productsBR = [
     category: 'Saúde',
   },
   {
-    title: 'Sabonetes Phebo Kit 720g',
+    title: 'Sabonetes Phebo Kit 6 720g',
     stars: 4.8,
     description:
-      'Melhor sabonete! Kit com 6 sabonetes de 90g cada. Com base vegetal e glicerina, que limpa e hidrata a pele. Com fragrância de lavanda.',
+      'O melhor sabonete com base vegetal e glicerina. Kit com 6 sabonetes de 90g cada. Limpa e hidrata a pele. Com fragrância diversas, inclusive tradicional.',
     url: 'https://amzn.to/3WwCtdI',
     image: 'https://m.media-amazon.com/images/I/51rOgkMtK5L._AC_SX679_.jpg',
     category: 'Saúde',
@@ -675,7 +690,7 @@ export const productsBR = [
     title: 'Creme Dental Sensodyne Branqueador Extra Fresh',
     stars: 4.8,
     description:
-      'Melhor creme dental! Com flúor e nitrato de potássio. Para dentes sensíveis. Branqueador. Proteção diária contra cáries e tártaro. 90g cada.',
+      'O melhor creme dental. Com flúor e nitrato de potássio. Para dentes sensíveis. Branqueador. Proteção diária contra cáries e tártaro. 90g cada.',
     url: 'https://amzn.to/3LAazHn',
     image: 'https://m.media-amazon.com/images/I/61wTm0Rs+gL._AC_SX679_.jpg',
     category: 'Saúde',
@@ -684,7 +699,7 @@ export const productsBR = [
     title: 'Escovas de Dente Curaprox 3 Unidades',
     stars: 4.9,
     description:
-      'Melhor escova de dente! Kit com 3 escovas de dente. Com cerdas macias e ultrafinas. Para limpeza profunda e delicada. Com cabo ergonômico.',
+      'A melhor escova de dente. Kit com 3 escovas. Com cerdas macias e ultrafinas. Para limpeza profunda e delicada. Com cabo ergonômico. A CuraProx é referência.',
     url: 'https://amzn.to/4cOIsQu',
     image: 'https://m.media-amazon.com/images/I/817at2VVYHL._AC_SX679_.jpg',
     category: 'Saúde',
@@ -693,7 +708,7 @@ export const productsBR = [
     title: 'Enxaguante Bucal Sem Álcool Listerine Cool Mint 1L',
     stars: 4.9,
     description:
-      'Melhor enxaguante bucal! Sem álcool. Com flúor e óleos essenciais. Para hálito fresco e proteção contra bactérias. Simplesmente essencial!',
+      'O melhor enxaguante bucal. Sem álcool. Com flúor e óleos essenciais. Para hálito fresco e proteção contra bactérias. Simplesmente essencial!',
     url: 'https://amzn.to/3y5V4Uk',
     image: 'https://m.media-amazon.com/images/I/714ZD0yQBcL._AC_SY879_.jpg',
     category: 'Saúde',
@@ -702,7 +717,7 @@ export const productsBR = [
     title: 'Shampoo Anticaspa Clear Men Ice Cool Menthol 400Ml',
     stars: 4.8,
     description:
-      'Melhor shampoo anticaspa! Com mentol. Para homens. Limpeza profunda e refrescante. 400ml. O mais vendido.',
+      'O melhor shampoo anticaspa. Com mentol. Para homens. Limpeza profunda e refrescante. 400ml. O mais vendido.',
     url: 'https://amzn.to/4dcx6Wf',
     image: 'https://m.media-amazon.com/images/I/61JSetSXeXL._AC_SX679_.jpg',
     category: 'Saúde',
@@ -711,7 +726,7 @@ export const productsBR = [
     title: 'Shampoo Clareador Tio Nacho Antiqueda 415ml',
     stars: 4.7,
     description:
-      'Shampoo clareador! Com geleia real e camomila. Clareia naturalmente, com brilho e força. 415ml. Recomendo para quem tem cabelos loiros finos.',
+      'Shampoo clareador. Com geleia real e camomila. Clareia naturalmente, com brilho e força. 415ml. Recomendo para quem tem cabelos loiros finos.',
     url: 'https://amzn.to/3WvqUDl',
     image: 'https://m.media-amazon.com/images/I/51jmb6WwcVL._AC_SY879_.jpg',
     category: 'Saúde',

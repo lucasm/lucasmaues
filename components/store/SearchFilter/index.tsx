@@ -43,13 +43,13 @@ export default function SearchFilter({
   }
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 250, behavior: 'smooth' })
   }
 
   const debouncedScrollToTop = useCallback(
     debounce(() => {
       scrollToTop()
-    }, 1000),
+    }, 500),
     []
   )
 
@@ -122,10 +122,14 @@ export default function SearchFilter({
         {/* Select categorias */}
         {!isEmptySearch && (
           <div className={Style.dropdown}>
+            <label htmlFor="category" className={Style.label}>
+              Selecione a categoria:
+            </label>
             <select
               value={currentCategory}
               onChange={handleCategoryChange}
-              className={Style.select}>
+              className={Style.select}
+              id="category">
               <option value="Todos">Todos</option>
               <option value="Eletrônicos">Eletrônicos</option>
               <option value="Acessórios">Acessórios</option>
