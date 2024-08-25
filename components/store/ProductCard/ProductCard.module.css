@@ -69,7 +69,7 @@
   }
   .product button img,
   .product a img {
-    width: 148px;
+    max-height: 200px;
     padding: 0 1.5rem;
   }
 }
