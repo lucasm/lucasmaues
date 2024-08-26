@@ -125,7 +125,7 @@
   -moz-appearance: none; /* Remove a aparência padrão em Firefox */
 }
 .select option {
-  color: initial;
+  color: var(--color-b-fixed);
 }
 .select:focus {
   border-color: var(--color-b-fixed);
