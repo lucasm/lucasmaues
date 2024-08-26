@@ -8,6 +8,9 @@ import {
   svgProjectSuperia,
   SvgMozilla,
   SvgProjectNufen,
+  SvgMicrosoft,
+  SvgNaCuia,
+  SvgCacba,
 } from '../components/Svgs'
 
 export interface IProjects {
@@ -43,34 +46,58 @@ export const projects: IProjects[] = [
     url: 'https://www.globo.com/',
     description:
       'Web Accessibility for the largest content portal in Brazil, with 1 billion accesses per month.',
-    tags: ['JavaScript', 'Preact', 'Node.js', 'Performance', 'Accessibility', 'Python', 'Docker'],
+    tags: [
+      'JavaScript',
+      'Preact',
+      'Node.js',
+      'Performance',
+      'Accessibility',
+      'Python',
+      'Docker',
+    ],
     icon: svgProjectGlobo,
     active: true,
   },
   {
     name: 'Findto',
     url: 'https://findto.app/',
-    description: 'Progressive Web App for an assistant of decentralized search on Web and AI.',
-    tags: ['Open Source', 'PWA', 'TypeScript', 'React', 'Next.js', 'CSS', 'APIs'],
+    description:
+      'Progressive Web App for an assistant of decentralized search on Web and AI.',
+    tags: [
+      'Open Source',
+      'PWA',
+      'TypeScript',
+      'React',
+      'Next.js',
+      'CSS',
+      'APIs',
+    ],
     icon: svgProjectFindto,
     active: true,
   },
   {
-    name: 'Mozilla',
+    name: 'Mozilla Community',
     url: 'https://developer.mozilla.org/',
     description:
-      'I contribute to the MDN Web Docs, with JavaScript translations, Web Standards, and Web APIs for the open web.',
+      'I contribute to the MDN Web Docs translations of JavaScript, Web APIs, and  Web Standards.',
     tags: [
       'Open Source',
+      'Translations',
+      'Web APIs',
+      'JavaScript',
       'HTML',
       'CSS',
-      'JavaScript',
-      'Web Standards',
       'Accessibility',
-      'ECMAScript',
-      'Web APIs',
     ],
     icon: SvgMozilla,
+    active: true,
+  },
+  {
+    name: 'Microsoft Community',
+    url: 'https://learn.microsoft.com/',
+    description: 'I contribute to the Microsoft Community translations of AI.',
+    tags: ['Open Source', 'Translations', 'AI'],
+    icon: SvgMicrosoft,
     active: true,
   },
   {
@@ -78,7 +105,14 @@ export const projects: IProjects[] = [
     url: 'https://loja.varejoaqui.online/',
     description:
       'E-commerce Web Responsive and Mobile App with real-time payments APIs, like Pix and credit card, for Brazil retailers and industries.',
-    tags: ['React', 'React Native', 'Next.js', 'TypeScript', 'Node.js', 'Android Studio'],
+    tags: [
+      'React',
+      'React Native',
+      'Next.js',
+      'TypeScript',
+      'Node.js',
+      'Android Studio',
+    ],
     icon: svgProjectVarejoAqui,
     active: true,
   },
@@ -87,14 +121,24 @@ export const projects: IProjects[] = [
     url: 'https://www.tcm.pa.gov.br/servicos/sessoes/',
     description:
       'Website, Intranet, Web Apps, APIs, AWS S3 integration, Data Visualization, and Accessibility for a court.',
-    tags: ['JavaScript', 'PHP', 'Node.js', 'Java', 'PostgreSQL', 'SEO', 'Accessibility', 'AWS'],
+    tags: [
+      'JavaScript',
+      'PHP',
+      'Node.js',
+      'Java',
+      'PostgreSQL',
+      'SEO',
+      'Accessibility',
+      'AWS',
+    ],
     icon: svgProjectTCMPA,
     active: true,
   },
   {
     name: 'Superia',
-    url: 'https://superia.global/',
-    description: 'Web Application and Components for an international trading company.',
+    url: 'https://linkedin.com/in/lucasmezs',
+    description:
+      'Web Application and Components for an international trading company.',
     tags: ['TypeScript', 'Vue.js', 'CSS', 'Atomic Design'],
     icon: svgProjectSuperia,
     active: true,
@@ -111,10 +155,27 @@ export const projects: IProjects[] = [
   {
     name: 'Nufen',
     url: 'https://linkedin.com/in/lucasmezs',
-    description:
-      'Website for mental health service and hacked Website recovered for a non-profit organization.',
+    description: 'Website for mental health service with online therapy.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO', 'UI', 'UX'],
     icon: SvgProjectNufen,
+    active: true,
+  },
+  {
+    name: 'Na Cuia',
+    url: 'https://linkedin.com/in/lucasmezs',
+    description:
+      'Website for a cultural production company and magazine in the Amazon region.',
+    tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
+    icon: SvgNaCuia,
+    active: true,
+  },
+  {
+    name: 'CACBA',
+    url: 'https://linkedin.com/in/lucasmezs',
+    description:
+      'Hacked Website recovered and redesigned for a non-profit organization of children and adolescents protection in the Amazon region.',
+    tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
+    icon: SvgCacba,
     active: true,
   },
 ]
