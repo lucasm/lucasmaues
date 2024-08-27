@@ -50,12 +50,6 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    text: 'LinkedIn',
-    active: true,
-  },
-  {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
     text: 'DEV',
@@ -65,6 +59,12 @@ const Links: ILinks[] = [
     url: 'https://codepen.io/lucasm',
     icon: <IconCodepen />,
     text: 'CodePen',
+    active: true,
+  },
+  {
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    text: 'LinkedIn',
     active: true,
   },
   {
