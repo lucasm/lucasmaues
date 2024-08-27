@@ -447,9 +447,12 @@ export const SvgMozilla = (
 export const SvgMicrosoft = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 16 16"
+    viewBox="0 0 129 129"
     fill="currentColor">
-    <path d="M1 1h6.5v6.5H1V1zM8.5 1H15v6.5H8.5V1zM1 8.5h6.5V15H1V8.5zM8.5 8.5H15V15H8.5V8.5z" />
+    <path d="M0,0h61.3v61.3H0V0z" />
+    <path d="M67.7,0H129v61.3H67.7V0z" />
+    <path d="M0,67.7h61.3V129H0V67.7z" />
+    <path d="M67.7,67.7H129V129H67.7V67.7z" />
   </svg>
 )
 export const svgProjectVarejoAqui = (
