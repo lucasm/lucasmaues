@@ -44,6 +44,18 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
+    active: true,
+  },
+  {
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    text: 'LinkedIn',
+    active: true,
+  },
+  {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
     text: 'DEV',
@@ -53,12 +65,6 @@ const Links: ILinks[] = [
     url: 'https://codepen.io/lucasm',
     icon: <IconCodepen />,
     text: 'CodePen',
-    active: true,
-  },
-  {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    text: 'LinkedIn',
     active: true,
   },
   {
@@ -89,12 +95,6 @@ const Links: ILinks[] = [
     url: 'https://discord.com/users/lucasmezs',
     icon: <IconDiscord />,
     text: 'Discord',
-    active: false,
-  },
-  {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
     active: false,
   },
   {
@@ -151,8 +151,10 @@ export default function ComponentLinks() {
 
   const fullTextLinks = Links.filter((link) => link.fullText)
   const otherLinks = Links.filter((link) => !link.fullText)
-  const limitOfLinks = 5
-  const visibleOtherLinks = showMore ? otherLinks : otherLinks.slice(0, limitOfLinks)
+  const limitOfLinks = 6
+  const visibleOtherLinks = showMore
+    ? otherLinks
+    : otherLinks.slice(0, limitOfLinks)
 
   return (
     <div>
@@ -165,7 +167,11 @@ export default function ComponentLinks() {
               target={link.internalPage ? '_self' : '_blank'}
               rel={link.internalPage ? 'prefetch' : 'noopener'}
               title={link.text}
-              onMouseEnter={link.text === ROUTES.STORE.title ? handleMouseEnterStore : undefined}>
+              onMouseEnter={
+                link.text === ROUTES.STORE.title
+                  ? handleMouseEnterStore
+                  : undefined
+              }>
               {link.icon}
               {link.text}
             </Link>
