@@ -44,12 +44,6 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
-    active: true,
-  },
-  {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
     text: 'DEV',
@@ -68,6 +62,18 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://threads.net/@lucasmezs',
+    icon: <IconThreads />,
+    text: 'Threads',
+    active: true,
+  },
+  {
+    url: 'https://lucasme.bsky.social',
+    icon: <IconBluesky />,
+    text: 'Bluesky',
+    active: true,
+  },
+  {
     url: 'https://wa.me/5531997038007',
     icon: <IconWhatsapp />,
     text: 'WhatsApp',
@@ -80,15 +86,9 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://threads.net/@lucasmezs',
-    icon: <IconThreads />,
-    text: 'Threads',
-    active: true,
-  },
-  {
-    url: 'https://lucasme.bsky.social',
-    icon: <IconBluesky />,
-    text: 'Bluesky',
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
     active: true,
   },
   {
@@ -151,7 +151,7 @@ export default function ComponentLinks() {
 
   const fullTextLinks = Links.filter((link) => link.fullText)
   const otherLinks = Links.filter((link) => !link.fullText)
-  const limitOfLinks = 6
+  const limitOfLinks = 7
   const visibleOtherLinks = showMore
     ? otherLinks
     : otherLinks.slice(0, limitOfLinks)
