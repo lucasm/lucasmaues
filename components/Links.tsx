@@ -68,7 +68,7 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://lucasme.bsky.social',
+    url: 'https://bsky.app/profile/lucasm.dev',
     icon: <IconBluesky />,
     text: 'Bluesky',
     active: true,
