@@ -32,6 +32,12 @@ interface ILinks {
 
 const Links: ILinks[] = [
   {
+    url: 'https://bsky.app/profile/lucasm.dev',
+    icon: <IconBluesky />,
+    text: 'Bluesky',
+    active: true,
+  },
+  {
     url: 'https://x.com/lucasmezs',
     icon: <IconX />,
     text: 'X (Twitter)',
@@ -65,12 +71,6 @@ const Links: ILinks[] = [
     url: 'https://threads.net/@lucasmezs',
     icon: <IconThreads />,
     text: 'Threads',
-    active: true,
-  },
-  {
-    url: 'https://bsky.app/profile/lucasm.dev',
-    icon: <IconBluesky />,
-    text: 'Bluesky',
     active: true,
   },
   {
@@ -151,7 +151,7 @@ export default function ComponentLinks() {
 
   const fullTextLinks = Links.filter((link) => link.fullText)
   const otherLinks = Links.filter((link) => !link.fullText)
-  const limitOfLinks = 7
+  const limitOfLinks = 6
   const visibleOtherLinks = showMore
     ? otherLinks
     : otherLinks.slice(0, limitOfLinks)
