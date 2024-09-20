@@ -27,7 +27,7 @@ export const projects: IProjects[] = [
     name: 'Banco Bmg',
     url: 'https://www.bancobmg.com.br/',
     description:
-      'Web Application of financial products for a bank in Brazil, with 800 milions BRL transactions per month.',
+      'Web Application of financial products for a Brazil bank, with peaks of 800 millions BRL transactions per month.',
     tags: [
       'TypeScript',
       'React',
@@ -45,7 +45,7 @@ export const projects: IProjects[] = [
     name: 'Globo',
     url: 'https://www.globo.com/',
     description:
-      'Web Accessibility for the largest content portal in Brazil, with 1 billion accesses per month.',
+      'Web Accessibility for the largest content portal in Brazil, with peaks of 1 billion accesses per month.',
     tags: [
       'JavaScript',
       'Preact',
@@ -62,7 +62,7 @@ export const projects: IProjects[] = [
     name: 'Findto',
     url: 'https://findto.app/',
     description:
-      'Progressive Web App for an assistant of decentralized search on Web and AI.',
+      'Assistant of decentralized search on Web and AI, as a Progressive Web App.',
     tags: [
       'Open Source',
       'PWA',
@@ -79,7 +79,7 @@ export const projects: IProjects[] = [
     name: 'Mozilla Community',
     url: 'https://developer.mozilla.org/',
     description:
-      'I contribute to the MDN Web Docs translations of JavaScript, Web APIs, and  Web Standards.',
+      'I contribute to the MDN Web Docs portuguese translations of JavaScript, Web APIs, and open standards.',
     tags: [
       'Open Source',
       'Translations',
@@ -95,8 +95,9 @@ export const projects: IProjects[] = [
   {
     name: 'Microsoft Community',
     url: 'https://learn.microsoft.com/',
-    description: 'I contribute to the Microsoft Community translations of AI.',
-    tags: ['Open Source', 'Translations', 'AI'],
+    description:
+      'I contribute to the Microsoft Open Source community translations of AI an Web to portuguese.',
+    tags: ['Open Source', 'Translations', 'AI', 'Web'],
     icon: SvgMicrosoft,
     active: true,
   },
@@ -138,7 +139,7 @@ export const projects: IProjects[] = [
     name: 'Superia',
     url: 'https://linkedin.com/in/lucasmezs',
     description:
-      'Web Application and Components for an international trading company.',
+      'Web Application and Web Components for an international trading company.',
     tags: ['TypeScript', 'Vue.js', 'CSS', 'Atomic Design'],
     icon: svgProjectSuperia,
     active: true,

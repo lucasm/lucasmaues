@@ -68,9 +68,9 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://threads.net/@lucasmezs',
-    icon: <IconThreads />,
-    text: 'Threads',
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
     active: true,
   },
   {
@@ -86,9 +86,9 @@ const Links: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
+    url: 'https://threads.net/@lucasmezs',
+    icon: <IconThreads />,
+    text: 'Threads',
     active: true,
   },
   {
