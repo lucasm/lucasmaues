@@ -396,6 +396,15 @@ export const productsBR = [
     category: 'Livros',
   },
   {
+    title: 'The Design of Everyday Things',
+    stars: 4.8,
+    description:
+      'Livro número 1 de UX. O pai do Design centrado no Usuário e percursor da Experiência do Usuário, Donald A. Norman, escreveu este livro clássico, ensinando a todos a importância de criar design bom e como design ruim causa problemas graves.',
+    url: 'https://amzn.to/3Yat3UO',
+    image: 'https://m.media-amazon.com/images/I/51Rheu+G0zL._SY522_.jpg',
+    category: 'Livros',
+  },
+  {
     title:
       'Cracking the Coding Interview: 189 programming questions & solutions',
     stars: 4.7,
