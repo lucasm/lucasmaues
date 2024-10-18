@@ -10,14 +10,13 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple MacBook Air M1 13" 8GB 256GB',
+    title: 'Teclado Logitech MX Keys Mini',
     stars: 4.8,
     description:
-      'Notebook da Apple com o preço mais acessível. Atinge duração de bateria incrível com chip M1 da nova arquitetura Apple Silicon. Obra prima que, mesmo com 8GB de RAM, ainda compensa para tarefas do dia a dia, devido a  super otimização do macOS como sistema operacional.',
-    url: 'https://amzn.to/45JUIxs',
-    url_2: 'https://mercadolivre.com/sec/1ha7uXX',
-    cupom: ['#LOJADEV500MACM1'],
-    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
+      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design e a qualidade na construção.',
+    url: 'https://amzn.to/3OwLrDM',
+    url_2: 'https://mercadolivre.com/sec/169RhGw',
+    image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -41,22 +40,14 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: ' Echo Spot com Alexa (2024)',
-    stars: 4.7,
-    description:
-      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
-    url: 'https://amzn.to/3LyhiRX',
-    image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
-    title: 'Teclado Logitech MX Keys Mini',
+    title: 'Apple MacBook Air M1 13" 8GB 256GB',
     stars: 4.8,
     description:
-      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design e a qualidade na construção.',
-    url: 'https://amzn.to/3OwLrDM',
-    url_2: 'https://mercadolivre.com/sec/169RhGw',
-    image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
+      'Notebook da Apple com o preço mais acessível. Atinge duração de bateria incrível com chip M1 da nova arquitetura Apple Silicon. Obra prima que, mesmo com 8GB de RAM, ainda compensa para tarefas do dia a dia, devido a  super otimização do macOS como sistema operacional.',
+    url: 'https://amzn.to/45JUIxs',
+    url_2: 'https://mercadolivre.com/sec/1ha7uXX',
+    cupom: ['#LOJADEV500MACM1'],
+    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -70,16 +61,6 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'Apple AirPods Pro 2',
-    stars: 4.9,
-    description:
-      'O fone de ouvido Bluetooth TWS da Apple. Reconhecido pelo incrível cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarrega no estojo via USB-C ou sem fio com MagSafe. Bateria de boa duração.',
-    url: 'https://amzn.to/3Dw6uA0',
-    url_2: 'https://mercadolivre.com/sec/27WpiBa',
-    image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Webcam Logitech Brio 500 ',
     stars: 4.8,
     description:
@@ -87,6 +68,16 @@ export const productsBR = [
     url: 'https://amzn.to/4cnZe9t',
     url_2: 'https://mercadolivre.com/sec/1MTXh2w',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Apple AirPods Pro 2',
+    stars: 4.9,
+    description:
+      'O fone de ouvido Bluetooth TWS da Apple. Reconhecido pelo incrível cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarrega no estojo via USB-C ou sem fio com MagSafe. Bateria de boa duração.',
+    url: 'https://amzn.to/3Dw6uA0',
+    url_2: 'https://mercadolivre.com/sec/27WpiBa',
+    image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -100,23 +91,13 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Filtro de Linha Clamper 5 Tomadas',
-    stars: 4.9,
+    title: 'Microfone HyperX Solocast',
+    stars: 4.8,
     description:
-      'Proteja seus equipamentos! Raios e surtos de tensão podem sobrecarregar a rede elétrica. Filtro de linha da Clamper, com 5 tomadas e cabo de 1,5m.',
-    url: 'https://amzn.to/3Mb5Mg9',
-    url_2: 'https://mercadolivre.com/sec/1kzXLvN',
-    image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
-  {
-    title: 'Projetor Magcubic HY320 Full HD',
-    stars: 4.5,
-    description:
-      'O melhor custo-benefício em projetor portátil do mercado. Com sistema Android, resolução Full HD (1080p), HDMI, USB, Bluetooth e Wi-Fi.',
-    url: 'https://amzn.to/4aLdasx',
-    url_3: 'https://s.click.aliexpress.com/e/_DmqI0oB',
-    image: 'https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg',
+      'O melhor microfone para home office. Com qualidade de estúdio e USB-C. Ótimo custo-benefício. Ideal para streamers e podcasters. Tem uma luz indicativa e botão de liga/desliga microfone.',
+    url: 'https://amzn.to/4dkvaMl',
+    url_2: 'https://mercadolivre.com/sec/32y1APi',
+    image: 'https://m.media-amazon.com/images/I/61Aw6bzkFQL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -131,23 +112,22 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Microfone HyperX Solocast',
-    stars: 4.8,
+    title: ' Echo Spot 2024 com Alexa',
+    stars: 4.7,
     description:
-      'O melhor microfone para home office. Com qualidade de estúdio e USB-C. Ótimo custo-benefício. Ideal para streamers e podcasters. Tem uma luz indicativa e botão de liga/desliga microfone.',
-    url: 'https://amzn.to/4dkvaMl',
-    url_2: 'https://mercadolivre.com/sec/32y1APi',
-    image: 'https://m.media-amazon.com/images/I/61Aw6bzkFQL._AC_SX679_.jpg',
+      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
+    url: 'https://amzn.to/3LyhiRX',
+    image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Videogame portátil Anbernic RG35XX',
-    stars: 5.0,
+    title: 'Projetor Magcubic HY320 Full HD',
+    stars: 4.5,
     description:
-      'Videogame portátil com 5.400 jogos clássicos! Com sistema Linux, tela IPS de 3,5 polegadas, saída para fone de ouvido, cartão 64G TF e HDMI.',
-    url: 'https://amzn.to/44tcVjV',
-    url_3: 'https://s.click.aliexpress.com/e/_DC0Ao8P',
-    image: 'https://m.media-amazon.com/images/I/71Ujf2IvIOL._AC_SX679_.jpg',
+      'O melhor custo-benefício em projetor portátil do mercado. Com sistema Android, resolução Full HD (1080p), HDMI, USB, Bluetooth e Wi-Fi.',
+    url: 'https://amzn.to/4aLdasx',
+    url_3: 'https://s.click.aliexpress.com/e/_DmqI0oB',
+    image: 'https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -159,6 +139,16 @@ export const productsBR = [
     url_3: 'https://s.click.aliexpress.com/e/_DEGlTSJ',
     image: 'https://m.media-amazon.com/images/I/61tZb1KHNYL._AC_SX679_.jpg',
     category: 'Eletrônicos',
+  },
+  {
+    title: 'Filtro de Linha Clamper 5 Tomadas',
+    stars: 4.9,
+    description:
+      'Proteja seus equipamentos! Raios e surtos de tensão podem sobrecarregar a rede elétrica. Filtro de linha da Clamper, com 5 tomadas e cabo de 1,5m.',
+    url: 'https://amzn.to/3Mb5Mg9',
+    url_2: 'https://mercadolivre.com/sec/1kzXLvN',
+    image: 'https://m.media-amazon.com/images/I/51C9M7zl-5L._AC_SX679_.jpg',
+    category: 'Acessórios',
   },
   {
     title: 'Apple iPhone 15 128GB',
