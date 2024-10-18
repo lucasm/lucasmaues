@@ -51,8 +51,8 @@ export default function PageStore() {
     <PageLayout title={title} description={description} image={image}>
       <section>
         <div className="page">
-          <h1>{title}</h1>
-          <p>{description}</p>
+          <h3>{title}</h3>
+          {/* <p>{description}</p> */}
 
           <ActionButtons />
 
