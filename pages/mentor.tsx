@@ -12,9 +12,9 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Desde 2017, atuo com Frontend, Web e Engenharia de Software. Sou procurado por pessoas
-              que buscam orientação ou ajuda para evoluir na carreira de TI e estudos, visando
-              alcançar seus objetivos.
+              Desde 2017, atuo com Frontend, Web e Engenharia de Software. Sou
+              procurado por pessoas que buscam orientação ou ajuda para evoluir
+              na carreira de TI e estudos, visando alcançar seus objetivos.
             </p>
           </div>
         </div>
@@ -25,21 +25,25 @@ export default function PageMentorship() {
           <article>
             <SvgAnimateMentorship />
 
-            <h1>"Primeiro, resolva o problema. Então, escreva o código." — John Johnson</h1>
+            <h1>
+              "Primeiro, resolva o problema. Então, escreva o código." — John
+              Johnson
+            </h1>
 
             <h3>Como funciona?</h3>
             <p>
-              A mentoria é realizada por videochamada. Durante a primeira sessão vamos conversar e
-              entender o seu momento atual na TI. Quais as suas necessidades e desafios? Com base
-              nisso, vamos definir metas e traçar um plano de ação de curto ou médio prazo para você
+              A mentoria é realizada por videochamada. Durante a primeira sessão
+              vamos conversar e entender o seu momento atual na TI. Quais as
+              suas necessidades e desafios? Com base nisso, vamos definir metas
+              e traçar um plano de ação de curto ou médio prazo para você
               alcançar os seus objetivos.
             </p>
 
             <h3>Quem pode participar?</h3>
 
             <p>
-              Desenvolvedores, estudantes e profissionais de TI que buscam orientação e suporte para
-              evoluir na carreira e estudos.
+              Desenvolvedores, estudantes e profissionais de TI que buscam
+              orientação e suporte para evoluir na carreira e estudos.
             </p>
 
             {/* <h3>O que você precisa?</h3>
@@ -62,8 +66,8 @@ export default function PageMentorship() {
               - Desenvolvimento profissional (soft skills)
               <br />
               - Avaliação de resultados
-              <br />- Feedback, onde falo o que você PRECISA ouvir para evoluir, não o que quer
-              ouvir para agradar o ego
+              <br />- Feedback, onde falo o que você PRECISA ouvir para evoluir,
+              não o que quer ouvir para agradar o ego
             </p>
           </article>
         </div>

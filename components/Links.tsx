@@ -32,15 +32,15 @@ interface ILinks {
 
 const Links: ILinks[] = [
   {
-    url: 'https://bsky.app/profile/lucasm.dev',
-    icon: <IconBluesky />,
-    text: 'Bluesky',
-    active: true,
-  },
-  {
     url: 'https://x.com/lucasmezs',
     icon: <IconX />,
     text: 'X (Twitter)',
+    active: true,
+  },
+  {
+    url: 'https://bsky.app/profile/lucasm.dev',
+    icon: <IconBluesky />,
+    text: 'Bluesky',
     active: true,
   },
   {
