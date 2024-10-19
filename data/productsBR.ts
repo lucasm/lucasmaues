@@ -525,7 +525,7 @@ export const productsBR = [
     title: 'Sapiens: Uma breve história da humanidade',
     stars: 4.8,
     description:
-      '"Starter pack" da vida na Terra. Uma viagem no processo de evolução e na história humana. O trunfo é a  didática de Harari. Mas cuidado, a narrativa ocidental que saímos da "barbárie" para "civilização", pode acabar por binariamente ignorar a cosmovisão dos povos originários - que como lembra Krenak, vivem em harmonia com o Planeta há milênios. Ainda assim, é um livro que nos faz refletir sobre a humanidade.',
+      'Starter pack da vida na Terra. Uma viagem na história e no processo de evolução humana. O trunfo é a didática de Harari. Mas cuidado, a narrativa ocidentalista que saímos da "barbárie" para "civilização", pode acabar por binariamente ignorar a cosmovisão dos povos originários - que como lembra Krenak, vivem em harmonia com o Planeta há milênios. Ainda assim, é um livro indispensável, que nos faz refletir sobre nós.',
     url: 'https://amzn.to/3WN4Gxm',
     image: 'https://m.media-amazon.com/images/I/71-ghLb8qML._SY522_.jpg',
     category: 'Livros',
@@ -649,7 +649,7 @@ export const productsBR = [
     category: 'Livros',
   },
   {
-    title: 'Protetor Solar Corporal Neutrogena Sun Fresh FPS 70 200ml',
+    title: 'Protetor Solar Corporal Neutrogena FPS 70 200ml',
     stars: 4.8,
     description:
       'O melhor protetor solar. Com alta proteção FPS 70. Textura ultraleve e resistente à água. Ideal para peles sensíveis.',
@@ -658,7 +658,7 @@ export const productsBR = [
     category: 'Saúde',
   },
   {
-    title: 'Hidratante Facial Neutrogena Hydro Boost Water Gel 50g',
+    title: 'Hidratante Facial Neutrogena 50g',
     stars: 4.8,
     description:
       'O melhor hidratante facial. Com ácido hialurônico. Ideal para peles secas e oleosas. Hidratação intensa por 24 horas.',
@@ -668,7 +668,7 @@ export const productsBR = [
   },
 
   {
-    title: 'Protetor Solar Facial Neutrogena Sun Fresh FPS 70 40g',
+    title: 'Protetor Solar Facial Neutrogena FPS 70 40g',
     stars: 4.7,
     description:
       'Protetor solar facial com alta proteção FPS 70. Sem cor. Textura ultraleve e controle de oleosidade. Ideal para peles oleosas.',
@@ -686,7 +686,7 @@ export const productsBR = [
     category: 'Saúde',
   },
   {
-    title: 'Creme Dental Sensodyne Branqueador Extra Fresh',
+    title: 'Creme Dental Sensodyne Branqueador',
     stars: 4.8,
     description:
       'O melhor creme dental. Com flúor e nitrato de potássio. Para dentes sensíveis. Branqueador. Proteção diária contra cáries e tártaro. 90g cada.',
@@ -695,7 +695,7 @@ export const productsBR = [
     category: 'Saúde',
   },
   {
-    title: 'Escovas de Dente Curaprox 3 Unidades',
+    title: 'Escovas de Dente Curaprox Kit 3',
     stars: 4.9,
     description:
       'A melhor escova de dente. Kit com 3 escovas. Com cerdas macias e ultrafinas. Para limpeza profunda e delicada. Com cabo ergonômico. A CuraProx é referência.',
@@ -704,7 +704,7 @@ export const productsBR = [
     category: 'Saúde',
   },
   {
-    title: 'Enxaguante Bucal Sem Álcool Listerine Cool Mint 1L',
+    title: 'Enxaguante Bucal Sem Álcool Listerine 1L',
     stars: 4.9,
     description:
       'O melhor enxaguante bucal. Sem álcool. Com flúor e óleos essenciais. Para hálito fresco e proteção contra bactérias. Simplesmente essencial!',
@@ -713,21 +713,12 @@ export const productsBR = [
     category: 'Saúde',
   },
   {
-    title: 'Shampoo Anticaspa Clear Men Ice Cool Menthol 400Ml',
+    title: 'Shampoo Anticaspa Clear Men 400Ml',
     stars: 4.8,
     description:
       'O melhor shampoo anticaspa. Com mentol. Para homens. Limpeza profunda e refrescante. 400ml. O mais vendido.',
     url: 'https://amzn.to/4dcx6Wf',
     image: 'https://m.media-amazon.com/images/I/61JSetSXeXL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Shampoo Clareador Tio Nacho Antiqueda 415ml',
-    stars: 4.7,
-    description:
-      'Shampoo clareador. Com geleia real e camomila. Clareia naturalmente, com brilho e força. 415ml. Recomendo para quem tem cabelos loiros finos.',
-    url: 'https://amzn.to/3WvqUDl',
-    image: 'https://m.media-amazon.com/images/I/51jmb6WwcVL._AC_SY879_.jpg',
     category: 'Saúde',
   },
   {

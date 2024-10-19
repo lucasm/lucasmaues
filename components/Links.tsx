@@ -89,7 +89,7 @@ const Links: ILinks[] = [
     url: 'https://threads.net/@lucasmezs',
     icon: <IconThreads />,
     text: 'Threads',
-    active: true,
+    active: false,
   },
   {
     url: 'https://discord.com/users/lucasmezs',

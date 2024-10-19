@@ -15,7 +15,7 @@ const ActionButtons = () => {
       <Button url="#products">
         <>
           <IconCupom />
-          Pegar cupom
+          Pegar descontos
         </>
       </Button>
 

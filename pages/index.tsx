@@ -39,32 +39,33 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h3>I build positive impact with code</h3>
+              <h3>I build positive impact</h3>
 
               <Button url={ROUTES.WORK.path}>{ROUTES.WORK.title}</Button>
             </div>
 
             <div>
               <p>
-                Since 2017, I've been developing Web Applications, Websites, E-Commerce Platforms,
-                PWAs, and Mobile Applications that impact millions of users.
+                Since 2017, I've been developing Web Applications, E-Commerces,
+                Websites, and Mobile Apps that impact millions of users.
               </p>
 
               <p>
-                I play a pivotal role in the companies I work with, driving significant growth in
-                revenue, efficiency, and expansion. I'm proud of my work and constantly seeking new
-                challenges.
+                I play a pivotal role in the companies I work with, driving
+                significant growth in revenue, efficiency, and expansion. I'm
+                proud of my work and constantly seeking new challenges.
               </p>
 
               <p>
-                As a Frontend specialist, I focus on web standards, UX, performance, accessibility,
-                security, web analytics, and observability. Additionally, Backend APIs, cloud
-                services, CI/CD pipelines, and AI experiments.
+                As a Frontend specialist, I focus on web standards, UX,
+                performance, accessibility, security, PWA, web analytics, and
+                observability. Additionally, Backend APIs, cloud services,
+                CI/CD, and AI experiments.
               </p>
 
               <p>
-                I love açaí, traveling, deep conversations, bodybuilding and contributing to an open
-                source community!
+                I love açaí, traveling, deep conversations, bodybuilding and
+                contributing to the open source!
               </p>
             </div>
           </div>

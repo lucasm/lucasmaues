@@ -60,13 +60,20 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
             className={Style.popupContent}
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside content
           >
-            <button className={Style.closeButton} onClick={handleClose} aria-label="Fechar">
+            <button
+              className={Style.closeButton}
+              onClick={handleClose}
+              aria-label="Fechar">
               <IconClose />
             </button>
 
             <div className={Style.productDetail}>
               <figure>
-                <img src={product.image} alt={product.title} className={Style.brilho} />
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className={Style.brilho}
+                />
               </figure>
               <div>
                 <h2>{product.title}</h2>
@@ -82,7 +89,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
 
                 <p>{product.description}</p>
 
-                <h3>Onde comprar?</h3>
+                <h3>Comprar em</h3>
 
                 <div className={Style.containerButtons}>
                   {product.url && (
