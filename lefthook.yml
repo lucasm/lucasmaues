@@ -3,6 +3,8 @@ pre-commit:
   commands:
     lint-ts:
       run: npm run lint:ts
+    clean-tsbuildinfo:
+      run: rm -f tsconfig.tsbuildinfo
 # EXAMPLE USAGE:
 #
 #   Refer for explanation to following link:
