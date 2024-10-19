@@ -1,5 +1,6 @@
 import Button from '../components/Button'
 import PageLayout from '../components/PageLayout'
+import PatreonCheck from '../components/PatreonCheck'
 import SvgAnimateMentorship from '../components/SvgAnimateMentorship'
 import { ROUTES } from '../routes/routes'
 
@@ -13,8 +14,8 @@ export default function PageMentorship() {
 
             <p className="description">
               Desde 2017, atuo com Frontend, Web e Engenharia de Software. Sou
-              procurado por pessoas que buscam orientação ou ajuda para evoluir
-              na carreira de TI e estudos, visando alcançar seus objetivos.
+              procurado por profissionais e estudantes que buscam orientação
+              para evoluir na carreira de TI e atingir seus objetivos.
             </p>
           </div>
         </div>
@@ -88,7 +89,7 @@ export default function PageMentorship() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Google Meet + Notion
+                Formato: Videochamada + Anotações
                 <br />
                 Valores e pagamento: Patreon
                 <br />
@@ -96,6 +97,8 @@ export default function PageMentorship() {
               </p>
 
               <Button url="https://patreon.com/lucasm">Agendar</Button>
+
+              <PatreonCheck />
             </div>
           </div>
         </div>

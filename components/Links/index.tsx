@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Styles from './Links.module.css'
 import Link from 'next/link'
 import {
   IconCodepen,
@@ -17,9 +18,9 @@ import {
   IconMore,
   IconLess,
   IconThreads,
-} from './Svgs'
-import { ROUTES } from '../routes/routes'
-import PrefetchImages from './store/PrefetchImages'
+} from '../Svgs'
+import { ROUTES } from '../../routes/routes'
+import PrefetchImages from '../store/PrefetchImages'
 
 interface ILinks {
   url: string
@@ -30,7 +31,7 @@ interface ILinks {
   fullText?: boolean
 }
 
-const Links: ILinks[] = [
+const linksList: ILinks[] = [
   {
     url: 'https://x.com/lucasmezs',
     icon: <IconX />,
@@ -50,6 +51,18 @@ const Links: ILinks[] = [
     active: true,
   },
   {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
+    active: true,
+  },
+  {
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    text: 'LinkedIn',
+    active: true,
+  },
+  {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
     text: 'DEV',
@@ -61,18 +74,7 @@ const Links: ILinks[] = [
     text: 'CodePen',
     active: true,
   },
-  {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    text: 'LinkedIn',
-    active: true,
-  },
-  {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
-    active: true,
-  },
+
   {
     url: 'https://wa.me/5531997038007',
     icon: <IconWhatsapp />,
@@ -92,7 +94,7 @@ const Links: ILinks[] = [
     active: false,
   },
   {
-    url: 'https://discord.com/users/lucasmezs',
+    url: 'https://discord.com/users/lucasm.dev',
     icon: <IconDiscord />,
     text: 'Discord',
     active: false,
@@ -119,26 +121,26 @@ const Links: ILinks[] = [
     url: ROUTES.BLOG.path,
     text: ROUTES.BLOG.title,
     active: true,
-    internalPage: true,
     fullText: true,
+    internalPage: true,
   },
   {
     url: ROUTES.STORE.path,
     text: ROUTES.STORE.title,
     active: true,
-    internalPage: true,
     fullText: true,
+    internalPage: true,
   },
   {
     url: ROUTES.MENTORSHIP.path,
     text: ROUTES.MENTORSHIP.title,
-    active: false,
+    active: true,
     fullText: true,
     internalPage: true,
   },
 ]
 
-export default function ComponentLinks() {
+const Links = () => {
   const [showMore, setShowMore] = useState(false)
   const [prefetchEnabled, setPrefetchEnabled] = useState(false)
 
@@ -149,9 +151,9 @@ export default function ComponentLinks() {
     setPrefetchEnabled(true)
   }
 
-  const fullTextLinks = Links.filter((link) => link.fullText)
-  const otherLinks = Links.filter((link) => !link.fullText)
-  const limitOfLinks = 6
+  const fullTextLinks = linksList.filter((link) => link.fullText)
+  const otherLinks = linksList.filter((link) => !link.fullText)
+  const limitOfLinks = 7
   const visibleOtherLinks = showMore
     ? otherLinks
     : otherLinks.slice(0, limitOfLinks)
@@ -159,9 +161,9 @@ export default function ComponentLinks() {
   return (
     <div>
       <PrefetchImages enabled={prefetchEnabled} />
-      <ul className="links">
+      <ul className={`${Styles.links} ${Styles.containerText}`}>
         {fullTextLinks.map((link, index) => (
-          <li key={index} className="full-text">
+          <li key={index} className={Styles.text}>
             <Link
               href={link.url}
               target={link.internalPage ? '_self' : '_blank'}
@@ -179,7 +181,7 @@ export default function ComponentLinks() {
         ))}
       </ul>
 
-      <ul className="links" style={{ marginTop: '2rem' }}>
+      <ul className={Styles.links}>
         {visibleOtherLinks.map(
           (link, index) =>
             //is active?
@@ -210,3 +212,5 @@ export default function ComponentLinks() {
     </div>
   )
 }
+
+export default Links

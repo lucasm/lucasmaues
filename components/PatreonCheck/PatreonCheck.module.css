@@ -1,0 +1,14 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.05rem 2rem;
+  margin-top: 2rem;
+  min-height: var(--height-min);
+  color: var(--color-b);
+  background: transparent;
+  border-radius: 1.5rem;
+  border: 1px solid var(--color-b);
+  font-size: var(--font-size-6);
+  text-transform: uppercase;
+}

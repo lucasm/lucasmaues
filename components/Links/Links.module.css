@@ -1,0 +1,82 @@
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  justify-content: center;
+}
+.links li {
+  padding: 0;
+}
+.links li a,
+.links li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--height-min);
+  width: var(--height-min);
+  background: transparent;
+  font-size: 0;
+  border-radius: var(--radius-big);
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  border: 1px solid transparent;
+}
+.links li a:hover,
+.links li button:hover {
+  transform: scale(1.05);
+  background: var(--color-translucent);
+}
+
+.containerText {
+  gap: 0.75rem;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+.links .text a {
+  width: 100%;
+  gap: 0.75rem;
+  padding: 0 1.75rem;
+  font-size: var(--font-size-6);
+  color: var(--color-b-fixed);
+  text-align: left;
+  line-height: 1;
+  background: var(--color-y-3);
+}
+.links .text a:hover {
+  transform: scale(1.025);
+  background: var(--color-y-3);
+}
+
+.links svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (min-width: 900px) {
+  .links {
+    justify-content: flex-start;
+  }
+
+  .links svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .links li a,
+  .links li button {
+    height: var(--height-max);
+    width: var(--height-max);
+  }
+
+  .containerText {
+    width: unset;
+    flex-direction: row;
+  }
+  .links .text a {
+    padding: 0 2.75rem;
+    font-size: var(--font-size-5);
+  }
+}

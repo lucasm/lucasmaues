@@ -1,6 +1,6 @@
 import React from 'react'
 import Style from './Banners.module.css'
-import { IconShield } from '../../Svgs'
+import { IconGift, IconShield } from '../../Svgs'
 
 interface BannerProps {
   link: string
@@ -15,10 +15,18 @@ export default function Banners() {
     {
       link: '#products',
       external: false,
-      title: 'Compra 100% segura',
+      title: '100% seguro',
       subtitle:
-        'Todos os produtos indicados são vendidos e entregues por lojas confiáveis como Amazon, Mercado Livre ou AliExpress. Com garantia e bem avaliados. Aproveite!',
+        'Todos os produtos possuem garantia e são entregues por Amazon, Mercado Livre ou AliExpress. Além disso os mais bem avaliados!',
       image: <IconShield />,
+    },
+    {
+      link: 'https://www.meliuz.com.br/i/ref_lucasmauess',
+      external: true,
+      title: 'Receba R$ 5,00 ',
+      subtitle:
+        'Com o Méliuz você recebe dinheiro de volta em todas as suas compras online e recargas de telefone!',
+      image: <IconGift />,
     },
   ]
 

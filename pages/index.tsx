@@ -25,9 +25,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="blog" className="background-y">
+      <section id="content" className="background-y">
         <div className="container">
-          <h2 className="subtitle">Blog</h2>
+          <h2 className="subtitle">{ROUTES.BLOG.title}</h2>
 
           <BlogPosts />
         </div>
@@ -64,8 +64,8 @@ export default function Home() {
               </p>
 
               <p>
-                I love açaí, traveling, deep conversations, bodybuilding and
-                contributing to the open source!
+                I love açaí, traveling, deep conversations, bodybuilding and the
+                open source!
               </p>
             </div>
           </div>

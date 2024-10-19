@@ -42,12 +42,12 @@ export default function Header() {
       text: ROUTES.MENTORSHIP.title,
     },
     {
-      url: ROUTES.WORK.path,
-      text: ROUTES.WORK.title,
-    },
-    {
       url: ROUTES.ABOUT.path,
       text: ROUTES.ABOUT.title,
+    },
+    {
+      url: ROUTES.WORK.path,
+      text: ROUTES.WORK.title,
     },
     {
       url: ROUTES.CONTACT.path,
@@ -92,7 +92,9 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div className={isActive ? 'layer layerActive' : 'layer'} onClick={handleToggle}></div>
+        <div
+          className={isActive ? 'layer layerActive' : 'layer'}
+          onClick={handleToggle}></div>
       </div>
     </header>
   )

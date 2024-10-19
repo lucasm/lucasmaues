@@ -9,14 +9,19 @@ export const ROUTES = {
     path: '/#about',
     title: 'About',
   },
+  WORK: {
+    path: '/work',
+    title: 'Work',
+  },
   CONTACT: {
     path: '/work#contact',
     title: 'Contact',
   },
   STORE: {
     path: '/store',
-    title: 'Recomendados',
-    description: 'Os melhores produtos para devs inteligentes e saudáveis!',
+    title: 'Loja',
+    description:
+      'Os melhores produtos inteligentes e saudáveis! Baita recomendados!',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
@@ -24,11 +29,7 @@ export const ROUTES = {
     title: 'Mentoria',
   },
   BLOG: {
-    path: '/#blog',
-    title: 'Blog',
-  },
-  WORK: {
-    path: '/work',
-    title: 'Work',
+    path: '/#content',
+    title: 'Conteúdo',
   },
 }

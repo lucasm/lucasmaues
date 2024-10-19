@@ -247,14 +247,13 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title:
-      'Ar Condicionado Split Inverter Samsung WindFree Connect 9.000 BTUs Frio',
+    title: 'Ar Condicionado Split Inverter Samsung WindFree 9.000 BTUs Frio',
     stars: 4.6,
     description:
-      'Ar-condicionado com tecnologia WindFree, sem vento, e com controle via Wi-Fi. Calcula gasto energético. Um dos mais eficientes em energia segundo Inmetro. Ideal para qualquer ambiente.',
-    url: 'https://amzn.to/3K4XTaR',
+      'Ar-condicionado com tecnologia WindFree (sem vento) e com controle via Wi-Fi e Alexa. Calcula gasto energético. Um dos mais eficientes em energia segundo Inmetro. Ideal para qualquer ambiente.',
+    url: 'https://amzn.to/4dVvMqV',
     url_2: 'https://mercadolivre.com/sec/2T7wpW9',
-    image: 'https://m.media-amazon.com/images/I/51PdZgbII7L._AC_SX679_.jpg',
+    image: 'https://m.media-amazon.com/images/I/51Ap48E9JDL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
