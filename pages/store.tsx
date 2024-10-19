@@ -7,7 +7,6 @@ import { productsBR } from '../data/productsBR'
 import ProductCard from '../components/store/ProductCard'
 import SearchFilter from '../components/store/SearchFilter'
 
-import ActionButtons from '../components/store/ActionButtons'
 import Banners from '../components/store/Banners'
 
 export default function PageStore() {
