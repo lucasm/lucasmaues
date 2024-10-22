@@ -20,8 +20,7 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Loja',
-    description:
-      'Os melhores produtos inteligentes e saudáveis! Baita recomendados!',
+    description: 'Os melhores produtos tech e saudáveis! Baita recomendados!',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
