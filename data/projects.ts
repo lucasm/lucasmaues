@@ -62,7 +62,7 @@ export const projects: IProjects[] = [
     name: 'Findto',
     url: 'https://findto.app/',
     description:
-      'Assistant of decentralized search on Web and AI, as a Progressive Web App.',
+      'Progressive Web App for an assistant of decentralized search on Web and AI.',
     tags: [
       'Open Source',
       'PWA',
