@@ -52,9 +52,9 @@ export default function Home() {
               </p>
 
               <p>
-                My work has consistently enhanced revenue, and efficiency, in
-                every company I've contributed to. I'm proud of my achievements.
-                And new challenges motivates me.
+                My work has enhanced revenue, and efficiency, in every company
+                I've contributed to. I'm proud of my achievements. And new
+                challenges motivates me.
               </p>
 
               <p>
@@ -64,9 +64,8 @@ export default function Home() {
               </p>
 
               <p>
-                I'm passionate about açaí, traveling, engaging in deep
-                conversations, bodybuilding, Milton Nascimento songs, and
-                contributing to the open source ecosystem =)
+                I'm passionate about açaí, traveling, deep conversations,
+                bodybuilding, and contributing to the open source ecosystem.
               </p>
             </div>
           </div>
