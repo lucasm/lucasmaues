@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h3>I build positive impact</h3>
+              <h3>Building positive impact</h3>
 
               <Button url={ROUTES.WORK.path}>{ROUTES.WORK.title}</Button>
             </div>
@@ -51,21 +51,21 @@ export default function Home() {
               </p>
 
               <p>
-                I play a pivotal role in the companies I work with, driving
-                significant growth in revenue, efficiency, and expansion. I'm
-                proud of my work and constantly seeking new challenges.
+                I've been a collector of positive impacts on revenue, efficiency
+                and expansion, in the companies I've worked with. I'm proud of
+                my achievements. And I love new challenges.
               </p>
 
               <p>
-                As a Frontend specialist, I focus on web standards, UX,
-                performance, accessibility, security, PWA, web analytics, and
-                observability. Additionally, Backend APIs, cloud services,
-                CI/CD, and AI experiments.
+                As a Frontend specialist, my focus is on Web standards, UX,
+                performance, accessibility, security, PWA, analytics, and
+                observability. Additionally, APIs, cloud services, CI/CD, and AI
+                experiments.
               </p>
 
               <p>
                 I love açaí, traveling, deep conversations, bodybuilding and the
-                open source!
+                open source ecosystem.
               </p>
             </div>
           </div>
