@@ -47,25 +47,26 @@ export default function Home() {
             <div>
               <p>
                 Since 2017, I've been developing Web Applications, E-Commerces,
-                Websites, and Mobile Apps that impact millions of users.
+                Websites, AI experiments, and Mobile Apps that impact millions
+                of users.
               </p>
 
               <p>
-                I've been a collector of positive impacts on revenue, efficiency
-                and expansion, in the companies I've worked with. I'm proud of
-                my achievements. And I love new challenges.
+                My work has consistently enhanced revenue, and efficiency, in
+                every company I've contributed to. I'm proud of my achievements.
+                And new challenges motivates me.
               </p>
 
               <p>
                 As a Frontend specialist, my focus is on Web standards, UX,
                 performance, accessibility, security, PWA, analytics, and
-                observability. Additionally, APIs, cloud services, CI/CD, and AI
-                experiments.
+                observability. Additionally, APIs, cloud services, and CI/CD.
               </p>
 
               <p>
-                I love açaí, traveling, deep conversations, bodybuilding and the
-                open source ecosystem.
+                I'm passionate about açaí, traveling, engaging in deep
+                conversations, bodybuilding, Milton Nascimento songs, and
+                contributing to the open source ecosystem =)
               </p>
             </div>
           </div>
