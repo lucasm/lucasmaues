@@ -2,13 +2,13 @@ import {
   svgProjectBmg,
   svgProjectGlobo,
   svgProjectFindto,
+  SvgMdn,
+  SvgMicrosoft,
   svgProjectVarejoAqui,
   svgProjectTCMPA,
   svgProjectUFPA,
   svgProjectSuperia,
-  SvgMozilla,
   SvgProjectNufen,
-  SvgMicrosoft,
   SvgNaCuia,
   SvgCacba,
 } from '../components/Svgs'
@@ -76,7 +76,7 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
-    name: 'Mozilla Community',
+    name: 'MDN Web Docs',
     url: 'https://developer.mozilla.org/',
     description:
       'I contribute to the MDN Web Docs portuguese translations of JavaScript, Web APIs, and open standards.',
@@ -89,7 +89,7 @@ export const projects: IProjects[] = [
       'CSS',
       'Accessibility',
     ],
-    icon: SvgMozilla,
+    icon: SvgMdn,
     active: true,
   },
   {
