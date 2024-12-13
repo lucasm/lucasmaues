@@ -51,12 +51,6 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    text: 'YouTube',
-    active: true,
-  },
-  {
     url: 'https://linkedin.com/in/lucasmezs',
     icon: <IconLinkedin />,
     text: 'LinkedIn',
@@ -74,7 +68,12 @@ const linksList: ILinks[] = [
     text: 'CodePen',
     active: true,
   },
-
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    text: 'YouTube',
+    active: true,
+  },
   {
     url: 'https://wa.me/5531997038007',
     icon: <IconWhatsapp />,
@@ -153,7 +152,7 @@ const Links = () => {
 
   const fullTextLinks = linksList.filter((link) => link.fullText)
   const otherLinks = linksList.filter((link) => !link.fullText)
-  const limitOfLinks = 7
+  const limitOfLinks = 6
   const visibleOtherLinks = showMore
     ? otherLinks
     : otherLinks.slice(0, limitOfLinks)
