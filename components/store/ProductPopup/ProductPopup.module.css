@@ -82,7 +82,7 @@
   display: flex;
   align-items: center;
   top: -3rem;
-  padding: 1.75rem 1.25rem;
+  padding: 1.5rem 1.25rem;
   gap: 0.25rem;
   left: 2rem;
   flex-direction: column;
@@ -157,22 +157,9 @@
     border-radius: 0;
   }
   .closeButton {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-y-3);
-    font-size: 1rem;
-    margin: 0.75rem;
+    margin: 1rem;
     width: 2rem;
     height: 2rem;
-  }
-  .closeButton svg {
-    width: 1rem;
-    height: 1rem;
-  }
-  .closeButton path {
-    fill: var(--color-b-fixed) !important;
   }
 
   .productDetail {
@@ -193,7 +180,7 @@
   .stars {
     top: -2rem;
     left: 2rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
   }
   .stars span {

@@ -15,7 +15,7 @@ export default function Banners() {
     {
       link: '#products',
       external: false,
-      title: 'Compra segura',
+      title: '100% seguro',
       subtitle:
         'Todos os produtos são entregues por Amazon, Mercado Livre ou AliExpress. Além disso, possuem garantia e são os mais bem avaliados.',
       image: <IconShield />,
@@ -25,7 +25,7 @@ export default function Banners() {
       external: true,
       title: 'Receba R$ 5,00',
       subtitle:
-        'Com o Méliuz você recebe dinheiro de volta em todas as suas compras online e recargas de telefone!',
+        'Ative o Méliuz para receber dinheiro de volta em todas as compras online e recargas de celular!',
       image: <IconGift />,
     },
   ]

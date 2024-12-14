@@ -93,7 +93,7 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
-    name: 'Microsoft Community',
+    name: 'Microsoft Open Source',
     url: 'https://learn.microsoft.com/',
     description:
       'I contribute to the Microsoft Open Source community translations of AI an Web to portuguese.',

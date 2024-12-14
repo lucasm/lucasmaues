@@ -27,7 +27,7 @@
 }
 
 .containerDiscount h3 {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-4);
   padding: 0 0 1rem;
   line-height: 1.2;
 }
@@ -63,5 +63,8 @@
   .containerDiscount figure {
     margin: 0 auto;
     height: 5rem;
+  }
+  .containerDiscount h3 {
+    font-size: var(--font-size-5);
   }
 }

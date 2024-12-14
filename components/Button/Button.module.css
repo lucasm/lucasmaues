@@ -20,6 +20,10 @@
   transform: scale(1.025);
 }
 
+.button svg path {
+  fill: var(--color-b-fixed);
+}
+
 @media screen and (min-width: 700px) {
   .button {
     padding: 0 2.75rem;

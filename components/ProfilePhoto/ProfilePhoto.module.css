@@ -3,7 +3,7 @@
 }
 #profile {
   position: relative;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
   display: flex;
 }
 #profile img {
@@ -16,7 +16,7 @@
 #profile svg {
   position: absolute;
   top: -2rem;
-  left: -4rem;
+  left: -3.5rem;
   width: 10rem;
   height: 10rem;
   z-index: -1;
@@ -33,6 +33,9 @@
 }
 
 @media screen and (min-width: 700px) {
+  #profile {
+    margin-bottom: 4rem;
+  }
   #profile img {
     width: 8rem;
     height: 8rem;

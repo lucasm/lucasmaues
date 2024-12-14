@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useUser } from '../contexts/UserContext'
-import { IconMoon, IconSun } from './Svgs'
-import { ROUTES } from '../routes/routes'
+import { useUser } from '../../contexts/UserContext'
+import { IconMoon, IconSun } from '../Svgs'
+import { ROUTES } from '../../routes/routes'
 
 export default function Header() {
   const { theme, setTheme } = useUser()

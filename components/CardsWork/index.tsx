@@ -12,6 +12,7 @@ const WorkCards = () => {
         {Projects.filter((project) => project.active).map((item, index) => (
           <Link key={index} className={styles.icon} href={ROUTES.WORK.path}>
             {item?.icon}
+            <span>{item?.name}</span>
           </Link>
         ))}
       </div>

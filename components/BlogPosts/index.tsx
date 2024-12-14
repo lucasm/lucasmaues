@@ -8,9 +8,12 @@ export default function Posts() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://dev.to/api/articles?username=lucasm`, {
-          cache: 'no-store',
-        })
+        const response = await fetch(
+          `https://dev.to/api/articles?username=lucasm`,
+          {
+            cache: 'no-store',
+          }
+        )
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
@@ -30,7 +33,10 @@ export default function Posts() {
     return (
       <div>
         Failed to load posts, check
-        <a href="https://dev.to/lucasm" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://dev.to/lucasm"
+          target="_blank"
+          rel="noopener noreferrer">
           my blog
         </a>{' '}
         directly

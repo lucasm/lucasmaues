@@ -81,7 +81,7 @@ body {
 header {
   position: absolute;
   width: 100%;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1rem;
   z-index: 99999;
 }
 header .container {
@@ -284,7 +284,7 @@ section {
 .fullscreen {
   display: table;
   min-height: 100vh;
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 .fullscreen-container {
   display: table-cell;
@@ -449,26 +449,6 @@ article blockquote {
   font-style: italic;
 }
 
-.button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem 0;
-  padding: 0 2rem;
-  height: var(--height-min);
-  line-height: 1;
-  color: var(--color-b);
-  background: transparent;
-  border: 1px solid var(--color-b);
-  border-radius: var(--radius-big);
-  cursor: pointer;
-}
-.button:hover {
-  background: var(--color-translucent);
-  border-color: transparent;
-}
-
 .home {
   display: flex;
   flex-direction: column;
@@ -476,7 +456,7 @@ article blockquote {
 }
 .home h1 {
   text-wrap: balance;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 .page {
   margin: 2rem auto 0;
@@ -723,15 +703,6 @@ footer div {
   #logo,
   .aboutContainer p {
     font-size: var(--font-size-4);
-  }
-
-  .button,
-  p {
-    font-size: var(--font-size-5);
-  }
-
-  .button {
-    height: var(--height-max);
   }
 
   .cards {

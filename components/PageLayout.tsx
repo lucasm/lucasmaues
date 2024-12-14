@@ -32,7 +32,10 @@ export default function PageLayout(props: Props) {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="Lucas Menezes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="translucent"
+        />
         <meta name="apple-mobile-web-app-title" content="Lucas Menezes" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#111" />
