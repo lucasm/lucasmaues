@@ -471,55 +471,6 @@ article blockquote {
   margin-bottom: 1rem;
 }
 
-/* Posts */
-.posts {
-  display: grid;
-  grid-gap: 1.5rem;
-  text-align: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.posts h3 {
-  padding: 0 0 1.5rem;
-  color: var(--color-b-fixed);
-}
-.posts p {
-  font-size: var(--font-size-6);
-  color: var(--color-b-fixed);
-}
-.posts span {
-  position: relative;
-  font-size: var(--font-size-7);
-  border-radius: var(--radius-big);
-  background: var(--color-b-fixed);
-  height: 1.75rem;
-  width: 1.75rem;
-  display: flex;
-  justify-content: center;
-  color: var(--color-w);
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.posts figure {
-  background: var(--color-w);
-  display: none;
-}
-.posts a {
-  float: left;
-  width: 100%;
-  padding: 0;
-  transition: var(--transition);
-  display: grid;
-}
-.posts a:hover h3,
-.posts a:focus h3 {
-  text-decoration: underline;
-}
-.posts li {
-  padding: 0;
-}
-
 /* Cards */
 .cards {
   display: grid;
@@ -686,7 +637,6 @@ footer div {
     font-size: var(--font-size-1);
   }
 
-  .posts h3,
   article h1 {
     font-size: var(--font-size-2);
   }
@@ -745,12 +695,5 @@ footer div {
   .cards p {
     font-size: var(--font-size-4);
     margin-bottom: 1.5rem;
-  }
-
-  .posts {
-    grid-gap: 3rem;
-  }
-  .posts p {
-    font-size: var(--font-size-5);
   }
 }

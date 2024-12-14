@@ -17,7 +17,7 @@ export default function PageMentorship() {
               Desde 2017, atuo com Engenharia de Software, Web e Frontend. Sou
               procurado por profissionais e estudantes que buscam orientação
               para evoluir na carreira de TI. O objetivo da mentoria é você
-              atingir seus objetivos.
+              atingir os seus objetivos. E fim.
             </p>
           </div>
         </div>

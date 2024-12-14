@@ -1,4 +1,4 @@
-import styles from './Button.module.css'
+import Styles from './Button.module.css'
 import Link from 'next/link'
 
 type Props = {
@@ -11,7 +11,7 @@ export default function Button(props: Props) {
   return (
     <Link
       href={props.url}
-      className={styles.button}
+      className={Styles.button}
       target={props.isExternal ? '_blank' : '_self'}
       rel={props.isExternal ? 'noopener noreferrer' : ''}>
       {props.children}

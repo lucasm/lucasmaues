@@ -1,3 +1,4 @@
+import Styles from './BlogPosts.module.css'
 import { useState, useEffect } from 'react'
 
 export default function Posts() {
@@ -45,7 +46,7 @@ export default function Posts() {
   if (loading) return <p>Loading...</p>
 
   return (
-    <ul className="posts">
+    <ul className={Styles.posts}>
       {data &&
         data.slice(0, 3).map((item: any, index: number) => (
           <li key={index}>

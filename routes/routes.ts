@@ -3,7 +3,7 @@ export const ROUTES = {
     path: '/',
     title: 'Home',
     description:
-      'Senior Frontend Engineer from Brazil. Building solutions for stand out companies. Helping devs.',
+      'Senior Software Engineer from Brazil. Building Frontend solutions for stand out companies. Helping developers.',
   },
   ABOUT: {
     path: '/#about',
