@@ -13,13 +13,13 @@
   transition: var(--transition);
 }
 
-.container a span,
+/* .container a span,
 .container a span {
   font-size: var(--font-size-5);
   color: var(--color-w-text);
   padding: 0 2rem;
   display: none;
-}
+} */
 
 .container a:hover,
 .container a:focus {
@@ -30,10 +30,10 @@
   fill: var(--color-w-text) !important;
 }
 
-.container a:hover span,
+/* .container a:hover span,
 .container a:focus span {
   display: block;
-}
+} */
 
 .iconContainer {
   display: grid;

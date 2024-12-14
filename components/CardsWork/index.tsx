@@ -1,24 +1,28 @@
-import styles from './CardsWork.module.css'
 import { IProjects, projects } from '../../data/projects'
-import { ROUTES } from '../../routes/routes'
-import Link from 'next/link'
 
-const WorkCards = () => {
-  const Projects = projects?.filter((project: IProjects) => project.active)
+export default function CardsWork() {
+  const Projects = projects.filter((project: IProjects) => project.active)
 
   return (
-    <div className={styles.container}>
-      <div className={styles.iconContainer}>
-        {Projects.filter((project) => project.active).map((item, index) => (
-          <Link key={index} className={styles.icon} href={ROUTES.WORK.path}>
-            {item?.icon}
-            <span>{item?.name}</span>
-          </Link>
-        ))}
-      </div>
-      <div className={styles.textContainer}>teste</div>
+    <div className="cards">
+      {Projects?.filter((project) => project.active).map((item, index) => (
+        <a
+          key={index}
+          href={item.url + '?utm_source=lucasm.dev'}
+          target="_blank"
+          rel="noopener noreferrer">
+          <div className="card">
+            <figure>{item.icon}</figure>
+
+            <h3>{item.name}</h3>
+            <p>{item.description}</p>
+
+            {item?.tags.map((subItem, subIndex) => (
+              <span key={subIndex}>{subItem}</span>
+            ))}
+          </div>
+        </a>
+      ))}
     </div>
   )
 }
-
-export default WorkCards

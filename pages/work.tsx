@@ -1,6 +1,6 @@
 import Button from '../components/Button'
 import PageLayout from '../components/PageLayout'
-import WorkCards from '../components/WorkCards'
+import CardsWork from '../components/CardsWork'
 
 export default function PageWork() {
   return (
@@ -20,7 +20,7 @@ export default function PageWork() {
 
       <section className="background-y">
         <div className="container">
-          <WorkCards />
+          <CardsWork />
         </div>
       </section>
 

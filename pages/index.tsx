@@ -1,7 +1,7 @@
 import PageLayout from '../components/PageLayout'
 import Links from '../components/Links'
 import BlogPosts from '../components/BlogPosts'
-import CardsWork from '../components/CardsWork'
+import CardsWorkFeatured from '../components/CardsWorkFeatured'
 import ProfilePhoto from '../components/ProfilePhoto'
 import Button from '../components/Button'
 import { ROUTES } from '../routes/routes'
@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           </div>
 
-          <CardsWork />
+          <CardsWorkFeatured />
         </div>
       </section>
     </PageLayout>

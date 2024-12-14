@@ -65,7 +65,7 @@
 
 .containerButtons {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
   margin-top: 2rem;
 }
