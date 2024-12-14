@@ -10,7 +10,11 @@ const CardsWorkFeatured = () => {
     <div className={styles.container}>
       <div className={styles.iconContainer}>
         {Projects.filter((project) => project.active).map((item, index) => (
-          <Link key={index} className={styles.icon} href={ROUTES.WORK.path}>
+          <Link
+            key={index}
+            className={styles.icon}
+            href={ROUTES.WORK.path}
+            aria-label={'My work on ' + item?.name}>
             {item?.icon}
             {/* <span>{item?.name}</span> */}
           </Link>

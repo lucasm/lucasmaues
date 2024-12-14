@@ -62,7 +62,7 @@ export const projects: IProjects[] = [
     name: 'Findto',
     url: 'https://findto.app/',
     description:
-      'Progressive Web App for an assistant of decentralized search on Web and AI.',
+      'Progressive Web App for an assistant of decentralized search on Web, AI and more sources.',
     tags: [
       'Open Source',
       'PWA',
@@ -96,7 +96,7 @@ export const projects: IProjects[] = [
     name: 'Microsoft Open Source',
     url: 'https://learn.microsoft.com/',
     description:
-      'I contribute to the Microsoft Open Source community translations of AI an Web to portuguese.',
+      'I contribute to the Microsoft Open Source portuguese translations of AI an Web technologies.',
     tags: ['Open Source', 'Translations', 'AI', 'Web'],
     icon: SvgMicrosoft,
     active: true,
