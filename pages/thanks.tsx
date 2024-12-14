@@ -1,6 +1,6 @@
 import PageLayout from '../components/PageLayout'
 import CircleMouse from '../components/CircleMouse'
-import Link from 'next/link'
+import Button from '../components/Button'
 
 export default function PageThanks() {
   return (
@@ -9,15 +9,14 @@ export default function PageThanks() {
       <section className="fullscreen">
         <div className="fullscreen-container">
           <div className="container">
-            <h1>Thank you! ✌🏻</h1>
+            <h1>Thanks! ✌🏻</h1>
 
             <p className="description">
-              "Simplicity can only be achieved through hard work" — Clarice Lispector
+              "What we truly are is what the impossible creates in us." —
+              Clarice Lispector
             </p>
 
-            <Link href="/" className="button">
-              Back to homepage
-            </Link>
+            <Button url="/">Back to homepage</Button>
           </div>
         </div>
       </section>
