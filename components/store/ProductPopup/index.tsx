@@ -69,6 +69,13 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
 
             <div className={Style.productDetail}>
               <figure>
+                {product?.stars && (
+                  <div className={Style.stars}>
+                    <IconStar />
+                    <span>{product.stars}</span>
+                  </div>
+                )}
+
                 <img
                   src={product.image}
                   alt={product.title}
@@ -78,14 +85,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
               <div>
                 <h2>{product.title}</h2>
 
-                {product?.stars && (
-                  <div className={Style.stars}>
-                    <IconStar />
-                    <span>{product.stars}</span>
-                  </div>
-                )}
-
-                {/* <h3>Meu review:</h3> */}
+                <h3>Meu review</h3>
 
                 <p>{product.description}</p>
 

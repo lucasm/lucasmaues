@@ -5,6 +5,20 @@
   box-sizing: border-box;
   margin-top: 5rem;
 }
+
+.container a {
+  transition: var(--transition);
+}
+
+.container a:hover,
+.container a:focus {
+  background: var(--color-b) !important;
+}
+.container a:hover svg,
+.container a:focus svg {
+  fill: var(--color-w-text) !important;
+}
+
 .iconContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

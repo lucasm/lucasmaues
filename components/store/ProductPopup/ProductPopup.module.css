@@ -30,6 +30,7 @@
 }
 
 .productDetail {
+  position: relative;
   display: grid;
   grid-template-columns: 0.75fr 1fr;
   grid-gap: 3rem;
@@ -77,19 +78,29 @@
 }
 
 .stars {
+  position: absolute;
   display: flex;
   align-items: center;
-  gap: 0rem;
-  padding: 1rem 0;
-
-  color: var(--color-b);
+  top: -3rem;
+  padding: 1.75rem 1.25rem;
+  gap: 0.25rem;
+  left: 2rem;
+  flex-direction: column;
+  z-index: 999;
+  border-radius: var(--radius);
+  background: var(--color-y-3);
+  color: var(--color-b-fixed);
 }
 .stars span {
   font-size: var(--font-size-6);
-  margin: 0 0 -0.15rem 0.75rem;
+}
+
+.stars svg {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .stars svg path {
-  fill: var(--color-y-3);
+  fill: var(--color-b-fixed);
 }
 
 .closeButton {
@@ -153,8 +164,8 @@
     background-color: var(--color-y-3);
     font-size: 1rem;
     margin: 0.75rem;
-    width: var(--height-min);
-    height: var(--height-min);
+    width: 2rem;
+    height: 2rem;
   }
   .closeButton svg {
     width: 1rem;
@@ -177,5 +188,15 @@
     width: 100%;
     max-height: 250px;
     padding: 1.5rem;
+  }
+
+  .stars {
+    top: -2rem;
+    left: 2rem;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+  }
+  .stars span {
+    font-size: 0.8rem;
   }
 }

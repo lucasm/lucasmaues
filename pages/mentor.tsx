@@ -2,6 +2,7 @@ import Button from '../components/Button'
 import PageLayout from '../components/PageLayout'
 import PatreonCheck from '../components/PatreonCheck'
 import SvgAnimateMentorship from '../components/SvgAnimateMentorship'
+import { ArrowUpRight } from '../components/Svgs'
 import { ROUTES } from '../routes/routes'
 
 export default function PageMentorship() {
@@ -13,9 +14,10 @@ export default function PageMentorship() {
             <h1>{ROUTES.MENTORSHIP.title}</h1>
 
             <p className="description">
-              Desde 2017, atuo com Frontend, Web e Engenharia de Software. Sou
+              Desde 2017, atuo com Engenharia de Software, Web e Frontend. Sou
               procurado por profissionais e estudantes que buscam orientação
-              para evoluir na carreira de TI e atingir seus objetivos.
+              para evoluir na carreira de TI. O objetivo da mentoria é você
+              atingir seus objetivos.
             </p>
           </div>
         </div>
@@ -58,17 +60,17 @@ export default function PageMentorship() {
             <h3>Benefícios:</h3>
 
             <p>
-              - Orientação personalizada
-              <br />
-              - Plano de ação
+              - Orientação personalizada com plano de ação
               <br />
               - Aprendizado prático (hard skills)
               <br />
-              - Desenvolvimento profissional (soft skills)
+              - Desenvolvimento comportamental (soft skills)
               <br />
-              - Avaliação de resultados
-              <br />- Feedback, onde falo o que você PRECISA ouvir para evoluir,
-              não o que quer ouvir para agradar o ego
+              - Feedback, onde falo o que você PRECISA ouvir para evoluir, não o
+              que quer ouvir para agradar o ego
+              <br />
+              - Avaliação de resultados alcançados
+              <br />- Independência, você no controle, sem precisar de mim
             </p>
           </article>
         </div>
@@ -91,12 +93,17 @@ export default function PageMentorship() {
                 <br />
                 Formato: Videochamada + Anotações
                 <br />
-                Valores e pagamento: Patreon
+                Plataforma: Patreon
                 <br />
                 <br />
               </p>
 
-              <Button url="https://patreon.com/lucasm">Agendar</Button>
+              <Button url="https://patreon.com/lucasm">
+                <>
+                  Agendar
+                  <ArrowUpRight />
+                </>
+              </Button>
 
               <PatreonCheck />
             </div>

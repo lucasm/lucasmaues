@@ -13,7 +13,7 @@ export const productsBR = [
     title: 'Teclado Logitech MX Keys Mini',
     stars: 4.8,
     description:
-      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design e a qualidade na construção.',
+      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design da Logitech e a qualidade na construção. O que mais gosto é a tecla de função que alterna entre os dispositivos conectados e levar ele na minha mala de viagem.',
     url: 'https://amzn.to/3OwLrDM',
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
@@ -23,7 +23,7 @@ export const productsBR = [
     title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
     stars: 4.9,
     description:
-      'Garrafa térmica com construção sólida. Qualidade Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
+      'Garrafa térmica com construção sólida. Qualidade reconhecida da Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
     url: 'https://amzn.to/3uDXl7H',
     url_2: 'https://mercadolivre.com/sec/21x7Pq8',
     image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',

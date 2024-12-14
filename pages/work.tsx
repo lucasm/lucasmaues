@@ -34,7 +34,7 @@ export default function PageWork() {
             </div>
 
             <div>
-              <p>Describe your project. I look forward to hearing you!</p>
+              <p>I look forward to hearing you.</p>
 
               <Button url="mailto:hello@lucasm.dev">hello@lucasm.dev</Button>
             </div>
