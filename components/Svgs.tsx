@@ -433,11 +433,11 @@ export const svgProjectFindto = (
     viewBox="0 0 1024 1024"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor">
-    <clipPath clipPathUnits="userSpaceOnUse" id="prefix__a">
+    <clipPath clipPathUnits="userSpaceOnUse" id="a">
       <path d="M-5-5h1034v1034H-5zm842 517a53.204 53.204 0 00-35.124-50.377l-175.02-64.48-64.48-175.02a53.69 53.69 0 00-100.754 0l-64.48 175.02-175.019 64.48a53.69 53.69 0 000 100.754l175.02 64.48 64.48 175.02a53.69 53.69 0 00100.754 0l64.48-175.02 175.019-64.48A53.204 53.204 0 00837 512z" />
     </clipPath>
     <path
-      clip-path="url(#prefix__a)"
+      clipPath="url(#a)"
       d="M304.482 0h415.036C888.2 0 1024 135.8 1024 304.482v415.036C1024 888.2 888.2 1024 719.518 1024H304.482C135.8 1024 0 888.2 0 719.518V304.482C0 135.8 135.8 0 304.482 0z"
     />
   </svg>

@@ -25,185 +25,188 @@ import PrefetchImages from '../store/PrefetchImages'
 interface ILinks {
   url: string
   icon?: JSX.Element
-  text: string
+  title: string
   internalPage?: boolean
   active: boolean
-  fullText?: boolean
+  onlyText?: boolean
 }
 
 const linksList: ILinks[] = [
   {
+    url: ROUTES.BLOG.path,
+    title: ROUTES.BLOG.title,
+    active: true,
+    onlyText: true,
+    internalPage: true,
+  },
+  {
+    url: ROUTES.STORE.path,
+    title: ROUTES.STORE.title,
+    active: true,
+    onlyText: true,
+    internalPage: true,
+  },
+  {
+    url: ROUTES.MENTORSHIP.path,
+    title: ROUTES.MENTORSHIP.title,
+    active: true,
+    onlyText: true,
+    internalPage: true,
+  },
+  {
     url: 'https://x.com/lucasmezs',
     icon: <IconX />,
-    text: 'X (Twitter)',
+    title: 'X (Twitter)',
     active: true,
   },
   {
     url: 'https://bsky.app/profile/lucasm.dev',
     icon: <IconBluesky />,
-    text: 'Bluesky',
+    title: 'Bluesky',
     active: true,
   },
   {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
-    text: 'GitHub',
+    title: 'GitHub',
     active: true,
   },
   {
     url: 'https://linkedin.com/in/lucasmezs',
     icon: <IconLinkedin />,
-    text: 'LinkedIn',
+    title: 'LinkedIn',
     active: true,
   },
   {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
-    text: 'DEV',
+    title: 'DEV',
     active: true,
   },
   {
     url: 'https://codepen.io/lucasm',
     icon: <IconCodepen />,
-    text: 'CodePen',
+    title: 'CodePen',
     active: true,
   },
   {
     url: 'https://youtube.com/@lucasmdev',
     icon: <IconYoutube />,
-    text: 'YouTube',
+    title: 'YouTube',
     active: true,
   },
   {
     url: 'https://wa.me/5531997038007',
     icon: <IconWhatsapp />,
-    text: 'WhatsApp',
-    active: true,
+    title: 'WhatsApp',
+    active: false,
   },
   {
     url: 'https://instagram.com/lucasmezs',
     icon: <IconInstagram />,
-    text: 'Instagram',
-    active: true,
+    title: 'Instagram',
+    active: false,
   },
   {
     url: 'https://threads.net/@lucasmezs',
     icon: <IconThreads />,
-    text: 'Threads',
+    title: 'Threads',
     active: false,
   },
   {
     url: 'https://discord.com/users/lucasm.dev',
     icon: <IconDiscord />,
-    text: 'Discord',
+    title: 'Discord',
     active: false,
   },
   {
     url: 'https://open.spotify.com/user/lucasmauess',
     icon: <IconSpotify />,
-    text: 'Spotify',
+    title: 'Spotify',
     active: false,
   },
   {
     url: 'https://letterboxd.com/lucasmezs',
     icon: <IconLetterboxd />,
-    text: 'Letterboxd',
+    title: 'Letterboxd',
     active: false,
   },
   {
     url: 'https://mastodon.social/@lucasmezs',
     icon: <IconMastodon />,
-    text: 'Mastodon',
+    title: 'Mastodon',
     active: false,
-  },
-  {
-    url: ROUTES.BLOG.path,
-    text: ROUTES.BLOG.title,
-    active: true,
-    fullText: true,
-    internalPage: true,
-  },
-  {
-    url: ROUTES.STORE.path,
-    text: ROUTES.STORE.title,
-    active: true,
-    fullText: true,
-    internalPage: true,
-  },
-  {
-    url: ROUTES.MENTORSHIP.path,
-    text: ROUTES.MENTORSHIP.title,
-    active: true,
-    fullText: true,
-    internalPage: true,
   },
 ]
 
 const Links = () => {
-  const [showMore, setShowMore] = useState(false)
+  const [showAll, setShowAll] = useState(false)
   const [prefetchEnabled, setPrefetchEnabled] = useState(false)
 
   const handleToggle = () => {
-    setShowMore((prev) => !prev)
+    setShowAll((prev) => !prev)
   }
   const handleMouseEnterStore = () => {
     setPrefetchEnabled(true)
   }
 
-  const fullTextLinks = linksList.filter((link) => link.fullText)
-  const otherLinks = linksList.filter((link) => !link.fullText)
-  const limitOfLinks = 6
-  const visibleOtherLinks = showMore
-    ? otherLinks
-    : otherLinks.slice(0, limitOfLinks)
+  const textLinks = linksList.filter((link) => link.onlyText)
+  const iconLinks = linksList.filter((link) => !link.onlyText)
+  const limit = 7
+  const visibleIconLinks = showAll ? iconLinks : iconLinks.slice(0, limit)
+
+  // só mostra o botão se tiver mais de 7 links
+  const showToggleButton = iconLinks.length > limit && false
 
   return (
     <div>
       <PrefetchImages enabled={prefetchEnabled} />
+
       <ul className={`${Styles.links} ${Styles.containerText}`}>
-        {fullTextLinks.map((link, index) => (
+        {textLinks?.map((link, index) => (
           <li key={index} className={Styles.text}>
             <Link
               href={link.url}
               target={link.internalPage ? '_self' : '_blank'}
               rel={link.internalPage ? 'prefetch' : 'noopener'}
-              title={link.text}
+              title={link.title}
               onMouseEnter={
-                link.text === ROUTES.STORE.title
+                link.title === ROUTES.STORE.title
                   ? handleMouseEnterStore
                   : undefined
               }>
               {link.icon}
-              {link.text}
+              {link.title}
             </Link>
           </li>
         ))}
       </ul>
 
       <ul className={Styles.links}>
-        {visibleOtherLinks.map(
+        {visibleIconLinks?.map(
           (link, index) =>
-            //is active?
+            // only active links
             link.active && (
               <li key={index}>
                 <Link
                   href={link.url}
                   target={link.internalPage ? '_self' : '_blank'}
-                  rel={link.internalPage ? 'prefetch' : 'noopener'}
-                  title={link.text}>
+                  rel={link.internalPage ? 'prefetch' : 'noopener noreferrer'}
+                  title={link.title}>
                   {link.icon}
-                  {link.text}
+                  {link.title}
                 </Link>
               </li>
             )
         )}
-        {otherLinks.length > limitOfLinks && (
+
+        {showToggleButton && (
           <li>
             <button
               onClick={handleToggle}
-              aria-expanded={showMore ? 'true' : 'false'}
-              aria-label={showMore ? 'Show less' : 'Show more'}>
-              {showMore ? <IconLess /> : <IconMore />}
+              aria-expanded={showAll ? 'true' : 'false'}
+              aria-label={showAll ? 'Show less' : 'Show more'}>
+              {showAll ? <IconLess /> : <IconMore />}
             </button>
           </li>
         )}

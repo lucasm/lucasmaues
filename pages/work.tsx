@@ -11,7 +11,8 @@ export default function PageWork() {
             <h1>Work</h1>
 
             <p className="description">
-              "Simplicity can only be achieved through hard work" — Clarice Lispector
+              "Simplicity can only be achieved through hard work" — Clarice
+              Lispector
             </p>
           </div>
         </div>
@@ -33,7 +34,7 @@ export default function PageWork() {
             </div>
 
             <div>
-              <p>Describe your project or ideia. I look forward to hearing you!</p>
+              <p>Describe your project. I look forward to hearing you!</p>
 
               <Button url="mailto:hello@lucasm.dev">hello@lucasm.dev</Button>
             </div>

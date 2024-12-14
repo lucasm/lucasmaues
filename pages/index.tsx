@@ -16,7 +16,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Senior Frontend Engineer from Brazil</h1>
+                <h1>Hello, I'm a Senior Frontend Engineer</h1>
 
                 <Links />
               </div>
@@ -46,27 +46,28 @@ export default function Home() {
 
             <div>
               <p>
-                Since 2017, I've been developing Web Applications, E-Commerces,
-                Websites, AI experiments, and Mobile Apps that impact millions
-                of users.
+                Hi, I'm Lucas Menezes, a Senior Frontend Engineer based in Belo
+                Horizonte, Brazil.
+              </p>
+              <p>
+                Since 2017, I've been building Web Applications, E-Commerces,
+                Websites, Mobile Apps, and now, AI Experiences.
               </p>
 
               <p>
-                My work has enhanced revenue, and efficiency, in every company
-                I've contributed to. I'm proud of my achievements. And new
-                challenges motivates me.
+                My work positively impact millions of users, driving revenue
+                growth and operational efficiency in every company I've
+                contributed to. I'm proud of these achievements, and I love new
+                challenges.
               </p>
 
               <p>
-                As a Frontend specialist, my focus is on Web standards, UX,
-                performance, accessibility, security, PWA, analytics, and
-                observability. Additionally, APIs, cloud services, and CI/CD.
+                As a Frontend specialist, I focus on Web Standards, UX, Tests,
+                Performance, Accessibility, Security, PWA, Analytics,
+                Observability, APIs, and CI/CD.
               </p>
 
-              <p>
-                I'm passionate about açaí, traveling, deep conversations,
-                bodybuilding, and contributing to the open source ecosystem.
-              </p>
+              <p>I'm passionate about açaí and open source. Let's make!</p>
             </div>
           </div>
 

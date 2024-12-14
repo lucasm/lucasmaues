@@ -18,6 +18,7 @@ export default function Header() {
     setActive(!isActive)
   }
 
+  // system, light, dark
   const toggleTheme = () => {
     if (theme == 'light') {
       setTheme('dark')
