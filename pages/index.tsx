@@ -55,10 +55,9 @@ export default function Home() {
               </p>
 
               <p>
-                My work positively impact millions of users, driving revenue
+                My work positively impact millions of users. And drive revenue
                 growth and operational efficiency in every company I've
-                contributed to. I'm proud of these achievements, and I love new
-                challenges.
+                contributed to. I'm proud of these achievements.
               </p>
 
               <p>
@@ -67,7 +66,10 @@ export default function Home() {
                 Observability, APIs, and CI/CD.
               </p>
 
-              <p>I'm passionate about açaí and open source. Let's make!</p>
+              <p>
+                I'm passionate about new challenges, açaí and open source. Let's
+                make!
+              </p>
             </div>
           </div>
 
