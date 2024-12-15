@@ -172,8 +172,7 @@ export const IconChevronDown = () => (
     viewBox="0 0 16 16"
     width="16"
     height="16"
-    xmlns="http://www.w3.org/2000/svg"
-    className="svg">
+    xmlns="http://www.w3.org/2000/svg">
     <symbol id="a" viewBox="0 0 40 40">
       <path d="m 14.317,12.35 2.35,-2.35 10,10 -10,10 -2.35,-2.35 7.6333,-7.65 z" />
     </symbol>
