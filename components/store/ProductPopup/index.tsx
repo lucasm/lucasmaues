@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Style from './ProductPopup.module.css'
-import { ArrowUpRight, IconClose, IconStar } from '../../Svgs'
+import { IconArrowExternal, IconClose, IconStar } from '../../Svgs'
 import Button from '../../Button'
 import DiscountCoupons from '../DiscountCoupons'
 
@@ -96,7 +96,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                     <Button url={product.url} isExternal>
                       <>
                         Amazon
-                        <ArrowUpRight />
+                        <IconArrowExternal />
                       </>
                     </Button>
                   )}
@@ -104,7 +104,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                     <Button url={product.url_2} isExternal>
                       <>
                         Mercado Livre
-                        <ArrowUpRight />
+                        <IconArrowExternal />
                       </>
                     </Button>
                   )}
@@ -112,7 +112,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                     <Button url={product.url_3} isExternal>
                       <>
                         AliExpress
-                        <ArrowUpRight />
+                        <IconArrowExternal />
                       </>
                     </Button>
                   )}

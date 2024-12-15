@@ -5,6 +5,7 @@ export default function Posts() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,14 +51,22 @@ export default function Posts() {
       {data &&
         data.slice(0, 3).map((item: any, index: number) => (
           <li key={index}>
-            <a href={item.url} target="_blank" rel="noopener noreferrer">
-              {/* <figure>
-                <img src={item.cover_image} width="200px"></img>
-              </figure> */}
-              {/* <p className="posts-data">{item.readable_publish_date}</p> */}
-
+            <figure></figure>
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              className={hoveredIndex === index ? Styles.active : Styles.link}>
               <div>
-                <span>{index + 1}</span>
+                <span>
+                  {hoveredIndex === index ? (
+                    <div className={Styles.shape}></div>
+                  ) : (
+                    index + 1
+                  )}
+                </span>
               </div>
 
               <div>

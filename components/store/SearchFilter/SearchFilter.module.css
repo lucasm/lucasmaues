@@ -99,9 +99,11 @@
   /* background: yellow; */
 }
 .dropdown svg {
-  top: 0.3rem;
-  right: 0.5rem;
+  top: 0.6rem;
+  right: 0.6rem;
   position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
 }
 .dropdown svg path,
 .buttonSearch svg path,

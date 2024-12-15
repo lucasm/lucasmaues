@@ -2,7 +2,7 @@ import Button from '../components/Button'
 import PageLayout from '../components/PageLayout'
 import PatreonCheck from '../components/PatreonCheck'
 import SvgAnimateMentorship from '../components/SvgAnimateMentorship'
-import { ArrowUpRight } from '../components/Svgs'
+import { IconArrowExternal } from '../components/Svgs'
 import { ROUTES } from '../routes/routes'
 
 export default function PageMentorship() {
@@ -17,7 +17,7 @@ export default function PageMentorship() {
               Desde 2017, atuo com Engenharia de Software, Web e Frontend. Sou
               procurado por profissionais e estudantes que buscam orientação
               para evoluir na carreira de TI. O objetivo da mentoria é você
-              atingir os seus objetivos. E fim.
+              atingir os seus objetivos.
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function PageMentorship() {
               <Button url="https://patreon.com/lucasm">
                 <>
                   Agendar
-                  <ArrowUpRight />
+                  <IconArrowExternal />
                 </>
               </Button>
 

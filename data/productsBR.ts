@@ -84,7 +84,7 @@ export const productsBR = [
     title: 'Echo Dot 5 Alexa',
     stars: 4.8,
     description:
-      '"Alexa, toca minha playlist pop punk". Caixinha de som com IA. Realmente uma joia. Toca música, da informações gerais e conversa. É possível conectar outros dispositivos para controlar por voz.',
+      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações gerais e conversa. É possível conectar outros dispositivos para controlar por voz, como: TV, Ar Condicionado, Lâmpadas, etc.',
     url: 'https://amzn.to/45jAJFL',
     url_2: 'https://mercadolivre.com/sec/2SZkXYs',
     image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
@@ -223,7 +223,7 @@ export const productsBR = [
     title: 'Abajur Luminária Pixar',
     stars: 4.8,
     description:
-      'Abajur com braço articulado, base para mesa e agarrador. Estilo Pixar.',
+      'Abajur com braço articulado, base para mesa e agarrador. Estilo Pixar. Bonito, simples e eficiente. Você pode combinar com uma lâmpada inteligente.',
     url: 'https://amzn.to/4crKlD3',
     url_2: 'https://mercadolivre.com/sec/1DoNpyN',
     image: 'https://m.media-amazon.com/images/I/510SeRtQxzL._AC_SX679_.jpg',
@@ -251,7 +251,7 @@ export const productsBR = [
     title: 'Ar Condicionado Split Inverter Samsung WindFree 9.000 BTUs Frio',
     stars: 4.6,
     description:
-      'Ar-condicionado com tecnologia WindFree (sem vento) e com controle via Wi-Fi e Alexa. Calcula gasto energético. Um dos mais eficientes em energia segundo Inmetro. Ideal para qualquer ambiente.',
+      'Ar-condicionado super eficiente econômico. Com tecnologia WindFree (sem vento, que na verdade é vento leve sem barulhos). Conexão com Alexa e Wi-Fi. Calcula o gasto energético. Um dos mais eficientes em energia segundo Inmetro. Ideal para qualquer ambiente.',
     url: 'https://amzn.to/4dVvMqV',
     url_2: 'https://mercadolivre.com/sec/2T7wpW9',
     image: 'https://m.media-amazon.com/images/I/51Ap48E9JDL._AC_SX679_.jpg',
@@ -261,7 +261,7 @@ export const productsBR = [
     title: 'Monitores Dell 4K, UHD e Full HD',
     stars: 4.8,
     description:
-      'A Dell é referência em monitores de qualidade. Com resolução 4K, UHD e Full HD. Ideais para trabalhar e jogar. Com garantia e suporte pós-venda elogiado.',
+      'A Dell é referência em monitores de qualidade. Com resolução 4K, UHD e Full HD. Ideais para trabalhar e jogar. Com garantia e suporte pós-venda elogiado. Eu só compro monitores Dell.',
     url: 'https://amzn.to/4a7Osln',
     image:
       'https://m.media-amazon.com/images/I/81qinbve0BL.__AC_SX300_SY300_QL70_ML2_.jpg',

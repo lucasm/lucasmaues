@@ -7,6 +7,12 @@
   margin: 0;
   padding: 0;
 }
+.posts svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: var(--color-w-text);
+}
+
 .posts h3 {
   font-size: var(--font-size-4);
   padding: 0 0 1.5rem;
@@ -19,19 +25,21 @@
 .posts span {
   position: relative;
   font-size: var(--font-size-7);
+  font-weight: bold;
   border-radius: var(--radius-big);
   background: var(--color-b-fixed);
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 1.5rem;
+  width: 1.5rem;
   display: flex;
   justify-content: center;
   color: var(--color-w);
   align-items: center;
   margin-bottom: 1rem;
+  transition: var(--transition);
 }
 .posts figure {
   background: var(--color-w);
-  display: none;
+  /* display: none; */
 }
 .posts a {
   float: left;
@@ -44,6 +52,34 @@
 .posts a:focus h3 {
   text-decoration: underline;
 }
+.shape {
+  content: '';
+  position: relative;
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--color-w);
+  animation: shapeAnimation 3s linear infinite;
+}
+
+/* Definindo a animação */
+@keyframes shapeAnimation {
+  0%,
+  33.33% {
+    clip-path: inset(0); /* Quadrado */
+    border-radius: 0; /* Sem bordas arredondadas */
+  }
+  33.34%,
+  66.66% {
+    clip-path: circle(50% at 50% 50%); /* Círculo */
+    border-radius: 50%; /* Para suportar navegadores antigos */
+  }
+  66.67%,
+  100% {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Triângulo */
+    border-radius: 0;
+  }
+}
+
 .posts li {
   padding: 0;
 }

@@ -55,7 +55,7 @@ export default function Home() {
               </p>
 
               <p>
-                My work positively impact millions of users. And drive revenue
+                My work positively impact millions of users — and drive revenue
                 growth and operational efficiency in every company I've
                 contributed to. I'm proud of these achievements.
               </p>
