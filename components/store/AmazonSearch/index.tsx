@@ -67,7 +67,7 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
                   src={item?.Images?.Primary?.Large?.URL}
                   alt={item?.ItemInfo?.Title?.DisplayValue}
                 />
-                <h3>{item?.ItemInfo?.Title?.DisplayValue}</h3>
+                <h2>{item?.ItemInfo?.Title?.DisplayValue}</h2>
               </a>
             </li>
           ))}
@@ -77,7 +77,7 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
               target="_blank"
               rel="noreferrer">
               <IconAmazon />
-              <h3>Ver mais "{keyword}" na Amazon</h3>
+              <h2>Ver mais "{keyword}" na Amazon</h2>
             </a>
           </li>
         </ul>
