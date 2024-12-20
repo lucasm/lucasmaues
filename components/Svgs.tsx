@@ -157,7 +157,7 @@ export const IconSearch = () => (
   </svg>
 )
 export const IconClose = () => (
-  <svg width="20" height="20" fill="none" className="svg">
+  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       stroke="currentColor"
       strokeWidth="2"
