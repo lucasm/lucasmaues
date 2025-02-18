@@ -87,60 +87,62 @@ export default function SearchFilter({
 
   return (
     <div className={Style.container} id="products">
-      <div className={Style.containerInput}>
-        {/* Input busca */}
-        <div className={Style.searchBar}>
-          <input
-            ref={refInput}
-            type="text"
-            placeholder="Buscar"
-            value={searchTerm}
-            onChange={handleSearchChange}
-            className={Style.searchInput}
-          />
+      <div className={Style.containerSearchFilter}>
+        <div className={Style.containerInput}>
+          {/* Input busca */}
+          <div className={Style.searchBar}>
+            <input
+              ref={refInput}
+              type="text"
+              placeholder="Buscar"
+              value={searchTerm}
+              onChange={handleSearchChange}
+              className={Style.searchInput}
+            />
 
-          {isButtonVisible && (
-            <button
-              className={Style.buttonSearch}
-              onClick={focusInput}
-              aria-label="Buscar">
-              <IconSearch />
-            </button>
-          )}
+            {isButtonVisible && (
+              <button
+                className={Style.buttonSearch}
+                onClick={focusInput}
+                aria-label="Buscar">
+                <IconSearch />
+              </button>
+            )}
 
-          {/* Botão reset */}
-          {isResetVisible && (
-            <button
-              className={Style.buttonClear}
-              onClick={resetAll}
-              aria-label="Limpar">
-              <IconClose />
-            </button>
-          )}
+            {/* Botão reset */}
+            {isResetVisible && (
+              <button
+                className={Style.buttonClear}
+                onClick={resetAll}
+                aria-label="Limpar">
+                <IconClose />
+              </button>
+            )}
+          </div>
         </div>
+
+        {/* Select categorias */}
+        {!isEmptySearch && (
+          <div className={Style.dropdown}>
+            <label htmlFor="category" className={Style.label}>
+              Selecione a categoria:
+            </label>
+            <select
+              value={currentCategory}
+              onChange={handleCategoryChange}
+              className={Style.select}
+              id="category">
+              <option value="Todos">Todos</option>
+              <option value="Eletrônicos">Eletrônicos</option>
+              <option value="Acessórios">Acessórios</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Livros">Livros</option>
+            </select>
+
+            <IconChevronDown />
+          </div>
+        )}
       </div>
-
-      {/* Select categorias */}
-      {!isEmptySearch && (
-        <div className={Style.dropdown}>
-          <label htmlFor="category" className={Style.label}>
-            Selecione a categoria:
-          </label>
-          <select
-            value={currentCategory}
-            onChange={handleCategoryChange}
-            className={Style.select}
-            id="category">
-            <option value="Todos">Todos</option>
-            <option value="Eletrônicos">Eletrônicos</option>
-            <option value="Acessórios">Acessórios</option>
-            <option value="Saúde">Saúde</option>
-            <option value="Livros">Livros</option>
-          </select>
-
-          <IconChevronDown />
-        </div>
-      )}
 
       {isEmptySearch && (
         <AmazonSearch keyword={searchTerm} onReset={resetAll} />
