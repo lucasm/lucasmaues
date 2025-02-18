@@ -1,6 +1,10 @@
 .container {
   width: 100%;
-  margin: 2rem auto 2rem;
+  margin: 0 auto 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .containerInput {
@@ -9,9 +13,9 @@
   gap: 1.25rem;
   justify-content: center;
   align-items: center;
-  bottom: 2rem;
-  width: 500px;
-  left: calc(50% - 250px); /* Centraliza horizontalmente com base na largura */
+  width: 400px;
+  height: 3rem;
+  /* left: calc(50% - 250px); Centraliza horizontalmente com base na largura */
   background: transparent;
   padding: 0;
   border-radius: 10rem;
@@ -48,12 +52,12 @@
 }
 
 .searchInput {
-  width: 500px;
+  width: 400px;
   padding: 0 3.5rem 0 2rem;
   border: none;
   border-radius: var(--radius-big);
   height: 4rem;
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-6);
   background: transparent;
   color: var(--color-b);
   transition: all var(--easingDecelerate);
@@ -96,13 +100,11 @@
 }
 
 .dropdown {
-  position: absolute;
-  right: 4rem;
-  /* background: yellow; */
+  position: relative;
 }
 .dropdown svg {
-  top: 0.65rem;
-  right: 0.6rem;
+  top: 1.2rem;
+  right: 0.75rem;
   position: absolute;
   width: 0.8rem;
   height: 0.8rem;
@@ -115,9 +117,12 @@
 
 .select {
   width: auto;
-  height: 2rem;
+  height: 3rem;
   padding: 0 2.5rem 0 1rem;
-  font-size: 1rem;
+  font-size: var(--font-size-6);
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: -0.025rem;
   color: var(--color-b);
   border: 1px solid var(--color-b);
   border-radius: var(--radius-big);
@@ -139,10 +144,8 @@
     margin-top: 1rem;
   }
   .containerInput {
-    bottom: 1rem;
     gap: 1rem;
     width: 300px;
-    left: calc(50% - 150px);
   }
   .searchInput {
     width: 300px;
@@ -153,7 +156,6 @@
 
   .searchInput {
     padding: 0 3.25rem 0 1.5rem;
-    font-size: var(--font-size-6);
   }
 
   .buttonSearch,

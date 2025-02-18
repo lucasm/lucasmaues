@@ -118,29 +118,29 @@ export default function SearchFilter({
             </button>
           )}
         </div>
-
-        {/* Select categorias */}
-        {!isEmptySearch && (
-          <div className={Style.dropdown}>
-            <label htmlFor="category" className={Style.label}>
-              Selecione a categoria:
-            </label>
-            <select
-              value={currentCategory}
-              onChange={handleCategoryChange}
-              className={Style.select}
-              id="category">
-              <option value="Todos">Todos</option>
-              <option value="Eletrônicos">Eletrônicos</option>
-              <option value="Acessórios">Acessórios</option>
-              <option value="Saúde">Saúde</option>
-              <option value="Livros">Livros</option>
-            </select>
-
-            <IconChevronDown />
-          </div>
-        )}
       </div>
+
+      {/* Select categorias */}
+      {!isEmptySearch && (
+        <div className={Style.dropdown}>
+          <label htmlFor="category" className={Style.label}>
+            Selecione a categoria:
+          </label>
+          <select
+            value={currentCategory}
+            onChange={handleCategoryChange}
+            className={Style.select}
+            id="category">
+            <option value="Todos">Todos</option>
+            <option value="Eletrônicos">Eletrônicos</option>
+            <option value="Acessórios">Acessórios</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Livros">Livros</option>
+          </select>
+
+          <IconChevronDown />
+        </div>
+      )}
 
       {isEmptySearch && (
         <AmazonSearch keyword={searchTerm} onReset={resetAll} />

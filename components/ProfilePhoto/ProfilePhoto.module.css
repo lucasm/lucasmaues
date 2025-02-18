@@ -15,8 +15,8 @@
 }
 #profile svg {
   position: absolute;
-  top: -2rem;
-  left: -3.5rem;
+  top: -1.5rem;
+  left: -2.5rem;
   width: 8rem;
   height: 8rem;
   z-index: -1;
@@ -41,10 +41,10 @@
     height: 8rem;
   }
   #profile svg {
-    top: -6rem;
-    left: -8rem;
-    width: 18rem;
-    height: 18rem;
+    top: -4rem;
+    left: -5rem;
+    width: 16rem;
+    height: 16rem;
     animation: rotate 20s linear infinite;
   }
 }

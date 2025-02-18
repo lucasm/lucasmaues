@@ -13,7 +13,7 @@ const SvgAnimateMentorship = () => {
             dominantBaseline="middle"
             textAnchor="middle"
             data-leia-me="✦ Você decifrou a metáfora do código! Resolva sempre o problema primeiro! ✦">
-            Problem
+            Código(Problema)
           </text>
         </svg>
       </figure>
