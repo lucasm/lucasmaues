@@ -85,7 +85,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
               <div>
                 <h2>{product.title}</h2>
 
-                <h3>Meu review</h3>
+                <h3>Review</h3>
 
                 <p>{product.description}</p>
 
