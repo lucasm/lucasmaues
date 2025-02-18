@@ -16,8 +16,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Senior Frontend Developer from Brazil</h1>
-
+                <h1>Hello, I'm a Senior Frontend Developer</h1>
                 <Links />
               </div>
             </div>
@@ -46,8 +45,8 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Menezes, a Senior Frontend Developer from
-                Brazil.
+                Hello, I'm Lucas Menezes, a Senior Frontend Developer working
+                remote from Brazil.
               </p>
               <p>
                 Since 2017, I've been coding Web Applications, E-Commerces,
@@ -64,10 +63,7 @@ export default function Home() {
                 contributed to. I'm proud of these achievements.
               </p>
 
-              <p>
-                I love travel, new challenges, open source, and açaí. Let's
-                make!
-              </p>
+              <p>I love travel, new challenges, and open source. Let's make!</p>
             </div>
           </div>
 
