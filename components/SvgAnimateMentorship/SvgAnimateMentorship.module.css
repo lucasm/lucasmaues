@@ -16,7 +16,6 @@
 }
 .figure1 svg:hover {
   fill: rgba(0, 0, 0, 0.25); /* Cor de preenchimento ao passar o mouse */
-  cursor: none;
 }
 
 .figure1 svg text {
