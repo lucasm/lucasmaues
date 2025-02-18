@@ -46,12 +46,16 @@ export default function Home() {
 
             <div>
               <p>
-                Hi, I'm Lucas Menezes, a Senior Frontend Engineer based in Belo
-                Horizonte, Brazil.
+                Hello, I'm Lucas Menezes, a Senior Frontend Engineer based in
+                Belo Horizonte, Brazil.
               </p>
               <p>
-                Since 2017, I've been building Web Applications, E-Commerces,
-                Websites, Mobile Apps, and now, AI Experiences.
+                Since 2017, I've been coding Web Applications, E-Commerces,
+                Websites, Mobile Apps, PWAs, and now, AI experiments. As a
+                Frontend specialist, my main focus is on Web standards, tests,
+                performance, UX, accessibility, security, analytics,
+                observability, CI/CD, APIs, and help my team to deliver the
+                best.
               </p>
 
               <p>
@@ -61,14 +65,8 @@ export default function Home() {
               </p>
 
               <p>
-                As a Frontend specialist, I focus on Web Standards, UX, Tests,
-                Performance, Accessibility, Security, PWA, Analytics,
-                Observability, APIs, and CI/CD.
-              </p>
-
-              <p>
-                I'm passionate about new challenges, açaí and open source. Let's
-                make!
+                I'm passionate about new challenges, open source, and açaí.
+                Let's make!
               </p>
             </div>
           </div>

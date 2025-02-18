@@ -19,8 +19,8 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Loja Dev',
-    description: 'Os melhores produtos tech e saudáveis. Hyper recomendados!',
+    title: 'Lojinha',
+    description: 'Os melhores produtos tech e saudáveis! Super recomendados!',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {

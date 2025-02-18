@@ -650,9 +650,12 @@ footer div {
     font-size: var(--font-size-3);
   }
 
-  #logo,
-  .aboutContainer p {
+  #logo {
     font-size: var(--font-size-4);
+  }
+
+  .aboutContainer p {
+    font-size: var(--font-size-5);
   }
 
   .cards {
@@ -681,8 +684,9 @@ footer div {
   }
 
   .cards {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding: 0 1rem;
   }
   .cards a {
     padding: 4rem;

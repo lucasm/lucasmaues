@@ -1,21 +1,21 @@
 .container {
   width: 100%;
-  margin: 3.5rem auto 0;
-  padding: 1.5rem 0 0;
+  margin: 2rem auto 2rem;
 }
 
 .containerInput {
+  position: relative;
   display: flex;
   gap: 1.25rem;
   justify-content: center;
   align-items: center;
-  position: fixed;
   bottom: 2rem;
   width: 500px;
   left: calc(50% - 250px); /* Centraliza horizontalmente com base na largura */
-  background: var(--color-y-3);
+  background: transparent;
   padding: 0;
   border-radius: 10rem;
+  border: 1px solid var(--color-b);
   z-index: 9;
 }
 
@@ -44,28 +44,27 @@
   right: 0;
 }
 .buttonClear svg {
-  color: var(--color-b-fixed);
+  color: var(--color-b);
 }
 
 .searchInput {
   width: 500px;
   padding: 0 3.5rem 0 2rem;
-  border: 1px solid transparent;
+  border: none;
   border-radius: var(--radius-big);
   height: 4rem;
   font-size: var(--font-size-5);
   background: transparent;
-  color: var(--color-b-fixed);
+  color: var(--color-b);
   transition: all var(--easingDecelerate);
 }
 .searchInput:focus {
-  border-color: var(--color-b-fixed);
   background: transparent;
   outline: none;
 }
 .searchInput::placeholder {
   font-weight: bold;
-  color: var(--color-b-fixed);
+  color: var(--color-b);
 }
 
 .buttons {
@@ -111,7 +110,7 @@
 .dropdown svg path,
 .buttonSearch svg path,
 .buttonClear svg path {
-  fill: var(--color-b-fixed) !important;
+  fill: var(--color-b) !important;
 }
 
 .select {
@@ -119,12 +118,11 @@
   height: 2rem;
   padding: 0 2.5rem 0 1rem;
   font-size: 1rem;
-  color: var(--color-b-fixed);
-  border: 1px solid transparent;
+  color: var(--color-b);
+  border: 1px solid var(--color-b);
   border-radius: var(--radius-big);
-  background: rgb(0 0 0 / 5%);
+  background: transparent;
   cursor: pointer;
-  transition: border-color 0.3s;
   appearance: none; /* Remove a aparência padrão */
   -webkit-appearance: none; /* Remove a aparência padrão em Webkit */
   -moz-appearance: none; /* Remove a aparência padrão em Firefox */
@@ -133,9 +131,7 @@
   color: var(--color-b-fixed);
 }
 .select:focus {
-  border-color: var(--color-b-fixed);
   outline: none;
-  background: transparent;
 }
 
 @media screen and (max-width: 699px) {

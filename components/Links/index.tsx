@@ -33,8 +33,8 @@ interface ILinks {
 
 const linksList: ILinks[] = [
   {
-    url: ROUTES.BLOG.path,
-    title: ROUTES.BLOG.title,
+    url: '#about',
+    title: ROUTES.ABOUT.title,
     active: true,
     onlyText: true,
     internalPage: true,

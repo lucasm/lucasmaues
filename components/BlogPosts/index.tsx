@@ -60,17 +60,17 @@ export default function Posts() {
               onMouseLeave={() => setHoveredIndex(null)}
               className={hoveredIndex === index ? Styles.active : Styles.link}>
               <div>
-                <span>
-                  {hoveredIndex === index ? (
-                    <div className={Styles.shape}></div>
-                  ) : (
-                    index + 1
-                  )}
-                </span>
-              </div>
+                <div className={Styles.title}>
+                  {/* <span>
+                    {hoveredIndex === index ? (
+                      <div className={Styles.shape}></div>
+                    ) : (
+                      index + 1
+                    )}
+                  </span> */}
+                  <h3>{item.title}</h3>
+                </div>
 
-              <div>
-                <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
             </a>

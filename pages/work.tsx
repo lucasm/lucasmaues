@@ -19,7 +19,7 @@ export default function PageWork() {
       </section>
 
       <section className="background-y">
-        <div className="container">
+        <div>
           <CardsWork />
         </div>
       </section>

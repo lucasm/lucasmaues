@@ -49,6 +49,10 @@
   padding: 0.5rem 0 0;
   width: 100%;
 }
+.product svg {
+  width: 100%;
+  max-width: 7rem;
+}
 
 @media screen and (max-width: 600px) {
   .product {

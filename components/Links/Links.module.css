@@ -76,7 +76,7 @@
     flex-direction: row;
   }
   .links .text a {
-    padding: 0 2.75rem;
+    padding: 0 2.5rem;
     font-size: var(--font-size-5);
   }
 }

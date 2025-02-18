@@ -61,6 +61,12 @@
   animation: shapeAnimation 3s linear infinite;
 }
 
+.title {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
 /* Definindo a animação */
 @keyframes shapeAnimation {
   0%,

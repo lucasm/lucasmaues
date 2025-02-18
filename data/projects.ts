@@ -11,6 +11,9 @@ import {
   SvgProjectNufen,
   SvgNaCuia,
   SvgCacba,
+  SvgCheckTest,
+  svgActDigital,
+  svgTalito,
 } from '../components/Svgs'
 
 export interface IProjects {
@@ -62,7 +65,7 @@ export const projects: IProjects[] = [
     name: 'Findto',
     url: 'https://findto.app/',
     description:
-      'Progressive Web App for an assistant of decentralized search on Web, AI and more sources.',
+      'Open source assistant of decentralized search on the Web and AI, as a Progressive Web App.',
     tags: [
       'Open Source',
       'PWA',
@@ -99,6 +102,32 @@ export const projects: IProjects[] = [
       'I contribute to the Microsoft Open Source portuguese translations of AI an Web technologies.',
     tags: ['Open Source', 'Translations', 'AI', 'Web'],
     icon: SvgMicrosoft,
+    active: true,
+  },
+  {
+    name: 'act digital',
+    url: 'https://actdigital.com/',
+    description:
+      'IT Consultant and Specialist in Frontend technologies for stand out companies.',
+    tags: ['IT', 'Consultant', 'Specialist', 'Frontend'],
+    icon: svgActDigital,
+    active: true,
+  },
+  {
+    name: 'CheckTest',
+    url: 'https://checktest.dev/',
+    description:
+      'Ope source project for testing web apps with a11y, SEO, and performance tools.',
+    tags: ['Open Source', 'Tests', 'Frontend', 'Web Apps'],
+    icon: SvgCheckTest,
+    active: true,
+  },
+  {
+    name: 'Talito AI',
+    url: 'https://talito.com.br/',
+    description: 'AI finance information chatbot for Brazil consumers.',
+    tags: ['AI', 'Frontend', 'React'],
+    icon: svgTalito,
     active: true,
   },
   {
