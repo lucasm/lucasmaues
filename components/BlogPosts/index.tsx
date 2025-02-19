@@ -5,7 +5,6 @@ export default function Posts() {
   const [data, setData] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(true)
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,18 +55,10 @@ export default function Posts() {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              className={hoveredIndex === index ? Styles.active : Styles.link}>
+              className={Styles.link}>
               <div>
+                <span>{index + 1}</span>
                 <div className={Styles.title}>
-                  {/* <span>
-                    {hoveredIndex === index ? (
-                      <div className={Styles.shape}></div>
-                    ) : (
-                      index + 1
-                    )}
-                  </span> */}
                   <h3>{item.title}</h3>
                 </div>
 

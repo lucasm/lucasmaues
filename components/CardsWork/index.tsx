@@ -1,10 +1,11 @@
 import { IProjects, projects } from '../../data/projects'
+import Style from './CardsWork.module.css'
 
 export default function CardsWork() {
   const Projects = projects.filter((project: IProjects) => project.active)
 
   return (
-    <div className="cards">
+    <div className={Style.cards}>
       {Projects?.filter((project) => project.active).map((item, index) => (
         <a
           key={index}

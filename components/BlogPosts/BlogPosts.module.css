@@ -1,4 +1,3 @@
-/* Posts */
 .posts {
   display: grid;
   grid-gap: 1.5rem;
@@ -14,7 +13,7 @@
 }
 
 .posts h3 {
-  font-size: var(--font-size-4);
+  font-size: 1.25rem;
   padding: 0 0 1.5rem;
   color: var(--color-b-fixed);
 }
@@ -24,7 +23,7 @@
 }
 .posts span {
   position: relative;
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-6);
   font-weight: bold;
   border-radius: var(--radius-big);
   background: var(--color-b-fixed);
@@ -52,38 +51,11 @@
 .posts a:focus h3 {
   text-decoration: underline;
 }
-.shape {
-  content: '';
-  position: relative;
-  width: 0.6rem;
-  height: 0.6rem;
-  background: var(--color-w);
-  animation: shapeAnimation 3s linear infinite;
-}
 
 .title {
   display: flex;
   gap: 2rem;
   align-items: center;
-}
-
-/* Definindo a animação */
-@keyframes shapeAnimation {
-  0%,
-  33.33% {
-    clip-path: inset(0); /* Quadrado */
-    border-radius: 0; /* Sem bordas arredondadas */
-  }
-  33.34%,
-  66.66% {
-    clip-path: circle(50% at 50% 50%); /* Círculo */
-    border-radius: 50%; /* Para suportar navegadores antigos */
-  }
-  66.67%,
-  100% {
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Triângulo */
-    border-radius: 0;
-  }
 }
 
 .posts li {
