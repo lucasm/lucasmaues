@@ -6,12 +6,16 @@ import { IconArrowExternal } from '../components/Svgs'
 import { ROUTES } from '../routes/routes'
 
 export default function PageMentorship() {
+  const title = ROUTES.STORE.title
+  const image = ROUTES.STORE.image
+  const description = ROUTES.STORE.description
+
   return (
-    <PageLayout title={ROUTES.MENTORSHIP.title} description="Mentorship page.">
+    <PageLayout title={title} description={description} image={image}>
       <section>
         <div className="page">
           <div className="container ">
-            <h1>{ROUTES.MENTORSHIP.title}</h1>
+            <h1>{title}</h1>
 
             <p className="description">
               Desde 2017, atuo com Engenharia de Software, Web e Frontend. Sou
