@@ -109,7 +109,6 @@ export default function SearchFilter({
               </button>
             )}
 
-            {/* Botão reset */}
             {isResetVisible && (
               <button
                 className={Style.buttonClear}

@@ -46,7 +46,7 @@ export default function Home() {
             <div>
               <p>
                 Hello, I'm Lucas Menezes, a Senior Frontend Developer working
-                remote from Brazil.
+                remotely from Brazil
               </p>
               <p>
                 Since 2017, I've been coding Web Applications, E-Commerces,
