@@ -31,16 +31,16 @@ export default function Header() {
 
   const HeaderLinks = [
     {
+      url: ROUTES.BLOG.path,
+      text: ROUTES.BLOG.title,
+    },
+    {
       url: ROUTES.STORE.path,
       text: ROUTES.STORE.title,
     },
     {
       url: ROUTES.MENTORSHIP.path,
       text: ROUTES.MENTORSHIP.title,
-    },
-    {
-      url: ROUTES.BLOG.path,
-      text: ROUTES.BLOG.title,
     },
     {
       url: ROUTES.ABOUT.path,

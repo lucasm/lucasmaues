@@ -33,8 +33,8 @@ interface ILinks {
 
 const linksList: ILinks[] = [
   {
-    url: '#about',
-    title: ROUTES.ABOUT.title,
+    url: ROUTES.BLOG.path,
+    title: ROUTES.BLOG.title,
     active: true,
     onlyText: true,
     internalPage: true,
@@ -60,21 +60,15 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://bsky.app/profile/lucasm.dev',
-    icon: <IconBluesky />,
-    title: 'Bluesky',
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    title: 'YouTube',
     active: true,
   },
   {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
     title: 'GitHub',
-    active: true,
-  },
-  {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    title: 'LinkedIn',
     active: true,
   },
   {
@@ -90,16 +84,22 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    title: 'YouTube',
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    title: 'LinkedIn',
     active: true,
   },
   {
     url: 'https://wa.me/5531997038007',
     icon: <IconWhatsapp />,
     title: 'WhatsApp',
-    active: false,
+    active: true,
+  },
+  {
+    url: 'https://bsky.app/profile/lucasm.dev',
+    icon: <IconBluesky />,
+    title: 'Bluesky',
+    active: true,
   },
   {
     url: 'https://instagram.com/lucasmezs',
@@ -152,11 +152,11 @@ const Links = () => {
 
   const textLinks = linksList.filter((link) => link.onlyText)
   const iconLinks = linksList.filter((link) => !link.onlyText)
-  const limit = 7
+  const limit = 6
   const visibleIconLinks = showAll ? iconLinks : iconLinks.slice(0, limit)
 
   // só mostra o botão se tiver mais de 7 links
-  const showToggleButton = iconLinks.length > limit && false
+  const showToggleButton = iconLinks.length > limit
 
   return (
     <div>

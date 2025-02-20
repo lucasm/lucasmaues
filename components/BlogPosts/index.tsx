@@ -1,3 +1,4 @@
+import { IconArrowExternal } from '../Svgs'
 import Styles from './BlogPosts.module.css'
 import { useState, useEffect } from 'react'
 
@@ -50,20 +51,18 @@ export default function Posts() {
       {data &&
         data.slice(0, 3).map((item: any, index: number) => (
           <li key={index}>
-            <figure></figure>
+            {/* <figure></figure> */}
             <a
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
               className={Styles.link}>
-              <div>
-                <span>{index + 1}</span>
-                <div className={Styles.title}>
-                  <h3>{item.title}</h3>
-                </div>
-
-                <p>{item.description}</p>
+              {/* <span>{index + 1}</span> */}
+              <div className={Styles.title}>
+                <h3>{item.title}</h3>
               </div>
+              <p>{item.description}</p>
+              <IconArrowExternal />
             </a>
           </li>
         ))}

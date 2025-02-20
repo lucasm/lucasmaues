@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="blog" className="background-y">
+      <section id="content" className="background-y">
         <div className="container">
           <h2 className="subtitle">{ROUTES.BLOG.title}</h2>
 
