@@ -72,9 +72,9 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://dev.to/lucasm',
-    icon: <IconDev />,
-    title: 'DEV',
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    title: 'LinkedIn',
     active: true,
   },
   {
@@ -84,15 +84,9 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    title: 'LinkedIn',
-    active: true,
-  },
-  {
-    url: 'https://wa.me/5531997038007',
-    icon: <IconWhatsapp />,
-    title: 'WhatsApp',
+    url: 'https://dev.to/lucasm',
+    icon: <IconDev />,
+    title: 'DEV',
     active: true,
   },
   {
@@ -105,7 +99,13 @@ const linksList: ILinks[] = [
     url: 'https://instagram.com/lucasmezs',
     icon: <IconInstagram />,
     title: 'Instagram',
-    active: false,
+    active: true,
+  },
+  {
+    url: 'https://wa.me/5531997038007',
+    icon: <IconWhatsapp />,
+    title: 'WhatsApp',
+    active: true,
   },
   {
     url: 'https://threads.net/@lucasmezs',
