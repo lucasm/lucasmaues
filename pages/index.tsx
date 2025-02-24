@@ -56,11 +56,11 @@ export default function Home() {
               </p>
 
               <p>
-                Since 2017, I've been building Web applications, e-commerces
+                Since 2017, I've been building Web applications, e-commerce
                 platforms, and recently, AI experiments. As a Frontend
-                specialist, my main focus is on helping my team deliver
-                high-quality user experiences and implementing robust software
-                engineering practices.
+                specialist, I'm helping my team deliver high-quality user
+                experiences and implementing robust software engineering
+                practices.
               </p>
 
               <p>

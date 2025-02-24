@@ -34,7 +34,7 @@ interface ILinks {
 const linksList: ILinks[] = [
   {
     url: ROUTES.BLOG.path,
-    title: '✍🏻 Conteúdo',
+    title: '🎬 Conteúdo',
     active: true,
     onlyText: true,
     internalPage: true,
