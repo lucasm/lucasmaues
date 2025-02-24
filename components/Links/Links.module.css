@@ -56,9 +56,9 @@
 }
 
 @media only screen and (min-width: 900px) {
-  .links {
+  /* .links {
     justify-content: flex-start;
-  }
+  } */
 
   .links svg {
     width: 1.5rem;
@@ -71,10 +71,10 @@
     width: var(--height-max);
   }
 
-  .containerText {
+  /* .containerText {
     width: unset;
     flex-direction: row;
-  }
+  } */
   .links .text a {
     padding: 0 2.5rem;
     font-size: var(--font-size-5);

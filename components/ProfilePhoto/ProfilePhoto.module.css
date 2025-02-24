@@ -37,14 +37,14 @@
     margin-bottom: 4rem;
   }
   #profile img {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
   }
   #profile svg {
-    top: -4rem;
-    left: -5rem;
-    width: 16rem;
-    height: 16rem;
+    top: -2rem;
+    left: -2rem;
+    width: 10rem;
+    height: 10rem;
     animation: rotate 20s linear infinite;
   }
 }

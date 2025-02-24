@@ -34,21 +34,28 @@ interface ILinks {
 const linksList: ILinks[] = [
   {
     url: ROUTES.BLOG.path,
-    title: ROUTES.BLOG.title,
+    title: '✍🏻 Conteúdo',
     active: true,
     onlyText: true,
     internalPage: true,
   },
   {
     url: ROUTES.STORE.path,
-    title: ROUTES.STORE.title,
+    title: '🛒 Produtos Recomendados',
     active: true,
     onlyText: true,
     internalPage: true,
   },
   {
     url: ROUTES.MENTORSHIP.path,
-    title: ROUTES.MENTORSHIP.title,
+    title: '👋🏻 Mentoria Dev',
+    active: true,
+    onlyText: true,
+    internalPage: true,
+  },
+  {
+    url: '#about',
+    title: '👨🏼‍💻 Portfólio',
     active: true,
     onlyText: true,
     internalPage: true,

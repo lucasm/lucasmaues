@@ -16,7 +16,7 @@
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: 'Styrene A', sans-serif;
-  --font-size-1: 3.25rem;
+  --font-size-1: 3rem;
   --font-size-2: 2.5rem;
   --font-size-23: 2rem;
   --font-size-3: 1.75rem;
@@ -454,6 +454,7 @@ article blockquote {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 700px;
 }
 .home h1 {
   text-wrap: balance;
@@ -607,15 +608,19 @@ footer div {
   .contactContainer {
     padding: 3rem 4rem 4rem;
   }
+
+  .home h1 {
+    font-size: var(--font-size-3);
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  .home div:first-child {
+  /* .home div:first-child {
     display: flex;
     gap: 8rem;
     align-items: center;
     text-align: left;
-  }
+  } */
 
   .aboutContainer {
     grid-gap: 5rem;

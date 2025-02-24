@@ -18,10 +18,10 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              Desde 2017, atuo com Engenharia de Software, Web e Frontend. Sou
-              procurado por profissionais e estudantes que buscam orientação
-              para evoluir na carreira de TI. O objetivo da mentoria é você
-              atingir os seus objetivos.
+              Desde 2017, atuo com Engenharia de Software. Sou procurado por
+              profissionais e estudantes que buscam orientação para evoluir na
+              carreira de TI. O objetivo da mentoria é você atingir os seus
+              objetivos. E fim.
             </p>
           </div>
         </div>
