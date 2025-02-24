@@ -63,7 +63,10 @@ export default function Home() {
                 engineering practices.
               </p>
 
-              <p>I love travel, new challenges, and open source. Let's make!</p>
+              <p>
+                I love açaí, travel, new challenges, and open source. Let's
+                make!
+              </p>
             </div>
           </div>
 
