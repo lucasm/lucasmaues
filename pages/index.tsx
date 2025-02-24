@@ -17,7 +17,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Senior Frontend Developer</h1>
+                <h1>Hello, I'm a Senior Frontend Engineer.</h1>
                 <Links />
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Building positive impact</h3>
+              <h3>Building positive impact everywhere</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>
@@ -51,7 +51,7 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Menezes, a Senior Frontend Developer working
+                Hello, I'm Lucas Menezes, a Senior Software Engineer working
                 remotely from Brazil.
               </p>
 

@@ -33,16 +33,16 @@ export default function Posts() {
 
   if (error)
     return (
-      <div>
-        Failed to load posts, check
+      <p>
+        Failed to load posts, check{' '}
         <a
           href="https://dev.to/lucasm"
           target="_blank"
           rel="noopener noreferrer">
           my blog
         </a>{' '}
-        directly
-      </div>
+        directly.
+      </p>
     )
   if (loading) return <p>Loading...</p>
 
