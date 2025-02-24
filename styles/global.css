@@ -26,7 +26,7 @@
   --font-size-7: 0.75rem;
   --height-max: 3.5rem;
   --height-min: 2.75rem;
-  --transition: ease 0.25s;
+  --transition: all 0.25s ease;
   --navDrawerDurationEnterMS: 250ms;
   --easingDecelerate: cubic-bezier(0, 0, 0.2, 1);
   --max-width: 900px;
@@ -69,6 +69,7 @@ body,
 main {
   position: relative;
   height: 100%;
+  transition: all 0.5s var(--easingDecelerate);
 }
 body {
   display: block;
@@ -76,7 +77,6 @@ body {
   font-family: var(--font);
   font-size: 0;
   background: var(--color-background);
-  transition: all 0.5s var(--easingDecelerate);
 }
 header {
   position: absolute;
@@ -97,6 +97,7 @@ header .container {
   padding: 0 1.25rem;
   margin-left: -0.75rem;
   border-radius: var(--radius-big);
+  transition: var(--transition);
 }
 
 header .headerButtons {
@@ -124,10 +125,10 @@ header a:hover {
 #theme svg {
   width: 1.4rem;
   height: 1.4rem;
-  transition: rotate 0.5s;
 }
 #theme:hover svg {
   animation: rotateClockwise 0.5s;
+  transition: none;
 }
 
 @keyframes rotateClockwise {
@@ -150,7 +151,7 @@ header a:hover {
   width: 24px;
   height: 2px;
   background: var(--color-b);
-  transition: all var(--transition);
+  transition: var(--transition);
   font-size: 0;
 }
 .hamburger:before,
@@ -163,7 +164,7 @@ header a:hover {
   height: 2px;
   background: var(--color-b);
   z-index: 1;
-  transition: all var(--transition);
+  transition: var(--transition);
 }
 .hamburger:before {
   top: -6px;
@@ -310,12 +311,6 @@ a {
 button {
   cursor: pointer;
   border: none;
-}
-
-a,
-button,
-.button {
-  transition: all 0.25s ease;
 }
 
 p {
@@ -522,13 +517,6 @@ footer div {
   color: var(--color-b);
 }
 
-.svg {
-  fill: var(--color-b);
-}
-.svg-fluent {
-  stroke: var(--color-b);
-  stroke-width: 0.25;
-}
 .svg-color-translucent {
   fill: var(--color-translucent);
 }

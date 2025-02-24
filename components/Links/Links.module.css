@@ -50,9 +50,10 @@
   background: var(--color-y-3);
 }
 
-.links svg {
+.links .text svg {
   width: 20px;
   height: 20px;
+  color: var(--color-b-fixed) !important;
 }
 
 @media only screen and (min-width: 900px) {

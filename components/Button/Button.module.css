@@ -15,14 +15,22 @@
   border-radius: var(--radius-big);
   cursor: pointer;
   font-size: var(--font-size-6);
+  transition: var(--transition);
 }
 .button:hover {
   transform: scale(1.025);
 }
 
-.button svg path {
-  fill: var(--color-b-fixed);
+.button svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-b-fixed);
 }
+
+/* .button svg path {
+  fill: var(--color-b-fixed) !important;
+  stroke: var(--color-b-fixed) !important;
+} */
 
 @media screen and (min-width: 700px) {
   .button {

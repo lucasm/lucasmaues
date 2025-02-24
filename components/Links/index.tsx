@@ -18,6 +18,10 @@ import {
   IconMore,
   IconLess,
   IconThreads,
+  IconStore,
+  IconContent,
+  IconMentor,
+  IconWork,
 } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
 import PrefetchImages from '../store/PrefetchImages'
@@ -34,31 +38,35 @@ interface ILinks {
 const linksList: ILinks[] = [
   {
     url: ROUTES.BLOG.path,
-    title: '🎬 Conteúdo',
+    title: ROUTES.BLOG.title,
     active: true,
     onlyText: true,
     internalPage: true,
+    icon: <IconContent />,
   },
   {
     url: ROUTES.STORE.path,
-    title: '🛒 Produtos Recomendados',
+    title: ROUTES.STORE.title,
     active: true,
     onlyText: true,
     internalPage: true,
+    icon: <IconStore />,
   },
   {
     url: ROUTES.MENTORSHIP.path,
-    title: '👋🏻 Mentoria Dev',
+    title: ROUTES.MENTORSHIP.title,
     active: true,
     onlyText: true,
     internalPage: true,
+    icon: <IconMentor />,
   },
   {
     url: '#about',
-    title: '👨🏼‍💻 Portfólio',
+    title: 'Portfólio',
     active: true,
     onlyText: true,
     internalPage: true,
+    icon: <IconWork />,
   },
   {
     url: 'https://x.com/lucasmezs',

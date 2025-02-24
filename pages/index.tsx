@@ -5,6 +5,7 @@ import CardsWorkFeatured from '../components/CardsWorkFeatured'
 import ProfilePhoto from '../components/ProfilePhoto'
 import Button from '../components/Button'
 import { ROUTES } from '../routes/routes'
+import { IconMore } from '../components/Svgs'
 
 export default function Home() {
   return (
@@ -40,7 +41,12 @@ export default function Home() {
             <div>
               <h3>Building positive impact</h3>
 
-              <Button url={ROUTES.WORK.path}>{ROUTES.WORK.title}</Button>
+              <Button url={ROUTES.WORK.path}>
+                <>
+                  {ROUTES.WORK.title}
+                  <IconMore />
+                </>
+              </Button>
             </div>
 
             <div>

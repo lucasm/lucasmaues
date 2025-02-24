@@ -1,6 +1,7 @@
 import Button from '../components/Button'
 import PageLayout from '../components/PageLayout'
 import CardsWork from '../components/CardsWork'
+import { IconEmail, IconWhatsapp } from '../components/Svgs'
 
 export default function PageWork() {
   return (
@@ -34,9 +35,23 @@ export default function PageWork() {
             </div>
 
             <div>
-              <p>I look forward to hearing you =)</p>
+              <p>I'm looking forward to hearing from you.</p>
 
-              <Button url="mailto:hello@lucasm.dev">hello@lucasm.dev</Button>
+              <Button url="mailto:hello@lucasm.dev">
+                <>
+                  <IconEmail />
+                  hello@lucasm.dev
+                </>
+              </Button>
+
+              <div style={{ marginTop: '1rem' }} translate="no">
+                <Button url="https://wa.me/5531997038007" isExternal>
+                  <>
+                    <IconWhatsapp />
+                    WhatsApp
+                  </>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

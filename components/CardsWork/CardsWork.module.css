@@ -43,9 +43,7 @@
 .cards svg {
   width: 100%;
   height: 100%;
-}
-.card .svg {
-  fill: var(--color-b-fixed);
+  color: var(--color-b-fixed);
 }
 .cards span {
   float: left;
