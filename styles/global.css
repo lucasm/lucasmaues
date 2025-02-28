@@ -261,6 +261,7 @@ nav a {
   text-align: left;
   padding: 1rem 10vw;
   color: var(--color-b);
+  transition: var(--transition);
 }
 nav a:hover,
 nav a:focus {
@@ -446,10 +447,8 @@ article blockquote {
 }
 
 .home {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  max-width: 650px;
+  max-width: 580px;
   width: 100%;
 }
 .home h1 {
