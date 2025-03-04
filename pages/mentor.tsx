@@ -18,10 +18,9 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              Desde 2017, atuo com Engenharia de Software. Sou procurado por
-              profissionais e estudantes que buscam orientação para evoluir na
-              carreira de TI. O objetivo da mentoria é você atingir os seus
-              objetivos. E fim.
+              Desde 2017, atuo com Engenharia de Software e Frontend. Sou
+              procurado por profissionais e estudantes de TI que buscam
+              orientação para evoluir na carreira.
             </p>
           </div>
         </div>
@@ -86,7 +85,7 @@ export default function PageMentorship() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Agende sua mentoria</h3>
+              <h3>Agende sua mentoria.</h3>
             </div>
 
             <div>
@@ -95,9 +94,9 @@ export default function PageMentorship() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Videochamada + Anotações
+                Formato: Videocall + Anotações
                 <br />
-                Plataforma: Patreon
+                Pagamento: Patreon
                 <br />
                 <br />
               </p>

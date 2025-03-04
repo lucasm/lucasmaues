@@ -3,7 +3,7 @@
 }
 .containerSearchFilter {
   width: 100%;
-  margin: 0 auto 3rem;
+  margin: 0 auto 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,16 +38,18 @@
   height: 3rem;
   border-radius: 10rem;
   background: transparent;
-  fill: var(--color-b-fixed);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-b);
 }
 .buttonSearch {
   cursor: text;
 }
+.buttonSearch svg,
 .buttonClear svg {
-  color: var(--color-b);
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .searchInput {
@@ -74,22 +76,18 @@
   position: relative;
 }
 .dropdown svg {
-  top: 1.2rem;
-  right: 0.75rem;
   position: absolute;
-  width: 0.8rem;
-  height: 0.8rem;
-}
-.dropdown svg path,
-.buttonSearch svg path,
-.buttonClear svg path {
-  fill: var(--color-b) !important;
+  top: 1rem;
+  right: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-b);
 }
 
 .select {
   width: auto;
   height: 3rem;
-  padding: 0 2.5rem 0 1rem;
+  padding: 0 2.5rem 0 1.5rem;
   font-size: var(--font-size-6);
   font-family: inherit;
   color: var(--color-b);

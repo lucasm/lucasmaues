@@ -106,12 +106,16 @@
   border: none;
   background: none;
   font-size: 1.25rem;
-  height: 5rem;
-  width: 5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   cursor: pointer;
   border-radius: 100%;
   color: var(--color-b);
   z-index: 99999;
+}
+.closeButton svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @keyframes slideUp {

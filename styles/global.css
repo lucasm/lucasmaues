@@ -153,6 +153,7 @@ header a:hover {
   background: var(--color-b);
   transition: var(--transition);
   font-size: 0;
+  border-radius: 2rem;
 }
 .hamburger:before,
 .hamburger:after {
@@ -165,6 +166,7 @@ header a:hover {
   background: var(--color-b);
   z-index: 1;
   transition: var(--transition);
+  border-radius: 2rem;
 }
 .hamburger:before {
   top: -6px;

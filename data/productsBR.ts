@@ -1,6 +1,6 @@
 export const productsBR = [
   {
-    title: 'Mouse Logitech MX Vertical',
+    title: 'Logitech MX Vertical Mouse',
     stars: 4.9,
     description:
       'O melhor mouse ergonômico. Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável.',
@@ -10,7 +10,7 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Teclado Logitech MX Keys Mini',
+    title: 'Logitech MX Keys Mini Teclado',
     stars: 4.8,
     description:
       'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design da Logitech e a qualidade na construção. O que mais gosto: a tecla de função que alterna entre os dispositivos conectados e facilidade de levar ele para qualquer lugar.',
@@ -20,7 +20,7 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Garrafa Térmica Stanley Aerolight Fast Flow',
+    title: 'Stanley Aerolight Fast Flow Garrafa',
     stars: 4.9,
     description:
       'Garrafa térmica com construção sólida. Qualidade reconhecida da Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
@@ -30,7 +30,7 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'Caixa de Som Bluetooth JBL Flip 6',
+    title: 'JBL Flip 6 Bluetooth Speaker',
     stars: 4.8,
     description:
       'Caixa de som Bluetooth portátil da JBL. Ótima construção, resistência à água e bateria de longa duração. Graves, médios e agudos  equilibrados. Ideal para viagens, piscina, praia e qualquer lugar. A Flip é uma das melhores caixas de som portáteis do mercado.',
@@ -50,7 +50,7 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Mochila para Notebook Dell Pro EcoLoop',
+    title: 'Dell Pro EcoLoop Mochila',
     stars: 4.8,
     description:
       'Apenas a melhor mochila para notebooks. Super confortável, com divisões bem elaboradas (cabe 2 notebooks + caderno e objetos), feita com material reciclado do oceano (OceanCycle Certified), com resistência à água e bolsos para garrafas. Ideal para o trabalho e faculdade. Obrigado Dell.',
@@ -60,41 +60,37 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'Webcam Logitech Brio 500 ',
+    title: 'Logitech Brio 500 Webcam',
     stars: 4.8,
     description:
-      'Webcam perfeita para o home office. Qualidade de vídeo Full HD, foco automático, microfone que reduz ruídos ambientes, com protetor de privacidade e vários ajustes via software.',
+      'A webcam perfeita para o home office. Qualidade de vídeo Full HD, foco automático, microfones duplos que reduzem ruídos ambientes e protetor de privacidade. Possuí vários ajustes de melhoria, foco e estabilização de imagem via software. Com cabo USB-C.',
     url: 'https://amzn.to/4cnZe9t',
     url_2: 'https://mercadolivre.com/sec/1MTXh2w',
     image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple MacBook Air M1 13" 8GB 256GB',
-    stars: 4.8,
+    title: 'Apple MacBook Air M3 13" 8GB 256GB',
     description:
-      'Notebook da Apple com o preço acessível. Atinge duração de bateria incrível com chip M1 da arquitetura Apple Silicon. Obra prima que, mesmo com 8GB de RAM, ainda compensa para tarefas simples do dia a dia, devido a  super otimização do macOS como sistema operacional.',
-    url: 'https://amzn.to/45JUIxs',
-    url_2: 'https://mercadolivre.com/sec/1ha7uXX',
-    cupom: ['#LOJADEV500MACM1'],
-    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
+      'O notebook portátil da Apple definitivo. Ótimo desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente. Ponto alto para a portabilidade, design e a qualidade da construção. Uma obra prima!',
+    url: 'https://amzn.to/3QvbX0R',
+    image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Echo Dot 5 Alexa',
-    stars: 4.8,
+    title: 'Echo Spot Alexa',
+    stars: 4.7,
     description:
-      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações gerais e conversa. É possível conectar outros dispositivos para controlar por voz, como: TV, Ar Condicionado, Lâmpadas, etc.',
-    url: 'https://amzn.to/45jAJFL',
-    url_2: 'https://mercadolivre.com/sec/2SZkXYs',
-    image: 'https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg',
+      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
+    url: 'https://amzn.to/3LyhiRX',
+    image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Microfone HyperX Solocast',
+    title: 'HyperX Solocast',
     stars: 4.8,
     description:
-      'O melhor microfone para home office. Com qualidade de estúdio e USB-C. Ótimo custo-benefício. Ideal para streamers e podcasters. Tem uma luz indicativa e botão de liga/desliga microfone.',
+      'O melhor microfone para home office. Ótimo custo-benefício. Com qualidade de estúdio e USB-C. Ideal para chamadas de vídeo, streamers e podcasters. Possuí luz indicativa para o microfone e botão de liga/desliga individual.',
     url: 'https://amzn.to/4dkvaMl',
     url_2: 'https://mercadolivre.com/sec/32y1APi',
     image: 'https://m.media-amazon.com/images/I/61Aw6bzkFQL._AC_SX679_.jpg',
@@ -112,14 +108,17 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: ' Echo Spot 2024 com Alexa',
-    stars: 4.7,
+    title: 'Logitech Lift Vertical Mouse',
+    stars: 4.8,
     description:
-      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
-    url: 'https://amzn.to/3LyhiRX',
-    image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
+      'Mouse ergonômico e Bluetooth, porém mais compacto que o MX Master. Recomendado para quem tem mãos menores.',
+    url: 'https://amzn.to/3HKL5VS',
+    url_2: 'https://mercadolivre.com/sec/25EAYdg',
+    image:
+      'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
     category: 'Eletrônicos',
   },
+
   {
     title: 'Projetor Magcubic HY320 Full HD',
     stars: 4.5,
@@ -200,17 +199,6 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Logitech Lift Vertical',
-    stars: 4.8,
-    description:
-      'Mouse ergonômico e Bluetooth, porém mais compacto que o MX Master. Recomendado para quem tem mãos menores.',
-    url: 'https://amzn.to/3HKL5VS',
-    url_2: 'https://mercadolivre.com/sec/25EAYdg',
-    image:
-      'https://m.media-amazon.com/images/I/61OkuiCWbDL.__AC_SX300_SY300_QL70_ML2_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Fire TV Stick HD',
     stars: 4.8,
     description:
@@ -268,11 +256,14 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple MacBook Air M3 13" 8GB 256GB',
+    title: 'Apple MacBook Air M1 13" 8GB 256GB',
+    stars: 4.8,
     description:
-      'O notebook portátil da Apple definitivo. Ótimo desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente. Ponto alto para a portabilidade, design e a qualidade da construção dessa lindeza.',
-    url: 'https://amzn.to/3QvbX0R',
-    image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
+      'Notebook da Apple com o preço acessível. Atinge duração de bateria incrível com chip M1 da arquitetura Apple Silicon. Obra prima que, mesmo com 8GB de RAM, ainda compensa para tarefas simples do dia a dia, devido a  super otimização do macOS como sistema operacional.',
+    url: 'https://amzn.to/45JUIxs',
+    url_2: 'https://mercadolivre.com/sec/1ha7uXX',
+    cupom: ['#LOJADEV500MACM1'],
+    image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {

@@ -37,14 +37,6 @@ interface ILinks {
 
 const linksList: ILinks[] = [
   {
-    url: ROUTES.BLOG.path,
-    title: ROUTES.BLOG.title,
-    active: true,
-    onlyText: true,
-    internalPage: true,
-    icon: <IconContent />,
-  },
-  {
     url: ROUTES.STORE.path,
     title: ROUTES.STORE.title,
     active: true,
@@ -59,6 +51,14 @@ const linksList: ILinks[] = [
     onlyText: true,
     internalPage: true,
     icon: <IconMentor />,
+  },
+  {
+    url: ROUTES.BLOG.path,
+    title: ROUTES.BLOG.title,
+    active: true,
+    onlyText: true,
+    internalPage: true,
+    icon: <IconContent />,
   },
   {
     url: '#about',
@@ -218,6 +218,8 @@ const Links = () => {
         {showToggleButton && (
           <li>
             <button
+              type="button"
+              className={Styles.buttonMore}
               onClick={handleToggle}
               aria-expanded={showAll ? 'true' : 'false'}
               aria-label={showAll ? 'Show less' : 'Show more'}>

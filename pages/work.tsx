@@ -31,7 +31,7 @@ export default function PageWork() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Let's talk about your project</h3>
+              <h3>Let's talk about your project.</h3>
             </div>
 
             <div>

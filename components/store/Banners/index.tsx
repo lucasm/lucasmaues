@@ -24,7 +24,7 @@ export default function Banners() {
       link: 'https://www.meliuz.com.br/i/ref_lucasmauess',
       external: true,
       title: 'Receba R$ 5,00 de volta',
-      subtitle: 'Ative o Méliuz e receba dinheiro de volta nas compras online.',
+      subtitle: 'Ative o Méliuz para receber dinheiro de volta.',
       image: <IconGift />,
     },
   ]

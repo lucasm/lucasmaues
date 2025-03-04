@@ -29,6 +29,10 @@
   background: var(--color-translucent);
 }
 
+.buttonMore svg {
+  color: var(--color-b);
+}
+
 .containerText {
   gap: 0.75rem;
   width: 100%;

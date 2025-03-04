@@ -89,7 +89,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
 
                 <p>{product.description}</p>
 
-                <h3>Compre:</h3>
+                <h3>Encontre em:</h3>
 
                 <div className={Style.containerButtons}>
                   {product.url && (

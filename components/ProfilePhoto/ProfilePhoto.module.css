@@ -3,12 +3,12 @@
 }
 #profile {
   position: relative;
-  margin: 0 auto 2rem;
+  margin: -2rem auto 2rem;
   display: flex;
 }
 #profile img {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   background: var(--color-translucent);
   border-radius: 50%;
   z-index: 2;
@@ -16,11 +16,14 @@
 #profile svg {
   position: absolute;
   top: -1.5rem;
-  left: -2.5rem;
-  width: 8rem;
-  height: 8rem;
+  left: -2rem;
+  width: 7rem;
+  height: 7rem;
   z-index: -1;
-  animation: unset;
+}
+
+.animate {
+  animation: rotate 2s ease-in-out;
 }
 
 @keyframes rotate {
@@ -34,7 +37,7 @@
 
 @media screen and (min-width: 700px) {
   #profile {
-    margin-bottom: 4rem;
+    margin: 0 auto 3rem;
   }
   #profile img {
     width: 6rem;
@@ -44,7 +47,6 @@
     top: -2rem;
     left: -2rem;
     width: 10rem;
-    height: 10rem;
-    animation: rotate 20s linear infinite;
+    height: 9rem;
   }
 }
