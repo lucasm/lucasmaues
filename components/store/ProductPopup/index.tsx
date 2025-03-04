@@ -85,10 +85,6 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
               <div>
                 <h2>{product.title}</h2>
 
-                <h3>Minha avaliação:</h3>
-
-                <p>{product.description}</p>
-
                 <h3>Encontre em:</h3>
 
                 <div className={Style.containerButtons}>
@@ -117,6 +113,10 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                     </Button>
                   )}
                 </div>
+
+                <h3>Minha avaliação:</h3>
+
+                <p>{product.description}</p>
 
                 <DiscountCoupons coupons={product?.cupom} />
               </div>

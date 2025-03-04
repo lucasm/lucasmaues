@@ -112,6 +112,10 @@
   border-radius: 100%;
   color: var(--color-b);
   z-index: 99999;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .closeButton svg {
   width: 1.5rem;
@@ -149,17 +153,16 @@
 
 @media screen and (max-width: 900px) {
   .popupContent {
-    padding: 2rem;
-    padding-top: 4rem;
-    max-width: 100vw;
-    max-height: 100vh;
-    height: 100vh;
-    border-radius: 0;
+    padding: 4rem 2rem;
   }
   .closeButton {
+    position: fixed;
+    right: 8vw;
+    top: 2rem;
     margin: 1rem;
     width: 2rem;
     height: 2rem;
+    background: var(--color-w);
   }
 
   .productDetail {
