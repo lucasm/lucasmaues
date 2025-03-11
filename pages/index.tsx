@@ -17,7 +17,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Senior Frontend Engineer.</h1>
+                <h1>Hello, I'm a Frontend Software Engineer.</h1>
                 <Links />
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Building positive impact.</h3>
+              <h3>Building positive impact</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>
@@ -51,27 +51,21 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Menezes, a Senior Software Engineer working
+                Hello, I'm Lucas Menezes, a Frontend Software Engineer working
                 remotely from Brazil.
               </p>
 
               <p>
                 My work positively impact millions of users/day and millions
-                transactions/day in BRL currency. I'm proud to have driven
-                revenue growth at every company I've worked for.
+                transactions/day in BRL currency. I'm very proud of this, and to
+                have driven revenue growth at every company I've worked for.
               </p>
 
               <p>
                 Since 2017, I've been building Web applications, e-commerce
                 platforms, and recently, AI experiments. As a Frontend
-                specialist, I'm helping my team deliver high-quality user
-                experiences and implementing robust software engineering
-                practices.
-              </p>
-
-              <p>
-                I love açaí, travel, new challenges, and open source. Let's
-                make!
+                specialist, I'm helping my team deliver high-quality UX and
+                implementing robust software engineering practices.
               </p>
             </div>
           </div>

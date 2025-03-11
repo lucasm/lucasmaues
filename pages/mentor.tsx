@@ -18,9 +18,11 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              Desde 2017, atuo com Engenharia de Software e Frontend. Sou
-              procurado por profissionais e estudantes de TI que buscam
-              orientação para evoluir na carreira.
+              A mentoria é um espaço de crescimento e self aprendizado. Você não
+              precisa sofrer para evoluir. Mas precisa se esforçar. Desde 2017,
+              atuo com Engenharia de Software e Frontend e sou procurado por
+              profissionais e estudantes de TI que buscam orientação para
+              avançar na carreira.
             </p>
           </div>
         </div>
@@ -94,9 +96,9 @@ export default function PageMentorship() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Videocall + Anotações
+                Formato: Google Meet + Notion
                 <br />
-                Pagamento: Patreon
+                Valores e pagamento: Patreon
                 <br />
                 <br />
               </p>

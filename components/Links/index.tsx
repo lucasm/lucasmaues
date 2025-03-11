@@ -93,15 +93,15 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://codepen.io/lucasm',
-    icon: <IconCodepen />,
-    title: 'CodePen',
-    active: true,
-  },
-  {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
     title: 'DEV',
+    active: true,
+  },
+  {
+    url: 'https://codepen.io/lucasm',
+    icon: <IconCodepen />,
+    title: 'CodePen',
     active: true,
   },
   {
@@ -167,7 +167,7 @@ const Links = () => {
 
   const textLinks = linksList.filter((link) => link.onlyText)
   const iconLinks = linksList.filter((link) => !link.onlyText)
-  const limit = 6
+  const limit = 5
   const visibleIconLinks = showAll ? iconLinks : iconLinks.slice(0, limit)
 
   // só mostra o botão se tiver mais de 7 links
