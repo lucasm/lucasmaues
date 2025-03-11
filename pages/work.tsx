@@ -31,11 +31,11 @@ export default function PageWork() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Let's talk about your project.</h3>
+              <h3>Let's talk about your project</h3>
             </div>
 
             <div>
-              <p>Send your message:</p>
+              <p>Say hello</p>
 
               <Button url="mailto:hello@lucasm.dev">
                 <>
