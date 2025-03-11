@@ -75,15 +75,15 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    title: 'YouTube',
-    active: true,
-  },
-  {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
     title: 'GitHub',
+    active: true,
+  },
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    title: 'YouTube',
     active: true,
   },
   {
@@ -167,7 +167,7 @@ const Links = () => {
 
   const textLinks = linksList.filter((link) => link.onlyText)
   const iconLinks = linksList.filter((link) => !link.onlyText)
-  const limit = 5
+  const limit = 4
   const visibleIconLinks = showAll ? iconLinks : iconLinks.slice(0, limit)
 
   // só mostra o botão se tiver mais de 7 links
