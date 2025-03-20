@@ -18,7 +18,7 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              A mentoria é um espaço de crescimento e self aprendizado. Você não
+              Mentoria é um espaço de crescimento e aprendizado. Você não
               precisa sofrer para evoluir. Mas precisa se esforçar. Desde 2017,
               atuo com Engenharia de Software e Frontend e sou procurado por
               profissionais e estudantes de TI que buscam orientação para
@@ -65,16 +65,18 @@ export default function PageMentorship() {
             <h3>Benefícios:</h3>
 
             <p>
-              - Orientação personalizada com plano de ação
+              - Orientação personalizada
               <br />
               - Aprendizado prático (hard skills)
               <br />
               - Desenvolvimento comportamental (soft skills)
               <br />
-              - Feedback, onde falo o que você PRECISA ouvir para evoluir, não o
-              que quer ouvir para agradar o ego
+              - Plano de ação para alcançar os seus objetivos
               <br />
-              - Avaliação de resultados alcançados
+              - Feedback, onde falo o que você PRECISA ouvir para evoluir, não o
+              que quer ouvir (sem egos)
+              <br />
+              - Avaliação dos resultados alcançados
               <br />- Independência, você no controle, sem precisar de mim
             </p>
           </article>
@@ -87,7 +89,7 @@ export default function PageMentorship() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Agende sua mentoria.</h3>
+              <h3>Agende sua mentoria</h3>
             </div>
 
             <div>
@@ -96,9 +98,9 @@ export default function PageMentorship() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Google Meet + Notion
+                Formato: Videochamada + Plano de ação
                 <br />
-                Valores e pagamento: Patreon
+                Pagamento e valores: Patreon
                 <br />
                 <br />
               </p>

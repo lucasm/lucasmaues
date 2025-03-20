@@ -17,7 +17,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Frontend Software Engineer.</h1>
+                <h1>Hello, I'm a Senior Frontend Engineer.</h1>
                 <Links />
               </div>
             </div>
@@ -51,21 +51,26 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Menezes, a Frontend Software Engineer working
-                remotely from Brazil.
+                Hello, I'm Lucas Menezes, a Senior Frontend Software Engineer
+                from Brazil.
               </p>
 
               <p>
                 My work positively impact millions of users/day and millions
-                transactions/day in BRL currency. I'm very proud of this, and to
-                have driven revenue growth at every company I've worked for.
+                transactions/day in BRL currency. I have driven revenue growth
+                at every company I've worked for. I'm very proud of this!
               </p>
 
               <p>
-                Since 2017, I've been building Web applications, e-commerce
+                Since 2017, I've been building Web applications, E-commerce
                 platforms, and recently, AI experiments. As a Frontend
                 specialist, I'm helping my team deliver high-quality UX and
                 implementing robust software engineering practices.
+              </p>
+
+              <p>
+                I'm passionate about learning and sharing knowledge. I've been
+                creating projects, and mentoring developers.
               </p>
             </div>
           </div>
