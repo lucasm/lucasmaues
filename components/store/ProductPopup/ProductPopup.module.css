@@ -101,18 +101,17 @@
 
 .closeButton {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1rem;
+  right: 1rem;
   border: none;
-  background: none;
   font-size: 1.25rem;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   cursor: pointer;
   border-radius: 100%;
-  color: var(--color-b);
+  color: var(--color-b-fixed);
+  background: var(--color-w);
   z-index: 99999;
-  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +161,6 @@
     margin: 1rem;
     width: 2rem;
     height: 2rem;
-    background: var(--color-w);
   }
 
   .productDetail {

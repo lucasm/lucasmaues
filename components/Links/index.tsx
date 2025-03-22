@@ -56,7 +56,7 @@ const linksList: ILinks[] = [
     icon: <IconMentor />,
   },
   {
-    url: 'https://findto.app/pt-BR/search/job',
+    url: 'https://findto.app/pt-BR/search/job?utm_source=lucasm.dev',
     title: 'Findto - Busca de Empregos',
     active: true,
     onlyText: true,
@@ -64,14 +64,14 @@ const linksList: ILinks[] = [
   },
 
   {
-    url: 'https://checktest.dev/',
+    url: 'https://checktest.dev/?utm_source=lucasm.dev',
     title: 'Checktest - Teste seu App',
     active: true,
     onlyText: true,
     icon: IconCheckTest,
   },
   {
-    url: 'https://talito.com.br/',
+    url: 'https://talito.com.br/?utm_source=lucasm.dev',
     title: 'Talito - IA para Finanças',
     active: true,
     onlyText: true,
