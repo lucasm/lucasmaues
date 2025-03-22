@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
 
       <p>
-        <Link href="/privacy">Privacy</Link>
+        <Link href="/legal">Privacy & Terms</Link>
       </p>
     </div>
   </footer>

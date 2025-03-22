@@ -17,7 +17,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Senior Frontend Engineer.</h1>
+                <h1>Hello, I'm a Frontend Engineer 👋🏻</h1>
                 <Links />
               </div>
             </div>
@@ -69,8 +69,8 @@ export default function Home() {
               </p>
 
               <p>
-                I'm passionate about learning and sharing knowledge. I've been
-                creating projects, and mentoring developers.
+                I'm passionate about learning and sharing. I've been creating
+                many things on the road. Welcome!
               </p>
             </div>
           </div>

@@ -15,10 +15,10 @@
 }
 #profile svg {
   position: absolute;
-  top: -1.5rem;
+  top: -1rem;
   left: -2rem;
   width: 7rem;
-  height: 7rem;
+  height: 6rem;
   z-index: -1;
 }
 

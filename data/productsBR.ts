@@ -3,11 +3,20 @@ export const productsBR = [
     title: 'Logitech MX Vertical Mouse',
     stars: 4.9,
     description:
-      'O melhor mouse ergonômico. Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth em 3 dispositivos, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável.',
+      'O melhor mouse ergonômico que já usei na vida. Pegada superior ao MX Master. Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Eletrônicos',
+  },
+  {
+    title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
+    stars: 4.8,
+    description:
+      'O livro mais querido! Aprender como funcionam os algoritmos e as estruturas de dados na Computação, é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python. Recomendado para quem está começando na programação ou quer revisar conceitos.',
+    url: 'https://amzn.to/400hrUR',
+    image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
+    category: 'Livros',
   },
   {
     title: 'Logitech MX Keys Mini Teclado',
@@ -18,6 +27,15 @@ export const productsBR = [
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Eletrônicos',
+  },
+  {
+    title: 'O Programador Pragmático: de Aprendiz a Mestre',
+    stars: 4.7,
+    description:
+      'Clássico para todo programador. Dicas e principais armadilhas do desenvolvimento de software. O que mais gosto desse livro é como ele aborda a importância da comunicação e do trabalho em equipe. Com exemplos práticos e fáceis de entender.',
+    url: 'https://amzn.to/3MbyOw9',
+    image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
+    category: 'Livros',
   },
   {
     title: 'Stanley Aerolight Fast Flow Garrafa',
@@ -352,15 +370,6 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
-    stars: 4.8,
-    description:
-      'Aprender como funcionam os algoritmos e as estruturas de dados na Computação, é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python. Recomendado para quem está começando na programação ou quer revisar conceitos.',
-    url: 'https://amzn.to/400hrUR',
-    image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
-    category: 'Livros',
-  },
-  {
     title: 'Estruturas de Dados e Algoritmos com JavaScript',
     stars: 4.9,
     description:
@@ -404,15 +413,6 @@ export const productsBR = [
       'Vai trabalhar na gringa meu fi, arrebenta na entrevista, crackeia tuuuudo!!!',
     url: 'https://amzn.to/46EDYZL',
     image: 'https://m.media-amazon.com/images/I/61mIq2iJUXL._SY522_.jpg',
-    category: 'Livros',
-  },
-  {
-    title: 'O Programador Pragmático: de Aprendiz a Mestre',
-    stars: 4.7,
-    description:
-      'Clássico para todo programador. Dicas e principais armadilhas do desenvolvimento de software.',
-    url: 'https://amzn.to/3MbyOw9',
-    image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
     category: 'Livros',
   },
   {
@@ -568,15 +568,15 @@ export const productsBR = [
     image: 'https://m.media-amazon.com/images/I/717zRJ20C2L._SY522_.jpg',
     category: 'Livros',
   },
-  {
-    title: 'O Capital no Século XXI',
-    stars: 4.6,
-    description:
-      'Thomas Piketty nos mostra, com dados, como a desigualdade é inerente ao capitalismo. E como a concentração de riqueza é um problema para a democracia. O que podemos fazer para mudar isso? Esse livro não é sobre Marxismo, mas sobre a realidade. Entender a relação entre capital, riqueza e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política.',
-    url: 'https://amzn.to/45FQ9Eg',
-    image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
-    category: 'Livros',
-  },
+  //   {
+  //     title: 'O Capital no Século XXI',
+  //     stars: 4.6,
+  //     description:
+  //       'Thomas Piketty nos mostra, com dados, como a desigualdade é inerente ao capitalismo. E como a concentração de riqueza é um problema para a democracia. O que podemos fazer para mudar isso? Esse livro não é sobre Marxismo, mas sobre a realidade. Entender a relação entre capital, riqueza e renda no sistema capitalista e como a economia não é uma ciência exata, sendo melhor compreendida como economia política.',
+  //     url: 'https://amzn.to/45FQ9Eg',
+  //     image: 'https://m.media-amazon.com/images/I/717SN1VmpSS._SY522_.jpg',
+  //     category: 'Livros',
+  //   },
   {
     title: 'Amor líquido: Sobre a fragilidade dos laços humanos',
     stars: 4.7,

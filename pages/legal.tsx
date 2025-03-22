@@ -3,20 +3,28 @@ import PageLayout from '../components/PageLayout'
 export default function PagePrivacy() {
   return (
     <PageLayout
-      title="Privacy"
-      description="Privacy Policy of Lucas Menezes website and related open source projects.">
+      title="Privacy & Terms"
+      description="Privacy Policy and Terms of Use of Lucas Menezes personal website.">
       <section>
         <article>
-          <h1>Privacy</h1>
+          <h1>Privacy Policy & Terms of Use</h1>
 
           <p>
-            Lucas Menezes under the legal entity in Brazil LUCASM.DEV LTDA is
-            committed to respect your privacy. This Privacy Policy is following
-            the General Data Protection Law (LGPD) from Brazil. When you access
-            https://lucasm.dev and related projects on this domain (collectively
-            called "projects") you agree to be regulated under the Brazilian
-            jurisdiction and this policy. If you do not agree with the practices
-            described here, please, don't use the projects.
+            Lucas Menezes is committed to respect your privacy, under the legal
+            entity LUCASM.DEV LTDA in Brazil.
+          </p>
+
+          <p>
+            This Privacy Policy and Terms of Use is following the General Data
+            Protection Law of Brazil (LGPD).
+          </p>
+
+          <p>
+            When you access https://lucasm.dev and related projects on this
+            domain (collectively called "projects") you agree to be regulated
+            under the Brazilian jurisdiction and this policy. If you do not
+            agree with the practices described here, please, don't use the
+            projects.
           </p>
 
           <h2>1. Automatically Collected Information</h2>

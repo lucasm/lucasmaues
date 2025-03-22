@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: var(--height-min);
+  min-height: var(--height-min);
   width: var(--height-min);
   background: transparent;
   font-size: 0;
@@ -42,7 +42,7 @@
 .links .text a {
   width: 100%;
   gap: 0.75rem;
-  padding: 0 1.75rem;
+  padding: 0.75rem 1.75rem;
   font-size: var(--font-size-6);
   color: var(--color-b-fixed);
   text-align: left;
@@ -75,7 +75,7 @@
 
   .links li a,
   .links li button {
-    height: var(--height-max);
+    min-height: var(--height-max);
     width: var(--height-max);
   }
 
@@ -84,7 +84,7 @@
     flex-direction: row;
   } */
   .links .text a {
-    padding: 0 2.5rem;
+    padding: 1.1875rem 2.5rem;
     font-size: var(--font-size-5);
   }
 }

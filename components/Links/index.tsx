@@ -19,9 +19,12 @@ import {
   IconLess,
   IconThreads,
   IconStore,
-  IconContent,
   IconMentor,
   IconWork,
+  IconFindto,
+  IconCheckTest,
+  IconTalito,
+  IconContent,
 } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
 import PrefetchImages from '../store/PrefetchImages'
@@ -53,9 +56,31 @@ const linksList: ILinks[] = [
     icon: <IconMentor />,
   },
   {
+    url: 'https://findto.app/pt-BR/search/job',
+    title: 'Findto - Busca de Empregos',
+    active: true,
+    onlyText: true,
+    icon: IconFindto,
+  },
+
+  {
+    url: 'https://checktest.dev/',
+    title: 'Checktest - Teste seu App',
+    active: true,
+    onlyText: true,
+    icon: IconCheckTest,
+  },
+  {
+    url: 'https://talito.com.br/',
+    title: 'Talito - IA para Finanças',
+    active: true,
+    onlyText: true,
+    icon: IconTalito,
+  },
+  {
     url: ROUTES.BLOG.path,
     title: ROUTES.BLOG.title,
-    active: true,
+    active: false,
     onlyText: true,
     internalPage: true,
     icon: <IconContent />,
@@ -71,19 +96,19 @@ const linksList: ILinks[] = [
   {
     url: 'https://x.com/lucasmezs',
     icon: <IconX />,
-    title: 'X (Twitter)',
-    active: true,
-  },
-  {
-    url: 'https://github.com/lucasm',
-    icon: <IconGithub />,
-    title: 'GitHub',
+    title: 'X',
     active: true,
   },
   {
     url: 'https://youtube.com/@lucasmdev',
     icon: <IconYoutube />,
     title: 'YouTube',
+    active: true,
+  },
+  {
+    url: 'https://github.com/lucasm',
+    icon: <IconGithub />,
+    title: 'GitHub',
     active: true,
   },
   {
@@ -95,7 +120,7 @@ const linksList: ILinks[] = [
   {
     url: 'https://dev.to/lucasm',
     icon: <IconDev />,
-    title: 'DEV',
+    title: 'DEV Community',
     active: true,
   },
   {

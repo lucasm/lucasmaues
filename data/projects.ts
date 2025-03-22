@@ -1,7 +1,7 @@
 import {
   svgProjectBmg,
   svgProjectGlobo,
-  svgProjectFindto,
+  IconFindto,
   SvgMdn,
   SvgMicrosoft,
   svgProjectVarejoAqui,
@@ -11,9 +11,9 @@ import {
   SvgProjectNufen,
   SvgNaCuia,
   SvgCacba,
-  SvgCheckTest,
+  IconCheckTest,
   svgActDigital,
-  svgTalito,
+  IconTalito,
 } from '../components/Svgs'
 
 export interface IProjects {
@@ -30,7 +30,7 @@ export const projects: IProjects[] = [
     name: 'Banco Bmg',
     url: 'https://www.bancobmg.com.br/',
     description:
-      'Web Application for a bank in Brazil, with 3.6 billion in Loans sales per year (4T24).',
+      'Financial products Web Application for a bank in Brazil, with 3.6 billion BRL in Loans sales per year (4T24).',
     tags: [
       'TypeScript',
       'React',
@@ -65,7 +65,7 @@ export const projects: IProjects[] = [
     name: 'Findto',
     url: 'https://findto.app/',
     description:
-      'Open source assistant of decentralized search on the Web and AI, as a Progressive Web App.',
+      'Open source assistant of decentralized search on AI and the Web.',
     tags: [
       'Open Source',
       'PWA',
@@ -75,7 +75,7 @@ export const projects: IProjects[] = [
       'CSS',
       'APIs',
     ],
-    icon: svgProjectFindto,
+    icon: IconFindto,
     active: true,
   },
   {
@@ -114,20 +114,20 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
-    name: 'CheckTest',
+    name: 'Checktest',
     url: 'https://checktest.dev/',
     description:
-      'Ope source project for testing web apps with a11y, SEO, and performance tools.',
-    tags: ['Open Source', 'Tests', 'Frontend', 'Web Apps'],
-    icon: SvgCheckTest,
+      'AI testing tool for web apps that reports issues and security vulnerabilities.',
+    tags: ['AI', 'Frontend', 'Web Apps'],
+    icon: IconCheckTest,
     active: true,
   },
   {
-    name: 'Talito AI',
+    name: 'Talito',
     url: 'https://talito.com.br/',
-    description: 'AI finance information chatbot for Brazil consumers.',
-    tags: ['AI', 'Frontend', 'React'],
-    icon: svgTalito,
+    description: 'B2C and B2B platform of financial data with AI agent.',
+    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
+    icon: IconTalito,
     active: true,
   },
   {
@@ -150,7 +150,7 @@ export const projects: IProjects[] = [
     name: 'Municipalities Court of Accounts of Pará',
     url: 'https://www.tcm.pa.gov.br/servicos/sessoes/',
     description:
-      'Website, Intranet, Web Apps, APIs, AWS S3 integration, Data Visualization, and Accessibility for a court.',
+      'Website, Intranet, Web Apps, AWS APIs integrations, Data Visualization Dashboards, and Accessibility for a public court.',
     tags: [
       'JavaScript',
       'PHP',
@@ -177,7 +177,7 @@ export const projects: IProjects[] = [
     name: 'Federal University of Pará',
     url: 'https://www.radio.ufpa.br/webdoc60/',
     description:
-      'Live Audio and Video Streaming with Web Player, Websites, CMS, and Web Documentary for an university.',
+      'Live Audio and Video Streaming with Web Player, Websites, CMS, and Web Documentary for a Federal university in Brazil.',
     tags: ['JavaScript', 'PHP', 'Node.js', 'Python', 'MySQL', 'SEO', 'UI'],
     icon: svgProjectUFPA,
     active: true,
@@ -194,7 +194,7 @@ export const projects: IProjects[] = [
     name: 'Na Cuia',
     url: 'https://linkedin.com/in/lucasmezs',
     description:
-      'Website for a cultural production company and magazine in the Amazon region.',
+      'Website for a cultural producer and magazine in the Amazon region.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
     icon: SvgNaCuia,
     active: true,
@@ -203,7 +203,7 @@ export const projects: IProjects[] = [
     name: 'CACBA',
     url: 'https://linkedin.com/in/lucasmezs',
     description:
-      'Hacked Website recovered and redesigned for a non-profit organization of children and adolescents protection in the Amazon region.',
+      'Hacked Website recovered and redesigned for a non-profit organization of childhood protection in the Amazon region.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
     icon: SvgCacba,
     active: true,

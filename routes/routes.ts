@@ -19,16 +19,16 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Loja Dev',
+    title: 'Loja Tech',
     description:
-      'Os melhores eletrônicos, livros e produtos super recomendados! Testados por mim.',
+      'Os melhores produtos tech e saudáveis, além de livros. Super recomendados!',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
-    title: 'Mentoria',
+    title: 'Mentoria 1x',
     description:
-      'Mentoria para desenvolvedores. Aprenda a se destacar no mercado.',
+      'Mentoria para desenvolvedores. Aprenda a se destacar no mercado tech.',
     image: 'https://lucasm.dev/share-mentor.png',
   },
   BLOG: {

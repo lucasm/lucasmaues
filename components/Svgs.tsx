@@ -526,7 +526,7 @@ export const svgActDigital = (
     <defs id="defs6" />
   </svg>
 )
-export const svgTalito = (
+export const IconTalito = (
   <svg
     viewBox="0 0 1024 1024"
     version="1.1"
@@ -537,7 +537,7 @@ export const svgTalito = (
     <path d="M 278.80273,0 C 124.34575,0 0,124.34575 0,278.80273 V 745.19727 C 0,899.65425 124.34575,1024 278.80273,1024 H 745.19727 C 899.65425,1024 1024,899.65425 1024,745.19727 V 278.80273 C 1024,124.34575 899.65425,0 745.19727,0 Z M 204.80078,307.19922 H 819.19922 V 512 H 614.40039 V 716.80078 H 409.59961 V 512 H 204.80078 Z" />
   </svg>
 )
-export const svgProjectFindto = (
+export const IconFindto = (
   <svg
     viewBox="0 0 1024 1024"
     xmlns="http://www.w3.org/2000/svg"
@@ -551,7 +551,7 @@ export const svgProjectFindto = (
     />
   </svg>
 )
-export const SvgCheckTest = (
+export const IconCheckTest = (
   <svg
     version="1.1"
     x="0px"

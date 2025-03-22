@@ -35,8 +35,6 @@ export default function PageWork() {
             </div>
 
             <div>
-              <p>Say hello</p>
-
               <Button url="mailto:hello@lucasm.dev">
                 <>
                   <IconEmail />
