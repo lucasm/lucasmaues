@@ -44,7 +44,7 @@ export default function PageMentorship() {
               o meu método para você se destacar no mercado de TI.
             </p>
 
-            <h3>Método 1x</h3>
+            <h3>A filosofia 1x</h3>
 
             <p>
               Quando você compra cursos e não faz, você está tentando ser 10x.

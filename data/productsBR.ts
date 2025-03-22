@@ -3,7 +3,7 @@ export const productsBR = [
     title: 'Logitech MX Vertical Mouse',
     stars: 4.9,
     description:
-      'O melhor mouse ergonômico que já usei na vida. Pegada superior ao MX Master. Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
+      'O melhor mouse ergonômico que já usei na vida. Pegada superior ao MX Master (minha mão é grande). Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
@@ -13,7 +13,7 @@ export const productsBR = [
     title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
     stars: 4.8,
     description:
-      'O livro mais querido! Aprender como funcionam os algoritmos e as estruturas de dados na Computação, é essencial para qualquer programador. Com esse livro e fica bem fácil entender. Com exemplos em Python. Recomendado para quem está começando na programação ou quer revisar conceitos.',
+      'O livro mais querido! Aprenda como funcionam os algoritmos e as estruturas de dados na Computação. Essencial para qualquer programador. Com esse livro, tudo fica bem fácil de entender. Com exemplos em Python. Recomendo para quem está começando na programação ou quer revisar conceitos.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -22,7 +22,7 @@ export const productsBR = [
     title: 'Logitech MX Keys Mini Teclado',
     stars: 4.8,
     description:
-      'Teclado compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para  a portabilidade, o design da Logitech e a qualidade na construção. O que mais gosto: a tecla de função que alterna entre os dispositivos conectados e facilidade de levar ele para qualquer lugar.',
+      'Um teclado bonito, compacto, macio e confortável. Conexão Bluetooth em 3 dispositivos e USB-C. Teclas iluminadas, botões personalizáveis e bateria recarregável. Ponto alto para a sua portabilidade, a qualidade na construção, e o design premium da Logitech. O que mais gosto é a tecla de função para alternar entre os dispositivos conectados, e poder levar ele para qualquer lugar.',
     url: 'https://amzn.to/3OwLrDM',
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
@@ -32,7 +32,7 @@ export const productsBR = [
     title: 'O Programador Pragmático: de Aprendiz a Mestre',
     stars: 4.7,
     description:
-      'Clássico para todo programador. Dicas e principais armadilhas do desenvolvimento de software. O que mais gosto desse livro é como ele aborda a importância da comunicação e do trabalho em equipe. Com exemplos práticos e fáceis de entender.',
+      'Esse é um livro para todo programador. São dicas e as principais armadilhas em desenvolvimento de software. O que mais gosto é como o autor aborda a importância da comunicação e do trabalho em equipe. Com exemplos práticos e fáceis de entender.',
     url: 'https://amzn.to/3MbyOw9',
     image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
     category: 'Livros',
@@ -74,7 +74,7 @@ export const productsBR = [
       'Apenas a melhor mochila para notebooks. Super confortável, com divisões bem elaboradas (cabe 2 notebooks + caderno e objetos), feita com material reciclado do oceano (OceanCycle Certified), com resistência à água e bolsos para garrafas. Ideal para o trabalho e faculdade. Obrigado Dell.',
     url: 'https://amzn.to/3TgB6yc',
     url_2: 'https://mercadolivre.com/sec/2CjyvZm',
-    image: 'https://m.media-amazon.com/images/I/918irDheCIL._AC_SY879_.jpg',
+    image: 'https://m.media-amazon.com/images/I/618gzjkcMyL._AC_SX679_.jpg',
     category: 'Acessórios',
   },
   {

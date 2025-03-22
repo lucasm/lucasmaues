@@ -35,6 +35,10 @@
   grid-template-columns: 0.75fr 1fr;
   grid-gap: 3rem;
 }
+
+.productDetail p {
+  font-size: var(--font-size-5);
+}
 .productDetail h2 {
   line-height: 1.2;
 }
@@ -109,8 +113,8 @@
   width: 2.5rem;
   cursor: pointer;
   border-radius: 100%;
-  color: var(--color-b-fixed);
-  background: var(--color-w);
+  color: var(--color-b);
+  background: var(--color-background);
   z-index: 99999;
   display: flex;
   align-items: center;
@@ -155,12 +159,17 @@
     padding: 4rem 2rem;
   }
   .closeButton {
+    color: var(--color-b-fixed);
+    background: var(--color-w);
     position: fixed;
     right: 8vw;
     top: 2rem;
     margin: 1rem;
     width: 2rem;
     height: 2rem;
+  }
+  .productDetail p {
+    font-size: var(--font-size-6);
   }
 
   .productDetail {
