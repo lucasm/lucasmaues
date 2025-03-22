@@ -62,7 +62,6 @@ const linksList: ILinks[] = [
     onlyText: true,
     icon: IconFindto,
   },
-
   {
     url: 'https://checktest.dev/?utm_source=lucasm.dev',
     title: 'Checktest - Teste seu App',
@@ -100,15 +99,15 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    title: 'YouTube',
-    active: true,
-  },
-  {
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
     title: 'GitHub',
+    active: true,
+  },
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    title: 'YouTube',
     active: true,
   },
   {
@@ -139,7 +138,7 @@ const linksList: ILinks[] = [
     url: 'https://instagram.com/lucasmezs',
     icon: <IconInstagram />,
     title: 'Instagram',
-    active: true,
+    active: false,
   },
   {
     url: 'https://wa.me/5531997038007',

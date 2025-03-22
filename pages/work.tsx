@@ -5,16 +5,15 @@ import { IconEmail, IconWhatsapp } from '../components/Svgs'
 
 export default function PageWork() {
   return (
-    <PageLayout title="Work" description="Work page.">
+    <PageLayout
+      title="Work"
+      description="Portfolio page of Lucas Menezes, a Senior Frontend Developer based in Brazil.">
       <section>
         <div className="page">
           <div className="container miniContainer">
             <h1>Work</h1>
 
-            <p className="description">
-              "Simplicity can only be achieved through hard work" — Clarice
-              Lispector
-            </p>
+            <p className="description">Building positive impact.</p>
           </div>
         </div>
       </section>

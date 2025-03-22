@@ -44,17 +44,18 @@ export default function PageMentorship() {
               o meu método para você se destacar no mercado de TI.
             </p>
 
-            <h3>O que é 1x?</h3>
+            <h3>Método 1x</h3>
 
             <p>
-              Quando você compra cursos e não faz, você está tentando ser 10x,
-              mas na verdade precisa ser 1x. Essa é a minha filosofia. Eu chamo
-              de "método 1x" o conjunto de práticas e técnicas que eu desenvolvi
-              ao longo dos anos para me tornar um profissional mais produtivo, e
-              com qualidade de vida. Lembre-se: não é sobre fórmulas mágicas. 1x
-              significa fazer uma vez e fazer bem feito. É sobre resultados
-              baseado em ações assertivas. É sobre fazer o que precisa ser
-              feito.
+              Quando você compra cursos e não faz, você está tentando ser 10x.
+              Quando você tenta fazer tudo ao mesmo tempo, você está tentando
+              ser 10x. Mas na verdade precisa ser 1x. Essa é a minha filosofia.
+              Eu chamo de "método 1x" o conjunto de práticas e técnicas que eu
+              desenvolvi ao longo dos anos para me tornar um profissional mais
+              produtivo, e com qualidade de vida. Lembre-se: não é sobre
+              fórmulas mágicas. 1x significa fazer uma vez e fazer bem feito. É
+              sobre resultados baseado em ações assertivas. É sobre fazer o que
+              precisa ser feito. Com calma, foco, disciplina e consistência.
             </p>
 
             <h3>Como funciona?</h3>
@@ -118,7 +119,7 @@ export default function PageMentorship() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Videochamada + Plano de Ação
+                Formato: Videochamada + Anotações
                 <br />
                 Pagamento: Patreon
                 <br />

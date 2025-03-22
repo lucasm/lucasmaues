@@ -10,24 +10,22 @@ export default function PagePrivacy() {
           <h1>Privacy Policy & Terms of Use</h1>
 
           <p>
-            Lucas Menezes is committed to respect your privacy, under the legal
-            entity LUCASM.DEV LTDA in Brazil.
+            Lucas Menezes is committed to respect your privacy and rights, under
+            the legal entity LUCASM.DEV LTDA in Brazil.
           </p>
+
+          <h2>1. Legislation</h2>
 
           <p>
             This Privacy Policy and Terms of Use is following the General Data
-            Protection Law of Brazil (LGPD).
+            Protection Law of Brazil (LGPD). When you access https://lucasm.dev
+            and related projects on this domain (collectively called "projects")
+            you agree to be regulated under the Brazilian jurisdiction and this
+            policy. If you do not agree with the practices described here,
+            please, don't use the projects.
           </p>
 
-          <p>
-            When you access https://lucasm.dev and related projects on this
-            domain (collectively called "projects") you agree to be regulated
-            under the Brazilian jurisdiction and this policy. If you do not
-            agree with the practices described here, please, don't use the
-            projects.
-          </p>
-
-          <h2>1. Automatically Collected Information</h2>
+          <h2>2. Automatically Collected Information</h2>
           <p>
             The projects may automatically collect public data and non-personal
             information (that doesn't identify you) as behaviors statistics,
@@ -37,7 +35,7 @@ export default function PagePrivacy() {
             with the projects.
           </p>
 
-          <h2>2. Information That You Provide</h2>
+          <h2>3. Information That You Provide</h2>
           <p>
             The projects also may receives and stores private personal
             information (that identify you) when you submit on contact forms or
@@ -45,7 +43,7 @@ export default function PagePrivacy() {
             email address and phone number.
           </p>
 
-          <h2>3. Cookies and Tracking Technologies</h2>
+          <h2>4. Cookies and Tracking Technologies</h2>
           <p>
             The projects have features and related email communications that
             need to use Cookies and similar tracking technologies, such as
@@ -88,7 +86,7 @@ export default function PagePrivacy() {
             Please, read the privacy policy of every them, linked above.
           </p>
 
-          <h2>4. Information Sharing</h2>
+          <h2>5. Information Sharing</h2>
           <p>
             The projects do not share your personal information with any kinds
             of affiliates or partners. But for technical reasons, the aggregated
@@ -97,9 +95,9 @@ export default function PagePrivacy() {
             privacy policies.
           </p>
 
-          <h2>5. Information Use</h2>
+          <h2>6. Information Use</h2>
           <p>
-            The projects use your information with the onyl purposes of: I)
+            The projects use your information with the only purposes of: I)
             communicate with you, respond to inquiries and provide requested
             content; II) anonymously analyze the user behavior to personalize
             and improve experience; III) detect and prevent activities that be
@@ -112,7 +110,7 @@ export default function PagePrivacy() {
             handling your data, please, take a look on their privacy policies.
           </p>
 
-          <h2>6. Opting Out</h2>
+          <h2>7. Opting Out</h2>
 
           <p>
             To know how proceed to opt out of third-party services, please, take
@@ -134,20 +132,13 @@ export default function PagePrivacy() {
             tracking technologies may be completely disabled for you.
           </p>
 
-          <h2>7. External Resources and Affiliated Links</h2>
+          <h2>8. External Resources and Affiliated Links</h2>
           <p>
             The projects may contain links to other websites and applications
             just for your convenience. Lucas Menezes not endorse, have no
             control over and assume no responsibility for the content or
             practices of any third party internet resources, that are not
             operated by him.
-          </p>
-
-          <h2>8. No Ads</h2>
-          <p>
-            The projects do not show advertisements. Lucas Menezes believe in
-            the community and affiliated links, to fund and build an open web
-            for common good.
           </p>
 
           <h2>9. Changes on This Policy</h2>
@@ -160,9 +151,8 @@ export default function PagePrivacy() {
 
           <h2>10. Contact</h2>
           <p>
-            If you have any questions or suggestions regarding this Privacy
-            Policy, please, send an email to{' '}
-            <a href="mailto:privacy@lucasm.dev">privacy@lucasm.dev</a>.
+            If you have any questions or suggestions, please, email at{' '}
+            <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.
           </p>
         </article>
       </section>

@@ -19,7 +19,7 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Loja Tech',
+    title: 'Loja Dev',
     description:
       'Os melhores produtos tech e saudáveis, além de livros. Super recomendados!',
     image: 'https://lucasm.dev/share-store.png',
