@@ -17,7 +17,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Software Engineer 👋🏻</h1>
+                <h1>Hello, I'm a Frontend Software Engineer 👋🏻</h1>
                 <Links />
               </div>
             </div>
