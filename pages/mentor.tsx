@@ -18,7 +18,7 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              Desde 2017, atuo com Engenharia de Software e Frontend e sou
+              Atuando com Engenharia de Software e Frontend desde 2017, sou
               procurado por profissionais e estudantes de TI que buscam
               orientação para avançar na carreira.
             </p>
@@ -44,7 +44,7 @@ export default function PageMentorship() {
               o meu método para você se destacar no mercado de TI.
             </p>
 
-            <h3>A filosofia 1x</h3>
+            <h3>Meu método 1x</h3>
 
             <p>
               Quando você compra cursos e não faz, você está tentando ser 10x.
