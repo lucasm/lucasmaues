@@ -1,5 +1,15 @@
 export const productsBR = [
   {
+    title: 'Apple iPhone 16 Pro 256 GB Titânio',
+    stars: 4.7,
+    description:
+      'O meu celular. Câmera tripla com sensor LiDAR, tela Super Retina XDR com ProMotion (120Hz), chip A17 Pro, 8GB de RAM e 256GB de armazenamento. iOS atualizado, conexão USB-C, rede 5G e bateria de longa duração. Um dos melhores smartphones do mercado. Com desempenho reconhecido.',
+    url: 'https://amzn.to/3JIqB4f',
+    url_2: 'https://mercadolivre.com/sec/1ZecHiM',
+    image: 'https://m.media-amazon.com/images/I/61irT-Uu+8L._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
     title: 'Logitech MX Vertical Mouse',
     stars: 4.9,
     description:
@@ -48,13 +58,13 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'JBL Flip 6 Bluetooth Speaker',
+    title: 'JBL Charge 6 Caixa de Som Bluetooth',
     stars: 4.8,
     description:
-      'Caixa de som Bluetooth portátil da JBL. Ótima construção, resistência à água e bateria de longa duração. Graves, médios e agudos  equilibrados. Ideal para viagens, piscina, praia e qualquer lugar. A Flip é uma das melhores caixas de som portáteis do mercado.',
-    url: 'https://amzn.to/45IVz1o',
-    url_2: 'https://mercadolivre.com/sec/2cFhbqS',
-    image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
+      'A minha caixa de som Bluetooth portátil da JBL. O que mais gosto é que funciona como Power Bank. Outro destaque é o suporte a reprodução de áudio Lossless (sem perdas) via USB-C. A resistência à água e bateria de longa duração também estão aqui. Graves, médios e agudos equilibrados! Para toda hora!',
+    url: 'https://amzn.to/3JAQz9X',
+    url_2: 'https://mercadolivre.com/sec/2Divb6c',
+    image: 'https://m.media-amazon.com/images/I/61DdMwVE8QL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -194,6 +204,16 @@ export const productsBR = [
       'Fone de ouvido Bluetooth TWS super barato. Ótimo custo-benefício. 18 horas. Ideal para quem busca qualidade e preço baixo.',
     url: 'https://amzn.to/3UjBFWY',
     image: 'https://m.media-amazon.com/images/I/61uMQCVH0CL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'JBL Flip 6 Bluetooth Speaker',
+    stars: 4.8,
+    description:
+      'Caixa de som Bluetooth portátil da JBL. Ótima construção, resistência à água e bateria de longa duração. Graves, médios e agudos  equilibrados. Ideal para viagens, piscina, praia e qualquer lugar. A Flip é uma das melhores caixas de som portáteis do mercado.',
+    url: 'https://amzn.to/45IVz1o',
+    url_2: 'https://mercadolivre.com/sec/2cFhbqS',
+    image: 'https://m.media-amazon.com/images/I/61R45NJNLkL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {

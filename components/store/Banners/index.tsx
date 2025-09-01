@@ -15,16 +15,17 @@ export default function Banners() {
     {
       link: '#products',
       external: false,
-      title: 'Compra segura',
+      title: 'Compra com garantia',
       subtitle:
-        'Produtos bem avaliados e com garantia, entregues pelas lojas Amazon, Mercado Livre ou AliExpress.',
+        'Apenas produtos com garantia, bem avaliados e entregues pelas lojas Amazon, Mercado Livre ou AliExpress.',
       image: <IconShield />,
     },
     {
       link: 'https://www.meliuz.com.br/i/ref_lucasmauess',
       external: true,
-      title: 'Receba R$ 5,00 de volta',
-      subtitle: 'Ative o Méliuz para receber dinheiro de volta.',
+      title: 'Receba R$ 5,00 de cashback',
+      subtitle:
+        'Ative o Méliuz para receber dinheiro de volta em compras online.',
       image: <IconGift />,
     },
   ]
