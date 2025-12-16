@@ -18,11 +18,9 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              Como Liderança Técnica, e atuando há anos com Engenharia de
-              Software Frontend, sou procurado por profissionais e estudantes de
-              TI que buscam orientação para avançar na carreira. Ofereço
-              orientação técnica, com soft skills, e um método simples para
-              crescer: foco.
+              Como Liderança Técnica, e atuando com Engenharia de Software
+              Frontend há anos, sou procurado por profissionais e estudantes de
+              TI que buscam orientação para avançar na carreira.
             </p>
           </div>
         </div>

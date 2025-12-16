@@ -144,7 +144,7 @@ const linksList: ILinks[] = [
     url: 'https://wa.me/5531997038007',
     icon: <IconWhatsapp />,
     title: 'WhatsApp',
-    active: true,
+    active: false,
   },
   {
     url: 'https://threads.net/@lucasmezs',
@@ -191,11 +191,12 @@ const Links = () => {
 
   const textLinks = linksList.filter((link) => link.onlyText)
   const iconLinks = linksList.filter((link) => !link.onlyText)
-  const limit = 7
-  const visibleIconLinks = showAll ? iconLinks : iconLinks.slice(0, limit)
+  const limit = 9
+  const visibleIconLinks = showAll ? iconLinks : iconLinks?.slice(0, limit)
 
   // só mostra o botão se tiver mais de 7 links
-  const showToggleButton = iconLinks.length > limit
+  //   const showToggleButton = iconLinks?.length > limit
+  const showToggleButton = false
 
   return (
     <div>
