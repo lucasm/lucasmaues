@@ -9,7 +9,7 @@ import { IconMore } from '../components/Svgs'
 
 export default function Home() {
   return (
-    <PageLayout title="Lucas Menezes" description={ROUTES.HOME.description}>
+    <PageLayout title="LUCASM.DEV" description={ROUTES.HOME.description}>
       <section className="fullscreen" id="home">
         <div className="fullscreen-container">
           <div className="container home">
@@ -17,7 +17,10 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>Hello, I'm a Frontend Software Engineer.</h1>
+                <h1>
+                  Tech Lead & Specialist Frontend Software Engineer based in
+                  Brazil
+                </h1>
                 <Links />
               </div>
             </div>
@@ -51,8 +54,8 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Menezes, a Senior Frontend Software Engineer
-                from Brazil.
+                Hello, I'm Lucas Maués de Menezes, a Tech Lead & Specialist
+                Frontend Software Engineer from Brazil.
               </p>
 
               <p>

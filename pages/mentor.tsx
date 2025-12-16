@@ -18,9 +18,11 @@ export default function PageMentorship() {
             <h1>{title}</h1>
 
             <p className="description">
-              Atuando com Engenharia de Software e Frontend desde 2017, sou
-              procurado por profissionais e estudantes de TI que buscam
-              orientação para avançar na carreira.
+              Como Liderança Técnica, e atuando há anos com Engenharia de
+              Software Frontend, sou procurado por profissionais e estudantes de
+              TI que buscam orientação para avançar na carreira. Ofereço
+              orientação técnica, com soft skills, e um método simples para
+              crescer: foco.
             </p>
           </div>
         </div>
@@ -36,15 +38,15 @@ export default function PageMentorship() {
               Johnson
             </h1>
 
-            <h3>O que é a mentoria?</h3>
+            <h3>O que é?</h3>
 
             <p>
-              A mentoria é um espaço de crescimento e aprendizado. Você não
-              precisa sofrer para evoluir, mas precisa se esforçar. Eu te ensino
-              o meu método para você se destacar no mercado de TI.
+              A mentoria é um espaço de crescimento e aprendizado. Você se
+              esforça mas não evolui? Eu te ensino a se destacar no mercado de
+              TI, com as suas qualidades.
             </p>
 
-            <h3>Meu método 1x</h3>
+            <h3>Meu "método 1x" de foco</h3>
 
             <p>
               Quando você compra cursos e não faz, você está tentando ser 10x.
@@ -58,7 +60,7 @@ export default function PageMentorship() {
               precisa ser feito. Com calma, foco, disciplina e consistência.
             </p>
 
-            <h3>Como funciona?</h3>
+            <h3>Como funciona a mentoria?</h3>
             <p>
               A mentoria é realizada por videochamada. Durante a primeira sessão
               vamos conversar e entender o seu momento atual na TI. Quais as
@@ -98,7 +100,7 @@ export default function PageMentorship() {
               que quer ouvir (sem egos aqui)
               <br />
               - Avaliação dos resultados alcançados
-              <br />- Independência e final da mentoria
+              <br />- Independência e fim da mentoria
             </p>
           </article>
         </div>

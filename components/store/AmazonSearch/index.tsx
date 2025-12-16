@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import debounce from 'lodash/debounce'
 import StyleProductCard from '../ProductCard/ProductCard.module.css'
 import { IconAmazon } from '../../Svgs'

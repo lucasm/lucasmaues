@@ -12,9 +12,9 @@ type Props = {
 
 export default function PageLayout(props: Props) {
   const title =
-    props.title === 'Lucas Menezes'
-      ? 'Lucas Menezes | Senior Frontend Engineer'
-      : props.title + ' | Lucas Menezes'
+    props.title === 'LUCASM.DEV'
+      ? 'LUCASM.DEV | Tech Lead & Specialist Frontend'
+      : props.title + ' | LUCASM.DEV'
   const image = props.image || 'https://lucasm.dev/share.png'
 
   return (

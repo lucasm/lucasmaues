@@ -2,7 +2,7 @@
   font-size: 16px;
   --color-y: #fff5d0;
   --color-y-2: #fff2c2;
-  --color-y-3: #f7e5a1;
+  --color-y-3: #ffe897;
   --color-y-4: #fcf7ed;
   --color-y-5: #ffdf8d;
   --color-y-6: #f1de9a;
@@ -456,7 +456,7 @@ article blockquote {
 .home h1 {
   text-wrap: balance;
   padding-bottom: 2.5rem;
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-4);
 }
 .page {
   margin: 2rem auto 0;

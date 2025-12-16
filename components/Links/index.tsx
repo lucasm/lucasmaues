@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ReactElement, useState } from 'react'
 import Styles from './Links.module.css'
 import Link from 'next/link'
 import {
@@ -24,14 +24,14 @@ import {
   //   IconFindto,
   //   IconCheckTest,
   //   IconTalito,
-  IconContent,
+  //   IconContent,
 } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
 import PrefetchImages from '../store/PrefetchImages'
 
 interface ILinks {
   url: string
-  icon?: JSX.Element
+  icon?: ReactElement
   title: string
   internalPage?: boolean
   active: boolean
@@ -76,26 +76,26 @@ const linksList: ILinks[] = [
   //     onlyText: true,
   //     icon: IconTalito,
   //   },
-  {
-    url: ROUTES.BLOG.path,
-    title: ROUTES.BLOG.title,
-    active: false,
-    onlyText: true,
-    internalPage: true,
-    icon: <IconContent />,
-  },
+  //   {
+  //     url: ROUTES.BLOG.path,
+  //     title: ROUTES.BLOG.title,
+  //     active: false,
+  //     onlyText: true,
+  //     internalPage: true,
+  //     icon: <IconContent />,
+  //   },
   {
     url: '#about',
-    title: 'Portfólio',
+    title: 'About',
     active: true,
     onlyText: true,
     internalPage: true,
     icon: <IconWork />,
   },
   {
-    url: 'https://x.com/lucasmezs',
-    icon: <IconX />,
-    title: 'X',
+    url: 'https://linkedin.com/in/lucasmezs',
+    icon: <IconLinkedin />,
+    title: 'LinkedIn',
     active: true,
   },
   {
@@ -105,15 +105,15 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    title: 'YouTube',
+    url: 'https://x.com/lucasmezs',
+    icon: <IconX />,
+    title: 'X',
     active: true,
   },
   {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    title: 'LinkedIn',
+    url: 'https://bsky.app/profile/lucasm.dev',
+    icon: <IconBluesky />,
+    title: 'Bluesky',
     active: true,
   },
   {
@@ -129,16 +129,16 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://bsky.app/profile/lucasm.dev',
-    icon: <IconBluesky />,
-    title: 'Bluesky',
-    active: true,
-  },
-  {
     url: 'https://instagram.com/lucasmezs',
     icon: <IconInstagram />,
     title: 'Instagram',
     active: false,
+  },
+  {
+    url: 'https://youtube.com/@lucasmdev',
+    icon: <IconYoutube />,
+    title: 'YouTube',
+    active: true,
   },
   {
     url: 'https://wa.me/5531997038007',
@@ -191,7 +191,7 @@ const Links = () => {
 
   const textLinks = linksList.filter((link) => link.onlyText)
   const iconLinks = linksList.filter((link) => !link.onlyText)
-  const limit = 5
+  const limit = 7
   const visibleIconLinks = showAll ? iconLinks : iconLinks.slice(0, limit)
 
   // só mostra o botão se tiver mais de 7 links

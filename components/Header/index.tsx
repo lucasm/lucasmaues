@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useUser } from '../../contexts/UserContext'
 import { IconMoon, IconSun } from '../Svgs'
@@ -60,7 +60,7 @@ export default function Header() {
     <header>
       <div className="container">
         <Link href="/" id="logo" accessKey="1">
-          Lucas Menezes
+          LUCASM.DEV
         </Link>
 
         <div className="headerButtons">

@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import {
   svgProjectBmg,
   svgProjectGlobo,
@@ -21,7 +22,7 @@ export interface IProjects {
   url: string
   description: string
   tags: string[]
-  icon: JSX.Element
+  icon: ReactElement
   active: boolean
 }
 

@@ -10,8 +10,8 @@ export default function PagePrivacy() {
           <h1>Privacy Policy & Terms of Use</h1>
 
           <p>
-            Lucas Menezes is committed to respect your privacy and rights, under
-            the legal entity LUCASM.DEV LTDA in Brazil.
+            Lucas Maués de Menezes is committed to respect your privacy and
+            rights, under the legal entity LUCASM.DEV LTDA in Brazil.
           </p>
 
           <h2>1. Legislation</h2>

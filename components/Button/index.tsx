@@ -1,9 +1,10 @@
+import { ReactElement } from 'react'
 import Styles from './Button.module.css'
 import Link from 'next/link'
 
 type Props = {
   url?: string
-  children: string | JSX.Element
+  children: string | ReactElement
   isExternal?: boolean
   onClick?: () => void
 }

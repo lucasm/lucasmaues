@@ -1,4 +1,4 @@
-import React from 'react'
+import { ReactElement } from 'react'
 import Style from './Banners.module.css'
 import { IconGift, IconShield } from '../../Svgs'
 
@@ -7,7 +7,7 @@ interface BannerProps {
   external: boolean
   title: string
   subtitle: string
-  image: JSX.Element
+  image: ReactElement
 }
 
 export default function Banners() {
