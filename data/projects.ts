@@ -98,7 +98,7 @@ export const projects: IProjects[] = [
   },
   {
     name: 'Microsoft Open Source',
-    url: 'https://learn.microsoft.com/',
+    url: 'https://opensource.microsoft.com/',
     description:
       'I contribute to the Microsoft Open Source portuguese translations of AI an Web technologies.',
     tags: ['Open Source', 'Translations', 'AI', 'Web'],

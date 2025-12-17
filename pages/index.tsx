@@ -55,7 +55,7 @@ export default function Home() {
             <div>
               <p>
                 Hello, I'm Lucas Maués de Menezes, a Tech Lead & Frontend
-                Specialist Software Engineer, based in Brazil.
+                Software Engineer Specialist, based in Brazil.
               </p>
 
               <p>
