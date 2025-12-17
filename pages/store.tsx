@@ -8,6 +8,7 @@ import ProductCard from '../components/store/ProductCard'
 import SearchFilter from '../components/store/SearchFilter'
 
 import Banners from '../components/store/Banners'
+import ActionButtons from '../components/store/ActionButtons'
 
 export default function PageStore() {
   const title = ROUTES.STORE.title
@@ -51,9 +52,9 @@ export default function PageStore() {
       <section>
         <div className="page">
           <h1>{title}</h1>
-          <p>{description}</p>
+          {/* <p>{description}</p> */}
 
-          {/* <ActionButtons /> */}
+          <ActionButtons />
 
           <SearchFilter
             currentCategory={category}

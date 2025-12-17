@@ -134,7 +134,6 @@ export default function SearchFilter({
               <option value="Todos">Todos</option>
               <option value="Eletrônicos">Eletrônicos</option>
               <option value="Acessórios">Acessórios</option>
-              <option value="Saúde">Saúde</option>
               <option value="Livros">Livros</option>
             </select>
 

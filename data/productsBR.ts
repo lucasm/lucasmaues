@@ -1,22 +1,21 @@
 export const productsBR = [
   {
-    title: 'Apple iPhone 16 Pro 256 GB Titânio',
-    stars: 4.7,
-    description:
-      'O meu celular. Câmera tripla com sensor LiDAR, tela Super Retina XDR com ProMotion (120Hz), chip A17 Pro, 8GB de RAM e 256GB de armazenamento. iOS atualizado, conexão USB-C, rede 5G e bateria de longa duração. Um dos melhores smartphones do mercado. Com desempenho reconhecido.',
-    url: 'https://amzn.to/3JIqB4f',
-    url_2: 'https://mercadolivre.com/sec/1ZecHiM',
-    image: 'https://m.media-amazon.com/images/I/61irT-Uu+8L._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Logitech MX Vertical Mouse',
     stars: 4.9,
     description:
-      'O melhor mouse ergonômico que já usei na vida. Pegada superior ao MX Master (minha mão é grande). Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
+      'O melhor mouse ergonômico que já usei na vida. A pegada é superior ao MX Master (minha mão é grande). Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Echo Dot Max',
+    stars: 4.7,
+    description:
+      '"Alexa, toca minha playlist MPB". Caixinha de som com IA de automação. Realmente uma joia. Toca música, informa o clima/tempo e alarmes, agora com despertador inteligente e conversa até agradável. É possível conectar outros dispositivos para controlar por voz, e aqui realmente podemos automatizar a casa via comandos.',
+    url: 'https://amzn.to/3N2i0uG',
+    image: 'https://m.media-amazon.com/images/I/71HgfqBVvIL._AC_SY879_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -36,6 +35,26 @@ export const productsBR = [
     url: 'https://amzn.to/3OwLrDM',
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Apple AirPods Pro 3 ',
+    stars: 4.7,
+    description:
+      'O fone de ouvido Bluetooth da Apple é definitivo, depois de usar você não quer mais outros. Reconhecido pelo cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarrega no estojo, conexão USB-C ou sem fio com MagSafe. Bateria de boa duração. Eu uso todo dia, e amo a qualidade do som impecável. Adoro ouvir Lossless com Dolby Atmos, é uma experiência incrível.',
+    url: 'https://amzn.to/4aVbIXH',
+    url_2: 'https://mercadolivre.com/sec/18rpDqw',
+    image: 'https://m.media-amazon.com/images/I/41FBUBvUY1L._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
+    title: 'Apple iPhone 16 Pro 256 GB Titânio',
+    stars: 4.7,
+    description:
+      'O meu celular. Câmera tripla com sensor LiDAR, tela Super Retina XDR com ProMotion (120Hz), chip A17 Pro, 8GB de RAM e 256GB de armazenamento. iOS atualizado, conexão USB-C, rede 5G e bateria de longa duração. Um dos melhores smartphones do mercado. Com desempenho reconhecido.',
+    url: 'https://amzn.to/3JIqB4f',
+    url_2: 'https://mercadolivre.com/sec/1ZecHiM',
+    image: 'https://m.media-amazon.com/images/I/61irT-Uu+8L._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -68,16 +87,6 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
-    title: 'Apple AirPods Pro 2',
-    stars: 4.9,
-    description:
-      'O fone de ouvido Bluetooth da Apple. Reconhecido pelo cancelamento de ruído ativo (ANC) e áudio espacial. Conexão perfeita com dispositivos Apple. Recarrega no estojo, conexão USB-C ou sem fio com MagSafe. Bateria de boa duração. Eu uso todo dia, e amo a qualidade do som.',
-    url: 'https://amzn.to/3Dw6uA0',
-    url_2: 'https://mercadolivre.com/sec/27WpiBa',
-    image: 'https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
     title: 'Dell Pro EcoLoop Mochila',
     stars: 4.8,
     description:
@@ -103,15 +112,6 @@ export const productsBR = [
       'O notebook portátil da Apple definitivo. Ótimo desempenho. Com chip M3 e duração de bateria incrível. Tela Retina, ou seja, qualidade de imagem excelente. Ponto alto para a portabilidade, design e a qualidade da construção. Uma obra prima!',
     url: 'https://amzn.to/3QvbX0R',
     image: 'https://m.media-amazon.com/images/I/51AVb-HHxYL._AC_SX679_.jpg',
-    category: 'Eletrônicos',
-  },
-  {
-    title: 'Echo Spot Alexa',
-    stars: 4.7,
-    description:
-      '"Alexa, toca minha playlist MPB". Caixinha de som com IA. Realmente uma joia. Toca música, da informações, agora com despertador inteligente e conversa. É possível conectar outros dispositivos para controlar por voz.',
-    url: 'https://amzn.to/3LyhiRX',
-    image: 'https://m.media-amazon.com/images/I/71anQJA7UcL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
@@ -390,6 +390,15 @@ export const productsBR = [
     category: 'Eletrônicos',
   },
   {
+    title: 'Aparador e Raspador Philips OneBlade',
+    stars: 4.7,
+    description:
+      'Melhor aparador. Apara, raspa e contorna. Com 3 pentes. À prova d’água. Bivolt. Recarregável. Ideal para barba.',
+    url: 'https://amzn.to/46csY6C',
+    image: 'https://m.media-amazon.com/images/I/61lniekqdCL._AC_SX679_.jpg',
+    category: 'Eletrônicos',
+  },
+  {
     title: 'Estruturas de Dados e Algoritmos com JavaScript',
     stars: 4.9,
     description:
@@ -659,96 +668,5 @@ export const productsBR = [
     url: 'https://amzn.to/45JIIMq',
     image: 'https://m.media-amazon.com/images/I/51C7ww6AYCL._SY522_.jpg',
     category: 'Livros',
-  },
-  {
-    title: 'Protetor Solar Corporal Neutrogena FPS 70 200ml',
-    stars: 4.8,
-    description:
-      'O protetor solar do dia a dia. Com proteção FPS 70. Textura mais leve e resistente à água. Ideal para peles sensíveis. Eu brinco que se tornou item essencial no aquecimento global.',
-    url: 'https://amzn.to/3Ydg8Dg',
-    image: 'https://m.media-amazon.com/images/I/4190c-CYubL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Hidratante Facial Neutrogena 50g',
-    stars: 4.8,
-    description:
-      'Hidratante facial se tornou algo essencial pra mim, seja no calor do Sol do Norte ou seja no frio do Sul, nossa pele precisa descansar, por isso é ideal passar a noite antes de dormir. Com ácido hialurônico. Ideal para peles secas ou oleosas. Hidratação essencial.',
-    url: 'https://amzn.to/3LxQdyk',
-    image: 'https://m.media-amazon.com/images/I/51cj7VbcDSL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-
-  {
-    title: 'Protetor Solar Facial Neutrogena FPS 70 40g',
-    stars: 4.7,
-    description:
-      'Protetor solar facial com alta proteção FPS 70. Sem cor. Textura mais leve e controle de oleosidade. Ideal para peles oleosas. Se complementa com o protetor corporal.',
-    url: 'https://amzn.to/46fImz4',
-    image: 'https://m.media-amazon.com/images/I/71poCb9IOYL._AC_SY879_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Sabonetes Phebo Kit 6 720g',
-    stars: 4.8,
-    description:
-      'O melhor sabonete de base vegetal e glicerina. Kit com 6 sabonetes de 90g cada. Limpa e hidrata a pele. Com fragrância diversas, inclusive o tradicional amarelinho glicerina da Phebo.',
-    url: 'https://amzn.to/3WwCtdI',
-    image: 'https://m.media-amazon.com/images/I/51rOgkMtK5L._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Creme Dental Sensodyne Branqueador',
-    stars: 4.8,
-    description:
-      'O creme dental que vale a pena. Com flúor e nitrato de potássio. Para dentes sensíveis. Também é branqueador. Proteção do dia a dia contra cáries e tártaro. 3 pacotes, 90g cada unidade.',
-    url: 'https://amzn.to/3LAazHn',
-    image: 'https://m.media-amazon.com/images/I/61wTm0Rs+gL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Escova de Dente Curaprox Kit 3',
-    stars: 4.9,
-    description:
-      'A melhor escova de dente que já usei. Kit com 3 escovas. Com cerdas macias e ultrafinas. Para limpeza profunda e delicada (não precisa fazer força, mas o movimento correto de escovar). Com cabo ergonômico. A CuraProx é referência, eu uso e recomendo.',
-    url: 'https://amzn.to/4cOIsQu',
-    image: 'https://m.media-amazon.com/images/I/817at2VVYHL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Enxaguante Bucal Sem Álcool Listerine 1L',
-    stars: 4.9,
-    description:
-      'Aquele enxaguante bucal essencial pro hálito fresco e proteção contra bactérias. Sem álcool. Com flúor e óleos essenciais.',
-    url: 'https://amzn.to/3y5V4Uk',
-    image: 'https://m.media-amazon.com/images/I/714ZD0yQBcL._AC_SY879_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Shampoo Anticaspa Clear Men 400Ml',
-    stars: 4.8,
-    description:
-      'O tal shampoo anticaspa do Cristiano Ronaldo. Com mentol. Para meninos, meninas e menines. Limpeza profunda e refrescante. 400ml. É o mais vendido, então não sofra.',
-    url: 'https://amzn.to/4dcx6Wf',
-    image: 'https://m.media-amazon.com/images/I/61JSetSXeXL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Multivitamínico Dux Nutrition 90 Cápsulas',
-    stars: 4.8,
-    description:
-      'Um bom multivitamínico. Com 17 vitaminas e minerais. Para imunidade e energia. 90 cápsulas por pote. Recomentado por nutricionistas para quem treina hipertrofia e precisa repor micronutrientes de forma mais genérica, mas consulte um profissional para não tomar atoa.',
-    url: 'https://amzn.to/4bQcDFN',
-    image: 'https://m.media-amazon.com/images/I/51xYS0PdqjL._AC_SX679_.jpg',
-    category: 'Saúde',
-  },
-  {
-    title: 'Aparador e Raspador Philips OneBlade',
-    stars: 4.7,
-    description:
-      'Melhor aparador. Apara, raspa e contorna. Com 3 pentes. À prova d’água. Bivolt. Recarregável. Ideal para barba.',
-    url: 'https://amzn.to/46csY6C',
-    image: 'https://m.media-amazon.com/images/I/61lniekqdCL._AC_SX679_.jpg',
-    category: 'Saúde',
   },
 ]

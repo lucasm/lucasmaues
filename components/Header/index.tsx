@@ -60,7 +60,7 @@ export default function Header() {
     <header>
       <div className="container">
         <Link href="/" id="logo" accessKey="1">
-          LUCASM.DEV
+          {ROUTES.HOME.title}
         </Link>
 
         <div className="headerButtons">

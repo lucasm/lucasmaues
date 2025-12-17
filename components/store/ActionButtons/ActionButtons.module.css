@@ -2,7 +2,7 @@
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin: 0 auto 2rem;
   flex-wrap: wrap;
 }
 .container a {
@@ -10,6 +10,9 @@
   color: var(--color-b);
   height: var(--height-max);
   padding: 0 2rem;
+}
+.container a svg {
+  color: var(--color-b);
 }
 
 @media screen and (max-width: 699px) {
@@ -22,7 +25,8 @@
     border-radius: var(--radius);
     font-size: var(--font-size-7);
   }
-  .container svg {
+  .container a svg {
+    color: var(--color-b);
     width: 1.25rem;
     height: 1.25rem;
   }

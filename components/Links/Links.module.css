@@ -84,7 +84,7 @@
     flex-direction: row;
   } */
   .links .text a {
-    padding: 1.1875rem 2.5rem;
+    padding: 1.15rem 2.5rem;
     font-size: var(--font-size-5);
   }
 }

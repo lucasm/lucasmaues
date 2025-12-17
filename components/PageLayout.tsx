@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import { ReactNode } from 'react'
+import { ROUTES } from '../routes/routes'
 
 type Props = {
   title: string
@@ -12,9 +13,9 @@ type Props = {
 
 export default function PageLayout(props: Props) {
   const title =
-    props.title === 'LUCASM.DEV'
-      ? 'LUCASM.DEV | Tech Lead & Specialist Frontend'
-      : props.title + ' | LUCASM.DEV'
+    props.title === ROUTES.HOME.title
+      ? props.title + ' | Tech Lead & Frontend Specialist'
+      : props.title + ' | ' + ROUTES.HOME.title
   const image = props.image || 'https://lucasm.dev/share.png'
 
   return (

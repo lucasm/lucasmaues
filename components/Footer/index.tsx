@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { IconLucasmdev } from '../Svgs'
+import { ROUTES } from '../../routes/routes'
 
 function getYear() {
   return new Date().getFullYear()
@@ -15,7 +16,8 @@ const Footer = () => (
         </Link>
 
         <p>
-          <span className="company">LUCASM.DEV</span> &copy; {getYear()}
+          <span className="company">{ROUTES.HOME.title}</span> &copy;{' '}
+          {getYear()}
         </p>
       </div>
 

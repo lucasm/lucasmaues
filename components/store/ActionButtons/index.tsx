@@ -22,7 +22,7 @@ const ActionButtons = () => {
       <Button url="https://www.meliuz.com.br/i/ref_lucasmauess" isExternal>
         <>
           <IconGift />
-          Receber R$ 5
+          Receber R$ 5,00
         </>
       </Button>
     </div>
