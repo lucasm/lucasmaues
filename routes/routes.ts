@@ -1,9 +1,9 @@
 export const ROUTES = {
   HOME: {
     path: '/',
-    title: 'LUCASM.DEV',
+    title: 'Lucas Maués',
     description:
-      'Lucas Maués de Menezes is a Tech Lead & Frontend Specialist based in Brazil, with 8+ years of experience building high-scalable Web Apps.',
+      'Lucas Maués de Menezes is a Tech Lead & Specialist Frontend Software Engineer based in Brazil with 8+ years of experience.',
   },
   ABOUT: {
     path: '/#about',

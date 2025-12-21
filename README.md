@@ -1,4 +1,12 @@
-# [Lucas Menezes (lucasm.dev)](https://lucasm.dev/)
+<div align="center">
+<a href="https://https://lucasm.dev/?utm_source=github">
+<img height="124" src="https://lucasm.dev/icon.svg" alt="Lucasm.dev Icon">
+</a>
+</div>
+
+<a href="https://https://lucasm.dev/?utm_source=github">
+<h1 align="center">Lucasm.dev</h1>
+</a>
 
 My personal website.
 
@@ -6,7 +14,7 @@ My personal website.
 
 Made with React, TypeScript, CSS and Next.js framework.
 
-## Report
+## Lighthouse Score
 
 ![PageSpeed report](https://lucasm.dev/report.png)
 

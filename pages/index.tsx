@@ -18,7 +18,7 @@ export default function Home() {
 
               <div>
                 <h1>
-                  Tech Lead & Frontend Software Engineer Specialist based in
+                  Tech Lead & Specialist Frontend Software Engineer based in
                   Brazil
                 </h1>
                 <Links />
@@ -54,8 +54,8 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Maués de Menezes, a Tech Lead & Frontend
-                Software Engineer Specialist, based in Brazil.
+                Hello, I'm Lucas Maués de Menezes, a Tech Lead & Specialist
+                Frontend Software Engineer, based in Brazil.
               </p>
 
               <p>

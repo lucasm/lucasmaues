@@ -39,7 +39,6 @@ export default function PageLayout(props: Props) {
         />
         <meta name="apple-mobile-web-app-title" content="Lucas Menezes" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#111" />
         <meta name="msapplication-tap-highlight" content="no" />
 
         <meta itemProp="name" content={title} />

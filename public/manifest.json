@@ -1,7 +1,7 @@
 {
-  "name": "Lucas Menezes",
-  "short_name": "Lucas Menezes",
-  "description": "Senior Frontend Engineer",
+  "name": "Lucas Maués",
+  "short_name": "Lucas Maués",
+  "description": "Specialist Frontend Software Engineer",
   "icons": [
     {
       "src": "icon-192x192.png",
@@ -23,6 +23,6 @@
   "id": "/?homescreen=1",
   "start_url": "/?utm_source=pwa",
   "display": "standalone",
-  "background_color": "#ffefd5",
+  "background_color": "#ffe897",
   "theme_color": "#111"
 }
