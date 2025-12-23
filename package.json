@@ -1,6 +1,6 @@
 {
-  "name": "lucasm.dev",
-  "version": "2.0.0",
+  "name": "lucasmaues",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
