@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import {
-  svgProjectBmg,
-  svgProjectGlobo,
+  svgBancoBmg,
+  svgGlobo,
   IconFindto,
   SvgMdn,
   SvgMicrosoft,
@@ -12,7 +12,7 @@ import {
   SvgProjectNufen,
   SvgNaCuia,
   SvgCacba,
-  IconCheckTest,
+  IconChecktest,
   svgActDigital,
   IconTalito,
 } from '../components/Svgs'
@@ -42,7 +42,7 @@ export const projects: IProjects[] = [
       'Microsoft Azure',
       'AWS',
     ],
-    icon: svgProjectBmg,
+    icon: svgBancoBmg,
     active: true,
   },
   {
@@ -59,14 +59,14 @@ export const projects: IProjects[] = [
       'Python',
       'Docker',
     ],
-    icon: svgProjectGlobo,
+    icon: svgGlobo,
     active: true,
   },
   {
     name: 'Findto',
     url: 'https://findto.app/',
     description:
-      'Open source assistant of decentralized search on AI and the Web.',
+      'Open source decentralized search assistant for the Web and AI.',
     tags: [
       'Open Source',
       'PWA',
@@ -83,7 +83,7 @@ export const projects: IProjects[] = [
     name: 'MDN Web Docs',
     url: 'https://developer.mozilla.org/',
     description:
-      'I contribute to the MDN Web Docs portuguese translations of JavaScript, Web APIs, and open standards.',
+      'Portuguese translator for JavaScript, Web APIs, and open standards on Mozilla.',
     tags: [
       'Open Source',
       'Translations',
@@ -100,7 +100,7 @@ export const projects: IProjects[] = [
     name: 'Microsoft Open Source',
     url: 'https://opensource.microsoft.com/',
     description:
-      'I contribute to the Microsoft Open Source portuguese translations of AI an Web technologies.',
+      'Portuguese translator for AI and Web technologies on Microsoft.',
     tags: ['Open Source', 'Translations', 'AI', 'Web'],
     icon: SvgMicrosoft,
     active: true,
@@ -120,13 +120,13 @@ export const projects: IProjects[] = [
     description:
       'AI testing tool for web apps that reports issues and security vulnerabilities.',
     tags: ['AI', 'Frontend', 'Web Apps'],
-    icon: IconCheckTest,
+    icon: IconChecktest,
     active: true,
   },
   {
     name: 'Talito',
     url: 'https://talito.com.br/',
-    description: 'B2C and B2B platform of financial data with AI agent.',
+    description: 'B2C and B2B platform of financial data with AI.',
     tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
     icon: IconTalito,
     active: true,

@@ -490,7 +490,7 @@ export const IconAmazon = () => (
   </svg>
 )
 
-export const svgProjectBmg = (
+export const svgBancoBmg = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 32 32"
@@ -499,7 +499,7 @@ export const svgProjectBmg = (
     <path d="M6.73,21.84h4.88a3.76,3.76,0,0,0,3.75-3.76V1.22A1.22,1.22,0,0,0,14.15,0H11.88A6.38,6.38,0,0,0,5.52,6.39V20.62A1.22,1.22,0,0,0,6.73,21.84Z" />
   </svg>
 )
-export const svgProjectGlobo = (
+export const svgGlobo = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 42 42"
@@ -545,19 +545,24 @@ export const IconTalito = (
 )
 export const IconFindto = (
   <svg
-    viewBox="0 0 1024 1024"
+    width="100%"
+    height="100%"
+    viewBox="0 0 32 32"
+    version="1.1"
     xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    xmlSpace="preserve"
+    fillRule="evenodd"
+    clipRule="evenodd"
+    strokeLinejoin="round"
+    strokeMiterlimit="2"
     fill="currentColor">
-    <clipPath clipPathUnits="userSpaceOnUse" id="a">
-      <path d="M-5-5h1034v1034H-5zm842 517a53.204 53.204 0 00-35.124-50.377l-175.02-64.48-64.48-175.02a53.69 53.69 0 00-100.754 0l-64.48 175.02-175.019 64.48a53.69 53.69 0 000 100.754l175.02 64.48 64.48 175.02a53.69 53.69 0 00100.754 0l64.48-175.02 175.019-64.48A53.204 53.204 0 00837 512z" />
-    </clipPath>
-    <path
-      clipPath="url(#a)"
-      d="M304.482 0h415.036C888.2 0 1024 135.8 1024 304.482v415.036C1024 888.2 888.2 1024 719.518 1024H304.482C135.8 1024 0 888.2 0 719.518V304.482C0 135.8 135.8 0 304.482 0z"
-    />
+    <g>
+      <path d="M32,8.75l0,14.5c0,4.829 -3.921,8.75 -8.75,8.75l-14.5,0c-4.829,0 -8.75,-3.921 -8.75,-8.75l0,-14.5c0,-4.829 3.921,-8.75 8.75,-8.75l14.5,0c4.829,0 8.75,3.921 8.75,8.75Zm-13.659,-0.038c0,-3.075 -4.676,-3.074 -4.676,0l0,3.24l-2.805,-1.62c-2.67,-1.543 -5.009,2.505 -2.337,4.047l2.807,1.62l-2.807,1.621c-2.688,1.552 -0.305,5.566 2.338,4.047l2.805,-1.62l0,3.241c0,3.075 4.676,3.074 4.676,0l0,-3.242l2.807,1.621c2.665,1.536 4.996,-2.511 2.336,-4.047l-2.809,-1.621l2.808,-1.62c2.662,-1.537 0.325,-5.584 -2.337,-4.047l-2.805,1.621l-0,-3.241Z" />
+    </g>
   </svg>
 )
-export const IconCheckTest = (
+export const IconChecktest = (
   <svg
     version="1.1"
     x="0px"
