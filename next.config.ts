@@ -1,4 +1,3 @@
-// next.config.js
 module.exports = {
   images: {
     remotePatterns: [
@@ -8,4 +7,5 @@ module.exports = {
       },
     ],
   },
+  productionBrowserSourceMaps: false,
 }

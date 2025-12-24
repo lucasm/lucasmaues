@@ -54,26 +54,28 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Maués de Menezes, a Tech Lead & Specialist
-                Frontend Software Engineer, based in Brazil.
+                Hello, I'm Lucas Maués de Menezes, a Tech Lead and Frontend
+                Software Specialist based in Brazil.
               </p>
 
               <p>
-                My work positively impact millions of users/day and millions
-                transactions/day in BRL currency. I have driven revenue growth
-                at every company I've worked for. I'm very proud of this!
+                My work impacts millions of users every day and supports
+                millions of transactions daily in BRL. Throughout my career,
+                I’ve consistently helped drive revenue growth at every company
+                I’ve worked with — something I’m genuinely proud of.
               </p>
 
               <p>
-                Since 2017, I've been building Web applications, E-commerce
-                platforms, and recently, AI experiments. As a Frontend
-                specialist, I'm helping my team deliver high-quality UX and
-                implementing robust software engineering practices.
+                Since 2017, I’ve been building high-impact web applications,
+                mission-critical e-commerce platforms, and more recently,
+                AI-driven experiences. As a leader and specialist, I focus on
+                delivering high-quality user experiences while promoting robust,
+                scalable software engineering practices within my teams.
               </p>
 
               <p>
-                I'm passionate about learning and sharing. I've been creating
-                many things on the road. Welcome!
+                I’m deeply passionate about learning and sharing. My core
+                philosophy is simplicity. Welcome!
               </p>
             </div>
           </div>
