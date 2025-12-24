@@ -23,8 +23,8 @@ const ProfilePhoto = () => {
         <img
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          alt="Profile picture of Lucas Menezes"
-          src="https://avatars.githubusercontent.com/lucasm"
+          alt="Profile of Lucas Maués de Menezes"
+          src="https://avatars.githubusercontent.com/lucasm?s=164"
         />
 
         <SvgBackground1 />
