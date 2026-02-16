@@ -12,7 +12,7 @@
     "aws4": "^1.13.1",
     "axios": "^1.13.2",
     "lodash": "^4.17.21",
-    "next": "16.0.10",
+    "next": "^16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
@@ -24,7 +24,7 @@
     "typescript": "^5.5.4"
   },
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   },
   "overrides": {
     "@types/react": "19.2.7"
