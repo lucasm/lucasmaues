@@ -11,10 +11,10 @@ type Props = {
   children: ReactNode
 }
 
-export default function PageLayout(props: Props) {
+export default function PageLayout(props: Readonly<Props>) {
   const title =
     props.title === ROUTES.HOME.title
-      ? props.title + ' | Tech Lead & Frontend Specialist'
+      ? props.title + ' | ' + ROUTES.HOME.seo
       : props.title + ' | ' + ROUTES.HOME.title
   const image = props.image || 'https://lucasm.dev/share.png'
 

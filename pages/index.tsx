@@ -17,10 +17,7 @@ export default function Home() {
               <ProfilePhoto />
 
               <div>
-                <h1>
-                  Tech Lead & Specialist Frontend Software Engineer based in
-                  Brazil
-                </h1>
+                <h1>{ROUTES.HOME.seo}</h1>
                 <Links />
               </div>
             </div>
@@ -54,28 +51,28 @@ export default function Home() {
 
             <div>
               <p>
-                Hello, I'm Lucas Maués de Menezes, a Tech Lead and Frontend
-                Software Specialist based in Brazil.
+                Hello, I’m Lucas Maués de Menezes, a Tech Lead, Senior Software
+                Engineer & Frontend Specialist based in Brazil.
               </p>
 
               <p>
-                My work impacts millions of users every day and supports
-                millions of transactions daily in BRL. Throughout my career,
-                I’ve consistently helped drive revenue growth at every company
-                I’ve worked with — something I’m genuinely proud of.
+                I take great pride in delivering work that impacts millions of
+                users and facilitates high-volume BRL transactions daily.
+                Throughout my career, I’ve consistently helped drive revenue
+                growth for every company I’ve partnered with.
               </p>
 
               <p>
                 Since 2017, I’ve been building high-impact web applications,
                 mission-critical e-commerce platforms, and more recently,
-                AI-driven experiences. As a leader and specialist, I focus on
-                delivering high-quality user experiences while promoting robust,
-                scalable software engineering practices within my teams.
+                AI-driven experiences. As a leader, I empower my teams to
+                deliver exceptional user experiences while maintaining robust,
+                scalable software engineering practices.
               </p>
 
               <p>
-                I’m deeply passionate about learning and sharing. My core
-                philosophy is simplicity. Welcome!
+                I’m deeply passionate about learning and sharing knowledge. My
+                core philosophy is simple: Simplicity. Welcome!
               </p>
             </div>
           </div>
