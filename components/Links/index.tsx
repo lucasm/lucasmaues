@@ -1,4 +1,6 @@
-import { ReactElement, useState } from 'react'
+'use client'
+
+import { JSX, ReactElement, useState } from 'react'
 import Styles from './Links.module.css'
 import Link from 'next/link'
 import {
@@ -178,21 +180,23 @@ const linksList: ILinks[] = [
   },
 ]
 
-const Links = () => {
-  const [showAll, setShowAll] = useState(false)
-  const [prefetchEnabled, setPrefetchEnabled] = useState(false)
+const Links = (): JSX.Element => {
+  const [showAll, setShowAll] = useState<boolean>(false)
+  const [prefetchEnabled, setPrefetchEnabled] = useState<boolean>(false)
 
-  const handleToggle = () => {
+  const handleToggle = (): void => {
     setShowAll((prev) => !prev)
   }
-  const handleMouseEnterStore = () => {
+  const handleMouseEnterStore = (): void => {
     setPrefetchEnabled(true)
   }
 
-  const textLinks = linksList.filter((link) => link.onlyText)
-  const iconLinks = linksList.filter((link) => !link.onlyText)
+  const textLinks: ILinks[] = linksList.filter((link) => link.onlyText)
+  const iconLinks: ILinks[] = linksList.filter((link) => !link.onlyText)
   const limit = 9
-  const visibleIconLinks = showAll ? iconLinks : iconLinks?.slice(0, limit)
+  const visibleIconLinks: ILinks[] = showAll
+    ? iconLinks
+    : iconLinks?.slice(0, limit)
 
   // só mostra o botão se tiver mais de 7 links
   //   const showToggleButton = iconLinks?.length > limit

@@ -12,7 +12,7 @@ interface AmazonSearchProps {
 const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
   const [items, setItems] = useState<any>(null)
   const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string>(undefined)
+  const [error, setError] = useState<string | undefined>(undefined)
 
   // Debounce a função de busca para evitar chamadas excessivas
   const debouncedFetchItems = useMemo(
@@ -34,8 +34,12 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
           const data = await response.json()
           setItems(data)
           setLoading(false)
-        } catch (error) {
-          setError(error?.message || 'Erro ao buscar os itens')
+        } catch (error: unknown) {
+          if (error instanceof Error) {
+            setError(error.message)
+          } else {
+            setError(String(error) || 'Erro ao buscar os itens')
+          }
           setLoading(false)
         }
       }, 500), // 500ms de delay antes de disparar a busca
@@ -60,7 +64,7 @@ const AmazonSearch = ({ keyword, onReset }: AmazonSearchProps) => {
 
       {items?.SearchResult?.Items?.length > 0 && (
         <ul className={StyleProductCard.container}>
-          {items?.SearchResult?.Items?.map((item, index: number) => (
+          {items?.SearchResult?.Items?.map((item: any, index: number) => (
             <li key={index} className={StyleProductCard.product}>
               <a href={item?.DetailPageURL} target="_blank" rel="noreferrer">
                 <img

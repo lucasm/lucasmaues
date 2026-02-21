@@ -1,23 +1,48 @@
-import unusedImports from 'eslint-plugin-unused-imports'
+import nextPlugin from 'eslint-plugin-next'
+import typescript from '@typescript-eslint/eslint-plugin'
+import typescriptParser from '@typescript-eslint/parser'
 
 export default [
   {
-    parser: '@typescript-eslint/parser',
-    extends: 'next/core-web-vitals',
-    plugins: ['@typescript-eslint', { 'unused-imports': unusedImports }],
+    ignores: [
+      'node_modules',
+      '.next',
+      '.cache',
+      'build',
+      'dist',
+      '*.config.js',
+      '*.config.ts',
+    ],
+  },
+  {
+    files: ['**/*.{js,jsx,ts,tsx}'],
+    languageOptions: {
+      parser: typescriptParser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    plugins: {
+      '@typescript-eslint': typescript,
+      next: nextPlugin,
+    },
     rules: {
+      'react-hooks/rules-of-hooks': 'error',
       '@typescript-eslint/no-unused-vars': [
-        'error',
-        { vars: 'all', args: 'none' },
-      ],
-      'unused-imports/no-unused-imports': 'error',
-      'unused-imports/no-unused-vars': [
         'warn',
         {
-          vars: 'all',
-          varsIgnorePattern: '^_',
           args: 'after-used',
           argsIgnorePattern: '^_',
+        },
+      ],
+      'no-console': [
+        'warn',
+        {
+          allow: ['warn', 'error'],
         },
       ],
     },

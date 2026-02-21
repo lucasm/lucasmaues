@@ -15,7 +15,7 @@ import {
   IconChecktest,
   svgActDigital,
   IconTalito,
-} from '../components/Svgs'
+} from '@/components/Svgs'
 
 export interface IProjects {
   name: string

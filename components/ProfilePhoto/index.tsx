@@ -1,10 +1,12 @@
-import { useState } from 'react'
+'use client'
+
+import { JSX, useState } from 'react'
 import styles from './ProfilePhoto.module.css'
 
-const ProfilePhoto = () => {
-  const [isHovered, setIsHovered] = useState(false)
+export default function ProfilePhoto(): JSX.Element {
+  const [isHovered, setIsHovered] = useState<boolean>(false)
 
-  const SvgBackground1 = () => (
+  const SvgBackground1 = (): JSX.Element => (
     <svg
       width="500"
       height="544"
@@ -21,8 +23,8 @@ const ProfilePhoto = () => {
     <div className={styles.container}>
       <figure id={styles.profile}>
         <img
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onMouseEnter={(): void => setIsHovered(true)}
+          onMouseLeave={(): void => setIsHovered(false)}
           alt="Profile of Lucas Maués de Menezes"
           src="https://avatars.githubusercontent.com/lucasm?s=164"
         />
@@ -32,5 +34,3 @@ const ProfilePhoto = () => {
     </div>
   )
 }
-
-export default ProfilePhoto

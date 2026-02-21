@@ -1,0 +1,25 @@
+# Lucas Maués - robots.txt
+# Generated for lucasm.dev
+
+User-agent: *
+Allow: /
+Allow: /api/
+
+Disallow: /.next/
+Disallow: /node_modules/
+
+# Crawl delay to prevent overloading
+Crawl-delay: 1
+
+# Specify the sitemap
+Sitemap: https://lucasm.dev/sitemap.xml
+
+# Optimize for specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

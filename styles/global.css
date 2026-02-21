@@ -329,7 +329,6 @@ h3 {
   font-family: var(--font);
   color: var(--color-b);
   padding-bottom: 2rem;
-  line-height: 1.25;
   -webkit-font-smoothing: antialiased;
 }
 

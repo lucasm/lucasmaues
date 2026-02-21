@@ -1,14 +1,19 @@
+'use client'
+
 import { useEffect, useRef, useState } from 'react'
 import Styles from './CircleMouse.module.css'
 
 export default function CircleMouse() {
-  const circle = useRef(null)
+  const circle = useRef<HTMLDivElement | null>(null)
   const [isMobile, setIsMobile] = useState(false)
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
-  const animationRef = useRef(null)
+  const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({
+    x: 0,
+    y: 0,
+  })
+  const animationRef = useRef<number | null>(null)
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY })
     }
 
@@ -39,7 +44,9 @@ export default function CircleMouse() {
     const circleRef = circle.current
 
     const updateCirclePosition = () => {
-      circleRef.style.transform = `translateX(${mousePosition.x}px) translateY(${mousePosition.y}px)`
+      if (circleRef) {
+        circleRef.style.transform = `translateX(${mousePosition.x}px) translateY(${mousePosition.y}px)`
+      }
       animationRef.current = requestAnimationFrame(updateCirclePosition)
     }
 
@@ -48,7 +55,9 @@ export default function CircleMouse() {
     }
 
     return () => {
-      cancelAnimationFrame(animationRef.current)
+      if (animationRef.current !== null) {
+        cancelAnimationFrame(animationRef.current)
+      }
     }
   }, [isMobile, mousePosition])
 

@@ -1,8 +1,20 @@
 {
   "name": "Lucas Maués",
   "short_name": "Lucas Maués",
-  "description": "Specialist Frontend Software Engineer",
+  "description": "Lucas Maués de Menezes is a Tech Lead, Senior Software Engineer & Frontend Specialist from Brazil, with 8+ years of experience.",
+  "author": "Lucas Maués de Menezes",
   "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
     {
       "src": "icon-192x192.png",
       "sizes": "192x192",
@@ -20,9 +32,21 @@
       "purpose": "maskable"
     }
   ],
-  "id": "/?homescreen=1",
+  "id": "/?utm_source=pwa",
   "start_url": "/?utm_source=pwa",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#ffe897",
-  "theme_color": "#111"
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "categories": ["productivity", "business"],
+  "screenshots": [
+    {
+      "src": "share.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "preferred_color_scheme": "dark"
 }

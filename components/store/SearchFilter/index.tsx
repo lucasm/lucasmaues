@@ -1,4 +1,6 @@
-import { useRef, useState, useEffect, useCallback } from 'react'
+'use client'
+
+import { useRef, useState, useEffect, useCallback, ChangeEvent } from 'react'
 import Style from './SearchFilter.module.css'
 import { IconChevronDown, IconClose, IconSearch } from '../../Svgs'
 import debounce from 'lodash/debounce'
@@ -20,16 +22,16 @@ export default function SearchFilter({
   const [searchTerm, setSearchTerm] = useState('')
   const [isResetVisible, setIsResetVisible] = useState(false)
   const [isButtonVisible, setIsButtonVisible] = useState(false)
-  const refInput = useRef(null)
+  const refInput = useRef<HTMLInputElement | null>(null)
 
   const focusInput = () => {
-    refInput?.current && refInput.current.focus()
+    refInput.current?.focus()
   }
-  const handleCategoryChange = (event) => {
+  const handleCategoryChange = (event: ChangeEvent<HTMLSelectElement>) => {
     onCategoryChange(event.target.value)
     setIsResetVisible(true) // Ativa o botão de reset
   }
-  const handleSearchChange = (event) => {
+  const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     const newSearchTerm = event.target.value
     setSearchTerm(newSearchTerm)
     onSearchChange(newSearchTerm)

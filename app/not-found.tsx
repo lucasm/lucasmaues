@@ -1,10 +1,16 @@
-import PageLayout from '../components/PageLayout'
-import CircleMouse from '../components/CircleMouse'
-import Button from '../components/Button'
+import PageWrapper from '@/components/PageWrapper'
+import CircleMouse from '@/components/CircleMouse'
+import Button from '@/components/Button'
+import { Metadata } from 'next'
 
-export default function Page404() {
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description: '404 error page.',
+}
+
+export default function PageNotFound() {
   return (
-    <PageLayout title="Page Not Found" description="404 error page.">
+    <PageWrapper>
       <CircleMouse />
 
       <section className="fullscreen">
@@ -20,6 +26,6 @@ export default function Page404() {
           </div>
         </div>
       </section>
-    </PageLayout>
+    </PageWrapper>
   )
 }

@@ -1,12 +1,10 @@
 import aws4 from 'aws4'
 import axios from 'axios'
-import { NextApiRequest, NextApiResponse } from 'next'
+import { NextRequest, NextResponse } from 'next/server'
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const { Keywords } = req.query // Receber os parâmetros pela query da URL
+export async function GET(request: NextRequest) {
+  const { searchParams } = new URL(request.url)
+  const Keywords = searchParams.get('Keywords')
 
   const serviceName = 'ProductAdvertisingAPI'
   const region = 'us-east-1'
@@ -47,23 +45,21 @@ export default async function handler(
       headers: options.headers,
     })
 
-    res.status(200).json(response.data)
+    return NextResponse.json(response.data, { status: 200 })
   } catch (error) {
     console.error('Error:', error)
-    // Enviar uma resposta mais detalhada com a mensagem de erro
-    res.status(500).json({
-      error: error.message,
-      response: error.response
-        ? {
-            status: error.response.status,
-            data: error.response.data,
-          }
-        : null,
-      // request: {
-      //   url: `https://${host}${uriPath}`,
-      //   headers: options.headers,
-      //   body: options.body,
-      // },
-    })
+    return NextResponse.json(
+      {
+        error: error instanceof Error ? error.message : 'Unknown error',
+        response:
+          error instanceof Error && 'response' in error
+            ? {
+                status: (error as any).response?.status,
+                data: (error as any).response?.data,
+              }
+            : null,
+      },
+      { status: 500 }
+    )
   }
 }

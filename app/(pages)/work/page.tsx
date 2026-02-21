@@ -1,17 +1,41 @@
-import Button from '../components/Button'
-import PageLayout from '../components/PageLayout'
-import CardsWork from '../components/CardsWork'
-import { IconEmail, IconWhatsapp } from '../components/Svgs'
+import PageWrapper from '@/components/PageWrapper'
+import Button from '@/components/Button'
+import CardsWork from '@/components/CardsWork'
+import { IconEmail, IconWhatsapp } from '@/components/Svgs'
+import { ROUTES } from '@/routes/routes'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: `${ROUTES.WORK.title}`,
+  description: ROUTES.WORK.description,
+  openGraph: {
+    title: `${ROUTES.WORK.title} | ${ROUTES.HOME.title}`,
+    description: ROUTES.WORK.description,
+    images: [
+      {
+        url: ROUTES.WORK.image,
+        width: 1200,
+        height: 630,
+      },
+    ],
+    url: 'https://lucasm.dev/work',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${ROUTES.WORK.title} | ${ROUTES.HOME.title}`,
+    description: ROUTES.WORK.description,
+    images: [ROUTES.WORK.image],
+  },
+}
 
 export default function PageWork() {
   return (
-    <PageLayout
-      title="Work"
-      description="Portfolio page of Lucas Menezes, a Senior Frontend Developer based in Brazil.">
+    <PageWrapper>
       <section>
         <div className="page">
           <div className="container miniContainer">
-            <h1>Work</h1>
+            <h1>{ROUTES.WORK.title}</h1>
 
             <p className="description">Building positive impact.</p>
           </div>
@@ -53,6 +77,6 @@ export default function PageWork() {
           </div>
         </div>
       </section>
-    </PageLayout>
+    </PageWrapper>
   )
 }

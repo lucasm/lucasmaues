@@ -1,10 +1,18 @@
-import { useEffect, useState } from 'react'
+'use client'
+
+import { JSX, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useUser } from '../../contexts/UserContext'
 import { IconMoon, IconSun } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
 
-export default function Header() {
+// Types
+interface HeaderLink {
+  url: string
+  text: string
+}
+
+export default function Header(): JSX.Element {
   const { theme, setTheme } = useUser()
   const [isActive, setActive] = useState<boolean>(false)
 
@@ -14,22 +22,26 @@ export default function Header() {
       : document.body.classList.remove('removeScroll')
   }, [isActive])
 
-  const handleToggle = () => {
+  const handleToggle = (): void => {
     setActive(!isActive)
   }
 
   // system, light, dark
-  const toggleTheme = () => {
-    if (theme == 'light') {
-      setTheme('dark')
-      window.localStorage.setItem('theme', 'dark')
-    } else {
-      setTheme('light')
-      window.localStorage.setItem('theme', 'light')
+  const toggleTheme = (): void => {
+    try {
+      if (theme === 'light') {
+        setTheme('dark')
+        window.localStorage.setItem('theme', 'dark')
+      } else {
+        setTheme('light')
+        window.localStorage.setItem('theme', 'light')
+      }
+    } catch (error) {
+      console.error('Error toggling theme:', error)
     }
   }
 
-  const HeaderLinks = [
+  const HeaderLinks: HeaderLink[] = [
     {
       url: ROUTES.BLOG.path,
       text: ROUTES.BLOG.title,
@@ -65,7 +77,7 @@ export default function Header() {
 
         <div className="headerButtons">
           <button onClick={toggleTheme} id="theme" translate="no">
-            {theme == 'dark' ? <IconMoon /> : <IconSun />}
+            {theme === 'dark' ? <IconMoon /> : <IconSun />}
             {theme === 'dark' ? 'Dark' : 'Light'}
           </button>
 
@@ -75,7 +87,7 @@ export default function Header() {
             id="menu"
             type="button"
             aria-label={isActive ? 'Close menu' : 'Open menu'}
-            aria-expanded={isActive ? true : false}>
+            aria-expanded={isActive}>
             <div className="hamburger"></div>
             Menu
           </button>
@@ -83,7 +95,7 @@ export default function Header() {
 
         <nav className={isActive ? 'open' : undefined}>
           <ul>
-            {HeaderLinks.map((link, index) => (
+            {HeaderLinks.map((link: HeaderLink, index: number) => (
               <li key={index}>
                 <Link href={link.url} onClick={handleToggle}>
                   {link.text}

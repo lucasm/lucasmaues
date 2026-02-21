@@ -1,12 +1,31 @@
-import { createContext, useContext, useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
+'use client'
+
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  ReactNode,
+  JSX,
+} from 'react'
+
+// Types
+interface UserContextType {
+  theme: string
+  setTheme: (theme: string) => void
+}
+
+interface UserContextProviderProps {
+  children: ReactNode
+}
 
 // create Context for global state
-const UserContext = createContext<any>({})
+const UserContext = createContext<UserContextType | undefined>(undefined)
 
 // export as Provider
-export function UserContextProvider({ children }) {
-  const { locale } = useRouter()
+export function UserContextProvider({
+  children,
+}: Readonly<UserContextProviderProps>): JSX.Element {
   const [theme, setTheme] = useState<string>('light')
 
   // theme
@@ -52,7 +71,6 @@ export function UserContextProvider({ children }) {
       value={{
         theme,
         setTheme,
-        locale,
       }}>
       {children}
     </UserContext.Provider>
@@ -60,6 +78,10 @@ export function UserContextProvider({ children }) {
 }
 
 // export as Hook function
-export function useUser() {
-  return useContext(UserContext)
+export function useUser(): UserContextType {
+  const context = useContext(UserContext)
+  if (!context) {
+    throw new Error('useUser must be used within UserContextProvider')
+  }
+  return context
 }

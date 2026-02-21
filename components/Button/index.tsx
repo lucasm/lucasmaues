@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { JSX, ReactElement } from 'react'
 import Styles from './Button.module.css'
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ type Props = {
   onClick?: () => void
 }
 
-export default function Button(props: Props) {
+export default function Button(props: Readonly<Props>): JSX.Element {
   return (
     <Link
       href={props.url || '#'}

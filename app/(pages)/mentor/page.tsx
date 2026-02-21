@@ -1,26 +1,49 @@
-import Button from '../components/Button'
-import PageLayout from '../components/PageLayout'
-import PatreonCheck from '../components/PatreonCheck'
-import SvgAnimateMentorship from '../components/SvgAnimateMentorship'
-import { IconArrowExternal } from '../components/Svgs'
-import { ROUTES } from '../routes/routes'
+import Button from '@/components/Button'
+import PageWrapper from '@/components/PageWrapper'
+import PatreonCheck from '@/components/PatreonCheck'
+import SvgAnimateMentorship from '@/components/SvgAnimateMentorship'
+import { IconArrowExternal } from '@/components/Svgs'
+import { ROUTES } from '@/routes/routes'
+import { Metadata } from 'next'
 
-export default function PageMentorship() {
+export const metadata: Metadata = {
+  title: `${ROUTES.MENTORSHIP.title}`,
+  description: ROUTES.MENTORSHIP.description,
+  openGraph: {
+    title: `${ROUTES.MENTORSHIP.title}`,
+    description: ROUTES.MENTORSHIP.description,
+    images: [
+      {
+        url: ROUTES.MENTORSHIP.image,
+        width: 1200,
+        height: 630,
+      },
+    ],
+    url: 'https://lucasm.dev/mentor',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${ROUTES.MENTORSHIP.title} | ${ROUTES.HOME.title}`,
+    description: ROUTES.MENTORSHIP.description,
+    images: [ROUTES.MENTORSHIP.image],
+  },
+}
+
+export default function PageMentor() {
   const title = ROUTES.MENTORSHIP.title
-  const image = ROUTES.MENTORSHIP.image
-  const description = ROUTES.MENTORSHIP.description
 
   return (
-    <PageLayout title={title} description={description} image={image}>
+    <PageWrapper>
       <section>
         <div className="page">
           <div className="container ">
             <h1>{title}</h1>
 
             <p className="description">
-              Como Liderança Técnica, e atuando com Engenharia de Software
-              Frontend desde 2017, sou procurado por profissionais e estudantes
-              de TI que buscam orientação para avançar na carreira.
+              Como Liderança Técnica, atuando com Engenharia de Software e
+              Frontend desde 2017, sou buscado por estudantes e profissionais de
+              TI para orientação de carreira.
             </p>
           </div>
         </div>
@@ -36,12 +59,12 @@ export default function PageMentorship() {
               Johnson
             </h1>
 
-            <h3>O que é?</h3>
+            <h3>O que é a mentoria?</h3>
 
             <p>
-              A mentoria é um espaço de crescimento e aprendizado. Você se
-              esforça mas não evolui? Eu te ensino a se destacar no mercado de
-              TI, com as suas qualidades.
+              Um espaço seguro de crescimento e aprendizado. Você se esforça mas
+              não evolui? Eu te ajudo a se destacar no mercado de TI, com as
+              suas qualidades.
             </p>
 
             <h3>Meu "método 1x" de foco</h3>
@@ -94,8 +117,8 @@ export default function PageMentorship() {
               <br />
               - Aprendizado prático (hard skills)
               <br />
-              - Feedback, onde falo o que você PRECISA ouvir para evoluir, não o
-              que quer ouvir (sem egos aqui)
+              - Feedback, onde falo o que você PRECISA ouvir para evoluir como
+              profissional, não o que quer ouvir (sem egos)
               <br />
               - Avaliação dos resultados alcançados
               <br />- Independência e fim da mentoria
@@ -117,11 +140,11 @@ export default function PageMentorship() {
               <p>
                 <strong></strong>
                 <br />
-                Duração: 45 minutos
+                Duração da sessão: 45 minutos
                 <br />
-                Formato: Videochamada + Anotações
+                Formato: Google Meet + Notion
                 <br />
-                Pagamento: Patreon
+                Agendamento e pagamento: Patreon
                 <br />
                 <br />
               </p>
@@ -138,6 +161,6 @@ export default function PageMentorship() {
           </div>
         </div>
       </section>
-    </PageLayout>
+    </PageWrapper>
   )
 }

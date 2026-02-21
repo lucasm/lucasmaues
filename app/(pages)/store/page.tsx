@@ -1,19 +1,19 @@
-import { ROUTES } from '../routes/routes'
-import { useRef, useState, useMemo } from 'react'
-import PageLayout from '../components/PageLayout'
-import StyleCard from '../components/store/ProductCard/ProductCard.module.css'
-import ProductPopup from '../components/store/ProductPopup'
-import { productsBR } from '../data/productsBR'
-import ProductCard from '../components/store/ProductCard'
-import SearchFilter from '../components/store/SearchFilter'
+'use client'
 
-import Banners from '../components/store/Banners'
-import ActionButtons from '../components/store/ActionButtons'
+import { ROUTES } from '@/routes/routes'
+import { useRef, useState, useMemo } from 'react'
+import PageWrapper from '@/components/PageWrapper'
+import StyleCard from '@/components/store/ProductCard/ProductCard.module.css'
+import ProductPopup from '@/components/store/ProductPopup'
+import { productsBR } from '@/data/productsBR'
+import ProductCard from '@/components/store/ProductCard'
+import SearchFilter from '@/components/store/SearchFilter'
+
+import Banners from '@/components/store/Banners'
+import ActionButtons from '@/components/store/ActionButtons'
 
 export default function PageStore() {
   const title = ROUTES.STORE.title
-  const image = ROUTES.STORE.image
-  const description = ROUTES.STORE.description
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState('Todos')
   const [searchTerm, setSearchTerm] = useState('')
@@ -31,7 +31,7 @@ export default function PageStore() {
     return filteredProducts.length === 0
   }, [filteredProducts])
 
-  const handleCategoryChange = (newCategory) => {
+  const handleCategoryChange = (newCategory: string): void => {
     setCategory(newCategory)
     if (containerProductsRef?.current) {
       containerProductsRef?.current?.scrollIntoView({ behavior: 'smooth' })
@@ -40,7 +40,7 @@ export default function PageStore() {
   const handleSearchChange = (newSearchTerm: string) => {
     setSearchTerm(newSearchTerm)
   }
-  const handleOpenProductPopup = (product) => {
+  const handleOpenProductPopup = (product: any): void => {
     setSelectedProduct(product)
   }
   const handleCloseProductPopup = () => {
@@ -48,7 +48,7 @@ export default function PageStore() {
   }
 
   return (
-    <PageLayout title={title} description={description} image={image}>
+    <PageWrapper>
       <section>
         <div className="page">
           <h1>{title}</h1>
@@ -89,6 +89,6 @@ export default function PageStore() {
           onClose={handleCloseProductPopup}
         />
       )}
-    </PageLayout>
+    </PageWrapper>
   )
 }

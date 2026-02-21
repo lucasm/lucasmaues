@@ -1,34 +1,51 @@
+'use client'
+
 import { IconArrowExternal } from '../Svgs'
 import Styles from './BlogPosts.module.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, JSX } from 'react'
 
-export default function Posts() {
-  const [data, setData] = useState(null)
-  const [error, setError] = useState(null)
-  const [loading, setLoading] = useState(true)
+// Types
+interface BlogPost {
+  id: number
+  title: string
+  description: string
+  url: string
+}
+
+export default function Posts(): JSX.Element {
+  const [data, setData] = useState<BlogPost[] | null>(null)
+  const [error, setError] = useState<Error | null>(null)
+  const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    const fetchData = async () => {
+    const abortController = new AbortController()
+
+    const fetchData = async (): Promise<void> => {
       try {
         const response = await fetch(
-          `https://dev.to/api/articles?username=lucasm`,
+          `https://dev.to/api/articles?username=lucasm&per_page=3`,
           {
             cache: 'no-store',
+            signal: abortController.signal,
           }
         )
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
         }
-        const result = await response.json()
+        const result: BlogPost[] = await response.json()
         setData(result)
       } catch (err) {
-        setError(err)
+        if (err instanceof Error && err.name !== 'AbortError') {
+          setError(err)
+        }
       } finally {
         setLoading(false)
       }
     }
 
     fetchData()
+
+    return () => abortController.abort()
   }, [])
 
   if (error)
@@ -48,24 +65,23 @@ export default function Posts() {
 
   return (
     <ul className={Styles.posts}>
-      {data &&
-        data.slice(0, 3).map((item: any, index: number) => (
-          <li key={index}>
-            {/* <figure></figure> */}
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={Styles.link}>
-              {/* <span>{index + 1}</span> */}
-              <div className={Styles.title}>
-                <h3>{item.title}</h3>
-              </div>
-              <p>{item.description}</p>
-              <IconArrowExternal />
-            </a>
-          </li>
-        ))}
+      {data?.map((item: BlogPost) => (
+        <li key={item.id ?? item.url}>
+          {/* <figure></figure> */}
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={Styles.link}>
+            {/* <span>{index + 1}</span> */}
+            <div className={Styles.title}>
+              <h3>{item.title}</h3>
+            </div>
+            <p>{item.description}</p>
+            <IconArrowExternal />
+          </a>
+        </li>
+      ))}
     </ul>
   )
 }

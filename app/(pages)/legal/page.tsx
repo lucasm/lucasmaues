@@ -1,16 +1,40 @@
-import PageLayout from '../components/PageLayout'
+import PageWrapper from '@/components/PageWrapper'
+import { ROUTES } from '@/routes/routes'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: `${ROUTES.LEGAL.title}`,
+  description: ROUTES.LEGAL.description,
+  openGraph: {
+    title: `${ROUTES.LEGAL.title} | ${ROUTES.HOME.title}`,
+    description: ROUTES.LEGAL.description,
+    images: [
+      {
+        url: ROUTES.LEGAL.image,
+        width: 1200,
+        height: 630,
+      },
+    ],
+    url: 'https://lucasm.dev/legal',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${ROUTES.LEGAL.title} | ${ROUTES.HOME.title}`,
+    description: ROUTES.LEGAL.description,
+    images: [ROUTES.LEGAL.image],
+  },
+}
 
 export default function PagePrivacy() {
   return (
-    <PageLayout
-      title="Privacy & Terms"
-      description="Privacy Policy and Terms of Use of Lucas Menezes personal website.">
+    <PageWrapper>
       <section>
         <article>
           <h1>Privacy Policy & Terms of Use</h1>
 
           <p>
-            Lucas Maués de Menezes is committed to respect your privacy and
+            ${ROUTES.HOME.title} is committed to respect your privacy and
             rights, under the legal entity LUCASM.DEV LTDA in Brazil.
           </p>
 
@@ -156,6 +180,6 @@ export default function PagePrivacy() {
           </p>
         </article>
       </section>
-    </PageLayout>
+    </PageWrapper>
   )
 }
