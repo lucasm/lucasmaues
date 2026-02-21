@@ -25,7 +25,7 @@ export default function Banners() {
       external: true,
       title: 'Receba R$ 5,00 de volta',
       subtitle:
-        'Ainda não recebe dinheiro de volta? Ative o Méliuz com minha indicação e ganhe cashback em compras online!',
+        'Ainda não recebe dinheiro de volta? Ative o Méliuz com minha indicação e ganhe cashback nas compras online!',
       image: <IconGift />,
     },
   ]

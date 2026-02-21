@@ -22,7 +22,7 @@ import {
   IconThreads,
   IconStore,
   IconMentor,
-  IconWork,
+  IconAbout,
   //   IconFindto,
   //   IconCheckTest,
   //   IconTalito,
@@ -92,7 +92,7 @@ const linksList: ILinks[] = [
     active: true,
     onlyText: true,
     internalPage: true,
-    icon: <IconWork />,
+    icon: <IconAbout />,
   },
   {
     url: 'https://linkedin.com/in/lucasmezs',
@@ -203,7 +203,7 @@ const Links = (): JSX.Element => {
   const showToggleButton = false
 
   return (
-    <div>
+    <div className={Styles.container}>
       <PrefetchImages enabled={prefetchEnabled} />
 
       <ul className={`${Styles.links} ${Styles.containerText}`}>

@@ -1,9 +1,9 @@
 'use client'
 
-import { JSX, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useUser } from '../../contexts/UserContext'
-import { IconMoon, IconSun } from '../Svgs'
+import { IconMenu, IconSystem, IconMoon, IconSun, IconClose } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
 
 // Types
@@ -12,7 +12,7 @@ interface HeaderLink {
   text: string
 }
 
-export default function Header(): JSX.Element {
+export default function Header() {
   const { theme, setTheme } = useUser()
   const [isActive, setActive] = useState<boolean>(false)
 
@@ -26,19 +26,31 @@ export default function Header(): JSX.Element {
     setActive(!isActive)
   }
 
-  // system, light, dark
   const toggleTheme = (): void => {
     try {
-      if (theme === 'light') {
-        setTheme('dark')
-        window.localStorage.setItem('theme', 'dark')
-      } else {
+      if (theme === 'system') {
+        // Se estiver em 'system', muda para light
         setTheme('light')
-        window.localStorage.setItem('theme', 'light')
+      } else if (theme === 'light') {
+        // Se estiver em 'light', muda para dark
+        setTheme('dark')
+      } else {
+        // Se estiver em 'dark', volta para system
+        setTheme('system')
       }
     } catch (error) {
       console.error('Error toggling theme:', error)
     }
+  }
+
+  const getThemeLabel = (): string => {
+    if (theme === 'system') return 'System'
+    return theme === 'dark' ? 'Dark' : 'Light'
+  }
+
+  const getThemeIcon = () => {
+    if (theme === 'system') return <IconSystem />
+    return theme === 'dark' ? <IconMoon /> : <IconSun />
   }
 
   const HeaderLinks: HeaderLink[] = [
@@ -71,14 +83,14 @@ export default function Header(): JSX.Element {
   return (
     <header>
       <div className="container">
-        <Link href="/" id="logo" accessKey="1">
+        <Link href="/" id="logo">
           {ROUTES.HOME.title}
         </Link>
 
         <div className="headerButtons">
           <button onClick={toggleTheme} id="theme" translate="no">
-            {theme === 'dark' ? <IconMoon /> : <IconSun />}
-            {theme === 'dark' ? 'Dark' : 'Light'}
+            {getThemeIcon()}
+            {getThemeLabel()}
           </button>
 
           <button
@@ -88,7 +100,7 @@ export default function Header(): JSX.Element {
             type="button"
             aria-label={isActive ? 'Close menu' : 'Open menu'}
             aria-expanded={isActive}>
-            <div className="hamburger"></div>
+            {isActive ? <IconClose /> : <IconMenu />}
             Menu
           </button>
         </div>

@@ -1,8 +1,15 @@
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
+import { Gantari } from 'next/font/google'
 import { UserContextProvider } from '@/contexts/UserContext'
 import { ROUTES } from '@/routes/routes'
 import '@/styles/global.css'
+
+const font = Gantari({
+  subsets: ['latin'],
+  variable: '--font-gantari',
+  weight: ['400', '600'],
+})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -100,7 +107,7 @@ export default function RootLayout({
     process.env.NEXT_PUBLIC_ENV_LUCASMDEV === 'production'
 
   return (
-    <html lang="en">
+    <html lang="en" className={font.className}>
       <head>
         {isProduction && (
           <>

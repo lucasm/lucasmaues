@@ -1,19 +1,19 @@
 import { ReactElement } from 'react'
 import {
-  svgBancoBmg,
-  svgGlobo,
+  IconBancoBmg,
+  IconGlobo,
   IconFindto,
-  SvgMdn,
-  SvgMicrosoft,
-  svgProjectVarejoAqui,
-  svgProjectTCMPA,
-  svgProjectUFPA,
-  svgProjectSuperia,
-  SvgProjectNufen,
-  SvgNaCuia,
-  SvgCacba,
+  IconMdn,
+  IconMicrosoft,
+  IconVarejoAqui,
+  IconTCMPA,
+  IconUFPA,
+  IconSuperia,
+  IconNufen,
+  IconNaCuia,
+  IconCacba,
   IconChecktest,
-  svgActDigital,
+  IconActDigital,
   IconTalito,
 } from '@/components/Svgs'
 
@@ -31,7 +31,7 @@ export const projects: IProjects[] = [
     name: 'Banco Bmg',
     url: 'https://www.bancobmg.com.br/',
     description:
-      'Financial products Web Application for a bank in Brazil, with 3.6 billion BRL in Loans sales per year (4T24).',
+      'Web Application of banking products sales for a bank in Brazil, with 3.6 billion of BRL transactions per year (4T24).',
     tags: [
       'TypeScript',
       'React',
@@ -42,7 +42,7 @@ export const projects: IProjects[] = [
       'Microsoft Azure',
       'AWS',
     ],
-    icon: svgBancoBmg,
+    icon: IconBancoBmg,
     active: true,
   },
   {
@@ -59,7 +59,7 @@ export const projects: IProjects[] = [
       'Python',
       'Docker',
     ],
-    icon: svgGlobo,
+    icon: IconGlobo,
     active: true,
   },
   {
@@ -93,7 +93,7 @@ export const projects: IProjects[] = [
       'CSS',
       'Accessibility',
     ],
-    icon: SvgMdn,
+    icon: IconMdn,
     active: true,
   },
   {
@@ -102,7 +102,7 @@ export const projects: IProjects[] = [
     description:
       'Portuguese translator for AI and Web technologies on Microsoft.',
     tags: ['Open Source', 'Translations', 'AI', 'Web'],
-    icon: SvgMicrosoft,
+    icon: IconMicrosoft,
     active: true,
   },
   {
@@ -111,7 +111,7 @@ export const projects: IProjects[] = [
     description:
       'IT Consultant and Specialist in Frontend technologies for stand out companies.',
     tags: ['IT', 'Consultant', 'Specialist', 'Frontend'],
-    icon: svgActDigital,
+    icon: IconActDigital,
     active: true,
   },
   {
@@ -144,7 +144,7 @@ export const projects: IProjects[] = [
       'Node.js',
       'Android Studio',
     ],
-    icon: svgProjectVarejoAqui,
+    icon: IconVarejoAqui,
     active: true,
   },
   {
@@ -162,7 +162,7 @@ export const projects: IProjects[] = [
       'Accessibility',
       'AWS',
     ],
-    icon: svgProjectTCMPA,
+    icon: IconTCMPA,
     active: true,
   },
   {
@@ -171,16 +171,16 @@ export const projects: IProjects[] = [
     description:
       'Web Application and Web Components for an international trading company.',
     tags: ['TypeScript', 'Vue.js', 'CSS', 'Atomic Design'],
-    icon: svgProjectSuperia,
+    icon: IconSuperia,
     active: true,
   },
   {
     name: 'Federal University of Pará',
-    url: 'https://www.radio.ufpa.br/webdoc60/',
+    url: 'https://radio.ufpa.br/webdoc60/',
     description:
       'Live Audio and Video Streaming with Web Player, Websites, CMS, and Web Documentary for a Federal university in Brazil.',
     tags: ['JavaScript', 'PHP', 'Node.js', 'Python', 'MySQL', 'SEO', 'UI'],
-    icon: svgProjectUFPA,
+    icon: IconUFPA,
     active: true,
   },
   {
@@ -188,7 +188,7 @@ export const projects: IProjects[] = [
     url: 'https://linkedin.com/in/lucasmezs',
     description: 'Website for mental health service with online therapy.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO', 'UI', 'UX'],
-    icon: SvgProjectNufen,
+    icon: IconNufen,
     active: true,
   },
   {
@@ -197,7 +197,7 @@ export const projects: IProjects[] = [
     description:
       'Website for a cultural producer and magazine in the Amazon region.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
-    icon: SvgNaCuia,
+    icon: IconNaCuia,
     active: true,
   },
   {
@@ -206,7 +206,7 @@ export const projects: IProjects[] = [
     description:
       'Hacked Website recovered and redesigned for a non-profit organization of childhood protection in the Amazon region.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
-    icon: SvgCacba,
+    icon: IconCacba,
     active: true,
   },
 ]

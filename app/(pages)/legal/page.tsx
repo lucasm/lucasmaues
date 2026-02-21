@@ -31,22 +31,23 @@ export default function PagePrivacy() {
     <PageWrapper>
       <section>
         <article>
-          <h1>Privacy Policy & Terms of Use</h1>
+          <h1>{ROUTES.LEGAL.title}</h1>
 
           <p>
-            ${ROUTES.HOME.title} is committed to respect your privacy and
-            rights, under the legal entity LUCASM.DEV LTDA in Brazil.
+            {ROUTES.HOME.title} is committed to respect your privacy and rights,
+            under the legal entity LUCASM.DEV LTDA in Federative Republic of
+            Brazil.
           </p>
 
           <h2>1. Legislation</h2>
 
           <p>
-            This Privacy Policy and Terms of Use is following the General Data
-            Protection Law of Brazil (LGPD). When you access https://lucasm.dev
-            and related projects on this domain (collectively called "projects")
-            you agree to be regulated under the Brazilian jurisdiction and this
-            policy. If you do not agree with the practices described here,
-            please, don't use the projects.
+            This {ROUTES.LEGAL.title} is following the General Data Protection
+            Law of Brazil (LGPD). When you access https://lucasm.dev and related
+            projects on this domain (collectively called "projects") you agree
+            to be regulated under the Brazilian jurisdiction and this policy. If
+            you do not agree with the practices described here, please, don't
+            use the projects.
           </p>
 
           <h2>2. Automatically Collected Information</h2>
@@ -175,8 +176,8 @@ export default function PagePrivacy() {
 
           <h2>10. Contact</h2>
           <p>
-            If you have any questions or suggestions, please, email at{' '}
-            <a href="mailto:legal@lucasm.dev">legal@lucasm.dev</a>.
+            If you have any questions or suggestions, please, email at
+            legal@lucasm.dev.
           </p>
         </article>
       </section>

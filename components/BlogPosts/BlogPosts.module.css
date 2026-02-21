@@ -15,7 +15,6 @@
   flex-direction: column;
   background: var(--color-w);
   padding: 2rem 2rem 1.75rem;
-  display: flex;
   text-align: left;
   border-radius: var(--radius);
   transition: var(--transition);
@@ -57,7 +56,6 @@
 }
 .posts figure {
   background: var(--color-w);
-  /* display: none; */
 }
 
 .title {
@@ -74,7 +72,7 @@
 
 @media only screen and (min-width: 900px) {
   .posts {
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: nowrap;
   }
 }

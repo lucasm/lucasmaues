@@ -41,9 +41,9 @@ export default function PageMentor() {
             <h1>{title}</h1>
 
             <p className="description">
-              Como Liderança Técnica, atuando com Engenharia de Software e
-              Frontend desde 2017, sou buscado por estudantes e profissionais de
-              TI para orientação de carreira.
+              Como Liderança Técnica e trabalhando com Engenharia de Software e
+              Frontend desde 2017, sou procurado por profissionais de TI e
+              estudantes que buscam orientação de carreira.
             </p>
           </div>
         </div>
@@ -62,26 +62,27 @@ export default function PageMentor() {
             <h3>O que é a mentoria?</h3>
 
             <p>
-              Um espaço seguro de crescimento e aprendizado. Você se esforça mas
-              não evolui? Eu te ajudo a se destacar no mercado de TI, com as
-              suas qualidades.
+              A mentoria é um espaço seguro de crescimento e aprendizado. Você
+              se esforça mas não evolui? Eu te ajudo a se destacar no mercado de
+              TI, com as suas qualidades.
             </p>
 
-            <h3>Meu "método 1x" de foco</h3>
+            <h3>Minha metodologia</h3>
 
             <p>
-              Quando você compra cursos e não faz, você está tentando ser 10x.
-              Quando você tenta fazer tudo ao mesmo tempo, você está tentando
-              ser 10x. Mas na verdade precisa ser 1x. Essa é a minha filosofia.
-              Eu chamo de "método 1x" o conjunto de práticas e técnicas que eu
-              desenvolvi ao longo dos anos para me tornar um profissional mais
-              produtivo, e com qualidade de vida. Lembre-se: não é sobre
-              fórmulas mágicas. 1x significa fazer uma vez e fazer bem feito. É
-              sobre resultados baseado em ações assertivas. É sobre fazer o que
-              precisa ser feito. Com calma, foco, disciplina e consistência.
+              Quando você compra cursos e não faz, ou quando você tenta fazer
+              tudo ao mesmo tempo, você está tentando ser 10x. Mas na verdade
+              precisa ser 1x. Essa é a minha filosofia. Eu chamo de "método 1x"
+              o conjunto de práticas e técnicas que eu desenvolvi ao longo dos
+              anos para me tornar um profissional mais produtivo, e com
+              qualidade de vida. Lembre-se: não é sobre fórmulas mágicas. 1x
+              significa fazer uma vez e fazer bem feito. É sobre resultados
+              baseado em ações assertivas. É sobre fazer o que precisa ser
+              feito. Com calma, foco, disciplina, consistência e analisando
+              dados.
             </p>
 
-            <h3>Como funciona a mentoria?</h3>
+            <h3>Como funcionam as sessões?</h3>
             <p>
               A mentoria é realizada por videochamada. Durante a primeira sessão
               vamos conversar e entender o seu momento atual na TI. Quais as
@@ -94,7 +95,7 @@ export default function PageMentor() {
             <h3>Quem pode participar?</h3>
 
             <p>
-              Desenvolvedores, estudantes e profissionais de TI que buscam
+              Profissionais de TI, desenvolvedores e estudantes que buscam
               orientação e suporte para evoluir na carreira e estudos.
             </p>
 
@@ -109,19 +110,19 @@ export default function PageMentor() {
             <h3>Benefícios:</h3>
 
             <p>
-              - Orientação
+              - Orientação profissional
               <br />
-              - Plano de ação personalizado para alcançar os seus objetivos
+              - Plano de ação personalizado com foco nos seus objetivos
               <br />
               - Desenvolvimento comportamental (soft skills)
               <br />
-              - Aprendizado prático (hard skills)
+              - Aprendizado técnico (hard skills)
               <br />
-              - Feedback, onde falo o que você PRECISA ouvir para evoluir como
-              profissional, não o que quer ouvir (sem egos)
+              - Feedback real, onde falo o que você PRECISA ouvir para evoluir
+              como profissional, não o que seu ego quer ouvir
               <br />
-              - Avaliação dos resultados alcançados
-              <br />- Independência e fim da mentoria
+              - Avaliação de resultados
+              <br />- Independência (essa fase é o fim da mentoria)
             </p>
           </article>
         </div>
@@ -140,11 +141,11 @@ export default function PageMentor() {
               <p>
                 <strong></strong>
                 <br />
-                Duração da sessão: 45 minutos
+                Duração: 45 minutos
                 <br />
-                Formato: Google Meet + Notion
+                Formato: Videochamada + Plano de ação personalizado
                 <br />
-                Agendamento e pagamento: Patreon
+                Pagamento: Patreon
                 <br />
                 <br />
               </p>

@@ -6,13 +6,14 @@ import {
   useState,
   useEffect,
   ReactNode,
-  JSX,
 } from 'react'
 
-// Types
+type ThemeType = 'system' | 'light' | 'dark'
+
 interface UserContextType {
-  theme: string
-  setTheme: (theme: string) => void
+  theme: ThemeType
+  setTheme: (theme: ThemeType) => void
+  effectiveTheme: 'light' | 'dark'
 }
 
 interface UserContextProviderProps {
@@ -25,45 +26,87 @@ const UserContext = createContext<UserContextType | undefined>(undefined)
 // export as Provider
 export function UserContextProvider({
   children,
-}: Readonly<UserContextProviderProps>): JSX.Element {
-  const [theme, setTheme] = useState<string>('light')
+}: Readonly<UserContextProviderProps>) {
+  const [theme, setThemeState] = useState<ThemeType>('system')
+  const [effectiveTheme, setEffectiveTheme] = useState<'light' | 'dark'>(
+    'light'
+  )
 
-  // theme
-  useEffect(() => {
-    if (theme) {
-      const root = document.documentElement
-
-      root.style.setProperty(
-        '--color-b',
-        theme === 'dark' ? 'var(--color-w)' : 'var(--color-b-dark)'
-      )
-      root.style.setProperty(
-        '--color-w-text',
-        theme === 'dark' ? 'var(--color-b-dark)' : 'var(--color-w)'
-      )
-      root.style.setProperty(
-        '--color-background',
-        theme === 'dark' ? 'var(--color-b-dark)' : 'var(--color-y-4)'
-      )
-      root.style.setProperty(
-        '--color-translucent',
-        theme === 'dark' ? 'rgb(255 255 255 / 5%)' : 'rgb(0 0 0 / 5%)'
-      )
-
-      root.style.setProperty('color-scheme', theme)
+  // Get the effective theme considering system preference
+  const getEffectiveTheme = (currentTheme: ThemeType): 'light' | 'dark' => {
+    if (currentTheme === 'system') {
+      if (typeof window === 'undefined') return 'light'
+      const prefersDarkMode = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches
+      return prefersDarkMode ? 'dark' : 'light'
     }
+    return currentTheme
+  }
+
+  // Apply theme CSS variables
+  const applyTheme = (currentTheme: ThemeType): void => {
+    const effective = getEffectiveTheme(currentTheme)
+    setEffectiveTheme(effective)
+
+    if (typeof window === 'undefined') return
+
+    const root = document.documentElement
+
+    root.style.setProperty(
+      '--color-b',
+      effective === 'dark' ? 'var(--color-w)' : 'var(--color-b-dark)'
+    )
+    root.style.setProperty(
+      '--color-w-text',
+      effective === 'dark' ? 'var(--color-b-dark)' : 'var(--color-w)'
+    )
+    root.style.setProperty(
+      '--color-background',
+      effective === 'dark' ? 'var(--color-b-dark)' : 'var(--color-y-4)'
+    )
+    root.style.setProperty(
+      '--color-translucent',
+      effective === 'dark' ? 'rgb(255 255 255 / 5%)' : 'rgb(0 0 0 / 5%)'
+    )
+
+    root.style.setProperty('color-scheme', effective)
+  }
+
+  // Wrapper para setTheme que persiste no localStorage
+  const setTheme = (newTheme: ThemeType): void => {
+    setThemeState(newTheme)
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('theme', newTheme)
+    }
+    applyTheme(newTheme)
+  }
+
+  // Listen for system theme changes when in 'system' mode
+  useEffect(() => {
+    if (theme !== 'system' || typeof window === 'undefined') return
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = (): void => {
+      applyTheme('system')
+    }
+
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
   }, [theme])
 
-  // set theme on local storage, checking user OS preference
+  // Initialize theme from localStorage on mount
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches
-    const storedTheme = window.localStorage.getItem('theme')
+    if (typeof window === 'undefined') return
 
-    storedTheme
-      ? setTheme(storedTheme)
-      : setTheme(prefersDarkMode ? 'dark' : 'light')
+    const storedTheme = window.localStorage.getItem('theme') as ThemeType | null
+    const validThemes: ThemeType[] = ['system', 'light', 'dark']
+
+    const initialTheme =
+      storedTheme && validThemes.includes(storedTheme) ? storedTheme : 'system'
+
+    setThemeState(initialTheme)
+    applyTheme(initialTheme)
   }, [])
 
   return (
@@ -71,6 +114,7 @@ export function UserContextProvider({
       value={{
         theme,
         setTheme,
+        effectiveTheme,
       }}>
       {children}
     </UserContext.Provider>

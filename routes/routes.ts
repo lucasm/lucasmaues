@@ -16,8 +16,7 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description:
-      'Portfolio of Lucas Maués. Building high-impact web apps, e-commerces, and AI experiences.',
+    description: 'Building software of hight impact',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {
@@ -27,14 +26,13 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Loja',
-    description: 'Produtos tech, livros e acessórios úteis super recomendados!',
+    description: 'Minha curadoria de produtos e livros recomendados',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
     title: 'Mentoria',
-    description:
-      'Mentoria para desenvolvedores. Aprenda a se destacar no mercado tech.',
+    description: 'Mentoria para profissionais se destacarem no mercado tech',
     image: 'https://lucasm.dev/share-mentor.png',
   },
   BLOG: {
@@ -44,20 +42,19 @@ export const ROUTES = {
   DOMAINS: {
     path: '/domains',
     title: 'Domains Sales',
-    description: 'Domains sales page.',
+    description: 'Domains sales for your project, startup or company',
     image: DEFAULT_IMAGE,
   },
   LEGAL: {
     path: '/legal',
-    title: 'Privacy & Terms',
-    description:
-      'Privacy Policy and Terms of Use of Lucas Menezes personal website.',
+    title: 'Privacy Policy, Terms of Use & Cookies Notice',
+    description: 'Legal information about website',
     image: DEFAULT_IMAGE,
   },
   THANKS: {
     path: '/thanks',
     title: 'Thanks',
-    description: 'Thanks page.',
+    description: 'Thanks for this',
     image: DEFAULT_IMAGE,
   },
 }

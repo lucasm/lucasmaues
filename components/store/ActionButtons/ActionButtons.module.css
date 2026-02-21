@@ -23,7 +23,7 @@
     height: max-content;
     max-width: 84px;
     border-radius: var(--radius);
-    font-size: var(--font-size-7);
+    font-size: var(--font-size-6);
   }
   .container a svg {
     color: var(--color-b);

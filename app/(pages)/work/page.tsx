@@ -37,7 +37,7 @@ export default function PageWork() {
           <div className="container miniContainer">
             <h1>{ROUTES.WORK.title}</h1>
 
-            <p className="description">Building positive impact.</p>
+            <p className="description">{ROUTES.WORK.description}</p>
           </div>
         </div>
       </section>

@@ -3,17 +3,17 @@ export const productsBR = [
     title: 'Logitech MX Vertical Mouse',
     stars: 4.9,
     description:
-      'O melhor mouse ergonômico que já usei na vida. A pegada é superior ao MX Master (minha mão é grande). Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
+      'O melhor mouse ergonômico criado pela indústria e que já utilizei na vida. A pegada é superior ao MX Master (minha mão é grande). Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia da mão humana para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
     url: 'https://amzn.to/3Q2pxHV',
     url_2: 'https://mercadolivre.com/sec/1ffSj1x',
     image: 'https://m.media-amazon.com/images/I/71P5QJEcfRL._AC_SX679_.jpg',
     category: 'Eletrônicos',
   },
   {
-    title: 'Echo Dot Max',
+    title: 'Amazon Echo Dot Max',
     stars: 4.7,
     description:
-      '"Alexa, toca minha playlist MPB". Caixinha de som com IA de automação. Realmente uma joia. Toca música, informa o clima/tempo e alarmes, agora com despertador inteligente e conversa até agradável. É possível conectar outros dispositivos para controlar por voz, e aqui realmente podemos automatizar a casa via comandos.',
+      '"Alexa, toca minha playlist Instrumental". Essa é uma perfeita caixa de som com IA de automação residencial. Toca música, informa o clima/tempo, alarmes, despertador e conversa com inteligência geral. É possível conectar outros dispositivos para controlar por voz (TV, lâmpadas, ar condicionado, etc) e assim podemos automatizar a casa inteira.',
     url: 'https://amzn.to/3N2i0uG',
     image: 'https://m.media-amazon.com/images/I/71HgfqBVvIL._AC_SY879_.jpg',
     category: 'Eletrônicos',
@@ -26,6 +26,16 @@ export const productsBR = [
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
+  },
+  {
+    title: 'Stanley Aerolight Fast Flow Garrafa',
+    stars: 4.9,
+    description:
+      'Garrafa térmica com construção sólida. Qualidade reconhecida da Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
+    url: 'https://amzn.to/3uDXl7H',
+    url_2: 'https://mercadolivre.com/sec/21x7Pq8',
+    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
+    category: 'Acessórios',
   },
   {
     title: 'Logitech MX Keys Mini Teclado',
@@ -66,16 +76,7 @@ export const productsBR = [
     image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
     category: 'Livros',
   },
-  {
-    title: 'Stanley Aerolight Fast Flow Garrafa',
-    stars: 4.9,
-    description:
-      'Garrafa térmica com construção sólida. Qualidade reconhecida da Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
-    url: 'https://amzn.to/3uDXl7H',
-    url_2: 'https://mercadolivre.com/sec/21x7Pq8',
-    image: 'https://m.media-amazon.com/images/I/41xxMGeDEaL._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
+
   {
     title: 'JBL Charge 6 Caixa de Som Bluetooth',
     stars: 4.8,

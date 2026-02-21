@@ -48,7 +48,7 @@
 .cards span {
   float: left;
   font-weight: normal;
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-6);
   color: var(--color-b-fixed);
   margin: 0.75rem 0.75rem 0 0;
   border-radius: 5rem;
@@ -74,8 +74,8 @@
     padding: 4rem;
   }
   .cards figure {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     margin: 2rem auto 5rem;
   }
   .cards p {

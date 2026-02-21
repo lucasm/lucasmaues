@@ -24,7 +24,7 @@ export default function Footer(): JSX.Element {
         </div>
 
         <p>
-          <Link href="/legal">Privacy & Terms</Link>
+          <Link href="/legal">{ROUTES.LEGAL.title}</Link>
         </p>
       </div>
     </footer>

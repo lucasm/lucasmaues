@@ -5,7 +5,7 @@ import CardsWorkFeatured from '@/components/CardsWorkFeatured'
 import ProfilePhoto from '@/components/ProfilePhoto'
 import Button from '@/components/Button'
 import { ROUTES } from '@/routes/routes'
-import { IconMore } from '@/components/Svgs'
+import { IconArrowInternal } from '@/components/Svgs'
 import { Metadata } from 'next'
 import { JSX } from 'react'
 
@@ -42,6 +42,7 @@ export default function PageHome(): JSX.Element {
           <div className="container home">
             <ProfilePhoto />
             <h1>{ROUTES.HOME.seo}</h1>
+
             <Links />
           </div>
         </div>
@@ -61,40 +62,37 @@ export default function PageHome(): JSX.Element {
 
           <div className="aboutContainer">
             <div>
-              <h3>Building positive impact</h3>
+              <h3>{ROUTES.WORK.description}</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>
                   {ROUTES.WORK.title}
-                  <IconMore />
+                  <IconArrowInternal />
                 </>
               </Button>
             </div>
 
             <div>
               <p>
-                Hello, I'm Lucas Maués de Menezes, a Tech Lead, Senior Software
-                Engineer & Frontend Specialist based in Brazil.
+                Since 2017, I've been building high-impact web applications,
+                e-commerce platforms, and more recently, AI-driven experiences.
+                As a leader, I empower my teams to deliver refined user
+                experiences while maintaining robust, scalable software
+                engineering practices.
               </p>
-
               <p>
                 I take great pride in delivering work that impacts millions of
                 users and facilitates high-volume BRL transactions daily.
-                Throughout my career, I've consistently helped drive revenue
-                growth for every company I've partnered with.
-              </p>
-
-              <p>
-                Since 2017, I've been building high-impact web applications,
-                mission-critical e-commerce platforms, and more recently,
-                AI-driven experiences. As a leader, I empower my teams to
-                deliver exceptional user experiences while maintaining robust,
-                scalable software engineering practices.
+                Throughout my career, I've helped drive revenue growth for every
+                company I've partnered with.
               </p>
 
               <p>
                 I'm deeply passionate about learning and sharing knowledge. My
-                core philosophy is simple: Simplicity. Welcome!
+                core philosophy is simplicity. Welcome!
+              </p>
+              <p>
+                -<i> Lucas Maués</i>
               </p>
             </div>
           </div>

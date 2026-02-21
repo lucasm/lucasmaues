@@ -1,12 +1,37 @@
-export const IconLucasmdev = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+// UI
+
+export const IconMenu = () => (
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
     <path
-      fill="currentColor"
-      d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm6,25H16V13H10V7H22Z"
+      d="M3 8.5H21M3 15.5H21"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 )
-
+export const IconSystem = () => (
+  <svg
+    width="100%"
+    height="100%"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M8 21H16M12 17V21M6.8 17H17.2C18.8802 17 19.7202 17 20.362 16.673C20.9265 16.3854 21.3854 15.9265 21.673 15.362C22 14.7202 22 13.8802 22 12.2V7.8C22 6.11984 22 5.27976 21.673 4.63803C21.3854 4.07354 20.9265 3.6146 20.362 3.32698C19.7202 3 18.8802 3 17.2 3H6.8C5.11984 3 4.27976 3 3.63803 3.32698C3.07354 3.6146 2.6146 4.07354 2.32698 4.63803C2 5.27976 2 6.11984 2 7.8V12.2C2 13.8802 2 14.7202 2.32698 15.362C2.6146 15.9265 3.07354 16.3854 3.63803 16.673C4.27976 17 5.11984 17 6.8 17Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
 export const IconMoon = () => (
   <svg
     width="100%"
@@ -100,7 +125,7 @@ export const IconMentor = () => (
     />
   </svg>
 )
-export const IconWork = () => (
+export const IconAbout = () => (
   <svg
     width="100%"
     height="100%"
@@ -221,31 +246,33 @@ export const ArrowUpRight = () => (
 )
 export const IconArrowExternal = () => (
   <svg
-    width="24"
-    height="24"
-    fill="none"
+    width="100%"
+    height="100%"
     viewBox="0 0 24 24"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M12.748 3.001h7.554l.1.014.099.028.06.026a.72.72 0 0 1 .219.15l.04.044.061.082.037.065.04.09.018.064.014.064.01.093v7.534a.75.75 0 0 1-1.493.102l-.007-.102V5.559L4.28 20.784a.75.75 0 0 1-.977.073l-.084-.073a.75.75 0 0 1-.073-.976l.073-.084L18.439 4.5l-5.69.001a.75.75 0 0 1-.744-.648l-.007-.102a.75.75 0 0 1 .648-.743L12.748 3Z"
-      fill="currentColor"
+      d="M6 18L18 6M18 6H10M18 6V14"
       stroke="currentColor"
-      strokeWidth=".6"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 )
 export const IconArrowInternal = () => (
   <svg
-    width="24"
-    height="24"
-    fill="none"
+    width="100%"
+    height="100%"
     viewBox="0 0 24 24"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M13.267 4.209a.75.75 0 0 0-1.034 1.086l6.251 5.955H3.75a.75.75 0 0 0 0 1.5h14.734l-6.251 5.954a.75.75 0 0 0 1.034 1.087l7.42-7.067a.996.996 0 0 0 .3-.58.758.758 0 0 0-.001-.29.995.995 0 0 0-.3-.578l-7.419-7.067Z"
-      fill="currentColor"
+      d="M4 12H20M20 12L14 6M20 12L14 18"
       stroke="currentColor"
-      strokeWidth=".6"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </svg>
 )
@@ -323,6 +350,8 @@ export const IconFilter = () => (
     <path d="M10 16h4a1 1 0 0 1 .117 1.993L14 18h-4a1 1 0 0 1-.117-1.993L10 16h4-4Zm-2-5h8a1 1 0 0 1 .117 1.993L16 13H8a1 1 0 0 1-.117-1.993L8 11h8-8ZM5 6h14a1 1 0 0 1 .117 1.993L19 8H5a1 1 0 0 1-.117-1.993L5 6h14H5Z" />
   </svg>
 )
+
+// Trademarks
 
 export const IconTwitter = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -490,16 +519,30 @@ export const IconAmazon = () => (
   </svg>
 )
 
-export const svgBancoBmg = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 32 32"
-    fill="currentColor">
-    <path d="M15.36,12a1.63,1.63,0,0,1,1.87-1.61,10.91,10.91,0,0,1,9.25,10.78c0,8.55-6.83,10.43-9.8,10.82a1.19,1.19,0,0,1-1.32-1.17Z" />
-    <path d="M6.73,21.84h4.88a3.76,3.76,0,0,0,3.75-3.76V1.22A1.22,1.22,0,0,0,14.15,0H11.88A6.38,6.38,0,0,0,5.52,6.39V20.62A1.22,1.22,0,0,0,6.73,21.84Z" />
+// Projects
+
+export const IconLucasmdev = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path
+      fill="currentColor"
+      d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Zm6,25H16V13H10V7H22Z"
+    />
   </svg>
 )
-export const svgGlobo = (
+export const IconBancoBmg = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlSpace="preserve"
+    fill="currentColor"
+    fillRule="evenodd"
+    clipRule="evenodd"
+    strokeLinejoin="round"
+    strokeMiterlimit={2}
+    viewBox="0 0 32 32">
+    <path d="M9.947.124C7.752.616 5.962 2.187 5.216 4.267c-.395 1.115-.413 1.606-.386 9.437.026 7.26.026 7.347.211 7.584.097.132.29.325.421.421.228.176.377.184 2.888.211 1.659.018 2.862-.009 3.204-.07 1.457-.255 2.581-1.22 3.055-2.633.158-.456.167-.93.167-9.393 0-8.804 0-8.91-.176-9.217-.325-.553-.571-.614-2.458-.606-1.045 0-1.861.053-2.195.123ZM17.321 10.35c-.14.035-.351.105-.448.158-.307.167-.72.693-.816 1.045-.061.228-.097 3.476-.097 9.832 0 10.472-.026 9.99.535 10.393.386.272.737.29 1.747.079 4.828-.983 7.76-3.678 8.734-8.032.219-.974.272-3.415.097-4.433-.764-4.363-3.941-7.804-8.181-8.848-.895-.228-1.246-.263-1.571-.193Z" />
+  </svg>
+)
+export const IconGlobo = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 42 42"
@@ -510,7 +553,7 @@ export const svgGlobo = (
       d="M37.76 21c0 2.727-.014 5.417-.276 8.025-.143 1.42-.85 1.746-2.167 1.885-4.554.48-9.597.59-14.317.576-4.72.014-9.763-.097-14.317-.576-1.317-.14-2.024-.464-2.167-1.885-.262-2.608-.277-5.298-.277-8.025s.014-5.417.276-8.025c.142-1.42.85-1.746 2.167-1.885 4.554-.48 9.597-.59 14.317-.576 4.72-.014 9.763.097 14.317.576 1.317.14 2.024.464 2.167 1.885.262 2.608.277 5.298.277 8.025M42 21c0 11.565-9.41 21-21 21S0 32.565 0 21 9.41 0 21 0s21 9.435 21 21zm-29.535 0c0-4.68 3.81-8.5 8.535-8.5s8.535 3.82 8.535 8.5-3.81 8.5-8.535 8.5-8.535-3.82-8.535-8.5z"></path>
   </svg>
 )
-export const svgActDigital = (
+export const IconActDigital = (
   <svg
     width="32"
     height="32"
@@ -593,7 +636,7 @@ export const IconChecktest = (
     </g>
   </svg>
 )
-export const SvgMdn = (
+export const IconMdn = (
   <svg
     viewBox="0 0 32 32"
     version="1.1"
@@ -602,7 +645,7 @@ export const SvgMdn = (
     <path d="M 0,0 V 32 H 32 V 0 Z M 11.183594,6.0078125 H 13.744141 16 V 25.992188 H 13.744141 V 6.0078125 L 7.5371094,25.992188 H 5 Z m 11.021484,0 H 24.744141 27 V 25.992188 H 24.744141 V 6.0078125 L 18.560547,25.992188 h -2.539063 z" />
   </svg>
 )
-export const SvgMicrosoft = (
+export const IconMicrosoft = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 129 129"
@@ -613,7 +656,7 @@ export const SvgMicrosoft = (
     <path d="M67.7,67.7H129V129H67.7V67.7z" />
   </svg>
 )
-export const svgProjectVarejoAqui = (
+export const IconVarejoAqui = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 32 32"
@@ -622,7 +665,7 @@ export const svgProjectVarejoAqui = (
     <path d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0ZM6.89,13.78a.24.24,0,0,0,0-.14l-.15-.38c-.4-.84-.85-1.11-1.2-1.14v-.64h4.66v.66c-.52.06-.76.33-.33,1.65L11.58,18c.23-.7.49-1.4.72-2.09,1.84-5.3,5-9.38,7.76-9.38a1.78,1.78,0,0,1,1.38,2.9c-4.12-1.14-6.2,2.93-7.64,7.18-.47,1.38-1,2.76-1.45,4.14H9.83L6.89,13.68Zm18.72,7.84H21V21c.51-.07.75-.34.33-1.66L20.77,18c-2,.34-2.59,1.05-3,1.81-1.85,3.95-4.41,6.74-6.66,6.74A1.79,1.79,0,0,1,9.7,23.66c4.13,1.14,6.21-2.92,7.63-7.17.47-1.38,1-2.76,1.45-4.14h2.53l3,7-.05-.09a.29.29,0,0,0,.05.13l.14.39c.4.84.85,1.1,1.21,1.14Z" />
   </svg>
 )
-export const svgProjectTCMPA = (
+export const IconTCMPA = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 32 32"
@@ -630,7 +673,7 @@ export const svgProjectTCMPA = (
     <path d="M0,0V32H32V0ZM7.89,20.19H5.76V13.76H2.62v-2H11v2H7.9Zm10.85-1.5a4.43,4.43,0,0,1-3.41,1.46h-.05a4.36,4.36,0,0,1-3-1.17A4,4,0,0,1,11,16.07v0a4.06,4.06,0,0,1,1.16-2.95,4.42,4.42,0,0,1,3.14-1.24,4.81,4.81,0,0,1,2.49.6l.16.09-1.21,1.64-.06,0a2.62,2.62,0,0,0-1.36-.39,2.11,2.11,0,0,0-1.53.66A2.22,2.22,0,0,0,13.17,16a2.29,2.29,0,0,0,.62,1.59,2.09,2.09,0,0,0,1.56.65,2.91,2.91,0,0,0,2-.88l.12-.11,1.39,1.32ZM16.5,16a1.09,1.09,0,1,1-1.09-1.09A1.09,1.09,0,0,1,16.5,16Zm12.29,4.19h-2.3V15.9l-2.26,2.48H24l-2.23-2.45v4.26H19.52v-8.4h1.84l2.79,3.31L27,11.79h1.84Z" />
   </svg>
 )
-export const svgProjectSuperia = (
+export const IconSuperia = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -639,7 +682,7 @@ export const svgProjectSuperia = (
     <path d="M6.46,18.35v4.83a.82.82,0,0,0,.81.82H19.48a.82.82,0,0,0,.76-.51l3.12-7.57a.83.83,0,0,0,0-.62L20.73,8.82A.83.83,0,0,0,20,8.31H14.36a.82.82,0,0,0-.82.82.85.85,0,0,0,.06.31L16,15.3a.83.83,0,0,1,0,.62L15.53,17a.83.83,0,0,1-.76.51H7.27A.82.82,0,0,0,6.46,18.35Z" />
   </svg>
 )
-export const svgProjectUFPA = (
+export const IconUFPA = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -664,7 +707,7 @@ export const svgProjectUFPA = (
     <path d="M15.79 10.29h-.07v.09h.08s-.01-.08-.01-.09ZM16.16 10.57l-.06.08.05.03.01-.11zM12.07 9.28Z" />
   </svg>
 )
-export const SvgProjectNufen = (
+export const IconNufen = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
@@ -683,7 +726,7 @@ export const SvgProjectNufen = (
     <path d="M25.26,23.5c0-1.22.57-1.91,1.61-1.92a1.83,1.83,0,0,1,1.74,2,1.91,1.91,0,0,1-1.81,2.14C25.84,25.68,25.27,24.88,25.26,23.5Z" />
   </svg>
 )
-export const SvgNaCuia = (
+export const IconNaCuia = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"
@@ -697,7 +740,7 @@ export const SvgNaCuia = (
     <path d="M47.61,14.92c-.07.4-.14.79-.22,1.2L46.76,16l.78-1.11Z" />
   </svg>
 )
-export const SvgCacba = (
+export const IconCacba = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"

@@ -40,13 +40,13 @@
     margin: 0 auto 3rem;
   }
   #profile img {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
   #profile svg {
-    top: -2rem;
+    top: -1.5rem;
     left: -2rem;
-    width: 10rem;
-    height: 9rem;
+    width: 9rem;
+    height: 7.5rem;
   }
 }

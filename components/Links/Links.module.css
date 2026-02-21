@@ -1,10 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .links {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
   list-style: none;
   padding: 0;
-  margin: 2rem 0 0 0;
+  margin: 1.5rem 0 0 0;
   justify-content: center;
 }
 .links li {
@@ -55,8 +61,8 @@
 }
 
 .links svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .links .text svg {
@@ -64,27 +70,18 @@
 }
 
 @media only screen and (min-width: 900px) {
-  /* .links {
-    justify-content: flex-start;
-  } */
-
-  .links svg {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
   .links li a,
   .links li button {
     min-height: var(--height-max);
     width: var(--height-max);
   }
-
-  /* .containerText {
+  /*
+  .containerText {
     width: unset;
     flex-direction: row;
   } */
   .links .text a {
-    padding: 1.15rem 2.5rem;
+    padding: 1rem 2.5rem;
     font-size: var(--font-size-5);
   }
 }

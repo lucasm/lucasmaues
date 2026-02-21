@@ -8,21 +8,21 @@ const ActionButtons = () => {
       <Button url="#banner">
         <>
           <IconShield />
-          Compra segura
+          Seguro
         </>
       </Button>
 
       <Button url="#products">
         <>
           <IconCupom />
-          Obter descontos
+          Descontos
         </>
       </Button>
 
       <Button url="https://www.meliuz.com.br/i/ref_lucasmauess" isExternal>
         <>
           <IconGift />
-          Receber R$ 5,00
+          Cashback
         </>
       </Button>
     </div>

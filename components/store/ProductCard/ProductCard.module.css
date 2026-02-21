@@ -46,8 +46,7 @@
   transform: scale(1.05);
 }
 .product h2 {
-  font-size: var(--font-size-5);
-  font-weight: 400;
+  font-size: var(--font-size-6);
   color: var(--color-b-fixed);
   padding: 0;
   width: 100%;
