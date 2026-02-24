@@ -41,7 +41,7 @@ export default function PageHome(): JSX.Element {
         <div className="fullscreen-container">
           <div className="container home">
             <ProfilePhoto />
-            <h1>{ROUTES.HOME.seo}</h1>
+            <h1>Hello, I'm a {ROUTES.HOME.seo}</h1>
 
             <Links />
           </div>
