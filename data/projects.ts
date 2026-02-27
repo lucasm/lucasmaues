@@ -15,6 +15,8 @@ import {
   IconChecktest,
   IconActDigital,
   IconTalito,
+  IconAspiral,
+  IconYounner,
 } from '@/components/Svgs'
 
 export interface IProjects {
@@ -124,11 +126,27 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
+    name: 'Aspiral',
+    url: 'https://aspiral.app/',
+    description: 'News feed of trusted journalism.',
+    tags: ['Frontend', 'React'],
+    icon: IconAspiral,
+    active: true,
+  },
+  {
     name: 'Talito',
     url: 'https://talito.com.br/',
     description: 'B2C and B2B platform of financial data with AI.',
     tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
     icon: IconTalito,
+    active: true,
+  },
+  {
+    name: 'Younner',
+    url: 'https://younner.com/',
+    description: 'Frontend Developer at Software House.',
+    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React', 'Node.js'],
+    icon: IconYounner,
     active: true,
   },
   {

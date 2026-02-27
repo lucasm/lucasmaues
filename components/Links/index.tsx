@@ -88,7 +88,7 @@ const linksList: ILinks[] = [
   //   },
   {
     url: '#about',
-    title: 'About',
+    title: 'Work',
     active: true,
     onlyText: true,
     internalPage: true,
