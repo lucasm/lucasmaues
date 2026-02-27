@@ -16,7 +16,7 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description: 'Building software of hight impact',
+    description: 'Building high-impact solutions with companies and teams.',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {
@@ -26,13 +26,13 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Loja',
-    description: 'Minha curadoria de produtos e livros recomendados',
+    description: 'Minhas recomendações de produtos, livros e acessórios.',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
     title: 'Mentoria',
-    description: 'Mentoria para profissionais se destacarem no mercado tech',
+    description: 'Mentoria para profissionais se destacarem no mercado tech.',
     image: 'https://lucasm.dev/share-mentor.png',
   },
   BLOG: {
@@ -42,19 +42,19 @@ export const ROUTES = {
   DOMAINS: {
     path: '/domains',
     title: 'Domains Sales',
-    description: 'Domains sales for your project, startup or company',
+    description: 'Domains sales for your project, startups or companies.',
     image: DEFAULT_IMAGE,
   },
   LEGAL: {
     path: '/legal',
     title: 'Privacy Policy, Terms of Use & Cookies Notice',
-    description: 'Legal information about website',
+    description: 'Legal information about website.',
     image: DEFAULT_IMAGE,
   },
   THANKS: {
     path: '/thanks',
     title: 'Thanks',
-    description: 'Thanks for this',
+    description: 'Thanks for this.',
     image: DEFAULT_IMAGE,
   },
 }

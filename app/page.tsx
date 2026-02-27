@@ -41,7 +41,7 @@ export default function PageHome(): JSX.Element {
         <div className="fullscreen-container">
           <div className="container home">
             <ProfilePhoto />
-            <h1>Hello, I'm a {ROUTES.HOME.seo}</h1>
+            <h1>Hello, I'm a {ROUTES.HOME.seo}, from Brazil.</h1>
 
             <Links />
           </div>
@@ -74,22 +74,21 @@ export default function PageHome(): JSX.Element {
 
             <div>
               <p>
-                Since 2017, I've been building high-impact web applications,
-                e-commerce platforms, and more recently, AI-driven experiences.
-                As a leader, I empower my teams to deliver refined user
-                experiences while maintaining robust, scalable software
-                engineering practices.
+                Since 2017, I’ve been crafting web applications, e-commerce
+                platforms, and more recently, AI-driven experiences. I take
+                pride in delivering mission-critical products that reach
+                millions of users and power high-volume in BRL transactions
+                daily.
               </p>
               <p>
-                I take great pride in delivering work that impacts millions of
-                users and facilitates high-volume BRL transactions daily.
-                Throughout my career, I've helped drive revenue growth for every
-                company I've partnered with.
+                As a leader, I empower teams to deliver refined user
+                experiences, scalable software engineering practices, and real
+                business growth. I’m passionate about continuous learning and
+                sharing knowledge.
               </p>
 
               <p>
-                I'm deeply passionate about learning and sharing knowledge. My
-                core philosophy is simplicity. Welcome!
+                My core philosophy is: complexity is easy; simplicity is hard!
               </p>
               <p>
                 -<i> Lucas Maués</i>
