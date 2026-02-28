@@ -38,65 +38,205 @@
 .iconContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  gap: 1rem;
   width: 100%;
 }
 
 .icon {
+  aspect-ratio: 1;
   width: 100%;
-  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
   background: var(--color-y-3);
-  animation: alternateColors 8s infinite steps(1);
+  animation: checkerboardA 8s ease-in-out infinite;
 }
+
 .icon svg {
   width: 2rem;
   height: 2rem;
+  transition: transform 0.3s ease;
+  fill: var(--color-b-fixed);
+  animation: svgColorA 8s ease-in-out infinite;
 }
 
-@keyframes alternateColors {
+.icon:hover svg,
+.icon:focus svg {
+  transform: scale(1.1);
+}
+
+/* Group A: starts with yellow background */
+@keyframes checkerboardA {
   0%,
+  45% {
+    background: var(--color-y-3);
+  }
+  50%,
+  95% {
+    background: transparent;
+  }
+  100% {
+    background: var(--color-y-3);
+  }
+}
+
+@keyframes svgColorA {
+  0%,
+  45% {
+    fill: var(--color-b-fixed);
+  }
+  50%,
+  95% {
+    fill: currentColor;
+  }
+  100% {
+    fill: var(--color-b-fixed);
+  }
+}
+
+/* Group B: starts transparent */
+@keyframes checkerboardB {
+  0%,
+  45% {
+    background: transparent;
+  }
+  50%,
+  95% {
+    background: var(--color-y-3);
+  }
   100% {
     background: transparent;
   }
-  50% {
-    background: var(--color-y-3);
-    color: var(--color-b-fixed);
+}
+
+@keyframes svgColorB {
+  0%,
+  45% {
+    fill: currentColor;
+  }
+  50%,
+  95% {
+    fill: var(--color-b-fixed);
+  }
+  100% {
+    fill: currentColor;
   }
 }
 
-.icon:nth-child(odd) {
-  animation-delay: 0s;
+/* Mobile: 3 columns - checkerboard pattern */
+/* Row1: A B A, Row2: B A B (repeats every 6) */
+.icon:nth-child(6n + 1),
+.icon:nth-child(6n + 3),
+.icon:nth-child(6n + 5) {
+  animation-name: checkerboardA;
+  background: var(--color-y-3);
 }
-.icon:nth-child(even) {
-  animation-delay: 4s;
+.icon:nth-child(6n + 1) svg,
+.icon:nth-child(6n + 3) svg,
+.icon:nth-child(6n + 5) svg {
+  animation-name: svgColorA;
+  fill: var(--color-b-fixed);
+}
+.icon:nth-child(6n + 2),
+.icon:nth-child(6n + 4),
+.icon:nth-child(6n) {
+  animation-name: checkerboardB;
+  background: transparent;
+}
+.icon:nth-child(6n + 2) svg,
+.icon:nth-child(6n + 4) svg,
+.icon:nth-child(6n) svg {
+  animation-name: svgColorB;
+  fill: currentColor;
 }
 
-@media screen and (min-width: 500px) {
-  .icon {
-    height: 12rem;
-  }
-}
-
+/* Tablet - 4 columns */
 @media screen and (min-width: 600px) {
+  .iconContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* 4 columns checkerboard: Row1: A B A B, Row2: B A B A (repeats every 8) */
+  .icon:nth-child(8n + 1),
+  .icon:nth-child(8n + 3),
+  .icon:nth-child(8n + 6),
+  .icon:nth-child(8n) {
+    animation-name: checkerboardA;
+    background: var(--color-y-3);
+  }
+  .icon:nth-child(8n + 1) svg,
+  .icon:nth-child(8n + 3) svg,
+  .icon:nth-child(8n + 6) svg,
+  .icon:nth-child(8n) svg {
+    animation-name: svgColorA;
+    fill: var(--color-b-fixed);
+  }
+  .icon:nth-child(8n + 2),
+  .icon:nth-child(8n + 4),
+  .icon:nth-child(8n + 5),
+  .icon:nth-child(8n + 7) {
+    animation-name: checkerboardB;
+    background: transparent;
+  }
+  .icon:nth-child(8n + 2) svg,
+  .icon:nth-child(8n + 4) svg,
+  .icon:nth-child(8n + 5) svg,
+  .icon:nth-child(8n + 7) svg {
+    animation-name: svgColorB;
+    fill: currentColor;
+  }
+}
+
+/* Desktop - 6 columns */
+@media screen and (min-width: 900px) {
+  .iconContainer {
+    grid-template-columns: repeat(6, 1fr);
+  }
   .icon svg {
     width: 3rem;
     height: 3rem;
   }
-}
 
-@media screen and (min-width: 900px) {
-  .iconContainer {
-    grid-template-columns: repeat(5, 1fr);
+  /* 6 columns checkerboard: Row1: A B A B A B, Row2: B A B A B A (repeats every 12) */
+  .icon:nth-child(12n + 1),
+  .icon:nth-child(12n + 3),
+  .icon:nth-child(12n + 5),
+  .icon:nth-child(12n + 8),
+  .icon:nth-child(12n + 10),
+  .icon:nth-child(12n) {
+    animation-name: checkerboardA;
+    background: var(--color-y-3);
   }
-  .icon {
-    height: 11.25rem;
+  .icon:nth-child(12n + 1) svg,
+  .icon:nth-child(12n + 3) svg,
+  .icon:nth-child(12n + 5) svg,
+  .icon:nth-child(12n + 8) svg,
+  .icon:nth-child(12n + 10) svg,
+  .icon:nth-child(12n) svg {
+    animation-name: svgColorA;
+    fill: var(--color-b-fixed);
   }
-  .icon svg {
-    width: 3.5rem;
-    height: 3.5rem;
+  .icon:nth-child(12n + 2),
+  .icon:nth-child(12n + 4),
+  .icon:nth-child(12n + 6),
+  .icon:nth-child(12n + 7),
+  .icon:nth-child(12n + 9),
+  .icon:nth-child(12n + 11) {
+    animation-name: checkerboardB;
+    background: transparent;
+  }
+  .icon:nth-child(12n + 2) svg,
+  .icon:nth-child(12n + 4) svg,
+  .icon:nth-child(12n + 6) svg,
+  .icon:nth-child(12n + 7) svg,
+  .icon:nth-child(12n + 9) svg,
+  .icon:nth-child(12n + 11) svg {
+    animation-name: svgColorB;
+    fill: currentColor;
   }
 }
