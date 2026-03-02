@@ -1,9 +1,9 @@
+import './global.css'
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import { Gantari } from 'next/font/google'
 import { UserContextProvider } from '@/contexts/UserContext'
 import { ROUTES } from '@/routes/routes'
-import '@/styles/global.css'
 
 const font = Gantari({
   subsets: ['latin'],

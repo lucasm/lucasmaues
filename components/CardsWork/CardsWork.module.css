@@ -44,6 +44,11 @@
   width: 100%;
   height: 100%;
   color: var(--color-b-fixed);
+  transition: transform 0.3s ease;
+}
+.cards a:hover svg,
+.cards a:focus svg {
+  transform: scale(1.1);
 }
 .cards span {
   float: left;
