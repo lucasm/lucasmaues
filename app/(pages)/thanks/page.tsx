@@ -2,31 +2,9 @@ import PageWrapper from '@/components/PageWrapper'
 import CircleMouse from '@/components/CircleMouse'
 import Button from '@/components/Button'
 import { ROUTES } from '@/routes/routes'
-import { Metadata } from 'next'
+import { getPageMetadata } from '@/utils/metadata'
 
-export const metadata: Metadata = {
-  title: `${ROUTES.THANKS.title}`,
-  description: ROUTES.THANKS.description,
-  openGraph: {
-    title: `${ROUTES.THANKS.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.THANKS.description,
-    images: [
-      {
-        url: ROUTES.THANKS.image,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    url: 'https://lucasm.dev/thanks',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${ROUTES.THANKS.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.THANKS.description,
-    images: [ROUTES.THANKS.image],
-  },
-}
+export const metadata = getPageMetadata('THANKS')
 
 export default function PageThanks() {
   return (

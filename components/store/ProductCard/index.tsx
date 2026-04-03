@@ -1,3 +1,4 @@
+import { IconVerified } from '@/components/Svgs'
 import style from './ProductCard.module.css'
 
 interface ProductCardProps {
@@ -12,10 +13,18 @@ export default function ProductCard({
   return (
     <li className={style.product}>
       <button onClick={() => handleOnClick(product)}>
-        <img
-          src={product.image}
-          alt={'Fotografia do produto ' + product.title}
-        />
+        <figure>
+          <img
+            src={product.image}
+            alt={'Fotografia do produto ' + product.title}
+          />
+          {product.topSale && (
+            <span>
+              <IconVerified />
+            </span>
+          )}
+        </figure>
+        <p>{product.manufacturer}</p>
         <h2>{product.title}</h2>
       </button>
     </li>

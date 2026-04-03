@@ -1,35 +1,31 @@
 'use client'
 
-import { JSX, ReactElement, useState } from 'react'
-import Styles from './Links.module.css'
 import Link from 'next/link'
-import {
-  IconCodepen,
-  IconDev,
-  IconGithub,
-  IconX,
-  IconLinkedin,
-  IconYoutube,
-  IconSpotify,
-  IconBluesky,
-  IconMastodon,
-  IconLetterboxd,
-  IconDiscord,
-  IconInstagram,
-  IconWhatsapp,
-  IconMore,
-  IconLess,
-  IconThreads,
-  IconStore,
-  IconMentor,
-  IconAbout,
-  //   IconFindto,
-  //   IconCheckTest,
-  //   IconTalito,
-  //   IconContent,
-} from '../Svgs'
+import { JSX, ReactElement, useState } from 'react'
 import { ROUTES } from '../../routes/routes'
 import PrefetchImages from '../store/PrefetchImages'
+import {
+  IconBluesky,
+  IconCodepen,
+  IconContent,
+  IconDev,
+  IconDiscord,
+  IconGithub,
+  IconInstagram,
+  IconLess,
+  IconLetterboxd,
+  IconLinkedin,
+  IconMastodon,
+  IconMentor,
+  IconMore,
+  IconSpotify,
+  IconStore,
+  IconThreads,
+  IconWhatsapp,
+  IconX,
+  IconYoutube,
+} from '../Svgs'
+import Styles from './Links.module.css'
 
 interface ILinks {
   url: string
@@ -57,6 +53,22 @@ const linksList: ILinks[] = [
     internalPage: true,
     icon: <IconMentor />,
   },
+  {
+    url: ROUTES.WORK.path,
+    title: ROUTES.WORK.title,
+    active: true,
+    onlyText: true,
+    internalPage: true,
+    icon: <IconContent />,
+  },
+  //   {
+  //     url: ROUTES.CONTENT.path,
+  //     title: ROUTES.CONTENT.title,
+  //     active: false,
+  //     onlyText: true,
+  //     internalPage: true,
+  //     icon: <IconAbout />,
+  //   },
   //   {
   //     url: 'https://findto.app/pt-BR/search/job?utm_source=lucasm.dev',
   //     title: 'Findto - Busca de Empregos',
@@ -78,21 +90,24 @@ const linksList: ILinks[] = [
   //     onlyText: true,
   //     icon: IconTalito,
   //   },
-  //   {
-  //     url: ROUTES.BLOG.path,
-  //     title: ROUTES.BLOG.title,
-  //     active: false,
-  //     onlyText: true,
-  //     internalPage: true,
-  //     icon: <IconContent />,
-  //   },
+
   {
-    url: '#about',
-    title: 'Work',
+    url: 'https://youtube.com/@lucasmmau',
+    icon: <IconYoutube />,
+    title: 'YouTube',
     active: true,
-    onlyText: true,
-    internalPage: true,
-    icon: <IconAbout />,
+  },
+  {
+    url: 'https://x.com/lucasmmau',
+    icon: <IconX />,
+    title: 'X',
+    active: true,
+  },
+  {
+    url: 'https://bsky.app/profile/lucasmaues.com',
+    icon: <IconBluesky />,
+    title: 'Bluesky',
+    active: true,
   },
   {
     url: 'https://linkedin.com/in/lucasmezs',
@@ -104,18 +119,6 @@ const linksList: ILinks[] = [
     url: 'https://github.com/lucasm',
     icon: <IconGithub />,
     title: 'GitHub',
-    active: true,
-  },
-  {
-    url: 'https://x.com/lucasmezs',
-    icon: <IconX />,
-    title: 'X',
-    active: true,
-  },
-  {
-    url: 'https://bsky.app/profile/lucasm.dev',
-    icon: <IconBluesky />,
-    title: 'Bluesky',
     active: true,
   },
   {
@@ -131,16 +134,10 @@ const linksList: ILinks[] = [
     active: true,
   },
   {
-    url: 'https://instagram.com/lucasmezs',
+    url: 'https://instagram.com/lucasmmau',
     icon: <IconInstagram />,
     title: 'Instagram',
     active: false,
-  },
-  {
-    url: 'https://youtube.com/@lucasmdev',
-    icon: <IconYoutube />,
-    title: 'YouTube',
-    active: true,
   },
   {
     url: 'https://wa.me/5531997038007',
@@ -149,7 +146,7 @@ const linksList: ILinks[] = [
     active: false,
   },
   {
-    url: 'https://threads.net/@lucasmezs',
+    url: 'https://threads.net/@lucasmmau',
     icon: <IconThreads />,
     title: 'Threads',
     active: false,
@@ -167,7 +164,7 @@ const linksList: ILinks[] = [
     active: false,
   },
   {
-    url: 'https://letterboxd.com/lucasmezs',
+    url: 'https://letterboxd.com/lucasmmau',
     icon: <IconLetterboxd />,
     title: 'Letterboxd',
     active: false,

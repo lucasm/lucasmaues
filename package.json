@@ -1,6 +1,6 @@
 {
   "name": "lucasmaues",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,28 +12,28 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "aws4": "^1.13.1",
-    "axios": "^1.13.2",
-    "lodash": "^4.17.21",
-    "next": "^16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "aws4": "^1.13.2",
+    "axios": "^1.14.0",
+    "lodash": "^4.18.1",
+    "next": "^16.2.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@types/aws4": "^1.11.6",
-    "@types/lodash": "^4.14.202",
-    "@types/node": "^17.0.25",
-    "@types/react": "19.2.7",
-    "eslint": "^10.0.1",
-    "eslint-config-next": "^0.2.4",
-    "lefthook": "^1.7.22",
-    "prettier": "2.7.1",
-    "typescript": "^5.5.4"
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^25.5.2",
+    "@types/react": "19.2.14",
+    "eslint": "^10.1.0",
+    "eslint-config-next": "^16.2.2",
+    "lefthook": "^2.1.4",
+    "prettier": "3.8.1",
+    "typescript": "^6.0.2"
   },
   "engines": {
     "node": "24.x"
   },
   "overrides": {
-    "@types/react": "19.2.7"
+    "@types/react": "19.2.14"
   }
 }

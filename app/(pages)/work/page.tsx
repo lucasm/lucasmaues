@@ -3,31 +3,9 @@ import Button from '@/components/Button'
 import CardsWork from '@/components/CardsWork'
 import { IconEmail, IconWhatsapp } from '@/components/Svgs'
 import { ROUTES } from '@/routes/routes'
-import { Metadata } from 'next'
+import { getPageMetadata } from '@/utils/metadata'
 
-export const metadata: Metadata = {
-  title: `${ROUTES.WORK.title}`,
-  description: ROUTES.WORK.description,
-  openGraph: {
-    title: `${ROUTES.WORK.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.WORK.description,
-    images: [
-      {
-        url: ROUTES.WORK.image,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    url: 'https://lucasm.dev/work',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${ROUTES.WORK.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.WORK.description,
-    images: [ROUTES.WORK.image],
-  },
-}
+export const metadata = getPageMetadata('WORK')
 
 export default function PageWork() {
   return (
@@ -54,14 +32,14 @@ export default function PageWork() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Let's talk about your project?</h3>
+              <h3>Let's talk about your project</h3>
             </div>
 
             <div>
-              <Button url="mailto:hello@lucasm.dev">
+              <Button url="mailto:hello@lucasmaues.com">
                 <>
                   <IconEmail />
-                  hello@lucasm.dev
+                  Email
                 </>
               </Button>
 

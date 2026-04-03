@@ -26,7 +26,7 @@ export default function ProfilePhoto(): JSX.Element {
           onMouseEnter={(): void => setIsHovered(true)}
           onMouseLeave={(): void => setIsHovered(false)}
           alt="Profile of Lucas Maués de Menezes"
-          src="https://avatars.githubusercontent.com/lucasm?s=164"
+          src="https://pbs.twimg.com/profile_images/2039485890373074944/7RPPRzlP_400x400.jpg"
         />
 
         <SvgBackground1 />

@@ -3,7 +3,7 @@
 }
 #profile {
   position: relative;
-  margin: -1rem auto 2rem;
+  margin: 0 auto 2rem;
   display: flex;
 }
 #profile img {
@@ -15,10 +15,10 @@
 }
 #profile svg {
   position: absolute;
-  top: -1rem;
-  left: -2rem;
-  width: 7rem;
-  height: 6rem;
+  top: -3rem;
+  left: -2.5rem;
+  width: 10rem;
+  height: 8rem;
   z-index: -1;
 }
 
@@ -40,13 +40,13 @@
     margin: 0 auto 3rem;
   }
   #profile img {
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
   }
   #profile svg {
-    top: -1.5rem;
-    left: -2rem;
-    width: 9rem;
-    height: 7.5rem;
+    top: -12rem;
+    left: -7rem;
+    width: 20rem;
+    height: 20rem;
   }
 }

@@ -6,7 +6,7 @@ export const ROUTES = {
     title: 'Lucas Maués',
     description:
       'Lucas Maués de Menezes is a Tech Lead, Senior Software Engineer & Frontend Specialist from Brazil, with 8+ years of experience.',
-    seo: 'Tech Lead, Senior Software Engineer & Frontend Specialist',
+    seo: 'Tech Lead & Senior Frontend Software Engineer',
     image: DEFAULT_IMAGE,
   },
   ABOUT: {
@@ -16,7 +16,8 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description: 'Building high-impact solutions with companies & teams.',
+    description:
+      'Building high-impact solutions with companies and teams since 2017.',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {
@@ -25,19 +26,20 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Loja',
-    description: 'Minhas recomendações de produtos, livros e acessórios.',
+    title: 'Store',
+    description:
+      'Os melhores produtos para você ser mais inteligente, produtivo e feliz.',
     image: 'https://lucasm.dev/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
-    title: 'Mentoria',
+    title: 'Mentor',
     description: 'Mentoria para profissionais se destacarem no mercado tech.',
     image: 'https://lucasm.dev/share-mentor.png',
   },
-  BLOG: {
-    path: '/#blog',
-    title: 'Blog',
+  CONTENT: {
+    path: '/#posts',
+    title: 'Posts',
   },
   DOMAINS: {
     path: '/domains',

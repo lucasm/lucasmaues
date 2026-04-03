@@ -1,30 +1,8 @@
 import PageWrapper from '@/components/PageWrapper'
 import { ROUTES } from '@/routes/routes'
-import { Metadata } from 'next'
+import { getPageMetadata } from '@/utils/metadata'
 
-export const metadata: Metadata = {
-  title: `${ROUTES.LEGAL.title}`,
-  description: ROUTES.LEGAL.description,
-  openGraph: {
-    title: `${ROUTES.LEGAL.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.LEGAL.description,
-    images: [
-      {
-        url: ROUTES.LEGAL.image,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    url: 'https://lucasm.dev/legal',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${ROUTES.LEGAL.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.LEGAL.description,
-    images: [ROUTES.LEGAL.image],
-  },
-}
+export const metadata = getPageMetadata('LEGAL')
 
 export default function PagePrivacy() {
   return (
@@ -43,11 +21,11 @@ export default function PagePrivacy() {
 
           <p>
             This {ROUTES.LEGAL.title} is following the General Data Protection
-            Law of Brazil (LGPD). When you access https://lucasm.dev and related
-            projects on this domain (collectively called "projects") you agree
-            to be regulated under the Brazilian jurisdiction and this policy. If
-            you do not agree with the practices described here, please, don't
-            use the projects.
+            Law of Brazil (LGPD). When you access https://lucasmaues.com and
+            related projects on this domain (collectively called "projects") you
+            agree to be regulated under the Brazilian jurisdiction and this
+            policy. If you do not agree with the practices described here,
+            please, don't use the projects.
           </p>
 
           <h2>2. Automatically Collected Information</h2>
@@ -177,7 +155,7 @@ export default function PagePrivacy() {
           <h2>10. Contact</h2>
           <p>
             If you have any questions or suggestions, please, email at
-            legal@lucasm.dev.
+            legal@lucasmaues.com.
           </p>
         </article>
       </section>

@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .containerInput {
@@ -16,7 +17,7 @@
   gap: 1.25rem;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 300px;
   height: 3rem;
   background: transparent;
   padding: 0;
@@ -53,7 +54,7 @@
 }
 
 .searchInput {
-  width: 400px;
+  width: 300px;
   padding: 0 3.5rem 0 1.5rem;
   border: none;
   border-radius: var(--radius-big);
@@ -75,6 +76,13 @@
 .dropdown {
   position: relative;
 }
+
+.dropdownGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .dropdown svg {
   position: absolute;
   top: 1rem;
@@ -107,18 +115,17 @@
 }
 
 @media screen and (max-width: 699px) {
-  .container {
-    margin-top: 1rem;
-  }
   .containerInput {
     gap: 1rem;
-    width: 300px;
   }
   .searchInput {
-    width: 300px;
     padding: 0 3.25rem 0 1.5rem;
   }
   .dropdown {
+    display: none;
+  }
+
+  .dropdownGroup {
     display: none;
   }
 

@@ -18,8 +18,10 @@ export default function Footer(): JSX.Element {
           </Link>
 
           <p>
-            <span className="company">{ROUTES.HOME.title}</span> &copy;{' '}
-            {getYear()}
+            <span className="company">
+              <Link href="/">{ROUTES.HOME.title}</Link>
+            </span>{' '}
+            &copy; {getYear()}
           </p>
         </div>
 

@@ -4,31 +4,9 @@ import PatreonCheck from '@/components/PatreonCheck'
 import SvgAnimateMentorship from '@/components/SvgAnimateMentorship'
 import { IconArrowExternal } from '@/components/Svgs'
 import { ROUTES } from '@/routes/routes'
-import { Metadata } from 'next'
+import { getPageMetadata } from '@/utils/metadata'
 
-export const metadata: Metadata = {
-  title: `${ROUTES.MENTORSHIP.title}`,
-  description: ROUTES.MENTORSHIP.description,
-  openGraph: {
-    title: `${ROUTES.MENTORSHIP.title}`,
-    description: ROUTES.MENTORSHIP.description,
-    images: [
-      {
-        url: ROUTES.MENTORSHIP.image,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    url: 'https://lucasm.dev/mentor',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${ROUTES.MENTORSHIP.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.MENTORSHIP.description,
-    images: [ROUTES.MENTORSHIP.image],
-  },
-}
+export const metadata = getPageMetadata('MENTORSHIP')
 
 export default function PageMentor() {
   const title = ROUTES.MENTORSHIP.title
@@ -41,9 +19,10 @@ export default function PageMentor() {
             <h1>{title}</h1>
 
             <p className="description">
-              Como Liderança Técnica e trabalhando com Engenharia de Software e
-              Frontend desde 2017, sou procurado por profissionais de TI e
-              estudantes que buscam orientação de carreira.
+              Com mais de {new Date().getFullYear() - 2018} anos de experiência
+              em Frontend, Engenharia de Software e Liderança Técnica, sou
+              procurado por profissionais de TI e estudantes que buscam
+              orientação para crescer na carreira de tecnologia.
             </p>
           </div>
         </div>
@@ -63,11 +42,11 @@ export default function PageMentor() {
 
             <p>
               A mentoria é um espaço seguro de crescimento e aprendizado. Você
-              se esforça mas não evolui? Eu te ajudo a se destacar no mercado de
-              TI, com as suas qualidades.
+              sente que se esforça mas não evolui? Eu te ajudo a se destacar no
+              mercado de TI, com as suas qualidades.
             </p>
 
-            <h3>Minha metodologia</h3>
+            <h3>Metodologia 1x:</h3>
 
             <p>
               Quando você compra cursos e não faz, ou quando você tenta fazer
@@ -134,7 +113,7 @@ export default function PageMentor() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Agende sua mentoria</h3>
+              <h3>Agende uma mentoria</h3>
             </div>
 
             <div>
@@ -143,7 +122,7 @@ export default function PageMentor() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Videochamada + Plano de ação personalizado
+                Formato: Video call + Plano de ação personalizado
                 <br />
                 Pagamento: Patreon
                 <br />

@@ -53,9 +53,14 @@ const Accordion = ({ title, children }: AccordionProps) => {
         onClick={toggleAccordion}
         style={{ display: 'flex', alignItems: 'center' }}>
         <span>{title}</span>
-        <span style={{ marginLeft: 'auto' }}>{isOpen ? <OpenIcon /> : <CloseIcon />}</span>
+        <span style={{ marginLeft: 'auto' }}>
+          {isOpen ? <OpenIcon /> : <CloseIcon />}
+        </span>
       </button>
-      <div id="accordion-content" role="region" style={{ display: isOpen ? 'block' : 'none' }}>
+      <div
+        id="accordion-content"
+        role="region"
+        style={{ display: isOpen ? 'block' : 'none' }}>
         {children}
       </div>
     </div>

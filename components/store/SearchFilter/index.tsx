@@ -1,21 +1,29 @@
 'use client'
 
-import { useRef, useState, useEffect, useCallback, ChangeEvent } from 'react'
-import Style from './SearchFilter.module.css'
-import { IconChevronDown, IconClose, IconSearch } from '../../Svgs'
 import debounce from 'lodash/debounce'
+import { ChangeEvent, useCallback, useEffect, useRef, useState } from 'react'
+import { IconChevronDown, IconClose, IconSearch } from '../../Svgs'
 import AmazonSearch from '../AmazonSearch'
+import Style from './SearchFilter.module.css'
 
 interface SearchFilterProps {
   currentCategory: string
+  currentBrand: string
+  categories: string[]
+  brands: string[]
   onCategoryChange: (category: string) => void
+  onBrandChange: (brand: string) => void
   onSearchChange: (searchTerm: string) => void
   isEmptySearch: boolean
 }
 
 export default function SearchFilter({
   currentCategory,
+  currentBrand,
+  categories,
+  brands,
   onCategoryChange,
+  onBrandChange,
   onSearchChange,
   isEmptySearch,
 }: SearchFilterProps) {
@@ -31,6 +39,12 @@ export default function SearchFilter({
     onCategoryChange(event.target.value)
     setIsResetVisible(true) // Ativa o botão de reset
   }
+
+  const handleBrandChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    onBrandChange(event.target.value)
+    setIsResetVisible(true)
+  }
+
   const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     const newSearchTerm = event.target.value
     setSearchTerm(newSearchTerm)
@@ -58,7 +72,8 @@ export default function SearchFilter({
   const resetAll = () => {
     setSearchTerm('')
     onSearchChange('')
-    onCategoryChange('Todos')
+    onCategoryChange('Todas as categorias')
+    onBrandChange('Todas as marcas')
     setIsResetVisible(false) // Desativa o botão de reset
   }
 
@@ -71,21 +86,29 @@ export default function SearchFilter({
 
   // Ativa o botão de reset se há uma categoria ou termo de busca
   useEffect(() => {
-    if (currentCategory !== 'Todos' || searchTerm !== '') {
+    if (
+      currentCategory !== 'Todas as categorias' ||
+      currentBrand !== 'Todas as marcas' ||
+      searchTerm !== ''
+    ) {
       setIsResetVisible(true)
     } else {
       setIsResetVisible(false)
     }
-  }, [currentCategory, searchTerm])
+  }, [currentBrand, currentCategory, searchTerm])
 
   // Oculta o ícone de busca se há um termo de busca ou categoria
   useEffect(() => {
-    if (searchTerm !== '' || currentCategory !== 'Todos') {
+    if (
+      searchTerm !== '' ||
+      currentCategory !== 'Todas as categorias' ||
+      currentBrand !== 'Todas as marcas'
+    ) {
       setIsButtonVisible(false)
     } else {
       setIsButtonVisible(true)
     }
-  }, [searchTerm, currentCategory])
+  }, [searchTerm, currentBrand, currentCategory])
 
   return (
     <div className={Style.container} id="products">
@@ -124,22 +147,46 @@ export default function SearchFilter({
 
         {/* Select categorias */}
         {!isEmptySearch && (
-          <div className={Style.dropdown}>
-            <label htmlFor="category" className={Style.label}>
-              Selecione a categoria:
-            </label>
-            <select
-              value={currentCategory}
-              onChange={handleCategoryChange}
-              className={Style.select}
-              id="category">
-              <option value="Todos">Todos</option>
-              <option value="Eletrônicos">Eletrônicos</option>
-              <option value="Acessórios">Acessórios</option>
-              <option value="Livros">Livros</option>
-            </select>
+          <div className={Style.dropdownGroup}>
+            <div className={Style.dropdown}>
+              <label htmlFor="category" className={Style.label}>
+                Selecione a categoria:
+              </label>
+              <select
+                value={currentCategory}
+                onChange={handleCategoryChange}
+                className={Style.select}
+                id="category">
+                <option value="Todas as categorias">Todas as categorias</option>
+                {categories.map((categoryName) => (
+                  <option key={categoryName} value={categoryName}>
+                    {categoryName}
+                  </option>
+                ))}
+              </select>
 
-            <IconChevronDown />
+              <IconChevronDown />
+            </div>
+
+            <div className={Style.dropdown}>
+              <label htmlFor="brand" className={Style.label}>
+                Selecione a marca:
+              </label>
+              <select
+                value={currentBrand}
+                onChange={handleBrandChange}
+                className={Style.select}
+                id="brand">
+                <option value="Todas as marcas">Todas as marcas</option>
+                {brands.map((brandName) => (
+                  <option key={brandName} value={brandName}>
+                    {brandName}
+                  </option>
+                ))}
+              </select>
+
+              <IconChevronDown />
+            </div>
           </div>
         )}
       </div>

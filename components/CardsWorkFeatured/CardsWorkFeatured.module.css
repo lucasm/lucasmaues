@@ -157,8 +157,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .icon svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   /* 4 columns checkerboard: Row1: A B A B, Row2: B A B A (repeats every 8) */
@@ -198,7 +198,7 @@
     grid-template-columns: repeat(6, 1fr);
   }
   .icon svg {
-    width: 3rem;
+    width: 3.5rem;
     height: 3rem;
   }
 

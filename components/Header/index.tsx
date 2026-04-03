@@ -55,10 +55,6 @@ export default function Header() {
 
   const HeaderLinks: HeaderLink[] = [
     {
-      url: ROUTES.BLOG.path,
-      text: ROUTES.BLOG.title,
-    },
-    {
       url: ROUTES.STORE.path,
       text: ROUTES.STORE.title,
     },
@@ -67,16 +63,12 @@ export default function Header() {
       text: ROUTES.MENTORSHIP.title,
     },
     {
-      url: ROUTES.ABOUT.path,
-      text: ROUTES.ABOUT.title,
-    },
-    {
       url: ROUTES.WORK.path,
       text: ROUTES.WORK.title,
     },
     {
-      url: ROUTES.CONTACT.path,
-      text: ROUTES.CONTACT.title,
+      url: ROUTES.CONTENT.path,
+      text: ROUTES.CONTENT.title,
     },
   ]
 

@@ -6,51 +6,31 @@ import ProfilePhoto from '@/components/ProfilePhoto'
 import Button from '@/components/Button'
 import { ROUTES } from '@/routes/routes'
 import { IconArrowInternal } from '@/components/Svgs'
-import { Metadata } from 'next'
-import { JSX } from 'react'
+import { getPageMetadata } from '@/utils/metadata'
 
-export const metadata: Metadata = {
-  title: `${ROUTES.HOME.title} | ${ROUTES.HOME.seo}`,
-  description: ROUTES.HOME.description,
-  openGraph: {
-    title: `${ROUTES.HOME.title} | ${ROUTES.HOME.seo}`,
-    description: ROUTES.HOME.description,
-    images: [
-      {
-        url: ROUTES.HOME.image,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    url: 'https://lucasm.dev/',
-    type: 'website',
-    siteName: 'lucasm.dev',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${ROUTES.HOME.title} | ${ROUTES.HOME.seo}`,
-    description: ROUTES.HOME.description,
-    images: [ROUTES.HOME.image],
-  },
-}
+export const metadata = getPageMetadata('HOME')
 
-export default function PageHome(): JSX.Element {
+export default function PageHome() {
   return (
     <PageWrapper>
       <section className="fullscreen" id="home">
         <div className="fullscreen-container">
           <div className="container home">
             <ProfilePhoto />
-            <h1>Hello, I'm a {ROUTES.HOME.seo}, from Brazil.</h1>
+            <h1>
+              Hello, I'm Lucas Maués, a Brazilian passionate about living! I'm
+              also a Tech Lead and Senior Frontend Software Engineer, working on
+              banking, scaling products and developers.
+            </h1>
 
             <Links />
           </div>
         </div>
       </section>
 
-      <section id="blog" className="background-y">
+      <section id="posts" className="background-y">
         <div className="container">
-          <h2 className="subtitle">{ROUTES.BLOG.title}</h2>
+          <h2 className="subtitle">{ROUTES.CONTENT.title}</h2>
 
           <BlogPosts />
         </div>
@@ -58,11 +38,11 @@ export default function PageHome(): JSX.Element {
 
       <section id="about">
         <div className="container">
-          <h2 className="subtitle">About</h2>
+          <h2 className="subtitle">Work</h2>
 
           <div className="aboutContainer">
             <div>
-              <h3>{ROUTES.WORK.description}</h3>
+              <h3>Building high-impact solutions since 2017</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>
@@ -76,22 +56,19 @@ export default function PageHome(): JSX.Element {
               <p>
                 Since 2017, I’ve been crafting web applications, e-commerce
                 platforms, and more recently, AI-driven experiences. I take
-                pride in delivering mission-critical products that reach
-                millions of users and power high-volume in BRL transactions
-                daily.
+                pride in building products that reach millions of users daily
+                and power millions in BRL transactions daily.
               </p>
               <p>
                 As a leader, I empower teams to deliver refined user
                 experiences, scalable software engineering practices, and real
-                business growth. I’m passionate about continuous learning and
-                sharing knowledge.
+                business growth. I’m passionate about living, continuous
+                learning and sharing knowledge.
               </p>
 
               <p>
-                My core philosophy is: complexity is easy; simplicity is hard!
-              </p>
-              <p>
-                -<i> Lucas Maués</i>
+                Welcome to my portfolio. And remember: complexity is easy,
+                simplicity is hard!
               </p>
             </div>
           </div>

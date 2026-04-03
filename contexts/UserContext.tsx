@@ -63,7 +63,7 @@ export function UserContextProvider({
     )
     root.style.setProperty(
       '--color-background',
-      effective === 'dark' ? 'var(--color-b-dark)' : 'var(--color-y-4)'
+      effective === 'dark' ? 'var(--color-b-dark)' : 'var(--color-w)'
     )
     root.style.setProperty(
       '--color-translucent',

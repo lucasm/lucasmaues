@@ -22,13 +22,15 @@ export const viewport: Viewport = {
   ],
 }
 
+const HOME = ROUTES.HOME as any
+
 export const metadata: Metadata = {
   title: {
-    default: `${ROUTES.HOME.title} | ${ROUTES.HOME.seo}`,
-    template: `%s | ${ROUTES.HOME.title}`,
+    default: `${HOME.title} — ${HOME.seo}`,
+    template: `%s — ${HOME.title}`,
   },
-  description: ROUTES.HOME.description,
-  applicationName: '${ROUTES.HOME.title}',
+  description: HOME.description,
+  applicationName: HOME.title,
   authors: [{ name: 'Lucas Maués de Menezes', url: 'https://lucasm.dev' }],
   creator: 'Lucas Maués de Menezes',
   keywords: [
@@ -41,14 +43,14 @@ export const metadata: Metadata = {
     'Brazil',
   ],
   openGraph: {
-    title: `${ROUTES.HOME.title} | ${ROUTES.HOME.seo}`,
-    description: ROUTES.HOME.description,
+    title: `${HOME.title} — ${HOME.seo}`,
+    description: HOME.description,
     images: [
       {
-        url: ROUTES.HOME.image,
+        url: HOME.image,
         width: 1200,
         height: 630,
-        alt: ROUTES.HOME.title,
+        alt: HOME.title,
       },
     ],
     url: 'https://lucasm.dev/',
@@ -58,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${ROUTES.HOME.title} | ${ROUTES.HOME.seo}`,
-    description: ROUTES.HOME.description,
-    images: [ROUTES.HOME.image],
+    title: `${HOME.title} — ${HOME.seo}`,
+    description: HOME.description,
+    images: [HOME.image],
     creator: '@lucasmezs',
   },
   icons: {
@@ -91,7 +93,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: '${ROUTES.HOME.title}',
+    title: HOME.title,
   },
   formatDetection: {
     telephone: false,

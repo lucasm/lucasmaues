@@ -3,31 +3,9 @@ import CircleMouse from '@/components/CircleMouse'
 import Button from '@/components/Button'
 import { IconEmail } from '@/components/Svgs'
 import { ROUTES } from '@/routes/routes'
-import { Metadata } from 'next'
+import { getPageMetadata } from '@/utils/metadata'
 
-export const metadata: Metadata = {
-  title: `${ROUTES.DOMAINS.title}`,
-  description: ROUTES.DOMAINS.description,
-  openGraph: {
-    title: `${ROUTES.DOMAINS.title}`,
-    description: ROUTES.DOMAINS.description,
-    images: [
-      {
-        url: ROUTES.DOMAINS.image,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    url: 'https://lucasm.dev/domains',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${ROUTES.DOMAINS.title} | ${ROUTES.HOME.title}`,
-    description: ROUTES.DOMAINS.description,
-    images: [ROUTES.DOMAINS.image],
-  },
-}
+export const metadata = getPageMetadata('DOMAINS')
 
 export default function PageDomains() {
   return (

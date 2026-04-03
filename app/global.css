@@ -1,15 +1,11 @@
 :root {
   font-size: 16px;
-  --color-y: #fff5d0;
-  --color-y-2: #fff2c2;
+  --color-y: #fff2c7;
   --color-y-3: #ffe897;
-  --color-y-4: #fcf7ed;
-  --color-y-5: #ffdf8d;
-  --color-y-6: #f1de9a;
   --color-b: #302d20;
   --color-w: #fff;
   --color-b-dark: #302d20;
-  --color-background: var(--color-y-4);
+  --color-background: var(--color-w);
   --color-b-fixed: #302d20;
   --color-w-text: #fff;
   --color-translucent: rgb(0 0 0 / 5%);
@@ -17,7 +13,7 @@
   --radius-big: 2rem;
   --font: inherit, sans-serif;
   --font-size-1: 3rem;
-  --font-size-2: 2.75rem;
+  --font-size-2: 2.5rem;
   --font-size-3: 1.75rem;
   --font-size-4: 1.5rem;
   --font-size-5: 1.25rem;
@@ -222,6 +218,7 @@ nav a {
   padding: 1rem 10vw;
   color: var(--color-b);
   transition: var(--transition);
+  font-size: var(--font-size-2);
 }
 nav a:hover,
 nav a:focus {
@@ -246,7 +243,7 @@ section {
 .fullscreen {
   display: table;
   min-height: 100vh;
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 .fullscreen-container {
   display: table-cell;
@@ -328,7 +325,6 @@ h2 {
   font-size: var(--font-size-3);
 }
 
-nav a,
 #logo,
 .button {
   font-size: var(--font-size-5);
@@ -402,7 +398,6 @@ article blockquote {
 }
 
 .home {
-  max-width: 580px;
   width: 100%;
 }
 .home h1 {
@@ -410,9 +405,23 @@ article blockquote {
   padding-bottom: 2.5rem;
   font-size: var(--font-size-4);
 }
+
 .page {
   margin: 2rem auto 0;
 }
+.page .container {
+  /* background: lightblue; */
+  max-width: 2000px;
+}
+.page h1 {
+  font-size: 4rem;
+}
+.page .description {
+  margin: 0 auto;
+  max-width: 800px;
+  font-size: var(--font-size-5);
+}
+
 .description {
   padding: 0 0 2.5rem;
 }
@@ -512,19 +521,18 @@ footer div {
     width: 45vw;
   }
   section {
-    padding: 6rem 2rem;
+    padding: 5rem 2rem;
   }
 
-  h1,
-  .aboutContainer h3 {
+  h1 {
     font-size: var(--font-size-1);
   }
 
-  article h1 {
+  article h1,
+  .aboutContainer h3 {
     font-size: var(--font-size-2);
   }
 
-  nav a,
   h2,
   .description,
   h3,
@@ -550,7 +558,7 @@ footer div {
   }
 
   .home h1 {
-    font-size: var(--font-size-3);
+    font-size: var(--font-size-2);
   }
 }
 
@@ -579,5 +587,9 @@ footer div {
   .cards p {
     font-size: var(--font-size-4);
     margin-bottom: 1.5rem;
+  }
+
+  .page .description {
+    font-size: var(--font-size-3);
   }
 }
