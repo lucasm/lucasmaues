@@ -113,7 +113,7 @@ export default function PageMentor() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Agende uma mentoria</h3>
+              <h3>Agende uma mentoria de carreira</h3>
             </div>
 
             <div>
@@ -122,7 +122,7 @@ export default function PageMentor() {
                 <br />
                 Duração: 45 minutos
                 <br />
-                Formato: Video call + Plano de ação personalizado
+                Formato: Chamada de vídeo + Plano de ação personalizado
                 <br />
                 Pagamento: Patreon
                 <br />

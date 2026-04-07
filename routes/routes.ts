@@ -1,11 +1,16 @@
 const DEFAULT_IMAGE = 'https://lucasm.dev/share.png'
 
+export const STORE_FILTER_LABELS = {
+  ALL_CATEGORIES: 'Todas as Categorias',
+  ALL_BRANDS: 'Todas as Marcas',
+} as const
+
 export const ROUTES = {
   HOME: {
     path: '/',
     title: 'Lucas Maués',
     description:
-      'Lucas Maués de Menezes is a Tech Lead, Senior Software Engineer & Frontend Specialist from Brazil, with 8+ years of experience.',
+      'Lucas Maués de Menezes is a Tech Lead & Senior Frontend Software Engineer from Brazil, with 8+ years of experience.',
     seo: 'Tech Lead & Senior Frontend Software Engineer',
     image: DEFAULT_IMAGE,
   },
@@ -16,8 +21,7 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description:
-      'Building high-impact solutions with companies and teams since 2017.',
+    description: 'Building high-impact solutions with companies and teams.',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {

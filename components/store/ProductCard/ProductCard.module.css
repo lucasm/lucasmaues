@@ -2,12 +2,11 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 1.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   justify-content: center;
   justify-items: center;
-  align-items: stretch;
 }
 .product {
   display: flex;

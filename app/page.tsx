@@ -1,11 +1,11 @@
-import PageWrapper from '@/components/PageWrapper'
-import Links from '@/components/Links'
 import BlogPosts from '@/components/BlogPosts'
-import CardsWorkFeatured from '@/components/CardsWorkFeatured'
-import ProfilePhoto from '@/components/ProfilePhoto'
 import Button from '@/components/Button'
-import { ROUTES } from '@/routes/routes'
+import CardsWorkFeatured from '@/components/CardsWorkFeatured'
+import Links from '@/components/Links'
+import PageWrapper from '@/components/PageWrapper'
+import ProfilePhoto from '@/components/ProfilePhoto'
 import { IconArrowInternal } from '@/components/Svgs'
+import { ROUTES } from '@/routes/routes'
 import { getPageMetadata } from '@/utils/metadata'
 
 export const metadata = getPageMetadata('HOME')
@@ -19,8 +19,8 @@ export default function PageHome() {
             <ProfilePhoto />
             <h1>
               Hello, I'm Lucas Maués, a Brazilian passionate about living! I'm
-              also a Tech Lead and Senior Frontend Software Engineer, working on
-              banking, scaling products and developers.
+              also a Tech Lead and Senior Frontend Software Engineer working in
+              banking, scaling products, and mentoring developers.
             </h1>
 
             <Links />
@@ -42,7 +42,7 @@ export default function PageHome() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Building high-impact solutions since 2017</h3>
+              <h3>{ROUTES.WORK.description.replace('.', '')}</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>

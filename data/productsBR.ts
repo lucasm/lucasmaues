@@ -15,7 +15,6 @@ export const productsBR = [
     title: 'iPhone 17 256GB',
     manufacturer: 'Apple',
     stars: 4.8,
-    topSale: true,
     description:
       'Considerado por especialistas o melhor iPhone base de todos os tempos da Apple. O novo iPhone padrão para quem busca qualidade e inovação. Com chip A19, câmera absurda, tela OLED em 120Hz e rede 5G. Com desempenho reconhecido, boa duração de bateria e conexão USB-C.',
     url: 'https://amzn.to/4bR63SJ',
@@ -92,7 +91,6 @@ export const productsBR = [
     title: 'iPad Pro M5 11" 256GB',
     manufacturer: 'Apple',
     stars: 4.7,
-    topSale: true,
     description:
       'O iPad Pro é o tablet mais poderoso do mercado. Com chip M5, tela Liquid Retina de 11 polegadas, 120Hz, conexão USB-C e rede 5G. Ideal para produtividade, criatividade e entretenimento. Com desempenho reconhecido, boa duração de bateria e qualidade de construção premium.',
     url: 'https://amzn.to/4coPXQp',

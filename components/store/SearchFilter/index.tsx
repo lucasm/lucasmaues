@@ -1,5 +1,6 @@
 'use client'
 
+import { STORE_FILTER_LABELS } from '@/routes/routes'
 import debounce from 'lodash/debounce'
 import { ChangeEvent, useCallback, useEffect, useRef, useState } from 'react'
 import { IconChevronDown, IconClose, IconSearch } from '../../Svgs'
@@ -72,8 +73,8 @@ export default function SearchFilter({
   const resetAll = () => {
     setSearchTerm('')
     onSearchChange('')
-    onCategoryChange('Todas as categorias')
-    onBrandChange('Todas as marcas')
+    onCategoryChange(STORE_FILTER_LABELS.ALL_CATEGORIES)
+    onBrandChange(STORE_FILTER_LABELS.ALL_BRANDS)
     setIsResetVisible(false) // Desativa o botão de reset
   }
 
@@ -87,8 +88,8 @@ export default function SearchFilter({
   // Ativa o botão de reset se há uma categoria ou termo de busca
   useEffect(() => {
     if (
-      currentCategory !== 'Todas as categorias' ||
-      currentBrand !== 'Todas as marcas' ||
+      currentCategory !== STORE_FILTER_LABELS.ALL_CATEGORIES ||
+      currentBrand !== STORE_FILTER_LABELS.ALL_BRANDS ||
       searchTerm !== ''
     ) {
       setIsResetVisible(true)
@@ -101,8 +102,8 @@ export default function SearchFilter({
   useEffect(() => {
     if (
       searchTerm !== '' ||
-      currentCategory !== 'Todas as categorias' ||
-      currentBrand !== 'Todas as marcas'
+      currentCategory !== STORE_FILTER_LABELS.ALL_CATEGORIES ||
+      currentBrand !== STORE_FILTER_LABELS.ALL_BRANDS
     ) {
       setIsButtonVisible(false)
     } else {
@@ -145,9 +146,9 @@ export default function SearchFilter({
           </div>
         </div>
 
-        {/* Select categorias */}
         {!isEmptySearch && (
           <div className={Style.dropdownGroup}>
+            {/* Categories */}
             <div className={Style.dropdown}>
               <label htmlFor="category" className={Style.label}>
                 Selecione a categoria:
@@ -157,7 +158,9 @@ export default function SearchFilter({
                 onChange={handleCategoryChange}
                 className={Style.select}
                 id="category">
-                <option value="Todas as categorias">Todas as categorias</option>
+                <option value={STORE_FILTER_LABELS.ALL_CATEGORIES}>
+                  {STORE_FILTER_LABELS.ALL_CATEGORIES}
+                </option>
                 {categories.map((categoryName) => (
                   <option key={categoryName} value={categoryName}>
                     {categoryName}
@@ -168,6 +171,7 @@ export default function SearchFilter({
               <IconChevronDown />
             </div>
 
+            {/* Brands */}
             <div className={Style.dropdown}>
               <label htmlFor="brand" className={Style.label}>
                 Selecione a marca:
@@ -177,7 +181,9 @@ export default function SearchFilter({
                 onChange={handleBrandChange}
                 className={Style.select}
                 id="brand">
-                <option value="Todas as marcas">Todas as marcas</option>
+                <option value={STORE_FILTER_LABELS.ALL_BRANDS}>
+                  {STORE_FILTER_LABELS.ALL_BRANDS}
+                </option>
                 {brands.map((brandName) => (
                   <option key={brandName} value={brandName}>
                     {brandName}

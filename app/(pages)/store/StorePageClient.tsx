@@ -7,15 +7,17 @@ import StyleCard from '@/components/store/ProductCard/ProductCard.module.css'
 import ProductPopup from '@/components/store/ProductPopup'
 import SearchFilter from '@/components/store/SearchFilter'
 import { productsBR } from '@/data/productsBR'
-import { ROUTES } from '@/routes/routes'
+import { ROUTES, STORE_FILTER_LABELS } from '@/routes/routes'
 import { useMemo, useRef, useState } from 'react'
 
 export default function StorePageClient() {
   const title = ROUTES.STORE.title
   const description = ROUTES.STORE.description
   const [selectedProduct, setSelectedProduct] = useState(null)
-  const [category, setCategory] = useState('Todas as categorias')
-  const [brand, setBrand] = useState('Todas as marcas')
+  const [category, setCategory] = useState<string>(
+    STORE_FILTER_LABELS.ALL_CATEGORIES
+  )
+  const [brand, setBrand] = useState<string>(STORE_FILTER_LABELS.ALL_BRANDS)
   const [searchTerm, setSearchTerm] = useState('')
   const containerProductsRef = useRef<HTMLDivElement>(null)
 
@@ -45,9 +47,10 @@ export default function StorePageClient() {
 
   const filteredProducts = productsBR.filter((product) => {
     const matchesCategory =
-      category === 'Todas as categorias' || product.category === category
+      category === STORE_FILTER_LABELS.ALL_CATEGORIES ||
+      product.category === category
     const matchesBrand =
-      brand === 'Todas as marcas' || product.manufacturer === brand
+      brand === STORE_FILTER_LABELS.ALL_BRANDS || product.manufacturer === brand
     const manufacturer = product.manufacturer || ''
     const matchesSearchTerm =
       product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
