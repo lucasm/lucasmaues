@@ -1,6 +1,6 @@
 <div align="center">
-<a href="https://lucasm.dev/?utm_source=github">
-<img height="124" src="https://lucasm.dev/icon.svg" alt="Lucasm.dev Icon">
+<a href="https://lucasmaues.com/?utm_source=github">
+<img height="124" src="https://lucasmaues.com/icon.svg" alt="lucasmaues.com Icon">
 </a>
 <h1>Lucas Maués</h1>
 
@@ -23,10 +23,10 @@ Made with React, TypeScript, JavaScript, CSS and Next.js framework.
 
 ## Lighthouse Score
 
-![PageSpeed report](https://lucasm.dev/report.png)
+![PageSpeed report](https://lucasmaues.com/report.png)
 
 ## Legal
 
 - Source code is under [MIT license](https://raw.githubusercontent.com/lucasm/lucasmaues/refs/heads/master/LICENSE.txt)
 - Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- [Privacy Policy & Terms of Use](https://lucasm.dev/legal?utm_source=github)
+- [Privacy Policy & Terms of Use](https://lucasmaues.com/legal?utm_source=github)
