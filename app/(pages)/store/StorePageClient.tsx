@@ -92,6 +92,8 @@ export default function StorePageClient() {
             <h1>{title}</h1>
             <p className="description">{description}</p>
 
+            <div ref={containerProductsRef}></div>
+
             <SearchFilter
               currentCategory={category}
               currentBrand={brand}
@@ -105,7 +107,7 @@ export default function StorePageClient() {
           </div>
 
           {!isEmptySearch && (
-            <div ref={containerProductsRef}>
+            <div>
               <ul className={StyleCard.container}>
                 {filteredProducts.map((product, index) => (
                   <ProductCard

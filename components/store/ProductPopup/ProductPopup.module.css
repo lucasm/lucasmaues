@@ -45,7 +45,7 @@
 .productDetail h2,
 .productDetail p {
   text-align: left;
-  padding: 2rem 0 0;
+  padding: 1rem 0 0;
 }
 .productDetail h3 {
   font-size: var(--font-size-6);
@@ -152,6 +152,11 @@
   animation: brilho 2s ease-in-out 1;
   animation-fill-mode: forwards; /* Mantém o estado final da animação */
   animation-delay: 12s;
+}
+
+.manufacturer {
+  font-size: var(--font-size-6);
+  display: flex;
 }
 
 @media screen and (max-width: 900px) {

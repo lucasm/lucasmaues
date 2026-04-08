@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
-import Style from './ProductPopup.module.css'
-import { IconArrowExternal, IconClose, IconStar } from '../../Svgs'
+import { useEffect, useState } from 'react'
 import Button from '../../Button'
+import { IconArrowExternal, IconClose, IconStar } from '../../Svgs'
 import DiscountCoupons from '../DiscountCoupons'
+import Style from './ProductPopup.module.css'
 
 interface ProductPopupProps {
   product: {
@@ -14,6 +14,7 @@ interface ProductPopupProps {
     url_2: string
     url_3: string
     cupom: string[]
+    manufacturer?: string
   }
   onClose: () => void
 }
@@ -83,6 +84,12 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                 />
               </figure>
               <div>
+                {product.manufacturer && (
+                  <span className={Style.manufacturer}>
+                    {product.manufacturer}
+                  </span>
+                )}
+
                 <h2>{product.title}</h2>
 
                 {/* <h3>Compre:</h3> */}
@@ -114,7 +121,7 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
                   )}
                 </div>
 
-                <h3>Minha review:</h3>
+                <h3>Minha análise técnica:</h3>
 
                 <p>{product.description}</p>
 

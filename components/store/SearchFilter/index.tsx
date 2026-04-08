@@ -149,7 +149,8 @@ export default function SearchFilter({
         {!isEmptySearch && (
           <div className={Style.dropdownGroup}>
             {/* Categories */}
-            <div className={Style.dropdown}>
+            <div
+              className={`${Style.dropdown} ${currentCategory !== STORE_FILTER_LABELS.ALL_CATEGORIES ? Style.dropdownActive : ''}`}>
               <label htmlFor="category" className={Style.label}>
                 Selecione a categoria:
               </label>
@@ -172,7 +173,8 @@ export default function SearchFilter({
             </div>
 
             {/* Brands */}
-            <div className={Style.dropdown}>
+            <div
+              className={`${Style.dropdown} ${currentBrand !== STORE_FILTER_LABELS.ALL_BRANDS ? Style.dropdownActive : ''}`}>
               <label htmlFor="brand" className={Style.label}>
                 Selecione a marca:
               </label>

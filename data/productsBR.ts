@@ -37,7 +37,7 @@ export const productsBR = [
     manufacturer: 'Novatec',
     stars: 4.8,
     description:
-      'O livro mais querido! Aprenda como funcionam os algoritmos e as estruturas de dados na Computação. Essencial para qualquer programador. Com esse livro, tudo fica bem fácil de entender. Com exemplos em Python. Recomendo para quem está começando na programação ou quer revisar conceitos.',
+      'O livro mais querido da comunidade de tecnologia! Justificável, pois neste livro qualquer pessoa pode aprender como funcionam os algoritmos e as estruturas de dados elementares da Computação moderna. Essencial para qualquer programador, seja iniciante ou experiente. Com esse livro, tudo fica bem fácil de entender. Com exemplos em Python. Recomendo tanto para quem está começando na programação ou para quem quer revisar conceitos clássicos.',
     url: 'https://amzn.to/400hrUR',
     image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
     category: 'Livros',
@@ -335,6 +335,26 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
+    title: 'Luminária Inteligente Quadrada 18W LED Wi-Fi',
+    manufacturer: 'Elgin',
+    stars: 4.6,
+    description:
+      'É a minha luminária principal do quarto, LED inteligente com controle de temperatura de cor branca ou amarela (3000-6500K) e brilho ajustável. Conexão Wi-Fi para controle remoto via aplicativo. Compatível com Alexa e Google. Ideal para criar a iluminação perfeita.',
+    url: 'https://amzn.to/4slY3y3',
+    image: 'https://m.media-amazon.com/images/I/51zUiesJMjL._AC_SX679_.jpg',
+    category: 'Iluminação',
+  },
+  {
+    title: 'Lâmpada Inteligente 15W LED RGB Wi-Fi',
+    manufacturer: 'Elgin',
+    stars: 4.7,
+    description:
+      'É a minha lampada RGB do quarto, com controle de cores e brilho. Conexão Wi-Fi para controle remoto via aplicativo, Alexa ou Google. Ideal para colocar no abajur, no teto ou em qualquer outro lugar.',
+    url: 'https://amzn.to/4du8bRD',
+    image: 'https://m.media-amazon.com/images/I/61i1yPAlVLL._AC_SX679_.jpg',
+    category: 'Iluminação',
+  },
+  {
     title: 'Abajur Luminária Pixar',
     manufacturer: 'Genérica',
     stars: 4.8,
@@ -343,17 +363,7 @@ export const productsBR = [
     url: 'https://amzn.to/4crKlD3',
     url_2: 'https://mercadolivre.com/sec/1DoNpyN',
     image: 'https://m.media-amazon.com/images/I/510SeRtQxzL._AC_SX679_.jpg',
-    category: 'Acessórios',
-  },
-  {
-    title: 'Smart Lâmpada Positivo 9W RGB ',
-    manufacturer: 'Positivo',
-    stars: 4.7,
-    description:
-      'Lâmpada que fica colorida (RGB) ou na cor branca (fria e quente). Com Wi-Fi e Bluetooth. Compatível com Alexa e Google. Linha "casa inteligente" da Positivo é baita acerto!',
-    url: 'https://amzn.to/43xUR7N',
-    image: 'https://m.media-amazon.com/images/I/511R3odrRjL._AC_SX679_.jpg',
-    category: 'Acessórios',
+    category: 'Iluminação',
   },
   {
     title: 'Banquinho Apoio de Pés',
@@ -405,8 +415,8 @@ export const productsBR = [
     stars: 4.8,
     description:
       'Notebook da Apple com o preço acessível. Atinge duração de bateria incrível com chip M1 da arquitetura Apple Silicon. Obra prima que, mesmo com 8GB de RAM, ainda compensa para tarefas simples do dia a dia, devido a  super otimização do macOS como sistema operacional.',
-    url: 'https://amzn.to/45JUIxs',
-    url_2: 'https://mercadolivre.com/sec/1ha7uXX',
+    url: 'https://amzn.to/4sgNPPD',
+    url_2: 'https://meli.la/2W9wCpL',
     cupom: ['#LOJADEV500MACM1'],
     image: 'https://m.media-amazon.com/images/I/41-RhQeujUL._AC_SX679_.jpg',
     category: 'Computador',

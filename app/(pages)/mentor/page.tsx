@@ -20,9 +20,10 @@ export default function PageMentor() {
 
             <p className="description">
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
-              em Frontend, Engenharia de Software e Liderança Técnica, sou
-              procurado por profissionais de TI e estudantes que buscam
-              orientação para crescer na carreira de tecnologia.
+              em Engenharia de Software, Frontend e Liderança Técnica, oriento
+              estudantes e profissionais de TI que buscam crescimento na
+              carreira e estudos. Meu foco é ajudar você a se destacar no
+              mercado de tecnologia, com as suas qualidades.
             </p>
           </div>
         </div>
@@ -38,7 +39,7 @@ export default function PageMentor() {
               Johnson
             </h1>
 
-            <h3>O que é a mentoria?</h3>
+            <h3>O que é?</h3>
 
             <p>
               A mentoria é um espaço seguro de crescimento e aprendizado. Você
@@ -46,7 +47,7 @@ export default function PageMentor() {
               mercado de TI, com as suas qualidades.
             </p>
 
-            <h3>Metodologia 1x:</h3>
+            <h3>Metodologia:</h3>
 
             <p>
               Quando você compra cursos e não faz, ou quando você tenta fazer
@@ -61,7 +62,7 @@ export default function PageMentor() {
               dados.
             </p>
 
-            <h3>Como funcionam as sessões?</h3>
+            <h3>Como funciona?</h3>
             <p>
               A mentoria é realizada por videochamada. Durante a primeira sessão
               vamos conversar e entender o seu momento atual na TI. Quais as
@@ -113,7 +114,7 @@ export default function PageMentor() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Agende uma mentoria de carreira</h3>
+              <h3>Agende uma sessão de mentoria</h3>
             </div>
 
             <div>

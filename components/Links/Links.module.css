@@ -43,7 +43,7 @@
   gap: 0.75rem;
   width: 100%;
   margin: 0;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 .links .text a {
   width: 100%;
@@ -69,19 +69,19 @@
   color: var(--color-b-fixed) !important;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 700px) {
   .links li a,
   .links li button {
     min-height: var(--height-max);
     width: var(--height-max);
   }
-  /*
-  .containerText {
-    width: unset;
-    flex-direction: row;
-  } */
   .links .text a {
     padding: 1rem 2.5rem;
     font-size: var(--font-size-5);
+  }
+
+  .containerText {
+    width: unset;
+    flex-direction: row;
   }
 }
