@@ -42,7 +42,7 @@ export default function PageHome() {
 
           <div className="aboutContainer">
             <div>
-              <h3>{ROUTES.WORK.description}</h3>
+              <h3>{ROUTES.WORK.description.replaceAll('.', '')}</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>

@@ -29,7 +29,7 @@ export default function PageContact() {
                 flexWrap: 'wrap',
                 marginTop: '1rem',
               }}>
-              <Button url={CONTACTS?.email?.url}>
+              <Button url={'mailto:' + CONTACTS?.email?.url}>
                 <>
                   {CONTACTS?.email?.icon}
                   {CONTACTS?.email?.title}
