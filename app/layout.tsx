@@ -1,9 +1,11 @@
-import './global.css'
-import type { Metadata, Viewport } from 'next'
-import Script from 'next/script'
-import { Gantari } from 'next/font/google'
+import CookiesPopup from '@/components/CookiesPopup'
+import { CookiesConsentContextProvider } from '@/contexts/CookiesConsentContext'
 import { UserContextProvider } from '@/contexts/UserContext'
 import { ROUTES } from '@/routes/routes'
+import type { Metadata, Viewport } from 'next'
+import { Gantari } from 'next/font/google'
+import Script from 'next/script'
+import './global.css'
 
 const font = Gantari({
   subsets: ['latin'],
@@ -128,7 +130,13 @@ export default function RootLayout({
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-
+                gtag('consent', 'default', {
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied',
+                  analytics_storage: 'denied',
+                  wait_for_update: 500,
+                });
                 gtag('config', '${process.env.NEXT_PUBLIC_ANALYTICS_G}');
               `,
               }}
@@ -150,7 +158,10 @@ export default function RootLayout({
         )}
       </head>
       <body>
-        <UserContextProvider>{children}</UserContextProvider>
+        <CookiesConsentContextProvider>
+          <UserContextProvider>{children}</UserContextProvider>
+          <CookiesPopup />
+        </CookiesConsentContextProvider>
       </body>
     </html>
   )

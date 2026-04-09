@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { ROUTES } from '../../routes/routes'
 import { IconLucasmdev } from '../Svgs'
@@ -10,23 +12,37 @@ export default function Footer() {
   return (
     <footer>
       <div className="container">
-        <div>
-          <Link href="/#home">
-            Homepage
-            <IconLucasmdev />
-          </Link>
-
-          <p>
-            <span className="company">
-              <Link href="/">{ROUTES.HOME.title}</Link>
-            </span>{' '}
-            &copy; {getYear()}
-          </p>
-        </div>
-
-        <p>
-          <Link href="/legal">{ROUTES.LEGAL.title}</Link>
-        </p>
+        <ul className="footer-links">
+          <li>
+            <Link href={ROUTES.HOME.path}>
+              <IconLucasmdev /> {ROUTES.HOME.title + ' © ' + getYear()}
+            </Link>
+          </li>
+          <li>
+            <Link href={ROUTES.STORE.path}>{ROUTES.STORE.title}</Link>
+          </li>
+          <li>
+            <Link href={ROUTES.WORK.path}>{ROUTES.WORK.title}</Link>
+          </li>
+          <li>
+            <Link href={ROUTES.CONTENT.path}>{ROUTES.CONTENT.title}</Link>
+          </li>
+          <li>
+            <Link href={ROUTES.LEGAL.path}>{ROUTES.LEGAL.title}</Link>
+          </li>
+          <li>
+            <a
+              href="#"
+              role="button"
+              className="btn btn-link"
+              onClick={(event) => {
+                event.preventDefault()
+                window.dispatchEvent(new CustomEvent('openCookiesPopup'))
+              }}>
+              Cookies Preferences
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   )

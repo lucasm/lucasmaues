@@ -33,7 +33,7 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Store',
-    description: 'Os melhores produtos tech, testados e recomendados.',
+    description: 'Os melhores produtos para você ser mais produtivo e feliz.',
     image: '/share-store.png',
   },
   MENTORSHIP: {
@@ -48,7 +48,7 @@ export const ROUTES = {
   },
   LEGAL: {
     path: '/legal',
-    title: 'Privacy Policy, Terms of Use & Cookies Notice',
+    title: 'Privacy Policy & Terms of Service',
     description: 'Legal information about website.',
     image: DEFAULT_IMAGE,
   },

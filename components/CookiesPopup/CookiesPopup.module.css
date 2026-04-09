@@ -1,0 +1,103 @@
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownFadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+.cookiesPopup {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  width: 100%;
+  max-width: 20rem;
+  gap: 1rem;
+  color: var(--color-w-text);
+  background: var(--color-b);
+  border-radius: var(--radius);
+  padding: 2rem;
+  z-index: 100000;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  will-change: transform, opacity;
+}
+
+.message {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: var(--font-size-6);
+  line-height: 1.5;
+  color: var(--color-w-text);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font);
+  font-size: var(--font-size-6);
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  border-radius: var(--radius-big);
+  padding: 0.6rem 1.25rem;
+  transition: var(--transition);
+}
+
+.btnAccept {
+  background: var(--color-y);
+  color: var(--color-b-fixed);
+}
+
+.btnAccept:hover {
+  opacity: 0.85;
+}
+
+.btnReject {
+  background: transparent;
+  color: var(--color-w-text);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.btnReject:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.link {
+  font-size: var(--font-size-6);
+  font-weight: normal;
+  color: var(--color-w-text);
+  text-decoration: underline;
+  padding: 0;
+}
+
+.slideUp {
+  animation: slideUpFadeIn 0.35s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.slideDown {
+  animation: slideDownFadeOut 0.35s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
