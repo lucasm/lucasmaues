@@ -28,9 +28,9 @@ export default function PageHome() {
         </div>
       </section>
 
-      <section id="posts" className="background-y">
+      <section id="content" className="background-y">
         <div className="container">
-          <h2 className="subtitle">Latest posts</h2>
+          <h2 className="subtitle">Latest content</h2>
 
           <BlogPosts />
         </div>

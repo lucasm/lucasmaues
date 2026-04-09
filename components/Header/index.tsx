@@ -66,10 +66,10 @@ export default function Header() {
       url: ROUTES.WORK.path,
       text: ROUTES.WORK.title,
     },
-    {
-      url: ROUTES.CONTACT.path,
-      text: ROUTES.CONTACT.title,
-    },
+    // {
+    //   url: ROUTES.CONTACT.path,
+    //   text: ROUTES.CONTACT.title,
+    // },
     {
       url: ROUTES.CONTENT.path,
       text: ROUTES.CONTENT.title,

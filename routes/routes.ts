@@ -43,8 +43,8 @@ export const ROUTES = {
     image: '/share-mentor.png',
   },
   CONTENT: {
-    path: '/#posts',
-    title: 'Posts',
+    path: '/#content',
+    title: 'Content',
   },
   LEGAL: {
     path: '/legal',
