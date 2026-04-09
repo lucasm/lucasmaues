@@ -1,7 +1,7 @@
 :root {
   font-size: 16px;
-  --color-y: #fff2c7;
-  --color-y-3: #ffe897;
+  --color-y: #ffe897;
+  --color-y-light: #fff2c7;
   --color-b: #302d20;
   --color-w: #fff;
   --color-b-dark: #302d20;
@@ -12,7 +12,7 @@
   --radius: 1.5rem;
   --radius-big: 2rem;
   --font: inherit, sans-serif;
-  --font-size-1: 3rem;
+  --font-size-1: 4rem;
   --font-size-2: 2.5rem;
   --font-size-3: 1.75rem;
   --font-size-4: 1.5rem;
@@ -311,6 +311,7 @@ select,
 }
 
 h1,
+h2,
 .aboutContainer h3 {
   font-size: var(--font-size-3);
 }
@@ -321,15 +322,8 @@ article h2,
   font-size: var(--font-size-4);
 }
 
-h2 {
-  font-size: var(--font-size-3);
-}
-
 #logo,
-.button {
-  font-size: var(--font-size-5);
-}
-
+.button,
 p,
 input,
 textarea,
@@ -412,9 +406,9 @@ article blockquote {
 .page .container {
   /* background: lightblue; */
   max-width: 2000px;
-}
-.page h1 {
-  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .page .description {
   margin: 0 auto;
@@ -423,19 +417,12 @@ article blockquote {
 }
 
 .description {
-  padding: 0;
+  padding: 0 0 2.5rem;
 }
 
-/* Subtitle */
 .subtitle {
   text-align: left;
   margin-bottom: 1rem;
-}
-
-@keyframes rotate-gradient {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 footer {
@@ -485,10 +472,10 @@ footer div {
   fill: var(--color-translucent);
 }
 .svg-color-y {
-  fill: var(--color-y-3);
+  fill: var(--color-y);
 }
 .background-y {
-  background: var(--color-y-3);
+  background: var(--color-y);
 }
 .background-y h2 {
   color: var(--color-b-fixed);
@@ -500,7 +487,15 @@ footer div {
   color: var(--color-b-fixed);
 }
 
-/* Desktop / Tablet */
+code {
+  font-size: inherit;
+  font-family: inherit;
+  background: var(--color-y);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Tablet */
 @media only screen and (min-width: 700px) {
   header,
   footer {
@@ -522,10 +517,6 @@ footer div {
   }
   section {
     padding: 5rem 2rem;
-  }
-
-  h1 {
-    font-size: var(--font-size-1);
   }
 
   article h1,
@@ -560,8 +551,13 @@ footer div {
   .home h1 {
     font-size: var(--font-size-2);
   }
+
+  h1 {
+    font-size: var(--font-size-1);
+  }
 }
 
+/* Desktop */
 @media only screen and (min-width: 900px) {
   .aboutContainer {
     grid-gap: 5rem;

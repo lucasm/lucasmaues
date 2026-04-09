@@ -1,6 +1,6 @@
-import PageWrapper from '@/components/PageWrapper'
-import CircleMouse from '@/components/CircleMouse'
 import Button from '@/components/Button'
+import CircleMouse from '@/components/CircleMouse'
+import PageWrapper from '@/components/PageWrapper'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -15,15 +15,13 @@ export default function PageNotFound() {
 
       <section className="fullscreen">
         <div className="fullscreen-container">
-          <div className="container">
-            <h1>Page Not Found ✋🏻</h1>
+          <h1>Page Not Found</h1>
 
-            <p className="description">
-              "Getting lost is also a path." — Clarice Lispector
-            </p>
+          <p className="description">
+            "Getting lost is also a path." — Clarice Lispector
+          </p>
 
-            <Button url="/">Back to homepage</Button>
-          </div>
+          <Button url="/">Back to homepage</Button>
         </div>
       </section>
     </PageWrapper>

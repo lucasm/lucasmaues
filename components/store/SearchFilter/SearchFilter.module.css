@@ -80,7 +80,7 @@
 
 .dropdownActive {
   border-radius: var(--radius-big);
-  background: var(--color-y-3);
+  background: var(--color-y);
 }
 
 .dropdownGroup {

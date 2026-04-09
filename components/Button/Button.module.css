@@ -10,7 +10,7 @@
   height: var(--height-min);
   line-height: 1;
   color: var(--color-b-fixed);
-  background: var(--color-y-3);
+  background: var(--color-y);
   border: 1px solid transparent;
   border-radius: var(--radius-big);
   cursor: pointer;

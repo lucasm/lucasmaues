@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
-  background: var(--color-y-3);
+  background: var(--color-y);
   animation: checkerboardA 8s ease-in-out infinite;
 }
 
@@ -70,14 +70,14 @@
 @keyframes checkerboardA {
   0%,
   45% {
-    background: var(--color-y-3);
+    background: var(--color-y);
   }
   50%,
   95% {
     background: transparent;
   }
   100% {
-    background: var(--color-y-3);
+    background: var(--color-y);
   }
 }
 
@@ -103,7 +103,7 @@
   }
   50%,
   95% {
-    background: var(--color-y-3);
+    background: var(--color-y);
   }
   100% {
     background: transparent;
@@ -130,7 +130,7 @@
 .icon:nth-child(6n + 3),
 .icon:nth-child(6n + 5) {
   animation-name: checkerboardA;
-  background: var(--color-y-3);
+  background: var(--color-y);
 }
 .icon:nth-child(6n + 1) svg,
 .icon:nth-child(6n + 3) svg,
@@ -167,7 +167,7 @@
   .icon:nth-child(8n + 6),
   .icon:nth-child(8n) {
     animation-name: checkerboardA;
-    background: var(--color-y-3);
+    background: var(--color-y);
   }
   .icon:nth-child(8n + 1) svg,
   .icon:nth-child(8n + 3) svg,
@@ -210,7 +210,7 @@
   .icon:nth-child(12n + 10),
   .icon:nth-child(12n) {
     animation-name: checkerboardA;
-    background: var(--color-y-3);
+    background: var(--color-y);
   }
   .icon:nth-child(12n + 1) svg,
   .icon:nth-child(12n + 3) svg,

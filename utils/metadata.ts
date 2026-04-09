@@ -1,5 +1,5 @@
-import { Metadata } from 'next'
 import { ROUTES } from '@/routes/routes'
+import { Metadata } from 'next'
 
 export function getPageMetadata(
   routeKey:
@@ -9,7 +9,7 @@ export function getPageMetadata(
     | 'MENTORSHIP'
     | 'DOMAINS'
     | 'LEGAL'
-    | 'THANKS'
+    | 'CONTACT'
 ): Metadata {
   const route = ROUTES[routeKey as keyof typeof ROUTES] as any
 

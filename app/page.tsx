@@ -30,7 +30,7 @@ export default function PageHome() {
 
       <section id="posts" className="background-y">
         <div className="container">
-          <h2 className="subtitle">{ROUTES.CONTENT.title}</h2>
+          <h2 className="subtitle">Latest posts</h2>
 
           <BlogPosts />
         </div>
@@ -38,11 +38,11 @@ export default function PageHome() {
 
       <section id="about">
         <div className="container">
-          <h2 className="subtitle">Work</h2>
+          <h2 className="subtitle">About me</h2>
 
           <div className="aboutContainer">
             <div>
-              <h3>{ROUTES.WORK.description.replace('.', '')}</h3>
+              <h3>{ROUTES.WORK.description}</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>
@@ -56,19 +56,20 @@ export default function PageHome() {
               <p>
                 Since 2017, I’ve been crafting web applications, e-commerce
                 platforms, and more recently, AI-driven experiences. I take
-                pride in building products that reach millions of users daily
-                and power millions in BRL transactions daily.
-              </p>
-              <p>
-                As a leader, I empower teams to deliver refined user
-                experiences, scalable software engineering practices, and real
-                business growth. I’m passionate about living, continuous
-                learning and sharing knowledge.
+                pride in building products that reach millions of users and
+                power millions in BRL transactions every day.
               </p>
 
               <p>
-                Welcome to my portfolio. And remember: complexity is easy,
-                simplicity is hard!
+                As a leader, I empower teams to deliver refined user
+                experiences, scalable engineering practices, and real business
+                growth. Complexity is easy; simplicity is hard. It requires a
+                deep understanding of business problems to solve them simply.
+              </p>
+
+              <p>
+                Beyond technology, I’m a human passionate about living,
+                continuous learning and sharing knowledge. Welcome!
               </p>
             </div>
           </div>

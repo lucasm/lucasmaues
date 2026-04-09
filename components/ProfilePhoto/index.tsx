@@ -6,7 +6,7 @@ import styles from './ProfilePhoto.module.css'
 export default function ProfilePhoto(): JSX.Element {
   const [isHovered, setIsHovered] = useState<boolean>(false)
 
-  const SvgBackground1 = (): JSX.Element => (
+  const SvgBackground = (): JSX.Element => (
     <svg
       width="500"
       height="544"
@@ -29,7 +29,7 @@ export default function ProfilePhoto(): JSX.Element {
           src="https://pbs.twimg.com/profile_images/2039485890373074944/7RPPRzlP_400x400.jpg"
         />
 
-        <SvgBackground1 />
+        <SvgBackground />
       </figure>
     </div>
   )

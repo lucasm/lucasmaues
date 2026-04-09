@@ -53,11 +53,11 @@
   color: var(--color-b-fixed);
   text-align: left;
   line-height: 1;
-  background: var(--color-y-3);
+  background: var(--color-y);
 }
 .links .text a:hover {
   transform: scale(1.025);
-  background: var(--color-y-3);
+  background: var(--color-y);
 }
 
 .links svg {

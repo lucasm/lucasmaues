@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { useUser } from '../../contexts/UserContext'
-import { IconMenu, IconSystem, IconMoon, IconSun, IconClose } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
+import { IconClose, IconMenu, IconMoon, IconSun, IconSystem } from '../Svgs'
 
 // Types
 interface HeaderLink {
@@ -65,6 +65,10 @@ export default function Header() {
     {
       url: ROUTES.WORK.path,
       text: ROUTES.WORK.title,
+    },
+    {
+      url: ROUTES.CONTACT.path,
+      text: ROUTES.CONTACT.title,
     },
     {
       url: ROUTES.CONTENT.path,

@@ -88,7 +88,7 @@
   flex-direction: column;
   z-index: 999;
   border-radius: var(--radius);
-  background: var(--color-y-3);
+  background: var(--color-y);
   color: var(--color-b-fixed);
 }
 .stars span {

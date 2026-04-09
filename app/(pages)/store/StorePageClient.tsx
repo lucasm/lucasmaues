@@ -11,8 +11,6 @@ import { ROUTES, STORE_FILTER_LABELS } from '@/routes/routes'
 import { useMemo, useRef, useState } from 'react'
 
 export default function StorePageClient() {
-  const title = ROUTES.STORE.title
-  const description = ROUTES.STORE.description
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState<string>(
     STORE_FILTER_LABELS.ALL_CATEGORIES
@@ -89,8 +87,14 @@ export default function StorePageClient() {
       <section>
         <div className="page">
           <div className="container">
-            <h1>{title}</h1>
-            <p className="description">{description}</p>
+            <h1>{ROUTES.STORE.title}</h1>
+            <p
+              className="description"
+              style={{
+                paddingBottom: '1rem',
+              }}>
+              {ROUTES.STORE.description}
+            </p>
 
             <div ref={containerProductsRef}></div>
 

@@ -25,42 +25,31 @@ export const ROUTES = {
     image: DEFAULT_IMAGE,
   },
   CONTACT: {
-    path: '/work#contact',
+    path: '/contact',
     title: 'Contact',
+    description: 'Get in touch with me.',
+    image: DEFAULT_IMAGE,
   },
   STORE: {
     path: '/store',
     title: 'Store',
-    description:
-      'Os melhores produtos para você ser mais inteligente, produtivo e feliz.',
-    image: 'https://lucasm.dev/share-store.png',
+    description: 'Os melhores produtos tech, testados e recomendados.',
+    image: '/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
     title: 'Mentor',
     description: 'Mentoria para profissionais se destacarem no mercado tech.',
-    image: 'https://lucasm.dev/share-mentor.png',
+    image: '/share-mentor.png',
   },
   CONTENT: {
     path: '/#posts',
     title: 'Posts',
   },
-  DOMAINS: {
-    path: '/domains',
-    title: 'Domains Sales',
-    description: 'Domains sales for your project, startups or companies.',
-    image: DEFAULT_IMAGE,
-  },
   LEGAL: {
     path: '/legal',
     title: 'Privacy Policy, Terms of Use & Cookies Notice',
     description: 'Legal information about website.',
-    image: DEFAULT_IMAGE,
-  },
-  THANKS: {
-    path: '/thanks',
-    title: 'Thanks',
-    description: 'Thanks for this.',
     image: DEFAULT_IMAGE,
   },
 }

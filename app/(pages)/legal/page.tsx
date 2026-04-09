@@ -1,10 +1,11 @@
 import PageWrapper from '@/components/PageWrapper'
+import { CONTACTS } from '@/data/contacts'
 import { ROUTES } from '@/routes/routes'
 import { getPageMetadata } from '@/utils/metadata'
 
 export const metadata = getPageMetadata('LEGAL')
 
-export default function PagePrivacy() {
+export default function PageLegal() {
   return (
     <PageWrapper>
       <section>
@@ -154,8 +155,8 @@ export default function PagePrivacy() {
 
           <h2>10. Contact</h2>
           <p>
-            If you have any questions or suggestions, please, email at
-            legal@lucasmaues.com.
+            If you have any questions or suggestions, please, send an email to{' '}
+            {CONTACTS?.emailLegal?.url}.
           </p>
         </article>
       </section>

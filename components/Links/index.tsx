@@ -2,29 +2,10 @@
 
 import Link from 'next/link'
 import { JSX, ReactElement, useState } from 'react'
+import { CONTACTS_LIST } from '../../data/contacts'
 import { ROUTES } from '../../routes/routes'
 import PrefetchImages from '../store/PrefetchImages'
-import {
-  IconBluesky,
-  IconCodepen,
-  IconContent,
-  IconDev,
-  IconDiscord,
-  IconGithub,
-  IconInstagram,
-  IconLess,
-  IconLetterboxd,
-  IconLinkedin,
-  IconMastodon,
-  IconMentor,
-  IconMore,
-  IconSpotify,
-  IconStore,
-  IconThreads,
-  IconWhatsapp,
-  IconX,
-  IconYoutube,
-} from '../Svgs'
+import { IconContent, IconLess, IconMentor, IconMore, IconStore } from '../Svgs'
 import Styles from './Links.module.css'
 
 interface ILinks {
@@ -35,6 +16,26 @@ interface ILinks {
   active: boolean
   onlyText?: boolean
 }
+
+const socialIds = new Set([
+  'youtube',
+  'x',
+  'bluesky',
+  'linkedin',
+  'github',
+  'devto',
+  'codepen',
+  'instagram',
+  'threads',
+  'discord',
+  'spotify',
+  'letterboxd',
+  'mastodon',
+])
+
+const socialLinks: ILinks[] = CONTACTS_LIST.filter((link) =>
+  socialIds.has(link.id)
+)
 
 const linksList: ILinks[] = [
   {
@@ -91,90 +92,7 @@ const linksList: ILinks[] = [
   //     icon: IconTalito,
   //   },
 
-  {
-    url: 'https://youtube.com/@lucasmmau',
-    icon: <IconYoutube />,
-    title: 'YouTube',
-    active: true,
-  },
-  {
-    url: 'https://x.com/lucasmmau',
-    icon: <IconX />,
-    title: 'X',
-    active: true,
-  },
-  {
-    url: 'https://bsky.app/profile/lucasmaues.com',
-    icon: <IconBluesky />,
-    title: 'Bluesky',
-    active: true,
-  },
-  {
-    url: 'https://linkedin.com/in/lucasmezs',
-    icon: <IconLinkedin />,
-    title: 'LinkedIn',
-    active: true,
-  },
-  {
-    url: 'https://github.com/lucasm',
-    icon: <IconGithub />,
-    title: 'GitHub',
-    active: true,
-  },
-  {
-    url: 'https://dev.to/lucasm',
-    icon: <IconDev />,
-    title: 'DEV Community',
-    active: true,
-  },
-  {
-    url: 'https://codepen.io/lucasm',
-    icon: <IconCodepen />,
-    title: 'CodePen',
-    active: true,
-  },
-  {
-    url: 'https://instagram.com/lucasmmau',
-    icon: <IconInstagram />,
-    title: 'Instagram',
-    active: false,
-  },
-  {
-    url: 'https://wa.me/5531997038007',
-    icon: <IconWhatsapp />,
-    title: 'WhatsApp',
-    active: false,
-  },
-  {
-    url: 'https://threads.net/@lucasmmau',
-    icon: <IconThreads />,
-    title: 'Threads',
-    active: false,
-  },
-  {
-    url: 'https://discord.com/users/lucasm.dev',
-    icon: <IconDiscord />,
-    title: 'Discord',
-    active: false,
-  },
-  {
-    url: 'https://open.spotify.com/user/lucasmauess',
-    icon: <IconSpotify />,
-    title: 'Spotify',
-    active: false,
-  },
-  {
-    url: 'https://letterboxd.com/lucasmmau',
-    icon: <IconLetterboxd />,
-    title: 'Letterboxd',
-    active: false,
-  },
-  {
-    url: 'https://mastodon.social/@lucasmezs',
-    icon: <IconMastodon />,
-    title: 'Mastodon',
-    active: false,
-  },
+  ...socialLinks,
 ]
 
 const Links = (): JSX.Element => {

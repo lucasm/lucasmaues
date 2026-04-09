@@ -1,7 +1,7 @@
-import PageWrapper from '@/components/PageWrapper'
 import Button from '@/components/Button'
 import CardsWork from '@/components/CardsWork'
-import { IconEmail, IconWhatsapp } from '@/components/Svgs'
+import PageWrapper from '@/components/PageWrapper'
+import { CONTACTS } from '@/data/contacts'
 import { ROUTES } from '@/routes/routes'
 import { getPageMetadata } from '@/utils/metadata'
 
@@ -36,18 +36,18 @@ export default function PageWork() {
             </div>
 
             <div>
-              <Button url="mailto:hello@lucasmaues.com">
+              <Button url={CONTACTS?.email?.url}>
                 <>
-                  <IconEmail />
-                  Email
+                  {CONTACTS?.email?.icon}
+                  {CONTACTS?.email?.title}
                 </>
               </Button>
 
               <div style={{ marginTop: '1rem' }} translate="no">
-                <Button url="https://wa.me/5531997038007" isExternal>
+                <Button url={CONTACTS?.whatsapp?.url} isExternal>
                   <>
-                    <IconWhatsapp />
-                    WhatsApp
+                    {CONTACTS?.whatsapp?.icon}
+                    {CONTACTS?.whatsapp?.title}
                   </>
                 </Button>
               </div>

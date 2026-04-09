@@ -20,10 +20,9 @@ export default function PageMentor() {
 
             <p className="description">
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
-              em Engenharia de Software, Frontend e Liderança Técnica, oriento
-              estudantes e profissionais de TI que buscam crescimento na
-              carreira e estudos. Meu foco é ajudar você a se destacar no
-              mercado de tecnologia, com as suas qualidades.
+              em Frontend, Engenharia de Software e Liderança Técnica, sou
+              procurado por estudantes e profissionais de TI que buscam
+              crescimento na carreira de tecnologia.
             </p>
           </div>
         </div>

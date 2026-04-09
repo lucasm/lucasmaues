@@ -1,19 +1,18 @@
 'use client'
 
-import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
 import { ROUTES } from '@/routes/routes'
+import { usePathname } from 'next/navigation'
+import { useEffect } from 'react'
 
 const HOME = ROUTES.HOME as any
 
 function mapPathToTitle(pathname: string): string {
   const routeMap: Record<string, keyof typeof ROUTES> = {
-    '/work': 'WORK',
     '/store': 'STORE',
     '/mentor': 'MENTORSHIP',
-    '/domains': 'DOMAINS',
+    '/work': 'WORK',
+    '/contact': 'CONTACT',
     '/legal': 'LEGAL',
-    '/thanks': 'THANKS',
   }
 
   const routeKey = routeMap[pathname]

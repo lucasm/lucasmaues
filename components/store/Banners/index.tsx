@@ -15,9 +15,9 @@ export default function Banners() {
     {
       link: '#products',
       external: false,
-      title: 'Compra segura',
+      title: 'Compras seguras',
       subtitle:
-        'Produtos com garantia, bem avaliados e entregues pelas lojas Amazon, Mercado Livre ou AliExpress.',
+        'Todos os produtos com garantia, bem avaliados e entregues pelas lojas Mercado Livre, Amazon ou AliExpress.',
       image: <IconShield />,
     },
     {

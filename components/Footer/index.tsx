@@ -1,13 +1,12 @@
 import Link from 'next/link'
-import { IconLucasmdev } from '../Svgs'
 import { ROUTES } from '../../routes/routes'
-import { JSX } from 'react'
+import { IconLucasmdev } from '../Svgs'
 
 function getYear(): number {
   return new Date().getFullYear()
 }
 
-export default function Footer(): JSX.Element {
+export default function Footer() {
   return (
     <footer>
       <div className="container">
