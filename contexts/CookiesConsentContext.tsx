@@ -19,6 +19,8 @@ declare global {
 }
 
 const LOCALSTORAGE_KEY = 'isCookiesAccepted'
+const CONSENT_RETRY_INTERVAL = 250
+const CONSENT_RETRY_ATTEMPTS = 20
 
 const CookiesConsentContext = createContext<CookiesConsentContextValue | null>(
   null
@@ -45,31 +47,80 @@ export const CookiesConsentContextProvider = ({
   }, [])
 
   // --- Consent helpers (Google Consent Mode v2 + Clarity ConsentV2) ---
-  const applyGranted = () => {
+  const applyGrantedToGoogle = () => {
     window.gtag?.('consent', 'update', {
       ad_storage: 'granted',
       ad_user_data: 'granted',
       ad_personalization: 'granted',
       analytics_storage: 'granted',
     })
+  }
+
+  const applyGrantedToClarity = () => {
     window.clarity?.('consentv2', {
       ad_storage: 'granted',
       analytics_storage: 'granted',
     })
   }
 
-  const applyDenied = () => {
+  const applyDeniedToGoogle = () => {
     window.gtag?.('consent', 'update', {
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied',
       analytics_storage: 'denied',
     })
+  }
+
+  const applyDeniedToClarity = () => {
     window.clarity?.('consentv2', {
       ad_storage: 'denied',
       analytics_storage: 'denied',
     })
   }
+
+  useEffect(() => {
+    if (!isHydrated || isAccepted === null) return
+
+    let isCancelled = false
+    let attempts = 0
+    let googleApplied = false
+    let clarityApplied = false
+
+    const syncConsent = () => {
+      if (isCancelled) return
+
+      if (!googleApplied && typeof window.gtag === 'function') {
+        if (isAccepted) {
+          applyGrantedToGoogle()
+        } else {
+          applyDeniedToGoogle()
+        }
+        googleApplied = true
+      }
+
+      if (!clarityApplied && typeof window.clarity === 'function') {
+        if (isAccepted) {
+          applyGrantedToClarity()
+        } else {
+          applyDeniedToClarity()
+        }
+        clarityApplied = true
+      }
+
+      if (googleApplied && clarityApplied) return
+      if (attempts >= CONSENT_RETRY_ATTEMPTS) return
+
+      attempts += 1
+      window.setTimeout(syncConsent, CONSENT_RETRY_INTERVAL)
+    }
+
+    syncConsent()
+
+    return () => {
+      isCancelled = true
+    }
+  }, [isAccepted, isHydrated])
 
   const accept = () => {
     setIsAccepted(true)
@@ -78,7 +129,6 @@ export const CookiesConsentContextProvider = ({
     } catch {
       // Ignore write errors (e.g., private mode)
     }
-    applyGranted()
   }
 
   const reject = () => {
@@ -88,7 +138,6 @@ export const CookiesConsentContextProvider = ({
     } catch {
       // Ignore write errors (e.g., private mode)
     }
-    applyDenied()
   }
 
   const openPopup = () => setIsAccepted(null)

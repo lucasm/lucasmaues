@@ -465,7 +465,7 @@ footer .footer-links li {
 footer .footer-links a {
   display: inline-flex;
   font-size: inherit;
-  gap: 0.5rem;
+  gap: 0.75rem;
   align-items: center;
   text-decoration: none;
 }
