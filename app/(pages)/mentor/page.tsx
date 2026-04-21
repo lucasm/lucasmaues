@@ -20,9 +20,9 @@ export default function PageMentor() {
 
             <p className="description">
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
-              em Frontend, Engenharia de Software e Liderança Técnica, sou
+              em Engenharia de Software, Frontend e Liderança Técnica, sou
               procurado por estudantes e profissionais de TI que buscam
-              crescimento na carreira de tecnologia.
+              crescimento em carreiras de tecnologia.
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function PageMentor() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Agende uma sessão de mentoria</h3>
+              <h3>Agende uma mentoria</h3>
             </div>
 
             <div>

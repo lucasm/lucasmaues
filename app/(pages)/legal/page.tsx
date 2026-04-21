@@ -15,8 +15,7 @@ export default function PageLegal() {
           <p>
             {ROUTES.HOME.title} is committed to protecting your privacy and
             personal data. This policy applies to projects published under
-            lucasmaues.com and operated by LUCASM.DEV LTDA, based in the
-            Federative Republic of Brazil.
+            lucasmaues.com and, based in the Federative Republic of Brazil.
           </p>
 
           <h2>1. Applicable Legislation</h2>

@@ -19,7 +19,7 @@ My personal website.
 
 ## Stack
 
-Made with React, TypeScript, JavaScript, CSS and Next.js framework.
+Made with React, TypeScript, CSS Modules and Next.js Framework.
 
 ## Lighthouse Score
 

@@ -18,9 +18,9 @@ export default function PageHome() {
           <div className="container home">
             <ProfilePhoto />
             <h1>
-              Hello, I'm Lucas Maués, a Brazilian passionate about living! I'm
-              also a Tech Lead and Senior Frontend Software Engineer working in
-              banking, scaling products, and mentoring developers.
+              Hello, I'm Lucas Maués, a Brazilian Tech Lead, Senior Software
+              Engineer and Frontend Specialist working in banking, scaling
+              products, and mentoring developers.
             </h1>
 
             <Links />
