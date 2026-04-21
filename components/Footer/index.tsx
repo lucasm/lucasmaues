@@ -25,6 +25,9 @@ export default function Footer() {
             <Link href={ROUTES.WORK.path}>{ROUTES.WORK.title}</Link>
           </li>
           <li>
+            <Link href={ROUTES.MENTORSHIP.path}>{ROUTES.MENTORSHIP.title}</Link>
+          </li>
+          <li>
             <Link href={ROUTES.CONTENT.path}>{ROUTES.CONTENT.title}</Link>
           </li>
           <li>
