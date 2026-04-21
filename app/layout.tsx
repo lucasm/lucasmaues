@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: `${HOME.title} — ${HOME.seo}`,
     description: HOME.description,
     images: [HOME.image],
-    creator: '@lucasmezs',
+    creator: '@lucasmmau',
   },
   icons: {
     icon: [

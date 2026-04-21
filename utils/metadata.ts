@@ -37,9 +37,9 @@ export function getPageMetadata(
             },
           ]
         : [],
-      url: `https://lucasm.dev${route.path}`,
+      url: `https://lucasmaues.com${route.path}`,
       type: 'website',
-      ...(isHome && { siteName: 'lucasm.dev' }),
+      ...(isHome && { siteName: 'lucasmaues.com' }),
     },
     twitter: {
       card: 'summary_large_image',

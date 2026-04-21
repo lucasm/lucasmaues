@@ -48,7 +48,7 @@ export const ROUTES = {
   },
   LEGAL: {
     path: '/legal',
-    title: 'Privacy Policy & Terms of Service',
+    title: 'Privacy Policy & Terms of Use',
     description: 'Legal information about website.',
     image: DEFAULT_IMAGE,
   },
