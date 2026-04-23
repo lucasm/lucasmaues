@@ -13,9 +13,15 @@ export default function PageLegal() {
           <h1>{ROUTES.LEGAL.title}</h1>
 
           <p>
-            {ROUTES.HOME.title} is committed to protecting your privacy and
-            personal data. This policy applies to projects published under
-            lucasmaues.com and, based in the Federative Republic of Brazil.
+            {ROUTES.HOME.title} is operated by LUCASM.DEV LTDA, a Brazilian
+            company. This {ROUTES.LEGAL.title} describes how we collect, use,
+            and protect your information when you access or use our projects on
+            this domain, including https://lucasmaues.com and related services
+            (collectively, "projects"). We are committed to respecting your
+            privacy and complying with applicable data protection laws. By using
+            our projects, you agree to the terms of this {ROUTES.LEGAL.title}.
+            If you do not agree with this policy, please do not use our
+            projects.
           </p>
 
           <h2>1. Applicable Legislation</h2>
@@ -24,9 +30,7 @@ export default function PageLegal() {
             This {ROUTES.LEGAL.title} is primarily governed by Brazilian law.
             Depending on your location and the service used, this policy also
             observes compatible principles from the United States and the
-            European Union. By accessing https://lucasmaues.com and related
-            projects on this domain (collectively, "projects"), you acknowledge
-            this policy and applicable legal frameworks.
+            European Union.
           </p>
 
           <p>Applicable and adherent with:</p>
@@ -319,11 +323,11 @@ export default function PageLegal() {
           </p>
 
           <p>
-            For complaints in Brazil, you may contact the National Data
-            Protection Authority (ANPD), when applicable.
+            In Brazil, you may contact the National Data Protection Authority
+            (ANPD), if applicable.
           </p>
 
-          <p>Last updated: April 8, 2026</p>
+          <p>Last updated: April 22, 2026.</p>
         </article>
       </section>
     </PageWrapper>

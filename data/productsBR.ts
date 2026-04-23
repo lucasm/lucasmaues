@@ -70,6 +70,7 @@ export const productsBR = [
     stars: 4.8,
     description:
       'Rastreador da Apple para encontrar chaves, mochila, carteira e outros itens no app Buscar. Compacto, com bateria de longa duração e integração perfeita com iPhone.',
+    url: 'https://amzn.to/4d0pw3N',
     url_2: 'https://meli.la/1jbLSgW',
     image: 'https://m.media-amazon.com/images/I/61bMNCeAUAL._AC_SX679_.jpg',
     category: 'Acessórios',

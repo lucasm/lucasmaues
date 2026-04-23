@@ -22,10 +22,10 @@ export default function Footer() {
             <Link href={ROUTES.STORE.path}>{ROUTES.STORE.title}</Link>
           </li>
           <li>
-            <Link href={ROUTES.WORK.path}>{ROUTES.WORK.title}</Link>
+            <Link href={ROUTES.MENTORSHIP.path}>{ROUTES.MENTORSHIP.title}</Link>
           </li>
           <li>
-            <Link href={ROUTES.MENTORSHIP.path}>{ROUTES.MENTORSHIP.title}</Link>
+            <Link href={ROUTES.WORK.path}>{ROUTES.WORK.title}</Link>
           </li>
           <li>
             <Link href={ROUTES.CONTENT.path}>{ROUTES.CONTENT.title}</Link>

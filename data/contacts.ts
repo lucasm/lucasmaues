@@ -58,20 +58,6 @@ export const CONTACTS: Contacts = {
     active: true,
     icon: createElement(IconYoutube),
   },
-  x: {
-    id: 'x',
-    title: 'X',
-    url: 'https://x.com/lucasmmau',
-    active: true,
-    icon: createElement(IconX),
-  },
-  bluesky: {
-    id: 'bluesky',
-    title: 'Bluesky',
-    url: 'https://bsky.app/profile/lucasmaues.com',
-    active: true,
-    icon: createElement(IconBluesky),
-  },
   linkedin: {
     id: 'linkedin',
     title: 'LinkedIn',
@@ -85,6 +71,20 @@ export const CONTACTS: Contacts = {
     url: 'https://github.com/lucasm',
     active: true,
     icon: createElement(IconGithub),
+  },
+  x: {
+    id: 'x',
+    title: 'X',
+    url: 'https://x.com/lucasmmau',
+    active: true,
+    icon: createElement(IconX),
+  },
+  bluesky: {
+    id: 'bluesky',
+    title: 'Bluesky',
+    url: 'https://bsky.app/profile/lucasmaues.com',
+    active: true,
+    icon: createElement(IconBluesky),
   },
   devto: {
     id: 'devto',

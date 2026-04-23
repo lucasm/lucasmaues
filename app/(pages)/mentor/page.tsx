@@ -22,7 +22,7 @@ export default function PageMentor() {
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
               em Engenharia de Software, Frontend e Liderança Técnica, sou
               procurado por estudantes e profissionais de TI que buscam
-              crescimento em carreiras de tecnologia.
+              crescimento em carreiras de tecnologia
             </p>
           </div>
         </div>

@@ -17,10 +17,11 @@ export default function PageHome() {
         <div className="fullscreen-container">
           <div className="container home">
             <ProfilePhoto />
+
             <h1>
               Hello, I'm Lucas Maués, a Brazilian Tech Lead, Senior Software
-              Engineer and Frontend Specialist working in banking, scaling
-              products, and mentoring developers.
+              Engineer and Frontend Specialist working on banking, scaling
+              products, and leading developers
             </h1>
 
             <Links />
@@ -42,7 +43,7 @@ export default function PageHome() {
 
           <div className="aboutContainer">
             <div>
-              <h3>{ROUTES.WORK.description.replaceAll('.', '')}</h3>
+              <h3>{ROUTES.WORK.description}</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>
@@ -54,22 +55,19 @@ export default function PageHome() {
 
             <div>
               <p>
-                Since 2017, I’ve been crafting web applications, e-commerce
-                platforms, and more recently, AI-driven experiences. I take
-                pride in building products that reach millions of users and
-                power millions in BRL transactions every day.
+                Since 2017, I have been building web applications, e-commerce
+                platforms, mission-critical financial systems, and more
+                recently, AI-driven experiences. I take pride in building
+                products that reach millions of users and power millions in BRL
+                transactions every day.
               </p>
 
               <p>
-                As a leader, I empower teams to deliver refined user
+                As a leader, I empower my teams to deliver refined user
                 experiences, scalable engineering practices, and real business
-                growth. Complexity is easy; simplicity is hard. It requires a
-                deep understanding of business problems to solve them simply.
-              </p>
-
-              <p>
-                Beyond technology, I’m a human passionate about living,
-                continuous learning and sharing knowledge. Welcome!
+                growth. I'm passionate about deeply understanding business
+                problems to solve them simply. Because simplicity is the
+                ultimate software sophistication.
               </p>
             </div>
           </div>
