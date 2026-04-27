@@ -1,23 +1,24 @@
-import { ReactElement } from 'react'
 import {
+  IconActDigital,
+  IconAspiral,
   IconBancoBmg,
-  IconGlobo,
-  IconFindto,
-  IconMdn,
-  IconMicrosoft,
-  IconVarejoAqui,
-  IconTCMPA,
-  IconUFPA,
-  IconSuperia,
-  IconNufen,
-  IconNaCuia,
   IconCacba,
   IconChecktest,
-  IconActDigital,
+  IconFindto,
+  IconGlobo,
+  IconMdn,
+  IconMemeh,
+  IconMicrosoft,
+  IconNaCuia,
+  IconNufen,
+  IconSuperia,
   IconTalito,
-  IconAspiral,
+  IconTCMPA,
+  IconUFPA,
+  IconVarejoAqui,
   IconYounner,
 } from '@/components/Svgs'
+import { ReactElement } from 'react'
 
 export interface IProjects {
   name: string
@@ -126,9 +127,17 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
+    name: 'Memeh',
+    url: 'https://aspiral.app/',
+    description: 'News feed of trusted journalism with humor.',
+    tags: ['Frontend', 'React'],
+    icon: IconMemeh,
+    active: true,
+  },
+  {
     name: 'Aspiral',
     url: 'https://aspiral.app/',
-    description: 'News feed of trusted journalism.',
+    description: 'Daily thoughts and recommendations.',
     tags: ['Frontend', 'React'],
     icon: IconAspiral,
     active: true,
