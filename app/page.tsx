@@ -20,8 +20,8 @@ export default function PageHome() {
 
             <h1>
               Hello, I'm Lucas Maués, a Brazilian Tech Lead, Senior Software
-              Engineer and Frontend Specialist. Working on banking products and
-              leading developers.
+              Engineer and Frontend Specialist, leading banking teams to build
+              world-class platforms and products
             </h1>
 
             <Links />
@@ -43,7 +43,7 @@ export default function PageHome() {
 
           <div className="aboutContainer">
             <div>
-              <h3>{ROUTES.WORK.description}</h3>
+              <h3>{ROUTES.WORK.description?.replaceAll('.', '')}</h3>
 
               <Button url={ROUTES.WORK.path}>
                 <>

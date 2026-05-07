@@ -155,6 +155,7 @@ export default function SearchFilter({
                 Selecione a categoria:
               </label>
               <select
+                translate="no"
                 value={currentCategory}
                 onChange={handleCategoryChange}
                 className={Style.select}
@@ -179,6 +180,7 @@ export default function SearchFilter({
                 Selecione a marca:
               </label>
               <select
+                translate="no"
                 value={currentBrand}
                 onChange={handleBrandChange}
                 className={Style.select}

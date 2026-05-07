@@ -9,7 +9,7 @@ export default function CardsWork() {
       {Projects?.filter((project) => project.active).map((item, index) => (
         <a
           key={index}
-          href={item.url + '?utm_source=lucasm.dev'}
+          href={item.url + '?utm_source=lucasmaues.com'}
           target="_blank"
           rel="noopener noreferrer">
           <div className="card">

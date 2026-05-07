@@ -21,7 +21,7 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description: 'Building scalable solutions with companies and teams',
+    description: 'Building scalable solutions with companies and teams.',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {
@@ -33,13 +33,13 @@ export const ROUTES = {
   STORE: {
     path: '/store',
     title: 'Store',
-    description: 'Os melhores produtos para você ser mais produtivo e feliz',
+    description: 'Os melhores produtos para produtividade e dia a dia.',
     image: '/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
     title: 'Mentor',
-    description: 'Mentoria para profissionais se destacarem no mercado tech',
+    description: 'Mentoria para profissionais de TI se destacarem no mercado.',
     image: '/share-mentor.png',
   },
   CONTENT: {
@@ -49,7 +49,7 @@ export const ROUTES = {
   LEGAL: {
     path: '/legal',
     title: 'Privacy Policy & Terms of Use',
-    description: 'Legal information about this website',
+    description: 'Legal information about website lucasmaues.com',
     image: DEFAULT_IMAGE,
   },
 }

@@ -22,7 +22,7 @@ export default function PageMentor() {
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
               em Engenharia de Software, Frontend e Liderança Técnica, sou
               procurado por estudantes e profissionais de TI que buscam
-              crescimento em carreiras de tecnologia
+              crescimento na carreira, mas não sabem por onde começar.
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function PageMentor() {
               Johnson
             </h1>
 
-            <h3>O que é?</h3>
+            <h3>O que é a mentoria?</h3>
 
             <p>
               A mentoria é um espaço seguro de crescimento e aprendizado. Você
@@ -46,7 +46,7 @@ export default function PageMentor() {
               mercado de TI, com as suas qualidades.
             </p>
 
-            <h3>Metodologia:</h3>
+            <h3>Minha metodologia 1x</h3>
 
             <p>
               Quando você compra cursos e não faz, ou quando você tenta fazer
@@ -93,14 +93,14 @@ export default function PageMentor() {
               <br />
               - Plano de ação personalizado com foco nos seus objetivos
               <br />
-              - Desenvolvimento comportamental (soft skills)
+              - Desenvolvimento comportamental de soft skills
               <br />
-              - Aprendizado técnico (hard skills)
+              - Aprendizado técnico de hard skills
               <br />
               - Feedback real, onde falo o que você PRECISA ouvir para evoluir
-              como profissional, não o que seu ego quer ouvir
+              profissionalmente, não vou agradar seu ego
               <br />
-              - Avaliação de resultados
+              - Avaliação dos resultados alcançados
               <br />- Independência (essa fase é o fim da mentoria)
             </p>
           </article>

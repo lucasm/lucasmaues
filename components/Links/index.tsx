@@ -26,6 +26,7 @@ const socialIds = new Set([
   'devto',
   'codepen',
   'instagram',
+  'whatsapp',
   'threads',
   'discord',
   'spotify',
@@ -108,14 +109,13 @@ const Links = (): JSX.Element => {
 
   const textLinks: ILinks[] = linksList.filter((link) => link.onlyText)
   const iconLinks: ILinks[] = linksList.filter((link) => !link.onlyText)
-  const limit = 9
+  const limit = 5
   const visibleIconLinks: ILinks[] = showAll
     ? iconLinks
     : iconLinks?.slice(0, limit)
 
-  // só mostra o botão se tiver mais de 7 links
-  //   const showToggleButton = iconLinks?.length > limit
-  const showToggleButton = false
+  // mostra o botão "ver mais" baseado no limit
+  const showToggleButton = iconLinks?.length > limit
 
   return (
     <div className={Styles.container}>

@@ -44,26 +44,12 @@ export const CONTACTS: Contacts = {
     active: true,
     icon: IconEmail,
   },
-  whatsapp: {
-    id: 'whatsapp',
-    title: 'WhatsApp',
-    url: 'https://wa.me/5531997038007',
+  x: {
+    id: 'x',
+    title: 'X',
+    url: 'https://x.com/lucasmmau',
     active: true,
-    icon: IconWhatsapp,
-  },
-  youtube: {
-    id: 'youtube',
-    title: 'YouTube',
-    url: 'https://youtube.com/@lucasmmau',
-    active: true,
-    icon: createElement(IconYoutube),
-  },
-  linkedin: {
-    id: 'linkedin',
-    title: 'LinkedIn',
-    url: 'https://linkedin.com/in/lucasmezs',
-    active: true,
-    icon: createElement(IconLinkedin),
+    icon: createElement(IconX),
   },
   github: {
     id: 'github',
@@ -72,19 +58,19 @@ export const CONTACTS: Contacts = {
     active: true,
     icon: createElement(IconGithub),
   },
-  x: {
-    id: 'x',
-    title: 'X',
-    url: 'https://x.com/lucasmmau',
+  linkedin: {
+    id: 'linkedin',
+    title: 'LinkedIn',
+    url: 'https://linkedin.com/in/lucasmezs',
     active: true,
-    icon: createElement(IconX),
+    icon: createElement(IconLinkedin),
   },
-  bluesky: {
-    id: 'bluesky',
-    title: 'Bluesky',
-    url: 'https://bsky.app/profile/lucasmaues.com',
+  youtube: {
+    id: 'youtube',
+    title: 'YouTube',
+    url: 'https://youtube.com/@lucasmmau',
     active: true,
-    icon: createElement(IconBluesky),
+    icon: createElement(IconYoutube),
   },
   devto: {
     id: 'devto',
@@ -99,6 +85,20 @@ export const CONTACTS: Contacts = {
     url: 'https://codepen.io/lucasm',
     active: true,
     icon: createElement(IconCodepen),
+  },
+  bluesky: {
+    id: 'bluesky',
+    title: 'Bluesky',
+    url: 'https://bsky.app/profile/lucasmaues.com',
+    active: true,
+    icon: createElement(IconBluesky),
+  },
+  whatsapp: {
+    id: 'whatsapp',
+    title: 'WhatsApp',
+    url: 'https://wa.me/5531997038007',
+    active: true,
+    icon: IconWhatsapp,
   },
   instagram: {
     id: 'instagram',
