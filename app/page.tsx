@@ -21,7 +21,7 @@ export default function PageHome() {
             <h1>
               Hello, I'm Lucas Maués, a Brazilian Tech Lead, Senior Software
               Engineer and Frontend Specialist, leading banking teams to build
-              world-class platforms and products
+              platforms and products
             </h1>
 
             <Links />
