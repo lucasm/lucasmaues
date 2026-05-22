@@ -4,7 +4,7 @@ import PageWrapper from '@/components/PageWrapper'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Page Not Found',
+  title: 'Page Not Found ',
   description: '404 error page.',
 }
 
@@ -15,13 +15,15 @@ export default function PageNotFound() {
 
       <section className="fullscreen">
         <div className="fullscreen-container">
-          <h1>Page Not Found</h1>
+          <div className="container">
+            <h1>Ooops.... The page you’re looking for can’t be found.</h1>
 
-          <p className="description">
-            "Getting lost is also a path." — Clarice Lispector
-          </p>
+            <p className="description">
+              You don't need to do anything. Just go ahead.
+            </p>
 
-          <Button url="/">Back to homepage</Button>
+            <Button url="/">Back to homepage</Button>
+          </div>
         </div>
       </section>
     </PageWrapper>

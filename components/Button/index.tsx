@@ -27,18 +27,31 @@ const VARIANT_CLASS: Record<ButtonVariant, string> = {
 export default function Button(props: Readonly<Props>): JSX.Element {
   const variant = props.variant ?? 'yellow'
   const size = props.size ?? 'medium'
+  const className = `${Styles.button} ${VARIANT_CLASS[variant]} ${
+    size === 'small' ? Styles.small : ''
+  }`
+
+  if (props.onClick) {
+    return (
+      <button
+        type="button"
+        className={className}
+        title={props.title}
+        onMouseEnter={props.onMouseEnter}
+        onClick={props.onClick}>
+        {props.children}
+      </button>
+    )
+  }
 
   return (
     <Link
       href={props.url || '#'}
-      className={`${Styles.button} ${VARIANT_CLASS[variant]} ${
-        size === 'small' ? Styles.small : ''
-      }`}
+      className={className}
       target={props.isExternal ? '_blank' : '_self'}
       rel={props.isExternal ? 'noopener noreferrer' : ''}
       title={props.title}
-      onMouseEnter={props.onMouseEnter}
-      onClick={props.onClick}>
+      onMouseEnter={props.onMouseEnter}>
       {props.children}
     </Link>
   )

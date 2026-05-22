@@ -1,4 +1,5 @@
 'use client'
+import { usePathname } from 'next/navigation'
 import { createContext, useContext, useEffect, useState } from 'react'
 
 type ConsentState = boolean | null // null = not decided yet
@@ -31,6 +32,7 @@ export const CookiesConsentContextProvider = ({
 }: {
   children: React.ReactNode
 }) => {
+  const pathname = usePathname()
   const [isAccepted, setIsAccepted] = useState<ConsentState>(null)
   const [isHydrated, setIsHydrated] = useState(false)
 
@@ -45,6 +47,15 @@ export const CookiesConsentContextProvider = ({
       setIsHydrated(true)
     }
   }, [])
+
+  // Keep the cookie popup visible across page navigation until the user makes a decision.
+  useEffect(() => {
+    if (!isHydrated) return
+    const saved = localStorage.getItem(LOCALSTORAGE_KEY)
+    if (saved === null && isAccepted !== null) {
+      setIsAccepted(null)
+    }
+  }, [pathname, isHydrated, isAccepted])
 
   // --- Consent helpers (Google Consent Mode v2 + Clarity ConsentV2) ---
   const applyGrantedToGoogle = () => {

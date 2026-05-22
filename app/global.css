@@ -164,8 +164,7 @@ h3,
 a,
 strong,
 button,
-select,
-.button {
+select {
   font-weight: bold;
   /* letter-spacing: -0.05rem; */
 }
@@ -182,7 +181,6 @@ article h2,
   font-size: var(--font-size-4);
 }
 
-.button,
 p,
 input,
 textarea,
@@ -352,17 +350,12 @@ code {
   h2,
   .description,
   h3,
-  article h2,
-  .button {
+  article h2 {
     font-size: var(--font-size-3);
   }
 
   .aboutContainer p {
     font-size: var(--font-size-5);
-  }
-
-  .contactContainer {
-    padding: 3rem 4rem 4rem;
   }
 
   .home h1 {
