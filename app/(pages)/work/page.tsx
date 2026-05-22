@@ -1,5 +1,6 @@
 import Button from '@/components/Button'
 import CardsWork from '@/components/CardsWork'
+import PageHeader from '@/components/PageHeader'
 import PageWrapper from '@/components/PageWrapper'
 import { CONTACTS } from '@/data/contacts'
 import { ROUTES } from '@/routes/routes'
@@ -11,46 +12,41 @@ export default function PageWork() {
   return (
     <PageWrapper>
       <section>
-        <div className="page">
-          <div className="container miniContainer">
-            <h1>{ROUTES.WORK.title}</h1>
+        <div className="container">
+          <PageHeader
+            title={ROUTES.WORK.title}
+            description={ROUTES.WORK.description}
+          />
 
-            <p className="description">{ROUTES.WORK.description}</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="background-y">
-        <div>
           <CardsWork />
         </div>
       </section>
 
-      <section id="contact">
+      <section>
         <div className="container">
-          <h2 className="subtitle">Contact</h2>
+          {/* <h2 className="subtitle">Contact</h2> */}
 
           <div className="aboutContainer">
             <div>
               <h3>Let's talk about your project</h3>
             </div>
 
-            <div>
-              <Button url={'mailto:' + CONTACTS?.email?.url}>
+            <div
+              translate="no"
+              style={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
+              <Button variant="black" url={'mailto:' + CONTACTS?.email?.url}>
                 <>
                   {CONTACTS?.email?.icon}
                   {CONTACTS?.email?.title}
                 </>
               </Button>
 
-              <div style={{ marginTop: '1rem' }} translate="no">
-                <Button url={CONTACTS?.whatsapp?.url} isExternal>
-                  <>
-                    {CONTACTS?.whatsapp?.icon}
-                    {CONTACTS?.whatsapp?.title}
-                  </>
-                </Button>
-              </div>
+              <Button variant="black" url={CONTACTS?.whatsapp?.url} isExternal>
+                <>
+                  {CONTACTS?.whatsapp?.icon}
+                  {CONTACTS?.whatsapp?.title}
+                </>
+              </Button>
             </div>
           </div>
         </div>

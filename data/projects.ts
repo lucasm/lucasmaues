@@ -52,7 +52,7 @@ export const projects: IProjects[] = [
     name: 'Globo',
     url: 'https://www.globo.com/',
     description:
-      'Web Accessibility for the largest content portal in Brazil, with 1 billion accesses per month (4T23).',
+      'Web Accessibility compliance and tools for the largest content portal in Brazil, with 1 billion accesses per month (4T23).',
     tags: [
       'JavaScript',
       'Preact',
@@ -80,6 +80,14 @@ export const projects: IProjects[] = [
       'APIs',
     ],
     icon: IconFindto,
+    active: true,
+  },
+  {
+    name: 'Talito',
+    url: 'https://talito.com.br/',
+    description: 'B2C and B2B platform of financial data with AI.',
+    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
+    icon: IconTalito,
     active: true,
   },
   {
@@ -142,14 +150,7 @@ export const projects: IProjects[] = [
     icon: IconMoveda,
     active: true,
   },
-  {
-    name: 'Talito',
-    url: 'https://talito.com.br/',
-    description: 'B2C and B2B platform of financial data with AI.',
-    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
-    icon: IconTalito,
-    active: true,
-  },
+
   {
     name: 'Younner',
     url: 'https://younner.com/',

@@ -1,8 +1,9 @@
 'use client'
 
+import { JSX, useEffect, useState } from 'react'
+import Button from '../Button'
 import { IconArrowExternal } from '../Svgs'
 import Styles from './BlogPosts.module.css'
-import { useState, useEffect, JSX } from 'react'
 
 // Types
 interface BlogPost {
@@ -16,6 +17,7 @@ export default function Posts(): JSX.Element {
   const [data, setData] = useState<BlogPost[] | null>(null)
   const [error, setError] = useState<Error | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
+  const noContent = !loading && !error && (!data || data.length === 0)
 
   useEffect(() => {
     const abortController = new AbortController()
@@ -23,7 +25,7 @@ export default function Posts(): JSX.Element {
     const fetchData = async (): Promise<void> => {
       try {
         const response = await fetch(
-          `https://dev.to/api/articles?username=lucasm&per_page=3`,
+          `https://dev.to/api/articles?username=lucasm&per_page=5`,
           {
             cache: 'no-store',
             signal: abortController.signal,
@@ -61,25 +63,39 @@ export default function Posts(): JSX.Element {
         directly.
       </p>
     )
-  if (loading) return <p>Loading...</p>
+
+  if (!data || loading)
+    return (
+      <div className={Styles.loading}>
+        <h3>Loading...</h3>
+      </div>
+    )
+
+  if (noContent) return <p>No posts available.</p>
 
   return (
     <ul className={Styles.posts}>
-      {data?.map((item: BlogPost) => (
-        <li key={item.id ?? item.url}>
-          {/* <figure></figure> */}
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={Styles.link}>
-            {/* <span>{index + 1}</span> */}
-            <div className={Styles.title}>
-              <h3>{item.title}</h3>
-            </div>
-            <p>{item.description}</p>
-            <IconArrowExternal />
-          </a>
+      {data?.map((post) => (
+        <li key={post.id ?? post.url}>
+          <div>
+            {/* <figure></figure> */}
+            <a
+              href={post.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={Styles.link}>
+              <h2>{post.title}</h2>
+            </a>
+
+            <p>{post.description}</p>
+
+            <Button variant="black" size="small" url={post.url} isExternal>
+              <>
+                Open
+                <IconArrowExternal />
+              </>
+            </Button>
+          </div>
         </li>
       ))}
     </ul>

@@ -9,7 +9,7 @@
 #profile img {
   width: 4.5rem;
   height: 4.5rem;
-  background: var(--color-translucent);
+  background: var(--color-g);
   border-radius: 50%;
   z-index: 2;
 }
@@ -37,11 +37,11 @@
 
 @media screen and (min-width: 700px) {
   #profile {
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.5rem;
   }
   #profile img {
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
   }
   #profile svg {
     top: -12rem;

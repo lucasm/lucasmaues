@@ -48,7 +48,7 @@ const CookiesPopup = () => {
       aria-live="polite"
       aria-label="Cookie Consent">
       <p className={styles.message}>
-        This website uses cookies. Learn more in our{' '}
+        This website uses cookies for a better experience. Learn more on{' '}
         <a href="/legal" className={styles.link}>
           Privacy Policy
         </a>

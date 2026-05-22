@@ -1,5 +1,6 @@
 'use client'
 
+import PageHeader from '@/components/PageHeader'
 import PageWrapper from '@/components/PageWrapper'
 import Banners from '@/components/store/Banners'
 import ProductCard from '@/components/store/ProductCard'
@@ -84,49 +85,42 @@ export default function StorePageClient() {
 
   return (
     <PageWrapper>
-      <section>
-        <div className="page">
+      <section ref={containerProductsRef}>
+        <div className="container">
+          <PageHeader
+            title={ROUTES.STORE.title}
+            // description={ROUTES.STORE.description}
+            children={
+              <SearchFilter
+                currentCategory={category}
+                currentBrand={brand}
+                categories={availableCategories}
+                brands={availableBrands}
+                onCategoryChange={handleCategoryChange}
+                onBrandChange={setBrand}
+                onSearchChange={handleSearchChange}
+                isEmptySearch={isEmptySearch}
+              />
+            }
+          />
+        </div>
+
+        {!isEmptySearch && (
           <div className="container">
-            <h1>{ROUTES.STORE.title}</h1>
-            <p
-              className="description"
-              style={{
-                paddingBottom: '1rem',
-              }}>
-              {ROUTES.STORE.description}
-            </p>
-
-            <div ref={containerProductsRef}></div>
-
-            <SearchFilter
-              currentCategory={category}
-              currentBrand={brand}
-              categories={availableCategories}
-              brands={availableBrands}
-              onCategoryChange={handleCategoryChange}
-              onBrandChange={setBrand}
-              onSearchChange={handleSearchChange}
-              isEmptySearch={isEmptySearch}
-            />
+            <ul className={StyleCard.container}>
+              {filteredProducts.map((product, index) => (
+                <ProductCard
+                  product={product}
+                  handleOnClick={handleOpenProductPopup}
+                  key={index}
+                />
+              ))}
+            </ul>
           </div>
+        )}
 
-          {!isEmptySearch && (
-            <div>
-              <ul className={StyleCard.container}>
-                {filteredProducts.map((product, index) => (
-                  <ProductCard
-                    product={product}
-                    handleOnClick={handleOpenProductPopup}
-                    key={index}
-                  />
-                ))}
-              </ul>
-            </div>
-          )}
-
-          <div id="banner" className="container">
-            <Banners />
-          </div>
+        <div id="banner" className="container">
+          <Banners />
         </div>
       </section>
 

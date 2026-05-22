@@ -1,0 +1,231 @@
+.header {
+  width: calc(100% - 2rem);
+  max-width: var(--max-width);
+  height: 3.5rem;
+  font-size: var(--font-size);
+  background: var(--color-y);
+  z-index: 9999;
+  border-radius: var(--radius-big);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 1rem 0;
+  display: flex;
+  position: sticky;
+  top: 1rem;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.logo {
+  font-size: var(--font-size-5);
+  height: var(--height-min);
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  gap: 0.5rem;
+  border-radius: var(--radius-big);
+  transition: var(--transition);
+  font-weight: bold;
+  color: var(--color-b-fixed);
+  letter-spacing: -0.02em;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.headerButtons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: var(--height-min);
+  height: var(--height-min);
+  padding: 0;
+  font-size: 0;
+  color: var(--color-b-fixed);
+  background: transparent;
+  border-radius: var(--radius-big);
+  border: none;
+}
+
+.header svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.themeButton:hover svg {
+  animation: rotateClockwise 0.5s;
+  transition: none;
+}
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.menuButton {
+  z-index: 9;
+}
+
+.layer {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(1rem);
+  transition: all 0.25s cubic-bezier(0, 0, 0.3, 1);
+}
+.layerActive {
+  visibility: visible;
+  opacity: 1;
+  animation: fade 0.25s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav {
+  height: 100%;
+  width: 75vw;
+  background: var(--color-background);
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: center;
+  transition: all var(--navDrawerDurationEnterMS) var(--easingDecelerate);
+  transform: translateX(50%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--color-background);
+}
+.nav li {
+  padding: 0;
+}
+.nav a {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 1rem 10vw;
+  color: var(--color-b);
+  transition: var(--transition);
+  font-size: var(--font-size-4);
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav a:hover,
+.nav a:focus {
+  background: var(--color-translucent);
+}
+.nav a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Tablet / Desktop overrides */
+@media only screen and (min-width: 800px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .headerContainer {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    height: var(--height-max);
+    padding: 0 1.5rem;
+  }
+
+  .headerButtons {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transition: none;
+    margin-left: auto;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    background: transparent;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  .nav a {
+    gap: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    color: var(--color-b-fixed);
+    font-size: var(--font-size-6);
+    border-radius: var(--radius-big);
+  }
+  .nav a svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .nav a:hover,
+  .nav a:focus {
+    background: var(--color-translucent);
+  }
+
+  .layer {
+    display: none;
+  }
+}

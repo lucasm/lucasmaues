@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem auto;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+.links li {
+  padding: 0;
+  /* width: 100%; */
+}
+.links a {
+  width: 100%;
+}
+.links a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-b-fixed);
+}
+
+.buttonMore svg {
+  color: var(--color-b-fixed);
+}

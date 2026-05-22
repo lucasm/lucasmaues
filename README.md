@@ -17,7 +17,7 @@
 
 My personal website.
 
-## Stack
+## Tech Stack
 
 Made with React, TypeScript, CSS Modules and Next.js Framework.
 
@@ -28,5 +28,5 @@ Made with React, TypeScript, CSS Modules and Next.js Framework.
 ## Legal
 
 - Source code is under [MIT license](https://raw.githubusercontent.com/lucasm/lucasmaues/refs/heads/master/LICENSE.txt)
-- Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- [Privacy Policy & Terms of Use](https://lucasmaues.com/legal?utm_source=github)
+- Content is under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license
+- Legal notice on [Privacy Policy & Terms of Service](https://lucasmaues.com/legal?utm_source=github)

@@ -54,8 +54,8 @@
 }
 
 .icon svg {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   transition: transform 0.3s ease;
   fill: var(--color-b-fixed);
   animation: svgColorA 8s ease-in-out infinite;
@@ -199,7 +199,7 @@
   }
   .icon svg {
     width: 3.5rem;
-    height: 3rem;
+    height: 3.5rem;
   }
 
   /* 6 columns checkerboard: Row1: A B A B A B, Row2: B A B A B A (repeats every 12) */

@@ -1,9 +1,8 @@
 export const productsBR = [
   {
-    title: 'MX Vertical Mouse',
+    title: 'Logitech MX Vertical Mouse',
     manufacturer: 'Logitech',
-    stars: 4.8,
-    topSale: true,
+    stars: 4.7,
     description:
       'O melhor mouse ergonômico criado pela indústria. A pegada é superior ao MX Master (minha mão é grande). Você vai dizer "adeus dores no pulso" e me agradecer. Conexão Bluetooth, USB-C, botões personalizáveis e bateria recarregável. A Logitech pesquisou a ergonomia da mão humana para encontrar o design perfeito, e desenvolveu um mouse super prático e confortável. Funciona em qualquer superfície, e até 3 dispositivos conectados. Compatível com macOS, Windows, Linux, iPadOS e Android.',
     url: 'https://amzn.to/3Q2pxHV',
@@ -12,9 +11,9 @@ export const productsBR = [
     category: 'Mouse',
   },
   {
-    title: 'iPhone 17 256GB',
+    title: 'Apple iPhone 17 256GB',
     manufacturer: 'Apple',
-    stars: 4.8,
+    stars: 4.6,
     description:
       'Considerado por especialistas o melhor iPhone base de todos os tempos da Apple. O novo iPhone padrão para quem busca qualidade e inovação. Com chip A19, câmera absurda, tela OLED em 120Hz e rede 5G. Com desempenho reconhecido, boa duração de bateria e conexão USB-C.',
     url: 'https://amzn.to/4bR63SJ',
@@ -23,7 +22,7 @@ export const productsBR = [
     category: 'Smartphone',
   },
   {
-    title: 'Echo Dot Max',
+    title: 'Amazon Echo Dot Max',
     manufacturer: 'Amazon',
     stars: 4.7,
     description:
@@ -33,19 +32,9 @@ export const productsBR = [
     category: 'Áudio',
   },
   {
-    title: 'Entendendo Algoritmos: Guia Ilustrado para Programadores',
-    manufacturer: 'Novatec',
-    stars: 4.8,
-    description:
-      'O livro mais querido da comunidade de tecnologia! Justificável, pois neste livro qualquer pessoa pode aprender como funcionam os algoritmos e as estruturas de dados elementares da Computação moderna. Essencial para qualquer programador, seja iniciante ou experiente. Com esse livro, tudo fica bem fácil de entender. Com exemplos em Python. Recomendo tanto para quem está começando na programação ou para quem quer revisar conceitos clássicos.',
-    url: 'https://amzn.to/400hrUR',
-    image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
-    category: 'Livros',
-  },
-  {
-    title: 'Aerolight Fast Flow Garrafa Térmica',
+    title: 'Stanley Aerolight Fast Flow Garrafa Térmica',
     manufacturer: 'Stanley',
-    stars: 4.9,
+    stars: 4.7,
     description:
       'Garrafa térmica com construção sólida e qualidade reconhecida Stanley. Capacidade de 710ML. Aço de ótima qualidade, inoxidável e livre de BPA. Ideal para o trabalho, academia, viagens e o dia a dia.',
     url: 'https://amzn.to/3uDXl7H',
@@ -54,7 +43,7 @@ export const productsBR = [
     category: 'Lyfestyle',
   },
   {
-    title: 'AirPods Pro 3 ',
+    title: 'Apple AirPods Pro 3 ',
     manufacturer: 'Apple',
     stars: 4.7,
     description:
@@ -65,7 +54,7 @@ export const productsBR = [
     category: 'Áudio',
   },
   {
-    title: 'AirTag',
+    title: 'Apple AirTag',
     manufacturer: 'Apple',
     stars: 4.8,
     description:
@@ -76,7 +65,7 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'MX Keys Mini Teclado',
+    title: 'Logitech MX Keys Mini Teclado',
     manufacturer: 'Logitech',
     stars: 4.8,
     topSale: true,
@@ -86,17 +75,6 @@ export const productsBR = [
     url_2: 'https://mercadolivre.com/sec/169RhGw',
     image: 'https://m.media-amazon.com/images/I/71JFKFPi1VL._AC_SX679_.jpg',
     category: 'Teclado',
-  },
-  {
-    title: 'Mochila Dell Pro EcoLoop ',
-    manufacturer: 'Dell',
-    stars: 4.8,
-    description:
-      'Apenas a melhor mochila para notebooks. Super confortável, com divisões bem elaboradas (cabe 2 notebooks + caderno e objetos), feita com material reciclado do oceano (OceanCycle Certified), com resistência à água e bolsos para garrafas. Ideal para o trabalho e faculdade. Obrigado Dell.',
-    url: 'https://amzn.to/3TgB6yc',
-    url_2: 'https://mercadolivre.com/sec/2CjyvZm',
-    image: 'https://m.media-amazon.com/images/I/618gzjkcMyL._AC_SX679_.jpg',
-    category: 'Acessórios',
   },
   {
     title: 'iPad Pro M5 11" 256GB',
@@ -110,18 +88,17 @@ export const productsBR = [
     category: 'Tablet',
   },
   {
-    title: 'Apple Pencil Pro',
-    manufacturer: 'Apple',
-    stars: 4.7,
+    title: 'Entendendo Algoritmos',
+    manufacturer: 'Novatec',
+    stars: 4.8,
     description:
-      'O Apple Pencil Pro é a ferramenta perfeita para quem deseja desenhar, escrever e interagir com iPads mais novos, de forma precisa e natural. Com sensibilidade à pressão e inclinação, oferece uma experiência de escrita e desenho incrível. Recarregável por indução magnética no iPad.',
-    url: 'https://amzn.to/4vf6ZYQ',
-    url_2: 'https://meli.la/19o8cr3',
-    image: 'https://m.media-amazon.com/images/I/41iLLpfSWxL._AC_SX679_.jpg',
-    category: 'Tablet',
+      'O livro mais querido da comunidade de tecnologia! Justificável, pois neste livro qualquer pessoa pode aprender como funcionam os algoritmos e as estruturas de dados elementares da Computação moderna. Essencial para qualquer programador, seja iniciante ou experiente. Com esse livro, tudo fica bem fácil de entender. Com exemplos em Python. Recomendo tanto para quem está começando na programação ou para quem quer revisar conceitos clássicos.',
+    url: 'https://amzn.to/400hrUR',
+    image: 'https://m.media-amazon.com/images/I/71Vkg7GfPFL._SY522_.jpg',
+    category: 'Livros',
   },
   {
-    title: 'O Programador Pragmático: de Aprendiz a Mestre',
+    title: 'O Programador Pragmático',
     manufacturer: 'Alta Books',
     stars: 4.7,
     description:
@@ -130,7 +107,39 @@ export const productsBR = [
     image: 'https://m.media-amazon.com/images/I/61hewOW+8zL._SY522_.jpg',
     category: 'Livros',
   },
-
+  {
+    title: 'Logitech Brio 500 Webcam',
+    manufacturer: 'Logitech',
+    stars: 4.8,
+    description:
+      'A webcam perfeita para o home office. Qualidade de vídeo Full HD, foco automático, microfones duplos que reduzem ruídos ambientes e protetor de privacidade. Possuí vários ajustes de melhoria, foco e estabilização de imagem via software. Com cabo USB-C.',
+    url: 'https://amzn.to/4cnZe9t',
+    url_2: 'https://mercadolivre.com/sec/1MTXh2w',
+    image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
+    category: 'Vídeo',
+  },
+  {
+    title: 'Apple Pencil Pro',
+    manufacturer: 'Apple',
+    stars: 4.7,
+    description:
+      'O Apple Pencil Pro é a ferramenta perfeita para quem deseja desenhar, escrever e interagir com iPads mais novos, de forma precisa e natural. Com sensibilidade à pressão e inclinação, oferece uma experiência de escrita e desenho incrível. Recarregável por indução magnética no iPad.',
+    url: 'https://amzn.to/4vf6ZYQ',
+    url_2: 'https://meli.la/19o8cr3',
+    image: 'https://m.media-amazon.com/images/I/41A7QLGVA6L._AC_SX679_.jpg',
+    category: 'Tablet',
+  },
+  {
+    title: 'Mochila Dell Pro EcoLoop ',
+    manufacturer: 'Dell',
+    stars: 4.8,
+    description:
+      'Apenas a melhor mochila para notebooks. Super confortável, com divisões bem elaboradas (cabe 2 notebooks + caderno e objetos), feita com material reciclado do oceano (OceanCycle Certified), com resistência à água e bolsos para garrafas. Ideal para o trabalho e faculdade. Obrigado Dell.',
+    url: 'https://amzn.to/3TgB6yc',
+    url_2: 'https://mercadolivre.com/sec/2CjyvZm',
+    image: 'https://m.media-amazon.com/images/I/618gzjkcMyL._AC_SX679_.jpg',
+    category: 'Acessórios',
+  },
   {
     title: 'JBL Charge 6 caixa de som Bluetooth',
     manufacturer: 'JBL',
@@ -153,19 +162,6 @@ export const productsBR = [
     url_2: 'https://mercadolivre.com/sec/1ZecHiM',
     image: 'https://m.media-amazon.com/images/I/61irT-Uu+8L._AC_SX679_.jpg',
     category: 'Smartphone',
-  },
-
-  {
-    title: 'Brio 500 Webcam',
-    manufacturer: 'Logitech',
-    stars: 4.8,
-    topSale: true,
-    description:
-      'A webcam perfeita para o home office. Qualidade de vídeo Full HD, foco automático, microfones duplos que reduzem ruídos ambientes e protetor de privacidade. Possuí vários ajustes de melhoria, foco e estabilização de imagem via software. Com cabo USB-C.',
-    url: 'https://amzn.to/4cnZe9t',
-    url_2: 'https://mercadolivre.com/sec/1MTXh2w',
-    image: 'https://m.media-amazon.com/images/I/51F3uryF62L._AC_SX679_.jpg',
-    category: 'Vídeo',
   },
   {
     title: 'MacBook Air M4 13" 16GB 256GB',
@@ -454,7 +450,7 @@ export const productsBR = [
     category: 'Acessórios',
   },
   {
-    title: 'Smart Band 9 Active (global)',
+    title: 'Xiaomi Smart Band 9 Active Global',
     manufacturer: 'Xiaomi',
     stars: 4.5,
     description:
@@ -575,8 +571,9 @@ export const productsBR = [
     stars: 4.8,
     description:
       'Livro número 1 de UX. O pai do Design centrado no Usuário e percursor da Experiência do Usuário, Donald A. Norman, escreveu este livro clássico, ensinando a todos a importância de criar design bom e como design ruim causa problemas graves.',
-    url: 'https://amzn.to/3Yat3UO',
-    image: 'https://m.media-amazon.com/images/I/51Rheu+G0zL._SY522_.jpg',
+    url: 'https://amzn.to/4dFU8qC',
+    image:
+      'https://m.media-amazon.com/images/I/41Gih+kWb0L._SY445_SX342_ML2_.jpg',
     category: 'Livros',
   },
   {

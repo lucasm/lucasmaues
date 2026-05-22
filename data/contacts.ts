@@ -9,6 +9,7 @@ import {
   IconLetterboxd,
   IconLinkedin,
   IconMastodon,
+  IconPatreon,
   IconSpotify,
   IconThreads,
   IconWhatsapp,
@@ -51,19 +52,19 @@ export const CONTACTS: Contacts = {
     active: true,
     icon: createElement(IconX),
   },
+  linkedin: {
+    id: 'linkedin',
+    title: 'LinkedIn',
+    url: 'https://linkedin.com/in/lucas-maues-menezes',
+    active: true,
+    icon: createElement(IconLinkedin),
+  },
   github: {
     id: 'github',
     title: 'GitHub',
     url: 'https://github.com/lucasm',
     active: true,
     icon: createElement(IconGithub),
-  },
-  linkedin: {
-    id: 'linkedin',
-    title: 'LinkedIn',
-    url: 'https://linkedin.com/in/lucasmezs',
-    active: true,
-    icon: createElement(IconLinkedin),
   },
   youtube: {
     id: 'youtube',
@@ -74,7 +75,7 @@ export const CONTACTS: Contacts = {
   },
   devto: {
     id: 'devto',
-    title: 'DEV Community',
+    title: 'DEV',
     url: 'https://dev.to/lucasm',
     active: true,
     icon: createElement(IconDev),
@@ -141,6 +142,13 @@ export const CONTACTS: Contacts = {
     url: 'https://mastodon.social/@lucasmezs',
     active: false,
     icon: createElement(IconMastodon),
+  },
+  patreon: {
+    id: 'patreon',
+    title: 'Patreon',
+    url: 'https://patreon.com/lucasm',
+    active: false,
+    icon: createElement(IconPatreon),
   },
 }
 

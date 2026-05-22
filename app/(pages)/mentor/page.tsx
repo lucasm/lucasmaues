@@ -2,7 +2,7 @@ import Button from '@/components/Button'
 import PageWrapper from '@/components/PageWrapper'
 import PatreonCheck from '@/components/PatreonCheck'
 import SvgAnimateMentorship from '@/components/SvgAnimateMentorship'
-import { IconArrowExternal } from '@/components/Svgs'
+import { CONTACTS } from '@/data/contacts'
 import { ROUTES } from '@/routes/routes'
 import { getPageMetadata } from '@/utils/metadata'
 
@@ -21,32 +21,32 @@ export default function PageMentor() {
             <p className="description">
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
               em Engenharia de Software, Frontend e Liderança Técnica, sou
-              procurado por estudantes e profissionais de TI que buscam
+              procurado por profissionais de TI e estudantes que buscam
               crescimento na carreira, mas não sabem por onde começar.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="background-y color-b-fixed">
+      <section>
         <div className="container">
           <article>
             <SvgAnimateMentorship />
 
-            <h1>
-              "Primeiro, resolva o problema. Então, escreva o código." — John
-              Johnson
-            </h1>
-
-            <h3>O que é a mentoria?</h3>
+            <h3>O que é mentoria?</h3>
 
             <p>
               A mentoria é um espaço seguro de crescimento e aprendizado. Você
-              sente que se esforça mas não evolui? Eu te ajudo a se destacar no
-              mercado de TI, com as suas qualidades.
+              sente que se esforça mas não evolui na carreira? Eu te ajudo a se
+              destacar no mercado de TI, com as suas qualidades.
             </p>
 
-            <h3>Minha metodologia 1x</h3>
+            <h3>Metodologia</h3>
+
+            <code>
+              "Primeiro, resolva o problema. Então, escreva o código." — John
+              Johnson
+            </code>
 
             <p>
               Quando você compra cursos e não faz, ou quando você tenta fazer
@@ -97,48 +97,35 @@ export default function PageMentor() {
               <br />
               - Aprendizado técnico de hard skills
               <br />
-              - Feedback real, onde falo o que você PRECISA ouvir para evoluir
-              profissionalmente, não vou agradar seu ego
+              - Feedback prático para o seu crescimento
               <br />
               - Avaliação dos resultados alcançados
-              <br />- Independência (essa fase é o fim da mentoria)
+              <br />- Independência (fase final da mentoria)
             </p>
+
+            <h3>Agende a sua mentoria:</h3>
+
+            <p>
+              <strong></strong>
+              <br />
+              Duração: 45m
+              <br />
+              Formato: Chamada de vídeo + Plano de ação personalizado
+              <br />
+              Agendamento e pagamento: Patreon
+              <br />
+              <br />
+            </p>
+
+            <Button variant="black" url={CONTACTS?.patreon?.url} isExternal>
+              <>
+                Agendar em {CONTACTS?.patreon?.icon}
+                {CONTACTS?.patreon?.title}{' '}
+              </>
+            </Button>
+
+            <PatreonCheck />
           </article>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          {/* <h2 className="subtitle">Contact</h2> */}
-
-          <div className="aboutContainer">
-            <div>
-              <h3>Agende uma mentoria</h3>
-            </div>
-
-            <div>
-              <p>
-                <strong></strong>
-                <br />
-                Duração: 45 minutos
-                <br />
-                Formato: Chamada de vídeo + Plano de ação personalizado
-                <br />
-                Pagamento: Patreon
-                <br />
-                <br />
-              </p>
-
-              <Button url="https://patreon.com/lucasm">
-                <>
-                  Agendar
-                  <IconArrowExternal />
-                </>
-              </Button>
-
-              <PatreonCheck />
-            </div>
-          </div>
         </div>
       </section>
     </PageWrapper>

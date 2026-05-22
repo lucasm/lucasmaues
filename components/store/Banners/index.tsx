@@ -17,7 +17,7 @@ export default function Banners() {
       external: false,
       title: 'Compra segura',
       subtitle:
-        'Todos os produtos possuem garantia, são bem avaliados e entregues pelas lojas Mercado Livre, Amazon ou AliExpress.',
+        'Produtos bem avaliados, com garantia e entregues pelas lojas Mercado Livre, Amazon ou AliExpress.',
       image: <IconShield />,
     },
     {
@@ -25,7 +25,7 @@ export default function Banners() {
       external: true,
       title: 'Receba R$ 5,00',
       subtitle:
-        'Ainda não recebe dinheiro de volta? Ative o Méliuz e ganhe cashback nas compras online!',
+        'Ainda não recebe cashback? Ative o Méliuz e ganhe dinheiro de volta nas compras!',
       image: <IconGift />,
     },
   ]

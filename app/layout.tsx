@@ -111,7 +111,7 @@ export default function RootLayout({
     process.env.NEXT_PUBLIC_ENV_LUCASMDEV === 'production'
 
   return (
-    <html lang="en" className={font.className}>
+    <html lang="en-US" className={font.className}>
       <head>
         {isProduction && (
           <>

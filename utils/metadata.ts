@@ -4,10 +4,10 @@ import { Metadata } from 'next'
 export function getPageMetadata(
   routeKey:
     | 'HOME'
-    | 'WORK'
+    | 'POSTS'
     | 'STORE'
     | 'MENTORSHIP'
-    | 'DOMAINS'
+    | 'WORK'
     | 'LEGAL'
     | 'CONTACT'
 ): Metadata {

@@ -24,7 +24,7 @@ export default function ProductCard({
             </span>
           )}
         </figure>
-        <p>{product.manufacturer}</p>
+        {/* <p>{product.manufacturer}</p> */}
         <h2>{product.title}</h2>
       </button>
     </li>

@@ -1,8 +1,8 @@
 const DEFAULT_IMAGE = 'https://lucasm.dev/share.png'
 
 export const STORE_FILTER_LABELS = {
-  ALL_CATEGORIES: 'Todas as Categorias',
-  ALL_BRANDS: 'Todas as Marcas',
+  ALL_CATEGORIES: 'Categorias',
+  ALL_BRANDS: 'Marcas',
 } as const
 
 export const ROUTES = {
@@ -10,8 +10,8 @@ export const ROUTES = {
     path: '/',
     title: 'Lucas Maués',
     description:
-      'Lucas Maués de Menezes is a Tech Lead & Senior Frontend Software Engineer from Brazil, with 8+ years of experience.',
-    seo: 'Tech Lead & Senior Frontend Software Engineer',
+      'Lucas Maués de Menezes is a Tech Lead, Senior Software Engineer & Frontend Specialist from Brazil, with 8+ years of experience.',
+    seo: 'Tech Lead, Software Engineer & Frontend Specialist',
     image: DEFAULT_IMAGE,
   },
   ABOUT: {
@@ -21,7 +21,7 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description: 'Building scalable solutions with companies and teams.',
+    description: 'Leading teams to build scalable products.',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {
@@ -32,23 +32,25 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Store',
+    title: 'Loja',
     description: 'Os melhores produtos para produtividade e dia a dia.',
     image: '/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
-    title: 'Mentor',
+    title: 'Mentoria',
     description: 'Mentoria para profissionais de TI se destacarem no mercado.',
     image: '/share-mentor.png',
   },
-  CONTENT: {
-    path: '/#content',
-    title: 'Content',
+  POSTS: {
+    path: '/blog',
+    description:
+      'Dicas, tutoriais e insights sobre programação, carreira de tecnologia e produtividade.',
+    title: 'Blog',
   },
   LEGAL: {
     path: '/legal',
-    title: 'Privacy Policy & Terms of Use',
+    title: 'Privacy Policy & Terms of Service',
     description: 'Legal information about website lucasmaues.com',
     image: DEFAULT_IMAGE,
   },

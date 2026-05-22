@@ -17,13 +17,13 @@
   background: var(--color-background);
   padding: 5rem;
   border-radius: var(--radius-big) var(--radius-big) 0 0;
-  width: 100vw;
+  width: var(--max-width);
   height: 100%;
   text-align: center;
   animation: slideUp 0.2s ease-out;
   overflow-y: auto;
-  max-height: 95vh;
-  max-width: 85vw;
+  max-height: calc(100vh - 1rem);
+  max-width: calc(100vw - 2rem);
 }
 .popupContent h3 {
   text-align: left;

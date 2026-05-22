@@ -1,19 +1,21 @@
-import { IProjects, projects } from '../../data/projects'
+import { projects } from '@/data/projects'
 import Style from './CardsWork.module.css'
 
 export default function CardsWork() {
-  const Projects = projects.filter((project: IProjects) => project.active)
+  const workProjects = projects.filter((project) => project.active)
 
   return (
     <div className={Style.cards}>
-      {Projects?.filter((project) => project.active).map((item, index) => (
-        <a
-          key={index}
-          href={item.url + '?utm_source=lucasmaues.com'}
-          target="_blank"
-          rel="noopener noreferrer">
-          <div className="card">
-            <figure>{item.icon}</figure>
+      {workProjects
+        ?.filter((project) => project.active)
+        .map((item, index) => (
+          <div key={index} className={Style.card}>
+            <a
+              href={item.url + '?utm_source=lucasmaues.com'}
+              target="_blank"
+              rel="noopener noreferrer">
+              <figure>{item.icon}</figure>
+            </a>
 
             <h3>{item.name}</h3>
             <p>{item.description}</p>
@@ -22,8 +24,7 @@ export default function CardsWork() {
               <span key={subIndex}>{subItem}</span>
             ))}
           </div>
-        </a>
-      ))}
+        ))}
     </div>
   )
 }

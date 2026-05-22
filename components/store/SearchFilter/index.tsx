@@ -118,6 +118,7 @@ export default function SearchFilter({
           {/* Input busca */}
           <div className={Style.searchBar}>
             <input
+              name="search"
               ref={refInput}
               type="text"
               placeholder="Buscar"
@@ -147,57 +148,61 @@ export default function SearchFilter({
         </div>
 
         {!isEmptySearch && (
-          <div className={Style.dropdownGroup}>
+          <>
             {/* Categories */}
-            <div
-              className={`${Style.dropdown} ${currentCategory !== STORE_FILTER_LABELS.ALL_CATEGORIES ? Style.dropdownActive : ''}`}>
-              <label htmlFor="category" className={Style.label}>
-                Selecione a categoria:
-              </label>
-              <select
-                translate="no"
-                value={currentCategory}
-                onChange={handleCategoryChange}
-                className={Style.select}
-                id="category">
-                <option value={STORE_FILTER_LABELS.ALL_CATEGORIES}>
-                  {STORE_FILTER_LABELS.ALL_CATEGORIES}
-                </option>
-                {categories.map((categoryName) => (
-                  <option key={categoryName} value={categoryName}>
-                    {categoryName}
+            <div className={Style.containerSelect}>
+              <div
+                className={`${Style.dropdown} ${currentCategory !== STORE_FILTER_LABELS.ALL_CATEGORIES ? Style.dropdownActive : ''}`}>
+                <label htmlFor="category" className={Style.label}>
+                  Selecione a categoria:
+                </label>
+                <select
+                  translate="no"
+                  value={currentCategory}
+                  onChange={handleCategoryChange}
+                  className={Style.select}
+                  id="category">
+                  <option value={STORE_FILTER_LABELS.ALL_CATEGORIES}>
+                    {STORE_FILTER_LABELS.ALL_CATEGORIES}
                   </option>
-                ))}
-              </select>
+                  {categories.map((categoryName) => (
+                    <option key={categoryName} value={categoryName}>
+                      {categoryName}
+                    </option>
+                  ))}
+                </select>
 
-              <IconChevronDown />
+                <IconChevronDown />
+              </div>
             </div>
 
             {/* Brands */}
-            <div
-              className={`${Style.dropdown} ${currentBrand !== STORE_FILTER_LABELS.ALL_BRANDS ? Style.dropdownActive : ''}`}>
-              <label htmlFor="brand" className={Style.label}>
-                Selecione a marca:
-              </label>
-              <select
-                translate="no"
-                value={currentBrand}
-                onChange={handleBrandChange}
-                className={Style.select}
-                id="brand">
-                <option value={STORE_FILTER_LABELS.ALL_BRANDS}>
-                  {STORE_FILTER_LABELS.ALL_BRANDS}
-                </option>
-                {brands.map((brandName) => (
-                  <option key={brandName} value={brandName}>
-                    {brandName}
+            <div className={Style.containerSelect}>
+              <div
+                className={`${Style.dropdown} ${currentBrand !== STORE_FILTER_LABELS.ALL_BRANDS ? Style.dropdownActive : ''}`}>
+                <label htmlFor="brand" className={Style.label}>
+                  Selecione a marca:
+                </label>
+                <select
+                  translate="no"
+                  value={currentBrand}
+                  onChange={handleBrandChange}
+                  className={Style.select}
+                  id="brand">
+                  <option value={STORE_FILTER_LABELS.ALL_BRANDS}>
+                    {STORE_FILTER_LABELS.ALL_BRANDS}
                   </option>
-                ))}
-              </select>
+                  {brands.map((brandName) => (
+                    <option key={brandName} value={brandName}>
+                      {brandName}
+                    </option>
+                  ))}
+                </select>
 
-              <IconChevronDown />
+                <IconChevronDown />
+              </div>
             </div>
-          </div>
+          </>
         )}
       </div>
 

@@ -6,6 +6,10 @@ import { getPageMetadata } from '@/utils/metadata'
 export const metadata = getPageMetadata('LEGAL')
 
 export default function PageLegal() {
+  function getYear(): number {
+    return new Date().getFullYear()
+  }
+
   return (
     <PageWrapper>
       <section>
@@ -13,16 +17,16 @@ export default function PageLegal() {
           <h1>{ROUTES.LEGAL.title}</h1>
 
           <p>
-            {ROUTES.HOME.title} is operated by LUCASM.DEV LTDA, a Brazilian
-            company. This {ROUTES.LEGAL.title} describes how we collect, use,
-            and protect your information when you access or use our projects on
-            this domain, including https://lucasmaues.com and related services
-            (collectively, "projects"). We are committed to respecting your
-            privacy and complying with applicable data protection laws. By using
-            our projects, you agree to the terms of this {ROUTES.LEGAL.title}.
-            If you do not agree with this policy, please do not use our
-            projects.
+            This {ROUTES.LEGAL.title} describes how {ROUTES.HOME.title} collect,
+            use, and protect your information when you access or use
+            https://lucasmaues.com and related services (collectively,
+            "services"). We are committed to respecting your privacy and
+            complying with applicable data protection laws. By using our
+            services, you agree to the terms of this {ROUTES.LEGAL.title}. If
+            you do not agree with this policy, please do not use our services.
           </p>
+
+          <p>Last updated: May 22, 2026.</p>
 
           <h2>1. Applicable Legislation</h2>
 
@@ -92,22 +96,23 @@ export default function PageLegal() {
             <li>
               COPPA - Children's Online Privacy Protection Act (15 U.S.C. §§
               6501–6506), cited as a reference standard for exclusion — the
-              projects do not knowingly collect personal data from children
+              services do not knowingly collect personal data from children
               under 13.
             </li>
           </ul>
 
           <h2>2. Data Controller and Scope</h2>
           <p>
-            LUCASM.DEV LTDA acts as the data controller for the personal data
-            processed through these projects, except where a third-party service
-            acts independently as its own controller.
+            LUCASM.DEV LTDA, a legal Brazilian company, acts as the data
+            controller for the personal data processed through these services,
+            except where a third-party service acts independently as its own
+            controller.
           </p>
 
           <h2>3. Automatically Collected Information</h2>
 
           <p>
-            The projects may automatically collect public data and non-personal
+            The services may automatically collect public data and non-personal
             information (that does not directly identify you), such as usage
             statistics, pages visited, approximate geolocation, operating
             system, browser, internet service provider, IP address, referral
@@ -116,7 +121,7 @@ export default function PageLegal() {
 
           <h2>4. Information That You Provide</h2>
           <p>
-            The projects may also receive and store personal information that
+            The services may also receive and store personal information that
             identifies you when you submit contact forms or provide information
             directly, including but not limited to your name, email address, and
             phone number.
@@ -132,7 +137,7 @@ export default function PageLegal() {
 
           <h2>6. Cookies and Tracking Technologies</h2>
           <p>
-            The projects and related email communications utilize Cookies and
+            The services and related email communications utilize Cookies and
             similar tracking technologies, such as pixel, cache and local web
             browser storage, to save user preferences, execute offline
             experiences and recognize when you view or return to a page.
@@ -146,7 +151,7 @@ export default function PageLegal() {
           </p>
 
           <p>
-            The web services{' '}
+            The web third-party services{' '}
             <a
               href="https://www.cloudflare.com/privacypolicy/"
               target="_blank"
@@ -174,21 +179,21 @@ export default function PageLegal() {
               rel="noopener">
               Microsoft Clarity
             </a>{' '}
-            are used on some projects and may place their own cookies on your
+            are used on some services and may place their own cookies on your
             browser. This policy does not cover third-party cookie practices.
             Please review each service privacy policy linked above.
           </p>
 
           <h2>7. Information Sharing</h2>
           <p>
-            The projects do not sell your personal information. For technical
+            The services do not sell your personal information. For technical
             and operational reasons, integrated third-party services may process
             limited personal data to perform their functions, in accordance with
             their own privacy policies.
           </p>
 
           <h2>8. Information Use</h2>
-          <p>The projects use your information to:</p>
+          <p>The services use your information to:</p>
           <ul>
             <li>
               Communicate with you, respond to inquiries, and provide requested
@@ -284,7 +289,7 @@ export default function PageLegal() {
           <h2>13. Children and Teen Privacy</h2>
 
           <p>
-            The projects are not directed to children and do not intentionally
+            The services are not directed to children and do not intentionally
             collect personal data from minors in violation of applicable law. If
             you believe data from a minor was submitted improperly, please
             contact us for prompt review and deletion when required.
@@ -293,16 +298,16 @@ export default function PageLegal() {
           <h2>14. External Resources and Third-Party Links</h2>
 
           <p>
-            The projects may contain links to third-party websites and
-            applications for convenience. Lucas Maués does not control and is
-            not responsible for third-party content, policies, or practices.
+            The services may contain links to third-party websites and
+            applications for your convenience. Lucas Maués does not control and
+            is not responsible for third-party content, policies, or practices.
           </p>
 
           <h2>15. Changes to This Policy</h2>
 
           <p>
             This Privacy Policy may be updated at any time to reflect legal,
-            technical, or operational changes. Continued use of the projects
+            technical, or operational changes. Continued use of the services
             after updates means you acknowledge the revised version.
           </p>
 
@@ -322,12 +327,15 @@ export default function PageLegal() {
             Art. 12, §3, extendable by an additional two months where necessary.
           </p>
 
-          <p>
-            In Brazil, you may contact the National Data Protection Authority
-            (ANPD), if applicable.
-          </p>
+          <h2>17. Licenses</h2>
 
-          <p>Last updated: April 22, 2026.</p>
+          <p>
+            Content is under Creative Commons BY NC SA 4.0 license.
+            <br />
+            <br /> Source code is under MIT license. <br />
+            <br />
+            Copyright © {getYear()} {ROUTES.HOME.title}. All rights reserved.
+          </p>
         </article>
       </section>
     </PageWrapper>

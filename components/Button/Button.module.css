@@ -24,7 +24,28 @@
 .button svg {
   width: 1.4rem;
   height: 1.4rem;
+  color: currentColor;
+}
+
+.black {
+  background: var(--color-b);
+  color: var(--color-w-text);
+}
+
+.whiteBorder {
+  background: transparent;
+  color: var(--color-b);
+  border-color: var(--color-g);
+}
+
+.blackBorder {
+  background: transparent;
   color: var(--color-b-fixed);
+  border-color: var(--color-b-fixed);
+}
+
+.small {
+  /* Small modifier: keep the smaller dimensions even on larger screens */
 }
 
 /* .button svg path {
@@ -37,5 +58,10 @@
     padding: 0 2.5rem;
     height: var(--height-max);
     font-size: var(--font-size-5);
+  }
+  .small {
+    padding: 0 2rem;
+    height: var(--height-min);
+    font-size: var(--font-size-6);
   }
 }
