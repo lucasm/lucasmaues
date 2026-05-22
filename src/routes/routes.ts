@@ -11,7 +11,7 @@ export const ROUTES = {
     title: 'Lucas Maués',
     description:
       'Lucas Maués de Menezes is a Tech Lead, Senior Software Engineer & Frontend Specialist from Brazil, with 8+ years of experience.',
-    seo: 'Tech Lead, Software Engineer & Frontend Specialist',
+    seo: 'Tech Lead, Senior Software Engineer & Frontend Specialist',
     image: DEFAULT_IMAGE,
   },
   ABOUT: {
