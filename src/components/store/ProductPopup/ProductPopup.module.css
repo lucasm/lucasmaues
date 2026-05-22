@@ -126,6 +126,7 @@
 .closeButton svg {
   width: 1.5rem;
   height: 1.5rem;
+  color: var(--color-b);
 }
 
 @keyframes slideUp {

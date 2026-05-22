@@ -78,9 +78,6 @@ body {
   font-size: 0;
   background: var(--color-background);
 }
-.removeScroll {
-  overflow: hidden;
-}
 
 section {
   width: 100%;

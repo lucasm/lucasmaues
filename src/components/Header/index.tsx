@@ -10,7 +10,7 @@ import {
   IconWork,
 } from '@/components/Svgs'
 import Link from 'next/link'
-import { ReactElement, useEffect, useState } from 'react'
+import { ReactElement, useState } from 'react'
 import { ROUTES } from '../../routes/routes'
 
 import Style from './Header.module.css'
@@ -23,12 +23,6 @@ interface HeaderLink {
 
 export default function Header() {
   const [isActive, setActive] = useState<boolean>(false)
-
-  useEffect(() => {
-    isActive
-      ? document.body.classList.add('removeScroll')
-      : document.body.classList.remove('removeScroll')
-  }, [isActive])
 
   const handleToggle = (): void => {
     setActive(!isActive)

@@ -37,14 +37,6 @@ const ProductPopup = ({ product, onClose }: ProductPopupProps) => {
   }, [])
 
   useEffect(() => {
-    if (isVisible) {
-      document.body.classList.add('removeScroll')
-    } else {
-      document.body.classList.remove('removeScroll')
-    }
-  }, [isVisible])
-
-  useEffect(() => {
     setIsVisible(true)
   }, [])
 
