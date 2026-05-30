@@ -118,7 +118,7 @@ export const CONTACTS: Contacts = {
   discord: {
     id: 'discord',
     title: 'Discord',
-    url: 'https://discord.com/users/lucasm.dev',
+    url: 'https://discord.com/users/lucasmmau',
     active: false,
     icon: createElement(IconDiscord),
   },

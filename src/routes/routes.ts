@@ -1,4 +1,4 @@
-const DEFAULT_IMAGE = 'https://lucasm.dev/share.png'
+const DEFAULT_IMAGE = 'https://lucasmaues.com/share.png'
 
 export const STORE_FILTER_LABELS = {
   ALL_CATEGORIES: 'Categorias',
