@@ -47,6 +47,13 @@ export default function PageWork() {
                   {CONTACTS?.whatsapp?.title}
                 </>
               </Button>
+
+              <Button variant="black" url={CONTACTS?.linkedin?.url} isExternal>
+                <>
+                  {CONTACTS?.linkedin?.icon}
+                  {CONTACTS?.linkedin?.title}
+                </>
+              </Button>
             </div>
           </div>
         </div>
