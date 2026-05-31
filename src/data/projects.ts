@@ -34,10 +34,11 @@ export const projects: IProjects[] = [
     name: 'Banco Bmg',
     url: 'https://www.bancobmg.com.br/',
     description:
-      'Web Application of banking products sales for a bank in Brazil, with 3.6 billion of BRL transactions per year (4T24).',
+      'Banking products web platform, with 3.6 billion of BRL transactions per year (4T24).',
     tags: [
-      'TypeScript',
       'React',
+      'TypeScript',
+      'Vite',
       'Next.js',
       'Node.js',
       'GraphQL',
@@ -52,7 +53,7 @@ export const projects: IProjects[] = [
     name: 'Globo',
     url: 'https://www.globo.com/',
     description:
-      'Web Accessibility compliance and tools for the largest content portal in Brazil, with 1 billion accesses per month (4T23).',
+      'Web accessibility for the largest content portal in Brazil, with 1 billion accesses per month (4T23).',
     tags: [
       'JavaScript',
       'Preact',
@@ -85,7 +86,8 @@ export const projects: IProjects[] = [
   {
     name: 'Talito',
     url: 'https://talito.com.br/',
-    description: 'B2C and B2B platform of financial data with AI.',
+    description:
+      'AI-powered financial data platform for Brazilian B2C and B2B audiences.',
     tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
     icon: IconTalito,
     active: true,
@@ -137,7 +139,7 @@ export const projects: IProjects[] = [
   {
     name: 'Aspiral',
     url: 'https://aspiral.app/',
-    description: 'News of trusted journalism. ',
+    description: 'Digital news magazine with trusted journalism. ',
     tags: ['Frontend', 'React'],
     icon: IconAspiral,
     active: true,
@@ -145,7 +147,8 @@ export const projects: IProjects[] = [
   {
     name: 'Moveda',
     url: 'https://moveda.app/',
-    description: 'Daily recommendations and thoughts.',
+    description:
+      'Daily recommendations, thoughts and challenges to help you grow or help others.',
     tags: ['AI', 'Frontend', 'React'],
     icon: IconMoveda,
     active: true,
@@ -163,7 +166,7 @@ export const projects: IProjects[] = [
     name: 'Varejo Aqui',
     url: 'https://loja.varejoaqui.online/',
     description:
-      'E-commerce Web Responsive and Mobile App with real-time payments APIs, like Pix and credit card, for Brazil retailers and industries.',
+      'E-commerce for Brazil retailers and industries, with web responsive and mobile app version, real-time Pix, credit and debit card payments APIs integrations.',
     tags: [
       'React',
       'React Native',
@@ -179,7 +182,7 @@ export const projects: IProjects[] = [
     name: 'Municipalities Court of Accounts of Pará',
     url: 'https://www.tcm.pa.gov.br/servicos/sessoes/',
     description:
-      'Website, Intranet, Web Apps, AWS APIs integrations, Data Visualization Dashboards, and Accessibility for a public court.',
+      'Website, intranet, web apps, AWS APIs integrations, data visualization dashboards, and accessibility for a public court in Brazil.',
     tags: [
       'JavaScript',
       'PHP',
@@ -197,7 +200,7 @@ export const projects: IProjects[] = [
     name: 'Superia',
     url: 'https://linkedin.com/in/lucasmezs',
     description:
-      'Web Application and Web Components for an international trading company.',
+      'Web application and CRM web components for a Brazilian international trading company.',
     tags: ['TypeScript', 'Vue.js', 'CSS', 'Atomic Design'],
     icon: IconSuperia,
     active: true,
@@ -206,7 +209,7 @@ export const projects: IProjects[] = [
     name: 'Federal University of Pará',
     url: 'https://radio.ufpa.br/webdoc60/',
     description:
-      'Live Audio and Video Streaming with Web Player, Websites, CMS, and Web Documentary for a Federal university in Brazil.',
+      'Live audio and video streaming with web player, websites, CMS, and web documentary for the largest Brazilian public university in the Amazon region.',
     tags: ['JavaScript', 'PHP', 'Node.js', 'Python', 'MySQL', 'SEO', 'UI'],
     icon: IconUFPA,
     active: true,
@@ -214,7 +217,8 @@ export const projects: IProjects[] = [
   {
     name: 'Nufen',
     url: 'https://linkedin.com/in/lucasmezs',
-    description: 'Website for mental health service with online therapy.',
+    description:
+      'Website for mental health service with online video call therapy.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO', 'UI', 'UX'],
     icon: IconNufen,
     active: true,
@@ -232,7 +236,7 @@ export const projects: IProjects[] = [
     name: 'CACBA',
     url: 'https://linkedin.com/in/lucasmezs',
     description:
-      'Hacked Website recovered and redesigned for a non-profit organization of childhood protection in the Amazon region.',
+      'Hacked website recovered and redesigned for a non-profit organization of childhood protection in the Amazon region.',
     tags: ['JavaScript', 'CSS', 'PHP', 'WordPress', 'MySQL', 'SEO'],
     icon: IconCacba,
     active: true,

@@ -140,9 +140,9 @@ export const IconWork = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg">
     <path
-      d="M17 17L22 12L17 7M7 7L2 12L7 17M14 3L10 21"
+      d="M9.49999 3L6.49999 21M17.5 3L14.5 21M20.5 8H3.5M19.5 16H2.5"
       stroke="currentColor"
-      strokeWidth="2.25"
+      strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
