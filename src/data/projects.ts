@@ -67,6 +67,15 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
+    name: 'Talito',
+    url: 'https://talito.com.br/',
+    description:
+      'AI-powered financial data platform for Brazilian B2C and B2B audiences.',
+    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
+    icon: IconTalito,
+    active: true,
+  },
+  {
     name: 'Findto',
     url: 'https://findto.app/',
     description:
@@ -81,15 +90,6 @@ export const projects: IProjects[] = [
       'APIs',
     ],
     icon: IconFindto,
-    active: true,
-  },
-  {
-    name: 'Talito',
-    url: 'https://talito.com.br/',
-    description:
-      'AI-powered financial data platform for Brazilian B2C and B2B audiences.',
-    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
-    icon: IconTalito,
     active: true,
   },
   {

@@ -18,12 +18,39 @@ export default function PageHome() {
             <div>
               <ProfilePhoto />
               <h1>
-                Hello, I'm Lucas Maués, a Tech Lead, Senior Software Engineer &
-                Frontend Specialist
+                Hello, I'm Lucas Maués. I'm a Brazilian Founder, Tech Lead, and
+                Senior Frontend Engineer specialized in building scalable,
+                high-performance platforms and digital products.
               </h1>
             </div>
 
-            <p>{ROUTES.WORK.description}</p>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 16,
+                flexWrap: 'wrap',
+                margin: '2rem 0',
+              }}>
+              <Button variant="black" url={ROUTES.WORK.path}>
+                <>
+                  Explore my work
+                  <IconArrowInternal />
+                </>
+              </Button>
+              <Button
+                variant="whiteBorder"
+                url={CONTACTS?.patreon?.url}
+                isExternal>
+                <>
+                  Join on {CONTACTS?.patreon?.icon}
+                  {CONTACTS?.patreon?.title}
+                </>
+              </Button>
+            </div>
+
+            {/* <p>{ROUTES.WORK.description}</p> */}
           </div>
 
           <CardsWorkFeatured />
@@ -33,7 +60,7 @@ export default function PageHome() {
       <section>
         <div className="container">
           <div className="specialContainer">
-            {/* <h2>{ROUTES.WORK.description?.replaceAll('.', '')}</h2> */}
+            <h2>About me</h2>
 
             <p>
               Since 2017, I have been building web applications, e-commerce
@@ -59,22 +86,6 @@ export default function PageHome() {
             </p>
 
             <br />
-
-            <Button variant="whiteBorder" url={ROUTES.WORK.path}>
-              <>
-                Explore my work
-                <IconArrowInternal />
-              </>
-            </Button>
-
-            <div style={{ marginTop: '.5rem' }}>
-              <Button variant="black" url={CONTACTS?.patreon?.url} isExternal>
-                <>
-                  Join on {CONTACTS?.patreon?.icon}
-                  {CONTACTS?.patreon?.title}
-                </>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
