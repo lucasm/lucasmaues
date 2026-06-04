@@ -19,8 +19,8 @@ export default function PageHome() {
               <ProfilePhoto />
               <h1>
                 Hello, I'm Lucas Maués, a Brazilian Founder, Tech Lead, and
-                Senior Frontend Engineer specialized in building scalable,
-                high-impact platforms and digital products.
+                Senior Frontend Engineer, building AI-driven platforms and
+                products.
               </h1>
             </div>
 
@@ -64,7 +64,7 @@ export default function PageHome() {
 
             <p>
               Since 2017, I have been building web applications, e-commerce
-              platforms, mission-critical financial systems, and more recently,
+              platforms, mission-critical financial systems, and since 2023,
               AI-driven experiences. I take pride in building products that
               reach millions of users daily and power millions in BRL
               transactions every day.
