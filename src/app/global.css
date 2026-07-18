@@ -263,7 +263,6 @@ article blockquote {
 .home h1 {
   text-wrap: balance;
   padding-bottom: 2rem;
-  font-size: var(--font-size-4);
 }
 
 .page {
@@ -353,10 +352,6 @@ code {
 
   .aboutContainer p {
     font-size: var(--font-size-5);
-  }
-
-  .home h1 {
-    font-size: var(--font-size-2);
   }
 
   h1 {
