@@ -174,7 +174,7 @@ export const productsBR = [
     category: 'Computador',
   },
   {
-    title: 'HyperX Solocast',
+    title: 'HyperX Solocast microfone USB-C',
     manufacturer: 'HyperX',
     stars: 4.8,
     description:
