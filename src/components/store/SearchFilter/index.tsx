@@ -55,7 +55,8 @@ export default function SearchFilter({
     try {
       const url = new URL(window.location.href)
       if (newSearchTerm) {
-        url.pathname = '/store/search'
+        // Use /store so direct links like /store?q=... work on the server
+        url.pathname = '/store'
         url.searchParams.set('q', newSearchTerm)
       } else {
         url.pathname = '/store'
