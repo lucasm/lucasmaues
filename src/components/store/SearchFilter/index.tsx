@@ -51,6 +51,21 @@ export default function SearchFilter({
     setSearchTerm(newSearchTerm)
     onSearchChange(newSearchTerm)
 
+    // Atualiza a URL sem navegar — mantém histórico limpo
+    try {
+      const url = new URL(window.location.href)
+      if (newSearchTerm) {
+        url.pathname = '/store/search'
+        url.searchParams.set('q', newSearchTerm)
+      } else {
+        url.pathname = '/store'
+        url.searchParams.delete('q')
+      }
+      window.history.replaceState(null, '', url.toString())
+    } catch (e) {
+      // ignore
+    }
+
     // Scrolla para o topo da página somente se houver um termo de busca
     if (newSearchTerm !== '' && window.scrollY > 200) {
       debouncedScrollToTop()
@@ -76,6 +91,16 @@ export default function SearchFilter({
     onCategoryChange(STORE_FILTER_LABELS.ALL_CATEGORIES)
     onBrandChange(STORE_FILTER_LABELS.ALL_BRANDS)
     setIsResetVisible(false) // Desativa o botão de reset
+
+    // Remove query da URL
+    try {
+      const url = new URL(window.location.href)
+      url.pathname = '/store'
+      url.searchParams.delete('q')
+      window.history.replaceState(null, '', url.toString())
+    } catch (e) {
+      // ignore
+    }
   }
 
   // Limpa o debounce ao desmontar o componente para evitar possíveis vazamentos de memória
@@ -84,6 +109,22 @@ export default function SearchFilter({
       debouncedScrollToTop.cancel()
     }
   }, [debouncedScrollToTop])
+
+  // Ao montar, lê `q` da URL e popula o campo de busca
+  useEffect(() => {
+    try {
+      const params = new URL(window.location.href).searchParams
+      const q = params.get('q') || ''
+      if (q) {
+        setSearchTerm(q)
+        onSearchChange(q)
+        setIsResetVisible(true)
+      }
+    } catch (e) {
+      // ignore
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Ativa o botão de reset se há uma categoria ou termo de busca
   useEffect(() => {
