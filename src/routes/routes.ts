@@ -21,7 +21,7 @@ export const ROUTES = {
   WORK: {
     path: '/work',
     title: 'Work',
-    description: "I'm leading teams to build scalable platforms and products.",
+    description: 'Leading teams to build scalable platforms and products.',
     image: DEFAULT_IMAGE,
   },
   CONTACT: {

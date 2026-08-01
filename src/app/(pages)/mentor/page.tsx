@@ -20,9 +20,11 @@ export default function PageMentor() {
 
             <p className="description">
               Com mais de {new Date().getFullYear() - 2018} anos de experiência
-              em Engenharia de Software, Frontend e Liderança Técnica, sou
-              procurado por profissionais de TI e estudantes que buscam
-              crescimento na carreira, mas não sabem por onde começar.
+              em tecnologias Frontend, Engenharia de Software e Liderança
+              Técnica, sendo {new Date().getFullYear() - 2022} apenas no setor
+              Bancário — Sou naturalmente procurado por profissionais de TI e
+              estudantes que buscam crescimento na carreira, mas não sabem por
+              onde começar.
             </p>
           </div>
         </div>
@@ -33,7 +35,7 @@ export default function PageMentor() {
           <article>
             <SvgAnimateMentorship />
 
-            <h3>O que é mentoria?</h3>
+            <h3>O que é a mentoria?</h3>
 
             <p>
               A mentoria é um espaço seguro de crescimento e aprendizado. Você

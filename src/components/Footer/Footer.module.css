@@ -28,10 +28,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
   font-size: var(--font-size-6);
 }
-.footerLinksLi {
+
+.footerLinks li {
   padding: 0;
   display: flex;
   gap: 0.25rem;
@@ -39,6 +40,12 @@
   flex-wrap: wrap;
   justify-content: center;
   color: var(--color-b-fixed);
+}
+
+.footerLinks li:first-child {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 .footerLinks a {
   color: var(--color-b-fixed);

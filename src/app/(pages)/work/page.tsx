@@ -28,7 +28,7 @@ export default function PageWork() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Let's talk about your project</h3>
+              <h3>Let's talk about your new or existing project</h3>
             </div>
 
             <div
@@ -41,17 +41,17 @@ export default function PageWork() {
                 </>
               </Button>
 
-              <Button variant="black" url={CONTACTS?.whatsapp?.url} isExternal>
-                <>
-                  {CONTACTS?.whatsapp?.icon}
-                  {CONTACTS?.whatsapp?.title}
-                </>
-              </Button>
-
               <Button variant="black" url={CONTACTS?.linkedin?.url} isExternal>
                 <>
                   {CONTACTS?.linkedin?.icon}
                   {CONTACTS?.linkedin?.title}
+                </>
+              </Button>
+
+              <Button variant="black" url={CONTACTS?.whatsapp?.url} isExternal>
+                <>
+                  {CONTACTS?.whatsapp?.icon}
+                  {CONTACTS?.whatsapp?.title}
                 </>
               </Button>
             </div>
