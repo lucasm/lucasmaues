@@ -32,13 +32,13 @@ export const ROUTES = {
   },
   STORE: {
     path: '/store',
-    title: 'Loja',
+    title: 'Store',
     description: 'Os melhores produtos para produtividade e dia a dia.',
     image: '/share-store.png',
   },
   MENTORSHIP: {
     path: '/mentor',
-    title: 'Mentoria',
+    title: 'Mentor',
     description: 'Mentoria para profissionais de TI se destacarem no mercado.',
     image: '/share-mentor.png',
   },

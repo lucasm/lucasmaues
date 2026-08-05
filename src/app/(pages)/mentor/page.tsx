@@ -19,12 +19,13 @@ export default function PageMentor() {
             <h1>{title}</h1>
 
             <p className="description">
-              Com mais de {new Date().getFullYear() - 2018} anos de experiência
-              em tecnologias Frontend, Engenharia de Software e Liderança
-              Técnica, sendo {new Date().getFullYear() - 2022} apenas no setor
-              Bancário — Sou naturalmente procurado por profissionais de TI e
-              estudantes que buscam crescimento na carreira, mas não sabem por
-              onde começar.
+              Com mais de {new Date().getFullYear() - 2018} anos de experiência,
+              hoje trabalho como Líder Técnico de Desenvolvedores guiando a
+              Engenharia de Software e soluções com IA no setor Bancário —
+              Também sou mentor de profissionais de TI que buscam se destacar no
+              mercado. A mentoria é um serviço muito procurado por estudantes e
+              profissionais de TI que buscam orientação para crescimento na
+              carreira, mas não sabem por onde começar.
             </p>
           </div>
         </div>
@@ -39,15 +40,19 @@ export default function PageMentor() {
 
             <p>
               A mentoria é um espaço seguro de crescimento e aprendizado. Você
-              sente que se esforça mas não evolui na carreira? Eu te ajudo a se
-              destacar no mercado de TI, com as suas qualidades.
+              sente que se esforça mas não cresce na carreira? Eu te ajudo a se
+              destacar no mercado de trabalho de tecnologia, destacando as suas
+              qualidades.
             </p>
 
-            <h3>Metodologia</h3>
+            <h3>Metodologia:</h3>
 
             <code>
-              "Primeiro, resolva o problema. Então, escreva o código." — John
-              Johnson
+              1. Primeiro, desenhe a solução do problema. <br />
+              2. Então automatize o trabalho manual. <br />
+              3. E com IA escreva o código.
+              <br />
+              <br />— Lucas Maués (inspirado por John Johnson)
             </code>
 
             <p>
@@ -112,16 +117,16 @@ export default function PageMentor() {
               <br />
               Duração: 45m
               <br />
-              Formato: Chamada de vídeo + Plano de ação personalizado
+              Formato: Videocall ao vivo + Plano de ação personalizado
               <br />
-              Agendamento e pagamento: Patreon
+              Pagamento: Patreon
               <br />
               <br />
             </p>
 
             <Button variant="black" url={CONTACTS?.patreon?.url} isExternal>
               <>
-                Agendar em {CONTACTS?.patreon?.icon}
+                Agendar no {CONTACTS?.patreon?.icon}
                 {CONTACTS?.patreon?.title}{' '}
               </>
             </Button>
