@@ -1,4 +1,5 @@
 import CookiesPopup from '@/components/CookiesPopup'
+import ScrollToTop from '@/components/ScrollToTop'
 import { CookiesConsentContextProvider } from '@/contexts/CookiesConsentContext'
 import { UserContextProvider } from '@/contexts/UserContext'
 import { ROUTES } from '@/routes/routes'
@@ -109,7 +110,7 @@ export default function RootLayout({
     process.env.NEXT_PUBLIC_ENV_LUCASMDEV === 'production'
 
   return (
-    <html lang="en-US" className={font.className}>
+    <html lang="en-US" className={font.className} data-scroll-behavior="smooth">
       <head>
         {isProduction && (
           <>
@@ -156,6 +157,7 @@ export default function RootLayout({
         )}
       </head>
       <body>
+        <ScrollToTop />
         <CookiesConsentContextProvider>
           <UserContextProvider>{children}</UserContextProvider>
           <CookiesPopup />
