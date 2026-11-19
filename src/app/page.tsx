@@ -18,9 +18,9 @@ export default function PageHome() {
             <div>
               <ProfilePhoto />
               <h1>
-                Hello, I'm Lucas Maués, a Brazilian Founder, Tech Lead, Senior
-                Frontend and AI Engineer — specializing in banking platforms and
-                products.
+                Hello, I'm Lucas Maués — a Brazilian Founder, Tech Lead, and
+                Senior Frontend & AI Engineer specializing in banking platforms
+                and products.
               </h1>
             </div>
 
