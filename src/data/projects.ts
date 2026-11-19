@@ -1,10 +1,10 @@
 import {
   IconActDigital,
+  IconAgenticOut,
   IconAspiral,
   IconBancoBmg,
   IconCacba,
   IconChecktest,
-  IconFindto,
   IconGlobo,
   IconMdn,
   IconMicrosoft,
@@ -67,17 +67,8 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
-    name: 'Talito',
-    url: 'https://talito.com.br/',
-    description:
-      'AI-powered financial data platform for Brazilian B2C and B2B audiences.',
-    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
-    icon: IconTalito,
-    active: true,
-  },
-  {
-    name: 'Findto',
-    url: 'https://findto.app/',
+    name: 'Aspiral',
+    url: 'https://aspiral.app/',
     description:
       'Open source decentralized search assistant for the Web and AI.',
     tags: [
@@ -89,7 +80,16 @@ export const projects: IProjects[] = [
       'CSS',
       'APIs',
     ],
-    icon: IconFindto,
+    icon: IconAspiral,
+    active: true,
+  },
+  {
+    name: 'Talito',
+    url: 'https://talito.com.br/',
+    description:
+      'AI-powered financial data platform for Brazilian B2C and B2B audiences.',
+    tags: ['AI', 'APIs', 'PostgreSQL', 'Frontend', 'React'],
+    icon: IconTalito,
     active: true,
   },
   {
@@ -137,11 +137,11 @@ export const projects: IProjects[] = [
     active: true,
   },
   {
-    name: 'Aspiral',
-    url: 'https://aspiral.app/',
-    description: 'Digital news magazine with trusted journalism. ',
-    tags: ['Frontend', 'React'],
-    icon: IconAspiral,
+    name: 'Agentic Out',
+    url: 'https://agenticout.app/',
+    description: 'Agentic AI platform for e-commerce. ',
+    tags: ['AI', 'Python', 'React'],
+    icon: IconAgenticOut,
     active: true,
   },
   {

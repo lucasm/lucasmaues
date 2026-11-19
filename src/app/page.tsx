@@ -18,9 +18,9 @@ export default function PageHome() {
             <div>
               <ProfilePhoto />
               <h1>
-                Hello, I'm Lucas Maués — Brazilian Founder, Tech Lead, and
-                Senior Frontend Engineer specializing in banking AI platforms
-                and products.
+                Hello, I'm Lucas Maués, a Brazilian Founder, Tech Lead, Senior
+                Frontend and AI Engineer — specializing in banking platforms and
+                products.
               </h1>
             </div>
 
@@ -35,16 +35,13 @@ export default function PageHome() {
               }}>
               <Button variant="black" url={ROUTES.WORK.path}>
                 <>
-                  Explore my work
+                  My work
                   <IconArrowInternal />
                 </>
               </Button>
-              <Button
-                variant="whiteBorder"
-                url={CONTACTS?.patreon?.url}
-                isExternal>
+              <Button variant="whiteBorder" url={ROUTES.MENTORSHIP.path}>
                 <>
-                  Join on {CONTACTS?.patreon?.icon}
+                  Mentoria {CONTACTS?.patreon?.icon}
                   {CONTACTS?.patreon?.title}
                 </>
               </Button>
@@ -63,19 +60,20 @@ export default function PageHome() {
             <h2>About me</h2>
 
             <p>
+              As a hands-on Tech Lead and Founder, I empower engineering teams
+              to deliver high-performing, accessible products that drive
+              measurable business growth. My approach centers on deep business
+              understanding, web accessibility, and pragmatic
+              engineering—eliminating unnecessary complexity to build software
+              that lasts.
+            </p>
+
+            <p>
               Since 2017, I have been building web applications, e-commerce
               platforms, mission-critical financial systems, and since 2023,
               AI-driven experiences. I take pride in building products that
               reach millions of users daily and power millions in BRL
               transactions every day.
-            </p>
-
-            <p>
-              As a leader, I empower my teams to deliver refined user
-              experiences, scalable engineering practices, and real business
-              growth. I'm passionate about deeply understanding business
-              problems to solve them simply. Because I believe simplicity is the
-              ultimate software sophistication.
             </p>
 
             <p>

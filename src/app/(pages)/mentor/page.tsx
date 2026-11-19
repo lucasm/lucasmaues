@@ -19,13 +19,12 @@ export default function PageMentor() {
             <h1>{title}</h1>
 
             <p className="description">
-              Com mais de {new Date().getFullYear() - 2018} anos de experiência,
-              hoje trabalho como Líder Técnico de Desenvolvedores guiando a
-              Engenharia de Software e soluções com IA no setor Bancário —
-              Também sou mentor de profissionais de TI que buscam se destacar no
-              mercado. A mentoria é um serviço muito procurado por estudantes e
-              profissionais de TI que buscam orientação para crescimento na
-              carreira, mas não sabem por onde começar.
+              Com mais de {new Date().getFullYear() - 2016} anos de experiência
+              em tecnologia, hoje trabalho como Líder Técnico em times de
+              desenvolvedores e produtos, guiando Arquitetura, Frontend e AI
+              Engineering para o setor Bancário. A mentoria é destinada para
+              estudantes e profissionais de TI que buscam orientação para
+              crescimento na carreira, mas não sabem por onde começar.
             </p>
           </div>
         </div>
@@ -45,27 +44,32 @@ export default function PageMentor() {
               qualidades.
             </p>
 
-            <h3>Metodologia:</h3>
+            <h3>Metodologia 1xL:</h3>
 
             <code>
               1. Primeiro, desenhe a solução do problema. <br />
-              2. Então automatize o trabalho manual. <br />
-              3. E com IA escreva o código.
+              2. Com IA automatize o código e todo trabalho manual.
               <br />
-              <br />— Lucas Maués (inspirado por John Johnson)
+              3. Então, repita.
+              <br />
+              <br />— Lucas Maués (inspirado em John Johnson)
             </code>
 
             <p>
               Quando você compra cursos e não faz, ou quando você tenta fazer
               tudo ao mesmo tempo, você está tentando ser 10x. Mas na verdade
-              precisa ser 1x. Essa é a minha filosofia. Eu chamo de "método 1x"
-              o conjunto de práticas e técnicas que eu desenvolvi ao longo dos
-              anos para me tornar um profissional mais produtivo, e com
-              qualidade de vida. Lembre-se: não é sobre fórmulas mágicas. 1x
-              significa fazer uma vez e fazer bem feito. É sobre resultados
-              baseado em ações assertivas. É sobre fazer o que precisa ser
-              feito. Com calma, foco, disciplina, consistência e analisando
-              dados.
+              precisa ser 1x e level up. Essa é a minha filosofia. Eu chamo de
+              "método 1xL" o conjunto de práticas e técnicas que eu desenvolvi
+              ao longo dos anos para me tornar um profissional mais produtivo, e
+              com qualidade de vida.{' '}
+            </p>
+
+            <p>
+              Não é sobre fórmulas mágicas. 1x significa fazer uma vez e fazer
+              bem feito. L significa leve up, automatizar e escalar. É sobre
+              resultados baseado em ações assertivas. É sobre fazer o que
+              precisa ser feito. Com calma, foco, disciplina, consistência e
+              analisando os dados.
             </p>
 
             <h3>Como funciona?</h3>

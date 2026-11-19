@@ -10,8 +10,8 @@ export const ROUTES = {
     path: '/',
     title: 'Lucas Maués',
     description:
-      'Lucas Maués de Menezes is a Brazilian Founder, Tech Lead & Senior Frontend Engineer, with 8+ years of experience.',
-    seo: 'Founder, Tech Lead & Senior Frontend Engineer',
+      'Lucas Maués de Menezes is a Brazilian Founder, Tech Lead, Senior Frontend & AI Engineer, with 10+ years of experience.',
+    seo: 'Senior Frontend & AI Engineer, Tech Lead, Founder',
     image: DEFAULT_IMAGE,
   },
   ABOUT: {
