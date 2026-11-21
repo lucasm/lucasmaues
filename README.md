@@ -4,8 +4,11 @@
 </a>
 <h1>Lucas Maués</h1>
 
-<a href="https://lucasmaues.com/?utm_source=github" target="_blank">lucasmaues.com</a> | <a href="https://lucasm.dev/?utm_source=github" target="_blank">lucasm.dev</a> |
-<a href="https://lucasm.github.io/?utm_source=github" target="_blank">lucasm.github.io</a>
+<a href="https://lucasmaues.com/?utm_source=github" target="_blank">lucasmaues.com</a> 
+
+Previously: <a href="https://lucasm.dev/?utm_source=github" target="_blank">lucasm.dev</a> |
+<a href="https://lucasm.github.io/?utm_source=github" target="_blank">lucasm.github.io</a> |
+<a href="https://lucasmaues.blogspot.com/?utm_source=github" target="_blank">lucasmaues.blogspot.com</a>
 
 </div>
 
