@@ -17,9 +17,8 @@ export default function Footer() {
             <div className={styles.linkSvg}>
               <IconLucasmdev />
             </div>
-            Designed in Brazil by{' '}
             <div>
-              <Link href={ROUTES.HOME.path}>{ROUTES.HOME.title}</Link>.
+              <Link href={ROUTES.HOME.path}>{ROUTES.HOME.title}</Link>
             </div>
             Copyright © {getYear}. All rights reserved.
           </li>

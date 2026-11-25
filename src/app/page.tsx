@@ -60,28 +60,30 @@ export default function PageHome() {
             <h2>About me</h2>
 
             <p>
-              As a hands-on Tech Lead and Founder, I empower engineering teams
-              to deliver high-performing, accessible products that drive
-              measurable business growth. My approach centers on deep business
-              understanding, web accessibility, and pragmatic
-              engineering—eliminating unnecessary complexity to build software
-              that lasts.
+              As a Tech Lead and Founder, I empower teams to deliver
+              high-performing products that drive measurable business growth. I
+              take pride in building products that reach millions of users daily
+              and power millions in BRL transactions every day.
             </p>
 
             <p>
               Since 2017, I have been building web applications, e-commerce
-              platforms, mission-critical financial systems, and since 2023,
-              AI-driven experiences. I take pride in building products that
-              reach millions of users daily and power millions in BRL
-              transactions every day.
+              platforms, mission-critical financial systems, legacy
+              modernization, and since 2023, AI-driven development and
+              experiences. My approach centers on deep business understanding,
+              crisp communication, accessibility, security, quality,
+              architecture, and pragmatic engineering — eliminating unnecessary
+              complexity to build software that lasts.
             </p>
 
             <p>
-              I'm currently leading teams to build scalable banking platforms
+              I'm currently leading teams to build scalable AI banking platforms
               and products, mentoring developers to grow in their careers, and
-              sharing my knowledge through talks, content creation and open
-              source initiatives.
+              sharing my knowledge through talks, social media and open source
+              initiatives.
             </p>
+
+            <p>Let's make!</p>
 
             <br />
           </div>
