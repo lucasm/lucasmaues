@@ -28,30 +28,41 @@ export default function PageWork() {
 
           <div className="aboutContainer">
             <div>
-              <h3>Let's talk about your new or existing project</h3>
+              <h2>Let's talk about your project</h2>
             </div>
 
             <div
               translate="no"
               style={{ display: 'flex', gap: '1rem', flexDirection: 'column' }}>
-              <Button variant="black" url={'mailto:' + CONTACTS?.email?.url}>
+              <Button
+                variant="black"
+                url={CONTACTS?.whatsapp?.url}
+                isExternal
+                fullWidth>
+                <>
+                  {CONTACTS?.whatsapp?.icon}
+                  {CONTACTS?.whatsapp?.title}
+                </>
+              </Button>
+
+              <Button
+                variant="black"
+                url={'mailto:' + CONTACTS?.email?.url}
+                fullWidth>
                 <>
                   {CONTACTS?.email?.icon}
                   {CONTACTS?.email?.title}
                 </>
               </Button>
 
-              <Button variant="black" url={CONTACTS?.linkedin?.url} isExternal>
+              <Button
+                variant="black"
+                url={CONTACTS?.linkedin?.url}
+                isExternal
+                fullWidth>
                 <>
                   {CONTACTS?.linkedin?.icon}
                   {CONTACTS?.linkedin?.title}
-                </>
-              </Button>
-
-              <Button variant="black" url={CONTACTS?.whatsapp?.url} isExternal>
-                <>
-                  {CONTACTS?.whatsapp?.icon}
-                  {CONTACTS?.whatsapp?.title}
                 </>
               </Button>
             </div>

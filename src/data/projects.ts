@@ -36,6 +36,7 @@ export const projects: IProjects[] = [
     description:
       'Banking products web platform, with 3.6 billion of BRL transactions per year (4T24).',
     tags: [
+      'AI',
       'React',
       'TypeScript',
       'Vite',
@@ -45,6 +46,8 @@ export const projects: IProjects[] = [
       'Storybook',
       'Microsoft Azure',
       'AWS',
+      '.NET',
+      'Kafka',
     ],
     icon: IconBancoBmg,
     active: true,
@@ -140,7 +143,7 @@ export const projects: IProjects[] = [
     name: 'Agentic Out',
     url: 'https://agenticout.app/',
     description: 'Agentic AI platform for e-commerce. ',
-    tags: ['AI', 'Python', 'React'],
+    tags: ['AI', 'Python', 'React', '.NET', 'Kafka'],
     icon: IconAgenticOut,
     active: true,
   },

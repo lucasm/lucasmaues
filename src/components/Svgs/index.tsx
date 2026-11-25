@@ -697,7 +697,7 @@ export const IconMoveda = (
     </g>
   </svg>
 )
-export const IconAgenticOut = (
+export const IconAspiral = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -720,7 +720,7 @@ export const IconAgenticOut = (
     />
   </svg>
 )
-export const IconAspiral = (
+export const IconAgenticOut = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"

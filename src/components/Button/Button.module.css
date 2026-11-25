@@ -48,6 +48,10 @@
   /* Small modifier: keep the smaller dimensions even on larger screens */
 }
 
+.fullWidth {
+  width: 100%;
+}
+
 /* .button svg path {
   fill: var(--color-b-fixed) !important;
   stroke: var(--color-b-fixed) !important;

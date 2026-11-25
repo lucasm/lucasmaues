@@ -15,6 +15,7 @@ type Props = {
   title?: string
   onClick?: () => void
   onMouseEnter?: () => void
+  fullWidth?: boolean
 }
 
 const VARIANT_CLASS: Record<ButtonVariant, string> = {
@@ -29,7 +30,7 @@ export default function Button(props: Readonly<Props>): JSX.Element {
   const size = props.size ?? 'medium'
   const className = `${Styles.button} ${VARIANT_CLASS[variant]} ${
     size === 'small' ? Styles.small : ''
-  }`
+  } ${props.fullWidth ? Styles.fullWidth : ''}`
 
   if (props.onClick) {
     return (
